@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="extension-groupReference"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-groupReference"/>
+  <name value="GroupReference"/>
+  <title value="Group Reference Extension"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2021-07-20"/>
+  <publisher value="Da Vinci Project"/>
+  <description value="This extension identifies which HCC gap the supporting evidence (represented by `MeasureReport.group.evaluatedResource`) is for."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="MeasureReport.group.evaluatedResource"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="This references the MeasureReport.group.id, "/>
+      <definition value="Group reference"/>
+      <comment value="This is an extension to reference an HCC"/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-groupReference"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

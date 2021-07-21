@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="fhir.us.davinci-ra"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/ImplementationGuide/fhir.us.davinci-ra"/>
+  <version value="0.1.0"/>
+  <name value="RiskAdjustment"/>
+  <title value="Da Vinci Risk Adjustment Implementation Guide (STU1 Ballot)"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="HL7 Clinical Quality Information Work Group"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/cqi/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide (this IG) describes exchange of risk-based coding gaps among stakeholders such as payers, providers, and government care programs in support of driving towards accurate and complete documentation of health conditions that would lead to more accurate risk-adjustment payment calculations."/>
+  <jurisdiction>
+    <coding>
+      <!--<system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>-->
+      <!-- Change to this if the IG is country-specific -->
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="840"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.us.davinci-ra"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn>
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="3.1.0"/>
+  </dependsOn>
+  <dependsOn id="deqm">
+    <uri value="http://hl7.org/fhir/us/davinci-deqm/"/>
+    <packageId value="hl7.fhir.us.davinci-deqm"/>
+    <version value="3.0.0"/>
+  </dependsOn>
+  <definition>
+    <page>
+      <!-- The root will always be toc.html - the template will force it if you don't do it -->
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Da Vinci Risk Adjustment Implementation Guide Home Page"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="introduction.html"/>
+        <title value="Introduction"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="hcc.html"/>
+        <title value="Hiearchical Condition Category"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="StructureDefinition-ra-model-measure.html"/>
+          <title value="Risk Adjustment Model Measure"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-ra-measurereport.html"/>
+          <title value="Risk Adjustment Measure Report"/>
+          <generation value="generated"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="extensions.html"/>
+        <title value="Extensions"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="StructureDefinition-extension-clinicalDataCollectionDeadline.html"/>
+          <title value="Risk Adjustment Clinical Data Collection Deadline"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-extension-evidenceStatus.html"/>
+          <title value="Risk Adjustment HCC Gap Evidence Status"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-extension-evidenceStatusDate.html"/>
+          <title value="Risk Adjustment HCC Gap Evidence Status Last Change Date"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-extension-groupReference.html"/>
+          <title value="Risk Adjustment Group Reference Extension"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-extension-historicDiagnosis.html"/>
+          <title value="Risk Adjustment Historic Diagnosis"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-extension-suspectType.html"/>
+          <title value="Risk Adjustment Suspect Type"/>
+          <generation value="generated"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="operations.html"/>
+        <title value="Operation"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="examples.html"/>
+        <title value="Examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="glossary.html"/>
+        <title value="Glossary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="Change History"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <!-- copyright year is a mandatory parameter -->
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2019+"/>
+    </parameter>
+    <!-- releaselabel should be the ballot status for HL7-published IGs. -->
+    <parameter>
+      <code value="releaselabel"/>
+      <value value="CI Build"/>
+    </parameter>
+    <parameter>
+      <code value="find-other-resources"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="resources\valueset"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="resources\codesystem"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="resources\operationdefinition"/>
+    </parameter>
+    <parameter>
+      <code value="path-binary"/>
+      <value value="input\cql"/>
+    </parameter>
+    <parameter>
+      <code value="path-liquid"/>
+      <value value="templates\liquid"/>
+    </parameter>
+    <parameter>
+      <code value="shownav"/>
+      <value value="true"/>
+    </parameter>
+
+<!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
+    <parameter>
+      <code value="excludexml"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="excludejson"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="excludettl"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="excludemap"/>
+      <value value="true"/>
+    </parameter>-->
+    <parameter>
+      <code value="showsource"/>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

@@ -1,0 +1,23 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "RiskAdjustmentSuspectTypeCodeSystem",
+  "id": "suspect-type",
+  "title": "Risk Adjustment Suspect Type Code System",
+  "publisher":"Da Vinci Project",
+  "description": "(The Da Vinci Risk Adjustment Implementation Guide is under development). This is a code system for Risk Adjustment suspect type to indicate whether an HCC is historic or suspected.",
+  "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
+  "concept": [
+    {
+      "code": "historic",
+      "display": "Historic HCC Gap",
+      "definition": "Historic HCC Gap."
+    },
+    {
+      "code": "suspected",
+      "display": "Suspected HCC Gap",
+      "definition": "Suspected HCC Gap."}
+  ],
+  "count": 2
+}

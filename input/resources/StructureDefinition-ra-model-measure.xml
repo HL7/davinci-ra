@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+    <id value="ra-model-measure"/>
+    <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-model-measure"/>
+    <name value="RiskAdjustmentModelMeasure"/>
+    <title value="Risk Adjustment Model Measure"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <date value="2021-07-20"/>
+    <description value="(The Da Vinci Risk Adjustment Implementation Guide is under development). This risk adjustment model measure profile is based on the [Measure](http://hl7.org/fhir/R4/measure.html) resoure to represent a risk adjustment model and its version such as CMS-HCC version 24."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Measure"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Measure"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Measure">
+            <path value="Measure"/>
+            <short value="A Risk Adjustment Model"/>
+        </element>
+        <element id="Measure.meta">
+            <path value="Measure.meta"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Measure.meta.profile">
+            <path value="Measure.meta.profile"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Measure.identifier">
+            <path value="Measure.identifier"/>
+            <short value="Risk Adjustment Model ID, e.g., CMS-HCC"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Measure.version">
+            <path value="Measure.version"/>
+            <short value="Risk Adjustment Model version, e.g., 24"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Measure.name">
+            <path value="Measure.name"/>
+            <short value="e.g., CMS-HCCv24"/>
+            <min value="0"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Measure.title">
+            <path value="Measure.title"/>
+            <short value="E.g., CMS Hiearchical Category Condition (CMS-HCC) Risk Adjustment Model Version 24"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

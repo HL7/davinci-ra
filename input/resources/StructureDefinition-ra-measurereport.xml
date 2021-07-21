@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  <id value="ra-measurereport"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
+  <name value="RiskAdjustmentCodingGapReportProfile"/>
+  <title value="Risk Adjustment Coding Gap Report Profile"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2021-07-20"/>
+  <publisher value="Da Vinci Project"/>
+  <description value="(The Da Vinci Risk Adjustment Implementation Guide is under development). This risk adjustment coding gap report profile is based on the [MeasureReport](http://hl7.org/fhir/R4/measurereport.html) to represent a risk adjustment coding gap report."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="MeasureReport"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MeasureReport"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="MeasureReport">
+      <path value="MeasureReport"/>
+      <short value="This is a Risk Adjustment Coding Gap Report"/>
+      <definition value="This is a Risk Adjustment Coding Gap Report"/>
+    </element>
+    <element id="MeasureReport.status">
+      <path value="MeasureReport.status"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.type">
+      <path value="MeasureReport.type"/>
+      <requirements value="The type code is fixed to individual for Risk Adjustment Coding Gap Report "/>
+      <type>
+        <code value="code"/>
+      </type>
+      <fixedCode value="individual"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.measure">
+      <path value="MeasureReport.measure"/>
+      <requirements value="This references a Risk Adjustment model measure"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.subject">
+      <path value="MeasureReport.subject"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.date">
+      <path value="MeasureReport.date"/>
+      <short value="When the report was generated"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.reporter">
+      <path value="MeasureReport.reporter"/>
+      <short value="Organization that generated the MeasureReport"/>
+      <definition value="Organization that generated the MeasureReport"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.reporter.extension:group">
+      <path value="MeasureReport.reporter.extension"/>
+      <sliceName value="group"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.period">
+      <path value="MeasureReport.period"/>
+      <short value="Clinical evaluation period."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Period"/>
+      </type>
+      <condition value="ra-1"/>
+      <constraint>
+        <key value="ra-1"/>
+        <severity value="error"/>
+        <human value="Date precision SHALL  be at least to day ( YYYY-MM-DD )"/>
+        <expression value="start.matches(&#39;^([0-9]{4})(-)(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]).*&#39;) and end.matches(&#39;^([0-9]{4})(-)(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]).*&#39;)"/>
+        <xpath value="f:start[matches(^([0-9]{4})(-)(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]).*)] and end.matches[(^([0-9]{4})(-)(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]).*)]"/>
+      </constraint>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.period.start">
+      <path value="MeasureReport.period.start"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.period.end">
+      <path value="MeasureReport.period.end"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport:clinicalDataCollectionDeadline">
+      <path value="MeasureReport.extension"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-clinicalDataCollectionDeadline"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.group">
+      <path value="MeasureReport.group"/>
+      <short value="Each group would contain information for one HCC"/>
+      <definition value="HCC and its relevant information"/>
+      <min value="0"/>
+      <max value="*"/>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="MeasureReport.group.id">
+      <path value="MeasureReport.group.id"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+
+ <element id="MeasureReport.group.code">
+   <path value="MeasureReport.group.code"/>
+   <short value="HCC code would go here"/>
+   <definition value="This could be the HCC code. HCC model in CodableConcept.coding."/>
+   <min value="0"/>
+   <max value="1"/>
+ </element>
+ <element id="MeasureReport.group.extension:historicDiagnosis">
+   <path value="MeasureReport.group.extension"/>
+   <sliceName value="historicDiagnosis"/>
+   <min value="0"/>
+   <max value="*"/>
+   <type>
+     <code value="Extension"/>
+     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-historicDiagnosis"/>
+   </type>
+   <mustSupport value="true"/>
+ </element>
+ <element id="MeasureReport.group.extension:suspectType">
+   <path value="MeasureReport.group.extension"/>
+   <sliceName value="suspectType"/>
+   <min value="0"/>
+   <max value="1"/>
+   <type>
+     <code value="Extension"/>
+     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-suspectType"/>
+   </type>
+   <mustSupport value="true"/>
+ </element>
+ <element id="MeasureReport.group.extension:evidenceStatus">
+   <path value="MeasureReport.group.extension"/>
+   <sliceName value="evidenceStatus"/>
+   <min value="0"/>
+   <max value="1"/>
+   <type>
+     <code value="Extension"/>
+     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatus"/>
+   </type>
+   <mustSupport value="true"/>
+ </element>
+ <element id="MeasureReport.group.extension:evidenceStatusDate">
+   <path value="MeasureReport.group.extension"/>
+   <sliceName value="evidenceStatusDate"/>
+   <min value="0"/>
+   <max value="1"/>
+   <type>
+     <code value="Extension"/>
+     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatusDate"/>
+   </type>
+   <mustSupport value="true"/>
+ </element>
+ <element id="MeasureReport.evaluatedResource">
+   <path value="MeasureReport.evaluatedResource"/>
+   <short value="Supporting evidence for HCC, such as encounter, medication, and lab"/>
+   <definition value="Supporting evidence for HCC, such as encounter, medication, and lab"/>
+   <!--<requirements value="To support the reporting of supplemental data elements."/>-->
+   <mustSupport value="true"/>
+ </element>
+
+ <element id="MeasureReport.evaluatedResource.extension:groupReference">
+  <path value="MeasureReport.evaluatedResource.extension"/>
+  <sliceName value="groupReference"/>
+  <definition value="This id references the `MeasureReport.group.id`, which alllows linking a supporting resource to a specific HCC code"/>
+  <min value="0"/>
+  <max value="*"/>
+  <type>
+    <code value="Extension"/>
+    <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-groupReference"/>
+  </type>
+  <mustSupport value="true"/>
+</element>
+
+  </differential>
+</StructureDefinition>

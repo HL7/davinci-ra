@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="extension-historicDiagnosis"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-historicDiagnosis"/>
+  <name value="RAHistoricDiagnosisExtension"/>
+  <title value="RA Historic Diagnosis Extension"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2021-07-20"/>
+  <publisher value="Da Vinci Project"/>
+  <description value="Risk Adjustment Historic Diagnosis Extension"/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="MeasureReport.group"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="This is an historic diagnosis code that rolls up to a HCC"/>
+      <definition value="Historic diagnosis code that could roll up to a HCC"/>
+      <comment value="This is an extension to represent histroic diagnosis"/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-historicDiagnosis"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="extension-evidenceStatus"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatus"/>
+  <name value="EvidenceExtension"/>
+  <title value="Evidence Status Extension"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2021-07-20"/>
+  <publisher value="Da Vinci Project"/>
+  <description value="This extension is for HCC Gap Evidence Status, which is confirmed, non-confirmed, and pending."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="MeasureReport.group"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="This is status of HCC gap evidence: confirmed|non-confirmed|pending"/>
+      <definition value="HCC gap evidence status"/>
+      <comment value="This extension represents the evidence status of an HCC gap"/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatus"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <short value="Indicate whether an HCC is confirmed, non-confirmed, or pending"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/evidence-status"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

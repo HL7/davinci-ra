@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="extension-evidenceStatusDate"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatusDate"/>
+  <name value="RAClinicalEvidenceStatusDateExtension"/>
+  <title value="Risk Adjustment Evidence Status Date Extension"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2021-07-20"/>
+  <publisher value="Da Vinci Project"/>
+  <description value="Risk Adjustment Evidence Status Date Extension"/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="MeasureReport"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Last change date of the evidence status."/>
+      <definition value="Last change date of the evidence status."/>
+      <comment value="This is an extension to represent the last evidence status change date"/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatusDate"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
