@@ -1,7 +1,13 @@
 
+<div markdown="1" class="bg-info">
+<b>The Da Vinci Risk Adjustment Implementation Guide is under development</b>
+</div>
+
 ###  Summary
 
-(The Da Vinci Risk Adjustment Implementation Guide is under development)
+The Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide (this IG) describes Risk Adjustment coding gaps exchanges from Payers to Providers.
+
+This Implementation Guide is supported by the Da Vinci initiative which is a private effort to accelerate the adoption of Health Level Seven International Fast Healthcare Interoperability Resources (HL7® FHIR®) as the standard to support and integrate value-based care (VBC) data exchange across communities.
 
 ### How to read this Guide
 

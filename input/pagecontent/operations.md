@@ -1,6 +1,7 @@
 
-(The Da Vinci Risk Adjustment Implementation Guide is under development)
-The list of operations defined by this implementation guide.
+<div markdown="1" class="bg-info">
+<b>The Da Vinci Risk Adjustment Implementation Guide is under development</b>
+</div>
 
 ### Operations
 

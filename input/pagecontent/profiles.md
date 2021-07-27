@@ -1,6 +1,7 @@
 
-(The Da Vinci Risk Adjustment Implementation Guide is under development)
-This is the page that will list the profiles defined in this implementation guide.
+<div markdown="1" class="bg-info">
+<b>The Da Vinci Risk Adjustment Implementation Guide is under development</b>
+</div>
 
 ### Profiles
 
