@@ -5,11 +5,31 @@
 
 ###  Summary
 
-The Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide (this IG) describes Risk Adjustment coding gaps exchanges from Payers to Providers.
+This Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide (IG) describes exchanging Risk Adjustment coding gaps between Payers and Providers. The first phase of this IG focuses on the standard exchange format from Payers from Providers.
 
 This Implementation Guide is supported by the Da Vinci initiative which is a private effort to accelerate the adoption of Health Level Seven International Fast Healthcare Interoperability Resources (HL7® FHIR®) as the standard to support and integrate value-based care (VBC) data exchange across communities.
 
 ### How to read this Guide
+
+This Guide is divided into several pages which are listed at the top of each page in the menu bar:
+
+- [Home]\: The home page provides the summary and background information for the FHIR Risk Adjustment FHIR IG.
+
+- [Introduction]\: The introduction provides [TODO].
+
+- [HCC]\: The Hiearchical Condition Category page [TODO].
+
+- [Profiles]\: This page under FHIR artifacts lists the set of Profile that are defined in this guide to exchange Risk Adjustment coding gaps.
+
+- [Extension]\: This page under FHIR artifacts lists the set of Profile that are defined in this guide to exchange Risk Adjustment coding gaps.
+
+- [Terminology]\: This page under FHIR artifacts lists code systems and value sets defined in this guide.
+
+- [Capability statements]\: This set of pages describes the expected FHIR capabilities of the various DEQM actors.
+
+- [Examples]\: List of all the examples used in this guide.
+
+- [Downloads]\: This page provides links to downloadable artifacts.
 
 
 ### Background
