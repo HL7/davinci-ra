@@ -19,15 +19,19 @@ This Guide is divided into several pages which are listed at the top of each pag
 
 - [HCC]\: The Hiearchical Condition Category page [TODO].
 
-- [Profiles]\: This page under FHIR artifacts lists the set of Profile that are defined in this guide to exchange Risk Adjustment coding gaps.
+- [FHIR Artifacts/Profiles]\: This page lists the set of Profile that are defined in this guide to exchange Risk Adjustment coding gaps.
 
-- [Extension]\: This page under FHIR artifacts lists the set of Profile that are defined in this guide to exchange Risk Adjustment coding gaps.
+- [FHIR Artifacts/Extensions]\: This page lists the set of Profile that are defined in this guide to exchange Risk Adjustment coding gaps.
 
-- [Terminology]\: This page under FHIR artifacts lists code systems and value sets defined in this guide.
+- [FHIR Artifacts/Operations]\: This page lists operations defined in this guide.
 
-- [Capability statements]\: This set of pages describes the expected FHIR capabilities of the various DEQM actors.
+- [FHIR Artifacts/Terminology]\: This page lists code systems and value sets defined in this guide.
+
+- [FHIR Artifacts/Capability statements]\: This page describes the expected FHIR capabilities of the various DEQM actors.
 
 - [Examples]\: List of all the examples used in this guide.
+
+- [Glossary]\: List of glossary for this guide.
 
 - [Downloads]\: This page provides links to downloadable artifacts.
 
