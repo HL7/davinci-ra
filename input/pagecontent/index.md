@@ -40,11 +40,15 @@ This Guide is divided into several pages which are listed at the top of each pag
 {: #background}
 
 ### Scope
+
+<img src="workflow-medicare-advantage.png" alt="Figure 1-1 Workflow for Medicare Advantage Population" class="img-responsive img-rounded center-block"/>
+
 <b>Phase One Goal and Scope</b>
 - *Goal*: Define standard methodology (format) for Payers to communicate coding gaps to Providers.
-- *In Scope*: Payer communicates risk coding report to Provider group (for individual or group of Members).
- Focus on CMS-HCC Risk Adjustment Model - for Medicare Advantage Program, but make sure that we will keep it agonistic enough that  is able to support other models such as HHS-HCC, commercial models maybe used by Medicaid
-Focus on medical Risk Adjustment Model. RxC (prescription drug category) is out of scope, since it uses pharmacy data to determine risk adjustment. RxHCC is in scope, since it uses diagnosis to determine risk adjustment similar to HCC.  
+- *In Scope*:
+  - Payer communicates risk adjustment coding gaps report to Provider group (for individual or group of Members).
+  - Focus on CMS-HCC Risk Adjustment Model - for Medicare Advantage Program, but make sure that we will keep it agonistic enough that  is able to support other models such as HHS-HCC, commercial models maybe used by Medicaid.
+  - Focus on medical Risk Adjustment Model. RxC (prescription drug category) is out of scope, since it uses pharmacy data to determine risk adjustment. RxHCC is in scope, since it uses diagnosis to determine risk adjustment similar to HCC.  
 - *Potential Topics to Address in Phase Two*
   - Support HCC Performance Gaps
   - Invalidation of HCC gaps
@@ -57,6 +61,8 @@ Mechanism for Providers to communicate HCC invalidations to Payer is out of scop
 Depending on the HCC, the invalidation rates varies based on a number of variables - the quality of the suspecting, the characteristics of the disease, etc.
   - Suspecting process and algorithms/predictive models that are used for suspecting analytics are out of scope of this Use Case
 Payers communication to Providers on patient Attribution
+
+
 
 ### Acronyms
 

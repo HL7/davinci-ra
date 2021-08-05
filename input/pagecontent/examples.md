@@ -1,7 +1,10 @@
 
+<div markdown="1" class="bg-info">
+<b>The Da Vinci Risk Adjustment Implementation Guide is under development</b>
+</div>
+
 ###  Examples
 
-(The Da Vinci Risk Adjustment Implementation Guide is under development)
 List of the Examples
 
 

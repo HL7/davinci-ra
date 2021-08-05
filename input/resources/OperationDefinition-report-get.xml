@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OperationDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="report-get"/>
+    <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/report-get"/>
+    <name value="ReportGet"/>
+    <title value="Report Get Operation"/>
+    <status value="draft"/>
+    <kind value="operation"/>
+    <date value="2021-07-20"/>
+    <publisher value="Da Vinci Project"/>
+    <description value="The report-get operation is used to determine coding gaps for a specified clinical evaluation period for a risk adjustment model defaulted by the Server."/>
+    <code value="report-get"/>
+    <comment value="This operation is under development"/>
+    <resource value="MeasureReport"/>
+    <system value="false"/>
+    <type value="true"/>
+    <instance value="false"/>
+    <parameter>
+        <name value="periodStart"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="The start of a clinical evaluation period."/>
+        <type value="date"/>
+    </parameter>
+    <parameter>
+        <name value="periodEnd"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="The end of a clinical evaluation period."/>
+        <type value="date"/>
+    </parameter>
+    <parameter>
+        <name value="subject"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <documentation value="Subject will be a reference to a patient"/>
+        <type value="string"/>
+        <searchType value="reference"/>
+    </parameter>
+    <parameter>
+        <name value="practitioner"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <documentation value="Reference to a practitioner for which the risk adjustment coding gaps report will be created."/>
+        <type value="string"/>
+        <searchType value="reference"/>
+    </parameter>
+    <parameter>
+        <name value="organization"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <documentation value="Reference to an organization for which the risk adjustment coding gaps report will be created."/>
+        <type value="string"/>
+        <searchType value="reference"/>
+    </parameter>
+    <parameter>
+        <name value="hccModel"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <documentation value="Most recent version of the HCC Risk Adjustment Model."/>
+        <type value="string"/>
+    </parameter>
+    <parameter>
+        <name value="evidenceStatus"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="*"/>
+        <documentation value="Indicate the evidence status to be either confirmed, non-confirmed, or pending. If no evidence status is provided, the default is all."/>
+        <binding>
+          <strength value="extensible"/>
+          <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/evidence-status"/>
+        </binding>
+        <type value="code"/>
+    </parameter>
+    <parameter>
+        <name value="suspectType"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <documentation value="Indicate the suspect type to be either historic or suspected. If suspectType parameter is not provided, the detault is both historic and suspected."/>
+        <binding>
+          <strength value="extensible"/>
+          <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/suspect-type"/>
+        </binding>
+        <type value="code"/>
+    </parameter>
+    <parameter>
+        <name value="return"/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="*"/>
+        <documentation value="this is under development"/>
+        <type value="Bundle"/>
+    </parameter>
+    <overload>
+      <parameterName value="periodStart"/>
+      <parameterName value="periodEnd"/>
+      <parameterName value="subject"/>
+      <parameterName value="hccModel"/>
+      <parameterName value="evidenceStatus"/>
+      <parameterName value="suspectType"/>
+      <comment value="Overload option 1"/>
+    </overload>
+    <overload>
+      <parameterName value="periodStart"/>
+      <parameterName value="periodEnd"/>
+      <parameterName value="practitioner"/>
+      <parameterName value="organization"/>
+      <parameterName value="hccModel"/>
+      <parameterName value="evidenceStatus"/>
+      <parameterName value="suspectType"/>
+      <comment value="Overload option 2"/>
+    </overload>
+    <overload>
+      <parameterName value="periodStart"/>
+      <parameterName value="periodEnd"/>
+      <parameterName value="organization"/>
+      <parameterName value="hccModel"/>
+      <parameterName value="evidenceStatus"/>
+      <parameterName value="suspectType"/>
+      <comment value="Overload option 3"/>
+    </overload>
+    <overload>
+      <parameterName value="periodStart"/>
+      <parameterName value="periodEnd"/>
+      <parameterName value="subject"/>
+      <parameterName value="hccModel"/>
+      <parameterName value="evidenceStatus"/>
+      <comment value="Overload option 4: suspectType not included"/>
+    </overload>
+    <overload>
+      <parameterName value="periodStart"/>
+      <parameterName value="periodEnd"/>
+      <parameterName value="practitioner"/>
+      <parameterName value="organization"/>
+      <parameterName value="hccModel"/>
+      <parameterName value="evidenceStatus"/>
+      <comment value="Overload option 5: suspectType not included"/>
+    </overload>
+    <overload>
+      <parameterName value="periodStart"/>
+      <parameterName value="periodEnd"/>
+      <parameterName value="organization"/>
+      <parameterName value="hccModel"/>
+      <parameterName value="evidenceStatus"/>
+      <comment value="Overload option 6: suspectType not included"/>
+    </overload>
+</OperationDefinition>

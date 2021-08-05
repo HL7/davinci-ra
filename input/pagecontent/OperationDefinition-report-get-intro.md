@@ -1,15 +1,10 @@
 
+{% assign id = {{page.id}} %}
+
 <div markdown="1" class="bg-info">
 <b>The Da Vinci Risk Adjustment Implementation Guide is under development</b>
 </div>
+<br>
 
-### Operations
-
-|Link to operations|
-|---|
-|[$report-get Operation](OperationDefinition-report-get.html)|
-
-
-<br />
 
 {% include link-list.md %}
