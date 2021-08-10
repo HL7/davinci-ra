@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="patient-group"/>
+    <url value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/patient-group"/>
+    <name value="PatientGroupProfile"/>
+    <title value="Patient Group Profile"/>
+    <status value="draft"/>
+    <date value="2021-08-09"/>
+    <publisher value="Da Vinci Project"/>
+    <description value="The Patient Group Profile describes a group consisting of one or more patients."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Group"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Group"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Group">
+            <path value="Group"/>
+        </element>
+        <element id="Group.member">
+          <path value="Group.member"/>
+          <short value="Who is in group"/>
+          <min value="1"/>
+          <max value="*"/>
+          <mustSupport value="true"/>
+        </element>
+        <element id="Group.member.entity">
+            <path value="Group.member.entity"/>
+            <short value="Reference to the patient that is in group"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

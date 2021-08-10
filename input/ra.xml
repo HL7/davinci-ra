@@ -73,6 +73,11 @@
           <title value="Risk Adjustment Measure Report"/>
           <generation value="generated"/>
         </page>
+        <page>
+          <nameUrl value="StructureDefinition-patient-group.html"/>
+          <title value="Patient Group"/>
+          <generation value="generated"/>
+        </page>
       </page>
       <page>
         <nameUrl value="extensions.html"/>

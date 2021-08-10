@@ -7,7 +7,7 @@
 
 |Link to operations|
 |---|
-|[$report-get Operation](OperationDefinition-report-get.html)|
+|[$report Operation](OperationDefinition-report.html)|
 
 
 <br />

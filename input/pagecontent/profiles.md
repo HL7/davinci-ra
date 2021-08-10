@@ -9,6 +9,8 @@
 |---|---|---|
 |MeasureReport|Risk Adjustment Coding Gap Report Profile|[Risk Adjustment Coding Gap Report Profile]|
 |Measure|Risk Adjustment Model Measure Profile|[Risk Adjustment Model Measure Profile]|
+|Measure|Patient Group Profile|[Patient Group Profile]|
+
 
 
 <br />
