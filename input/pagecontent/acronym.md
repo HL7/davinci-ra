@@ -3,9 +3,11 @@
 <b>The Da Vinci Risk Adjustment Implementation Guide is under development</b>
 </div>
 
-###   Hierarchical Condition Category
 
-
+|Acronym   |Full Term||
+|---|---|---|
+|HCC   |Hierarchical Condition Category||
+|CMS-HCC   |CMS Hierarchical Condition Category||
 
 ---
 

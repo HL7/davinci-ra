@@ -60,6 +60,11 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <nameUrl value="guidance.html"/>
+        <title value="Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="profiles.html"/>
         <title value="Profiles"/>
         <generation value="markdown"/>
@@ -127,6 +132,11 @@
       <page>
         <nameUrl value="examples.html"/>
         <title value="Examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="acronym.html"/>
+        <title value="Acronyms"/>
         <generation value="markdown"/>
       </page>
       <page>

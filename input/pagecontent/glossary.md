@@ -3,8 +3,6 @@
 <b>The Da Vinci Risk Adjustment Implementation Guide is under development</b>
 </div>
 
-###  Glossary
-
 {: #hcc-model}Hierarchical Condition Category (HCC) Model
   : A risk adjustment model that is used to calculate risk scores to predict future healthcare costs. There are two types of HCC models. The CMS-HCC Risk Adjustment Model is used for Medicare Advantage Program. The HHS-HCC Risk Adjustment Model is used for commercial payer populations and covers all age. Medicaid has more flexibility, they may use any model, such as Chronic Illness & Disability Payment system (CDPS), 3M model.
 

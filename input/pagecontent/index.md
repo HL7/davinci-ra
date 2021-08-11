@@ -17,7 +17,9 @@ This Guide is divided into several pages which are listed at the top of each pag
 
 - [Introduction]\: The introduction provides [TODO].
 
-- [HCC]\: The Hiearchical Condition Category page [TODO].
+- [Risk Adjustment]\: The risk adjustment page describes risk adjustment models such as the Hiearchical Condition Category (HCC).
+
+- [Guidance]\: The guidance page provides guidance on the resource profiles and operation defined in this implementation guide.
 
 - [FHIR Artifacts/Profiles]\: This page lists the set of Profile that are defined in this guide to exchange Risk Adjustment coding gaps.
 
@@ -31,13 +33,18 @@ This Guide is divided into several pages which are listed at the top of each pag
 
 - [Examples]\: List of all the examples used in this guide.
 
-- [Glossary]\: List of glossary for this guide.
+- [Glossary/Acronyms]\: List of acronyms for this guide.
+
+- [Glossary/Glossary]\: List of glossary for this guide.
 
 - [Downloads]\: This page provides links to downloadable artifacts.
 
 
 ### Background
 {: #background}
+
+### Audience
+
 
 ### Scope
 
@@ -62,9 +69,6 @@ Depending on the HCC, the invalidation rates varies based on a number of variabl
   - Suspecting process and algorithms/predictive models that are used for suspecting analytics are out of scope of this Use Case
 Payers communication to Providers on patient Attribution
 
-
-
-### Acronyms
 
 ---
 

@@ -6,12 +6,15 @@
 [Risk Adjustment Model Measure Profile]: StructureDefinition-ra-model-measure.html
 [Patient Group Profile]: StructureDefinition-patient-group.html
 [Introduction]: introduction.html
-[HCC]: hcc.html
+[Risk Adjustment]: ra.html
+[Guidance]: guidance.html
 [FHIR Artifacts/Profiles]: profiles.html
 [FHIR Artifacts/Extensions]: extensions.html
 [FHIR Artifacts/Operations]: operations.html
 [FHIR Artifacts/Terminology]: terminology.html
 [FHIR Artifacts/Capability Statements]: capabilities.html
-[Glossary]: glossary.html
+[Glossary/Glossary]: glossary.html
+[Glossary/Acronyms]: acronym.html
 [Examples]: examples.html
 [Downloads]: downloads.html
+[HRex Coverage Profile]: http://build.fhir.org/ig/HL7/davinci-ehrx/StructureDefinition-hrex-coverage.html
