@@ -3,7 +3,10 @@
 <b>The Da Vinci Risk Adjustment Implementation Guide is under development</b>
 </div>
 
-###  Hierarchical Condition Category
+###   Risk Adjustment Model
+
+
+####  Hierarchical Condition Category
 
 
 

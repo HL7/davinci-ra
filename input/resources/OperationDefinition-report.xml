@@ -35,40 +35,18 @@
     <parameter>
         <name value="subject"/>
         <use value="in"/>
-        <min value="0"/>
+        <min value="1"/>
         <max value="1"/>
         <documentation value="Subject will be a reference to either Patient [US Core Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) or Group [Patient Group Profile](StructureDefinition-patient-group.html). Must provide either Patient/123 or Group/123, cannot simply provide 123. If only 123 is provided, then the operation would not know if it is a Patient reference or a Group reference."/>
         <type value="string"/>
         <searchType value="reference"/>
     </parameter>
     <parameter>
-        <name value="hccCode"/>
-        <use value="in"/>
-        <min value="0"/>
-        <max value="*"/>
-        <documentation value="This is Hiearchical Condition Category code(s). This parameter's search type is [token](http://build.fhir.org/search.html#token)"/>
-        <type value="string"/>
-        <searchType value="token"/>
-    </parameter>
-    <parameter>
         <name value="return"/>
         <use value="out"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="this is under development"/>
+        <documentation value="The $report operation returns Parameters resource, containing zero or more Risk Adjustment MeasureReport."/>
         <type value="Bundle"/>
     </parameter>
-    <overload>
-      <parameterName value="periodStart"/>
-      <parameterName value="periodEnd"/>
-      <parameterName value="subject"/>
-      <comment value="Overload option 1"/>
-    </overload>
-    <overload>
-      <parameterName value="periodStart"/>
-      <parameterName value="periodEnd"/>
-      <parameterName value="subject"/>
-      <parameterName value="hccCode"/>
-      <comment value="Overload option 2"/>
-    </overload>
 </OperationDefinition>

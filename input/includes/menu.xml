@@ -1,7 +1,7 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
   <li><a href="introduction.html">Introduction</a></li>
-  <li><a href="hcc.html">HCC</a></li>
+  <li><a href="ra.html">Risk Adjustment</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts<b class="caret"></b></a>
     <ul class="dropdown-menu">
