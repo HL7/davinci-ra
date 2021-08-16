@@ -5,7 +5,6 @@
 [Risk Adjustment Coding Gap Report Profile]: StructureDefinition-ra-measurereport.html
 [Risk Adjustment Model Measure Profile]: StructureDefinition-ra-model-measure.html
 [Patient Group Profile]: StructureDefinition-patient-group.html
-[Introduction]: introduction.html
 [Risk Adjustment]: ra.html
 [Guidance]: guidance.html
 [FHIR Artifacts/Profiles]: profiles.html

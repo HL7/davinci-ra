@@ -6,8 +6,10 @@
 
 |Acronym   |Full Term||
 |---|---|---|
+|CC   |Condition Category||
 |HCC   |Hierarchical Condition Category||
-|CMS-HCC   |CMS Hierarchical Condition Category||
+|CMS-HCC   |Centers of Medicare and Medicaid Services Hierarchical Condition Category||
+|HHS-HCC   |Health and Human Services Hierarchical Condition Category||
 
 ---
 

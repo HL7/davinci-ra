@@ -3,33 +3,32 @@
 <b>The Da Vinci Risk Adjustment Implementation Guide is under development</b>
 </div>
 
-{: #hcc-model}Hierarchical Condition Category (HCC) Model
-  : A risk adjustment model that is used to calculate risk scores to predict future healthcare costs. There are two types of HCC models. The CMS-HCC Risk Adjustment Model is used for Medicare Advantage Program. The HHS-HCC Risk Adjustment Model is used for commercial payer populations and covers all age. Medicaid has more flexibility, they may use any model, such as Chronic Illness & Disability Payment system (CDPS), 3M model.
+- <b>Condition Category</b>
+  Condition Categories (CCs) describe a broader set of similar diseases. Diseases within a Condition Category are related clinically and with respect to cost. Condition Categories are categories before imposing hierarchies. ICD-9-CM or ICD-10-CM codes are mapped to diagnostic groups (DXGs), which represents a well-specified medical condition. DXGs are further aggregated into Condition Categories. An example is CC 96 *Ischemic or Unspecified Stroke*, which includes DXG 96.01 *precerebral or cerebral arterial occlusion with infarction* and DXG 96.02 *acute but ill-defined cerebrovascular disease*.
 
+- <b>Hierarchical Condition Category</b>
+  Condition Categories become Hierarchical Condition Categories (HCCs) after imposing hierarchies. Hierarchies are imposed among related Condition Categories, so that a person is coded for only the most severe manifestation among related diseases. If a person is coded with more than one CC in a hierarchy, only the highest (most severe) CC in the hierarchy will be coded as the HCC. For example, if a beneficiary has an ICD-9-CM code that groups into HCC 86, having CC 86 precludes HCCs 87 or 88 from being assigned, even if ICD-9-CM codes that group into those categories were also present. Similarly, a person with ICD-9-CM codes that group into both CC 87 *Unstable Angina* and Other Acute Ischemic Heart Disease and CC 88 *Angina Pectoris/Old Myocardial Infarction* is coded for HCC 87, but not HCC 88.
 
-{: #hcc}Hierarchical Condition Category
-  : A set of codes that categorizes ICD diagnosis codes into disease groups that are similar both clinically and financially.
+- <b>Risk Adjustment</b>
+  Risk adjustment is a method of adjusting capitation payments to health plans, to account for the differences in expected health cost of individuals enrolled in the plan. Risk adjustment is intended to be accurate at the group level. At the individual level, predicted medical costs can be lower or higher than actual medical costs, but at the group level, below-average predicated costs balance out above-average predicated costs.
 
+- <b>Risk Adjustment Model</b>
+   Risk adjustment models are used to calculate risk scores to predict future healthcare costs. There are a number of risk adjustment models. For example, the CMS-HCC risk adjustment model is used for Medicare Advantage Program. The HHS-HCC risk adjustment model is used for commercial payer populations and covers all age. Medicaid has more flexibility, they may use any model, such as Chronic Illness & Disability Payment system (CDPS), 3M model.
 
-{: #condition-category}Condition Category
-  : A group of diagnoses. Diabetes have 3 categories 17, 18, 19 (19 being most severe). Condition Category are categories before the hierarchy has been applied.
+- <b>Historic Condition</b>
+  Condition that has been seen in the past (that was documented on a claim from a previous year or documented from other data source, e.g., Model Output report (MOR), or chart from a prior year) but not yet confirmed in the current year. Historic Condition may also be referred to as Certified Condition by some Payers. This may also called Persistent Condition. Many historic conditions are persistent.  
 
+- <b>Evidence Status</b>
+  - <b>confirmed</b>
+  HCC exists for the Member for the relevant year and can be used for risk adjustment for that year. HCC may be confirmed by a claim submitted for the current year or confirmed by other sufficient documentations such as a CMS Model Output Report (MOR). Evidence status confirmed may also known as evidence status closed.  
+  - <b>unconfirmed</b>
+  HCC does not exist for the Member for the relevant year and can not be used for risk adjustment for that year until evidence is confirmed. Evidence status unconfirmed may also known as evidence status open.  
 
-{: #historic-condition}Historic Condition
-  : Condition that has been seen in the past (that was documented on a claim from a previous year or documented from other data source, e.g., Model Output report (MOR), or chart from a prior year) but not yet confirmed in the current year. Historic Condition may also be referred to as Certified Condition by some Payers. This may also called Persistent Condition. Many historic conditions are persistent.  
+- <b>Suspecting</b>
+  Suspecting is the process of determining who is likely to have which risk-adjustable medical conditions. HCC suspect analytics are generated by healthplans or third party vendors.
 
-
-{: #suspected-condition}Suspected Condition
-  : Condition that is not diagnosed or documented in the current year, but are suspected by the Payer based on AI algorithms using data such as lab results and procedures. Suspected Condition may also be referred to as Potential Condition by some Payers.
-
-
-{: #confirmed-status}Evidence Status - Confirmed
-  : HCC exists for the Member for the relevant year and can be used for risk adjustment for that year. HCC may be confirmed by a claim submitted for the current year or confirmed by other sufficient documentations such as a CMS Model Output Report (MOR). Evidence status confirmed may also known as evidence status closed.  
-
-
-{: #unconfirmed-status}Evidence Status - Unconfirmed
-  : HCC does not exist for the Member for the relevant year and can not be used for risk adjustment for that year until evidence is confirmed. Evidence status unconfirmed may also known as evidence status open.  
-
+- <b>Suspected Condition</b>
+  Condition that is not diagnosed or documented in the current year, but are suspected by the Payer based through the suspecting process, such as through AI algorithms using data such as lab results and procedures. Suspected Condition may also be referred to as Potential Condition by some Payers.
 ---
 
 {% include link-list.md %}

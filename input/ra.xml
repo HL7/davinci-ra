@@ -50,18 +50,13 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="introduction.html"/>
-        <title value="Introduction"/>
+        <nameUrl value="guidance.html"/>
+        <title value="Guidance"/>
         <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="ra.html"/>
         <title value="Risk Adjustment"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="guidance.html"/>
-        <title value="Guidance"/>
         <generation value="markdown"/>
       </page>
       <page>

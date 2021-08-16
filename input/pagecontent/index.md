@@ -15,8 +15,6 @@ This Guide is divided into several pages which are listed at the top of each pag
 
 - [Home]\: The home page provides the summary and background information for the FHIR Risk Adjustment FHIR IG.
 
-- [Introduction]\: The introduction provides [TODO].
-
 - [Risk Adjustment]\: The risk adjustment page describes risk adjustment models such as the Hiearchical Condition Category (HCC).
 
 - [Guidance]\: The guidance page provides guidance on the resource profiles and operation defined in this implementation guide.
