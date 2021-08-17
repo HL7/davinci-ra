@@ -5,7 +5,7 @@
 
 ###  Summary
 
-This Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide (IG) describes exchanging Risk Adjustment coding gaps between Payers and Providers. The first phase of this IG focuses on the standard exchange format from Payers from Providers.
+This Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide (IG) describes exchanging Risk Adjustment coding gaps between Payers and Providers. The first phase of this IG focuses on the standard exchange format from Payers to Providers.
 
 This Implementation Guide is supported by the Da Vinci initiative which is a private effort to accelerate the adoption of Health Level Seven International Fast Healthcare Interoperability Resources (HL7® FHIR®) as the standard to support and integrate value-based care (VBC) data exchange across communities.
 
@@ -37,9 +37,23 @@ This Guide is divided into several pages which are listed at the top of each pag
 
 - [Downloads]\: This page provides links to downloadable artifacts.
 
-
 ### Background
 {: #background}
+Risk adjustment is a method of adjusting capitation payments to health plans, to account for the differences in expected health cost of individuals enrolled in the plan. Capitation payments are an incentive for health plans to enroll not only healthier individual but those with chronic conditions or who are more seriously ill by removing some of the financial burden [1], shifting the focus of plan competition to plan benefits, quality, efficiency, and value. Risk adjustment is intended to be accurate at the group level. At the individual level, predicted medical costs can be lower or higher than actual medical costs, but at the group level, below-average predicated costs balance out above-average predicated costs.
+
+Risk adjustment is important to Centers for Medicare and Medicaid Services (CMS) capitation payment. The CMS Medicare Advantage program, through which private plans provide health insurance to Medicare beneficiaries, utilizes a risk adjustment mechanism, as does the Medicare Part D program, which provides prescription drug insurance through private plans to Medicare beneficiaries [2]. Risk adjustment model is also used by Medicaid, Accountable Care Act (ACA) plans, and private health insurances.
+
+There are different risk adjustment models for different populations, such as CMS Hierarchical Condition Category (CMS-HCC), HHS-HCC, the Chronic Illness and Disability Payment System (CDPS), and commercial ones. While the design of this guide is agonistic so it can support other risk adjustment models, it focuses on the CMS-HCC used by the CMS Medicare Advantage program.
+
+The risk adjustment process occurs annually and requires capturing each member’s full burden of illness [3]. Risk adjustment is particularly important for Medicare Advantage patients. Every January 1, Medicare wipes the state clean for all members and everyone is considered completely healthy until diagnosis codes are reported. Therefore, it is important for providers to evaluate and accurately document all conditions related to the patient’s health status annually. This will ensure that payer data is up-to-date and will therefore maximize the resources available to the providers and patients. If a chronic condition is not reported annually, it indicates the condition is resolved and no longer exists, leading to an inaccurate depiction of the patient’s health status and inaccurate risk scores set by the payer [4].
+
+Accurate and complete documentation of chronic illnesses are the biggest implementation challenges for risk adjustment. To better inform providers of opportunities to address adjusted conditions, better enable payers to communicate risk adjustment information, and enhance government sponsors' ability to allocate funding accurately. Payers need a standard protocol to share and receive clinical data related to risk adjustment with responsible providers. Providers need a standard protocol to share and receive clinical data related to risk adjustment with responsible payers. Both payers and providers also need a standard methodology to communicate risk based coding, documentation and submission status of chronic illnesses. The purpose of this guide is to specify a standard methodology (format) to communicate risk-based coding gaps between payers and providers for individuals or group of patients, which would help drive accurate and complete documentation of health conditions
+
+### Risk Adjustment of Capitation Payment vs. Risk Adjustment in Quality Measurement
+
+The term *risk adjustment* has been used in capitated payment calculations and in quality measurement and may present different meaning to the payer and quality measurement communities. This guide is focused solely on the risk adjustment for capitation payment. It is not intended to cover the topic of risk adjustment in quality measurement.
+
+Risk adjustment in quality measurement refers to the inclusion of risk factors associated with a measure score in a statistical model of provider performance captured at the person, facility, community, or other levels. It promotes fair and accurate comparison of healthcare outcomes across healthcare organizations and providers.[5] Measure developers often risk adjust outcome measures, however not all measures need risk adjustment. The Quality Measure Implementation Guide and the Da Vinci Data Exchange for Quality Measurement Implementation Guide are the FHIR implementation guides where the topic of risk adjustment in quality measurement would be covered.
 
 ### Audience
 

@@ -130,11 +130,6 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="acronym.html"/>
-        <title value="Acronyms"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
         <nameUrl value="glossary.html"/>
         <title value="Glossary"/>
         <generation value="markdown"/>

@@ -13,13 +13,7 @@
     </ul>
   </li>
   <li><a href="examples.html">Examples</a></li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Glossary<b class="caret"></b></a>
-    <ul class="dropdown-menu">
-      <li><a href="acronym.html">Acronyms</a></li>
-      <li><a href="glossary.html">Glossary</a></li>
-    </ul>
-  </li>
+  <li><a href="glossary.html">Glossary</a></li>  
   <li><a href="downloads.html">Downloads</a></li>
   <li><a href="changes.html">Change Notes</a></li>
 </ul>
