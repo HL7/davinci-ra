@@ -40,7 +40,7 @@
 |<b>Acronym</b>|   |<b>Definition</b>|
 |---|---|---|
 |CC|      |---Condition Category|
-|CMS-HCC|     |----Centers of Medicare and Medicaid Services Hierarchical Condition Category|
+|CMS-HCC|     |---Centers of Medicare and Medicaid Services Hierarchical Condition Category|
 |DXG|     |---Diagnostic Group|
 |HCC|     |---Hierarchical Condition Category|
 |HHS-HCC|     |---Health and Human Services Hierarchical Condition Category|

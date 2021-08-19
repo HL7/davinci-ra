@@ -35,8 +35,8 @@
       </type>
       <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-suspectType"/>
     </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]"/>
+    <element id="Extension.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
       <short value="Indicate whether HCC gap is historic or suspected"/>
       <type>
         <code value="CodeableConcept"/>

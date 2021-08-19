@@ -35,8 +35,8 @@
       </type>
       <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatusDate"/>
     </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]"/>
+    <element id="Extension.valueDate">
+      <path value="Extension.valueDate"/>
       <type>
         <code value="date"/>
       </type>
