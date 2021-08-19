@@ -180,6 +180,11 @@
           <title value="MeasureReport01"/>
           <generation value="generated"/>
         </page>
+        <page>
+          <nameUrl value="Measure-ra-model-example01.html"/>
+          <title value="Measure01"/>
+          <generation value="generated"/>
+        </page>        
       </page>
       <page>
         <nameUrl value="glossary.html"/>

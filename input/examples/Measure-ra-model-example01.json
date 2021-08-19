@@ -1,0 +1,46 @@
+{
+  "resourceType": "Measure",
+  "id": "ra-model-example01",
+  "meta": {
+      "profile": [
+          "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-model-measure"
+      ],
+      "source": "http://example.org/fhir/server"
+  },
+  "url": "https://build.fhir.org/ig/HL7/davinci-ra/Measure-ra-model-example01",
+  "identifier": [
+    {
+      "use": "temp",
+      "system": "http://hl7.org/fhir/us/davinci-ra",
+      "value": "CMS-HCC"
+    }
+  ],
+  "version": "24",
+  "name": "CMS-HCC Model V24",
+  "title": "CMS Hiearchical Category Condition (CMS-HCC) Risk Adjustment Model Version 24",
+  "status": "active",
+  "experimental": true,
+  "date": "2021-08-19",
+  "publisher": "HL7 International - Clinical Quality Information Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cqi/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "*Example Measure resource to demonstrate the framework for Cervical Cancer Screening*: Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria: *  Women age 21-64 who had cervical cytology performed every 3 years.*  Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ]
+}
