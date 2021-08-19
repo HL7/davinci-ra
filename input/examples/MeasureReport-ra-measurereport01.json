@@ -43,7 +43,7 @@
               ],
               "text": "HCC 18: Diabetes with Chronic Complications"
           },
-          "extension-suspectType": [
+          "extension": [
               {
                   "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-suspectType",
                   "valueCodeableConcept": {
@@ -54,10 +54,8 @@
                           }
                       ]
                   }
-              }
-            ],
-            "extension-evidenceStatus": [
-                {
+              },
+              {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatus",
                     "valueCodeableConcept": {
                         "coding": [
@@ -67,17 +65,13 @@
                             }
                         ]
                     }
-                }
-            ],
-            "extension-historicDiagnosis": [
+                },
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-historicDiagnosis",
                     "valueReference": {
                       "value": "http://hl7.org/fhir/us/davinci-ra/Condition/condition01"
                     }
-                }
-            ],
-            "extension-evidenceStatusDate": [
+                },
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatusDate",
                     "valueDate": {
@@ -99,7 +93,7 @@
               ],
               "text": "HCC 59: Major Depressive, Bipolar, and Paranoid Disorders"
             },
-            "extension-suspectType": [
+            "extensione": [
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-suspectType",
                     "valueCodeableConcept": {
@@ -110,10 +104,8 @@
                             }
                         ]
                     }
-                }
-              ],
-              "extension-evidenceStatus": [
-                  {
+                },
+                {
                       "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatus",
                       "valueCodeableConcept": {
                           "coding": [
@@ -123,17 +115,13 @@
                               }
                             ]
                         }
-                    }
-                ],
-                "extension-historicDiagnosis": [
+                    },
                     {
                         "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-historicDiagnosis",
                         "valueReference": {
                           "value": "http://hl7.org/fhir/us/davinci-ra/Condition/condition02"
                         }
-                    }
-                  ],
-                "extension": [
+                    },
                     {
                         "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatusDate",
                         "valueDate": {
@@ -155,7 +143,7 @@
               ],
               "text": "HCC 22: Morbid Obesity"
             },
-            "extension-suspectType": [
+            "extension": [
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-suspectType",
                     "valueCodeableConcept": {
@@ -166,9 +154,7 @@
                             }
                         ]
                     }
-                }
-              ],
-              "extension-evidenceStatus": [
+                },
                   {
                       "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatus",
                       "valueCodeableConcept": {
@@ -179,9 +165,7 @@
                               }
                           ]
                       }
-                  }
-                ],
-                "extension-evidenceStatusDate": [
+                  },
                     {
                         "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatusDate",
                         "valueDate": {
@@ -203,7 +187,7 @@
               ],
               "text": "HCC 96: Specified Heart Arrhythmias"
             },
-            "extension-suspectType": [
+            "extension": [
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-suspectType",
                     "valueCodeableConcept": {
@@ -214,9 +198,7 @@
                             }
                         ]
                     }
-                }
-              ],
-              "extension-evidenceStatus": [
+                },
                   {
                       "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatus",
                       "valueCodeableConcept": {
@@ -243,7 +225,7 @@
                   ],
                   "text": "HCC 110: Cystic Fibrosis"
                 },
-                "extension-suspectType": [
+                "extension": [
                     {
                         "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-suspectType",
                         "valueCodeableConcept": {
@@ -254,9 +236,7 @@
                                 }
                             ]
                         }
-                    }
-                  ],
-                  "extension-evidenceStatus": [
+                    },
                       {
                           "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatus",
                           "valueCodeableConcept": {
@@ -267,17 +247,13 @@
                                   }
                               ]
                           }
-                      }
-                    ],
-                    "extension-historicDiagnosis": [
+                      },
                         {
                             "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-historicDiagnosis",
                             "valueReference": {
                               "value": "http://hl7.org/fhir/us/davinci-ra/Condition/condition03"
                             }
-                        }
-                      ],
-                    "extension-evidenceStatusDate": [
+                        },
                         {
                             "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatusDate",
                             "valueDate": {
@@ -290,6 +266,9 @@
     "evaluatedResource": [
         {
             "reference": "Condition/condition01"
+        },
+        {
+            "reference": "Condition/condition02"
         }
     ]
 }
