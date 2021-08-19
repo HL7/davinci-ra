@@ -35,8 +35,8 @@
       </type>
       <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatus"/>
     </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]"/>
+    <element id="Extension.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
       <short value="Indicate whether an HCC is confirmed, non-confirmed, or pending"/>
       <type>
         <code value="CodeableConcept"/>

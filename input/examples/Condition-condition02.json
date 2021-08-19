@@ -1,0 +1,57 @@
+{
+  "resourceType": "Condition",
+  "id": "condition02",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+    ],
+    "source": "http://example.org/fhir/server"
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active",
+        "display": "Active"
+      }
+    ],
+    "text": "Active"
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed",
+        "display": "Confirmed"
+      }
+    ],
+    "text": "Confirmed"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        }
+      ],
+      "text": "Problem"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "F32.0-5",
+        "display": "Major Depressive Disorder, Single episode"
+      }
+    ],
+    "text": "Major Depressive Disorder, Single episode"
+  },
+  "subject": {
+    "reference": "Patient/patient01",
+    "display": "Kathy Muniz"
+  },
+  "onsetDateTime": "2020-06-10"
+}

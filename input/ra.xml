@@ -34,11 +34,43 @@
     <version value="3.1.0"/>
   </dependsOn>
   <dependsOn id="deqm">
-    <uri value="http://hl7.org/fhir/us/davinci-deqm/"/>
+    <uri value="http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm/"/>
     <packageId value="hl7.fhir.us.davinci-deqm"/>
     <version value="3.0.0"/>
   </dependsOn>
   <definition>
+    <resource>
+      <reference>
+        <reference value="MeasureReport/ra-measurereport01"/>
+      </reference>
+      <name value="ra-measurereport01: Risk Adjustment Measure Report"/>
+      <description value="Example Risk Adjustment Measure Report"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/condition01"/>
+      </reference>
+      <name value="Condition01: Type 2 diabetes with unspecified manisfestations"/>
+      <description value="Type 2 diabetes with unspecified manisfestations"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/condition02"/>
+      </reference>
+      <name value="Condition02: Major Depressive Disorder, Single episode"/>
+      <description value="Major Depressive Disorder, Single episode"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/patient01"/>
+      </reference>
+      <name value="Patient01: Kathy Muniz"/>
+      <description value="Kathy Muniz"/>
+      <exampleBoolean value="true"/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -128,6 +160,26 @@
         <nameUrl value="examples.html"/>
         <title value="Examples"/>
         <generation value="markdown"/>
+        <page>
+          <nameUrl value="Condition-condition01.html"/>
+          <title value="Condition01"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Condition-condition02.html"/>
+          <title value="Condition02"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Patient-patient01.html"/>
+          <title value="Patient01"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MeasureReport-ra-measurereport01.html"/>
+          <title value="MeasureReport01"/>
+          <generation value="generated"/>
+        </page>
       </page>
       <page>
         <nameUrl value="glossary.html"/>
@@ -200,23 +252,23 @@
       <value value="true"/>
     </parameter>
 
-<!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
+<!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings -->
     <parameter>
       <code value="excludexml"/>
-      <value value="true"/>
+      <value value="false"/>
     </parameter>
     <parameter>
       <code value="excludejson"/>
-      <value value="true"/>
+      <value value="false"/>
     </parameter>
     <parameter>
       <code value="excludettl"/>
-      <value value="true"/>
+      <value value="false"/>
     </parameter>
     <parameter>
       <code value="excludemap"/>
       <value value="true"/>
-    </parameter>-->
+    </parameter>
     <parameter>
       <code value="showsource"/>
       <value value="true"/>

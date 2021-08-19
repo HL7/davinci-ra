@@ -35,8 +35,8 @@
       </type>
       <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-historicDiagnosis"/>
     </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]"/>
+    <element id="Extension.valueReference">
+      <path value="Extension.valueReference"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
