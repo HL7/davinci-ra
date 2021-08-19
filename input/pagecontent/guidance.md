@@ -2,9 +2,44 @@
 <div markdown="1" class="bg-info">
 <b>The Da Vinci Risk Adjustment Implementation Guide is under development</b>
 </div>
+### General Guidaince
+
+#### Introduction
+
+Risk Adjustment is a common tool used in value based care to insure that patients are receiving care around all their significant health impacting issues.  It also serves as a tool to insure payers are reimbursed appropriately for the care they are providing in a risk based contract.
+
+#### Preconditions and Assumptions
+- Payer and Provider have established a risk-based contract.
+- A risk adjustment model has been defined.
+- The payer has determined the risk codes and status based on the data they have and systems they used. This Implementation Guide DOES NOT define how a payer determines the Risk Adjustment codes shared on this report.
+- It is the responsibility of the payer to ensure that the data used in the report is present in a structured, retrievable form.
+-  Although the exact mechanisms for securing these exchanges are not specified as part of this implementation guide:
+
+    -  Exchanges are limited to mutually agreed upon (i.e., between the Producer and Consumer) patients list or population.
+
+    -  Systems should use standard authentication and authorization approaches.  The [SMART App Launch] and [SMART backend services] authentication/authorization approach are recommended models.
+
+
+#### Risk Adjustment Coding Gap Reports
+The Risk Adjustment Coding Gap Report is a profile of the FHIR MeasureReport resource
+
+The Risk Adjustment Implementation Guide defines an operation, $report, which allows return of a FHIR bundle based on the input parameters.  The parameters required are the start and end dates of the clinical evaluation period (link to glossary) and a subject.  The subject can be a single patient id as specified on the payer's system or a group of Patients (as specified in the Patient Group Profile)
+
+The operation will return a Risk Adjustment Coding Gap Report which is a profile on a FHIR MeasureReport.  Each Risk Adjustment Coding Gap Report is for a single patient and a single Risk Adjustment Model.  This profile allows for communication of additional information that is not in the base MeasureReport resource.  This includes:
+- the pertinent Risk Adjustment code(s) such as an HCC
+- the historic diagnosis if represent
+- the suspect type (historic/suspected)
+- the evidence status (confirmed/non-confirmed/Pending)
+- the evidence status dates
+- and the Clinical Data Collection Deadline
+
+Included with the Risk Adjustment Coding Gap Report is the ability to share the data the payer has on file as Supporting Evidence for the Risk Adjustment code on the report.  This is accomplished via the evaluatedResource element. The Resources specified here can include any of the US Core Resources and are expected to be things like encounters, lab results, medications, etc.  An extension (extension-groupReference) has been added to this element and  will indicate which Risk Adjustment Code(s) that a a specific Resource supports.  All Resources referenced by the evaluatedResource element SHALL be returned in the $report Bundle
+
+Multiple reports can be generated for a single patient if more than one Risk Adjustment Model applies.  Also if a group of patients are specified as an input to the operation, one Risk Adjustment Coding Gap Report will be returned for each patient for each Risk Adjustment Model that applies.  For example, if you submit a Patient Group as input to the $report and three patients are in the group where two Risk Adjustment Model applies to all three and all three have Risk Adjustment Codes that apply (1-many), you will get back six Risk Adjustment Coding Gap Reports.
 
 
 
 ---
+
 
 {% include link-list.md %}
