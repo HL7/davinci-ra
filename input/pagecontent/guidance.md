@@ -40,11 +40,21 @@ Multiple reports can be generated for a single patient if more than one Risk Adj
 
 #### Risk Adjustment Reporting workflow
 
-The two actors in the Risk Adjustment Reporting workflow are the payer and the provider.  They payer will have a server that receives the $report request from the payer.  The payer will then return a bundle that contains 1 to many Risk Adjustment Coding Gap Reports.
+The two actors in the Risk Adjustment Reporting workflow are the payer and the provider.  They payer will have a server that receives the $report request from the payer.  The payer will then return a bundle that contains 1 to many Risk Adjustment Coding Gap Reports. If there are no Risk Adjustment Reports for the subject(s) submitted, an OperationOutcome will be returned.
 
 <img src="risk-adjustment-gaps-workflow.png" alt="Figure 3-1 Risk Adjustment Reporting Workflow" class="img-responsive img-rounded center-block"/>
 
+### Default Profiles
 
-If there are no Risk Adjustment Reports for the subject(s) submitted, an OperationOutcome will be returned.
+The following resources are used in the Gaps in Care Reporting Scenario:
+
+|Resource Type|Profile Name|Link to Profile|
+|---|---|---|
+|Bundle|DEQM Gaps In Care Bundle Profile|[DEQM Gaps In Care Bundle Profile]|
+|Group|DEQM Gaps In Care Group Profile|[DEQM Gaps In Care Group Profile]|
+|MeasureReport|DEQM Individual MeasureReport Profile|[DEQM Individual MeasureReport Profile]|
+
+Figure 3-2 provides a graphical view of how these resources are related.
+
 
 {% include link-list.md %}
