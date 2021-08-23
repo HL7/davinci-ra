@@ -56,7 +56,23 @@ The following resources are used in the Gaps in Care Reporting Scenario:
 |Measure|Risk Adjustment Model Measure Profile|[Risk Adjustment Model Measure Profile]|
 |MeasureReport|Risk Adjustment Coding Gap Report Profile|[Risk Adjustment Coding Gap Report Profile]|
 
-Figure 3-2 provides a graphical view of how these resources are related.
+Below is an example of how a provider might receive a Risk Adjustment Coding Gap Report today.  This is for Clinical Evaluation Period January 1st to December 31st of 2021.  The report was run on May 1st and shows 3 Hierarchical Condition Codes based on CMS HCC v24 risk model.  The first HCC was confirmed by a diagnosis on a claim from April 1, 2021. The second is a historic diagnosis of obesity from 2020 that has not been confirmed in 2021.  The last HCC is suspected because of lab results they payer has from December of 2020.
+
+{% include img-portrait.html img="report-risk-adjustment.png" caption = "Figure 3-2 Risk Adjustment Coding Gap Report (non-FHIR)" %}
+
+Figure 3-3 provides a graphical view of how these resources are related to the report above.  The main resource is the Risk Adjustment Coding Gap Report Profile.  This profile first references a Risk Adjustment Model Measure Profile which is how we indicate which risk model the report is based on.  The Patient(US Core Patient) as well as the Payer(US Core Organization) who generated the Risk Adjustment Coding Gap Report are referenced.  
+
+Each Hierarchical Condition Code is represented by a Group within the report.  You will notice that each Group has supporting evidence of the Encounter.  Additionally, you will see resources on the right of the report that support the specific HCC code.  
+
+For the first group, HCC 189, it points to an historic diagnosis of Acquired absence of right leg below knee which was received as part of the April 1st, 2021 claim. This makes that HCC code confirmed.  
+
+The second group, HCC 019, historic diagnosis points to a Condition of Morbid Obesity from a prior year.  Since this was not included on the April claim, it is non-confirmed.
+
+The last group contains a suspected HCC code of 022.  The supporting evidence that points to this Group are two observations (lab results), from December of 2020; a urine glucose of 3+ and an Hemaglobin A1C.  Since this is only a suspected gap, it is also non-confirmed.
+
+{% include img-portrait.html img="report-risk-adjustment-resource-graph.png" caption = "Figure 3-3 Resource Graph for Risk Adjustment Report" %}
+
+### Construction of the Risk Adjustment Coding Gap Reports
 
 
 {% include link-list.md %}
