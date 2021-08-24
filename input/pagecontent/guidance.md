@@ -72,7 +72,41 @@ The last group contains a suspected HCC code of 022.  The supporting evidence th
 
 {% include img-portrait.html img="report-risk-adjustment-resource-graph.png" caption = "Figure 3-3 Resource Graph for Risk Adjustment Report" %}
 
-### Construction of the Risk Adjustment Coding Gap Reports
+
+###Requesting Risk Adjustment Coding Gap reports
+
+To facilitate a provider requesting Risk Adjustment Coding Gap reports, an operation ($report) has been defined in this Implementation Guide.  The input parameters are a from/to date to align with the clinical evaluation period and a subject.  The subject can be an individual US Core Patient reference or a Reference to a Patient Group Profile defined in this IG.  All three parameters are required.
+
+The operation will return a bundle which will include 1 or more Risk Adjustment Coding Gap Reports and all referenced resources.  For example, if a single patient has 2 Risk Adjustment Models that pertain to them, the bundle will contain two MeasureReport resources (Risk Adjustment Coding Gap Report profile) and any other resources referenced by the MeasureReport, such as Conditions, Observations, Medications, Measure, etc.
+
+Need workflow diagram
+
+Example needed
+
+#### Construction of the Risk Adjustment Coding Gap Reports
+
+The Risk Adjustment Coding Gaps Report is built on a FHIR MeasureReport Resource.  This profile adds several new elements/extensions that apply only to Risk Adjustment Code Gap reporting.  The first, extension-clinicalDataCollectionDeadline is added to specify to the provider the deadline, last date, that a provider must submit data to the payer.  In the reporter element, an extension was added to allow for the reporter to be a group, extension-reporterGroup.
+
+This profile more specifically defines the period start and end elements to be the Clinical Evaluation Period.  The date element is the date the report was generated.
+
+Of particular note is the measure element which points to a Measure Resource specifically profiled for Risk Adjustment Coding Gaps, Risk Adjustment Model Measure Profile. In this profile, the identifier will point to a specific Risk Adjustment Model, like CMS-HCC.  There is an element for version number, such as 24 as well as a name and title.  The other elements in Measure are not currently used by this profile.
+
+The group section of the report repeats for each Hierarchical Condition Code being reported.  To support,  the following new elements/extensions have been added.
+- extension-historicDiagnosis which allow the report to specify 0 to many historic diagnoses that rolls up to a specific risk code, such as HCC.
+- extension-suspectType which supports the indication of the suspect type, such as historic or suspected.
+- extension-evidenceStatus which is where a payer can indicate status of evidence related to the risk code such as confirmed, non-confirmed and pending.
+- extension-evidenceStatusDate which is the last change date of the evidence status.
+Each group also contains a code element.  This is a FHIR Codeable Concept that lets you specify the risk code, the coding system and a description.  For example, in HCC the code might be 022, the code system would be XXXXX and the description is Morbid Obesity.
+
+The evaluatedResource element in the report allows you to including supporting evidence by referencing other US Core Resources (such as lab results, encounters, and medication).  The evaluatedResource is not required and can repeat as often as necessary within the report.  Each evaluatedResource allows for you to indicate to which Group the supporting evidence applies.  This is done via an extension called, extension-groupReference.
+
+Example needed
+
+####Attribution
+
+####Usage
+
+####Bulk data
 
 
 {% include link-list.md %}
