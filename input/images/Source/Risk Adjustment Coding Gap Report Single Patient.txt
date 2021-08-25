@@ -1,0 +1,5 @@
+Risk Adjustment Coding Gaps Report - Single Patient
+
+uses https://sequencediagram.org/
+Paste in the corresponding .txt file to generate image
+Modify as needed
