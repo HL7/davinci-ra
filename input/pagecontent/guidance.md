@@ -105,11 +105,12 @@ Each group also contains a code element.  This is a FHIR Codeable Concept that l
 
 The evaluatedResource element in the report allows you to including supporting evidence by referencing other US Core Resources (such as lab results, encounters, and medication).  The evaluatedResource is not required and can repeat as often as necessary within the report.  Each evaluatedResource allows for you to indicate to which Group the supporting evidence applies.  This is done via an extension called, extension-groupReference.
 
-Example needed
-
-#### Attribution
-
 #### Usage
+{:.no_toc}
+
+`GET|[base]`
+
+{% include examplebutton.html example="get-risk-adjustment-coding-gap-report-usage-example" b_title = "Click Here To See Example GET Gaps in Care Report" %}
 
 #### Bulk data  
 
