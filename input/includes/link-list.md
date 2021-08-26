@@ -23,3 +23,4 @@
 [MeasureReport01: Risk Adjustment Coding Gap Report]: MeasureReport-ra-measurereport01.html
 [Measure01: Risk Adjustment Model CMS-HCC V24]: Measure-ra-model-example01.html
 [$report]:OperationDefinition-report.html
+[Clinical Evaluation Period]:glossary.html#glossary
