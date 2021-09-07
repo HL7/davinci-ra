@@ -115,7 +115,7 @@
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-clinicalDataCollectionDeadline"/>
+        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -149,7 +149,7 @@
    <max value="*"/>
    <type>
      <code value="Extension"/>
-     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-historicDiagnosis"/>
+     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-historicDiagnosis"/>
    </type>
    <mustSupport value="true"/>
  </element>
@@ -160,7 +160,7 @@
    <max value="1"/>
    <type>
      <code value="Extension"/>
-     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-suspectType"/>
+     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType"/>
    </type>
    <mustSupport value="true"/>
  </element>
@@ -171,7 +171,7 @@
    <max value="1"/>
    <type>
      <code value="Extension"/>
-     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatus"/>
+     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus"/>
    </type>
    <mustSupport value="true"/>
  </element>
@@ -182,7 +182,7 @@
    <max value="1"/>
    <type>
      <code value="Extension"/>
-     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatusDate"/>
+     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate"/>
    </type>
    <mustSupport value="true"/>
  </element>
@@ -202,7 +202,7 @@
   <max value="*"/>
   <type>
     <code value="Extension"/>
-    <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-groupReference"/>
+    <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference"/>
   </type>
   <mustSupport value="true"/>
 </element>

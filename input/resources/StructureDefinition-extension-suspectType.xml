@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extension-suspectType"/>
-  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-suspectType"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType"/>
   <name value="RASuspectTypeExtension"/>
   <title value="Risk Adjustment Suspect Type Extension"/>
   <status value="active"/>
@@ -33,7 +33,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-suspectType"/>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType"/>
     </element>
     <element id="Extension.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>

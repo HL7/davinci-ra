@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extension-evidenceStatus"/>
-  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatus"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus"/>
   <name value="EvidenceExtension"/>
   <title value="Evidence Status Extension"/>
   <status value="draft"/>
@@ -33,7 +33,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatus"/>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus"/>
     </element>
     <element id="Extension.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>

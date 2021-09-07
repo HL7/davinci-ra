@@ -27,7 +27,7 @@ This Guide is divided into several pages which are listed at the top of each pag
 
 - [FHIR Artifacts/Terminology]\: This page lists code systems and value sets defined in this guide.
 
-- [FHIR Artifacts/Capability statements]\: This page describes the expected FHIR capabilities of the various DEQM actors.
+- [FHIR Artifacts/Capability statements]\: This page describes the expected FHIR capabilities of the various Risk Adjustment actors.
 
 - [Examples]\: List of all the examples used in this guide.
 

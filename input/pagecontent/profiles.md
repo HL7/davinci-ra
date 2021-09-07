@@ -12,7 +12,6 @@ List of profiles that define constrains on FHIR resources for systems conforming
 |MeasureReport|Risk Adjustment Coding Gap Report Profile|[Risk Adjustment Coding Gap Report Profile]|
 |Measure|Risk Adjustment Model Measure Profile|[Risk Adjustment Model Measure Profile]|
 |Group|Patient Group Profile|[Patient Group Profile]|
-|Coverage|HRex Coverage Profile|[HRex Coverage Profile]|
 
 
 <br />

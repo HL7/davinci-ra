@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extension-evidenceStatusDate"/>
-  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatusDate"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate"/>
   <name value="RAClinicalEvidenceStatusDateExtension"/>
   <title value="Risk Adjustment Evidence Status Date Extension"/>
   <status value="draft"/>
@@ -33,7 +33,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-evidenceStatusDate"/>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate"/>
     </element>
     <element id="Extension.valueDate">
       <path value="Extension.valueDate"/>

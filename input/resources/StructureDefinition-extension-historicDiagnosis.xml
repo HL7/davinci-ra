@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extension-historicDiagnosis"/>
-  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-historicDiagnosis"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-historicDiagnosis"/>
   <name value="RAHistoricDiagnosisExtension"/>
   <title value="RA Historic Diagnosis Extension"/>
   <status value="draft"/>
@@ -33,7 +33,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-historicDiagnosis"/>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-historicDiagnosis"/>
     </element>
     <element id="Extension.valueReference">
       <path value="Extension.valueReference"/>

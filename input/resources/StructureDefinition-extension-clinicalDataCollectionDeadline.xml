@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="extension-clinicalDataCollectionDeadline"/>
-  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-clinicalDataCollectionDeadline"/>
+  <id value="ra-clinicalDataCollectionDeadline"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline"/>
   <name value="RAClinicalDataCollectionDeadlineExtension"/>
   <title value="Risk Adjustment Clinical Data Collection Deadline Extension"/>
   <status value="draft"/>
@@ -33,7 +33,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-clinicalDataCollectionDeadline"/>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline"/>
     </element>
     <element id="Extension.valueDate">
       <path value="Extension.valueDate"/>

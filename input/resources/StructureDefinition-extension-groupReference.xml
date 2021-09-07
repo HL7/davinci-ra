@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extension-groupReference"/>
-  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-groupReference"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference"/>
   <name value="GroupReference"/>
   <title value="Group Reference Extension"/>
   <status value="draft"/>
@@ -40,7 +40,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-groupReference"/>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference"/>
     </element>
     <element id="Extension.valueString">
       <path value="Extension.valueString"/>
