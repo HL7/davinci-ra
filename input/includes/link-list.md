@@ -22,5 +22,6 @@
 [Patient01: Kathy Muniz]: Patient-patient01.html
 [MeasureReport01: Risk Adjustment Coding Gap Report]: MeasureReport-ra-measurereport01.html
 [Measure01: Risk Adjustment Model CMS-HCC V24]: Measure-ra-model-example01.html
+[Parameters01: Report return, subject Kathy Muniz]: Parameters-single-report-ra-model-example01.html
 [$report]:OperationDefinition-report.html
 [Clinical Evaluation Period]:glossary.html#glossary

@@ -184,7 +184,12 @@
           <nameUrl value="Measure-ra-model-example01.html"/>
           <title value="Measure01"/>
           <generation value="generated"/>
-        </page>        
+        </page>
+        <page>
+          <nameUrl value="Parameters-single-report-ra-model-example01.html"/>
+          <title value="Parameters01"/>
+          <generation value="generated"/>
+        </page>       
       </page>
       <page>
         <nameUrl value="glossary.html"/>

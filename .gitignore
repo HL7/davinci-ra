@@ -22,3 +22,4 @@ Thumbs.db
 # backup files #
 ################
 *.bak
+input-cache
