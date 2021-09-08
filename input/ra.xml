@@ -186,10 +186,10 @@
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="Parameters-single-report-ra-model-example01.html"/>
+          <nameUrl value="Parameters-Patient_patient01-report.html"/>
           <title value="Parameters01"/>
           <generation value="generated"/>
-        </page>       
+        </page>
       </page>
       <page>
         <nameUrl value="glossary.html"/>
