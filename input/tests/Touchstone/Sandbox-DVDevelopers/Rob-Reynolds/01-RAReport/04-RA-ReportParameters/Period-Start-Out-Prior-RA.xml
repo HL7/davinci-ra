@@ -68,7 +68,7 @@
   </profile>
   <variable>
     <name value="periodStart"/>
-    <defaultValue value="2018-01-01"/>
+    <defaultValue value="2020-01-01"/>
     <description value="Default start of a gaps through period."/>
   </variable>
   <variable>
@@ -103,7 +103,7 @@
         <encodeRequestUrl value="true"/>
         <method value="get"/>
         <origin value="1" />
-        <params value="/$report?periodStart=${periodStart}&amp;subject=${subject}"/>
+        <params value="/$report?periodStart=${periodStart}&amp;periodEnd=${periodEnd}&amp;subject=${subject}"/>
         <responseId value="searchResponse"/>
       </operation>
     </action>

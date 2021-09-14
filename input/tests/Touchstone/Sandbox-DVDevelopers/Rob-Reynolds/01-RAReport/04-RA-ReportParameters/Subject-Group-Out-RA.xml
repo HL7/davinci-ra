@@ -103,7 +103,7 @@
         <encodeRequestUrl value="true"/>
         <method value="get"/>
         <origin value="1" />
-        <params value="/$report?periodStart=${periodStart}&amp;subject=${subject}"/>
+        <params value="/$report?periodStart=${periodStart}&amp;periodEnd=${periodEnd}&amp;subject=${subject}"/>
         <responseId value="searchResponse"/>
       </operation>
     </action>
@@ -132,9 +132,9 @@
         <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
           <valueBoolean value="false"/>
         </extension>
-        <description value="Confirm that the returned HTTP status is 200(OK)."/>
+        <description value="Confirm that the returned HTTP status is 500(Internal Server Error)."/>
         <direction value="response"/>
-        <response value="okay"/>
+        <responseCode value="500"/>
         <warningOnly value="false"/>
       </assert>
     </action>
@@ -163,33 +163,9 @@
         <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
           <valueBoolean value="false"/>
         </extension>
-        <description value="Confirm that the returned resource type is a Parameters."/>
+        <description value="Confirm that the returned resource type is an OperationOutcome."/>
         <direction value="response"/>
-        <resource value="Parameters"/>
-        <warningOnly value="false"/>
-      </assert>
-    </action>
-    <action>
-      <assert>
-        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
-          <valueBoolean value="false"/>
-        </extension>
-        <description value="Validate the response Parameters. Warning only to allow for review of results."/>
-        <direction value="response"/>
-        <validateProfileId value="ParametersProfileBase"/>
-        <warningOnly value="false"/>
-      </assert>
-    </action>
-    <action>
-      <assert>
-        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
-          <valueBoolean value="false"/>
-        </extension>
-        <description value="Confirm that the returned Bundle type is Collection."/>
-        <direction value="response"/>
-        <operator value="equals"/>
-        <path value="Parameters.parameter.resource.type"/>
-        <value value="collection"/>
+        <resource value="OperationOutcome"/>
         <warningOnly value="false"/>
       </assert>
     </action>

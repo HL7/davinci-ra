@@ -106,7 +106,7 @@
         <encodeRequestUrl value="true"/>
         <method value="get"/>
         <origin value="1" />
-        <params value="/$report?periodStart=${periodStart}&amp;subject=${subject}"/>
+        <params value="/$report?periodStart=${periodStart}&amp;periodEnd=${periodEnd}&amp;subject=${subject}"/>
         <responseId value="searchResponse"/>
       </operation>
     </action>
