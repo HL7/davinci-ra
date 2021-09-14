@@ -37,7 +37,7 @@
     </element>
     <element id="Extension.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
-      <short value="Indicate whether HCC gap is historic or suspected"/>
+      <short value="Indicate whether HCC gap is historic, suspected, or unsuspected"/>
       <type>
         <code value="CodeableConcept"/>
       </type>

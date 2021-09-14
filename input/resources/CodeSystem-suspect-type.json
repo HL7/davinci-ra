@@ -6,18 +6,24 @@
   "id": "suspect-type",
   "title": "Risk Adjustment Suspect Type Code System",
   "publisher":"Da Vinci Project",
-  "description": "(The Da Vinci Risk Adjustment Implementation Guide is under development). This is a code system for Risk Adjustment suspect type to indicate whether an HCC is historic or suspected.",
+  "description": "(The Da Vinci Risk Adjustment Implementation Guide is under development). This is a code system for Risk Adjustment suspect type to indicate whether it is a suspected HCC gap, a historic HCC gap, or an unsuspected HCC.",
   "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
   "concept": [
     {
       "code": "historic",
       "display": "Historic HCC Gap",
-      "definition": "Historic HCC Gap."
+      "definition": "Historic Hiearchical Category Code (HCC) Gap"
     },
     {
       "code": "suspected",
       "display": "Suspected HCC Gap",
-      "definition": "Suspected HCC Gap."}
+      "definition": "Suspected Hiearchical Category Code (HCC)  Gap"
+    },
+    {
+      "code": "unsuspected",
+      "display": "Unsuspected HCC",
+      "definition": "Unsuspected Hiearchical Category Code (HCC)"
+    }
   ],
-  "count": 2
+  "count": 3
 }
