@@ -76,7 +76,7 @@
   </variable>
   <variable>
     <name value="periodEnd"/>
-    <defaultValue value="2020-12-31"/>
+    <defaultValue value="2022-12-31"/>
     <description value="Default end of a gaps through period."/>
   </variable>
   <variable>
@@ -106,7 +106,7 @@
         <encodeRequestUrl value="true"/>
         <method value="get"/>
         <origin value="1" />
-        <params value="/$report?periodStart=${periodStart}&amp;subject=${subject}"/>
+        <params value="/$report?periodStart=${periodStart}&amp;periodEnd=${periodEnd}&amp;subject=${subject}"/>
         <responseId value="searchResponse"/>
       </operation>
     </action>
