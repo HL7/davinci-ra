@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestScript xmlns="http://hl7.org/fhir">
-  <id value="Period-End-Out-Post-RA"/>
+  <id value="PeriodStart-Out-Post-RA"/>
   <meta>
     <profile value="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript"/>
   </meta>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>Period-End-Out-Post-RA-json</p>
+      <p>PeriodStart-Out-Post-RA-json</p>
     </div>
   </text>
   <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-rule">
@@ -34,8 +34,8 @@
       </extension>
     </extension>
   </extension>
-  <url value="http://wildfhir.aegis.net/fhir4-0-1/TestScript/Period-End-Out-Post-RA"/>
-  <name value="Period-End-Out-Post-RA-json"/>
+  <url value="http://wildfhir.aegis.net/fhir4-0-1/TestScript/PeriodStart-Out-Post-RA"/>
+  <name value="PeriodStart-Out-Post-RA-json"/>
   <status value="active"/>
   <date value="2021-06-22"/>
   <publisher value="AEGIS.net, Inc."/>
@@ -63,20 +63,17 @@
       <code value="FHIR-Server" />
     </profile>
   </destination>
-  <profile id="RAMeasureReportProfile">
-    <reference value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
-  </profile>
   <profile id="ParametersProfileBase">
-    <reference value="http://hl7.org/fhir/StructureDefinition/Parameters"/>
+    <reference value="http://hl7.org/fhir/StructureDefinition/Parameters" />
   </profile>
   <variable>
     <name value="periodStart"/>
-    <defaultValue value="2021-01-01"/>
+    <defaultValue value="2022-01-01"/>
     <description value="Default start of a gaps through period."/>
   </variable>
   <variable>
     <name value="periodEnd"/>
-    <defaultValue value="2022-12-31"/>
+    <defaultValue value="2021-12-31"/>
     <description value="Default end of a gaps through period."/>
   </variable>
   <variable>
@@ -86,12 +83,12 @@
   </variable>
   <variable>
     <name value="expectedNumReports"/>
-    <defaultValue value="1"/>
+    <defaultValue value="0"/>
     <description value="Number of expected MeasureReport resources in response.  Will be validated in the test."/>
   </variable>
-  <test id="Period-End-Out-Post">
-    <name value="Period-End-Out-Post"/>
-    <description value="Query for the gaps in care using periodEnd out post parameters. Expected response is 200 (OK)."/>
+  <test id="PeriodStart-Out-Post">
+    <name value="PeriodStart-Out-Post"/>
+    <description value="Query for the gaps in care using periodStart out post parameters. Expected response is OperationOutcome (error)."/>
     <action>
       <operation>
         <type>
@@ -135,9 +132,9 @@
         <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
           <valueBoolean value="false"/>
         </extension>
-        <description value="Confirm that the returned HTTP status is 200(OK)."/>
+        <description value="Confirm that the returned HTTP status is 500(Internal Server Error)."/>
         <direction value="response"/>
-        <response value="okay"/>
+        <responseCode value="500"/>
         <warningOnly value="false"/>
       </assert>
     </action>
@@ -166,33 +163,9 @@
         <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
           <valueBoolean value="false"/>
         </extension>
-        <description value="Confirm that the returned resource type is a Parameters."/>
+        <description value="Confirm that the returned resource type is an OperationOutcome."/>
         <direction value="response"/>
-        <resource value="Parameters"/>
-        <warningOnly value="false"/>
-      </assert>
-    </action>
-    <action>
-      <assert>
-        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
-          <valueBoolean value="false"/>
-        </extension>
-        <description value="Validate the response Parameters. Warning only to allow for review of results."/>
-        <direction value="response"/>
-        <validateProfileId value="ParametersProfileBase"/>
-        <warningOnly value="false"/>
-      </assert>
-    </action>
-    <action>
-      <assert>
-        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
-          <valueBoolean value="false"/>
-        </extension>
-        <description value="Confirm that the returned Bundle type is Collection."/>
-        <direction value="response"/>
-        <operator value="equals"/>
-        <path value="Parameters.parameter.resource.type"/>
-        <value value="collection"/>
+        <resource value="OperationOutcome"/>
         <warningOnly value="false"/>
       </assert>
     </action>

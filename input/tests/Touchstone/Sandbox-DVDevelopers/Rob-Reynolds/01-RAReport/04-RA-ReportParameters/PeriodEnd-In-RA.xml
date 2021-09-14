@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestScript xmlns="http://hl7.org/fhir">
-  <id value="Period-Start-Out-Prior-RA"/>
+  <id value="PeriodEnd-In-RA"/>
   <meta>
     <profile value="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript"/>
   </meta>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>Period-Start-Out-Prior-RA-json</p>
+      <p>PeriodEnd-In-RA-json</p>
     </div>
   </text>
   <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-rule">
@@ -34,8 +34,8 @@
       </extension>
     </extension>
   </extension>
-  <url value="http://wildfhir.aegis.net/fhir4-0-1/TestScript/Period-Start-Out-Prior-RA"/>
-  <name value="Period-Start-Out-Prior-RA-json"/>
+  <url value="http://wildfhir.aegis.net/fhir4-0-1/TestScript/PeriodEnd-In-RA"/>
+  <name value="PeriodEnd-In-RA-json"/>
   <status value="active"/>
   <date value="2021-06-22"/>
   <publisher value="AEGIS.net, Inc."/>
@@ -63,12 +63,15 @@
       <code value="FHIR-Server" />
     </profile>
   </destination>
+  <profile id="RAMeasureReportProfile">
+    <reference value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
+  </profile>
   <profile id="ParametersProfileBase">
-    <reference value="http://hl7.org/fhir/StructureDefinition/Parameters" />
+    <reference value="http://hl7.org/fhir/StructureDefinition/Parameters"/>
   </profile>
   <variable>
     <name value="periodStart"/>
-    <defaultValue value="2020-01-01"/>
+    <defaultValue value="2021-01-01"/>
     <description value="Default start of a gaps through period."/>
   </variable>
   <variable>
@@ -86,9 +89,9 @@
     <defaultValue value="1"/>
     <description value="Number of expected MeasureReport resources in response.  Will be validated in the test."/>
   </variable>
-  <test id="Period-Start-Out-Prior">
-    <name value="Period-Start-Out-Prior"/>
-    <description value="Query for the gaps in care using periodStart out prior parameters. Expected response is 200 (OK)."/>
+  <test id="PeriodEnd-In">
+    <name value="PeriodEnd-In"/>
+    <description value="Query for the gaps in care using periodEnd in parameters. Expected response is 200 (OK)."/>
     <action>
       <operation>
         <type>
