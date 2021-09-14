@@ -39,7 +39,7 @@
       <path value="Extension.valueReference"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
       </type>
     </element>
   </differential>

@@ -7,7 +7,7 @@
       ],
       "source": "http://example.org/fhir/server"
   },
-  "url": "https://build.fhir.org/ig/HL7/davinci-ra/Measure-ra-model-example01",
+  "url": "https://build.fhir.org/ig/HL7/davinci-ra/Measure-ra-model-example03",
   "identifier": [
     {
       "use": "temp",
@@ -15,9 +15,9 @@
       "value": "CMS-HCC"
     }
   ],
-  "version": "24",
-  "name": "CMS-RxHCC Model V05",
-  "title": "CMS Prescribing Drug Hiearchical Category Condition (CMS-HCC) Risk Adjustment Model Version 05",
+  "version": "5",
+  "name": "CMS-RxHCC Model V5",
+  "title": "CMS Prescribing Drug Hiearchical Category Condition (CMS-HCC) Risk Adjustment Model Version 5",
   "status": "active",
   "experimental": true,
   "date": "2021-09-13",
@@ -32,7 +32,7 @@
       ]
     }
   ],
-  "description": "Example measure to represent CMS-RxHCC Model Version 05",
+  "description": "Example measure to represent CMS-RxHCC Model Version 5",
   "jurisdiction": [
     {
       "coding": [
