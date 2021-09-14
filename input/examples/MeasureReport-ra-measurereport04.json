@@ -60,7 +60,7 @@
                     "valueCodeableConcept": {
                         "coding": [
                             {
-                                "code": "confirmed",
+                                "code": "closed-gap",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
                             }
                         ]
@@ -98,7 +98,7 @@
                       "valueCodeableConcept": {
                           "coding": [
                               {
-                                  "code": "non-confirmed",
+                                  "code": "closed-gap",
                                   "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
                               }
                             ]
@@ -136,7 +136,7 @@
                       "valueCodeableConcept": {
                           "coding": [
                               {
-                                  "code": "non-confirmed",
+                                  "code": "open-gap",
                                   "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
                               }
                           ]
@@ -173,7 +173,7 @@
                       "valueCodeableConcept": {
                           "coding": [
                               {
-                                  "code": "non-confirmed",
+                                  "code": "open-gap",
                                   "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
                               }
                           ]
@@ -211,7 +211,7 @@
                       "valueCodeableConcept": {
                           "coding": [
                               {
-                                  "code": "non-confirmed",
+                                  "code": "open-gap",
                                   "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
                               }
                           ]
@@ -249,7 +249,7 @@
                     "valueCodeableConcept": {
                         "coding": [
                             {
-                                "code": "confirmed",
+                                "code": "closed-gap",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
                             }
                         ]
@@ -286,7 +286,7 @@
                     "valueCodeableConcept": {
                         "coding": [
                             {
-                                "code": "confirmed",
+                                "code": "closed-gap",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
                             }
                         ]
@@ -324,7 +324,7 @@
                   "valueCodeableConcept": {
                       "coding": [
                           {
-                              "code": "confirmed",
+                              "code": "closed-gap",
                               "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
                           }
                       ]
@@ -400,7 +400,7 @@
                   "valueCodeableConcept": {
                       "coding": [
                           {
-                              "code": "non-confirmed",
+                              "code": "open-gap",
                               "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
                           }
                       ]

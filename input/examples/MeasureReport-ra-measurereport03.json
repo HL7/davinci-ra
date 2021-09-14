@@ -29,7 +29,7 @@
         "start": "2021-01-01",
         "end": "2021-08-31"
     },
-    "group": 
+    "group":
         {
           "id": "group-001",
           "code": {
@@ -60,7 +60,7 @@
                     "valueCodeableConcept": {
                         "coding": [
                             {
-                                "code": "confirmed",
+                                "code": "closed-gap",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
                             }
                         ]
