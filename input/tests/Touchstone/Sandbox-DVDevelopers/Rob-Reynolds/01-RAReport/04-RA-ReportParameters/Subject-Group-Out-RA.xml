@@ -88,7 +88,7 @@
   </variable>
   <test id="Subject-Group-Out">
     <name value="Subject-Group-Out"/>
-    <description value="Query for the gaps in care using subject/Group out parameters. Expected response is 200 (OK)."/>
+    <description value="Query for the gaps in care using subject/Group out parameters. Expected response is 404 (Not found)."/>
     <action>
       <operation>
         <type>
@@ -132,9 +132,9 @@
         <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
           <valueBoolean value="false"/>
         </extension>
-        <description value="Confirm that the returned HTTP status is 500(Internal Server Error)."/>
+        <description value="Confirm that the returned HTTP status is 404(Not found)."/>
         <direction value="response"/>
-        <responseCode value="500"/>
+        <response value="notFound"/>
         <warningOnly value="false"/>
       </assert>
     </action>

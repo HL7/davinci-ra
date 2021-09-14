@@ -86,7 +86,7 @@
   </variable>
   <test id="Period-End-None">
     <name value="Period-End-None"/>
-    <description value="Query for the gaps in care using periodEnd missing parameters. Expected response is OperationOutcome (missing)."/>
+    <description value="Query for the gaps in care using periodEnd missing parameters. Expected response is OperationOutcome (error)."/>
     <action>
       <operation>
         <type>
