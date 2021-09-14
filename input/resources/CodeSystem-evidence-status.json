@@ -6,22 +6,22 @@
   "id": "evidence-status",
   "title": "Risk Adjustment Evidence Status Code System",
   "publisher":"Da Vinci Project",
-  "description": "(The Da Vinci Risk Adjustment Implementation Guide is under development). This is a code system for Risk Adjustment evidence status to indicate whether the evidence is confirmed, non-confirmed, or pending.",
+  "description": "(The Da Vinci Risk Adjustment Implementation Guide is under development). This is a code system for Risk Adjustment evidence status to indicate whether a Condition Category gap is open-gap, closed-gap, or pending.",
   "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
   "concept": [
     {
-      "code": "confirmed",
-      "display": "Confirmed HCC Gap",
-      "definition": "Evidence to support an HCC gap was confirmed."
+      "code": "closed-gap",
+      "display": "Closed Condition Category Gap",
+      "definition": "Evidence to support a Condition Category was confirmed."
     },
     {
-      "code": "non-confirmed",
-      "display": "Non-confirmed HCC Gap",
-      "definition": "Evidence to support an HCC gap has not yet been confirmed."},
+      "code": "open-gap",
+      "display": "Open Condition Category Gap",
+      "definition": "Action is needed to confirm whether the Condition Category is valid."},
     {
       "code": "pending",
-      "display": "Pending HCC Gap",
-      "definition": "Evidence to support an HCC gap is pending to be confirmed or not confirmed."}
+      "display": "Pending Condition Category Gap",
+      "definition": "Evidence was received and is in the process of being evaluated."}
   ],
   "count": 3
 }

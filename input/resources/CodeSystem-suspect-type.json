@@ -6,23 +6,25 @@
   "id": "suspect-type",
   "title": "Risk Adjustment Suspect Type Code System",
   "publisher":"Da Vinci Project",
-  "description": "(The Da Vinci Risk Adjustment Implementation Guide is under development). This is a code system for Risk Adjustment suspect type to indicate whether it is a suspected HCC gap, a historic HCC gap, or an unsuspected HCC.",
+  "description": "(The Da Vinci Risk Adjustment Implementation Guide is under development). This is a code system for Risk Adjustment suspect type to indicate whether it is a suspected Condition Category (CC) gap,
+  a historic CC gap, or an unsuspected CC. Historic, suspected, and net-new are mutually exclusive.",
   "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
   "concept": [
     {
       "code": "historic",
-      "display": "Historic HCC Gap",
-      "definition": "Historic Hiearchical Category Code (HCC) Gap"
+      "display": "Historic Condition Category Gap",
+      "definition": "Historic Condition Category (CC) Gap. Historic CC is based on data from a prior clinical evaluation period."
     },
     {
       "code": "suspected",
-      "display": "Suspected HCC Gap",
-      "definition": "Suspected Hiearchical Category Code (HCC)  Gap"
+      "display": "Suspected Condtion Category Gap",
+      "definition": "Suspected Condition Category (CC) Gap. A member never has CC before, but when a Server runs a suspecting algorithm, suspected CCs are identified for the member."
     },
     {
-      "code": "unsuspected",
-      "display": "Unsuspected HCC",
-      "definition": "Unsuspected Hiearchical Category Code (HCC)"
+      "code": "net-new",
+      "display": "Net-New Condition Category",
+      "definition": "Net-New Condition Category (CC). New Condition Category, not from suspected process or historic. A Net-New CC is documented for the first time during the clinical evaluation period for the
+      risk adjustment model. Any CCs that are net new must be either closed-gap or pending, and can not be open-gap."
     }
   ],
   "count": 3
