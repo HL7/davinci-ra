@@ -1,6 +1,6 @@
 {
     "resourceType": "MeasureReport",
-    "id": "ra-measurereport01",
+    "id": "ra-measurereport02",
     "meta": {
         "profile": [
             "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
@@ -17,11 +17,11 @@
     ],
     "status": "complete",
     "type": "individual",
-    "measure": "https://build.fhir.org/ig/HL7/davinci-ra/Measure-ra-model-example01",
+    "measure": "https://build.fhir.org/ig/HL7/davinci-ra/Measure-ra-model-example03",
     "subject": {
         "reference": "Patient/patient01"
     },
-    "date": "2021-08-17",
+    "date": "2021-09-13",
     "reporter": {
         "reference": "Organization/payer01"
     },
@@ -35,13 +35,13 @@
           "code": {
               "coding": [
                   {
-                      "system": "http://cms.gov/cms-hcc/",
-                      "version": "24",
-                      "code": "18",
+                      "system": "http://cms.gov/cms-rxhcc/",
+                      "version": "5",
+                      "code": "30",
                       "display": "Diabetes with Chronic Complications"
                   }
               ],
-              "text": "HCC 18: Diabetes with Chronic Complications"
+              "text": "CMS-RxHCC 30: Diabetes with Chronic Complications"
           },
           "extension": [
               {
@@ -49,7 +49,7 @@
                   "valueCodeableConcept": {
                       "coding": [
                           {
-                              "code": "historic",
+                              "code": "suspected",
                               "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
                           }
                       ]
@@ -85,13 +85,13 @@
           "code": {
               "coding": [
                   {
-                      "system": "http://cms.gov/cms-hcc/",
-                      "version": "24",
-                      "code": "59",
-                      "display": "Major Depressive, Bipolar, and Paranoid Disorders"
+                      "system": "http://cms.gov/cms-rxhcc/",
+                      "version": "5",
+                      "code": "43",
+                      "display": "Morbid Obesity"
                   }
               ],
-              "text": "HCC 59: Major Depressive, Bipolar, and Paranoid Disorders"
+              "text": "CMS-RxHCC 43: Morbid Obesity"
             },
             "extension": [
                 {
@@ -99,7 +99,7 @@
                     "valueCodeableConcept": {
                         "coding": [
                             {
-                                "code": "historic",
+                                "code": "suspected",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
                             }
                         ]
@@ -110,22 +110,10 @@
                       "valueCodeableConcept": {
                           "coding": [
                               {
-                                  "code": "non-confirmed",
+                                  "code": "confirmed",
                                   "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
                               }
                             ]
-                        }
-                    },
-                    {
-                        "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-historicDiagnosis",
-                        "valueReference": {
-                          "value": "http://hl7.org/fhir/us/davinci-ra/Condition/condition02"
-                        }
-                    },
-                    {
-                        "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
-                        "valueDate": {
-                            "value": "2020-07-15"
                         }
                     }
                 ]
@@ -134,14 +122,14 @@
           "id": "group-003",
           "code": {
               "coding": [
-                  {
-                      "system": "http://cms.gov/cms-hcc/",
-                      "version": "24",
-                      "code": "22",
-                      "display": "Morbid Obesity"
-                  }
+                {
+                    "system": "http://cms.gov/cms-rxhcc/",
+                    "version": "5",
+                    "code": "227",
+                    "display": "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+                }
               ],
-              "text": "HCC 22: Morbid Obesity"
+              "text": "CMS-RxHCC 277: Pulmonary Fibrosis and Other Chronic Lung Disorders"
             },
             "extension": [
                 {
@@ -149,7 +137,7 @@
                     "valueCodeableConcept": {
                         "coding": [
                             {
-                                "code": "suspected",
+                                "code": "histroric",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
                             }
                         ]
@@ -179,13 +167,13 @@
           "code": {
               "coding": [
                   {
-                      "system": "http://cms.gov/cms-hcc/",
-                      "version": "24",
-                      "code": "96",
-                      "display": "Specified Heart Arrhythmias"
+                    "system": "http://cms.gov/cms-rxhcc/",
+                    "version": "5",
+                    "code": "131",
+                    "display": "Bipolar Disorders"
                   }
               ],
-              "text": "HCC 96: Specified Heart Arrhythmias"
+              "text": "CMS-RxHCC 131: Bipolar Disorders"
             },
             "extension": [
                 {
@@ -211,57 +199,45 @@
                       }
                   }
                 ]
-            },
-            {
-              "id": "group-005",
-              "code": {
-                  "coding": [
-                      {
-                          "system": "http://cms.gov/cms-hcc/",
-                          "version": "24",
-                          "code": "110",
-                          "display": "Cystic Fibrosis"
-                      }
-                  ],
-                  "text": "HCC 110: Cystic Fibrosis"
-                },
-                "extension": [
+          },
+         {
+            "id": "group-005",
+            "code": {
+                "coding": [
                     {
-                        "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                        "system": "http://cms.gov/cms-rxhcc/",
+                        "version": "5",
+                        "code": "31",
+                        "display": "Diabetes without Complications"
+                    }
+                ],
+                "text": "CMS-RxHCC 31: Diabetes without Complications"
+              },
+              "extension": [
+                  {
+                      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                      "valueCodeableConcept": {
+                          "coding": [
+                              {
+                                  "code": "suspected",
+                                  "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                              }
+                          ]
+                      }
+                  },
+                    {
+                        "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "code": "historic",
-                                    "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                                    "code": "pending",
+                                    "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
                                 }
                             ]
                         }
-                    },
-                      {
-                          "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                          "valueCodeableConcept": {
-                              "coding": [
-                                  {
-                                      "code": "non-confirmed",
-                                      "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
-                                  }
-                              ]
-                          }
-                      },
-                        {
-                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-historicDiagnosis",
-                            "valueReference": {
-                              "value": "http://hl7.org/fhir/us/davinci-ra/Condition/condition03"
-                            }
-                        },
-                        {
-                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
-                            "valueDate": {
-                                "value": "2020-07-15"
-                            }
-                        }
-                      ]
-            }
+                    }
+                ]
+          }
     ],
     "evaluatedResource": [
         {

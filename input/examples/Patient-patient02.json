@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "patient01",
+  "id": "patient02",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
@@ -10,7 +10,7 @@
   "extension": [
       {
           "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
-          "valueCode": "F"
+          "valueCode": "M"
       },
       {
           "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
@@ -60,33 +60,33 @@
               ]
           },
           "system": "http://hospital.davinci.org",
-          "value": "12345"
+          "value": "23456"
       }
   ],
   "active": true,
   "name": [
       {
           "use": "official",
-          "family": "Muniz",
+          "family": "Hancock",
           "given": [
-              "Kathy"
+              "Mark"
           ]
       }
   ],
   "gender": "female",
-  "birthDate": "1975-01-16",
+  "birthDate": "1950-12-16",
   "deceasedBoolean": false,
   "address": [
-    {
-        "use": "home",
-        "line": [
-            "7496 Beaver Ridge Ave"
-        ],
-        "city": "Thornton",
-        "state": "NJ",
-        "postalCode": "07003",
-        "country": "USA"
-    }
+      {
+          "use": "home",
+          "line": [
+              "123 Main Street"
+          ],
+          "city": "Salt Lake City",
+          "state": "UT",
+          "postalCode": "84111",
+          "country": "USA"
+      }
   ],
   "maritalStatus": {
       "coding": [

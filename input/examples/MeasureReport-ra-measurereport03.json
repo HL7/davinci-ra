@@ -1,0 +1,80 @@
+{
+    "resourceType": "MeasureReport",
+    "id": "ra-measurereport03",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
+        ],
+        "source": "http://example.org/fhir/server"
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline",
+            "valueDate": {
+                "value": "2021-12-01"
+            }
+        }
+    ],
+    "status": "complete",
+    "type": "individual",
+    "measure": "https://build.fhir.org/ig/HL7/davinci-ra/Measure-ra-model-example01",
+    "subject": {
+        "reference": "Patient/patient02"
+    },
+    "date": "2021-09-13",
+    "reporter": {
+        "reference": "Organization/payer01"
+    },
+    "period": {
+        "start": "2021-01-01",
+        "end": "2021-08-31"
+    },
+    "group": [
+        {
+          "id": "group-001",
+          "code": {
+              "coding": [
+                  {
+                      "system": "http://cms.gov/cms-hcc/",
+                      "version": "24",
+                      "code": "96",
+                      "display": "Specified Heart.Arrhythmias"
+                  }
+              ],
+              "text": "CMS-RxHCC 30: Diabetes with Chronic Complications"
+          },
+          "extension": [
+              {
+                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                  "valueCodeableConcept": {
+                      "coding": [
+                          {
+                              "code": "historic",
+                              "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                          }
+                      ]
+                  }
+              },
+              {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "confirmed",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "evaluatedResource": [
+        {
+            "reference": "Condition/condition01"
+        },
+        {
+            "reference": "Condition/condition02"
+        }
+    ]
+}

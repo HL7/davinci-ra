@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "patient01",
+  "id": "patient03",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
@@ -19,13 +19,13 @@
                   "url": "ombCategory",
                   "valueCoding": {
                       "system": "urn:oid:2.16.840.1.113883.6.238",
-                      "code": "2106-3",
-                      "display": "White"
+                      "code": "2054-5",
+                      "display": "Black or African American"
                   }
               },
               {
                   "url": "text",
-                  "valueString": "White"
+                  "valueString": "Black or African American"
               }
           ]
       },
@@ -60,33 +60,33 @@
               ]
           },
           "system": "http://hospital.davinci.org",
-          "value": "12345"
+          "value": "34567"
       }
   ],
   "active": true,
   "name": [
       {
           "use": "official",
-          "family": "Muniz",
+          "family": "Moore",
           "given": [
-              "Kathy"
+              "Judy"
           ]
       }
   ],
   "gender": "female",
-  "birthDate": "1975-01-16",
+  "birthDate": "1965-05-27",
   "deceasedBoolean": false,
   "address": [
-    {
-        "use": "home",
-        "line": [
-            "7496 Beaver Ridge Ave"
-        ],
-        "city": "Thornton",
-        "state": "NJ",
-        "postalCode": "07003",
-        "country": "USA"
-    }
+      {
+          "use": "home",
+          "line": [
+              "1234 Main Street"
+          ],
+          "city": "Main City",
+          "state": "NJ",
+          "postalCode": "07001",
+          "country": "USA"
+      }
   ],
   "maritalStatus": {
       "coding": [

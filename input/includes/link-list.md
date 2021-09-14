@@ -20,8 +20,17 @@
 [Condition01: Type 2 diabetes with unspecified manifestations]: Condition-condition01.html
 [Condition01: Major Depressive Disorder, Single episode]: Condition-condition02.html
 [Patient01: Kathy Muniz]: Patient-patient01.html
-[MeasureReport01: Risk Adjustment Coding Gap Report]: MeasureReport-ra-measurereport01.html
+[Patient02: Mark Hancock]: Patient-patient02.html
+[Patient03: Judy Moore]: Patient-patient03.html
+[MeasureReport01: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient01: Kathy Muniz)]: MeasureReport-ra-measurereport01.html
+[MeasureReport02: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient01: Kathy Muniz)]: MeasureReport-ra-measurereport01.html
+[MeasureReport03: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient02: Mark Hancock)]: MeasureReport-ra-measurereport02.html
+[MeasureReport04: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V21 (Patient03: Judy Moore)]: MeasureReport-ra-measurereport03.html
+[MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Judy Moore)]: MeasureReport-ra-measurereport03.html
 [Measure01: Risk Adjustment Model CMS-HCC V24]: Measure-ra-model-example01.html
+[Measure02: Risk Adjustment Model CMS-HCC V21]: Measure-ra-model-example02.html
+[Measure03: Risk Adjustment Model CMS-RxHCC V05]: Measure-ra-model-example03.html
 [Parameters01: Report return, subject Kathy Muniz]: Parameters-Patient_patient01-report.html
+[Organization01: Payer Organization ABC Payer]: Organization-payer01.html
 [$report]:OperationDefinition-report.html
 [Clinical Evaluation Period]:glossary.html#glossary
