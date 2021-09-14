@@ -82,9 +82,9 @@
     <description value="Subject."/>
   </variable>
   <variable>
-    <name value="expectedNumParameters"/>
+    <name value="expectedNumReports"/>
     <defaultValue value="0"/>
-    <description value="Number of expected Parameters resources in response.  Will be validated in the test."/>
+    <description value="Number of expected MeasureReport resources in response.  Will be validated in the test."/>
   </variable>
   <test id="Subject-Group-Out">
     <name value="Subject-Group-Out"/>
@@ -198,12 +198,9 @@
         <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
           <valueBoolean value="false"/>
         </extension>
-        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
-          <valueBoolean value="false"/>
-        </extension>
         <description value="Verify that there are the number of report resources expected in the response"/>
         <direction value="response"/>
-        <expression value="Parameters.parameter.count()"/>
+        <expression value="Parameters.parameter.resource.entry.resource.count()"/>
         <operator value="equals"/>
         <value value="${expectedNumReports}"/>
         <warningOnly value="false"/>
