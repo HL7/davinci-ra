@@ -1,0 +1,376 @@
+{
+    "resourceType": "Bundle",
+    "id": "ra-parameters-standard-bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "ra-patient01",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+                    ],
+                    "source": "http://example.org/fhir/server"
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+                        "valueCode": "F"
+                    },
+                    {
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+                        "extension": [
+                            {
+                                "url": "ombCategory",
+                                "valueCoding": {
+                                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                                    "code": "2106-3",
+                                    "display": "White"
+                                }
+                            },
+                            {
+                                "url": "text",
+                                "valueString": "White"
+                            }
+                        ]
+                    },
+                    {
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+                        "extension": [
+                            {
+                                "url": "ombCategory",
+                                "valueCoding": {
+                                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                                    "code": "2186-5",
+                                    "display": "Not Hispanic or Latino"
+                                }
+                            },
+                            {
+                                "url": "text",
+                                "valueString": "Not Hispanic or Latino"
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "MR",
+                                    "display": "Medical record number"
+                                }
+                            ]
+                        },
+                        "system": "http://hospital.davinci.org",
+                        "value": "12345"
+                    }
+                ],
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Muniz",
+                        "given": [
+                            "Kathy"
+                        ]
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1975-01-16",
+                "deceasedBoolean": false,
+                "address": [
+                    {
+                        "use": "home",
+                        "line": [
+                            "7496 Beaver Ridge Ave"
+                        ],
+                        "city": "Thornton",
+                        "state": "NJ",
+                        "postalCode": "07003",
+                        "country": "USA"
+                    }
+                ],
+                "maritalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                            "code": "M",
+                            "display": "Married"
+                        }
+                    ]
+                },
+                "communication": [
+                    {
+                        "language": {
+                            "coding": [
+                                {
+                                    "system": "urn:ietf:bcp:47",
+                                    "code": "en-US",
+                                    "display": "English (Region=United States)"
+                                }
+                            ]
+                        },
+                        "preferred": true
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/ra-patient01"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Group",
+                "id": "ra-group01",
+                "type": "person",
+                "actual": true,
+                "member": [
+                    {
+                        "entity": {
+                            "reference": "Patient/ra-patient01"
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Group/ra-group01"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "ra-measurereport01",
+                "meta": {
+                    "source": "http://example.org/fhir/server",
+                    "profile": [
+                        "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
+                    ]
+                },
+                "text": {
+                    "status": "extensions",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"https://build.fhir.org/ig/HL7/davinci-ra/Measure-ra-model-example01\">https://build.fhir.org/ig/HL7/davinci-ra/Measure-ra-model-example01</a></p><p><b>subject</b>: <a href=\"Patient-ra-patient01.html\">Generated Summary: Medical record number: 12345 (USUAL); active; Kathy Muniz (OFFICIAL); gender: female; birthDate: 1950-12-16; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></a></p><p><b>date</b>: 2021-08-17</p><p><b>reporter</b>: <a href=\"Organization-organization01.html\">Organization/organization01</a></p><p><b>period</b>: 2021-01-01 --&gt; 2021-08-17</p><blockquote><p><b>group</b></p><p><b>Risk Adjustment Suspect Type Extension</b>: <span title=\"Codes: {http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type historic}\">historic</span></p><p><b>Evidence Status Extension</b>: <span title=\"Codes: {http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status confirmed}\">Confirmed HCC Gap</span></p><p><b>code</b>: <span title=\"Codes: {http://cms.gov/cms-hcc/ 18}\">HCC 18: Diabetes with Chronic Complications</span></p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://cms.gov/cms-hcc/ 59}\">HCC 59: Major Depressive, Bipolar, and Paranoid Disorders</span></p></blockquote><blockquote><p><b>group</b></p><p><b>Risk Adjustment Suspect Type Extension</b>: <span title=\"Codes: {http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type suspected}\">Suspected HCC Gap</span></p><p><b>Evidence Status Extension</b>: <span title=\"Codes: {http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status confirmed}\">Confirmed HCC Gap</span></p><p><b>code</b>: <span title=\"Codes: {http://cms.gov/cms-hcc/ 22}\">HCC 22: Morbid Obesity</span></p></blockquote><blockquote><p><b>group</b></p><p><b>Risk Adjustment Suspect Type Extension</b>: <span title=\"Codes: {http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type suspected}\">Suspected HCC Gap</span></p><p><b>Evidence Status Extension</b>: <span title=\"Codes: {http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status pending}\">Pending HCC Gap</span></p><p><b>code</b>: <span title=\"Codes: {http://cms.gov/cms-hcc/ 96}\">HCC 96: Specified Heart Arrhythmias</span></p></blockquote><blockquote><p><b>group</b></p><p><b>Risk Adjustment Suspect Type Extension</b>: <span title=\"Codes: {http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type historic}\">historic</span></p><p><b>Evidence Status Extension</b>: <span title=\"Codes: {http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status non-confirmed}\">Non-confirmed HCC Gap</span></p><p><b>code</b>: <span title=\"Codes: {http://cms.gov/cms-hcc/ 110}\">HCC 110: Cystic Fibrosis</span></p></blockquote><p><b>evaluatedResource</b>: </p><ul><li><a href=\"Condition-condition01.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem</span>; <span title=\"Codes: {http://hl7.org/fhir/sid/icd-10-cm E11.8X}\">Type 2 diabetes with unspecified manifestations</span>; onset: 2020-06-10</a></li><li><a href=\"Condition-condition02.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem</span>; <span title=\"Codes: {http://hl7.org/fhir/sid/icd-10-cm F32.0-5}\">Major Depressive Disorder, Single episode</span>; onset: 2020-06-10</a></li></ul></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline"
+                    }
+                ],
+                "status": "complete",
+                "type": "individual",
+                "measure": "https://build.fhir.org/ig/HL7/davinci-ra/Measure-ra-model-example01",
+                "subject": {
+                    "reference": "Patient/ra-patient01"
+                },
+                "date": "2021-08-17",
+                "reporter": {
+                    "reference": "Organization/ra-organization01"
+                },
+                "period": {
+                    "start": "2021-01-01",
+                    "end": "2021-08-17"
+                },
+                "group": [
+                    {
+                        "id": "group-001",
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
+                                            "code": "historic"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
+                                            "code": "confirmed"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-historicDiagnosis"
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://cms.gov/cms-hcc/",
+                                    "version": "24",
+                                    "code": "18",
+                                    "display": "Diabetes with Chronic Complications"
+                                }
+                            ],
+                            "text": "HCC 18: Diabetes with Chronic Complications"
+                        }
+                    },
+                    {
+                        "id": "group-002",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://cms.gov/cms-hcc/",
+                                    "version": "24",
+                                    "code": "59",
+                                    "display": "Major Depressive, Bipolar, and Paranoid Disorders"
+                                }
+                            ],
+                            "text": "HCC 59: Major Depressive, Bipolar, and Paranoid Disorders"
+                        }
+                    },
+                    {
+                        "id": "group-003",
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
+                                            "code": "suspected"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
+                                            "code": "confirmed"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://cms.gov/cms-hcc/",
+                                    "version": "24",
+                                    "code": "22",
+                                    "display": "Morbid Obesity"
+                                }
+                            ],
+                            "text": "HCC 22: Morbid Obesity"
+                        }
+                    },
+                    {
+                        "id": "group-004",
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
+                                            "code": "suspected"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
+                                            "code": "pending"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://cms.gov/cms-hcc/",
+                                    "version": "24",
+                                    "code": "96",
+                                    "display": "Specified Heart Arrhythmias"
+                                }
+                            ],
+                            "text": "HCC 96: Specified Heart Arrhythmias"
+                        }
+                    },
+                    {
+                        "id": "group-005",
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
+                                            "code": "historic"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
+                                            "code": "non-confirmed"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-historicDiagnosis"
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://cms.gov/cms-hcc/",
+                                    "version": "24",
+                                    "code": "110",
+                                    "display": "Cystic Fibrosis"
+                                }
+                            ],
+                            "text": "HCC 110: Cystic Fibrosis"
+                        }
+                    }
+                ],
+                "evaluatedResource": [
+                    {
+                        "reference": "Condition/ra-condition01"
+                    },
+                    {
+                        "reference": "Condition/ra-condition02"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MeasureReport/ra-measurereport01"
+            }
+        }
+    ]
+}

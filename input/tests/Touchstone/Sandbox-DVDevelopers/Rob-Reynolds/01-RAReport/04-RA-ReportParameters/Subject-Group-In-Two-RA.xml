@@ -83,7 +83,7 @@
   </variable>
   <variable>
     <name value="expectedNumReports"/>
-    <defaultValue value="2"/>
+    <defaultValue value="3"/>
     <description value="Number of expected MeasureReport resources in response.  Will be validated in the test."/>
   </variable>
   <test id="Subject-Group-In-Two">
