@@ -106,7 +106,7 @@
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="StructureDefinition-patient-group.html"/>
+          <nameUrl value="StructureDefinition-ra-patient-group.html"/>
           <title value="Patient Group"/>
           <generation value="generated"/>
         </page>

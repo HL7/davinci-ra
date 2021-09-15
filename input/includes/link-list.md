@@ -4,7 +4,7 @@
 [Da Vinci - Risk Based Contracts Member Attribution (ATR) List IG]: http://hl7.org/fhir/us/davinci-atr/
 [Risk Adjustment Coding Gap Report Profile]: StructureDefinition-ra-measurereport.html
 [Risk Adjustment Model Measure Profile]: StructureDefinition-ra-model-measure.html
-[Patient Group Profile]: StructureDefinition-patient-group.html
+[Patient Group Profile]: StructureDefinition-ra-patient-group.html
 [Risk Adjustment]: ra.html
 [Guidance]: guidance.html
 [FHIR Artifacts/Profiles]: profiles.html

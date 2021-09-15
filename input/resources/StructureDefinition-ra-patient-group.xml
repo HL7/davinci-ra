@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="patient-group"/>
-    <url value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/patient-group"/>
+    <id value="ra-patient-group"/>
+    <url value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/ra-patient-group"/>
     <name value="PatientGroupProfile"/>
     <title value="Patient Group Profile"/>
     <status value="draft"/>
