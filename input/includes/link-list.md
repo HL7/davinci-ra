@@ -20,7 +20,7 @@
 [Condition01: Type 2 diabetes with unspecified manifestations]: Condition-condition01.html
 [Condition01: Major Depressive Disorder, Single episode]: Condition-condition02.html
 [Patient01: Kathy Muniz]: Patient-ra-patient01.html
-[Patient02: Mark Hancock]: Patient-patient02.html
+[Patient02: Mark Hancock]: Patient-ra-patient02.html
 [Patient03: Judy Moore]: Patient-patient03.html
 [MeasureReport01: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient01: Kathy Muniz)]: MeasureReport-ra-measurereport01.html
 [MeasureReport02: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient01: Kathy Muniz)]: MeasureReport-ra-measurereport01.html

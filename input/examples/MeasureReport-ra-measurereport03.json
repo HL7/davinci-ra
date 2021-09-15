@@ -19,7 +19,7 @@
     "type": "individual",
     "measure": "https://build.fhir.org/ig/HL7/davinci-ra/Measure-ra-model-example01",
     "subject": {
-        "reference": "Patient/patient02"
+        "reference": "Patient/ra-patient02"
     },
     "date": "2021-09-13",
     "reporter": {
