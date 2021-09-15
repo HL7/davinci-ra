@@ -18,11 +18,9 @@
   <description value="The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide (this IG) describes exchange of risk-based coding gaps among stakeholders such as payers, providers, and government care programs in support of driving towards accurate and complete documentation of health conditions that would lead to more accurate risk-adjustment payment calculations."/>
   <jurisdiction>
     <coding>
-      <!--<system value="urn:iso:std:iso:3166"/>
-      <code value="US"/>-->
-      <!-- Change to this if the IG is country-specific -->
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="840"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
     </coding>
   </jurisdiction>
   <packageId value="hl7.fhir.us.davinci-ra"/>
