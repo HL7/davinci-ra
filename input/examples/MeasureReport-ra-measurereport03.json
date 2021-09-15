@@ -29,44 +29,46 @@
         "start": "2021-01-01",
         "end": "2021-08-31"
     },
-    "group": {
-        "id": "group-001",
-        "code": {
-            "coding": [
-                {
-                    "system": "http://cms.gov/cms-hcc/",
-                    "version": "24",
-                    "code": "96",
-                    "display": "Specified Heart.Arrhythmias"
-                }
-            ],
-            "text": "CMS-RxHCC 30: Diabetes with Chronic Complications"
-        },
-        "extension": [
-            {
-                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
-                "valueCodeableConcept": {
-                    "coding": [
-                        {
-                            "code": "historic",
-                            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
-                        }
-                    ]
-                }
+    "group": [
+        {
+            "id": "group-001",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-hcc/",
+                        "version": "24",
+                        "code": "96",
+                        "display": "Specified Heart.Arrhythmias"
+                    }
+                ],
+                "text": "CMS-RxHCC 30: Diabetes with Chronic Complications"
             },
-            {
-                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                "valueCodeableConcept": {
-                    "coding": [
-                        {
-                            "code": "closed-gap",
-                            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
-                        }
-                    ]
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "historic",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "closed-gap",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
                 }
-            }
-        ]
-    },
+            ]
+        }
+    ],
     "evaluatedResource": [
         {
             "reference": "Condition/ra-condition01"
