@@ -137,7 +137,7 @@
                     "valueCodeableConcept": {
                         "coding": [
                             {
-                                "code": "histroric",
+                                "code": "historic",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
                             }
                         ]
