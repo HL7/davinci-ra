@@ -4,13 +4,13 @@
 
 **Scenario:**
 
-A Provider would like to know his patient, *ra-patient01*, has any risk adjustment codes or suspected risk adjustment codes for the period from 2021-01-01 to 2021-12-31. The Client requested a Risk Adjustment Coding Gap Report on 2021-06-30.
+A Provider would like to know his patient, *ra-ra-patient01*, has any risk adjustment codes or suspected risk adjustment codes for the period from 2021-01-01 to 2021-12-31. The Client requested a Risk Adjustment Coding Gap Report on 2021-06-30.
 
 **GET Risk Adjustment Coding Gaps Report**
 
 
 ```
-GET [base]/MeasureReport/$report?subject=Patient/ra-patient01&periodStart=2021-01-01&periodEnd=2021-12-31
+GET [base]/MeasureReport/$report?subject=Patient/ra-ra-patient01&periodStart=2021-01-01&periodEnd=2021-12-31
 ```
 
 **Request body**

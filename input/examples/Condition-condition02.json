@@ -50,7 +50,7 @@
     "text": "Major Depressive Disorder, Single episode"
   },
   "subject": {
-    "reference": "Patient/patient01",
+    "reference": "Patient/ra-patient01",
     "display": "Kathy Muniz"
   },
   "onsetDateTime": "2020-06-10"

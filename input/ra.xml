@@ -65,7 +65,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Patient/patient01"/>
+        <reference value="Patient/ra-patient01"/>
       </reference>
       <name value="Patient01: Kathy Muniz"/>
       <description value="Kathy Muniz"/>
@@ -171,7 +171,7 @@
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="Patient-patient01.html"/>
+          <nameUrl value="Patient-ra-patient01.html"/>
           <title value="Patient01"/>
           <generation value="generated"/>
         </page>
@@ -186,7 +186,7 @@
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="Parameters-Patient_patient01-report.html"/>
+          <nameUrl value="Parameters-Patient_ra-patient01-report.html"/>
           <title value="Parameters01"/>
           <generation value="generated"/>
         </page>
