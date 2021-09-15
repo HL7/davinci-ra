@@ -81,7 +81,7 @@
   </variable>
   <variable>
     <name value="subject"/>
-    <defaultValue value="Patient/ra-parameters-standard"/>
+    <defaultValue value="Patient/ra-patient01"/>
     <description value="Default end of a gaps through subject."/>
   </variable>
   <variable>

@@ -78,7 +78,7 @@
   </variable>
   <variable>
     <name value="subject"/>
-    <defaultValue value="Group/ra-parameters-subject-group-two-1"/>
+    <defaultValue value="Group/ra-group02"/>
     <description value="Subject group."/>
   </variable>
   <variable>
