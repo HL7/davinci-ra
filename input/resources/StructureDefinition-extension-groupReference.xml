@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="extension-groupReference"/>
+  <id value="ra-groupReference"/>
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference"/>
   <name value="GroupReference"/>
   <title value="Group Reference Extension"/>

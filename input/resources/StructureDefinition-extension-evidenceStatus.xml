@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="extension-evidenceStatus"/>
+  <id value="ra-evidenceStatus"/>
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus"/>
   <name value="EvidenceExtension"/>
   <title value="Evidence Status Extension"/>

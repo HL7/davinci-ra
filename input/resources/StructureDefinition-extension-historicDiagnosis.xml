@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="extension-historicDiagnosis"/>
+  <id value="ra-historicDiagnosis"/>
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-historicDiagnosis"/>
   <name value="RAHistoricDiagnosisExtension"/>
   <title value="RA Historic Diagnosis Extension"/>

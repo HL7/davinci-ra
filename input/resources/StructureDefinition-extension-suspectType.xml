@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="extension-suspectType"/>
+  <id value="ra-suspectType"/>
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType"/>
   <name value="RASuspectTypeExtension"/>
   <title value="Risk Adjustment Suspect Type Extension"/>

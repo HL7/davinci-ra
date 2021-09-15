@@ -121,27 +121,27 @@
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="StructureDefinition-extension-evidenceStatus.html"/>
+          <nameUrl value="StructureDefinition-ra-evidenceStatus.html"/>
           <title value="Risk Adjustment HCC Gap Evidence Status"/>
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="StructureDefinition-extension-evidenceStatusDate.html"/>
+          <nameUrl value="StructureDefinition-ra-evidenceStatusDate.html"/>
           <title value="Risk Adjustment HCC Gap Evidence Status Last Change Date"/>
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="StructureDefinition-extension-groupReference.html"/>
+          <nameUrl value="StructureDefinition-ra-groupReference.html"/>
           <title value="Risk Adjustment Group Reference Extension"/>
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="StructureDefinition-extension-historicDiagnosis.html"/>
+          <nameUrl value="StructureDefinition-ra-historicDiagnosis.html"/>
           <title value="Risk Adjustment Historic Diagnosis"/>
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="StructureDefinition-extension-suspectType.html"/>
+          <nameUrl value="StructureDefinition-ra-suspectType.html"/>
           <title value="Risk Adjustment Suspect Type"/>
           <generation value="generated"/>
         </page>

@@ -42,7 +42,7 @@ The operation will return a bundle which contains one or more Risk Adjustment Co
 - the evidence status dates
 - and the Clinical Data Collection Deadline
 
-Included with the Risk Adjustment Coding Gap Report is the ability to share the data the server has on file as Supporting Evidence for the Risk Adjustment code on the report.  This is accomplished via the evaluatedResource element. The Resources specified here can include any of the US Core Resources and are expected to be things like encounters, lab results, medications, etc.  An extension (extension-groupReference) has been added to this element and  will indicate which Risk Adjustment Code(s) that a a specific Resource supports.  All Resources referenced by the evaluatedResource element SHALL be returned in the [$report] Bundle
+Included with the Risk Adjustment Coding Gap Report is the ability to share the data the server has on file as Supporting Evidence for the Risk Adjustment code on the report.  This is accomplished via the evaluatedResource element. The Resources specified here can include any of the US Core Resources and are expected to be things like encounters, lab results, medications, etc.  An extension (ra-groupReference) has been added to this element and  will indicate which Risk Adjustment Code(s) that a a specific Resource supports.  All Resources referenced by the evaluatedResource element SHALL be returned in the [$report] Bundle
 
 Multiple reports can be generated for a single patient if more than one Risk Adjustment Model applies.  Also if a group of patients are specified as an input to the operation, one Risk Adjustment Coding Gap Report will be returned for each patient for each Risk Adjustment Model that applies.  For example, if you submit a Patient Group as input to the [$report] and three patients are in the group where two Risk Adjustment Model applies to all three and all three have Risk Adjustment Codes that apply (1-many), you will get back six Risk Adjustment Coding Gap Reports.
 
@@ -95,13 +95,13 @@ This profile more specifically defines the period.start and period.end elements 
 Of particular note is the .measure element which points to a Measure Resource specifically profiled for Risk Adjustment Coding Gaps, [Risk Adjustment Model Measure Profile]. In this profile, the identifier will point to a specific Risk Adjustment Model, like CMS-HCC.  There is an element for version number, such as 24 as well as a name and title.  The other elements in Measure are not currently used by this profile.
 
 The group section of the report repeats for each Hierarchical Condition Code being reported.  To support,  the following new elements/extensions have been added.
-- extension-historicDiagnosis which allow the report to specify 0 to many historic diagnoses that rolls up to a specific risk code, such as HCC.
-- extension-suspectType which supports the indication of the suspect type, such as historic or suspected.
-- extension-evidenceStatus which is where a payer can indicate status of evidence related to the risk code such as confirmed, non-confirmed and pending.
-- extension-evidenceStatusDate which is the last change date of the evidence status.
+- ra-historicDiagnosis which allow the report to specify 0 to many historic diagnoses that rolls up to a specific risk code, such as HCC.
+- ra-suspectType which supports the indication of the suspect type, such as historic or suspected.
+- ra-evidenceStatus which is where a payer can indicate status of evidence related to the risk code such as confirmed, non-confirmed and pending.
+- ra-evidenceStatusDate which is the last change date of the evidence status.
 Each group also contains a code element.  This is a FHIR Codeable Concept that lets you specify the risk code, the coding system and a description.  For example, in HCC the code might be 022, the code system would be XXXXX and the description is Morbid Obesity.
 
-The evaluatedResource element in the report allows you to including supporting evidence by referencing other US Core Resources (such as US Core Laboratory Result Observation Profile, US Core Encounter Profile, and US Core Medication Profile).  The evaluatedResource is not required and can repeat as often as necessary within the report.  Each evaluatedResource allows for you to indicate to which Group the supporting evidence applies.  This is done via an extension called, extension-groupReference.
+The evaluatedResource element in the report allows you to including supporting evidence by referencing other US Core Resources (such as US Core Laboratory Result Observation Profile, US Core Encounter Profile, and US Core Medication Profile).  The evaluatedResource is not required and can repeat as often as necessary within the report.  Each evaluatedResource allows for you to indicate to which Group the supporting evidence applies.  This is done via an extension called, ra-groupReference.
 
 #### Usage
 {:.no_toc}
