@@ -23,7 +23,7 @@
     },
     "date": "2021-08-17",
     "reporter": {
-        "reference": "Organization/payer01"
+        "reference": "Organization/ra-payer01"
     },
     "period": {
         "start": "2021-01-01",
@@ -31,31 +31,31 @@
     },
     "group": [
         {
-          "id": "group-001",
-          "code": {
-              "coding": [
-                  {
-                      "system": "http://cms.gov/cms-hcc/",
-                      "version": "21",
-                      "code": "188",
-                      "display": "Diabetes with Chronic Complications"
-                  }
-              ],
-              "text": "CMS-HCC 188: Diabetes with Chronic Complications"
-          },
-          "extension": [
-              {
-                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
-                  "valueCodeableConcept": {
-                      "coding": [
-                          {
-                              "code": "historic",
-                              "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
-                          }
-                      ]
-                  }
-              },
-              {
+            "id": "group-001",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-hcc/",
+                        "version": "21",
+                        "code": "188",
+                        "display": "Diabetes with Chronic Complications"
+                    }
+                ],
+                "text": "CMS-HCC 188: Diabetes with Chronic Complications"
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "historic",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                            }
+                        ]
+                    }
+                },
+                {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
                     "valueCodeableConcept": {
                         "coding": [
@@ -69,17 +69,17 @@
             ]
         },
         {
-          "id": "group-002",
-          "code": {
-              "coding": [
-                  {
-                      "system": "http://cms.gov/cms-hcc/",
-                      "version": "21",
-                      "code": "111",
-                      "display": "Chronic Obstructive Pulmonary Disease"
-                  }
-              ],
-              "text": "CMS-HCC 21: Chronic Obstructive Pulmonary Disease"
+            "id": "group-002",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-hcc/",
+                        "version": "21",
+                        "code": "111",
+                        "display": "Chronic Obstructive Pulmonary Disease"
+                    }
+                ],
+                "text": "CMS-HCC 21: Chronic Obstructive Pulmonary Disease"
             },
             "extension": [
                 {
@@ -94,30 +94,30 @@
                     }
                 },
                 {
-                      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                      "valueCodeableConcept": {
-                          "coding": [
-                              {
-                                  "code": "closed-gap",
-                                  "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
-                              }
-                            ]
-                        }
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "closed-gap",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
                     }
-                ]
+                }
+            ]
         },
         {
-          "id": "group-003",
-          "code": {
-              "coding": [
-                  {
-                      "system": "http://cms.gov/cms-hcc/",
-                      "version": "21",
-                      "code": "21",
-                      "display": "Protein-Calorie Malnutrition"
-                  }
-              ],
-              "text": "CMS-HCC 21: Protein-Calorie Malnutrition"
+            "id": "group-003",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-hcc/",
+                        "version": "21",
+                        "code": "21",
+                        "display": "Protein-Calorie Malnutrition"
+                    }
+                ],
+                "text": "CMS-HCC 21: Protein-Calorie Malnutrition"
             },
             "extension": [
                 {
@@ -131,30 +131,31 @@
                         ]
                     }
                 },
-                  {
-                      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                      "valueCodeableConcept": {
-                          "coding": [
-                              {
-                                  "code": "open-gap",
-                                  "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
-                              }
-                          ]
-                      }
-                  }
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "open-gap",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                }
+            ]
         },
         {
-          "id": "group-004",
-          "code": {
-              "coding": [
-                  {
-                      "system": "http://cms.gov/cms-hcc/",
-                      "version": "21",
-                      "code": "35",
-                      "display": "Inflammatory Bowel Disease"
-                  }
-              ],
-              "text": "CMS-HCC 35: Inflammatory Bowel Disease"
+            "id": "group-004",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-hcc/",
+                        "version": "21",
+                        "code": "35",
+                        "display": "Inflammatory Bowel Disease"
+                    }
+                ],
+                "text": "CMS-HCC 35: Inflammatory Bowel Disease"
             },
             "extension": [
                 {
@@ -168,31 +169,31 @@
                         ]
                     }
                 },
-                  {
-                      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                      "valueCodeableConcept": {
-                          "coding": [
-                              {
-                                  "code": "open-gap",
-                                  "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
-                              }
-                          ]
-                      }
-                  }
-                ]
-            },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "open-gap",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
         {
-          "id": "group-005",
-          "code": {
-              "coding": [
-                  {
-                      "system": "http://cms.gov/cms-hcc/",
-                      "version": "21",
-                      "code": "96",
-                      "display": "Specified Heart Arrhythmias"
-                  }
-              ],
-              "text": "CMS-HCC 96: Specified Heart Arrhythmia"
+            "id": "group-005",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-hcc/",
+                        "version": "21",
+                        "code": "96",
+                        "display": "Specified Heart Arrhythmias"
+                    }
+                ],
+                "text": "CMS-HCC 96: Specified Heart Arrhythmia"
             },
             "extension": [
                 {
@@ -206,31 +207,31 @@
                         ]
                     }
                 },
-                  {
-                      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                      "valueCodeableConcept": {
-                          "coding": [
-                              {
-                                  "code": "open-gap",
-                                  "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
-                              }
-                          ]
-                      }
-                  }
-              ]
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "open-gap",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                }
+            ]
         },
         {
-          "id": "group-006",
-          "code": {
-              "coding": [
-                  {
-                      "system": "http://cms.gov/cms-hcc/",
-                      "version": "21",
-                      "code": "18",
-                      "display": "Diabetes with Chronic Complications"
-                  }
-              ],
-              "text": "CMS-HCC 18: Diabetes with Chronic Complications"
+            "id": "group-006",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-hcc/",
+                        "version": "21",
+                        "code": "18",
+                        "display": "Diabetes with Chronic Complications"
+                    }
+                ],
+                "text": "CMS-HCC 18: Diabetes with Chronic Complications"
             },
             "extension": [
                 {
@@ -253,21 +254,22 @@
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
                             }
                         ]
+                    }
                 }
-          }
+            ]
         },
         {
-          "id": "group-007",
-          "code": {
-              "coding": [
-                  {
-                      "system": "http://cms.gov/cms-hcc/",
-                      "version": "21",
-                      "code": "134",
-                      "display": "Dialysis Status"
-                  }
-              ],
-              "text": "CMS-HCC 134: Dialysis Status"
+            "id": "group-007",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-hcc/",
+                        "version": "21",
+                        "code": "134",
+                        "display": "Dialysis Status"
+                    }
+                ],
+                "text": "CMS-HCC 134: Dialysis Status"
             },
             "extension": [
                 {
@@ -290,60 +292,22 @@
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
                             }
                         ]
+                    }
                 }
-            }
-          ]
-      },
-    {
-      "id": "group-008",
-      "code": {
-          "coding": [
-              {
-                  "system": "http://cms.gov/cms-hcc/",
-                  "version": "21",
-                  "code": "19",
-                  "display": "Diabetes without Complication"
-              }
-          ],
-          "text": "CMS-HCC 19: Diabetes without Complication"
-        },
-        "extension": [
-            {
-                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
-                "valueCodeableConcept": {
-                    "coding": [
-                        {
-                            "code": "suspected",
-                            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
-                        }
-                    ]
-                }
-            },
-              {
-                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                  "valueCodeableConcept": {
-                      "coding": [
-                          {
-                              "code": "closed-gap",
-                              "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
-                          }
-                      ]
-                  }
-            }
-          ]
+            ]
         },
         {
-          "id": "group-009",
-          "code": {
-              "coding": [
-                  {
-                      "system": "http://cms.gov/cms-hcc/",
-                      "version": "21",
-                      "code": "135",
-                      "display": "Acute Renal Failure"
-                  }
-              ],
-              "text": "CMS-HCC 135: Acute Renal Failure"
+            "id": "group-008",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-hcc/",
+                        "version": "21",
+                        "code": "19",
+                        "display": "Diabetes without Complication"
+                    }
+                ],
+                "text": "CMS-HCC 19: Diabetes without Complication"
             },
             "extension": [
                 {
@@ -357,96 +321,134 @@
                         ]
                     }
                 },
-                  {
-                      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                      "valueCodeableConcept": {
-                          "coding": [
-                              {
-                                  "code": "pending",
-                                  "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
-                              }
-                          ]
-                      }
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "closed-gap",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
                 }
-              ]
-            },
-    {
-      "id": "group-010",
-      "code": {
-          "coding": [
-              {
-                  "system": "http://cms.gov/cms-hcc/",
-                  "version": "21",
-                  "code": "136",
-                  "display": "Chronic Kidney Disease, Stage 5"
-              }
-          ],
-          "text": "CMS-HCC 136: Chronic Kidney Disease, Stage 5"
+            ]
         },
-        "extension": [
-            {
-                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
-                "valueCodeableConcept": {
-                    "coding": [
-                        {
-                            "code": "suspected",
-                            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
-                        }
-                    ]
+        {
+            "id": "group-009",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-hcc/",
+                        "version": "21",
+                        "code": "135",
+                        "display": "Acute Renal Failure"
+                    }
+                ],
+                "text": "CMS-HCC 135: Acute Renal Failure"
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "suspected",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "pending",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
                 }
+            ]
+        },
+        {
+            "id": "group-010",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-hcc/",
+                        "version": "21",
+                        "code": "136",
+                        "display": "Chronic Kidney Disease, Stage 5"
+                    }
+                ],
+                "text": "CMS-HCC 136: Chronic Kidney Disease, Stage 5"
             },
-              {
-                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                  "valueCodeableConcept": {
-                      "coding": [
-                          {
-                              "code": "open-gap",
-                              "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
-                          }
-                      ]
-                  }
-            }
-          ]
-        },
-    {
-      "id": "group-011",
-      "code": {
-          "coding": [
-              {
-                  "system": "http://cms.gov/cms-hcc/",
-                  "version": "21",
-                  "code": "107",
-                  "display": "Vascular Disease with Complications"
-              }
-          ],
-          "text": "CMS-HCC 107: Vascular Disease with Complications"
-        },
-        "extension": [
-            {
-                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
-                "valueCodeableConcept": {
-                    "coding": [
-                        {
-                            "code": "historic",
-                            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
-                        }
-                    ]
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "suspected",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "open-gap",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
                 }
+            ]
+        },
+        {
+            "id": "group-011",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-hcc/",
+                        "version": "21",
+                        "code": "107",
+                        "display": "Vascular Disease with Complications"
+                    }
+                ],
+                "text": "CMS-HCC 107: Vascular Disease with Complications"
             },
-              {
-                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                  "valueCodeableConcept": {
-                      "coding": [
-                          {
-                              "code": "pending",
-                              "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
-                          }
-                      ]
-                  }
-            }
-          ]
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "historic",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "pending",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                }
+            ]
         }
-      ],
+    ],
     "evaluatedResource": [
         {
             "reference": "Condition/ra-condition01"

@@ -23,7 +23,7 @@
     },
     "date": "2021-09-13",
     "reporter": {
-        "reference": "Organization/payer01"
+        "reference": "Organization/ra-payer01"
     },
     "period": {
         "start": "2021-01-01",
@@ -31,31 +31,31 @@
     },
     "group": [
         {
-          "id": "group-001",
-          "code": {
-              "coding": [
-                  {
-                      "system": "http://cms.gov/cms-rxhcc/",
-                      "version": "5",
-                      "code": "30",
-                      "display": "Diabetes with Chronic Complications"
-                  }
-              ],
-              "text": "CMS-RxHCC 30: Diabetes with Chronic Complications"
-          },
-          "extension": [
-              {
-                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
-                  "valueCodeableConcept": {
-                      "coding": [
-                          {
-                              "code": "suspected",
-                              "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
-                          }
-                      ]
-                  }
-              },
-              {
+            "id": "group-001",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-rxhcc/",
+                        "version": "5",
+                        "code": "30",
+                        "display": "Diabetes with Chronic Complications"
+                    }
+                ],
+                "text": "CMS-RxHCC 30: Diabetes with Chronic Complications"
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "suspected",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                            }
+                        ]
+                    }
+                },
+                {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
                     "valueCodeableConcept": {
                         "coding": [
@@ -69,7 +69,7 @@
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-historicDiagnosis",
                     "valueReference": {
-                      "value": "http://hl7.org/fhir/us/davinci-ra/Condition/ra-condition01"
+                        "value": "http://hl7.org/fhir/us/davinci-ra/Condition/ra-condition01"
                     }
                 },
                 {
@@ -81,17 +81,17 @@
             ]
         },
         {
-          "id": "group-002",
-          "code": {
-              "coding": [
-                  {
-                      "system": "http://cms.gov/cms-rxhcc/",
-                      "version": "5",
-                      "code": "43",
-                      "display": "Morbid Obesity"
-                  }
-              ],
-              "text": "CMS-RxHCC 43: Morbid Obesity"
+            "id": "group-002",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-rxhcc/",
+                        "version": "5",
+                        "code": "43",
+                        "display": "Morbid Obesity"
+                    }
+                ],
+                "text": "CMS-RxHCC 43: Morbid Obesity"
             },
             "extension": [
                 {
@@ -106,30 +106,30 @@
                     }
                 },
                 {
-                      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                      "valueCodeableConcept": {
-                          "coding": [
-                              {
-                                  "code": "closed-gap",
-                                  "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
-                              }
-                            ]
-                        }
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "closed-gap",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
                     }
-                ]
+                }
+            ]
         },
         {
-          "id": "group-003",
-          "code": {
-              "coding": [
-                {
-                    "system": "http://cms.gov/cms-rxhcc/",
-                    "version": "5",
-                    "code": "227",
-                    "display": "Pulmonary Fibrosis and Other Chronic Lung Disorders"
-                }
-              ],
-              "text": "CMS-RxHCC 277: Pulmonary Fibrosis and Other Chronic Lung Disorders"
+            "id": "group-003",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-rxhcc/",
+                        "version": "5",
+                        "code": "227",
+                        "display": "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+                    }
+                ],
+                "text": "CMS-RxHCC 277: Pulmonary Fibrosis and Other Chronic Lung Disorders"
             },
             "extension": [
                 {
@@ -143,37 +143,37 @@
                         ]
                     }
                 },
-                  {
-                      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                      "valueCodeableConcept": {
-                          "coding": [
-                              {
-                                  "code": "closed-gap",
-                                  "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
-                              }
-                          ]
-                      }
-                  },
-                    {
-                        "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
-                        "valueDate": {
-                            "value": "2020-07-15"
-                        }
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "closed-gap",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
                     }
-                  ]
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                    "valueDate": {
+                        "value": "2020-07-15"
+                    }
+                }
+            ]
         },
         {
-          "id": "group-004",
-          "code": {
-              "coding": [
-                  {
-                    "system": "http://cms.gov/cms-rxhcc/",
-                    "version": "5",
-                    "code": "131",
-                    "display": "Bipolar Disorders"
-                  }
-              ],
-              "text": "CMS-RxHCC 131: Bipolar Disorders"
+            "id": "group-004",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-rxhcc/",
+                        "version": "5",
+                        "code": "131",
+                        "display": "Bipolar Disorders"
+                    }
+                ],
+                "text": "CMS-RxHCC 131: Bipolar Disorders"
             },
             "extension": [
                 {
@@ -187,20 +187,20 @@
                         ]
                     }
                 },
-                  {
-                      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                      "valueCodeableConcept": {
-                          "coding": [
-                              {
-                                  "code": "pending",
-                                  "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
-                              }
-                          ]
-                      }
-                  }
-                ]
-          },
-         {
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "pending",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
             "id": "group-005",
             "code": {
                 "coding": [
@@ -212,32 +212,32 @@
                     }
                 ],
                 "text": "CMS-RxHCC 31: Diabetes without Complications"
-              },
-              "extension": [
-                  {
-                      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
-                      "valueCodeableConcept": {
-                          "coding": [
-                              {
-                                  "code": "suspected",
-                                  "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
-                              }
-                          ]
-                      }
-                  },
-                    {
-                        "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                        "valueCodeableConcept": {
-                            "coding": [
-                                {
-                                    "code": "pending",
-                                    "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
-                                }
-                            ]
-                        }
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "suspected",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                            }
+                        ]
                     }
-                ]
-          }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "pending",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
     ],
     "evaluatedResource": [
         {
