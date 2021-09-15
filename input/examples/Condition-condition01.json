@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "condition01",
+  "id": "ra-condition01",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"

@@ -69,7 +69,7 @@
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-historicDiagnosis",
                     "valueReference": {
-                      "value": "http://hl7.org/fhir/us/davinci-ra/Condition/condition01"
+                      "value": "http://hl7.org/fhir/us/davinci-ra/Condition/ra-condition01"
                     }
                 },
                 {
@@ -119,7 +119,7 @@
                     {
                         "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-historicDiagnosis",
                         "valueReference": {
-                          "value": "http://hl7.org/fhir/us/davinci-ra/Condition/condition02"
+                          "value": "http://hl7.org/fhir/us/davinci-ra/Condition/ra-condition02"
                         }
                     },
                     {
@@ -265,10 +265,10 @@
     ],
     "evaluatedResource": [
         {
-            "reference": "Condition/condition01"
+            "reference": "Condition/ra-condition01"
         },
         {
-            "reference": "Condition/condition02"
+            "reference": "Condition/ra-condition02"
         }
     ]
 }

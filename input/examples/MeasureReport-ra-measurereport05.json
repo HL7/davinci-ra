@@ -223,10 +223,10 @@
     ],
     "evaluatedResource": [
         {
-            "reference": "Condition/condition01"
+            "reference": "Condition/ra-condition01"
         },
         {
-            "reference": "Condition/condition02"
+            "reference": "Condition/ra-condition02"
         }
     ]
 }

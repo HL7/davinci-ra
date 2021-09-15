@@ -17,8 +17,8 @@
 [Examples]: examples.html
 [Downloads]: downloads.html
 [HRex Coverage Profile]: http://build.fhir.org/ig/HL7/davinci-ehrx/StructureDefinition-hrex-coverage.html
-[Condition01: Type 2 diabetes with unspecified manifestations]: Condition-condition01.html
-[Condition01: Major Depressive Disorder, Single episode]: Condition-condition02.html
+[Condition01: Type 2 diabetes with unspecified manifestations]: Condition-ra-condition01.html
+[Condition01: Major Depressive Disorder, Single episode]: Condition-ra-condition02.html
 [Patient01: Kathy Muniz]: Patient-ra-patient01.html
 [Patient02: Mark Hancock]: Patient-ra-patient02.html
 [Patient03: Judy Moore]: Patient-ra-patient03.html
