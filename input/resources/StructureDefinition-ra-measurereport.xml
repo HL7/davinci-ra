@@ -27,7 +27,7 @@
     </element>
     <element id="MeasureReport.type">
       <path value="MeasureReport.type"/>
-      <requirements value="The type code is fixed to individual for Risk Adjustment Coding Gap Report "/>
+      <requirements value="The type code is fixed to individual for Risk Adjustment Coding Gap Report"/>
       <type>
         <code value="code"/>
       </type>

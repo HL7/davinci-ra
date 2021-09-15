@@ -1,6 +1,6 @@
 {
   "resourceType": "Parameters",
-  "id": "Patient_ra-patient01-report",
+  "id": "Patient-ra-patient01-report",
   "parameter": [
     {
       "id": "a37699db-35fd-4443-9961-4f0b6d8bd07e",

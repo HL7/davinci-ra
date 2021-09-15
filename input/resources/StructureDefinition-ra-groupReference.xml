@@ -29,7 +29,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="This references the MeasureReport.group.id, "/>
+      <short value="This references the MeasureReport.group.id."/>
       <definition value="Group reference"/>
       <comment value="This is an extension to reference an HCC"/>
       <min value="0"/>
