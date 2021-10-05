@@ -13,9 +13,7 @@ This Implementation Guide is supported by the Da Vinci initiative which is a pri
 
 This Guide is divided into several pages which are listed at the top of each page in the menu bar:
 
-- [Home]\: The home page provides the summary and background information for the FHIR Risk Adjustment FHIR IG.
-
-- [Risk Adjustment]\: The risk adjustment page describes business underpinning of the Risk Adjustment MeasureReport.
+- [Home]\: The home page provides the summary and background information for the FHIR Risk Adjustment FHIR IG. It also describes business underpinning of the Risk Adjustment MeasureReport.
 
 - [Guidance]\: The guidance page provides guidance on the resource profiles and operation defined in this implementation guide.
 
