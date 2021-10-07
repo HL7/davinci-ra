@@ -57,9 +57,10 @@ The date of service for the extracted diagnosis must correspond to the correct P
 
 For example, during Medicare Advantage PY 2022 diagnoses are accepted from patient encounters with dates of service during the clinical evaluation period of Jan. 1 2021 to Dec. 31 2021. Payers may submit to Medicare the diagnoses they collect from these encounters as soon as Jan 1. 2021 and continuing through the end of Jan. 2023. Sweeps for PY 2022 occur at the end of the first week of Sep. 2021. Payers begin receiving payment adjustments from Medicare beginning in Jan. 2022 based on diagnoses received through Sweeps.
 
-The risk adjustment activities in support of these payment cycles concurrently overlap during any given year, as shown in the following figure.
+The risk adjustment activities in support of these payment cycles concurrently overlap during any given year, as shown in Figure 1-1.
+This is the MA risk adjustment cadence; other programs such as Medicaid and the Affordable Care Act (ACA) follow a different annual risk adjustment cadence.
 
-{% include img-portrait.html img="payment-cycle-overlap.png" caption = "Figure 1-1 This is the MA risk adjustment cadence; other programs such as Medicaid and the ACA follow a different annual risk adjustment cadence." %}
+{% include img-portrait.html img="payment-cycle-overlap.png" caption = "Figure 1-1 Medicare Advantage Risk Adjustment Cadence" %}
 
 #### Concurrent Models: Blending; Special-Purpose Models
 Since the data collection period is always longer than the clinical evaluation period there will be multiple models actively collecting data at the same time. For example, during the calendar year 2022 a typical MA payer will be actively collecting data to close gaps from several models:
@@ -83,14 +84,14 @@ To avoid confusion, the requester supplies dates for the clinical evaluation per
 What’s going on with these three different model versions? There are three answers.
 1.	Risk adjustment models are an important actuarial tool for insurance payers, who must forecast the health risk of populations several years in advance. To avoid undermining any statistical analyses that are based on these HCC models, any changes to these models are rolled out in gradual, predictable ways. New models are always phased in, usually over period of four or five years, during which the risk scores from the older model are gradually given less weight and risk scores from the new model are weighted more heavily. This model transition process is called blending. For several years leading up to 2022 the V22 and V24 models coexisted side by side. By 2022 the blending period ended with the V24 risk scores being accorded 100% of the weight.
 2.	Risk scores for members diagnosed with certain medical conditions such as End Stage Renal Disease (ESRD) or who are enrolled in a special Medicare Advantage Plan for All-encompassing Care for the Elderly (PACE) are always scored using the model which is one version previous to the current one. While the V22 and V24 models were being blended both were considered current, meaning that the next previous version was V21. When a member is diagnosed with renal disease and CMS designates them as ESRD, the member shifts from being scored under the V22/V24 models to being scored under the V21 model. By 2022 the blending period was over, the V24 model became the most current model, the V22 model came into use for ESRD and PACE, and the V21 model was phased out.
-3.	Throughout this period the CMS-RxHCC V05 model was also in continuous use. The purpose of the CMS-RxHCC model is to normalize the expected cost of medications across populations, just as the CMS-HCC model normalizes the expected cost of medical treatment. Despite the name, the RxHCC model is derived from medical claims – not pharmacy claims. The RxHCC model overlaps with CMS-HCC to a considerable degree; many times the same diagnosis will close both an HCC and an RxHCC, although there are some diagnoses that only roll up to RxHCCs and not HCCs. Many risk adjustment models feature this separation between the medical and prescription drug portions of the model (Medicare CMS-HCC and CMS-RxHCC; Medicaid CPDS and MRX; ACA HHS-HCC and RXC.)
+3.	Throughout this period the CMS-RxHCC V05 model was also in continuous use. The purpose of the CMS-RxHCC model is to normalize the expected cost of medications across populations, just as the CMS-HCC model normalizes the expected cost of medical treatment. Despite the name, the RxHCC model is derived from medical claims – not pharmacy claims. The RxHCC model overlaps with CMS-HCC to a considerable degree; many times the same diagnosis will close both an HCC and an RxHCC, although there are some diagnoses that only roll up to RxHCCs and not HCCs. Many risk adjustment models feature this separation between the medical and prescription drug portions of the model (Medicare CMS-HCC and CMS-RxHCC; Medicaid CDPS and MRX; ACA HHS-HCC and RXC.)
 
-### Audience-
+### Audience
 
 
 ### Scope
 
-<img src="workflow-medicare-advantage.png" alt="Figure 1-2 Workflow for Medicare Advantage Population" class="img-responsive img-rounded center-block"/>
+{% include img-portrait.html img="workflow-medicare-advantage.png" caption = "Figure 1-2 Workflow for Medicare Advantage Population" %}
 
 <b>Phase One Goal and Scope</b>
 - *Goal*: Define standard methodology (format) for Payers to communicate coding gaps to Providers.
