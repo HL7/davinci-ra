@@ -187,12 +187,12 @@
  </element>
  <element id="MeasureReport.group.extension:hierarchiesAppliedStatus">
    <path value="MeasureReport.group.extension"/>
-   <sliceName value="hierarchiesAppliedStatus"/>
+   <sliceName value="hiearchicalStatus"/>
    <min value="0"/>
    <max value="1"/>
    <type>
      <code value="Extension"/>
-     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchiesAppliedStatus"/>
+     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hiearchicalStatus"/>
    </type>
    <mustSupport value="true"/>
  </element>

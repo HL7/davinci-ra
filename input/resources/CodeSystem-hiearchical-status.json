@@ -1,0 +1,33 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "RiskAdjustmentHiearchicalStatusCodeSystem",
+  "id": "hiearchical-status",
+  "title": "Risk Adjustment Hiearchical Status Code System",
+  "publisher":"Da Vinci Project",
+  "description": "(The Da Vinci Risk Adjustment Implementation Guide is under development). This is a code system for Risk Adjustment Hiearchical Status to indicate whether hiearchies were applied to a Condition Category, and if applied, whether the Condition Category is superseded.",
+  "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hiearchical-status",
+  "concept": [
+    {
+      "code": "applied-superseded",
+      "display": "Hiearchies applied and Condition Category is superseded",
+      "definition": "Hiearchies were applied to a Condition Catetory and the Condition Category is superseded."
+    },
+    {
+      "code": "applied-not-superseded",
+      "display": "Hiearchies applied and Condition Category is not superseded",
+      "definition": "Hiearchies were applied to a Condition Catetory and the Condition Category is not superseded."
+    },
+    {
+      "code": "not-applied",
+      "display": "Hiearchies not applied",
+      "definition": "Hiearchies were not applied to a Condition Catetory."
+    },
+    {
+      "code": "not-applicable",
+      "display": "Not applicable",
+      "definition": "Applying hiearchies to a Condition Category is not applicable."}
+  ],
+  "count": 4
+}
