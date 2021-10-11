@@ -21,7 +21,7 @@ Each {{site.data.structuredefinitions.[id].type}} *should* have ([Must Support])
 1. Each `MeasureReport.group`: A `MeasureReport.group.ra-suspectType` element
 1. Each `MeasureReport.group`: A `MeasureReport.group.ra-evidenceStatus` element
 1. Each `MeasureReport.group`: A `MeasureReport.group.ra-evidenceStatusDate` element
-1. Each `MeasureReport.group`: A `MeasureReport.group.ra-hiearchiesAppliedStatus` element
+1. Each `MeasureReport.group`: A `MeasureReport.group.ra-hiearchicalStatus` element
 1. Each `MeasureReport.group`: Zero to many `MeasureReport.evalautedResource` element
 
 ### Examples

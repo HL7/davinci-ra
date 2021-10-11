@@ -85,11 +85,6 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="ra.html"/>
-        <title value="Risk Adjustment"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
         <nameUrl value="profiles.html"/>
         <title value="Profiles"/>
         <generation value="markdown"/>
