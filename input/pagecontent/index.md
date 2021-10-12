@@ -112,11 +112,14 @@ Depending on the HCC, the invalidation rates varies based on a number of variabl
 Payers communication to Providers on patient Attribution
 
 **This Implementation Guide was made possible by the thoughtful contributions of the following people and organizations:
--*SME*
+
+- *Yan Heras, Optimum eHealth LLC*
 - *Rob Reynolds, Dynamic Content Group*
 - *Linda Michaelsen, Optum*
 - *Viet Nguyen, Stratametrics*
-- *Yan Heras, Optimum eHealth LLC*
+- *Brent Zenobia, Novillus*
+- *Amy Neftzger, United Healthcare*
+- *Brian J Murtha, Centene*
 
 ---
 
