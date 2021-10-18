@@ -26,7 +26,7 @@
 - [Patient03: Judy Moore]
 
 - [Condition01: Type 2 diabetes with unspecified manifestations]
-- [Condition01: Major Depressive Disorder, Single episode]
+- [Condition02: Major Depressive Disorder, Single episode]
 
 - [Organization01: Payer Organization ABC Payer]
 

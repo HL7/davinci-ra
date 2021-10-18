@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "date": "2021-10-07",
+  "name": "RiskAdjustmentHiearchicalStatusValueSet",
+  "id": "hiearchical-status",
+  "title": "Risk Adjustment Hiearchical Status Value Set",
+  "description": "(The Da Vinci Risk Adjustment Implementation Guide is under development). Concepts for risk adjustment hiearchical status",
+  "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/hiearchical-status",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hiearchical-status"
+      }
+    ]
+  }
+}
