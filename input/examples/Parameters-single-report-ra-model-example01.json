@@ -67,7 +67,7 @@
                         "coding": [
                           {
                             "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
-                            "code": "confirmed"
+                            "code": "open-gap"
                           }
                         ]
                       }
@@ -119,7 +119,7 @@
                         "coding": [
                           {
                             "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
-                            "code": "confirmed"
+                            "code": "open-gap"
                           }
                         ]
                       }
@@ -195,7 +195,7 @@
                         "coding": [
                           {
                             "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
-                            "code": "non-confirmed"
+                            "code": "closed-gap"
                           }
                         ]
                       }
