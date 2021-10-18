@@ -147,7 +147,6 @@
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
                     "valueDate": "2020-07-15"
-                    }
                 }
             ]
         },
