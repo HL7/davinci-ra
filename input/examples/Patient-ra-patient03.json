@@ -67,24 +67,24 @@
   "name": [
       {
           "use": "official",
-          "family": "Moore",
+          "family": "Nuclear",
           "given": [
-              "Judy"
+              "Nelda"
           ]
       }
   ],
   "gender": "female",
-  "birthDate": "1965-05-27",
+  "birthDate": "1965-07-26",
   "deceasedBoolean": false,
   "address": [
       {
           "use": "home",
           "line": [
-              "1234 Main Street"
+              "6666 Home Street"
           ],
-          "city": "Main City",
-          "state": "NJ",
-          "postalCode": "07001",
+          "city": "Ann Arbor",
+          "state": "MI",
+          "postalCode": "99999",
           "country": "USA"
       }
   ],

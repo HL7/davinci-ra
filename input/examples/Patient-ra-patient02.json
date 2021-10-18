@@ -67,9 +67,9 @@
   "name": [
       {
           "use": "official",
-          "family": "Hancock",
+          "family": "Everyman",
           "given": [
-              "Mark"
+              "Adam"
           ]
       }
   ],
@@ -80,11 +80,11 @@
       {
           "use": "home",
           "line": [
-              "123 Main Street"
+              "2222 Home Street"
           ],
-          "city": "Salt Lake City",
-          "state": "UT",
-          "postalCode": "84111",
+          "city": "Ann Arbor",
+          "state": "MI",
+          "postalCode": "99999",
           "country": "USA"
       }
   ],

@@ -67,9 +67,9 @@
   "name": [
       {
           "use": "official",
-          "family": "Muniz",
+          "family": "Everywoman",
           "given": [
-              "Kathy"
+              "Eve"
           ]
       }
   ],
@@ -80,11 +80,11 @@
     {
         "use": "home",
         "line": [
-            "7496 Beaver Ridge Ave"
+            "2222 Home Street"
         ],
-        "city": "Thornton",
-        "state": "NJ",
-        "postalCode": "07003",
+        "city": "Ann Arbor",
+        "state": "MI",
+        "postalCode": "99999",
         "country": "USA"
     }
   ],

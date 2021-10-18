@@ -10,9 +10,7 @@
     "extension": [
         {
             "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline",
-            "valueDate": {
-                "value": "2021-12-01"
-            }
+            "valueDate": "2021-12-01"
         }
     ],
     "status": "complete",
@@ -21,13 +19,13 @@
     "subject": {
         "reference": "Patient/ra-patient02"
     },
-    "date": "2021-09-13",
+    "date": "2021-10-18",
     "reporter": {
         "reference": "Organization/ra-payer01"
     },
     "period": {
         "start": "2021-01-01",
-        "end": "2021-08-31"
+        "end": "2021-09-30"
     },
     "group": [
         {

@@ -11,25 +11,25 @@
 <!-- ================================================ -->
 ---
 
-- [MeasureReport01: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient01: Kathy Muniz)]
-- [MeasureReport02: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient01: Kathy Muniz)]
-- [MeasureReport03: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient02: Mark Hancock)]
-- [MeasureReport04: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V21 (Patient03: Judy Moore)]
-- [MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Judy Moore)]
+- [MeasureReport01: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]
+- [MeasureReport02: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient01: Eve Everywoman)]
+- [MeasureReport03: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient02: Adam Everyman)]
+- [MeasureReport04: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V21 (Patient03: Nelda Nuclear)]
+- [MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Nelda Nuclear)]
 
 - [Measure01: Risk Adjustment Model CMS-HCC V24]
 - [Measure02: Risk Adjustment Model CMS-HCC V21]
 - [Measure03: Risk Adjustment Model CMS-RxHCC V05]
 
-- [Patient01: Kathy Muniz]
-- [Patient02: Mark Hancock]
-- [Patient03: Judy Moore]
+- [Patient01: Eve Everywoman]
+- [Patient02: Adam Everyman]
+- [Patient03: Nelda Nuclear]
 
 - [Condition01: Type 2 diabetes with unspecified manifestations]
 - [Condition02: Major Depressive Disorder, Single episode]
 
 - [Organization01: Payer Organization ABC Payer]
 
-- [Parameters01: Report return, subject Kathy Muniz]
+- [Parameters01: Report return, subject Eve Everywoman]
 
 {% include link-list.md %}
