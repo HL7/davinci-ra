@@ -16,9 +16,9 @@
 [Glossary/Glossary]: glossary.html
 [Guidance]: guidance.html
 [HRex Coverage Profile]: http://build.fhir.org/ig/HL7/davinci-ehrx/StructureDefinition-hrex-coverage.html
-[Measure01: Risk Adjustment Model CMS-HCC V24]: Measure-ra-model-example01.html
-[Measure02: Risk Adjustment Model CMS-HCC V21]: Measure-ra-model-example02.html
-[Measure03: Risk Adjustment Model CMS-RxHCC V05]: Measure-ra-model-example03.html
+[Measure01: Risk Adjustment Model CMS-HCC V24]: Measure-RAModelExample01.html
+[Measure02: Risk Adjustment Model CMS-HCC V21]: Measure-RAModelExample02.html
+[Measure03: Risk Adjustment Model CMS-RxHCC V05]: Measure-RAModelExample03.html
 [MeasureReport01: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]: MeasureReport-ra-measurereport01.html
 [MeasureReport02: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient01: Eve Everywoman)]: MeasureReport-ra-measurereport01.html
 [MeasureReport03: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient02: Adam Everyman)]: MeasureReport-ra-measurereport02.html

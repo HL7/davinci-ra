@@ -1,13 +1,13 @@
 {
   "resourceType": "Measure",
-  "id": "ra-model-example03",
+  "id": "RAModelExample03",
   "meta": {
       "profile": [
           "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-model-measure"
       ],
       "source": "http://example.org/fhir/server"
   },
-  "url": "https://build.fhir.org/ig/HL7/davinci-ra/Measure-ra-model-example03",
+  "url": "https://build.fhir.org/ig/HL7/davinci-ra/RAModelExample03",
   "identifier": [
     {
       "use": "temp",
@@ -16,7 +16,7 @@
     }
   ],
   "version": "5",
-  "name": "CMS-RxHCC Model V5",
+  "name": "RAModelExample03",
   "title": "CMS Prescribing Drug Hiearchical Category Condition (CMS-HCC) Risk Adjustment Model Version 5",
   "status": "active",
   "experimental": true,

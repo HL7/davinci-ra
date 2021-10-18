@@ -174,8 +174,18 @@
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="Measure-ra-model-example01.html"/>
+          <nameUrl value="Measure-RAModelExample01.html"/>
           <title value="Measure01"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Measure-RAModelExample02.html"/>
+          <title value="Measure02"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Measure-RAModelExample03.html"/>
+          <title value="Measure03"/>
           <generation value="generated"/>
         </page>
         <page>
@@ -255,7 +265,7 @@
       <value value="true"/>
     </parameter>
 
-<!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings -->
+    <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings -->
     <parameter>
       <code value="excludexml"/>
       <value value="false"/>

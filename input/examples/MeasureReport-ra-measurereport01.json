@@ -15,7 +15,7 @@
     ],
     "status": "complete",
     "type": "individual",
-    "measure": "https://build.fhir.org/ig/HL7/davinci-ra/Measure-ra-model-example01",
+    "measure": "https://build.fhir.org/ig/HL7/davinci-ra/RAModelExample01",
     "subject": {
         "reference": "Patient/ra-patient01"
     },
