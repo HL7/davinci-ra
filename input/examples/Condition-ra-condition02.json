@@ -43,15 +43,14 @@
     "coding": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "code": "F32.0-5",
+        "code": "F32",
         "display": "Major Depressive Disorder, Single episode"
       }
     ],
     "text": "Major Depressive Disorder, Single episode"
   },
   "subject": {
-    "reference": "Patient/ra-patient01",
-    "display": "Kathy Muniz"
+    "reference": "Patient/ra-patient01"
   },
   "onsetDateTime": "2020-06-10"
 }

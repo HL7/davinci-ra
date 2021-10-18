@@ -43,15 +43,14 @@
     "coding": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "code": "E11.8X",
-        "display": "Type 2 diabetes with unspecified manifestations"
+        "code": "E11.8",
+        "display": "Type 2 diabetes mellitus with unspecified complications"
       }
     ],
-    "text": "Type 2 diabetes with unspecified manifestations"
+    "text": "Type 2 diabetes mellitus with unspecified complications"
   },
   "subject": {
-    "reference": "Patient/ra-patient01",
-    "display": "Kathy Muniz"
+    "reference": "Patient/ra-patient01"
   },
   "onsetDateTime": "2020-06-10"
 }
