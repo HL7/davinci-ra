@@ -200,7 +200,7 @@
         </extension>
         <description value="Verify that there are the number of report resources expected in the response"/>
         <direction value="response"/>
-        <expression value="Parameters.parameter.resource.entry.resource.count()"/>
+        <expression value="Parameters.parameter.resource.entry.resource.where(ofType(MeasureReport)).count()"/>
         <operator value="equals"/>
         <value value="${expectedNumReports}"/>
         <warningOnly value="false"/>
