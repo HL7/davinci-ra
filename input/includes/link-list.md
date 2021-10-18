@@ -19,18 +19,18 @@
 [Measure01: Risk Adjustment Model CMS-HCC V24]: Measure-ra-model-example01.html
 [Measure02: Risk Adjustment Model CMS-HCC V21]: Measure-ra-model-example02.html
 [Measure03: Risk Adjustment Model CMS-RxHCC V05]: Measure-ra-model-example03.html
-[MeasureReport01: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient01: Kathy Muniz)]: MeasureReport-ra-measurereport01.html
-[MeasureReport02: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient01: Kathy Muniz)]: MeasureReport-ra-measurereport01.html
-[MeasureReport03: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient02: Mark Hancock)]: MeasureReport-ra-measurereport02.html
-[MeasureReport04: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V21 (Patient03: Judy Moore)]: MeasureReport-ra-measurereport03.html
-[MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Judy Moore)]: MeasureReport-ra-measurereport03.html
+[MeasureReport01: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]: MeasureReport-ra-measurereport01.html
+[MeasureReport02: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient01: Eve Everywoman)]: MeasureReport-ra-measurereport01.html
+[MeasureReport03: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient02: Adam Everyman)]: MeasureReport-ra-measurereport02.html
+[MeasureReport04: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V21 (Patient03: Nelda Nuclear)]: MeasureReport-ra-measurereport03.html
+[MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Nelda Nuclear)]: MeasureReport-ra-measurereport03.html
 [MeasureReport]: {{site.data.fhir.path}}measurereport.html
 [Organization01: Payer Organization ABC Payer]: Organization-payer01.html
-[Parameters01: Report return, subject Kathy Muniz]: Parameters-Patient_ra-patient01-report.html
+[Parameters01: Report return, subject Eve Everywoman]: Parameters-Patient_ra-patient01-report.html
 [Patient Group Profile]: StructureDefinition-ra-patient-group.html
-[Patient01: Kathy Muniz]: Patient-ra-patient01.html
-[Patient02: Mark Hancock]: Patient-ra-patient02.html
-[Patient03: Judy Moore]: Patient-ra-patient03.html
+[Patient01: Eve Everywoman]: Patient-ra-patient01.html
+[Patient02: Adam Everyman]: Patient-ra-patient02.html
+[Patient03: Nelda Nuclear]: Patient-ra-patient03.html
 [Risk Adjustment Coding Gap Report Profile]: StructureDefinition-ra-measurereport.html
 [Risk Adjustment Model Measure Profile]: StructureDefinition-ra-model-measure.html
 [Risk Adjustment]: ra.html
