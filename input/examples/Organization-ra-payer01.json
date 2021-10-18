@@ -16,10 +16,6 @@
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
     ]
   },
-  "text" : {
-    "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type payer}\">Payer</span></p><p><b>name</b>:ABC Payer</p><p><b>telecom</b>: ph: (+1) 123-456-7890, <a href=\"mailto:customer-service@acme-clinic.org\">customer-service@abcpayer.com</a></p><p><b>address</b>: 100 Insurance Lane, Suite 700 Amherst MA 01002 USA </p></div>"
-  },
   "active" : true,
   "type" : [
     {
