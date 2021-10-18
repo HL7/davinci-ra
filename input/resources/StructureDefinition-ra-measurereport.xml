@@ -21,6 +21,16 @@
       <short value="This is a Risk Adjustment Coding Gap Report."/>
       <definition value="This is a Risk Adjustment Coding Gap Report for a patient/member for a particular Risk Adjustment model."/>
     </element>
+    <element id="MeasureReport:clinicalDataCollectionDeadline">
+      <path value="MeasureReport.extension"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
     <element id="MeasureReport.status">
       <path value="MeasureReport.status"/>
       <mustSupport value="true"/>
@@ -113,16 +123,6 @@
       <max value="1"/>
       <mustSupport value="true"/>
     </element>
-    <element id="MeasureReport:clinicalDataCollectionDeadline">
-      <path value="MeasureReport.extension"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline"/>
-      </type>
-      <mustSupport value="true"/>
-    </element>
     <element id="MeasureReport.group">
       <path value="MeasureReport.group"/>
       <short value="A group contains information for one Condition Categories code. If a patient/member has multiple Condition Categories codes, there will be multiple group(s) and each group represents a Condition Categories code."/>
@@ -137,25 +137,6 @@
       <max value="1"/>
       <mustSupport value="true"/>
     </element>
-   <element id="MeasureReport.group.code">
-     <path value="MeasureReport.group.code"/>
-     <short value="Condition Categories code such as Hiearchical Condition Categories (HCC) code 19."/>
-     <definition value="Condition Categories code such as Hiearchical Condition Categories (HCC) code 19."/>
-     <min value="0"/>
-     <max value="1"/>
-     <mustSupport value="true"/>
-   </element>
-   <element id="MeasureReport.group.extension:historicDiagnosis">
-     <path value="MeasureReport.group.extension"/>
-     <sliceName value="historicDiagnosis"/>
-     <min value="0"/>
-     <max value="*"/>
-     <type>
-       <code value="Extension"/>
-       <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-historicDiagnosis"/>
-     </type>
-     <mustSupport value="true"/>
-   </element>
  <element id="MeasureReport.group.extension:suspectType">
    <path value="MeasureReport.group.extension"/>
    <sliceName value="suspectType"/>
@@ -200,9 +181,17 @@
    </type>
    <mustSupport value="true"/>
  </element>
+ <element id="MeasureReport.group.code">
+   <path value="MeasureReport.group.code"/>
+   <short value="Condition Categories code such as Hiearchical Condition Categories (HCC) code 19."/>
+   <definition value="Condition Categories code such as Hiearchical Condition Categories (HCC) code 19."/>
+   <min value="0"/>
+   <max value="1"/>
+   <mustSupport value="true"/>
+ </element> 
  <element id="MeasureReport.evaluatedResource">
    <path value="MeasureReport.evaluatedResource"/>
-   <short value="Supporting evidence for Condition Categories coding gaps, such as encounter, medication, and lab. An evidence is linked to a specific Condition Categories coding gap through referencing the MeasureReport.group.id."/>
+   <short value="Supporting evidence for Condition Categories coding gaps, such as encounter, medication, and lab. An evidence is linked to a specific Condition Category through referencing the MeasureReport.group.id. Referenced resources shall use USCore profiles where applicable."/>
    <definition value="Supporting evidence for Condition Categories coding gaps, such as encounter, medication, and lab."/>
    <!--<requirements value="To support the reporting of supplemental data elements."/>-->
    <mustSupport value="true"/>

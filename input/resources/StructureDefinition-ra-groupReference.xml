@@ -8,7 +8,7 @@
   <experimental value="false"/>
   <date value="2021-07-20"/>
   <publisher value="Da Vinci Project"/>
-  <description value="This extension identifies which HCC gap the supporting evidence (represented by `MeasureReport.group.evaluatedResource`) is for."/>
+  <description value="This extension identifies which Condition Category gap the supporting evidence (represented by `MeasureReport.group.evaluatedResource`) is for."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -31,7 +31,7 @@
       <path value="Extension"/>
       <short value="This references the MeasureReport.group.id."/>
       <definition value="Group reference"/>
-      <comment value="This is an extension to reference an HCC"/>
+      <comment value="This is an extension to reference a Condition Category"/>
       <min value="0"/>
       <max value="1"/>
     </element>
