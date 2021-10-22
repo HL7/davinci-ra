@@ -7,7 +7,7 @@
       ],
       "source": "http://example.org/fhir/server"
   },
-  "url": "https://build.fhir.org/ig/HL7/davinci-ra/RAModelExample03",
+  "url": "https://build.fhir.org/ig/HL7/davinci-ra/Measure-RAModelExample03",
   "identifier": [
     {
       "use": "temp",
