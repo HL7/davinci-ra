@@ -20,10 +20,10 @@
 [Measure02: Risk Adjustment Model CMS-HCC V21]: Measure-RAModelExample02.html
 [Measure03: Risk Adjustment Model CMS-RxHCC V05]: Measure-RAModelExample03.html
 [MeasureReport01: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]: MeasureReport-ra-measurereport01.html
-[MeasureReport02: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient01: Eve Everywoman)]: MeasureReport-ra-measurereport01.html
-[MeasureReport03: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient02: Adam Everyman)]: MeasureReport-ra-measurereport02.html
-[MeasureReport04: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V21 (Patient03: Nelda Nuclear)]: MeasureReport-ra-measurereport03.html
-[MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Nelda Nuclear)]: MeasureReport-ra-measurereport03.html
+[MeasureReport02: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient01: Eve Everywoman)]: MeasureReport-ra-measurereport02.html
+[MeasureReport03: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient02: Adam Everyman)]: MeasureReport-ra-measurereport03.html
+[MeasureReport04: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V21 (Patient03: Nelda Nuclear)]: MeasureReport-ra-measurereport04.html
+[MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Nelda Nuclear)]: MeasureReport-ra-measurereport05.html
 [MeasureReport06: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient04: Jane Doh)]: MeasureReport-ra-measurereport06.html
 [MeasureReport]: {{site.data.fhir.path}}measurereport.html
 [Organization01: Payer Organization ABC Payer]: Organization-payer01.html
@@ -36,4 +36,3 @@
 [Risk Adjustment Coding Gap Report Bundle]: StructureDefinition-ra-measurereport-bundle.html
 [Risk Adjustment Coding Gap Report Profile]: StructureDefinition-ra-measurereport.html
 [Risk Adjustment Model Measure Profile]: StructureDefinition-ra-model-measure.html
-[Risk Adjustment]: ra.html

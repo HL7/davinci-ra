@@ -29,7 +29,7 @@
   <dependsOn>
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <packageId value="hl7.fhir.us.core"/>
-    <version value="3.1.0"/>
+    <version value="4.0.0"/>
   </dependsOn>
   <dependsOn id="deqm">
     <uri value="http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm"/>
@@ -65,8 +65,8 @@
       <reference>
         <reference value="Patient/ra-patient01"/>
       </reference>
-      <name value="Patient01: Kathy Muniz"/>
-      <description value="Kathy Muniz"/>
+      <name value="Patient01: Eve Everywoman"/>
+      <description value="Eve Everywoman"/>
       <exampleBoolean value="true"/>
     </resource>
     <page>
@@ -101,6 +101,11 @@
         <page>
           <nameUrl value="StructureDefinition-ra-patient-group.html"/>
           <title value="Patient Group"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-ra-measurereport-bundle.html"/>
+          <title value="Risk Adjustment Measure Report Bundle"/>
           <generation value="generated"/>
         </page>
       </page>
@@ -148,6 +153,16 @@
         <nameUrl value="operations.html"/>
         <title value="Operation"/>
         <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="capabilities.html"/>
+        <title value="Capability Statement"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="CapabilityStatement-ra-client.html"/>
+          <title value="Risk Adjustment Client Capability Statement"/>
+          <generation value="generated"/>
+        </page>
       </page>
       <page>
         <nameUrl value="examples.html"/>
@@ -251,6 +266,10 @@
     <parameter>
       <code value="path-resource"/>
       <value value="resources\operationdefinition"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="resources\capabilitystatement"/>
     </parameter>
     <parameter>
       <code value="path-binary"/>
