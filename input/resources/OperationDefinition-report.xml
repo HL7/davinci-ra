@@ -46,7 +46,8 @@
         <use value="out"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="The $report operation returns Parameters resource, containing zero or more Risk Adjustment MeasureReport."/>
+        <documentation value="The $report operation returns [Parameters](https://www.hl7.org/fhir/parameters.html) resource containing zero or many `Parameters.parameter` element that references the [Risk Adjustment Coding Gap Report Bundle](StructureDefinition-ra-measurereport-bundle.html).
+The $report operation will always return one [Parameters](https://www.hl7.org/fhir/parameters.html) regardless of a single patient or a group of patients. A [Risk Adjustment Coding Gap Report Bundle](StructureDefinition-ra-measurereport-bundle.html) contains the Risk Adjustment Coding Gap Reports for the same patient. For example, if a Group reference has 10 patients, then a [Parameters](https://www.hl7.org/fhir/parameters.html) will contain 10 `Parameters.parameter`elements, with each `Parameters.parameter` for a unique patient."/>
         <type value="Bundle"/>
     </parameter>
 </OperationDefinition>

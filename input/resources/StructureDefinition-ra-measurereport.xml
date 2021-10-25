@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
   <id value="ra-measurereport"/>
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
-  <name value="RiskAdjustmentCodingGapReportProfile"/>
+  <name value="RiskAdjustmentCodingGapReport"/>
   <title value="Risk Adjustment Coding Gap Report Profile"/>
   <status value="draft"/>
   <experimental value="false"/>
@@ -188,7 +188,7 @@
    <min value="0"/>
    <max value="1"/>
    <mustSupport value="true"/>
- </element> 
+ </element>
  <element id="MeasureReport.evaluatedResource">
    <path value="MeasureReport.evaluatedResource"/>
    <short value="Supporting evidence for Condition Categories coding gaps, such as encounter, medication, and lab. An evidence is linked to a specific Condition Category through referencing the MeasureReport.group.id. Referenced resources shall use USCore profiles where applicable."/>

@@ -33,7 +33,7 @@
 [Patient02: Adam Everyman]: Patient-ra-patient02.html
 [Patient03: Nelda Nuclear]: Patient-ra-patient03.html
 [Patient04: Jane Doh]: Patient-ra-patient04.html
+[Risk Adjustment Coding Gap Report Bundle]: StructureDefinition-ra-measurereport-bundle.html
 [Risk Adjustment Coding Gap Report Profile]: StructureDefinition-ra-measurereport.html
 [Risk Adjustment Model Measure Profile]: StructureDefinition-ra-model-measure.html
 [Risk Adjustment]: ra.html
-[US Core Organization Profile]: {{site.data.fhir.uscore}}/StructureDefinition-us-core-organization.html
