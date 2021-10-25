@@ -26,7 +26,7 @@
 [MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Nelda Nuclear)]: MeasureReport-ra-measurereport05.html
 [MeasureReport06: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient04: Jane Doh)]: MeasureReport-ra-measurereport06.html
 [MeasureReport]: {{site.data.fhir.path}}measurereport.html
-[Organization01: Payer Organization ABC Payer]: Organization-payer01.html
+[Organization01: Payer Organization ABC Payer]: Organization-ra-payer01.html
 [Parameters01: Report return, subject Eve Everywoman]: Parameters-Patient-ra-patient01-report.html
 [Patient Group Profile]: StructureDefinition-ra-patient-group.html
 [Patient01: Eve Everywoman]: Patient-ra-patient01.html
