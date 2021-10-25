@@ -1,10 +1,10 @@
 {
-   "resourceType": "CapabilityStatement",
-    "id": "ra-client",
-    "url": "http://hl7.org/fhir/us/davinci-ra/CapabilityStatement/ra-client",
+    "resourceType": "CapabilityStatement",
+    "id": "ra-server",
+    "url": "http://hl7.org/fhir/us/davinci-ra/CapabilityStatement/ra-server",
     "version": "0.1.0",
-    "name": "RAClientCapabilityStatement",
-    "title": "Risk Adjustment Client Capability Statement",
+    "name": "RAServerCapabilityStatement",
+    "title": "Risk Adjustment Server Capability Statement",
     "status": "active",
     "experimental": false,
     "date": "2021-10-24",
@@ -19,7 +19,7 @@
             ]
         }
     ],
-    "description": "This profile defines the expected capabilities of a Da Vinci Risk Adjustment Client when conforming to the Da Vinci Risk Adjustment Implementation Guide for interactions between Clients and Servers. Clients are the actors requesting the Risk Adjustment Coding Gap Reports for patient(s) and for Risk Adjustmenet Models that are available on the Server. This CapabilityStatement resource includes the complete list of the *recommended*  Da Vinci Risk Adjustment profiles and RESTful operations that a Da Vinci Risk Adjustment Client could support. Clients have the option of choosing from this list based on their local use cases and other contextual requirements.",
+    "description": "This profile defines the expected capabilities of a Da Vinci Risk Adjustment Server when conforming to the Da Vinci Risk Adjustment Implementation Guide for interactions between Clients and Servers. Servers are the actors receiving the request for Risk Adjustment Coding Gap Reports for patient(s) and for Risk Adjustmenet Models that are available on the Server. This CapabilityStatement resource includes the complete list of the *recommended* Da Vinci Risk Adjustment profiles and RESTful operations that a Risk Adjustment Server could support. Servers have the option of choosing from this list based on their local use cases and other contextual requirements.",
     "jurisdiction": [
         {
             "coding": [
@@ -31,11 +31,11 @@
         }
     ],
     "kind": "requirements",
-    "fhirVersion": "4.0.1",
     "format": [
         "xml",
         "json"
     ],
+    "fhirVersion": "4.0.1",
     "patchFormat": [
         "application/json-patch+json"
     ],
@@ -44,11 +44,11 @@
     ],
     "rest": [
         {
-            "mode": "client",
-            "documentation": "Da Vinci Risk Adjustment Client **SHALL** support the operation and profiles specified in this implementation guide.",
+            "mode": "server",
             "security": {
                 "description": "For general security consideration refer to the [Security and Privacy Considerations](http://hl7.org/fhir/R4/secpriv-module.html)."
             },
+            "documentation": "Da Vinci Risk Adjustment Server **SHALL** support the operation and profiles specified in this implementation guide.",
             "interaction": [
                 {
                     "extension": [
@@ -127,8 +127,7 @@
                             "valueCode": "SHALL"
                         }
                     ],
-                    "documentation": "The DaVinci Risk Adjustment Client **SHALL** be capable of supporting the Risk Adjustment Coding Gap Report Profile and resources and profiles that the report references.",
-                    "interaction": [
+                    "documentation": "The DaVinci Risk Adjustment Server **SHALL** be capable of supporting the Risk Adjustment Coding Gap Report Profile and all of the resources and profiles that the report references.",                    "interaction": [
                         {
                             "extension": [
                                 {
@@ -136,12 +135,12 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "code": "read"
+                            "code": "create"
                         }
                     ],
                     "supportedProfile": [
                         "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
-                    ],
+                     ],
                     "type": "MeasureReport"
                 },
                 {
@@ -151,8 +150,7 @@
                             "valueCode": "SHALL"
                         }
                     ],
-                    "documentation": "The DaVinci Risk Adjustment Client **SHALL** be capable of supporting the Risk Adjustment Bundle Profile and resources and profiles that the bundle references.",
-                    "interaction": [
+                    "documentation": "The DaVinci Risk Adjustment Server **SHALL** be capable of supporting the Risk Adjustment Bundle Profile, Risk Adjustment Coding Gap Report Profile.",                    "interaction": [
                         {
                             "extension": [
                                 {
@@ -160,7 +158,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "code": "read"
+                            "code": "create"
                         }
                     ],
                     "supportedProfile": [

@@ -6,5 +6,5 @@
 [Risk Adjustment Client Capability Statement](CapabilityStatement-ra-client.html)
 <br/>
 
-Risk Adjustment Server Capability Statement [TODO]
+[Risk Adjustment Server Capability Statement](CapabilityStatement-ra-server.html)
 <br/>
