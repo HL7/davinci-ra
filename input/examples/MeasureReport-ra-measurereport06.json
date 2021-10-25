@@ -1,0 +1,38 @@
+{
+    "resourceType": "MeasureReport",
+    "id": "ra-measurereport06",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
+        ],
+        "source": "http://example.org/fhir/server"
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline",
+            "valueDate": "2021-12-01"
+        }
+    ],
+    "status": "complete",
+    "type": "individual",
+    "measure": "https://build.fhir.org/ig/HL7/davinci-ra/Measure-RAModelExample03",
+    "subject": {
+        "reference": "Patient/ra-patient04"
+    },
+    "date": "2021-10-18",
+    "reporter": {
+        "reference": "Organization/ra-payer01"
+    },
+    "period": {
+        "start": "2021-01-01",
+        "end": "2021-09-30"
+    },
+    "evaluatedResource": [
+        {
+            "reference": "Condition/ra-condition01"
+        },
+        {
+            "reference": "Condition/ra-condition02"
+        }
+    ]
+}

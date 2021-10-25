@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestScript xmlns="http://hl7.org/fhir">
-  <id value="Subject-Patient-Out-Not-PatientOrGroup-RA"/>
+  <id value="Subject-Patient-In-No-Reports-RA"/>
   <meta>
     <profile value="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript"/>
   </meta>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>Subject-Patient-Out-Not-PatientOrGroup-RA-json</p>
+      <p>Subject-Patient-In-No-Reports-RA-json</p>
     </div>
   </text>
   <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-rule">
@@ -34,8 +34,8 @@
       </extension>
     </extension>
   </extension>
-  <url value="http://wildfhir.aegis.net/fhir4-0-1/TestScript/Subject-Patient-Out-Not-PatientOrGroup-RA"/>
-  <name value="Subject-Patient-Out-Not-PatientOrGroup-RA-json"/>
+  <url value="http://wildfhir.aegis.net/fhir4-0-1/TestScript/Subject-Patient-In-No-Reports-RA"/>
+  <name value="Subject-Patient-In-No-Reports-RA-json"/>
   <status value="active"/>
   <date value="2021-06-22"/>
   <publisher value="AEGIS.net, Inc."/>
@@ -81,7 +81,7 @@
   </variable>
   <variable>
     <name value="subject"/>
-    <defaultValue value="bad-value"/>
+    <defaultValue value="Patient/ra-patient00"/>
     <description value="Subject."/>
   </variable>
   <variable>
@@ -89,8 +89,8 @@
     <defaultValue value="0"/>
     <description value="Number of expected MeasureReport resources in response.  Will be validated in the test."/>
   </variable>
-  <test id="Subject-Patient-Out-Not-PatientOrGroup">
-    <name value="Subject-Patient-Out-Not-PatientOrGroup"/>
+  <test id="Subject-Patient-In-No-Reports">
+    <name value="Subject-Patient-In-No-Reports"/>
     <description value="Query for the gaps in care using subject/Patient out parameters. Expected response is 202 (OK)."/>
     <action>
       <operation>
@@ -135,9 +135,9 @@
         <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
           <valueBoolean value="false"/>
         </extension>
-        <description value="Confirm that the returned HTTP status is 500(Internal Server Error)."/>
+        <description value="Confirm that the returned HTTP status is 200(OK)."/>
         <direction value="response"/>
-        <responseCode value="500"/>
+        <response value="okay"/>
         <warningOnly value="false"/>
       </assert>
     </action>
@@ -166,9 +166,33 @@
         <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
           <valueBoolean value="false"/>
         </extension>
-        <description value="Confirm that the returned resource type is an OperationOutcome."/>
+        <description value="Confirm that the returned resource type is a Parameters."/>
         <direction value="response"/>
-        <resource value="OperationOutcome"/>
+        <resource value="Parameters"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Validate the response Parameters. Warning only to allow for review of results."/>
+        <direction value="response"/>
+        <validateProfileId value="ParametersProfileBase"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Confirm that the returned Bundle type is Collection."/>
+        <direction value="response"/>
+        <operator value="equals"/>
+        <path value="Parameters.parameter.resource.type"/>
+        <value value="collection"/>
         <warningOnly value="false"/>
       </assert>
     </action>
@@ -182,6 +206,19 @@
         <expression value="Parameters.parameter.resource.entry.resource.where(ofType(MeasureReport)).count()"/>
         <operator value="equals"/>
         <value value="${expectedNumReports}"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Verify that there is a Patient resource in the response"/>
+        <direction value="response"/>
+        <expression value="Parameters.parameter.resource.entry.resource.where(ofType(Patient)).count()"/>
+        <operator value="equals"/>
+        <value value="1"/>
         <warningOnly value="false"/>
       </assert>
     </action>
