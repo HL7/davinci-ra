@@ -3,6 +3,7 @@
 [$report]:OperationDefinition-report.html
 [Clinical Evaluation Period]:glossary.html#glossary
 [Condition01: Type 2 diabetes with unspecified manifestations]: Condition-ra-condition01.html
+[Condition01Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition01Pat03.html
 [Condition02: Major Depressive Disorder, Single episode]: Condition-ra-condition02.html
 [Da Vinci - Risk Based Contracts Member Attribution (ATR) List IG]: http://hl7.org/fhir/us/davinci-atr/
 [Downloads]: downloads.html
@@ -12,7 +13,7 @@
 [FHIR Artifacts/Operations]: operations.html
 [FHIR Artifacts/Profiles]: profiles.html
 [FHIR Artifacts/Terminology]: terminology.html
-[Glossary/Acronyms]: acronym.html
+[Glossary/Acronyms]: glossary.html#acronyms
 [Glossary/Glossary]: glossary.html
 [Guidance]: guidance.html
 [HRex Coverage Profile]: http://build.fhir.org/ig/HL7/davinci-ehrx/StructureDefinition-hrex-coverage.html

@@ -41,10 +41,15 @@
 |<b>Acronym</b>|   |<b>Definition</b>|
 |---|---|---|
 |CC|      |---Condition Category|
-|CMS-HCC|     |---Centers of Medicare and Medicaid Services Hierarchical Condition Category|
+|CMS-HCC|     |---The Centers of Medicare and Medicaid Services Hierarchical Condition Category model|
+|CDPS|     |The Chronic Illness and Disability Payment System|
 |DXG|     |---Diagnostic Group|
+|ESRD|     |---End Stage Renal Disease|
 |HCC|     |---Hierarchical Condition Category|
 |HHS-HCC|     |---Health and Human Services Hierarchical Condition Category|
+|MA|     |---Medicare Advantage|
+|MRX|     |---Medicaid Rx risk adjustment model|
+|PACE|     |---All-encompassing Care for the Elderly|
 
 ### References
 

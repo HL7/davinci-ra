@@ -1,0 +1,11 @@
+title Risk Adjustment Coding Gap Report (Single Patient)
+actor Care Manager
+participant Care Management System
+participant Payer System
+participant Risk Adjustment System
+Care Manager->Care Management System: Request Risk Adjustment Report for a patient I am seeing
+Care Management System->Payer System: $report\n(patient)
+Payer System->Risk Adjustment System: Determine applicable Risk Adjustment Models\n and Risk Codes
+Risk Adjustment System->Payer System: Construct Risk Adjustment Coding Gap Reports
+Payer System->Care Management System: Risk Adjustment Coding Gap Report
+Care Management System->Care Manager: Display Risk Adjustment Coding Gap Report

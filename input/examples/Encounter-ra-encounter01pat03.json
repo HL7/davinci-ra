@@ -1,0 +1,36 @@
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="ra-encounter01pat03"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Encounter 1 Example"/>
+    </extension>
+    <extension
+               url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown
+                     value="This is a encounter 1 example for the *US Core Encounter Profile*."/>
+    </extension>
+    <lastUpdated value="2017-05-26T11:56:57.250-04:00"/>
+    <profile
+             value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+  </meta>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="AMB"/>
+    <display value="ambulatory"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://www.ama-assn.org/go/cpt"/>
+      <code value="99215"/>
+    </coding>
+    <text value="Office Visit"/>
+  </type>
+  <subject>
+    <reference value="Patient/ra-patient03"/>
+  </subject>
+  <period>
+    <start value="2021-07-14T17:00:14-05:00"/>
+    <end value="2021-07-14T18:00:14-05:00"/>
+  </period>
+</Encounter>

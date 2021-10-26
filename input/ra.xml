@@ -55,6 +55,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Condition/ra-condition01pat03"/>
+      </reference>
+      <name value="Condition01pat03: Other artificial openings of gastrointestinal tract status"/>
+      <description value="Other artificial openings of gastrointestinal tract status"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Condition/ra-condition02"/>
       </reference>
       <name value="Condition02: Major Depressive Disorder, Single episode"/>
@@ -176,6 +184,11 @@
         <page>
           <nameUrl value="Condition-ra-condition01.html"/>
           <title value="Condition01"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Condition-ra-condition01pat03.html"/>
+          <title value="Condition01pat03"/>
           <generation value="generated"/>
         </page>
         <page>
