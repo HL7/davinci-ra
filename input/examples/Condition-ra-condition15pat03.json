@@ -43,7 +43,7 @@
     "coding": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "code": "E0822",
+        "code": "E08.22",
         "display": "Diabetes mellitus due to underlying condition with diabetic chronic kidney disease"
       }
     ],

@@ -43,7 +43,7 @@
     "coding": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "code": "E119",
+        "code": "E11.9",
         "display": "Type 2 diabetes mellitus without complications"
       }
     ],

@@ -43,7 +43,7 @@
     "coding": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "code": "J441",
+        "code": "J44.1",
         "display": "Chronic obstructive pulmonary disease with (acute) exacerbation"
       }
     ],

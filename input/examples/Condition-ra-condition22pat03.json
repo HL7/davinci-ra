@@ -43,7 +43,7 @@
     "coding": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "code": "N178",
+        "code": "N17.8",
         "display": "Other acute kidney failure"
       }
     ],

@@ -71,6 +71,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Encounter/ra-encounter01pat03"/>
+      </reference>
+      <name value="Encounter"/>
+      <description value="Encounter with Dr Howell on 20210714"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Patient/ra-patient01"/>
       </reference>
       <name value="Patient01: Eve Everywoman"/>
@@ -188,12 +196,17 @@
         </page>
         <page>
           <nameUrl value="Condition-ra-condition01pat03.html"/>
-          <title value="Condition01pat03"/>
+          <title value="Condition01Pat03"/>
           <generation value="generated"/>
         </page>
         <page>
           <nameUrl value="Condition-ra-condition02.html"/>
           <title value="Condition02"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Encounter-ra-encounter01pat03.html"/>
+          <title value="Encounter01Pat03"/>
           <generation value="generated"/>
         </page>
         <page>

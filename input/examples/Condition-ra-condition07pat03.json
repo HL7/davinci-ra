@@ -43,7 +43,7 @@
     "coding": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "code": "I4819",
+        "code": "I48.19",
         "display": "Other persistent atrial fibrillation"
       }
     ],
