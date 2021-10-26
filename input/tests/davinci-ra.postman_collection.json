@@ -121,98 +121,6 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "denom Copy",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"name": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{RAServer}}Measure/JustLocation/$evaluate-measure?patient=denom-EXM124-FHIR4&periodStart=2019-01-01&periodEnd=2019-12-31",
-							"host": [
-								"{{RAServer}}Measure"
-							],
-							"path": [
-								"JustLocation",
-								"$evaluate-measure"
-							],
-							"query": [
-								{
-									"key": "patient",
-									"value": "denom-EXM124-FHIR4"
-								},
-								{
-									"key": "periodStart",
-									"value": "2019-01-01"
-								},
-								{
-									"key": "periodEnd",
-									"value": "2019-12-31"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "denom Copy 2",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"name": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{RAServer}}Measure/JustLocation/$evaluate-measure?patient=denom-EXM124-FHIR4&periodStart=2019-01-01&periodEnd=2019-12-31",
-							"host": [
-								"{{RAServer}}Measure"
-							],
-							"path": [
-								"JustLocation",
-								"$evaluate-measure"
-							],
-							"query": [
-								{
-									"key": "patient",
-									"value": "denom-EXM124-FHIR4"
-								},
-								{
-									"key": "periodStart",
-									"value": "2019-01-01"
-								},
-								{
-									"key": "periodEnd",
-									"value": "2019-12-31"
-								}
-							]
-						}
-					},
-					"response": []
 				}
 			]
 		}
@@ -240,7 +148,7 @@
 	"variable": [
 		{
 			"key": "RAServer",
-			"value": "http://localhost:8080/cqf-ruler-r4/fhir/"
+			"value": "http://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/"
 		}
 	]
 }
