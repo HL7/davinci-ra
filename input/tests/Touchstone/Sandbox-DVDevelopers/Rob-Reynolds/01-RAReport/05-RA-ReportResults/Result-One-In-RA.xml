@@ -188,6 +188,19 @@
         <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
           <valueBoolean value="false"/>
         </extension>
+        <description value="Confirm the returned Bundle profile"/>
+        <direction value="response"/>
+        <operator value="equals"/>        
+        <path value="Parameters.parameter.resource.meta.profile"/>
+        <value value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
         <description value="Confirm that the returned Bundle type is Collection."/>
         <direction value="response"/>
         <operator value="equals"/>

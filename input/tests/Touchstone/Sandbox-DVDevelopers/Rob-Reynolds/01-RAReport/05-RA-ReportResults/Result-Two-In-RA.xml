@@ -69,6 +69,9 @@
   <profile id="ParametersProfileBase">
     <reference value="http://hl7.org/fhir/StructureDefinition/Parameters"/>
   </profile>
+    <profile id="BundleProfileBase">
+    <reference value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle"/>
+  </profile>
   <variable>
     <name value="periodStart"/>
     <defaultValue value="2021-01-01"/>
@@ -180,6 +183,19 @@
         <description value="Validate the response Parameters. Warning only to allow for review of results."/>
         <direction value="response"/>
         <validateProfileId value="ParametersProfileBase"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Confirm the returned Bundle profile"/>
+        <direction value="response"/>
+        <operator value="equals"/>        
+        <path value="Parameters.parameter.resource.meta.profile"/>
+        <value value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle"/>
         <warningOnly value="false"/>
       </assert>
     </action>
