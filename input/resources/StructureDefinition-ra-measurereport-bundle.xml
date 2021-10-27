@@ -71,7 +71,7 @@
           <path value="Bundle.entry"/>
           <sliceName value="ra_patient_entry"/>
           <short value="This is the patient of the Risk Adjustment Coding Gap Report. If the Sever does not have Risk Adjustment Coding Gap Reports for the patient, then then patient resource is returned without the Risk Adjustment MeasureReport entries."/>
-          <min value="0"/>
+          <min value="1"/>
           <max value="1"/>
           <mustSupport value="true"/>
         </element>
@@ -79,7 +79,6 @@
           <path value="Bundle.entry.resource"/>
           <short value="This is the Patient resource."/>
           <min value="1"/>
-          <max value="1"/>
           <type>
             <code value="Patient"/>
             <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
