@@ -46,8 +46,20 @@
         <use value="out"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="The $report operation returns [Parameters](https://www.hl7.org/fhir/parameters.html) resource containing zero or many `Parameters.parameter` element that references the [Risk Adjustment Coding Gap Report Bundle](StructureDefinition-ra-measurereport-bundle.html).
-The $report operation will always return one [Parameters](https://www.hl7.org/fhir/parameters.html) regardless of a single patient or a group of patients. A [Risk Adjustment Coding Gap Report Bundle](StructureDefinition-ra-measurereport-bundle.html) contains the Risk Adjustment Coding Gap Reports for the same patient. For example, if a Group reference has 10 patients, then a [Parameters](https://www.hl7.org/fhir/parameters.html) will contain 10 `Parameters.parameter`elements, with each `Parameters.parameter` for a unique patient."/>
+        <documentation value="The $report operation will always return one [Parameters](https://www.hl7.org/fhir/parameters.html) whether the subject is a single patient or a group of patients.
+[Risk Adjustment Coding Gap Report Bundle](StructureDefinition-ra-measurereport-bundle.html) for a patient is in a `Parameters.parameter` element.
+A Risk Adjustment Coding Gap Report Bundle contains the Risk Adjustment Coding Gap Reports for the same patient.
+For example, if a Group has 10 valid patients, then a [Parameters](https://www.hl7.org/fhir/parameters.html) will contain 10 `Parameters.parameter`elements, with each `Parameters.parameter` for a unique patient."/>
         <type value="Bundle"/>
+    </parameter>
+    <parameter>
+        <name value="outcome"/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="*"/>
+        <documentation value="If subject is a patient and the patient is not found on the Server, or if subject is a Group and the group is not found on the Server, then the $report returns a `Parameters.parameter` with an [OperationOutcome](https://www.hl7.org/fhir/operationOutcome.html).
+          If subject is a Group, the group is valid but one or more patients within the Group can not be found on the Server, then the $report returns a separate `Parameters.parameter` with an OperationOutcome for each of the invalid patients.
+          For example, if a Group has 10 patients and two of the patients cannot be found on the Server, then the $report returns a Parameters resource containing 10 `parameter` elements (two `parameter` elements containing OperationOutcome for the two invalid patients and eight `parameter` elements containing [Risk Adjustment Coding Gap Report Bundle](StructureDefinition-ra-measurereport-bundle.html) for the eight valid patients)."/>
+        <type value="OperationOutcome"/>
     </parameter>
 </OperationDefinition>
