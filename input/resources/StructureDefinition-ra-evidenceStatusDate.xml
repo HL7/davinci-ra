@@ -24,7 +24,11 @@
       <path value="Extension"/>
       <short value="Last change date of the evidence status."/>
       <definition value="Last change date of the evidence status."/>
-      <comment value="This is an extension to represent the last evidence status change date"/>
+      <comment value="This is an extension to represent the last evidence status change date. The evidence status date is needed due to September Sweeps.
+        For financial reasons, payers want to submit as many diagnoses as they can prior to September Sweeps because these are used to set the amount
+        for the initial payment adjustments. Payers sometimes offer providers “Early Bird” incentives to document HCCs as soon in the year as they can,
+         preferably prior to September Sweeps. For this reason, it is important for the payer to record when they receive medical evidence that closes
+         an HCC gap so the provider can receive any “Early Bird” incentives they may have earned."/>
       <min value="0"/>
       <max value="1"/>
     </element>

@@ -1,7 +1,5 @@
 {% assign id = {{include.id}} %}
 
-(The Da Vinci Risk Adjustment Implementation Guide is under development)
-
 ### Mandatory Data Elements and Terminology
 
 The following data-elements are mandatory (i.e data MUST be present).

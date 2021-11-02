@@ -8,7 +8,7 @@
   <experimental value="false"/>
   <date value="2021-07-20"/>
   <publisher value="Da Vinci Project"/>
-  <description value="(The Da Vinci Risk Adjustment Implementation Guide is under development). This risk adjustment coding gap report profile is based on the [MeasureReport](http://hl7.org/fhir/R4/measurereport.html) to represent a risk adjustment coding gap report."/>
+  <description value="This risk adjustment coding gap report profile is based on the [MeasureReport](http://hl7.org/fhir/R4/measurereport.html) to represent a risk adjustment coding gap report."/>
   <fhirVersion value="4.0.1"/>
   <kind value="resource"/>
   <abstract value="false"/>
@@ -19,7 +19,7 @@
     <element id="MeasureReport">
       <path value="MeasureReport"/>
       <short value="This is a Risk Adjustment Coding Gap Report."/>
-      <definition value="This is a Risk Adjustment Coding Gap Report for a patient/member for a particular Risk Adjustment model."/>
+      <definition value="This is a Risk Adjustment Coding Gap Report of a patient/member using a specific version of a particular Risk Adjustment model."/>
     </element>
     <element id="MeasureReport:clinicalDataCollectionDeadline">
       <path value="MeasureReport.extension"/>
@@ -66,6 +66,7 @@
     <element id="MeasureReport.date">
       <path value="MeasureReport.date"/>
       <short value="When the report was generated"/>
+      <definition value="This is the date the report was generated. For example when a Client runs the $report operation on 2021-11-01, this date element will be 2021-11-01. If a Server creates a Risk Adjustment Coding Gap MeasureReport, this would be the date when the report is generated and saved on the Server."/>
       <min value="1"/>
       <max value="1"/>
       <mustSupport value="true"/>
@@ -193,7 +194,6 @@
    <path value="MeasureReport.evaluatedResource"/>
    <short value="Supporting evidence for Condition Categories coding gaps, such as encounter, medication, and lab. An evidence is linked to a specific Condition Category through referencing the MeasureReport.group.id. Referenced resources shall use USCore profiles where applicable."/>
    <definition value="Supporting evidence for Condition Categories coding gaps, such as encounter, medication, and lab."/>
-   <!--<requirements value="To support the reporting of supplemental data elements."/>-->
    <mustSupport value="true"/>
  </element>
 

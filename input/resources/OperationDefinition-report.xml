@@ -21,7 +21,8 @@
         <use value="in"/>
         <min value="1"/>
         <max value="1"/>
-        <documentation value="The start of a clinical evaluation period."/>
+        <documentation value="The start of a clinical evaluation period. The periodStart and periodEnd parameters will be compared with the clinical evaluation period (`MeasureReport.period.start` and `MeasureReport.period.end`)
+          of a [Risk Adjustment Coding Gap MeasureReport](StructureDefinition-ra-measurereport.html) available on the Server. The MeasureReport will be returned if there is an overlap of the two periods."/>
         <type value="date"/>
     </parameter>
     <parameter>
