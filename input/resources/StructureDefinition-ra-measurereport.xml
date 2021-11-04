@@ -97,7 +97,7 @@
     </element>
     <element id="MeasureReport.period">
       <path value="MeasureReport.period"/>
-      <short value="Clinical evaluation period."/>
+      <short value="Clinical evaluation period during which risk adjusting encounters could be conducted and documented with expectations of submission for risk adjustment purposes."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -127,8 +127,8 @@
     </element>
     <element id="MeasureReport.group">
       <path value="MeasureReport.group"/>
-      <short value="A group contains information for one Condition Categories code. If a patient/member has multiple Condition Categories codes, there will be multiple group(s) and each group represents a Condition Categories code."/>
-      <definition value="Condition Categories codes and detailed information for the coding gap."/>
+      <short value="A group contains information for a Condition Category. If a patient/member has multiple Condition Categories, there will be multiple group(s) and each group represents a Condition Category."/>
+      <definition value="Condition Categories and detailed information for the coding gap."/>
       <min value="0"/>
       <max value="*"/>
       <mustSupport value="true"/>
