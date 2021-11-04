@@ -38,7 +38,7 @@
         <use value="in"/>
         <min value="1"/>
         <max value="1"/>
-        <documentation value="Subject will be a reference to either Patient [US Core Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) or Group [Patient Group Profile](StructureDefinition-ra-patient-group.html). Must provide either Patient/123 or Group/123, cannot simply provide 123. If only 123 is provided, then the operation would not know if it is a Patient reference or a Group reference."/>
+        <documentation value="Subject will be a reference to either Patient ([US Core Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html)) or Group ([Patient Group](StructureDefinition-ra-patient-group.html)). Must provide either Patient/123 or Group/123, cannot simply provide 123. If only 123 is provided, then the operation would not know if it is a Patient reference or a Group reference."/>
         <type value="string"/>
         <searchType value="reference"/>
     </parameter>

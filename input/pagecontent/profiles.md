@@ -10,9 +10,9 @@ List of profiles that define constrains on FHIR resources for systems conforming
 |Resource Type|Profile Name|Link to Profile|
 |---|---|---|
 |Bundle|Risk Adjustment Coding Gap Report Bundle Profile|[Risk Adjustment Coding Gap Report Bundle]|
-|Group|Patient Group Profile|[Patient Group Profile]|
-|MeasureReport|Risk Adjustment Coding Gap Report Profile|[Risk Adjustment Coding Gap Report Profile]|
-|Measure|Risk Adjustment Model Measure Profile|[Risk Adjustment Model Measure Profile]|
+|Group|Patient Group Profile|[Patient Group]|
+|MeasureReport|Risk Adjustment Coding Gap Report Profile|[Risk Adjustment Coding Gap Report]|
+|Measure|Risk Adjustment Model Measure Profile|[Risk Adjustment Model Measure]|
 
 
 <br />

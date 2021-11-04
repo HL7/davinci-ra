@@ -29,11 +29,14 @@
 [MeasureReport]: {{site.data.fhir.path}}measurereport.html
 [Organization01: Payer Organization ABC Payer]: Organization-ra-payer01.html
 [Parameters01: Report return, subject Eve Everywoman]: Parameters-Patient-ra-patient01-report.html
+[Patient Group]: StructureDefinition-ra-patient-group.html
 [Patient Group Profile]: StructureDefinition-ra-patient-group.html
 [Patient01: Eve Everywoman]: Patient-ra-patient01.html
 [Patient02: Adam Everyman]: Patient-ra-patient02.html
 [Patient03: Nelda Nuclear]: Patient-ra-patient03.html
 [Patient04: Jane Doh]: Patient-ra-patient04.html
 [Risk Adjustment Coding Gap Report Bundle]: StructureDefinition-ra-measurereport-bundle.html
+[Risk Adjustment Coding Gap Report]: StructureDefinition-ra-measurereport.html
 [Risk Adjustment Coding Gap Report Profile]: StructureDefinition-ra-measurereport.html
+[Risk Adjustment Model Measure]: StructureDefinition-ra-model-measure.html
 [Risk Adjustment Model Measure Profile]: StructureDefinition-ra-model-measure.html
