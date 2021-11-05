@@ -63,6 +63,94 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Condition/ra-condition04pat03"/>
+      </reference>
+      <name value="Condition04pat03: Chronic obstructive pulmonary disease with (acute) exacerbation"/>
+      <description value="Chronic obstructive pulmonary disease with (acute) exacerbation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition05pat03"/>
+      </reference>
+      <name value="Condition05pat03: Unspecified protein-calorie malnutrition"/>
+      <description value="Unspecified protein-calorie malnutrition"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition06pat03"/>
+      </reference>
+      <name value="Condition06pat03: Crohn's disease of large intestine with unspecified complicationss"/>
+      <description value="Crohn's disease of large intestine with unspecified complications"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition07pat03"/>
+      </reference>
+      <name value="Condition07pat03: Other persistent atrial fibrillation"/>
+      <description value="Other persistent atrial fibrillation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition15pat03"/>
+      </reference>
+      <name value="Condition15pat03: Diabetes mellitus due to underlying condition with diabetic chronic kidney diseases"/>
+      <description value="Diabetes mellitus due to underlying condition with diabetic chronic kidney diseases"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition16pat03"/>
+      </reference>
+      <name value="Condition16pat03: Dependence on renal dialysis"/>
+      <description value="Dependence on renal dialysiss"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition21pat03"/>
+      </reference>
+      <name value="Condition21pat03: Type 2 diabetes mellitus without complications"/>
+      <description value="Type 2 diabetes mellitus without complications"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition22pat03"/>
+      </reference>
+      <name value="Condition22pat03: Other acute kidney failure"/>
+      <description value="Other acute kidney failure"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition23pat03"/>
+      </reference>
+      <name value="Condition23pat03: Chronic kidney disease, stage 5"/>
+      <description value="Chronic kidney disease, stage 5"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition32pat03"/>
+      </reference>
+      <name value="Condition32pat03: Chronic pulmonary embolism"/>
+      <description value="Chronic pulmonary embolism"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition35pat03"/>
+      </reference>
+      <name value="Condition35pat03: Hypertension secondary to other renal disorders"/>
+      <description value="Hypertension secondary to other renal disorders"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Condition/ra-condition02"/>
       </reference>
       <name value="Condition02: Major Depressive Disorder, Single episode"/>
@@ -75,6 +163,22 @@
       </reference>
       <name value="Encounter"/>
       <description value="Encounter with Dr Howell on 20210714"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/ra-payer01"/>
+      </reference>
+      <name value="Organization01: ABC Payer"/>
+      <description value="ABC Payer"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/Patient-ra-patient01-report"/>
+      </reference>
+      <name value="Patient01: Report"/>
+      <description value="Report01: Single Risk Adjustment Measure-RAModelExample01 Report for Patient01"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
