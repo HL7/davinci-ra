@@ -85,6 +85,30 @@
       <description value="Eve Everywoman"/>
       <exampleBoolean value="true"/>
     </resource>
+        <resource>
+      <reference>
+        <reference value="Patient/ra-patient02"/>
+      </reference>
+      <name value="Patient02: Adam Everyman"/>
+      <description value="Adam Everyman"/>
+      <exampleBoolean value="true"/>
+    </resource>
+        <resource>
+      <reference>
+        <reference value="Patient/ra-patient03"/>
+      </reference>
+      <name value="Patient03: Nelda Nuclear"/>
+      <description value="Nelda Nuclear"/>
+      <exampleBoolean value="true"/>
+    </resource>
+        <resource>
+      <reference>
+        <reference value="Patient/ra-patient04"/>
+      </reference>
+      <name value="Patient04: Jane Doh"/>
+      <description value="Jane Doh"/>
+      <exampleBoolean value="true"/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
