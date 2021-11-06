@@ -1,8 +1,5 @@
 == Suppressed Messages ==
 
-# Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# (And include comments like this justifying why)
-
 # We expect that all of the 'structural' resources will only be validated against their respective 'core' resource definitions
 Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
@@ -22,9 +19,16 @@ WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element
 INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient
 INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient
 
+# The slice is open with the intention of allowing entries for non-defined resources.
+INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
+INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
+
 # If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...
 WARNING: StructureDefinition.where(url = 'http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner'): The Implementation Guide contains no examples for this profile
 WARNING: StructureDefinition.where(url = 'http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-patient-group'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference'): The Implementation Guide contains no examples for this extension
+INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle'): The Implementation Guide contains no explicitly linked examples for this profile
 
 # The objective is to show a reference to an unknown code system, so these warnings are expected
 WARNING: ValueSet/valueset-no-codesystem: ValueSet.compose[0].include[0]: Unknown System/Version specified, so Concepts and Filters can''t be checked
@@ -32,3 +36,93 @@ WARNING: ValueSet.where(id = 'valueset-no-codesystem'): Error from server: Unabl
 
 # We don't want a code for the change reason (and this binding shouldn't be extensible anyhow)
 WARNING: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance).reason[0]: No code provided, and a code should be provided from the value set http://terminology.hl7.org/ValueSet/v3-PurposeOfUse (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse)
+
+# MEASURE_MR_GRP_UNK_CODE (32): pending update to the publisher to not require matching groups in the MeasureReport of no groups are defined in the MeasureReport.  Ref Zulip: https://chat.fhir.org/#narrow/stream/179165-committers/topic/MeasureReport.2Egroup.20validation.  PR has been merged: https://github.com/hapifhir/org.hl7.fhir.core/pull/630, just waiting for it to be included in a release.
+ERROR: MeasureReport/ra-measurereport01: MeasureReport.group[0]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport01: MeasureReport.group[1]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport01: MeasureReport.group[2]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport01: MeasureReport.group[3]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport01: MeasureReport.group[4]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport02: MeasureReport.group[0]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport02: MeasureReport.group[1]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport02: MeasureReport.group[2]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport02: MeasureReport.group[3]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport02: MeasureReport.group[4]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport03: MeasureReport.group[0]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[0]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[1]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[2]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[3]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[4]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[5]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[6]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[7]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[8]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[9]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[10]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport05: MeasureReport.group[0]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport05: MeasureReport.group[1]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport05: MeasureReport.group[2]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport05: MeasureReport.group[3]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/ra-measurereport05: MeasureReport.group[4]: The code for this group has no match in the measure definition
+ERROR: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[0]: The code for this group has no match in the measure definition
+ERROR: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[1]: The code for this group has no match in the measure definition
+ERROR: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[2]: The code for this group has no match in the measure definition
+ERROR: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[3]: The code for this group has no match in the measure definition
+ERROR: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[4]: The code for this group has no match in the measure definition
+
+# MEASURE_MR_M_SCORING_UNK (7): This is intended.  The measureScore attribute is not required.  You should only get this message if there is a measureScore.  TODO: create a tracker to remove this warning if there is no measureScore.
+INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
+INFORMATION: MeasureReport/ra-measurereport02: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
+INFORMATION: MeasureReport/ra-measurereport03: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
+INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
+INFORMATION: MeasureReport/ra-measurereport05: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
+INFORMATION: MeasureReport/ra-measurereport06: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
+INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
+
+# MEASURE_M_NO_GROUPS (3): This is intended.  Currently, the support for Risk Adjustment does not include a practical way to model the groups as the number are prohibitive.  A solution is being worked on, but the Measure resource does not require a group so this should not be a blocking issue.
+WARNING: Measure/RAModelExample01: Measure: A measure should contain at least one group
+WARNING: Measure/RAModelExample02: Measure: A measure should contain at least one group
+WARNING: Measure/RAModelExample03: Measure: A measure should contain at least one group
+
+# Terminology_TX_System_NotKnown (1): Valid CPT code Related to http://www.ama-assn.org/go/cpt
+INFORMATION: Encounter/ra-encounter01pat03: Encounter.type[0].coding[0]: Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
+
+# Terminology_TX_System_NotKnown (22): Currently, there are no CMS HCC or RXHCC code systems.  Solutions are being worked on.
+INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.group[0].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.group[1].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.group[2].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.group[3].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.group[4].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport02: MeasureReport.group[0].code.coding[0]: Code System URI 'http://cms.gov/cms-rxhcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport02: MeasureReport.group[1].code.coding[0]: Code System URI 'http://cms.gov/cms-rxhcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport02: MeasureReport.group[2].code.coding[0]: Code System URI 'http://cms.gov/cms-rxhcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport02: MeasureReport.group[3].code.coding[0]: Code System URI 'http://cms.gov/cms-rxhcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport02: MeasureReport.group[4].code.coding[0]: Code System URI 'http://cms.gov/cms-rxhcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport03: MeasureReport.group[0].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[0].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[1].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[2].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[3].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[4].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[5].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[6].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[7].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[8].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[9].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[10].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport05: MeasureReport.group[0].code.coding[0]: Code System URI 'http://cms.gov/cms-rxhcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport05: MeasureReport.group[1].code.coding[0]: Code System URI 'http://cms.gov/cms-rxhcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport05: MeasureReport.group[2].code.coding[0]: Code System URI 'http://cms.gov/cms-rxhcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport05: MeasureReport.group[3].code.coding[0]: Code System URI 'http://cms.gov/cms-rxhcc/' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport05: MeasureReport.group[4].code.coding[0]: Code System URI 'http://cms.gov/cms-rxhcc/' is unknown so the code cannot be validated
+INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[0].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[1].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[2].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[3].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[4].code.coding[0]: Code System URI 'http://cms.gov/cms-hcc/' is unknown so the code cannot be validated
+
+# Type_Specific_Checks_DT_URL_Resolve (3): temporary system while a solution for the HCC system is being worked on
+ERROR: Measure/RAModelExample01: Measure.identifier[0].system: URL value 'http://hl7.org/fhir/us/davinci-ra' does not resolve
+ERROR: Measure/RAModelExample02: Measure.identifier[0].system: URL value 'http://hl7.org/fhir/us/davinci-ra' does not resolve
+ERROR: Measure/RAModelExample03: Measure.identifier[0].system: URL value 'http://hl7.org/fhir/us/davinci-ra' does not resolve
