@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
-  <id value="fhir.us.davinci-ra"/>
+  <id value="hl7.fhir.us.davinci-ra"/>
   <url value="http://hl7.org/fhir/us/davinci-ra/ImplementationGuide/fhir.us.davinci-ra"/>
   <version value="0.1.0"/>
   <name value="RiskAdjustment"/>
   <title value="Da Vinci Risk Adjustment Implementation Guide (STU1 Ballot)"/>
   <status value="draft"/>
+  <copyright  value="Used by permission of HL7 International - Clinical Quality Information Work Group, all rights reserved Creative Commons License"/>
   <experimental value="false"/>
   <publisher value="HL7 Clinical Quality Information Work Group"/>
   <contact>
