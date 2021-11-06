@@ -9,7 +9,7 @@ This is the page that will list the extensions defined in this implementation gu
 
 |Link to Profile|
 |---|
-|[Risk Adjustment Clinical Data Collection Deadline Extension](StructureDefinition-extension-clinicalDataCollectionDeadline.html)|
+|[Risk Adjustment Clinical Data Collection Deadline Extension](StructureDefinition-ra-clinicalDataCollectionDeadline.html)|
 |[Risk Adjustment Evidence Status Extension](StructureDefinition-ra-evidenceStatus.html)|
 |[Risk Adjustment Evidence Status Date Extension](StructureDefinition-ra-evidenceStatusDate.html)|
 |[Risk Adjustment Group Reference Extension](StructureDefinition-ra-groupReference.html)|

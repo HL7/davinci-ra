@@ -300,7 +300,7 @@
         <title value="Extensions"/>
         <generation value="markdown"/>
         <page>
-          <nameUrl value="StructureDefinition-extension-clinicalDataCollectionDeadline.html"/>
+          <nameUrl value="StructureDefinition-ra-clinicalDataCollectionDeadline.html"/>
           <title value="Risk Adjustment Clinical Data Collection Deadline"/>
           <generation value="generated"/>
         </page>
