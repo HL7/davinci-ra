@@ -17,7 +17,7 @@
   ],
   "version": "5",
   "name": "RAModelExample03",
-  "title": "CMS Prescribing Drug Hiearchical Category Condition (CMS-HCC) Risk Adjustment Model Version 5",
+  "title": "Risk Adjustment Model Version 5 - CMS Prescribing Drug Hiearchical Category Condition (CMS-HCC)",
   "status": "active",
   "experimental": true,
   "date": "2021-09-13",
