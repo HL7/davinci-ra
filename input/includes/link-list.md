@@ -3,7 +3,7 @@
 [$report]:OperationDefinition-report.html
 [Clinical Evaluation Period]:glossary.html#glossary
 [Condition01: Type 2 diabetes with unspecified manifestations]: Condition-ra-condition01.html
-[Condition01Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition01Pat03.html
+[Condition01Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition01pat03.html
 [Condition02: Major Depressive Disorder, Single episode]: Condition-ra-condition02.html
 [Da Vinci - Risk Based Contracts Member Attribution (ATR) List IG]: http://hl7.org/fhir/us/davinci-atr/
 [Downloads]: downloads.html
