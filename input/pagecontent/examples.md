@@ -15,6 +15,9 @@
 - [Condition02: Major Depressive Disorder, Single episode]
 - [Condition01Pat03: Other artificial openings of gastrointestinal tract status]  
 
+- [Group01: Risk Adjustment Patient Group, (Patient01: Eve Everywoman)]
+- [Group02: Risk Adjustment Patient Group, (Patient02: Adam Everyman, Patient03: Nelda Nuclear)]  
+
 - [Measure01: Risk Adjustment Model CMS-HCC V24]
 - [Measure02: Risk Adjustment Model CMS-HCC V21]
 - [Measure03: Risk Adjustment Model CMS-RxHCC V05]  
