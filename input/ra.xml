@@ -39,6 +39,22 @@
     <version value="3.0.0"/>
   </dependsOn>
   <definition>
+  <resource>
+      <reference>
+        <reference value="Group/ra-group01"/>
+      </reference>
+      <name value="ra-group01: Risk Adjustment Patient Group"/>
+      <description value="Example Risk Adjustment Group"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Group/ra-group02"/>
+      </reference>
+      <name value="ra-group02: Risk Adjustment Patient Group"/>
+      <description value="Example Risk Adjustment Group"/>
+      <exampleBoolean value="true"/>
+    </resource>
     <resource>
       <reference>
         <reference value="MeasureReport/ra-measurereport01"/>

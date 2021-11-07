@@ -246,6 +246,11 @@
         {
             "resource": {
                 "resourceType": "Group",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-patient-group"
+                    ]
+                },
                 "id": "ra-group02",
                 "type": "person",
                 "actual": true,

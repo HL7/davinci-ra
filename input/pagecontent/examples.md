@@ -11,26 +11,29 @@
 <!-- ================================================ -->
 ---  
 
+- [Condition01: Type 2 diabetes with unspecified manifestations]
+- [Condition02: Major Depressive Disorder, Single episode]
+- [Condition01Pat03: Other artificial openings of gastrointestinal tract status]  
+
+- [Group01: Risk Adjustment Patient Group, (Patient01: Eve Everywoman)]
+- [Group02: Risk Adjustment Patient Group, (Patient02: Adam Everyman), (Patient03: Nelda Nuclear)]  
+
+- [Measure01: Risk Adjustment Model CMS-HCC V24]
+- [Measure02: Risk Adjustment Model CMS-HCC V21]
+- [Measure03: Risk Adjustment Model CMS-RxHCC V05]  
+
 - [MeasureReport01: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]
 - [MeasureReport02: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient01: Eve Everywoman)]
 - [MeasureReport03: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient02: Adam Everyman)]
 - [MeasureReport04: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V21 (Patient03: Nelda Nuclear)]
 - [MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Nelda Nuclear)]  
 
-- [Measure01: Risk Adjustment Model CMS-HCC V24]
-- [Measure02: Risk Adjustment Model CMS-HCC V21]
-- [Measure03: Risk Adjustment Model CMS-RxHCC V05]  
+- [Organization01: Payer Organization ABC Payer]  
+
+- [Parameters01: Report return, subject Eve Everywoman]  
 
 - [Patient01: Eve Everywoman]
 - [Patient02: Adam Everyman]
 - [Patient03: Nelda Nuclear]  
-
-- [Condition01: Type 2 diabetes with unspecified manifestations]
-- [Condition02: Major Depressive Disorder, Single episode]
-- [Condition01Pat03: Other artificial openings of gastrointestinal tract status]  
-
-- [Organization01: Payer Organization ABC Payer]  
-
-- [Parameters01: Report return, subject Eve Everywoman]  
 
 {% include link-list.md %}
