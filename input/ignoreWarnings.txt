@@ -24,8 +24,6 @@ INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].res
 INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
 
 # If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...
-WARNING: StructureDefinition.where(url = 'http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner'): The Implementation Guide contains no examples for this profile
-WARNING: StructureDefinition.where(url = 'http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation'): The Implementation Guide contains no examples for this profile
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference'): The Implementation Guide contains no examples for this extension
 INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle'): The Implementation Guide contains no explicitly linked examples for this profile
 
