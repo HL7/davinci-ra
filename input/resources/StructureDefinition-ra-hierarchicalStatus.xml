@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ra-hiearchicalStatus"/>
-  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hiearchicalStatus"/>
-  <name value="HiearchicalStatusExtension"/>
-  <title value="Hiearchical Status Extension"/>
+  <id value="ra-hierarchicalStatus"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus"/>
+  <name value="HierarchicalStatusExtension"/>
+  <title value="Hierarchical Status Extension"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2021-10-07"/>
@@ -33,7 +33,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hiearchicalStatus"/>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus"/>
     </element>
     <element id="Extension.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
@@ -43,7 +43,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/hiearchical-status"/>
+        <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/hierarchical-status"/>
       </binding>
     </element>
   </differential>

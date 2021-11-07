@@ -49,7 +49,7 @@
         </element>
         <element id="Measure.title">
             <path value="Measure.title"/>
-            <short value="E.g., CMS Hiearchical Category Condition (CMS-HCC) Risk Adjustment Model Version 24"/>
+            <short value="E.g., CMS Hierarchical Category Condition (CMS-HCC) Risk Adjustment Model Version 24"/>
             <mustSupport value="true"/>
         </element>
     </differential>

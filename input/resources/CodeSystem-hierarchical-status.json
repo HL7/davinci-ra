@@ -2,12 +2,12 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "RiskAdjustmentHiearchicalStatusCodeSystem",
-  "id": "hiearchical-status",
-  "title": "Risk Adjustment Hiearchical Status Code System",
+  "name": "RiskAdjustmenthierarchicalStatusCodeSystem",
+  "id": "hierarchical-status",
+  "title": "Risk Adjustment Hierarchical Status Code System",
   "publisher":"Da Vinci Project",
-  "description": "(The Da Vinci Risk Adjustment Implementation Guide is under development). This is a code system for Risk Adjustment Hiearchical Status to indicate whether hiearchies were applied to a Condition Category, and if applied, whether the Condition Category is superseded.",
-  "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hiearchical-status",
+  "description": "(The Da Vinci Risk Adjustment Implementation Guide is under development). This is a code system for Risk Adjustment Hierarchical Status to indicate whether hiearchies were applied to a Condition Category, and if applied, whether the Condition Category is superseded.",
+  "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
   "concept": [
     {
       "code": "applied-superseded",

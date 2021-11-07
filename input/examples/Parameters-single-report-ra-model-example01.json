@@ -81,11 +81,11 @@
                                             "valueDate": "2021-08-01"
                                         },
                                         {
-                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hiearchicalStatus",
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
                                             "valueCodeableConcept": {
                                                 "coding": [
                                                     {
-                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hiearchical-status",
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
                                                         "code": "applied-not-superseded"
                                                     }
                                                 ]
@@ -134,11 +134,11 @@
                                             "valueDate": "2020-07-15"
                                         },
                                         {
-                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hiearchicalStatus",
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
                                             "valueCodeableConcept": {
                                                 "coding": [
                                                     {
-                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hiearchical-status",
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
                                                         "code": "applied-not-superseded"
                                                     }
                                                 ]
@@ -187,11 +187,11 @@
                                             "valueDate": "2020-07-15"
                                         },
                                         {
-                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hiearchicalStatus",
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
                                             "valueCodeableConcept": {
                                                 "coding": [
                                                     {
-                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hiearchical-status",
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
                                                         "code": "applied-not-superseded"
                                                     }
                                                 ]
@@ -236,11 +236,11 @@
                                             }
                                         },
                                         {
-                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hiearchicalStatus",
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
                                             "valueCodeableConcept": {
                                                 "coding": [
                                                     {
-                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hiearchical-status",
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
                                                         "code": "applied-not-superseded"
                                                     }
                                                 ]
@@ -289,11 +289,11 @@
                                             "valueDate": "2020-07-15"
                                         },
                                         {
-                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hiearchicalStatus",
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
                                             "valueCodeableConcept": {
                                                 "coding": [
                                                     {
-                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hiearchical-status",
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
                                                         "code": "applied-not-superseded"
                                                     }
                                                 ]
