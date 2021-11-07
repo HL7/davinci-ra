@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
-  <id value="fhir.us.davinci-ra"/>
+<ImplementationGuide xmlns="http://hl7.org/fhir"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="hl7.fhir.us.davinci-ra"/>
   <url value="http://hl7.org/fhir/us/davinci-ra/ImplementationGuide/fhir.us.davinci-ra"/>
   <version value="0.1.0"/>
   <name value="RiskAdjustment"/>
   <title value="Da Vinci Risk Adjustment Implementation Guide (STU1 Ballot)"/>
   <status value="draft"/>
+  <copyright value="Used by permission of HL7 International - Clinical Quality Information Work Group, all rights reserved Creative Commons License"/>
   <experimental value="false"/>
   <publisher value="HL7 Clinical Quality Information Work Group"/>
   <contact>
@@ -42,6 +44,46 @@
         <reference value="MeasureReport/ra-measurereport01"/>
       </reference>
       <name value="ra-measurereport01: Risk Adjustment Measure Report"/>
+      <description value="Example Risk Adjustment Measure Report"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MeasureReport/ra-measurereport02"/>
+      </reference>
+      <name value="ra-measurereport02: Risk Adjustment Measure Report"/>
+      <description value="Example Risk Adjustment Measure Report"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MeasureReport/ra-measurereport03"/>
+      </reference>
+      <name value="ra-measurereport03: Risk Adjustment Measure Report"/>
+      <description value="Example Risk Adjustment Measure Report"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MeasureReport/ra-measurereport04"/>
+      </reference>
+      <name value="ra-measurereport04: Risk Adjustment Measure Report"/>
+      <description value="Example Risk Adjustment Measure Report"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MeasureReport/ra-measurereport05"/>
+      </reference>
+      <name value="ra-measurereport05: Risk Adjustment Measure Report"/>
+      <description value="Example Risk Adjustment Measure Report"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MeasureReport/ra-measurereport06"/>
+      </reference>
+      <name value="ra-measurereport06: Risk Adjustment Measure Report"/>
       <description value="Example Risk Adjustment Measure Report"/>
       <exampleBoolean value="true"/>
     </resource>
@@ -189,7 +231,7 @@
       <description value="Eve Everywoman"/>
       <exampleBoolean value="true"/>
     </resource>
-        <resource>
+    <resource>
       <reference>
         <reference value="Patient/ra-patient02"/>
       </reference>
@@ -197,7 +239,7 @@
       <description value="Adam Everyman"/>
       <exampleBoolean value="true"/>
     </resource>
-        <resource>
+    <resource>
       <reference>
         <reference value="Patient/ra-patient03"/>
       </reference>
@@ -205,7 +247,7 @@
       <description value="Nelda Nuclear"/>
       <exampleBoolean value="true"/>
     </resource>
-        <resource>
+    <resource>
       <reference>
         <reference value="Patient/ra-patient04"/>
       </reference>
@@ -258,7 +300,7 @@
         <title value="Extensions"/>
         <generation value="markdown"/>
         <page>
-          <nameUrl value="StructureDefinition-extension-clinicalDataCollectionDeadline.html"/>
+          <nameUrl value="StructureDefinition-ra-clinicalDataCollectionDeadline.html"/>
           <title value="Risk Adjustment Clinical Data Collection Deadline"/>
           <generation value="generated"/>
         </page>

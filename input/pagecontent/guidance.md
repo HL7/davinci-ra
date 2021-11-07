@@ -88,7 +88,7 @@ The operation will return a bundle of the bundle.type "collection" which will in
 
 #### Construction of the Risk Adjustment Coding Gap Reports
 
-The Risk Adjustment Coding Gaps Report is built on a FHIR MeasureReport Resource.  This profile adds several new elements/extensions that apply only to Risk Adjustment Code Gap reporting.  The first, extension-clinicalDataCollectionDeadline is added to specify to the report receiver/client the deadline, last date, that a client or the organization they represent must submit data to the server's organization.  In the reporter element, an extension was added to allow for the reporter to be a group, extension-reporterGroup.
+The Risk Adjustment Coding Gaps Report is built on a FHIR MeasureReport Resource.  This profile adds several new elements/extensions that apply only to Risk Adjustment Code Gap reporting.  The first, ra-clinicalDataCollectionDeadline is added to specify to the report receiver/client the deadline, last date, that a client or the organization they represent must submit data to the server's organization.  In the reporter element, an extension was added to allow for the reporter to be a group, extension-reporterGroup.
 
 This profile more specifically defines the period.start and period.end elements to be the Clinical Evaluation Period.  The date element is the date the report was generated.
 
