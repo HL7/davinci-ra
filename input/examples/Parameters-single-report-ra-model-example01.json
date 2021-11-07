@@ -15,10 +15,10 @@
                 },
                 "identifier": {
                     "system": "urn:ietf:rfc:3986",
-                    "value": "urn:uuid:27a63f26-1372-4c7a-bd55-761bdeec9e01"
+                    "value": "urn:uuid:2ee93c0a-f82a-4799-8f22-b2c369b81921"
                 },
                 "type": "collection",
-                "timestamp": "2021-11-06T21:22:48.735+00:00",
+                "timestamp": "2021-11-07T23:14:17.372+00:00",
                 "entry": [
                     {
                         "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/MeasureReport/ra-measurereport01",
@@ -315,9 +315,53 @@
                             ],
                             "evaluatedResource": [
                                 {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-001"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-002"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-003"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-004"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-005"
+                                        }
+                                    ],
                                     "reference": "Condition/ra-condition01"
                                 },
                                 {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-001"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-002"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-003"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-004"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-005"
+                                        }
+                                    ],
                                     "reference": "Condition/ra-condition02"
                                 }
                             ]
