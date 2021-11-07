@@ -40,3 +40,5 @@
 [Risk Adjustment Coding Gap Report Profile]: StructureDefinition-ra-measurereport.html
 [Risk Adjustment Model Measure]: StructureDefinition-ra-model-measure.html
 [Risk Adjustment Model Measure Profile]: StructureDefinition-ra-model-measure.html
+[SMART App Launch]: http://hl7.org/fhir/smart-app-launch/history.html
+[SMART Backend Services]: https://hl7.org/fhir/uv/bulkdata/authorization/index.html

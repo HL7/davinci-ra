@@ -41,15 +41,21 @@
 |<b>Acronym</b>|   |<b>Definition</b>|
 |---|---|---|
 |CC|      |---Condition Category|
-|CMS-HCC|     |---The Centers of Medicare and Medicaid Services Hierarchical Condition Category model|
-|CDPS|     |The Chronic Illness and Disability Payment System|
+|CMS-HCC|     |---The Centers for Medicare and Medicaid Services Hierarchical Condition Category model|
+|CMS-RxHCC|     |---The Centers for Medicare and Medicaid Services Prescription Drug Hierarchical Condition Category model|
+|CDPS|     |---The Chronic Illness and Disability Payment System|
+|DCG|     |---Diagnostic Cost Group|
+|DxCG|     |---DxCG is an American company located in Boston, MA, that develops predictive modeling software solutions used by the healthcare industry.|
 |DXG|     |---Diagnostic Group|
 |ESRD|     |---End Stage Renal Disease|
 |HCC|     |---Hierarchical Condition Category|
 |HHS-HCC|     |---Health and Human Services Hierarchical Condition Category|
+|RXC|     |---Health and Human Services (HHS) Prescription Drug Category|
 |MA|     |---Medicare Advantage|
 |MRX|     |---Medicaid Rx risk adjustment model|
 |PACE|     |---All-encompassing Care for the Elderly|
+
+
 
 ### References
 
