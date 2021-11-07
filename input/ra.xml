@@ -320,8 +320,8 @@
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="StructureDefinition-ra-historicDiagnosis.html"/>
-          <title value="Risk Adjustment Historic Diagnosis"/>
+          <nameUrl value="StructureDefinition-ra-hierarchicalStatus.html"/>
+          <title value="Risk Adjustment Hierarchical Status"/>
           <generation value="generated"/>
         </page>
         <page>

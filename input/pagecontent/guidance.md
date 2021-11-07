@@ -95,7 +95,7 @@ This profile more specifically defines the period.start and period.end elements 
 Of particular note is the .measure element which points to a Measure Resource specifically profiled for Risk Adjustment Coding Gaps, [Risk Adjustment Model Measure Profile]. In this profile, the identifier will point to a specific Risk Adjustment Model, like CMS-HCC.  There is an element for version number, such as 24 as well as a name and title.  The other elements in Measure are not currently used by this profile.
 
 The group section of the report repeats for each Hierarchical Condition Code being reported.  To support,  the following new elements/extensions have been added.
-- ra-historicDiagnosis which allow the report to specify 0 to many historic diagnoses that rolls up to a specific risk code, such as HCC.
+- ra-hierarchicalStatus which allow the report to specify 0 to many historic diagnoses that rolls up to a specific risk code, such as HCC.
 - ra-suspectType which supports the indication of the suspect type, such as historic or suspected.
 - ra-evidenceStatus which is where a payer can indicate status of evidence related to the risk code such as confirmed, non-confirmed and pending.
 - ra-evidenceStatusDate which is the last change date of the evidence status.
