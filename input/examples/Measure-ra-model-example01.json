@@ -11,7 +11,7 @@
   "identifier": [
     {
       "use": "temp",
-      "system": "http://hl7.org/fhir/us/davinci-ra",
+      "system": "http://example.org/fhir/server",
       "value": "CMS-HCC"
     }
   ],
