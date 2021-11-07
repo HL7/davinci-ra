@@ -15,8 +15,6 @@
 [FHIR Artifacts/Terminology]: terminology.html
 [Glossary/Acronyms]: glossary.html#acronyms
 [Glossary/Glossary]: glossary.html
-[Group01: Risk Adjustment Patient Group, (Patient01: Eve Everywoman)]: Group-ra-group01.html
-[Group02: Risk Adjustment Patient Group, (Patient02: Adam Everyman), (Patient03: Nelda Nuclear)] : Group-ra-group02.html
 [Guidance]: guidance.html
 [HRex Coverage Profile]: http://build.fhir.org/ig/HL7/davinci-ehrx/StructureDefinition-hrex-coverage.html
 [Measure01: Risk Adjustment Model CMS-HCC V24]: Measure-RAModelExample01.html

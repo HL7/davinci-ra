@@ -806,9 +806,53 @@
                 ],
                 "evaluatedResource": [
                     {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                "valueString": "group-001"
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                "valueString": "group-002"
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                "valueString": "group-003"
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                "valueString": "group-004"
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                "valueString": "group-005"
+                            }
+                        ],
                         "reference": "Condition/ra-condition01"
                     },
                     {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                "valueString": "group-001"
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                "valueString": "group-002"
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                "valueString": "group-003"
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                "valueString": "group-004"
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                "valueString": "group-005"
+                            }
+                        ],
                         "reference": "Condition/ra-condition02"
                     }
                 ]
