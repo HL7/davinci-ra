@@ -501,6 +501,10 @@
       <value value="input\cql"/>
     </parameter>
     <parameter>
+      <code value="path-expansion-params"/>
+      <value value="../input/exp-params.json"/>
+    </parameter>
+    <parameter>
       <code value="path-liquid"/>
       <value value="templates\liquid"/>
     </parameter>
