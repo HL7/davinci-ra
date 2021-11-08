@@ -1,13 +1,8 @@
-
-<div markdown="1" class="bg-info">
-<b>The Da Vinci Risk Adjustment Implementation Guide is under development</b>
-</div>
-
 ###  Summary
 
-This Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide (IG) describes exchanging Risk Adjustment coding gaps between Payers and Providers. The first phase of this IG focuses on the standard exchange format of Risk Coding Gaps from Payers to Providers.
+The Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide (IG) describes exchanging Risk Adjustment coding gaps between Payers and Providers. The first phase of this IG focuses on the standard exchange format of Risk Coding Gaps from Payers to Providers.
 
-This Implementation Guide is supported by the Da Vinci initiative which is a private effort to accelerate the adoption of Health Level Seven International Fast Healthcare Interoperability Resources (HL7® FHIR®) as the standard to support and integrate value-based care (VBC) data exchange across communities.
+This Implementation Guide is supported by the Da Vinci initiative which is a private effort to accelerate the adoption of Health Level Seven International Fast Healthcare Interoperability Resources (HL7® FHIR®) as the standard to support and integrate value-based care (VBC) data exchange across communities. Like all Da Vinci Implementation Guides, it follows the [HL7 Da Vinci Guiding Principles] for exchange of patient health information. As an HL7 FHIR Implementation Guide, changes to this specification are managed by the sponsoring [Clinical Quality Information (CQI) Work Group] and are incorporated as part of the standard balloting process.
 
 ### How to read this Guide
 
@@ -53,13 +48,13 @@ This IG focuses on <b>risk adjustment for revenue normalization</b>, but risk ad
 Unless otherwise specified, when the term “risk adjustment” is used in this IG it is limited to risk adjustment for revenue normalization and is exclusively concerned with the exchange of diagnostic data to resolve CC or HCC gaps.
 
 #### Time Periods: Clinical Evaluation vs. Data Collection; Payment Years; Sweeps
-The date of service for the extracted diagnosis must correspond to the correct Payment Year but payers are generally permitted more than one calendar year to collect the diagnoses. There are several important time periods to keep track of here. For example, the Medicare Advantage <b>clinical evaluation period</b> runs from January 1 of [PY-1] through December 31 of [PY-1] during which the patient may have encounter(s) with physician(s) to document the presence of disease(s). The Medicare Advantage <b>data collection period</b> runs from January 1 [PY-1] to the end of January [PY+1]; during this time the payer may submit diagnoses collected during the clinical evaluation period to CMS. PY denotes the <b>Payment Year</b>, or the year when the payer receives it payment adjustment from Medicare. These payments begin on January 1 of [PY] based on diagnoses submitted to CMS through the first week of September of [PY-1]. This is a particularly important date known as the September Sweeps. For financial reasons, payers want to submit as many diagnoses as they can prior to September Sweeps because these are used to set the amount for the initial payment adjustments. Payers sometimes offer providers “Early Bird” incentives to document HCCs as soon in the year as they can, preferably prior to September Sweeps. For this reason, it is important for the payer to record when they receive medical evidence that closes an HCC gap so the provider can receive any “Early Bird” incentives they may have earned.
+The date of service for the extracted diagnosis must correspond to the correct Payment Year but payers are generally permitted more than one calendar year to collect the diagnoses. There are several important time periods to keep track of here. For example, the Medicare Advantage <b>clinical evaluation period</b> runs from January 1 of [PY-1] through December 31 of [PY-1] during which the patient may have encounter(s) with provider(s) to document the presence of disease(s). The Medicare Advantage <b>data collection period</b> runs from January 1 [PY-1] to the end of January [PY+1]; during this time the payer may submit diagnoses collected during the clinical evaluation period to CMS. PY denotes the <b>Payment Year</b>, or the year when the payer receives it payment adjustment from Medicare. These payments begin on January 1 of [PY] based on diagnoses submitted to CMS through the first week of September of [PY-1]. This is a particularly important date known as the September Sweeps. For financial reasons, payers want to submit as many diagnoses as they can prior to September Sweeps because these are used to set the amount for the initial payment adjustments. Payers sometimes offer providers “Early Bird” incentives to document HCCs as soon in the year as they can, preferably prior to September Sweeps. For this reason, it is important for the payer to record when they receive medical evidence that closes an HCC gap so the provider can receive any “Early Bird” incentives they may have earned.
 
 For example, during Medicare Advantage PY 2022 diagnoses are accepted from patient encounters with dates of service during the clinical evaluation period of Jan 1, 2021 to Dec 31, 2021. Payers may submit to Medicare the diagnoses they collect from these encounters as soon as Jan 1, 2021 and continuing through the end of Jan 2023. Sweeps for PY 2022 occur at the end of the first week of Sep 2021. Payers begin receiving payment adjustments from Medicare beginning in Jan 2022 based on diagnoses received through Sweeps.
 
-The risk adjustment activities in support of these payment cycles concurrently overlap during any given year, as shown in the following figure.
+The risk adjustment activities in support of these payment cycles concurrently overlap during any given year, as shown in the Figure 1-1. Note that this figure shows the Medicare Advantage risk adjustment cadence; other programs such as Medicaid and the ACA follow a different annual risk adjustment cadence.
 
-{% include img-portrait.html img="payment-cycle-overlap.png" caption = "Figure 1-1 This is the MA risk adjustment cadence; other programs such as Medicaid and the ACA follow a different annual risk adjustment cadence." %}
+{% include img-portrait.html img="payment-cycle-overlap.png" caption = "Figure 1-1 Medicare Advantage Risk Adjustment Cadence" %}
 
 #### Concurrent Models: Blending; Special-Purpose Models
 Since the data collection period is always longer than the clinical evaluation period there will be multiple models actively collecting data at the same time. For example, during the calendar year 2022 a typical MA payer will be actively collecting data to close gaps from several models:
@@ -86,22 +81,34 @@ What’s going on with these three different model versions? There are three ans
 3.	Throughout this period the CMS-RxHCC V05 model was also in continuous use. The purpose of the CMS-RxHCC model is to normalize the expected cost of medications across populations, just as the CMS-HCC model normalizes the expected cost of medical treatment. Despite the name, the RxHCC model is derived from medical claims – not pharmacy claims. The RxHCC model overlaps with CMS-HCC to a considerable degree; many times the same diagnosis will close both an HCC and an RxHCC, although there are some diagnoses that only roll up to RxHCCs and not HCCs. Many risk adjustment models feature this separation between the medical and prescription drug portions of the model (Medicare CMS-HCC and CMS-RxHCC; Medicaid CPDS and MRX; ACA HHS-HCC and RXC.)
 
 ### Scope
-After careful review with the subject matter experts in the area of Risk Adjustment, it was determined that the most challenging aspect of the current Risk Adjustemnt process was the inconsistent manner in which reports on Risk Coding gaps were communicated between a provider(or system operating on their behalf) and a payer (or system operating on the payer's behalf).  Below is a high level example of the workflow for a CMS related risk adjustment model.  Phase 1 of this Implementation Guide will focus on the Risk Adjustment Coding Gap Report.
+
+The Da Vinci Risk Adjustment Use Case acknowledges the importance of risk-adjusted premium calculations to government managed care and seeks to
+- better inform clinicians of opportunities to address risk adjusted conditions,
+- better enable payers to communicate risk adjustment information, and
+- enhance government sponsors’ ability to allocate funding accurately.
+
+To accomplish this:
+- Payers need a standard protocol to share and receive clinical data related to risk adjustment with responsible providers.
+- Providers need a standard protocol to share and receive clinical data related to risk adjustment with responsible payers.
+- Payers and providers need a standard methodology to communicate risk based coding, documentation and submission status of chronic illnesses.
+
+After careful review with the risk adjustment subject matter experts, it was determined that the most challenging aspect of the current risk adjustment process was the inconsistent manner in which reports on risk adjustment coding gaps were communicated between a provider (or system operating on their behalf) and a payer (or system operating on the payer's behalf). Figure 2-2 shows a high level example of the risk adjustment workflow in CMS Medicare advantage program. Phase one of this Implementation Guide focuses on specifying a standard exchange format, the [Risk Adjustment Coding Gap Report], from payers to providers.
 
 
 <img src="workflow-medicare-advantage.png" alt="Figure 1-2 Workflow for Medicare Advantage Population" class="img-responsive img-rounded center-block"/>
 
 
 
-**This Implementation Guide was made possible by the thoughtful contributions of the following people and organizations:
+This Implementation Guide was made possible by the thoughtful contributions of the following people and organizations:
 
-- *Yan Heras, Optimum eHealth LLC*
-- *Rob Reynolds, Dynamic Content Group*
-- *Linda Michaelsen, Optum*
-- *Viet Nguyen, Stratametrics*
-- *Brent Zenobia, Novillus*
+- *The twenty-two founding [Da Vinci Project](http://www.hl7.org/about/davinci/index.cfm?ref=common) member organizations.*
 - *Amy Neftzger, United Healthcare*
+- *Brent Zenobia, Novillus*
 - *Brian J Murtha, Centene*
+- *Linda Michaelsen, Optum*
+- *Rob Reynolds, Alphora*
+- *Viet Nguyen, Stratametrics*
+- *Yan Heras, Optimum eHealth*
 
 ---
 

@@ -3,6 +3,7 @@
 [$report]:OperationDefinition-report.html
 [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]: Bundle-ra-bundle01.html
 [Clinical Evaluation Period]:glossary.html#glossary
+[Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm
 [Condition01: Type 2 diabetes with unspecified manifestations]: Condition-ra-condition01.html
 [Condition01Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition01pat03.html
 [Condition02: Major Depressive Disorder, Single episode]: Condition-ra-condition02.html
@@ -19,6 +20,7 @@
 [Group01: Risk Adjustment Patient Group, (Patient01: Eve Everywoman)]: Group-ra-group01.html
 [Group02: Risk Adjustment Patient Group, (Patient02: Adam Everyman, Patient03: Nelda Nuclear)]: Group-ra-group02.html
 [Guidance]: guidance.html
+[HL7 Da Vinci Guiding Principles]: https://confluence.hl7.org/display/DVP/Da+Vinci+Clinical+Advisory+Council+Members?preview=/66940155/66942916/Guiding%20Principles%20for%20Da%20Vinci%20Implementation%20Guides.pdf
 [HRex Coverage Profile]: http://build.fhir.org/ig/HL7/davinci-ehrx/StructureDefinition-hrex-coverage.html
 [Measure01: Risk Adjustment Model CMS-HCC V24]: Measure-RAModelExample01.html
 [Measure02: Risk Adjustment Model CMS-HCC V21]: Measure-RAModelExample02.html

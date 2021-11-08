@@ -1,33 +1,26 @@
 
 {% assign id = {{page.id}} %}
 
-<div markdown="1" class="bg-info">
-<b>The Da Vinci Risk Adjustment Implementation Guide is under development</b>
-</div>
-
 Note: all Conformance Requirements are restricted to resources in the system that are being reported on.
 
-Conformance Requirement 1:  
+<b>Conformance Requirement 1:</b>
 
-The $report operation SHALL be able to query:
-  - All Risk Adjustment MeasureReport resources; AND
-  - All resources referenced by the evaluatedResource element of all Risk Adjustment MeasureReport resources  
+The $report operation <b>SHALL</b> be able to query:
+  - All [Risk Adjustment Coding Gap Report] MeasureReport resources; <b>AND</b>
+  - All resources referenced by the `evaluatedResource` element of all [Risk Adjustment Coding Gap Report] MeasureReport resources.  
 
-Conformance Requirement 2:  
+<b>Conformance Requirement 2:</b>  
 
-The $report operation SHALL be able to resolve whether the subject being processed (whether a Patient/[reference] or the member of a Group/[reference]) is valid for any patient  
+The $report operation <b>SHALL</b> be able to resolve:
+- Whether the `subject` being processed is a valid patient when `subject` is a Patient/[reference]; <b>AND</b>
+- Whether any patient in the `subject` being processed is valid when `subject` is a Group/[reference].
 
-Conformance Requirement 3:  
+<b>Conformance Requirement 3:</b>  
 
-The $report operation SHALL include the following OUT Parameters:
-  - IF the subject being processed is of type patient (whether a Patient/[reference] or the member of a Group/[reference]) and is not valid for any patient:  
-  the Parameters.parameter element SHALL include an OperationOutcome resource that includes the subject (reference) being processed; OR  
-  - Otherwise, if the subject being processed is of type group (Group/[reference]) and is not valid for any group:  
-  the Parameters.parameter element SHALL include an OperationOutcome resource that includes the subject (reference) being processed; OR
-  - Otherwise, if no MeasureReport resources match the set of IN Parameters being processed:  
-  the Bundle.entry SHALL include a Patient resource matching the subject of type patient that is being processed (whether a Patient/[reference] or the member of a Group/[reference]); OR
-  - Otherwise, one or more MeasureReport resources match the set of IN Parameters being processed:  
-  the Bundle.entry SHALL include all matching MeasureReport resources and all resources referenced by the evaluatedResource element of all matching MeasureReport resources
-  
+The $report operation <b>SHALL</b> include the following OUT Parameters:
+- If the `subject` being processed is a Patient/[reference] and the patient is not valid, then the `Parameters.parameter` element SHALL include an [OperationOutcome](https://www.hl7.org/fhir/operationOutcome.html) resource that includes the `subject` (Patient/[reference]) being processed; <b>OR</b>
+- If the `subject` being processed is a Group/[reference] and the group itself is not valid or none of the patients in the group is valid, then the `Parameters.parameter` element SHALL include an [OperationOutcome](https://www.hl7.org/fhir/operationOutcome.html) resource that includes the `subject` (Group/[reference]) being processed; <b>OR</b>
+- If the patient is valid and no MeasureReport resources match the set of IN Parameters being processed, then the `Bundle.entry` SHALL include a [USCore Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) resource matching the subject (Patient/[reference]); <b>OR</b>
+- If the patient is valid and one or more MeasureReport resources match the set of IN Parameters being processed, then the `Bundle.entry` SHALL include all matching MeasureReport resources and all resources referenced by the `evalautedResource` element of all matching MeasureReport resources.
 
 {% include link-list.md %}
