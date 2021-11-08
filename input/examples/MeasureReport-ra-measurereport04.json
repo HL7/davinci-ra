@@ -63,6 +63,17 @@
                             }
                         ]
                     }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "applied-not-superseded",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -96,8 +107,19 @@
                     "valueCodeableConcept": {
                         "coding": [
                             {
-                                "code": "closed-gap",
+                                "code": "open-gap",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "applied-not-superseded",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
                             }
                         ]
                     }
@@ -139,6 +161,17 @@
                             }
                         ]
                     }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "applied-not-superseded",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -174,6 +207,17 @@
                             {
                                 "code": "open-gap",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "applied-not-superseded",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
                             }
                         ]
                     }
@@ -215,6 +259,17 @@
                             }
                         ]
                     }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "applied-not-superseded",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -250,6 +305,17 @@
                             {
                                 "code": "closed-gap",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "applied-not-superseded",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
                             }
                         ]
                     }
@@ -291,6 +357,17 @@
                             }
                         ]
                     }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "applied-not-superseded",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -326,6 +403,17 @@
                             {
                                 "code": "closed-gap",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "applied-superseded",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
                             }
                         ]
                     }
@@ -367,6 +455,17 @@
                             }
                         ]
                     }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "applied-superseded",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -405,6 +504,17 @@
                             }
                         ]
                     }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "applied-superseded",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -427,7 +537,7 @@
                     "valueCodeableConcept": {
                         "coding": [
                             {
-                                "code": "historic",
+                                "code": "net-new",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
                             }
                         ]
@@ -443,16 +553,92 @@
                             }
                         ]
                     }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "applied-not-superseded",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "group-012",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-hcc/",
+                        "version": "21",
+                        "code": "108",
+                        "display": "Vascular Disease"
+                    }
+                ],
+                "text": "CMS-HCC 107: Vascular Disease"
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "net-new",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "closed-gap",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "applied-superseded",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
                 }
             ]
         }
     ],
     "evaluatedResource": [
         {
-            "reference": "Condition/ra-condition01"
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+              "valueString" : "group-001"
+            }
+          ],
+            "reference": "Condition/ra-condition01pat03"
         },
         {
-            "reference": "Condition/ra-condition02"
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+              "valueString" : "group-001"
+            },
+            {
+              "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+              "valueString" : "group-011"
+            }
+          ],
+            "reference": "Encounter/ra-encounter01pat03"
         }
     ]
 }

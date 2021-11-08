@@ -5,6 +5,16 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="Encounter/ra-encounter04pat03" key="Encounter-ra-encounter04pat03" name=""/>
+<artifact id="Encounter/ra-encounter05pat03" key="Encounter-ra-encounter05pat03" name=""/>
+<artifact id="Encounter/ra-encounter06pat03" key="Encounter-ra-encounter06pat03" name=""/>
+<artifact id="Encounter/ra-encounter07pat03" key="Encounter-ra-encounter07pat03" name=""/>
+<artifact id="Encounter/ra-encounter15pat03" key="Encounter-ra-encounter15pat03" name=""/>
+<artifact id="Encounter/ra-encounter16pat03" key="Encounter-ra-encounter16pat03" name=""/>
+<artifact id="Encounter/ra-encounter19pat03" key="Encounter-ra-encounter19pat03" name=""/>
+<artifact id="Encounter/ra-encounter21pat03" key="Encounter-ra-encounter21pat03" name=""/>
+<artifact id="Encounter/ra-encounter22pat03" key="Encounter-ra-encounter22pat03" name=""/>
+<artifact id="Encounter/ra-encounter35pat03" key="Encounter-ra-encounter35pat03" name=""/>
 <artifact id="Condition/ra-condition01" key="Condition-ra-condition01" name="Condition01: Type 2 diabetes with unspecified manisfestations"/>
 <artifact id="Condition/ra-condition01pat03" key="Condition-ra-condition01pat03" name="Condition01pat03: Other artificial openings of gastrointestinal tract status"/>
 <artifact id="Condition/ra-condition02" key="Condition-ra-condition02" name="Condition02: Major Depressive Disorder, Single episode"/>
