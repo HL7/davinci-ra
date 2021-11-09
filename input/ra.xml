@@ -227,8 +227,88 @@
       <reference>
         <reference value="Encounter/ra-encounter01pat03"/>
       </reference>
+      <name value="Encounter on 20210714"/>
+      <description value="Encounter on 20210714"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter04pat03"/>
+      </reference>
+      <name value="Encounter on 20211218"/>
+      <description value="Encounter on 20201218"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter05pat03"/>
+      </reference>
+      <name value="Encounter on 20200303"/>
+      <description value="Encounter on 20200303"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter06pat03"/>
+      </reference>
+      <name value="Encounter ib 20200917"/>
+      <description value="Encounter on 20200917"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter07pat03"/>
+      </reference>
+      <name value="Encounter on 20190207"/>
+      <description value="Encounter on 20190207"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter15pat03"/>
+      </reference>
+      <name value="Encounter on 20200808"/>
+      <description value="Encounter on 20200808"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter16pat03"/>
+      </reference>
+      <name value="Encounter on 20210727"/>
+      <description value="Encounter on 20210727"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter19pat03"/>
+      </reference>
       <name value="Encounter"/>
-      <description value="Encounter with Dr Howell on 20210714"/>
+      <description value="Encounter on 20210823"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter21pat03"/>
+      </reference>
+      <name value="Encounter on 20210130"/>
+      <description value="Encounter on 20210130"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter22pat03"/>
+      </reference>
+      <name value="Encounter on 20210701"/>
+      <description value="Encounter on 20210701"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter35pat03"/>
+      </reference>
+      <name value="Encounter"/>
+      <description value="Encounter on 20210212"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -237,6 +317,14 @@
       </reference>
       <name value="Organization01: ABC Payer"/>
       <description value="ABC Payer"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/ra-org01pat03"/>
+      </reference>
+      <name value="Organization: Community HealthCenter"/>
+      <description value="Community HealthCenter"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -277,6 +365,14 @@
       </reference>
       <name value="Patient04: Jane Doh"/>
       <description value="Jane Doh"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/ra-prac01pat03"/>
+      </reference>
+      <name value="Practitioner: Otto Osler"/>
+      <description value="Otto Osler"/>
       <exampleBoolean value="true"/>
     </resource>
     <page>
@@ -401,6 +497,66 @@
         <page>
           <nameUrl value="Encounter-ra-encounter01pat03.html"/>
           <title value="Encounter01Pat03"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Encounter-ra-encounter04pat03.html"/>
+          <title value="Encounter04Pat03"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Encounter-ra-encounter05pat03.html"/>
+          <title value="Encounter05Pat03"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Encounter-ra-encounter06pat03.html"/>
+          <title value="Encounter06Pat03"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Encounter-ra-encounter07pat03.html"/>
+          <title value="Encounter07Pat03"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Encounter-ra-encounter15pat03.html"/>
+          <title value="Encounter15Pat03"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Encounter-ra-encounter16pat03.html"/>
+          <title value="Encounter16Pat03"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Encounter-ra-encounter19pat03.html"/>
+          <title value="Encounter19Pat03"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Encounter-ra-encounter21pat03.html"/>
+          <title value="Encounter21Pat03"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Encounter-ra-encounter22pat03.html"/>
+          <title value="Encounter22Pat03"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Encounter-ra-encounter35pat03.html"/>
+          <title value="Encounter35Pat03"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Organization-ra-org01pat03.html"/>
+          <title value="Organization01pat03"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Practitioner-ra-prac01pat03.html"/>
+          <title value="Prac01pat03"/>
           <generation value="generated"/>
         </page>
         <page>

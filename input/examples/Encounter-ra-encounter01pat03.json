@@ -35,7 +35,7 @@
 
 	"participant": [{
 		"individual": {
-			"reference": "Practitioner/ra-patient03Pr01"
+			"reference": "Practitioner/ra-prac01pat03"
 		}
 	}],
 	"diagnosis": [{
@@ -54,6 +54,6 @@
 		"end": "2021-07-14"
 	},
 	"serviceProvider": {
-		"reference": "Organization/ra-patient03Org01"
+		"reference": "Organization/ra-org01pat03"
 	}
 }
