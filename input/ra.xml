@@ -283,7 +283,7 @@
       <reference>
         <reference value="Encounter/ra-encounter19pat03"/>
       </reference>
-      <name value="Encounter"/>
+      <name value="Encounter on 20210823"/>
       <description value="Encounter on 20210823"/>
       <exampleBoolean value="true"/>
     </resource>
@@ -307,7 +307,7 @@
       <reference>
         <reference value="Encounter/ra-encounter35pat03"/>
       </reference>
-      <name value="Encounter"/>
+      <name value="Encounter on 20210212"/>
       <description value="Encounter on 20210212"/>
       <exampleBoolean value="true"/>
     </resource>

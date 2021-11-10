@@ -54,10 +54,10 @@
                     "extension": [
                         {
                             "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                            "valueCode": "SHALL"
+                            "valueCode": "SHOULD"
                         }
                     ],
-                    "code": "transaction"
+                    "code": "batch"
                 },
                 {
                     "extension": [
@@ -66,7 +66,7 @@
                             "valueCode": "MAY"
                         }
                     ],
-                    "code": "batch"
+                    "code": "transaction"
                 },
                 {
                     "extension": [
@@ -89,21 +89,89 @@
             ],
             "resource": [
                 {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                            "valueCode": "SHALL"
-                        }
-                    ],
+                    "type": "MeasureReport",
+                    "profile": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport",
                     "interaction": [
                         {
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
+                                    "valueCode": "MAY"
                                 }
                             ],
                             "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "vread"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "update"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "patch"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "delete"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-instance"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "create"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "search-type"
                         }
                     ],
                     "operation": [
@@ -117,54 +185,7 @@
                             "definition": "http://hl7.org/fhir/us/davinci-ra/OperationDefinition/report",
                             "name": "report"
                         }
-                    ],
-                    "type": "OperationDefinition"
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                            "valueCode": "SHALL"
-                        }
-                    ],
-                    "documentation": "The DaVinci Risk Adjustment Server **SHALL** be capable of supporting the Risk Adjustment Coding Gap Report Profile and all of the resources and profiles that the report references.",                    "interaction": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "code": "create"
-                        }
-                    ],
-                    "supportedProfile": [
-                        "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
-                     ],
-                    "type": "MeasureReport"
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                            "valueCode": "SHALL"
-                        }
-                    ],
-                    "documentation": "The DaVinci Risk Adjustment Server **SHALL** be capable of supporting the Risk Adjustment Bundle Profile, Risk Adjustment Coding Gap Report Profile.",                    "interaction": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "code": "create"
-                        }
-                    ],
-                    "supportedProfile": [
-                        "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle"
-                    ],
-                    "type": "Bundle"
+                    ]
                 }
             ]
         }
