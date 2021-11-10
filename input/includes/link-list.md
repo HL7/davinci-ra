@@ -6,10 +6,32 @@
 [Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm
 [Condition01: Type 2 diabetes with unspecified manifestations]: Condition-ra-condition01.html
 [Condition01Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition01pat03.html
+[Condition04Pat03: Chronic obstructive pulmonary disease with (acute) exacerbation]: Condition-ra-condition04pat03.html
+[Condition05Pat03: Unspecified protein-calorie malnutrition]: Condition-ra-condition05pat03.html
+[Condition06Pat03: Crohn's disease of large intestine with unspecified complications]: Condition-ra-condition06pat03.html
+[Condition07Pat03: Other persistent atrial fibrillation]: Condition-ra-condition07pat03.html
+[Condition15Pat03: Diabetes mellitus due to underlying condition with diabetic chronic kidney disease]: Condition-ra-condition15pat03.html
+[Condition16Pat03: Dependence on renal dialysis]: Condition-ra-condition16pat03.html
+[Condition21Pat03: Type 2 diabetes mellitus without complications]: Condition-ra-condition21pat03.html
+[Condition22Pat03: Other acute kidney failure]: Condition-ra-condition22pat03.html
+[Condition23Pat03: Chronic kidney disease, stage 5]: Condition-ra-condition23pat03.html
+[Condition32Pat03: Chronic pulmonary embolism]: Condition-ra-condition32pat03.html
+[Condition35Pat03: Hypertension secondary to other renal disorders]: Condition-ra-condition35pat03.html
 [Condition02: Major Depressive Disorder, Single episode]: Condition-ra-condition02.html
 [Da Vinci - Risk Based Contracts Member Attribution (ATR) List IG]: http://hl7.org/fhir/us/davinci-atr/
 [Downloads]: downloads.html
 [Examples]: examples.html
+[Encounter01Pat03: Pat03 Encounter on 2021-07-14]: Encounter-ra-encounter01pat03.html
+[Encounter04Pat03: Pat03 Encounter on 2020-12-18]: Encounter-ra-encounter04pat03.html
+[Encounter05Pat03: Pat03 Encounter on 2020-03-03]: Encounter-ra-encounter05pat03.html
+[encounter06Pat03: Pat03 Encounter on 2020-09-17]: Encounter-ra-encounter06pat03.html
+[Encounter07Pat03: Pat03 Encounter on 2019-02-07]: Encounter-ra-encounter07pat03.html
+[Encounter15Pat03: Pat03 Encounter on 2021-08-08]: Encounter-ra-encounter15pat03.html
+[Encounter16Pat03: Pat03 Encounter on 2021-07-27]: Encounter-ra-encounter16pat03.html
+[Encounter19Pat03: Pat03 Encounter on 2019-08-23]: Encounter-ra-encounter19pat03.html
+[Encounter21Pat03: Pat03 Encounter on 2021-01-30]: Encounter-ra-encounter21pat03.html
+[Encounter22Pat03: Pat03 Encounter on 2021-07-01]: Encounter-ra-encounter22pat03.html
+[Encounter35Pat03: Pat03 Encounter on 2021-02-12]: Encounter-ra-encounter35pat03.html
 [FHIR Artifacts/Capability Statements]: capabilities.html
 [FHIR Artifacts/Extensions]: extensions.html
 [FHIR Artifacts/Operations]: operations.html
