@@ -83,24 +83,24 @@
       <reference>
         <reference value="MeasureReport/ra-measurereport03"/>
       </reference>
-      <name value="ra-measurereport03: Risk Adjustment Measure Report"/>
-      <description value="Example Risk Adjustment Measure Report"/>
+      <name value="ra-measurereport03: Risk Adjustment Measure Report for HCC V24 for Patient 02"/>
+      <description value="Example Risk Adjustment Measure Report for HCC V24 for Patient 02"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="MeasureReport/ra-measurereport04"/>
       </reference>
-      <name value="ra-measurereport04: Risk Adjustment Measure Report"/>
-      <description value="Example Risk Adjustment Measure Report"/>
+      <name value="ra-measurereport04: Risk Adjustment Measure Report for HCC V21 for Patient 03"/>
+      <description value="Example Risk Adjustment Measure Report for HCC V21 for Patient 03"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="MeasureReport/ra-measurereport05"/>
       </reference>
-      <name value="ra-measurereport05: Risk Adjustment Measure Report"/>
-      <description value="Example Risk Adjustment Measure Report"/>
+      <name value="ra-measurereport05: Risk Adjustment Measure Report for RxHCC V5 for Patient03"/>
+      <description value="Example Risk Adjustment Measure Report for RxHCC V5 for Patient03"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -109,6 +109,14 @@
       </reference>
       <name value="ra-measurereport06: Risk Adjustment Measure Report"/>
       <description value="Example Risk Adjustment Measure Report"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MeasureReport/ra-measurereport07"/>
+      </reference>
+      <name value="ra-measurereport07: Risk Adjustment Measure Report for RxHCC V5 for Patient02"/>
+      <description value="Example Risk Adjustment Measure Report for RxHCC V5 for Patient02"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -209,6 +217,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Condition/ra-condition31pat02"/>
+      </reference>
+      <name value="Condition31pat02: Typical atrial flutter"/>
+      <description value="Typical atrial flutter"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Condition/ra-condition35pat03"/>
       </reference>
       <name value="Condition35pat03: Hypertension secondary to other renal disorders"/>
@@ -301,6 +317,14 @@
       </reference>
       <name value="Encounter on 20210701"/>
       <description value="Encounter on 20210701"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter31pat02"/>
+      </reference>
+      <name value="Encounter on 20210806"/>
+      <description value="Encounter on 20210806"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -553,6 +577,11 @@
         <page>
           <nameUrl value="Encounter-ra-encounter22pat03.html"/>
           <title value="Encounter22Pat03"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Encounter-ra-encounter31pat02.html"/>
+          <title value="Encounter31Pat02"/>
           <generation value="generated"/>
         </page>
         <page>

@@ -63,6 +63,17 @@
                             }
                         ]
                     }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "not-applied",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -98,6 +109,17 @@
                             {
                                 "code": "closed-gap",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "not-applied",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
                             }
                         ]
                     }
@@ -139,6 +161,17 @@
                             }
                         ]
                     }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "not-applied",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -174,6 +207,17 @@
                             {
                                 "code": "closed-gap",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "not-applied",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
                             }
                         ]
                     }
@@ -215,6 +259,17 @@
                             }
                         ]
                     }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "not-applied",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -253,6 +308,17 @@
                             }
                         ]
                     }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "not-applied",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
                 }
             ]
         }
@@ -265,7 +331,97 @@
             "valueString" : "group-001"
           }
         ],
-          "reference": "Condition/ra-condition01pat03"
-        }
+          "reference": "Condition/ra-condition04pat03"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+              "valueString" : "group-002"
+            }
+          ],
+            "reference": "Condition/ra-condition21pat03"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                "valueString" : "group-003"
+              }
+            ],
+              "reference": "Condition/ra-condition15pat03"
+            },
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                  "valueString" : "group-004"
+                }
+              ],
+                "reference": "Condition/ra-condition16pat03"
+              },
+              {
+                "extension" : [
+                  {
+                    "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                    "valueString" : "group-006"
+                  }
+                ],
+                  "reference": "Condition/ra-condition35pat03"
+                },
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                      "valueString" : "group-001"
+                    }
+                  ],
+                    "reference": "Encounter/ra-encounter04pat03"
+                  },
+                  {
+                    "extension" : [
+                      {
+                        "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                        "valueString" : "group-002"
+                      }
+                    ],
+                      "reference": "Encounter/ra-encounter15pat03"
+                    },
+                    {
+                      "extension" : [
+                        {
+                          "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                          "valueString" : "group-003"
+                        }
+                      ],
+                        "reference": "Encounter/ra-encounter16pat03"
+                      },
+                      {
+                        "extension" : [
+                          {
+                            "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                            "valueString" : "group-004"
+                          }
+                        ],
+                          "reference": "Encounter/ra-encounter35pat03"
+                        },
+                        {
+                          "extension" : [
+                            {
+                              "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                              "valueString" : "group-006"
+                            }
+                          ],
+                            "reference": "Encounter/ra-encounter35pat03"
+                          },
+                          {
+                            "extension" : [
+                              {
+                                "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                "valueString" : "group-005"
+                              }
+                            ],
+                              "reference": "Observation/ra-obs01pat03"
+                            }
     ]
 }

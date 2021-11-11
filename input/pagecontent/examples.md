@@ -13,6 +13,8 @@
 
 - [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]  
 
+- [Condition31Pat02: Typical atrial flutter]
+
 - [Condition01: Type 2 diabetes with unspecified manifestations]
 - [Condition02: Major Depressive Disorder, Single episode]
 - [Condition01Pat03: Other artificial openings of gastrointestinal tract status]  
@@ -28,6 +30,8 @@
 - [Condition32Pat03: Chronic pulmonary embolism]
 - [Condition35Pat03: Hypertension secondary to other renal disorders]
 
+- [Encounter31Pat02: Pat02 Encounter on 2021-08-06]
+
 - [Encounter01Pat03: Pat03 Encounter on 2021-07-14]
 - [Encounter04Pat03: Pat03 Encounter on 2020-12-18]
 - [Encounter05Pat03: Pat03 Encounter on 2020-03-03]
@@ -39,6 +43,8 @@
 - [Encounter21Pat03: Pat03 Encounter on 2021-01-30]
 - [Encounter22Pat03: Pat03 Encounter on 2021-07-01]
 - [Encounter35Pat03: Pat03 Encounter on 2021-02-12]
+
+
 
 - [Observation01Pat03: Pat03 Creatinine on 20210728]
 - [Observation02Pat03: Pat03 PHQ9 on 20190823]
@@ -54,7 +60,9 @@
 - [MeasureReport02: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient01: Eve Everywoman)]
 - [MeasureReport03: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient02: Adam Everyman)]
 - [MeasureReport04: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V21 (Patient03: Nelda Nuclear)]
-- [MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Nelda Nuclear)]  
+- [MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Nelda Nuclear)]
+- [MeasureReport06: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient04: Jane Doh)]
+- [MeasureReport07: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient02: Adam Everyman)]
 
 - [Organization01: Payer Organization ABC Payer]  
 

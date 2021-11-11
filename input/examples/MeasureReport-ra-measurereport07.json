@@ -1,6 +1,6 @@
 {
     "resourceType": "MeasureReport",
-    "id": "ra-measurereport03",
+    "id": "ra-measurereport07",
     "meta": {
         "profile": [
             "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
@@ -15,9 +15,9 @@
     ],
     "status": "complete",
     "type": "individual",
-    "measure": "https://build.fhir.org/ig/HL7/davinci-ra/Measure-RAModelExample01",
+    "measure": "https://build.fhir.org/ig/HL7/davinci-ra/Measure-RAModelExample03",
     "subject": {
-        "reference": "Patient/ra-patient02"
+        "reference": "Patient/ra-patient03"
     },
     "date": "2021-10-18",
     "reporter": {
@@ -33,13 +33,13 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
-                        "version": "24",
-                        "code": "96",
-                        "display": "Specified Heart.Arrhythmias"
+                        "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
+                        "version": "5",
+                        "code": "226",
+                        "display": "Chronic Obstructive Pulmonary Disease and Asthma"
                     }
                 ],
-                "text": "CMS HCC: 96, Specified Heart.Arrhythmias"
+                "text": "CMS-RxHCC 226: Chronic Obstructive Pulmonary Disease and Asthma"
             },
             "extension": [
                 {
@@ -47,7 +47,7 @@
                     "valueCodeableConcept": {
                         "coding": [
                             {
-                                "code": "historic",
+                                "code": "net-new",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
                             }
                         ]
@@ -69,7 +69,7 @@
                     "valueCodeableConcept": {
                         "coding": [
                             {
-                                "code": "applied-not-superseded",
+                                "code": "not-applied",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
                             }
                         ]
@@ -94,8 +94,8 @@
               "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
               "valueString" : "group-001"
             }
-          ],
-            "reference": "Encounter/ra-encounter31pat02"
-        }
+            ],
+              "reference": "Encounter/ra-encounter31pat02"
+          }
     ]
 }

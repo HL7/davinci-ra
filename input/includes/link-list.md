@@ -5,6 +5,7 @@
 [Clinical Evaluation Period]:glossary.html#glossary
 [Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm
 [Condition01: Type 2 diabetes with unspecified manifestations]: Condition-ra-condition01.html
+[Condition31Pat02: Typical atrial flutter]: Condition-ra-condition31pat02.html
 [Condition01Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition01pat03.html
 [Condition04Pat03: Chronic obstructive pulmonary disease with (acute) exacerbation]: Condition-ra-condition04pat03.html
 [Condition05Pat03: Unspecified protein-calorie malnutrition]: Condition-ra-condition05pat03.html
@@ -21,6 +22,7 @@
 [Da Vinci - Risk Based Contracts Member Attribution (ATR) List IG]: http://hl7.org/fhir/us/davinci-atr/
 [Downloads]: downloads.html
 [Examples]: examples.html
+[Encounter31Pat02: Pat02 Encounter on 2021-08-06]: Encounter-ra-encounter31pat02.html
 [Encounter01Pat03: Pat03 Encounter on 2021-07-14]: Encounter-ra-encounter01pat03.html
 [Encounter04Pat03: Pat03 Encounter on 2020-12-18]: Encounter-ra-encounter04pat03.html
 [Encounter05Pat03: Pat03 Encounter on 2020-03-03]: Encounter-ra-encounter05pat03.html
@@ -53,6 +55,7 @@
 [MeasureReport04: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V21 (Patient03: Nelda Nuclear)]: MeasureReport-ra-measurereport04.html
 [MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Nelda Nuclear)]: MeasureReport-ra-measurereport05.html
 [MeasureReport06: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient04: Jane Doh)]: MeasureReport-ra-measurereport06.html
+[MeasureReport07: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient02: Adam Everyman)]: MeasureReport-ra-measurereport07.html
 [MeasureReport]: {{site.data.fhir.path}}measurereport.html
 [Observation01Pat03: Pat03 Creatinine on 20210728]: Observation-ra-obs01pat03.html
 [Observation02Pat03: Pat03 PHQ9 on 20190823]: Observation-ra-obs02pat03.html
