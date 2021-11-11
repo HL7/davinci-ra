@@ -40,6 +40,9 @@
 - [Encounter22Pat03: Pat03 Encounter on 2021-07-01]
 - [Encounter35Pat03: Pat03 Encounter on 2021-02-12]
 
+- [Observation01Pat03: Pat03 Creatinine on 20210728]
+- [Observation02Pat03: Pat03 PHQ9 on 20190823]
+
 - [Group01: Risk Adjustment Patient Group, (Patient01: Eve Everywoman)]
 - [Group02: Risk Adjustment Patient Group, (Patient02: Adam Everyman, Patient03: Nelda Nuclear)]  
 

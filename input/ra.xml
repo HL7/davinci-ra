@@ -313,6 +313,22 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Observation/ra-obs01pat03"/>
+      </reference>
+      <name value="Observation: Creatinine Result from 20210728"/>
+      <description value="Creatinine Result from 20210728"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ra-obs02pat03"/>
+      </reference>
+      <name value="Observation: PHQ9 from 20190823"/>
+      <description value="PHQ9 from 20190823"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Organization/ra-payer01"/>
       </reference>
       <name value="Organization01: ABC Payer"/>
@@ -547,6 +563,16 @@
         <page>
           <nameUrl value="Encounter-ra-encounter35pat03.html"/>
           <title value="Encounter35Pat03"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Observation-ra-obs01pat03.html"/>
+          <title value="Observation01Pat03"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Observation-ra-obs01pat03.html"/>
+          <title value="Observation02Pat03"/>
           <generation value="generated"/>
         </page>
         <page>

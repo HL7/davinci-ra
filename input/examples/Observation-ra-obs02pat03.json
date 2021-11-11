@@ -1,0 +1,47 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ra-obs02pat03",
+  "meta" : {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Serum Creatinine for Pat03"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a serum creatinine for Pat03*."
+      }
+    ],
+    "versionId" : "926",
+    "lastUpdated" : "2019-08-23T14:28:57.327+00:00"
+  },
+  "status" : "final",
+  "category" : [
+    {
+      "coding" : [
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey",
+          "display" : "Survey"
+        }
+      ],
+      "text" : "Survey"
+    }
+  ],
+  "code" : {
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "code" : "44261-6",
+        "display" : "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+      }
+    ],
+    "text" : "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+  },
+  "subject" : {
+    "reference" : "Patient/ra-patient03",
+    "display" : "Nelda Nuclear"
+  },
+  "effectiveDateTime" : "2019-08-23",
+  "valueInteger" : 16
+}
