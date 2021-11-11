@@ -86,7 +86,7 @@ After careful review with the risk adjustment subject matter experts, it was det
 
 {% include img-portrait.html img="workflow-medicare-advantage.png" caption = "Figure 1-2 Workflow for Medicare Advantage Population" %}
 
-This guide does not address how payers determine a coding gap and how coding gaps are produced or managed on the payer side including hierarchies. This guide also does not address suspecting processes and algorithms/predictive models that are used for suspecting analytics. It is the intent of this guide to expand its specifications in future versions to support communication of coding gaps from providers back to the payers, for example to provide a mechanism to allow providers to communicate HCC invalidations to payers.  
+This guide does not define how payers determine a coding gap and how coding gaps are produced or managed on the payer side including hierarchies. This guide also does not define suspecting processes and algorithms/predictive models that are used for suspecting analytics. It is the intent of this guide to expand its specifications in future versions to support communication of coding gaps from providers back to the payers, for example to provide a mechanism to allow providers to communicate HCC invalidations to payers.  
 
 ### Actors
 The actors involved in exchanging risk adjustment coding gap reports are Clients and Servers.
