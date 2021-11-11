@@ -481,11 +481,6 @@
         <title value="Capability Statement"/>
         <generation value="markdown"/>
         <page>
-          <nameUrl value="CapabilityStatement-ra-client.html"/>
-          <title value="Risk Adjustment Client Capability Statement"/>
-          <generation value="generated"/>
-        </page>
-        <page>
           <nameUrl value="CapabilityStatement-ra-server.html"/>
           <title value="Risk Adjustment Server Capability Statement"/>
           <generation value="generated"/>

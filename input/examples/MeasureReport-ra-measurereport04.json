@@ -33,7 +33,7 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-hcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "21",
                         "code": "188",
                         "display": "Diabetes with Chronic Complications"
@@ -82,7 +82,7 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-hcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "21",
                         "code": "111",
                         "display": "Chronic Obstructive Pulmonary Disease"
@@ -131,7 +131,7 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-hcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "21",
                         "code": "21",
                         "display": "Protein-Calorie Malnutrition"
@@ -180,7 +180,7 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-hcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "21",
                         "code": "35",
                         "display": "Inflammatory Bowel Disease"
@@ -229,7 +229,7 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-hcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "21",
                         "code": "96",
                         "display": "Specified Heart Arrhythmias"
@@ -278,7 +278,7 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-hcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "21",
                         "code": "18",
                         "display": "Diabetes with Chronic Complications"
@@ -327,7 +327,7 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-hcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "21",
                         "code": "134",
                         "display": "Dialysis Status"
@@ -375,7 +375,7 @@
                     "code": {
                         "coding": [
                             {
-                                "system": "http://cms.gov/cms-hcc/",
+                                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                                 "version": "21",
                                 "code": "58",
                                 "display": "Major Depressive, Bipolar, and Paranoid Disorders"
@@ -424,7 +424,7 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-hcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "21",
                         "code": "19",
                         "display": "Diabetes without Complication"
@@ -473,7 +473,7 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-hcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "21",
                         "code": "135",
                         "display": "Acute Renal Failure"
@@ -522,7 +522,7 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-hcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "21",
                         "code": "136",
                         "display": "Chronic Kidney Disease, Stage 5"
@@ -571,7 +571,7 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-hcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "21",
                         "code": "107",
                         "display": "Vascular Disease with Complications"
@@ -620,7 +620,7 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-hcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "21",
                         "code": "108",
                         "display": "Vascular Disease"

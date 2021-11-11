@@ -44,7 +44,7 @@
 <artifact id="Patient/ra-patient04" key="Patient-ra-patient04" name="Patient04: Jane Doh"/>
 <artifact id="Practitioner/ra-prac01pat03" key="Practitioner-ra-prac01pat03" name="Practitioner: Otto Osler"/>
 <artifact id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
-<artifact id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
+<artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
 <artifact id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Risk Adjustment Clinical Data Collection Deadline Extension"/>
 <artifact id="StructureDefinition/ra-measurereport-bundle" key="StructureDefinition-ra-measurereport-bundle" name="Risk Adjustment Coding Gap Report Bundle Profile"/>
 <artifact id="StructureDefinition/ra-measurereport" key="StructureDefinition-ra-measurereport" name="Risk Adjustment Coding Gap Report Profile"/>

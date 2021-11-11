@@ -33,7 +33,7 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-rxhcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
                         "version": "5",
                         "code": "226",
                         "display": "Chronic Obstructive Pulmonary Disease and Asthma"
@@ -71,7 +71,7 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-rxhcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
                         "version": "5",
                         "code": "31",
                         "display": "Diabetes without Complication"
@@ -109,7 +109,7 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-rxhcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
                         "version": "5",
                         "code": "30",
                         "display": "Diabetes with Complications"
@@ -147,7 +147,7 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-rxhcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
                         "version": "5",
                         "code": "261",
                         "display": "Dialysis Status"
@@ -185,7 +185,45 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-rxhcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
+                        "version": "5",
+                        "code": "262",
+                        "display": "Chronic Kidney Disease Stage 5"
+                    }
+                ],
+                "text": "CMS-RxHCC 262: Chronic Kidney Disease Stage 5"
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "suspected",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "open-gap",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "group-006",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
                         "version": "5",
                         "code": "262",
                         "display": "Chronic Kidney Disease Stage 5"
@@ -220,11 +258,14 @@
         }
     ],
     "evaluatedResource": [
-        {
-            "reference": "Condition/ra-condition01"
-        },
-        {
-            "reference": "Condition/ra-condition02"
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+            "valueString" : "group-001"
+          }
+        ],
+          "reference": "Condition/ra-condition01pat03"
         }
     ]
 }
