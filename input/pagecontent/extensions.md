@@ -1,6 +1,5 @@
-This is the page that will list the extensions defined in this implementation guide.
 
-### Extensions
+List of extensions defined in this Implementation Guide:
 
 |Link to Profile|
 |---|

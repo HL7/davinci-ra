@@ -13,6 +13,7 @@ The following data-elements are mandatory (i.e data MUST be present).
 1. A `MeasureReport.period` element for the clinical evaluation period for which the risk adjustment coding gap report was generated.
 
 **Each {{site.data.structuredefinitions.[id].type}} *should* have ([Must Support]):**
+
 1. Zero to many `MeasureReport.group` element
 1. Each `MeasureReport.group` *should* have a `MeasureReport.group.code` element
 1. Each `MeasureReport.group` *should* have a `MeasureReport.group.ra-suspectType` element
@@ -21,5 +22,8 @@ The following data-elements are mandatory (i.e data MUST be present).
 1. Each `MeasureReport.group` *should* have a `MeasureReport.group.ra-hierarchicalStatus` element
 1. Each `MeasureReport.group` *should* have zero to many `MeasureReport.evalautedResource` element
 
+**Additional Profile specific implementation guidance:**
+1. `evaluatedResource` SHALL reference resources using USCore profiles where applicable
+1. All resources referenced by `evaluatedResource` SHALL be returned in the bundle by [$report](OperationDefinition-report.html) operation
 
 {% include link-list.md %}

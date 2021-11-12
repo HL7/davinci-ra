@@ -1,8 +1,7 @@
-### Operations
 
-|Link to operations|
-|---|
-|[$report Operation](OperationDefinition-report.html)|
+The operation specified in this Implementation Guide:
+
+**[$report Operation](OperationDefinition-report.html)**
 
 
 <br />

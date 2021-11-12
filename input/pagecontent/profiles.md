@@ -1,6 +1,5 @@
-### Resource Profiles
 
-List of profiles that define constrains on FHIR resources for systems conforming to this implementation guide.
+List of profiles that define constrains on FHIR resources for systems conforming to this Implementation Guide.
 
 |Resource Type|Profile Name|Link to Profile|
 |---|---|---|
