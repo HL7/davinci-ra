@@ -7,7 +7,7 @@
     <title value="Report Operation"/>
     <status value="active"/>
     <kind value="operation"/>
-    <date value="2021-11-1"/>
+    <date value="2021-11-01"/>
     <publisher value="Da Vinci Project"/>
     <description value="Generate a measure report"/>
     <code value="report"/>
