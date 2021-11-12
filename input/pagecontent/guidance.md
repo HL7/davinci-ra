@@ -36,23 +36,25 @@ The [MeasureReport] resource has zero to many `group` elements. Each `group` ele
 In addition, the [Risk Adjustment Coding Gap Report] provides capability of sharing supporting evidence for a Condition Category through the use of the `MeasureReport.evaluatedResource` element. This supporting evidence may include resources for data such as encounters, lab results, medications, and procedures, and the `evaluatedResource` shall reference the appropriate US Core profile. The extension [ra-groupReference](StructureDefinition-ra-groupReference.html) added to the `evaluatedResource` element enables tying a specific supporting evidence to a particular Condition Category. This is accomplished by setting the extension’s `valueString` to be the same value of the `MeasureGroup.group.id` of the Condition Category to establish the association between a supporting evidence and one or more Condition Categories.  
 
 
-### Default Profiles
+### Profiles
 
-The following resources are used in the Gaps in Care Reporting Scenario:
+The following resources and their profiles specified in this guide are used to support communicating adjustment coding gap reports from Server to Client:
 
 |Resource Type|Profile Name|Link to Profile|
 |---|---|---|
-|Group|Patient Group Profile|[Patient Group Profile]|
-|Measure|Risk Adjustment Model Measure Profile|[Risk Adjustment Model Measure Profile]|
-|MeasureReport|Risk Adjustment Coding Gap Report Profile|[Risk Adjustment Coding Gap Report Profile]|
+|Bundle|Risk Adjustment Coding Gap Report Bundle Profile|[Risk Adjustment Coding Gap Report Bundle]|
+|Group|Patient Group Profile|[Patient Group]|
+|MeasureReport|Risk Adjustment Coding Gap Report Profile|[Risk Adjustment Coding Gap Report]|
+|Measure|Risk Adjustment Model Measure Profile|[Risk Adjustment Model Measure]|
 
 ### Risk Adjustment Coding Gaps Reporting
 
-Below is an example of how a requester might receive a Risk Adjustment Coding Gap Report today.  This is for Clinical Evaluation Period January 1st to December 31st of 2021.  The report was run on May 1st and shows 3 Hierarchical Condition Codes based on CMS HCC v24 risk model.  The first HCC was confirmed by a diagnosis on a claim from April 1, 2021. The second is a historic diagnosis of obesity from 2020 that has not been confirmed in 2021.  The last HCC is suspected because of lab results they server has from December of 2020.
+Figure 3-1 is an example risk adjustment coding gap report. The Client calls the [$report] operation for patient Eve Everywoman (subject) and for a clinical evaluation period from January 1, 2021 to December 31, 2021 (periodStart and periodEnd). The Server receives the request and finds a matching risk adjustment coding gap report for Eve Everywoman that has a clinical evaluation period of January 1, 2021 to September 30, 2021, which overlaps the periodStart and periodEnd dates provided in the [$report] operation. This report was created by the backend risk adjustment engine on October 18th, 2021 using the risk adjustment model CMS-HCC V24.
+As shown in this example report, Eve Everywoman has five Hierarchical Condition Categories (HCC) and of which three conditions are historic diagnoses and two are suspected diagnoses. For example, one of the historic diagnoses is HCC 18, Diabetes with no Complications. This coding gap is closed and the evidence status was last updated on April 1, 2021. The supporting evidence shows that data that was used to close the gap.
 
-{% include img-portrait.html img="report-risk-adjustment.png" caption = "Figure 3-2 Risk Adjustment Coding Gap Report (example)" %}
+{% include img-portrait.html img="report-risk-adjustment.png" caption = "Figure 3-1 Example Risk Adjustment Coding Gap Report" %}
 
-Figure 3-3 provides a graphical view of how these resources are related to the report above.  The main resource is the [Risk Adjustment Coding Gap Report Profile].  This profile first references a [Risk Adjustment Model Measure Profile] which is how we indicate which risk model the report is based on.  The Patient(US Core Patient) as well as the Organization(US Core Organization) that generated the Risk Adjustment Coding Gap Report are referenced.  
+Figure 3-2 provides a graphical view of how these resources are related to the report above.  The main resource is the [Risk Adjustment Coding Gap Report Profile].  This profile first references a [Risk Adjustment Model Measure Profile] which is how we indicate which risk model the report is based on.  The Patient(US Core Patient) as well as the Organization(US Core Organization) that generated the Risk Adjustment Coding Gap Report are referenced.  
 
 Each Hierarchical Condition Code is represented by a Group within the report.  You will notice that each Group has supporting evidence of the Encounter.  Additionally, you will see resources on the right of the report that support the specific HCC code.  
 
@@ -62,7 +64,7 @@ The second group, HCC 019, historic diagnosis points to a Condition of Morbid Ob
 
 The last group contains a suspected HCC code of 022.  The supporting evidence that points to this Group are two observations (lab results), from December of 2020; a urine glucose of 3+ and an Hemaglobin A1C.  Since this is only a suspected gap, it is also non-confirmed.
 
-{% include img-portrait.html img="report-risk-adjustment-resource-graph.png" caption = "Figure 3-3 Resource Graph for Risk Adjustment Report" %}
+{% include img-portrait.html img="report-risk-adjustment-resource-graph.png" caption = "Figure 3-2 Resource Graph for Risk Adjustment Report" %}
 
 
 ### Requesting Risk Adjustment Coding Gap reports
