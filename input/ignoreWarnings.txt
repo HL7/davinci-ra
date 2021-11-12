@@ -32,55 +32,6 @@ WARNING: ValueSet.where(id = 'valueset-no-codesystem'): Error from server: Unabl
 # We don't want a code for the change reason (and this binding shouldn't be extensible anyhow)
 WARNING: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance).reason[0]: No code provided, and a code should be provided from the value set http://terminology.hl7.org/ValueSet/v3-PurposeOfUse (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse)
 
-# MEASURE_MR_GRP_UNK_CODE (37): pending update to the publisher to not require matching groups in the MeasureReport of no groups are defined in the MeasureReport.  Ref Zulip: https://chat.fhir.org/#narrow/stream/179165-committers/topic/MeasureReport.2Egroup.20validation.  PR has been merged: https://github.com/hapifhir/org.hl7.fhir.core/pull/630, just waiting for it to be included in a release.
-ERROR: MeasureReport/ra-measurereport01: MeasureReport.group[0]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport01: MeasureReport.group[1]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport01: MeasureReport.group[2]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport01: MeasureReport.group[3]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport01: MeasureReport.group[4]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport01: MeasureReport.group[5]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport01: MeasureReport.group[6]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport01: MeasureReport.group[7]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport01: MeasureReport.group[8]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport01: MeasureReport.group[9]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport02: MeasureReport.group[0]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport02: MeasureReport.group[1]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport02: MeasureReport.group[2]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport02: MeasureReport.group[3]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport02: MeasureReport.group[4]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport02: MeasureReport.group[5]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport03: MeasureReport.group[0]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[0]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[1]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[2]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[3]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[4]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[5]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[6]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[7]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[8]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[9]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[10]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[11]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport04: MeasureReport.group[12]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport05: MeasureReport.group[0]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport05: MeasureReport.group[1]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport05: MeasureReport.group[2]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport05: MeasureReport.group[3]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport05: MeasureReport.group[4]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport05: MeasureReport.group[5]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ra-measurereport07: MeasureReport.group[0]: The code for this group has no match in the measure definition
-ERROR: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[0]: The code for this group has no match in the measure definition
-ERROR: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[1]: The code for this group has no match in the measure definition
-ERROR: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[2]: The code for this group has no match in the measure definition
-ERROR: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[3]: The code for this group has no match in the measure definition
-ERROR: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[4]: The code for this group has no match in the measure definition
-ERROR: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[0]: The code for this group has no match in the measure definition
-ERROR: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[1]: The code for this group has no match in the measure definition
-ERROR: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[2]: The code for this group has no match in the measure definition
-ERROR: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[3]: The code for this group has no match in the measure definition
-ERROR: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[4]: The code for this group has no match in the measure definition
-
 # MEASURE_MR_M_SCORING_UNK (8): This is intended.  The measureScore attribute is not required.  You should only get this message if there is a measureScore.  TODO: create a tracker to remove this warning if there is no measureScore.
 INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
 INFORMATION: MeasureReport/ra-measurereport02: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
