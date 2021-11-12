@@ -35,7 +35,6 @@ The [MeasureReport] resource has zero to many `group` elements. Each `group` ele
 
 In addition, the [Risk Adjustment Coding Gap Report] provides capability of sharing supporting evidence for a Condition Category through the use of the `MeasureReport.evaluatedResource` element. This supporting evidence may include resources for data such as encounters, lab results, medications, and procedures, and the `evaluatedResource` shall reference the appropriate US Core profile. The extension [ra-groupReference](StructureDefinition-ra-groupReference.html) added to the `evaluatedResource` element enables tying a specific supporting evidence to a particular Condition Category. This is accomplished by setting the extension’s `valueString` to be the same value of the `MeasureGroup.group.id` of the Condition Category to establish the association between a supporting evidence and one or more Condition Categories.  
 
-
 ### Profiles
 
 The following resources and their profiles specified in this guide are used to support communicating adjustment coding gap reports from Server to Client:
@@ -50,7 +49,7 @@ The following resources and their profiles specified in this guide are used to s
 ### Risk Adjustment Coding Gaps Reporting
 
 Figure 3-1 is an example risk adjustment coding gap report. The Client calls the [$report] operation for patient Eve Everywoman (subject) and for a clinical evaluation period from January 1, 2021 to December 31, 2021 (periodStart and periodEnd). The Server receives the request and finds a matching risk adjustment coding gap report for Eve Everywoman that has a clinical evaluation period of January 1, 2021 to September 30, 2021, which overlaps the periodStart and periodEnd dates provided in the [$report] operation. This report was created by the backend risk adjustment engine on October 18th, 2021 using the risk adjustment model CMS-HCC V24.
-As shown in this example report, Eve Everywoman has five Hierarchical Condition Categories (HCC) and of which three conditions are historic diagnoses and two are suspected diagnoses. For example, one of the historic diagnoses is HCC 18, Diabetes with no Complications. This coding gap shows as closed and the evidence status was last updated on April 1, 2021. The supporting evidence shows the clinical data that was used to close the gap.
+As shown in this example report, Eve Everywoman has five Hierarchical Condition Categories (HCC) and of which three conditions are historic diagnoses and two are suspected diagnoses. For example, one of the historic diagnoses is HCC 18, Diabetes with no Complications. This coding gap shows as closed and the evidence status was last updated on April 1, 2021. The supporting evidence shows the clinical data that was used to close the coding gap HCC 18.
 
 {% include img-portrait.html img="report-risk-adjustment.png" caption = "Figure 3-1 Example Risk Adjustment Coding Gap Report" %}
 
