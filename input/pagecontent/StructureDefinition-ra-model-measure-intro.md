@@ -1,7 +1,5 @@
 {% assign id = {{include.id}} %}
 
-(The Da Vinci Risk Adjustment Implementation Guide is under development)
-
 ### Mandatory Data Elements and Terminology
 
 The following data-elements are mandatory (i.e data MUST be present).
@@ -13,12 +11,7 @@ The following data-elements are mandatory (i.e data MUST be present).
 1. A `Measure.version` element which is the version of the Risk Adjustment Model
 
 
-Each {{site.data.structuredefinitions.[id].type}} *should* have ([Must Support]):
+**Each {{site.data.structuredefinitions.[id].type}} *should* have ([Must Support]):**
 
-
-
-
-**Additional Profile specific implementation guidance:**
-
-
-### Examples
+1. A `name` element
+1. A `title` element

@@ -4,8 +4,8 @@
     <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-patient-group"/>
     <name value="PatientGroupProfile"/>
     <title value="Patient Group Profile"/>
-    <status value="draft"/>
-    <date value="2021-08-09"/>
+    <status value="active"/>
+    <date value="2021-11-11"/>
     <publisher value="Da Vinci Project"/>
     <description value="The Patient Group Profile describes a group consisting of one or more patients."/>
     <fhirVersion value="4.0.1"/>
