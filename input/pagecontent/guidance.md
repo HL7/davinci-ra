@@ -65,42 +65,24 @@ The last group contains a suspected HCC code of 022.  The supporting evidence th
 
 {% include img-portrait.html img="report-risk-adjustment-resource-graph.png" caption = "Figure 3-2 Resource Graph for Risk Adjustment Report" %}
 
-
 ### Requesting Risk Adjustment Coding Gap reports
 
 To facilitate a client requesting Risk Adjustment Coding Gap Reports, an operation ([$report]) has been defined in this Implementation Guide.  The input parameters are a from/to date to align with the clinical evaluation period and a subject.  The subject can reference a Patient.id (Patient/id123) or a reference to a Risk Adjustment [Patient Group Profile] (Group/gr345) as defined in this IG.  All three parameters are required.  The patient resource returned with the report must conform to the US Core Patient Profile.  Note that the reference is to the Patient logical id (Patient.id) on the server.  As noted above, it is a pre-assumption that getting the logical id for the patient has been done using a method agreed upon between the organization acting as the server and organization acting as the client.
 
 The operation will return a bundle of the bundle.type "collection" which will include 1 or more Risk Adjustment Coding Gap Reports and all referenced resources.  For example, if a single patient has 2 Risk Adjustment Models that pertain to them, the bundle will contain two MeasureReport resources ([Risk Adjustment Coding Gap Report Profile]) and any other resources referenced by the two MeasureReport Resources, such as Patient, Organization (that generated the report), Conditions, Observations, Medications, Measure, etc.
 
-{% include img-portrait.html img="risk-adjustment-coding-gap-report-single-patient.png" caption = "Figure 3-4 Risk Adjustment Reporting Workflow for a Single Patient" %}
-
-#### Construction of the Risk Adjustment Coding Gap Reports
-
-The Risk Adjustment Coding Gaps Report is built on a FHIR MeasureReport Resource.  This profile adds several new elements/extensions that apply only to Risk Adjustment Code Gap reporting.  The first, ra-clinicalDataCollectionDeadline is added to specify to the report receiver/client the deadline, last date, that a client or the organization they represent must submit data to the server's organization.  In the reporter element, an extension was added to allow for the reporter to be a group, extension-reporterGroup.
-
-This profile more specifically defines the period.start and period.end elements to be the Clinical Evaluation Period.  The date element is the date the report was generated.
-
-Of particular note is the .measure element which points to a Measure Resource specifically profiled for Risk Adjustment Coding Gaps, [Risk Adjustment Model Measure Profile]. In this profile, the identifier will point to a specific Risk Adjustment Model, like CMS-HCC.  There is an element for version number, such as 24 as well as a name and title.  The other elements in Measure are not currently used by this profile.
-
-The group section of the report repeats for each Hierarchical Condition Code being reported.  To support,  the following new elements/extensions have been added.
-- ra-hierarchicalStatus which allow the report to specify 0 to many historic diagnoses that rolls up to a specific risk code, such as HCC.
-- ra-suspectType which supports the indication of the suspect type, such as historic or suspected.
-- ra-evidenceStatus which is where a payer can indicate status of evidence related to the risk code such as confirmed, non-confirmed and pending.
-- ra-evidenceStatusDate which is the last change date of the evidence status.
-Each group also contains a code element.  This is a FHIR Codeable Concept that lets you specify the risk code, the coding system and a description.  For example, in HCC the code might be 022, the code system would be XXXXX and the description is Morbid Obesity.
-
-The evaluatedResource element in the report allows you to including supporting evidence by referencing other US Core Resources (such as US Core Laboratory Result Observation Profile, US Core Encounter Profile, and US Core Medication Profile).  The evaluatedResource is not required and can repeat as often as necessary within the report.  Each evaluatedResource allows for you to indicate to which Group the supporting evidence applies.  This is done via an extension called, ra-groupReference.
+{% include img-portrait.html img="risk-adjustment-coding-gap-report-single-patient.png" caption = "Figure 3-3 Risk Adjustment Reporting Workflow for a Single Patient" %}
 
 #### Usage
 {:.no_toc}
 
 `GET|[base]`
 
-{% include examplebutton.html example="get-risk-adjustment-coding-gap-report-usage-example" b_title = "Click Here To See Example GET Gaps in Care Report" %}
+{% include examplebutton.html example="get-risk-adjustment-coding-gap-report-usage-example" b_title = "Click Here To See Example GET Risk Adjustment Coding Gap Report" %}
 
 #### Bulk data  
 
-If Clients are requesting Gaps in Care Reports for many patients/members, they may consider using the FHIR [Asynchronous Request Patterns] for the Bulk Data exchange operation.
+If Clients are requesting risk adjustment coding gap reports for many patients, they may consider using the FHIR [Asynchronous Request Patterns] for the Bulk Data exchange operation.
 
 `GET|[base]`
 
