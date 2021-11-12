@@ -8,7 +8,7 @@
   <experimental value="false"/>
   <date value="2021-07-20"/>
   <publisher value="Da Vinci Project"/>
-  <description value="This extension is for Evidence Status of a Condition Category coding gap, which is confirmed, non-confirmed, and pending."/>
+  <description value="This extension is for Evidence Status of a Condition Category coding gap, which is closed-gap, open-gap, or pending."/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -22,9 +22,9 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="This is evidence status of a Condition Category coding gap: confirmed|non-confirmed|pending."/>
+      <short value="This is evidence status of a Condition Category coding gap: open-gap|closed-gap|pending."/>
       <definition value="Condition Category gap evidence status"/>
-      <comment value="This extension represents evidence status of a Condition Category coding gap, whether the evidence that supports a Condition Category coding gap is confirmed, non-confirmed, or pending."/>
+      <comment value="This extension represents evidence status of a Condition Category coding gap, whether the evidence that supports a Condition Category coding gap is closed-gap, open-gap, or pending."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -37,7 +37,7 @@
     </element>
     <element id="Extension.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
-      <short value="Indicate whether evidence status of a Condition Category is confirmed, non-confirmed, or pending"/>
+      <short value="Indicate whether evidence status of a Condition Category is closed-gap, open-gap, or pending"/>
       <type>
         <code value="CodeableConcept"/>
       </type>

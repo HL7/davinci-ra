@@ -1,6 +1,6 @@
 [Home]: index.html "Home Page"
 
-[$report]:OperationDefinition-report.html
+[Asynchronous Request Patterns]: https://www.hl7.org/fhir/async.html
 [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]: Bundle-ra-bundle01.html
 [Clinical Evaluation Period]:glossary.html#glossary
 [Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm
@@ -68,6 +68,7 @@
 [Patient02: Adam Everyman]: Patient-ra-patient02.html
 [Patient03: Nelda Nuclear]: Patient-ra-patient03.html
 [Patient04: Jane Doh]: Patient-ra-patient04.html
+[$report]:OperationDefinition-report.html
 [Risk Adjustment Coding Gap Report Bundle]: StructureDefinition-ra-measurereport-bundle.html
 [Risk Adjustment Coding Gap Report]: StructureDefinition-ra-measurereport.html
 [Risk Adjustment Coding Gap Report Profile]: StructureDefinition-ra-measurereport.html
