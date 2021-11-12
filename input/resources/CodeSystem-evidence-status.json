@@ -6,7 +6,7 @@
   "id": "evidence-status",
   "title": "Risk Adjustment Evidence Status Code System",
   "publisher":"Da Vinci Project",
-  "description": "(The Da Vinci Risk Adjustment Implementation Guide is under development). This is a code system for Risk Adjustment evidence status to indicate whether a Condition Category gap is open-gap, closed-gap, or pending.",
+  "description": "This is a code system for Risk Adjustment evidence status to indicate whether a Condition Category gap is open-gap, closed-gap, or pending.",
   "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
   "concept": [
     {

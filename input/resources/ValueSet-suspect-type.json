@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
-  "date": "2021-07-20",
+  "status": "active",
+  "date": "2021-11-11",
   "name": "RiskAdjustmentSuspectTypeValueSet",
   "id": "suspect-type",
   "title": "Risk Adjustment Suspect Type Value Set",
-  "description": "(The Da Vinci Risk Adjustment Implementation Guide is under development). Concepts for risk adjustment suspect type",
+  "description": "Concepts for risk adjustment suspect type",
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/suspect-type",
   "compose": {
     "include": [

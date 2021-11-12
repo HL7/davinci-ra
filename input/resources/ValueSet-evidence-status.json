@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
-  "date": "2021-10-07",
+  "status": "active",
+  "date": "2021-11-11",
   "name": "RiskAdjustmentEvidenceStatusValueSet",
   "id": "evidence-status",
   "title": "Risk Adjustment Evidence Status Value Set",
-  "description": "(The Da Vinci Risk Adjustment Implementation Guide is under development). Concepts for risk adjustment evidence status",
+  "description": "Concepts for risk adjustment evidence status",
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/evidence-status",
   "compose": {
     "include": [

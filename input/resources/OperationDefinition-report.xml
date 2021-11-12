@@ -5,9 +5,9 @@
     <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/report"/>
     <name value="Report"/>
     <title value="Report Operation"/>
-    <status value="draft"/>
+    <status value="active"/>
     <kind value="operation"/>
-    <date value="2021-08-09"/>
+    <date value="2021-11-1"/>
     <publisher value="Da Vinci Project"/>
     <description value="Generate a measure report"/>
     <code value="report"/>

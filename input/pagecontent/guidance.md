@@ -1,6 +1,6 @@
 
 <div markdown="1" class="bg-info">
-<b>The Da Vinci Risk Adjustment Implementation Guide is under development</b>
+<b>The Guidance page is under development</b>
 </div>
 
 ### Introduction
@@ -8,6 +8,7 @@
 The Da Vinci Project member organizations have identified the need of standardizing how risk adjustment coding gaps are communicated between payers and providers. This release of the Implementation Guide (guide) specifies standardized risk adjustment coding gap reports and defines an operation for a Client to query the coding gap reports from a Server for one or more patients. Standardizing the reporting structure helps lessen the burden on the providers in processing the reports so they can more easily address the patients’ care needs. This standardized structure also supports the payer sharing information that they have but the providers may not, such as data from other providers’s claims, lab results, filled prescriptions, etc.
 
 ### Preconditions and Assumptions
+(TODO: review and edit)
 - A contract for medical services exists between the server and the client requesting the report.
 - A risk adjustment model(s) has been defined.
 - The Server organization has determined the risk adjustment condition categories and suspect statuses based on the data they have and risk adjustment engine they use. As indicated in Scope, this guide does not define how a Server determines risk adjustment coding gaps shared on this report.
@@ -25,7 +26,7 @@ The term clinical evaluation period refers to the time period during which the r
 
 The [$report] operation returns a [Risk Adjustment Coding Gap Report Bundle] based on the input (IN) parameters if matching risk adjustment coding gap reports were found on the Server for a patient. This bundle is a FHIR collection bundle, which must contain a patient entry and zero or more entries of risk adjustment coding gap reports. The [$report] operation also defines another output (OUT) parameter, `OperationOutcome`, to address scenarios when the `subject` provided is invalid. Detailed documentation and conformance statements are listed on the page for [$report].
 
-Each [Risk Adjustment Coding Gap Report] is for a single patient (the required `MeasureReport.subject` references [USCore Patient]) and a version specific risk adjustment model. If the Server's risk adjustment engine runs multiple risk adjustment models including different versions of the same model, then there will be multiple risk adjustment coding gap reports for a patient. For example, if a risk adjustment engine runs reports using CMS-HCC v25, CMS-HCC v24, and Rx-HCC v5, there will be three separate risk adjustment coding gap reports for a patient and for each of the three version specific models. The risk adjustment model information is specified in the [Risk Adjustment Model Measure] profile. The `measure` element of the [Risk Adjustment Coding Gap Report] references the [Risk Adjustment Model Measure].
+Each [Risk Adjustment Coding Gap Report] is for a single patient (the required `MeasureReport.subject` references [USCore Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) and a version specific risk adjustment model. If the Server's risk adjustment engine runs multiple risk adjustment models including different versions of the same model, then there will be multiple risk adjustment coding gap reports for a patient. For example, if a risk adjustment engine runs reports using CMS-HCC v25, CMS-HCC v24, and Rx-HCC v5, there will be three separate risk adjustment coding gap reports for a patient and for each of the three version specific models. The risk adjustment model information is specified in the [Risk Adjustment Model Measure] profile. The `measure` element of the [Risk Adjustment Coding Gap Report] references the [Risk Adjustment Model Measure].
 
 The [MeasureReport] resource has zero to many `group` elements. Each `group` element contains information for a Condition Category, therefore, multiple Condition Category code. The `group.code` is used to represent the actual code for a Condition Category, such as HCC 19 (Diabetes without Complication). The [Risk Adjustment Coding Gap Report] profile added several extensions to the MeasureReport resource’s `group` element to provide additional information about a Condition Category, which includes:
  - the suspect type for a Condition Category coding gap that is either historic, suspected, or unsuspected;
@@ -35,9 +36,16 @@ The [MeasureReport] resource has zero to many `group` elements. Each `group` ele
 
 In addition, the [Risk Adjustment Coding Gap Report] provides capability of sharing supporting evidence for a Condition Category through the use of the `MeasureReport.evaluatedResource` element. This supporting evidence may include resources for data such as encounters, lab results, medications, and procedures, and the `evaluatedResource` shall reference the appropriate US Core profile. The extension [ra-groupReference](StructureDefinition-ra-groupReference.html) added to the `evaluatedResource` element enables tying a specific supporting evidence to a particular Condition Category. This is accomplished by setting the extension’s `valueString` to be the same value of the `MeasureGroup.group.id` of the Condition Category to establish the association between a supporting evidence and one or more Condition Categories.  
 
-### Profiles
+### Risk Adjustment Coding Gaps Reporting
 
-The following resources and their profiles specified in this guide are used to support communicating adjustment coding gap reports from Server to Client:
+Figure 3-1 is an example risk adjustment coding gap report. The Client calls the [$report] operation for patient Eve Everywoman (subject) and for a clinical evaluation period from January 1, 2021 to December 31, 2021 (periodStart and periodEnd). The Server receives the request and finds a matching risk adjustment coding gap report for Eve Everywoman that has a clinical evaluation period of January 1, 2021 to September 30, 2021, which overlaps the periodStart and periodEnd dates provided in the [$report] operation. This report was created by the backend risk adjustment engine on October 18th, 2021 using the risk adjustment model CMS-HCC V24.
+As shown in this example report, Eve Everywoman has five Hierarchical Condition Categories (HCC) and of which three conditions are historic diagnoses and two are suspected diagnoses. For example, one of the historic diagnoses is HCC 18, Diabetes with no Complications. This coding gap shows as closed and the evidence status was last updated on April 1, 2021. The supporting evidence shows the clinical data that was used to close the coding gap HCC 18.
+
+{% include img-portrait.html img="report-risk-adjustment.png" caption = "Figure 3-1 Example Risk Adjustment Coding Gap Report" %}
+
+### Resources and Profiles
+
+The following resources and their profiles specified in this guide are used to support sharing adjustment coding gap reports from Server to Client:
 
 |Resource Type|Profile Name|Link to Profile|
 |---|---|---|
@@ -46,14 +54,7 @@ The following resources and their profiles specified in this guide are used to s
 |MeasureReport|Risk Adjustment Coding Gap Report Profile|[Risk Adjustment Coding Gap Report]|
 |Measure|Risk Adjustment Model Measure Profile|[Risk Adjustment Model Measure]|
 
-### Risk Adjustment Coding Gaps Reporting
-
-Figure 3-1 is an example risk adjustment coding gap report. The Client calls the [$report] operation for patient Eve Everywoman (subject) and for a clinical evaluation period from January 1, 2021 to December 31, 2021 (periodStart and periodEnd). The Server receives the request and finds a matching risk adjustment coding gap report for Eve Everywoman that has a clinical evaluation period of January 1, 2021 to September 30, 2021, which overlaps the periodStart and periodEnd dates provided in the [$report] operation. This report was created by the backend risk adjustment engine on October 18th, 2021 using the risk adjustment model CMS-HCC V24.
-As shown in this example report, Eve Everywoman has five Hierarchical Condition Categories (HCC) and of which three conditions are historic diagnoses and two are suspected diagnoses. For example, one of the historic diagnoses is HCC 18, Diabetes with no Complications. This coding gap shows as closed and the evidence status was last updated on April 1, 2021. The supporting evidence shows the clinical data that was used to close the coding gap HCC 18.
-
-{% include img-portrait.html img="report-risk-adjustment.png" caption = "Figure 3-1 Example Risk Adjustment Coding Gap Report" %}
-
-Figure 3-2 provides a graphical view of how these resources are related to the report above.  The main resource is the [Risk Adjustment Coding Gap Report Profile].  This profile first references a [Risk Adjustment Model Measure Profile] which is how we indicate which risk model the report is based on.  The Patient(US Core Patient) as well as the Organization(US Core Organization) that generated the Risk Adjustment Coding Gap Report are referenced.  
+Figure 3-2 provides a graphical view of how these resources are related to the report above.  The main resource is the [Risk Adjustment Coding Gap Report Profile].  This profile first references a [Risk Adjustment Model Measure Profile] which is how we indicate which risk model the report is based on.  The Patient [USCore Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) as well as the Organization(US Core Organization) that generated the Risk Adjustment Coding Gap Report are referenced.  
 
 Each Hierarchical Condition Code is represented by a Group within the report.  You will notice that each Group has supporting evidence of the Encounter.  Additionally, you will see resources on the right of the report that support the specific HCC code.  
 

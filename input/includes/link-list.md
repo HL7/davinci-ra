@@ -47,7 +47,6 @@
 [Group02: Risk Adjustment Patient Group, (Patient02: Adam Everyman, Patient03: Nelda Nuclear)]: Group-ra-group02.html
 [Guidance]: guidance.html
 [HL7 Da Vinci Guiding Principles]: https://confluence.hl7.org/display/DVP/Da+Vinci+Clinical+Advisory+Council+Members?preview=/66940155/66942916/Guiding%20Principles%20for%20Da%20Vinci%20Implementation%20Guides.pdf
-[HRex Coverage Profile]: http://build.fhir.org/ig/HL7/davinci-ehrx/StructureDefinition-hrex-coverage.html
 [Measure01: Risk Adjustment Model CMS-HCC V24]: Measure-RAModelExample01.html
 [Measure02: Risk Adjustment Model CMS-HCC V21]: Measure-RAModelExample02.html
 [Measure03: Risk Adjustment Model CMS-RxHCC V05]: Measure-RAModelExample03.html

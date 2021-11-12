@@ -6,7 +6,7 @@
   "id": "suspect-type",
   "title": "Risk Adjustment Suspect Type Code System",
   "publisher":"Da Vinci Project",
-  "description": "(The Da Vinci Risk Adjustment Implementation Guide is under development). This is a code system for Risk Adjustment suspect type to indicate whether it is a suspected Condition Category (CC) gap,
+  "description": "This is a code system for Risk Adjustment suspect type to indicate whether it is a suspected Condition Category (CC) gap,
   a historic CC gap, or an unsuspected CC. Historic, suspected, and net-new are mutually exclusive.",
   "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
   "concept": [

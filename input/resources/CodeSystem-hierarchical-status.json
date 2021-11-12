@@ -6,7 +6,7 @@
   "id": "hierarchical-status",
   "title": "Risk Adjustment Hierarchical Status Code System",
   "publisher":"Da Vinci Project",
-  "description": "(The Da Vinci Risk Adjustment Implementation Guide is under development). This is a code system for Risk Adjustment Hierarchical Status to indicate whether hiearchies were applied to a Condition Category, and if applied, whether the Condition Category is superseded.",
+  "description": "This is a code system for Risk Adjustment Hierarchical Status to indicate whether hiearchies were applied to a Condition Category, and if applied, whether the Condition Category is superseded.",
   "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
   "concept": [
     {
