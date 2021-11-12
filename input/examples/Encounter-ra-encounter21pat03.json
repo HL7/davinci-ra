@@ -40,7 +40,7 @@
 	}],
 	"diagnosis": [{
 			"condition": {
-				"reference": "Condition/ra-condition22pat03"
+				"reference": "Condition/ra-condition21pat03"
 			}
 		}
 	],

@@ -772,6 +772,15 @@
               "valueString" : "group-001"
             }
           ],
+            "reference": "Condition/ra-condition42pat03"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+              "valueString" : "group-001"
+            }
+          ],
             "reference": "Encounter/ra-encounter01pat03"
         },
         {
@@ -872,6 +881,15 @@
             }
           ],
             "reference": "Encounter/ra-encounter35pat03"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+              "valueString" : "group-001"
+            }
+          ],
+            "reference": "Encounter/ra-encounter42pat03"
         },
         {
           "extension" : [

@@ -1,6 +1,6 @@
 {
 	"resourceType": "Encounter",
-	"id": "ra-encounter31pat02",
+	"id": "ra-encounter42pat03",
 	"meta": {
 		"extension": [{
 				"url": "http://hl7.org/fhir/StructureDefinition/instance-name",
@@ -30,7 +30,7 @@
 		"text": "Office Visit, High Complexity"
 	}],
 	"subject": {
-		"reference": "Patient/ra-patient02"
+		"reference": "Patient/ra-patient03"
 	},
 
 	"participant": [{
@@ -40,13 +40,13 @@
 	}],
 	"diagnosis": [{
 			"condition": {
-				"reference": "Condition/ra-condition31pat02"
+				"reference": "Condition/ra-condition42pat03"
 			}
 		}
 	],
 	"period": {
-		"start": "2021-08-06",
-		"end": "2021-08-06"
+		"start": "2020-02-10",
+		"end": "2020-02-11"
 	},
 	"serviceProvider": {
 		"reference": "Organization/ra-org01pat03"

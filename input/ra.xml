@@ -209,14 +209,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Condition/ra-condition32pat03"/>
-      </reference>
-      <name value="Condition32pat03: Chronic pulmonary embolism"/>
-      <description value="Chronic pulmonary embolism"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Condition/ra-condition31pat02"/>
       </reference>
       <name value="Condition31pat02: Typical atrial flutter"/>
@@ -225,10 +217,26 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Condition/ra-condition32pat03"/>
+      </reference>
+      <name value="Condition32pat03: Chronic pulmonary embolism"/>
+      <description value="Chronic pulmonary embolism"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Condition/ra-condition35pat03"/>
       </reference>
       <name value="Condition35pat03: Hypertension secondary to other renal disorders"/>
       <description value="Hypertension secondary to other renal disorders"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition42pat03"/>
+      </reference>
+      <name value="Condition42pat03: Other artificial openings of gastrointestinal tract status"/>
+      <description value="Other artificial openings of gastrointestinal tract status"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -333,6 +341,14 @@
       </reference>
       <name value="Encounter on 20210212"/>
       <description value="Encounter on 20210212"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter42pat03"/>
+      </reference>
+      <name value="Encounter on 20200210"/>
+      <description value="Encounter on 20200210"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

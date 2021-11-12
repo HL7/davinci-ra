@@ -33,7 +33,7 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-hcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "24",
                         "code": "18",
                         "display": "Diabetes with Chronic Complications"
@@ -66,7 +66,7 @@
                 },
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
-                    "valueDate": "2021-08-01"
+                    "valueDate": "2021-04-01"
                 },
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
@@ -86,9 +86,62 @@
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-hcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "24",
-                        "code": "59",
+                        "code": "111",
+                        "display": "Chronic Obstructive Pulmonary Disease"
+                    }
+                ],
+                "text": "HCC 111: Chronic Obstructive Pulmonary Disease"
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "historic",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "pending",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                    "valueDate": "2021-09-29"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "applied-not-superseded",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "group-003",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                        "version": "24",
+                        "code": "53",
                         "display": "Major Depressive, Bipolar, and Paranoid Disorders"
                     }
                 ],
@@ -135,11 +188,170 @@
             ]
         },
         {
-            "id": "group-003",
+            "id": "group-004",
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-hcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                        "version": "24",
+                        "code": "112",
+                        "display": "Fibrosis of lung and other chronic lung disorders"
+                    }
+                ],
+                "text": "HCC 112: Fibrosis of lung and other chronic lung disorders"
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "historic",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "closed-gap",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                    "valueDate": "2021-04-27"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "applied-superseded",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "group-005",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                        "version": "24",
+                        "code": "19",
+                        "display": "Diabetes without Complications"
+                    }
+                ],
+                "text": "HCC 19: Diabetes without Complications"
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "historic",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "pending",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                    "valueDate": "2021-09-27"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "applied-superseded",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "group-006",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                        "version": "24",
+                        "code": "84",
+                        "display": "Cardio-Respiratory Failure and Shock"
+                    }
+                ],
+                "text": "HCC 84: Cardio-Respiratory Failure and Shock"
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "historic",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "open-gap",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                    "valueDate": "2020-12-15"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "applied-superseded",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "group-007",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "24",
                         "code": "22",
                         "display": "Morbid Obesity"
@@ -172,7 +384,7 @@
                 },
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
-                    "valueDate": "2020-07-15"
+                    "valueDate": "2021-03-15"
                 },
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
@@ -188,11 +400,11 @@
             ]
         },
         {
-            "id": "group-004",
+            "id": "group-008",
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-hcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "24",
                         "code": "96",
                         "display": "Specified Heart Arrhythmias"
@@ -224,6 +436,10 @@
                     }
                 },
                 {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                    "valueDate": "2021-09-27"
+                },
+                {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
                     "valueCodeableConcept": {
                         "coding": [
@@ -237,11 +453,11 @@
             ]
         },
         {
-            "id": "group-005",
+            "id": "group-009",
             "code": {
                 "coding": [
                     {
-                        "system": "http://cms.gov/cms-hcc/",
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "24",
                         "code": "110",
                         "display": "Cystic Fibrosis"
@@ -255,7 +471,7 @@
                     "valueCodeableConcept": {
                         "coding": [
                             {
-                                "code": "historic",
+                                "code": "suspected",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
                             }
                         ]
@@ -286,7 +502,60 @@
                             }
                         ]
                     }
-                }  
+                }
+            ]
+        },
+        {
+            "id": "group-010",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                        "version": "24",
+                        "code": "83",
+                        "display": "Respiratory Arrest"
+                    }
+                ],
+                "text": "HCC 110: Cystic Fibrosis"
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "net-new",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "pending",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                    "valueDate": "2021-09-28"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "applied-not-superseded",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
+                }
             ]
         }
     ],

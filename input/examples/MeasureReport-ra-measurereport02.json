@@ -35,6 +35,112 @@
                     {
                         "system": "http://cms.gov/cms-rxhcc/",
                         "version": "5",
+                        "code": "227",
+                        "display": "Pulmonary Fibrosis and Other Chronic Lung Disorders"
+                    }
+                ],
+                "text": "CMS-RxHCC 227: Pulmonary Fibrosis and Other Chronic Lung Disorders"
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "historic",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "closed-gap",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                    "valueDate": "2021-04-01"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "not-applied",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "group-002",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-rxhcc/",
+                        "version": "5",
+                        "code": "131",
+                        "display": "Bipolar Disorders"
+                    }
+                ],
+                "text": "CMS-RxHCC 131: Bipolar Disorders"
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "historic",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "open-gap",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                    "valueDate": "2020-07-01"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "not-applied",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "group-003",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-rxhcc/",
+                        "version": "5",
                         "code": "30",
                         "display": "Diabetes with Chronic Complications"
                     }
@@ -66,12 +172,23 @@
                 },
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
-                    "valueDate": "2021-08-01"
+                    "valueDate": "2021-02-15"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "not-applied",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
                 }
             ]
         },
         {
-            "id": "group-002",
+            "id": "group-004",
             "code": {
                 "coding": [
                     {
@@ -96,92 +213,27 @@
                     }
                 },
                 {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                    "valueCodeableConcept": {
-                        "coding": [
-                            {
-                                "code": "closed-gap",
-                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
-                            }
-                        ]
-                    }
-                }
-            ]
-        },
-        {
-            "id": "group-003",
-            "code": {
-                "coding": [
-                    {
-                        "system": "http://cms.gov/cms-rxhcc/",
-                        "version": "5",
-                        "code": "227",
-                        "display": "Pulmonary Fibrosis and Other Chronic Lung Disorders"
-                    }
-                ],
-                "text": "CMS-RxHCC 277: Pulmonary Fibrosis and Other Chronic Lung Disorders"
-            },
-            "extension": [
-                {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
-                    "valueCodeableConcept": {
-                        "coding": [
-                            {
-                                "code": "historic",
-                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                    "valueCodeableConcept": {
-                        "coding": [
-                            {
-                                "code": "closed-gap",
-                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
-                            }
-                        ]
-                    }
-                },
-                {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
-                    "valueDate": "2020-07-15"
-                }
-            ]
-        },
-        {
-            "id": "group-004",
-            "code": {
-                "coding": [
-                    {
-                        "system": "http://cms.gov/cms-rxhcc/",
-                        "version": "5",
-                        "code": "131",
-                        "display": "Bipolar Disorders"
-                    }
-                ],
-                "text": "CMS-RxHCC 131: Bipolar Disorders"
-            },
-            "extension": [
-                {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
-                    "valueCodeableConcept": {
-                        "coding": [
-                            {
-                                "code": "suspected",
-                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
-                            }
-                        ]
-                    }
+                    "valueDate": "2021-04-01"
                 },
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
                     "valueCodeableConcept": {
                         "coding": [
                             {
-                                "code": "pending",
+                                "code": "closed-gap",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "not-applied",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
                             }
                         ]
                     }
@@ -220,6 +272,74 @@
                             {
                                 "code": "pending",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                    "valueDate": "2021-09-29"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "not-applied",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "group-006",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://cms.gov/cms-rxhcc/",
+                        "version": "5",
+                        "code": "226",
+                        "display": "Chronic Obstructive Pulmonary Disease and Asthma"
+                    }
+                ],
+                "text": "CMS-RxHCC 226: Chronic Obstructive Pulmonary Disease and Asthma"
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "net-new",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "pending",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                            }
+                        ]
+                    }
+                } ,
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                    "valueDate": "2021-09-29"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "not-applied",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
                             }
                         ]
                     }

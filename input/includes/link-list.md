@@ -18,6 +18,7 @@
 [Condition23Pat03: Chronic kidney disease, stage 5]: Condition-ra-condition23pat03.html
 [Condition32Pat03: Chronic pulmonary embolism]: Condition-ra-condition32pat03.html
 [Condition35Pat03: Hypertension secondary to other renal disorders]: Condition-ra-condition35pat03.html
+[Condition42Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition42pat03.html
 [Condition02: Major Depressive Disorder, Single episode]: Condition-ra-condition02.html
 [Da Vinci - Risk Based Contracts Member Attribution (ATR) List IG]: http://hl7.org/fhir/us/davinci-atr/
 [Downloads]: downloads.html
@@ -34,6 +35,7 @@
 [Encounter21Pat03: Pat03 Encounter on 2021-01-30]: Encounter-ra-encounter21pat03.html
 [Encounter22Pat03: Pat03 Encounter on 2021-07-01]: Encounter-ra-encounter22pat03.html
 [Encounter35Pat03: Pat03 Encounter on 2021-02-12]: Encounter-ra-encounter35pat03.html
+[Encounter42Pat03: Pat03 Encounter on 2020-02-10]: Encounter-ra-encounter42pat03.html
 [FHIR Artifacts/Capability Statements]: capabilities.html
 [FHIR Artifacts/Extensions]: extensions.html
 [FHIR Artifacts/Operations]: operations.html

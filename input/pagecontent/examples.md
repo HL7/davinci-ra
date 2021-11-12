@@ -29,6 +29,7 @@
 - [Condition23Pat03: Chronic kidney disease, stage 5]
 - [Condition32Pat03: Chronic pulmonary embolism]
 - [Condition35Pat03: Hypertension secondary to other renal disorders]
+- [Condition42Pat03: Other artificial openings of gastrointestinal tract status]
 
 - [Encounter31Pat02: Pat02 Encounter on 2021-08-06]
 
@@ -43,6 +44,7 @@
 - [Encounter21Pat03: Pat03 Encounter on 2021-01-30]
 - [Encounter22Pat03: Pat03 Encounter on 2021-07-01]
 - [Encounter35Pat03: Pat03 Encounter on 2021-02-12]
+- [Encounter42Pat03: Pat03 Encounter on 2020-02-10]
 
 
 
