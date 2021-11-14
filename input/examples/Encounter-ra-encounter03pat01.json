@@ -1,6 +1,6 @@
 {
 	"resourceType": "Encounter",
-	"id": "ra-encounter42pat03",
+	"id": "ra-encounter03pat01",
 	"meta": {
 		"extension": [{
 				"url": "http://hl7.org/fhir/StructureDefinition/instance-name",
@@ -11,7 +11,7 @@
 				"valueMarkdown": "This is Encounter with Dr Howell on 20210714 for Patient 03."
 			}
 		],
-		"lastUpdated": "2021-07-14T11:56:57.250-04:00",
+		"lastUpdated": "2021-10-14T11:56:57.250-04:00",
 		"profile": [
 			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
 		]
@@ -30,25 +30,40 @@
 		"text": "Office Visit, High Complexity"
 	}],
 	"subject": {
-		"reference": "Patient/ra-patient03"
+		"reference": "Patient/ra-patient01"
 	},
 
 	"participant": [{
 		"individual": {
-			"reference": "Practitioner/ra-prac03pat03"
+			"reference": "Practitioner/ra-prac01pat01"
 		}
 	}],
 	"diagnosis": [{
 			"condition": {
-				"reference": "Condition/ra-condition42pat03"
+				"reference": "Condition/ra-condition03pat01"
 			}
+			},
+			{
+			"condition": {
+				"reference": "Condition/ra-condition10pat01"
+			}
+			},
+			{
+			"condition": {
+				"reference": "Condition/ra-condition18pat01"
+			}
+		},
+		{
+		"condition": {
+			"reference": "Condition/ra-condition33pat01"
 		}
+	}
 	],
 	"period": {
-		"start": "2020-02-10",
-		"end": "2020-02-11"
+		"start": "2021-09-26",
+		"end": "2021-09-26"
 	},
 	"serviceProvider": {
-		"reference": "Organization/ra-org03pat03"
+		"reference": "Organization/ra-org01pat01"
 	}
 }

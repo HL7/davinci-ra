@@ -1,0 +1,53 @@
+{
+  "resourceType" : "Organization",
+  "id" : "ra-org03pat03",
+  "meta" : {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Organization for Patient 3"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "Provider Organization for Patient 3 data"
+      }
+    ],
+    "profile" : [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+    ]
+  },
+  "active" : true,
+  "type" : [
+    {
+      "coding" : [
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code" : "prov",
+          "display" : "Healthcare Provider"
+        }
+      ]
+    }
+  ],
+  "name" : "Community HealthCenter",
+  "telecom" : [
+    {
+      "system" : "phone",
+      "value" : "(+1) 123-456-7890"
+    },
+    {
+      "system" : "email",
+      "value" : "patient-service@CommunityHealthCenter.com"
+    }
+  ],
+  "address" : [
+    {
+      "line" : [
+        "100 HealthCenter Lane, Suite 700"
+      ],
+      "city" : "Ann Harbor",
+      "state" : "MI",
+      "postalCode" : "99999",
+      "country" : "USA"
+    }
+  ]
+}

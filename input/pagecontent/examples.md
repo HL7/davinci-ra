@@ -13,43 +13,57 @@
 
 - [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]  
 
-- [Condition31Pat02: Typical atrial flutter]
-
 - [Condition01: Type 2 diabetes with unspecified manifestations]
 - [Condition02: Major Depressive Disorder, Single episode]
 - [Condition01Pat03: Other artificial openings of gastrointestinal tract status]  
+- [Condition02pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication]
+- [Condition03pat01: Mild persistent asthma with (acute) exacerbation]
 - [Condition04Pat03: Chronic obstructive pulmonary disease with (acute) exacerbation]
 - [Condition05Pat03: Unspecified protein-calorie malnutrition]
 - [Condition06Pat03: Crohn's disease of large intestine with unspecified complications]
 - [Condition07Pat03: Other persistent atrial fibrillation]
+- [Condition08pat01: Bipolar disorder, current episode mixed, mild]
+- [Condition09Pat01: Allergic bronchopulmonary aspergillosis]
+- [Condition10Pat01: Mild persistent asthma with (acute) exacerbation]
+- [Condition11Pat01: Acute pulmonary edema]
 - [Condition15Pat03: Diabetes mellitus due to underlying condition with diabetic chronic kidney disease]
 - [Condition16Pat03: Dependence on renal dialysis]
+- [Condition17Pat01: Body mass index (BMI) 45.0-49.9, adult]
+- [Condition18Pat01: Longstanding persistent atrial fibrillation]
 - [Condition21Pat03: Type 2 diabetes mellitus without complications]
 - [Condition22Pat03: Other acute kidney failure]
 - [Condition23Pat03: Chronic kidney disease, stage 5]
+- [Condition31Pat02: Typical atrial flutter]
 - [Condition32Pat03: Chronic pulmonary embolism]
+- [Condition33Pat01: Respiratory arrest]
 - [Condition35Pat03: Hypertension secondary to other renal disorders]
 - [Condition42Pat03: Other artificial openings of gastrointestinal tract status]
+- [Condition44Pat01: Allergic bronchopulmonary aspergillosis]
+- [Condition44Pat01: Allergic bronchopulmonary aspergillosis]
 
-- [Encounter31Pat02: Pat02 Encounter on 2021-08-06]
 
 - [Encounter01Pat03: Pat03 Encounter on 2021-07-14]
+- [Encounter02Pat01: Pat01 Encounter on 2021-01-31]
+- [Encounter03Pat01: Pat01 Encounter on 2021-09-26]
 - [Encounter04Pat03: Pat03 Encounter on 2020-12-18]
 - [Encounter05Pat03: Pat03 Encounter on 2020-03-03]
 - [encounter06Pat03: Pat03 Encounter on 2020-09-17]
 - [Encounter07Pat03: Pat03 Encounter on 2019-02-07]
+- [Encounter08Pat01: Pat01 Encounter on 2017-02-03]
+- [Encounter09Pat01: Pat01 Encounter on 2021-09-26]
+- [Encounter11Pat01: Pat01 Encounter on 2020-11-02]
 - [Encounter15Pat03: Pat03 Encounter on 2021-08-08]
 - [Encounter16Pat03: Pat03 Encounter on 2021-07-27]
+- [Encounter18Pat01: Pat01 Encounter on 2020-11-02]
 - [Encounter19Pat03: Pat03 Encounter on 2019-08-23]
 - [Encounter21Pat03: Pat03 Encounter on 2021-01-30]
 - [Encounter22Pat03: Pat03 Encounter on 2021-07-01]
+- [Encounter31Pat02: Pat02 Encounter on 2021-08-06]
 - [Encounter35Pat03: Pat03 Encounter on 2021-02-12]
 - [Encounter42Pat03: Pat03 Encounter on 2020-02-10]
-
-
-
-- [Observation01Pat03: Pat03 Creatinine on 20210728]
-- [Observation02Pat03: Pat03 PHQ9 on 20190823]
+- [Encounter43Pat01: Pat01 Encounter on 2019-02-10]
+- [Encounter44Pat01: Pat01 Encounter on 2017-01-18]
+- [Encounter45Pat01: Pat01 Encounter on 2018-07-21]
 
 - [Group01: Risk Adjustment Patient Group, (Patient01: Eve Everywoman)]
 - [Group02: Risk Adjustment Patient Group, (Patient02: Adam Everyman, Patient03: Nelda Nuclear)]  
@@ -66,12 +80,25 @@
 - [MeasureReport06: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient04: Jane Doh)]
 - [MeasureReport07: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient02: Adam Everyman)]
 
+- [Observation01Pat03: Pat03 Creatinine on 20210728]
+- [Observation02Pat03: Pat03 PHQ9 on 20190823]
+- [Observation21Pat01: Pat01 Trypsin (Mass/volume) in Serum or Plasma from 20170617]
+
 - [Organization01: Payer Organization ABC Payer]  
+
+- [Organization01Pat01: Community Urgent Care]
+- [Organization02Pat02: GHH Outpatient Clinic]
+- [Organization01pat03: Community HealthCenter]
+
 
 - [Parameters01: Report return, subject Eve Everywoman]  
 
 - [Patient01: Eve Everywoman]
 - [Patient02: Adam Everyman]
 - [Patient03: Nelda Nuclear]  
+
+- [Practitioner01: Harold Hippocrates]
+- [Practitioner02: Patrick Pump]
+- [Practitioner03: Otto Osler]
 
 {% include link-list.md %}

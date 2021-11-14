@@ -1,0 +1,53 @@
+{
+  "resourceType" : "Organization",
+  "id" : "ra-org01pat01",
+  "meta" : {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Organization for Patient 1"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "Provider Organization for Patient 1 data"
+      }
+    ],
+    "profile" : [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+    ]
+  },
+  "active" : true,
+  "type" : [
+    {
+      "coding" : [
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code" : "prov",
+          "display" : "Healthcare Provider"
+        }
+      ]
+    }
+  ],
+  "name" : "Community Urgent Care",
+  "telecom" : [
+    {
+      "system" : "phone",
+      "value" : "(+1) 555-555-4001"
+    },
+    {
+      "system" : "email",
+      "value" : "patient_question@CommunityUrgentCare.com"
+    }
+  ],
+  "address" : [
+    {
+      "line" : [
+        "1001 Village Avenue"
+      ],
+      "city" : "Ann Harbor",
+      "state" : "MI",
+      "postalCode" : "99999",
+      "country" : "USA"
+    }
+  ]
+}

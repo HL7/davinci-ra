@@ -137,6 +137,22 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Condition/ra-condition02pat01"/>
+      </reference>
+      <name value="Condition02pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication"/>
+      <description value="Diabetes mellitus due to underlying condition with other diabetic kidney complication"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition03pat01"/>
+      </reference>
+      <name value="Condition03pat01: Mild persistent asthma with (acute) exacerbation"/>
+      <description value="Mild persistent asthma with (acute) exacerbation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Condition/ra-condition04pat03"/>
       </reference>
       <name value="Condition04pat03: Chronic obstructive pulmonary disease with (acute) exacerbation"/>
@@ -169,6 +185,38 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Condition/ra-condition08pat01"/>
+      </reference>
+      <name value="Condition08pat01: Bipolar disorder, current episode mixed, mild"/>
+      <description value="Other persistent atrial fibrillation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition09pat01"/>
+      </reference>
+      <name value="Condition09pat01: Allergic bronchopulmonary aspergillosis"/>
+      <description value="Allergic bronchopulmonary aspergillosis"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition10pat01"/>
+      </reference>
+      <name value="Condition10pat01: Mild persistent asthma with (acute) exacerbation"/>
+      <description value="Mild persistent asthma with (acute) exacerbation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition11pat01"/>
+      </reference>
+      <name value="Condition11pat01: Acute pulmonary edema"/>
+      <description value="Acute pulmonary edema"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Condition/ra-condition15pat03"/>
       </reference>
       <name value="Condition15pat03: Diabetes mellitus due to underlying condition with diabetic chronic kidney diseases"/>
@@ -180,7 +228,23 @@
         <reference value="Condition/ra-condition16pat03"/>
       </reference>
       <name value="Condition16pat03: Dependence on renal dialysis"/>
-      <description value="Dependence on renal dialysiss"/>
+      <description value="Dependence on renal dialysis"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition17pat01"/>
+      </reference>
+      <name value="Condition17pat01: Body mass index [BMI] 45.0-49.9, adult"/>
+      <description value="Body mass index [BMI] 45.0-49.9, adult"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition18pat01"/>
+      </reference>
+      <name value="Condition18pat01: Longstanding persistent atrial fibrillation"/>
+      <description value="Longstanding persistent atrial fibrillation"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -225,6 +289,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Condition/ra-condition33pat01"/>
+      </reference>
+      <name value="Condition33pat01: Respiratory arrest"/>
+      <description value="Respiratory arrest"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Condition/ra-condition35pat03"/>
       </reference>
       <name value="Condition35pat03: Hypertension secondary to other renal disorders"/>
@@ -241,6 +313,22 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Condition/ra-condition43pat01"/>
+      </reference>
+      <name value="Condition43pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication"/>
+      <description value="Diabetes mellitus due to underlying condition with other diabetic kidney complicationt"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition44pat01"/>
+      </reference>
+      <name value="Condition44pat01: Allergic bronchopulmonary aspergillosis"/>
+      <description value="Allergic bronchopulmonary aspergillosis"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Condition/ra-condition02"/>
       </reference>
       <name value="Condition02: Major Depressive Disorder, Single episode"/>
@@ -253,6 +341,22 @@
       </reference>
       <name value="Encounter on 20210714"/>
       <description value="Encounter on 20210714"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter02pat01"/>
+      </reference>
+      <name value="Encounter on 20210131"/>
+      <description value="Encounter on 20210131"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter03pat01"/>
+      </reference>
+      <name value="Encounter on 20210926"/>
+      <description value="Encounter on 20210926"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -289,6 +393,30 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Encounter/ra-encounter08pat01"/>
+      </reference>
+      <name value="Encounter on 2017-02-03"/>
+      <description value="Encounter on 20170203"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter09pat01"/>
+      </reference>
+      <name value="Encounter on 20210926"/>
+      <description value="Encounter on 20210926"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter11pat01"/>
+      </reference>
+      <name value="Encounter on 20201102"/>
+      <description value="Encounter on 20201102"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Encounter/ra-encounter15pat03"/>
       </reference>
       <name value="Encounter on 20200808"/>
@@ -301,6 +429,14 @@
       </reference>
       <name value="Encounter on 20210727"/>
       <description value="Encounter on 20210727"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter18pat01"/>
+      </reference>
+      <name value="Encounter on 20201102"/>
+      <description value="Encounter on 20201102"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -353,6 +489,30 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Encounter/ra-encounter43pat01"/>
+      </reference>
+      <name value="Encounter on 20190210"/>
+      <description value="Encounter on 20190210"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter44pat01"/>
+      </reference>
+      <name value="Encounter on 20170118"/>
+      <description value="Encounter on 20170118"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/ra-encounter45pat01"/>
+      </reference>
+      <name value="Encounter on 20180721"/>
+      <description value="Encounter on 201807217-21"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Observation/ra-obs01pat03"/>
       </reference>
       <name value="Observation: Creatinine Result from 20210728"/>
@@ -369,6 +529,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Observation/ra-obs21pat01"/>
+      </reference>
+      <name value="Trypsin [Mass/volume] in Serum or Plasma from 20170617"/>
+      <description value="Trypsin [Mass/volume] in Serum or Plasma from 20170617"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Organization/ra-payer01"/>
       </reference>
       <name value="Organization01: ABC Payer"/>
@@ -377,7 +545,23 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Organization/ra-org01pat03"/>
+        <reference value="Organization/ra-org01pat01"/>
+      </reference>
+      <name value="Organization: Community Urgent Care"/>
+      <description value="Community Urgent Care"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/ra-org02pat02"/>
+      </reference>
+      <name value="Organization: GHH Outpatient Clinic"/>
+      <description value="GHH Outpatient Clinic"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/ra-org03pat03"/>
       </reference>
       <name value="Organization: Community HealthCenter"/>
       <description value="Community HealthCenter"/>
@@ -425,7 +609,23 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Practitioner/ra-prac01pat03"/>
+        <reference value="Practitioner/ra-prac01pat01"/>
+      </reference>
+      <name value="Practitioner: Harold Hippocrates"/>
+      <description value="Harold Hippocrates"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/ra-prac02pat02"/>
+      </reference>
+      <name value="Practitioner: Patrick Pump"/>
+      <description value="Patrick Pump"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/ra-prac03pat03"/>
       </reference>
       <name value="Practitioner: Otto Osler"/>
       <description value="Otto Osler"/>
@@ -613,16 +813,6 @@
         <page>
           <nameUrl value="Observation-ra-obs01pat03.html"/>
           <title value="Observation02Pat03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Organization-ra-org01pat03.html"/>
-          <title value="Organization01pat03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Practitioner-ra-prac01pat03.html"/>
-          <title value="Prac01pat03"/>
           <generation value="generated"/>
         </page>
         <page>

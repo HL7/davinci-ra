@@ -1,0 +1,36 @@
+{
+  "resourceType": "Practitioner",
+  "id": "ra-prac03pat03",
+  "identifier": [
+    {
+      "system": "http://hl7.org.fhir/sid/us-npi",
+      "value": "1290123454"
+    },
+    {
+      "system": "http://www.acme.org/practitioners",
+      "value": "25456"
+    }
+  ],
+  "name": [
+    {
+      "family": "Osler",
+      "given": [
+        "Otto"
+      ],
+      "prefix": [
+        "Dr"
+      ]
+    }
+  ],
+  "address": [
+    {
+      "use": "home",
+      "line": [
+        "1003 Healthcare Drive"
+      ],
+      "city": "Ann Harbor",
+      "state": "MI",
+      "postalCode": "99999"
+    }
+  ]
+}

@@ -35,7 +35,7 @@
 
 	"participant": [{
 		"individual": {
-			"reference": "Practitioner/ra-prac01pat03"
+			"reference": "Practitioner/ra-prac03pat03"
 		}
 	}],
 	"period": {
@@ -43,6 +43,6 @@
 		"end": "2019-08-23"
 	},
 	"serviceProvider": {
-		"reference": "Organization/ra-org01pat03"
+		"reference": "Organization/ra-org03pat03"
 	}
 }

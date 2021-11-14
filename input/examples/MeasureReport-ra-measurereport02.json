@@ -348,11 +348,121 @@
         }
     ],
     "evaluatedResource": [
-        {
-            "reference": "Condition/ra-condition01"
-        },
-        {
-            "reference": "Condition/ra-condition02"
-        }
+      {
+          "extension": [
+              {
+                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                  "valueString": "group-001"
+              }
+          ],
+          "reference": "Condition/ra-condition09pat01"
+      },
+      {
+          "extension": [
+              {
+                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                  "valueString": "group-002"
+              }
+          ],
+          "reference": "Condition/ra-condition08pat01"
+      },
+      {
+          "extension": [
+              {
+                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                  "valueString": "group-003"
+              }
+          ],
+          "reference": "Condition/ra-condition02pat01"
+      },
+      {
+          "extension": [
+              {
+                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                  "valueString": "group-004"
+              }
+          ],
+          "reference": "Condition/ra-condition17pat01"
+      },
+      {
+          "extension": [
+              {
+                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                  "valueString": "group-005"
+              }
+          ],
+          "reference": "Condition/ra-condition10pat01"
+      },
+      {
+          "extension": [
+              {
+                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                  "valueString": "group-006"
+              }
+          ],
+          "reference": "Condition/ra-condition03pat01"
+      },
+      {
+          "extension": [
+              {
+                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                  "valueString": "group-001"
+              }
+          ],
+          "reference": "Condition/ra-condition44pat01"
+      },
+      {
+          "extension": [
+              {
+                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                  "valueString": "group-001"
+              }
+          ],
+          "reference": "Encounter/ra-encounter09pat01"
+      },
+      {
+          "extension": [
+              {
+                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                  "valueString": "group-002"
+              }
+          ],
+          "reference": "Encounter/ra-encounter08pat01"
+      },
+      {
+          "extension": [
+              {
+                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                  "valueString": "group-003"
+              },
+              {
+                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                  "valueString": "group-004"
+              }
+          ],
+          "reference": "Encounter/ra-encounter02pat01"
+      },
+      {
+          "extension": [
+              {
+                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                  "valueString": "group-005"
+              },
+              {
+                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                  "valueString": "group-006"
+              }
+          ],
+          "reference": "Encounter/ra-encounter03pat01"
+      },
+      {
+          "extension": [
+              {
+                  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                  "valueString": "group-001"
+              }
+          ],
+          "reference": "Encounter/ra-encounter45pat01"
+      }
     ]
 }
