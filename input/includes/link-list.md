@@ -93,13 +93,10 @@
 [Patient02: Adam Everyman]: Patient-ra-patient02.html
 [Patient03: Nelda Nuclear]: Patient-ra-patient03.html
 [Patient04: Jane Doh]: Patient-ra-patient04.html
-<<<<<<< HEAD
 [Practitioner01: Harold Hippocrates]: Practitioner-ra-prac01pat01.html
 [Practitioner02: Patrick Pump]: Practitioner-ra-prac02pat02.html
 [Practitioner03: Otto Osler]: Practitioner-ra-prac03pat03.html
-=======
 [$report]:OperationDefinition-report.html
->>>>>>> 446d9ab16ab393dbd489b34030f84aa98beb4b57
 [Risk Adjustment Coding Gap Report Bundle]: StructureDefinition-ra-measurereport-bundle.html
 [Risk Adjustment Coding Gap Report]: StructureDefinition-ra-measurereport.html
 [Risk Adjustment Coding Gap Report Profile]: StructureDefinition-ra-measurereport.html

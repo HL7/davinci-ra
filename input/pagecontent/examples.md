@@ -1,6 +1,5 @@
 
 <div markdown="1" class="bg-info">
-<b>The Da Vinci Risk Adjustment Implementation Guide is under development</b>
 </div>
 
 <!-- ================================================ -->
@@ -89,7 +88,6 @@
 - [Organization01Pat01: Community Urgent Care]
 - [Organization02Pat02: GHH Outpatient Clinic]
 - [Organization01pat03: Community HealthCenter]
-
 
 - [Parameters01: Report return, subject Eve Everywoman]  
 
