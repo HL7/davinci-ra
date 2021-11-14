@@ -28,7 +28,7 @@ The [$report] operation returns a [Risk Adjustment Coding Gap Report Bundle] bas
 
 Each [Risk Adjustment Coding Gap Report] is for a single patient (the required `MeasureReport.subject` references [USCore Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) and a version specific risk adjustment model. If the Server's risk adjustment engine runs multiple risk adjustment models including different versions of the same model, then there will be multiple risk adjustment coding gap reports for a patient. For example, if a risk adjustment engine runs reports using CMS-HCC v25, CMS-HCC v24, and Rx-HCC v5, there will be three separate risk adjustment coding gap reports for a patient and for each of the three version specific models. The risk adjustment model information is specified in the [Risk Adjustment Model Measure] profile. The `measure` element of the [Risk Adjustment Coding Gap Report] references the [Risk Adjustment Model Measure].
 
-The [MeasureReport] resource has zero to many `group` elements. Each `group` element contains information for a Condition Category, therefore, multiple Condition Category code. The `group.code` is used to represent the actual code for a Condition Category, such as HCC 19 (Diabetes without Complication). The [Risk Adjustment Coding Gap Report] profile added several extensions to the MeasureReport resource’s `group` element to provide additional information about a Condition Category, which includes:
+The [MeasureReport] resource has zero to many `group` elements. Each `group` element contains information for a Condition Category, therefore, multiple Condition Category code. The `group.code` is used to represent the actual code for a Condition Category, such as HCC 18 (Diabetes with No Complication). The [Risk Adjustment Coding Gap Report] profile added several extensions to the MeasureReport resource’s `group` element to provide additional information about a Condition Category, which includes:
  - the suspect type for a Condition Category coding gap that is either historic, suspected, or unsuspected;
  - the evidence status of a Condition Category coding gap that is either confirmed, non-confirmed, or pending;
  - the evidence status date indicating when the evidence status was last updated; and
@@ -103,6 +103,8 @@ Currently, only *application/fhir+ndjson* is supported.
 <br />
 
 #### Attribution
+{:.no_toc}
 
+Member attribution establishes associations between providers and payers. The process of establishing and exchanging patient lists for risk adjustment coding gap report is not in the scope of this guide. One possible way of exchanging Member Attribution Lists between providers and payers is described in the [Da Vinci - Risk Based Contracts Member Attribution (ATR) List IG].
 
 {% include link-list.md %}

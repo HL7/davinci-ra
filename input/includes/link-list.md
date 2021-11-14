@@ -1,6 +1,6 @@
 [Home]: index.html "Home Page"
 
-[$report]:OperationDefinition-report.html
+[Asynchronous Request Patterns]: https://www.hl7.org/fhir/async.html
 [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]: Bundle-ra-bundle01.html
 [Clinical Evaluation Period]:glossary.html#glossary
 [Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm
@@ -81,6 +81,7 @@
 [Observation01Pat03: Pat03 Creatinine on 20210728]: Observation-ra-obs01pat03.html
 [Observation02Pat03: Pat03 PHQ9 on 20190823]: Observation-ra-obs02pat03.html
 [Observation21Pat01: Pat01 Trypsin (Mass/volume) in Serum or Plasma from 20170617]: Observation-ra-obs21pat01.html
+[$report]:OperationDefinition-report.html
 [Organization01: Payer Organization ABC Payer]: Organization-ra-payer01.html
 [Organization01Pat01: Community Urgent Care]: Organization-ra-org01pat01.html
 [Organization02Pat02: GHH Outpatient Clinic]: Organization-ra-org02pat02.html
@@ -92,9 +93,13 @@
 [Patient02: Adam Everyman]: Patient-ra-patient02.html
 [Patient03: Nelda Nuclear]: Patient-ra-patient03.html
 [Patient04: Jane Doh]: Patient-ra-patient04.html
+<<<<<<< HEAD
 [Practitioner01: Harold Hippocrates]: Practitioner-ra-prac01pat01.html
 [Practitioner02: Patrick Pump]: Practitioner-ra-prac02pat02.html
 [Practitioner03: Otto Osler]: Practitioner-ra-prac03pat03.html
+=======
+[$report]:OperationDefinition-report.html
+>>>>>>> 446d9ab16ab393dbd489b34030f84aa98beb4b57
 [Risk Adjustment Coding Gap Report Bundle]: StructureDefinition-ra-measurereport-bundle.html
 [Risk Adjustment Coding Gap Report]: StructureDefinition-ra-measurereport.html
 [Risk Adjustment Coding Gap Report Profile]: StructureDefinition-ra-measurereport.html
