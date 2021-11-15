@@ -109,7 +109,7 @@ INFORMATION: MeasureReport/ra-measurereport05: MeasureReport.group[2].code.codin
 INFORMATION: MeasureReport/ra-measurereport05: MeasureReport.group[3].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
 INFORMATION: MeasureReport/ra-measurereport05: MeasureReport.group[4].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
 INFORMATION: MeasureReport/ra-measurereport05: MeasureReport.group[5].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport07: MeasureReport.group[0].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
+INFORMATION: MeasureReport/ra-measurereport06: MeasureReport.group[0].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
 INFORMATION: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[0].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
 INFORMATION: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[1].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
 INFORMATION: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[2].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated

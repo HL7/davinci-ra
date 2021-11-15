@@ -107,15 +107,7 @@
       <reference>
         <reference value="MeasureReport/ra-measurereport06"/>
       </reference>
-      <name value="ra-measurereport06: Risk Adjustment Measure Report"/>
-      <description value="Example Risk Adjustment Measure Report"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="MeasureReport/ra-measurereport07"/>
-      </reference>
-      <name value="ra-measurereport07: Risk Adjustment Measure Report for RxHCC V5 for Patient02"/>
+      <name value="ra-measurereport06: Risk Adjustment Measure Report for RxHCC V5 for Patient02"/>
       <description value="Example Risk Adjustment Measure Report for RxHCC V5 for Patient02"/>
       <exampleBoolean value="true"/>
     </resource>
@@ -597,14 +589,6 @@
       </reference>
       <name value="Patient03: Nelda Nuclear"/>
       <description value="Nelda Nuclear"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Patient/ra-patient04"/>
-      </reference>
-      <name value="Patient04: Jane Doh"/>
-      <description value="Jane Doh"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
