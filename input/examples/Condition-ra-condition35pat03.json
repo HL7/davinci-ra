@@ -32,8 +32,8 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-          "code": "problem-list-item",
-          "display": "Problem List Item"
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
         }
       ],
       "text": "Problem"
