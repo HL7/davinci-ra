@@ -1,8 +1,4 @@
 
-<div markdown="1" class="bg-info">
-<b>The Glossary page is under development</b>
-</div>
-
 ### Glossary
 
 - {: #Clinical Evaluation Period}<b>Clinical Evaluation Period</b>
@@ -57,10 +53,6 @@
 |MA|     |---Medicare Advantage|
 |MRX|     |---Medicaid Rx risk adjustment model|
 |PACE|     |---All-encompassing Care for the Elderly|
-
-
-
-### References
 
 ---
 

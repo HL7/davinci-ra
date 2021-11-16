@@ -6,28 +6,28 @@
   "id": "hierarchical-status",
   "title": "Risk Adjustment Hierarchical Status Code System",
   "publisher":"Da Vinci Project",
-  "description": "This is a code system for Risk Adjustment Hierarchical Status to indicate whether hiearchies were applied to a Condition Category, and if applied, whether the Condition Category is superseded.",
+  "description": "This is a code system for Risk Adjustment Hierarchical Status to indicate whether hierarchies were applied to a Condition Category, and if applied, whether the Condition Category is superseded.",
   "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
   "concept": [
     {
       "code": "applied-superseded",
-      "display": "Hiearchies applied and Condition Category is superseded",
-      "definition": "Hiearchies were applied to a Condition Catetory and the Condition Category is superseded."
+      "display": "Hierarchies applied and Condition Category is superseded",
+      "definition": "Hierarchies were applied to a Condition Catetory and the Condition Category is superseded."
     },
     {
       "code": "applied-not-superseded",
-      "display": "Hiearchies applied and Condition Category is not superseded",
-      "definition": "Hiearchies were applied to a Condition Catetory and the Condition Category is not superseded."
+      "display": "Hierarchies applied and Condition Category is not superseded",
+      "definition": "Hierarchies were applied to a Condition Catetory and the Condition Category is not superseded."
     },
     {
       "code": "not-applied",
-      "display": "Hiearchies not applied",
-      "definition": "Hiearchies were not applied to a Condition Catetory."
+      "display": "Hierarchies not applied",
+      "definition": "Hierarchies were not applied to a Condition Catetory."
     },
     {
       "code": "not-applicable",
       "display": "Not applicable",
-      "definition": "Applying hiearchies to a Condition Category is not applicable."}
+      "definition": "Applying hierarchies to a Condition Category is not applicable."}
   ],
   "count": 4
 }
