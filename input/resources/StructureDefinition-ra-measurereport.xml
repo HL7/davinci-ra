@@ -46,7 +46,7 @@
     </element>
     <element id="MeasureReport.measure">
       <path value="MeasureReport.measure"/>
-      <short value="This references a measure that represents a Risk Adjustment model, such as CMS HCC Version 25."/>
+      <short value="This references a measure that represents a Risk Adjustment model, such as CMS-HCC V24."/>
       <type>
         <code value="canonical"/>
         <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-model-measure"/>

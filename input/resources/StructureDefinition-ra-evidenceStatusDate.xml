@@ -22,8 +22,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="When the evidence status was last updated"/>
-      <definition value="When the evidence status was last updated to either closed-gap, open-gap, or pending."/>
+      <short value="When the evidence status was changed to either closed-gap, open-gap, or pending"/>
+      <definition value="When the evidence status changed to either closed-gap, open-gap, or pending."/>
       <min value="0"/>
       <max value="1"/>
     </element>
