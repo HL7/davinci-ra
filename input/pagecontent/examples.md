@@ -12,8 +12,6 @@
 
 - [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]  
 
-- [Condition01: Type 2 diabetes with unspecified manifestations]
-- [Condition02: Major Depressive Disorder, Single episode]
 - [Condition01Pat03: Other artificial openings of gastrointestinal tract status]  
 - [Condition02pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication]
 - [Condition03pat01: Mild persistent asthma with (acute) exacerbation]
