@@ -15,10 +15,10 @@
                 },
                 "identifier": {
                     "system": "urn:ietf:rfc:3986",
-                    "value": "urn:uuid:2ee93c0a-f82a-4799-8f22-b2c369b81921"
+                    "value": "urn:uuid:8d3e72d9-9d74-4cbb-b797-a1cab0d13492"
                 },
                 "type": "collection",
-                "timestamp": "2021-11-07T23:14:17.372+00:00",
+                "timestamp": "2021-11-16T06:17:58.172+00:00",
                 "entry": [
                     {
                         "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/MeasureReport/ra-measurereport01",
@@ -78,7 +78,7 @@
                                         },
                                         {
                                             "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
-                                            "valueDate": "2021-08-01"
+                                            "valueDate": "2021-04-01"
                                         },
                                         {
                                             "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
@@ -124,118 +124,16 @@
                                                 "coding": [
                                                     {
                                                         "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
-                                                        "code": "open-gap"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
-                                            "valueDate": "2020-07-15"
-                                        },
-                                        {
-                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
-                                            "valueCodeableConcept": {
-                                                "coding": [
-                                                    {
-                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
-                                                        "code": "applied-not-superseded"
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ],
-                                    "code": {
-                                        "coding": [
-                                            {
-                                                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
-                                                "version": "24",
-                                                "code": "59",
-                                                "display": "Major Depressive, Bipolar, and Paranoid Disorders"
-                                            }
-                                        ],
-                                        "text": "HCC 59: Major Depressive, Bipolar, and Paranoid Disorders"
-                                    }
-                                },
-                                {
-                                    "id": "group-003",
-                                    "extension": [
-                                        {
-                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
-                                            "valueCodeableConcept": {
-                                                "coding": [
-                                                    {
-                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
-                                                        "code": "suspected"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                                            "valueCodeableConcept": {
-                                                "coding": [
-                                                    {
-                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
-                                                        "code": "closed-gap"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
-                                            "valueDate": "2020-07-15"
-                                        },
-                                        {
-                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
-                                            "valueCodeableConcept": {
-                                                "coding": [
-                                                    {
-                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
-                                                        "code": "applied-not-superseded"
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ],
-                                    "code": {
-                                        "coding": [
-                                            {
-                                                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
-                                                "version": "24",
-                                                "code": "22",
-                                                "display": "Morbid Obesity"
-                                            }
-                                        ],
-                                        "text": "HCC 22: Morbid Obesity"
-                                    }
-                                },
-                                {
-                                    "id": "group-004",
-                                    "extension": [
-                                        {
-                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
-                                            "valueCodeableConcept": {
-                                                "coding": [
-                                                    {
-                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
-                                                        "code": "suspected"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                                            "valueCodeableConcept": {
-                                                "coding": [
-                                                    {
-                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
                                                         "code": "pending"
                                                     }
                                                 ]
                                             }
                                         },
                                         {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                                            "valueDate": "2021-09-29"
+                                        },
+                                        {
                                             "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
                                             "valueCodeableConcept": {
                                                 "coding": [
@@ -252,15 +150,15 @@
                                             {
                                                 "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                                                 "version": "24",
-                                                "code": "96",
-                                                "display": "Specified Heart Arrhythmias"
+                                                "code": "111",
+                                                "display": "Chronic Obstructive Pulmonary Disease"
                                             }
                                         ],
-                                        "text": "HCC 96: Specified Heart Arrhythmias"
+                                        "text": "HCC 111: Chronic Obstructive Pulmonary Disease"
                                     }
                                 },
                                 {
-                                    "id": "group-005",
+                                    "id": "group-003",
                                     "extension": [
                                         {
                                             "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
@@ -305,8 +203,379 @@
                                             {
                                                 "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                                                 "version": "24",
+                                                "code": "53",
+                                                "display": "Major Depressive, Bipolar, and Paranoid Disorders"
+                                            }
+                                        ],
+                                        "text": "HCC 59: Major Depressive, Bipolar, and Paranoid Disorders"
+                                    }
+                                },
+                                {
+                                    "id": "group-004",
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
+                                                        "code": "historic"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
+                                                        "code": "closed-gap"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                                            "valueDate": "2021-04-27"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
+                                                        "code": "applied-superseded"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                                                "version": "24",
+                                                "code": "112",
+                                                "display": "Fibrosis of lung and other chronic lung disorders"
+                                            }
+                                        ],
+                                        "text": "HCC 112: Fibrosis of lung and other chronic lung disorders"
+                                    }
+                                },
+                                {
+                                    "id": "group-005",
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
+                                                        "code": "historic"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
+                                                        "code": "pending"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                                            "valueDate": "2021-09-27"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
+                                                        "code": "applied-superseded"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                                                "version": "24",
+                                                "code": "19",
+                                                "display": "Diabetes without Complications"
+                                            }
+                                        ],
+                                        "text": "HCC 19: Diabetes without Complications"
+                                    }
+                                },
+                                {
+                                    "id": "group-006",
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
+                                                        "code": "historic"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
+                                                        "code": "open-gap"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                                            "valueDate": "2020-12-15"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
+                                                        "code": "applied-superseded"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                                                "version": "24",
+                                                "code": "84",
+                                                "display": "Cardio-Respiratory Failure and Shock"
+                                            }
+                                        ],
+                                        "text": "HCC 84: Cardio-Respiratory Failure and Shock"
+                                    }
+                                },
+                                {
+                                    "id": "group-007",
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
+                                                        "code": "suspected"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
+                                                        "code": "closed-gap"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                                            "valueDate": "2021-03-15"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
+                                                        "code": "applied-not-superseded"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                                                "version": "24",
+                                                "code": "22",
+                                                "display": "Morbid Obesity"
+                                            }
+                                        ],
+                                        "text": "HCC 22: Morbid Obesity"
+                                    }
+                                },
+                                {
+                                    "id": "group-008",
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
+                                                        "code": "suspected"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
+                                                        "code": "pending"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                                            "valueDate": "2021-09-27"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
+                                                        "code": "applied-not-superseded"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                                                "version": "24",
+                                                "code": "96",
+                                                "display": "Specified Heart Arrhythmias"
+                                            }
+                                        ],
+                                        "text": "HCC 96: Specified Heart Arrhythmias"
+                                    }
+                                },
+                                {
+                                    "id": "group-009",
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
+                                                        "code": "suspected"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
+                                                        "code": "open-gap"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                                            "valueDate": "2020-07-15"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
+                                                        "code": "applied-not-superseded"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                                                "version": "24",
                                                 "code": "110",
                                                 "display": "Cystic Fibrosis"
+                                            }
+                                        ],
+                                        "text": "HCC 110: Cystic Fibrosis"
+                                    }
+                                },
+                                {
+                                    "id": "group-010",
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
+                                                        "code": "net-new"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
+                                                        "code": "pending"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                                            "valueDate": "2021-09-28"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
+                                                        "code": "applied-not-superseded"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                                                "version": "24",
+                                                "code": "83",
+                                                "display": "Respiratory Arrest"
                                             }
                                         ],
                                         "text": "HCC 110: Cystic Fibrosis"
@@ -319,25 +588,187 @@
                                         {
                                             "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
                                             "valueString": "group-001"
+                                        }
+                                    ],
+                                    "reference": "Condition/ra-condition02pat01"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-002"
+                                        }
+                                    ],
+                                    "reference": "Condition/ra-condition03pat01"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-003"
+                                        }
+                                    ],
+                                    "reference": "Condition/ra-condition08pat01"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-004"
+                                        }
+                                    ],
+                                    "reference": "Condition/ra-condition09pat01"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-005"
+                                        }
+                                    ],
+                                    "reference": "Condition/ra-condition10pat01"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-006"
+                                        }
+                                    ],
+                                    "reference": "Condition/ra-condition11pat01"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-007"
+                                        }
+                                    ],
+                                    "reference": "Condition/ra-condition17pat01"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-008"
+                                        }
+                                    ],
+                                    "reference": "Condition/ra-condition18pat01"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-010"
+                                        }
+                                    ],
+                                    "reference": "Condition/ra-condition33pat01"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-001"
+                                        }
+                                    ],
+                                    "reference": "Condition/ra-condition43pat01"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-004"
+                                        }
+                                    ],
+                                    "reference": "Condition/ra-condition44pat01"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-001"
                                         },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-20210714"
+                                        }
+                                    ],
+                                    "reference": "Encounter/ra-encounter02pat01"
+                                },
+                                {
+                                    "extension": [
                                         {
                                             "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
                                             "valueString": "group-002"
                                         },
                                         {
                                             "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
-                                            "valueString": "group-003"
+                                            "valueString": "group-005"
                                         },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-008"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-010"
+                                        }
+                                    ],
+                                    "reference": "Encounter/ra-encounter03pat01"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-003"
+                                        }
+                                    ],
+                                    "reference": "Encounter/ra-encounter08pat01"
+                                },
+                                {
+                                    "extension": [
                                         {
                                             "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
                                             "valueString": "group-004"
-                                        },
-                                        {
-                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
-                                            "valueString": "group-005"
                                         }
                                     ],
-                                    "reference": "Condition/ra-condition01"
+                                    "reference": "Encounter/ra-encounter09pat01"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-006"
+                                        }
+                                    ],
+                                    "reference": "Encounter/ra-encounter11pat01"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-001"
+                                        }
+                                    ],
+                                    "reference": "Encounter/ra-encounter43pat01"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-004"
+                                        }
+                                    ],
+                                    "reference": "Encounter/ra-encounter44pat01"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-009"
+                                        }
+                                    ],
+                                    "reference": "Observation/ra-obs21pat01"
                                 },
                                 {
                                     "extension": [
@@ -360,11 +791,89 @@
                                         {
                                             "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
                                             "valueString": "group-005"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-006"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-007"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-008"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-009"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                                            "valueString": "group-010"
                                         }
                                     ],
-                                    "reference": "Condition/ra-condition02"
+                                    "reference": "Patient/ra-patient01"
                                 }
                             ]
+                        }
+                    },
+                    {
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Condition/ra-condition33pat01",
+                        "resource": {
+                            "resourceType": "Condition",
+                            "id": "ra-condition33pat01",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                ]
+                            },
+                            "clinicalStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                        "code": "active",
+                                        "display": "Active"
+                                    }
+                                ],
+                                "text": "Active"
+                            },
+                            "verificationStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                        "code": "confirmed",
+                                        "display": "Confirmed"
+                                    }
+                                ],
+                                "text": "Confirmed"
+                            },
+                            "category": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                            "code": "encounter-diagnosis",
+                                            "display": "Encounter Diagnosis"
+                                        }
+                                    ],
+                                    "text": "Problem"
+                                }
+                            ],
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                                        "code": "R09.2",
+                                        "display": "Respiratory arrest"
+                                    }
+                                ],
+                                "text": "R09.2: Respiratory arrest"
+                            },
+                            "subject": {
+                                "reference": "Patient/ra-patient01"
+                            },
+                            "onsetDateTime": "2021-09-26"
                         }
                     },
                     {
@@ -373,9 +882,6 @@
                             "resourceType": "Patient",
                             "id": "ra-patient01",
                             "meta": {
-                                "versionId": "1",
-                                "lastUpdated": "2021-10-26T20:31:43.157+00:00",
-                                "source": "http://example.org/fhir/server#dgJCM2f7qPG3DYlL",
                                 "profile": [
                                     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
                                 ]
@@ -491,10 +997,10 @@
                         }
                     },
                     {
-                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Condition/ra-condition01",
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Condition/ra-condition10pat01",
                         "resource": {
                             "resourceType": "Condition",
-                            "id": "ra-condition01",
+                            "id": "ra-condition10pat01",
                             "meta": {
                                 "profile": [
                                     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
@@ -525,8 +1031,8 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-                                            "code": "problem-list-item",
-                                            "display": "Problem List Item"
+                                            "code": "encounter-diagnosis",
+                                            "display": "Encounter Diagnosis"
                                         }
                                     ],
                                     "text": "Problem"
@@ -536,23 +1042,101 @@
                                 "coding": [
                                     {
                                         "system": "http://hl7.org/fhir/sid/icd-10-cm",
-                                        "code": "E11.8",
-                                        "display": "Type 2 diabetes mellitus with unspecified complications"
+                                        "code": "J45.31",
+                                        "display": "Mild persistent asthma with (acute) exacerbation"
                                     }
                                 ],
-                                "text": "Type 2 diabetes mellitus with unspecified complications"
+                                "text": "J45.31: Mild persistent asthma with (acute) exacerbation"
                             },
                             "subject": {
                                 "reference": "Patient/ra-patient01"
                             },
-                            "onsetDateTime": "2020-06-10"
+                            "onsetDateTime": "2021-09-26"
                         }
                     },
                     {
-                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Condition/ra-condition02",
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Encounter/ra-encounter03pat01",
+                        "resource": {
+                            "resourceType": "Encounter",
+                            "id": "ra-encounter03pat01",
+                            "meta": {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+                                        "valueString": "Encounter with Dr Howell on 20210714 for Patient 03"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+                                        "valueMarkdown": "This is Encounter with Dr Howell on 20210714 for Patient 03."
+                                    }
+                                ],
+                                "profile": [
+                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+                                ]
+                            },
+                            "status": "finished",
+                            "class": {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                "code": "AMB",
+                                "display": "ambulatory"
+                            },
+                            "type": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://www.ama-assn.org/go/cpt",
+                                            "code": "99215"
+                                        }
+                                    ],
+                                    "text": "Office Visit, High Complexity"
+                                }
+                            ],
+                            "subject": {
+                                "reference": "Patient/ra-patient01"
+                            },
+                            "participant": [
+                                {
+                                    "individual": {
+                                        "reference": "Practitioner/ra-prac01pat01"
+                                    }
+                                }
+                            ],
+                            "period": {
+                                "start": "2021-09-26",
+                                "end": "2021-09-26"
+                            },
+                            "diagnosis": [
+                                {
+                                    "condition": {
+                                        "reference": "Condition/ra-condition03pat01"
+                                    }
+                                },
+                                {
+                                    "condition": {
+                                        "reference": "Condition/ra-condition10pat01"
+                                    }
+                                },
+                                {
+                                    "condition": {
+                                        "reference": "Condition/ra-condition18pat01"
+                                    }
+                                },
+                                {
+                                    "condition": {
+                                        "reference": "Condition/ra-condition33pat01"
+                                    }
+                                }
+                            ],
+                            "serviceProvider": {
+                                "reference": "Organization/ra-org01pat01"
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Condition/ra-condition09pat01",
                         "resource": {
                             "resourceType": "Condition",
-                            "id": "ra-condition02",
+                            "id": "ra-condition09pat01",
                             "meta": {
                                 "profile": [
                                     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
@@ -583,8 +1167,8 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-                                            "code": "problem-list-item",
-                                            "display": "Problem List Item"
+                                            "code": "encounter-diagnosis",
+                                            "display": "Encounter Diagnosis"
                                         }
                                     ],
                                     "text": "Problem"
@@ -594,16 +1178,944 @@
                                 "coding": [
                                     {
                                         "system": "http://hl7.org/fhir/sid/icd-10-cm",
-                                        "code": "F32",
-                                        "display": "Major Depressive Disorder, Single episode"
+                                        "code": "B44.81",
+                                        "display": "Allergic bronchopulmonary aspergillosis"
                                     }
                                 ],
-                                "text": "Major Depressive Disorder, Single episode"
+                                "text": "B44.81: Allergic bronchopulmonary aspergillosis"
                             },
                             "subject": {
                                 "reference": "Patient/ra-patient01"
                             },
-                            "onsetDateTime": "2020-06-10"
+                            "onsetDateTime": "2021-03-27"
+                        }
+                    },
+                    {
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Condition/ra-condition02pat01",
+                        "resource": {
+                            "resourceType": "Condition",
+                            "id": "ra-condition02pat01",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                ]
+                            },
+                            "clinicalStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                        "code": "active",
+                                        "display": "Active"
+                                    }
+                                ],
+                                "text": "Active"
+                            },
+                            "verificationStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                        "code": "confirmed",
+                                        "display": "Confirmed"
+                                    }
+                                ],
+                                "text": "Confirmed"
+                            },
+                            "category": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                            "code": "encounter-diagnosis",
+                                            "display": "Encounter Diagnosis"
+                                        }
+                                    ],
+                                    "text": "Problem"
+                                }
+                            ],
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                                        "code": "E08.29",
+                                        "display": "Diabetes mellitus due to underlying condition with other diabetic kidney complication"
+                                    }
+                                ],
+                                "text": "E08.29: Diabetes mellitus due to underlying condition with other diabetic kidney complication"
+                            },
+                            "subject": {
+                                "reference": "Patient/ra-patient01"
+                            },
+                            "onsetDateTime": "2021-01-31"
+                        }
+                    },
+                    {
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Encounter/ra-encounter11pat01",
+                        "resource": {
+                            "resourceType": "Encounter",
+                            "id": "ra-encounter11pat01",
+                            "meta": {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+                                        "valueString": "Encounter with Dr Howell on 20210714 for Patient 03"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+                                        "valueMarkdown": "This is Encounter with Dr Howell on 20210714 for Patient 03."
+                                    }
+                                ],
+                                "profile": [
+                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+                                ]
+                            },
+                            "status": "finished",
+                            "class": {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                "code": "AMB",
+                                "display": "ambulatory"
+                            },
+                            "type": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://www.ama-assn.org/go/cpt",
+                                            "code": "99215"
+                                        }
+                                    ],
+                                    "text": "Office Visit, High Complexity"
+                                }
+                            ],
+                            "subject": {
+                                "reference": "Patient/ra-patient01"
+                            },
+                            "participant": [
+                                {
+                                    "individual": {
+                                        "reference": "Practitioner/ra-prac01pat01"
+                                    }
+                                }
+                            ],
+                            "period": {
+                                "start": "2020-11-02",
+                                "end": "2020-11-02"
+                            },
+                            "diagnosis": [
+                                {
+                                    "condition": {
+                                        "reference": "Condition/ra-condition11pat01"
+                                    }
+                                }
+                            ],
+                            "serviceProvider": {
+                                "reference": "Organization/ra-org01pat01"
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Observation/ra-obs21pat01",
+                        "resource": {
+                            "resourceType": "Observation",
+                            "id": "ra-obs21pat01",
+                            "meta": {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+                                        "valueString": "Trypsin [Mass/volume] in Serum or Plasma for Pat01"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+                                        "valueMarkdown": "Trypsin [Mass/volume] in Serum or Plasma for Pat01*."
+                                    }
+                                ],
+                                "profile": [
+                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+                                ]
+                            },
+                            "status": "final",
+                            "category": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                            "code": "laboratory",
+                                            "display": "Laboratory"
+                                        }
+                                    ],
+                                    "text": "Laboratory"
+                                }
+                            ],
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "33325-2",
+                                        "display": "Trypsin [Mass/volume] in Serum or Plasma"
+                                    }
+                                ],
+                                "text": "Trypsin [Mass/volume] in Serum or Plasma"
+                            },
+                            "subject": {
+                                "reference": "Patient/ra-patient01",
+                                "display": "Eve Everywoman"
+                            },
+                            "effectiveDateTime": "2019-06-17",
+                            "valueQuantity": {
+                                "value": 770,
+                                "unit": "ng/mL",
+                                "system": "http://unitsofmeasure.org"
+                            },
+                            "referenceRange": [
+                                {
+                                    "low": {
+                                        "value": 169,
+                                        "unit": "ng/mL",
+                                        "system": "http://unitsofmeasure.org",
+                                        "code": "ng/mL"
+                                    },
+                                    "high": {
+                                        "value": 773,
+                                        "unit": "ng/mL",
+                                        "system": "http://unitsofmeasure.org",
+                                        "code": "mg/dL"
+                                    },
+                                    "type": {
+                                        "coding": [
+                                            {
+                                                "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                                                "code": "normal",
+                                                "display": "Normal Range"
+                                            }
+                                        ],
+                                        "text": "Normal Range"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Condition/ra-condition18pat01",
+                        "resource": {
+                            "resourceType": "Condition",
+                            "id": "ra-condition18pat01",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                ]
+                            },
+                            "clinicalStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                        "code": "active",
+                                        "display": "Active"
+                                    }
+                                ],
+                                "text": "Active"
+                            },
+                            "verificationStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                        "code": "confirmed",
+                                        "display": "Confirmed"
+                                    }
+                                ],
+                                "text": "Confirmed"
+                            },
+                            "category": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                            "code": "encounter-diagnosis",
+                                            "display": "Encounter Diagnosis"
+                                        }
+                                    ],
+                                    "text": "Problem"
+                                }
+                            ],
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                                        "code": "I48.11",
+                                        "display": "Longstanding persistent atrial fibrillation"
+                                    }
+                                ],
+                                "text": "I48.11: Longstanding persistent atrial fibrillation"
+                            },
+                            "subject": {
+                                "reference": "Patient/ra-patient01"
+                            },
+                            "onsetDateTime": "2021-09-26"
+                        }
+                    },
+                    {
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Encounter/ra-encounter08pat01",
+                        "resource": {
+                            "resourceType": "Encounter",
+                            "id": "ra-encounter08pat01",
+                            "meta": {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+                                        "valueString": "Encounter with Dr Howell on 20210714 for Patient 03"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+                                        "valueMarkdown": "This is Encounter with Dr Howell on 20210714 for Patient 03."
+                                    }
+                                ],
+                                "profile": [
+                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+                                ]
+                            },
+                            "status": "finished",
+                            "class": {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                "code": "AMB",
+                                "display": "ambulatory"
+                            },
+                            "type": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://www.ama-assn.org/go/cpt",
+                                            "code": "99215"
+                                        }
+                                    ],
+                                    "text": "Office Visit, High Complexity"
+                                }
+                            ],
+                            "subject": {
+                                "reference": "Patient/ra-patient01"
+                            },
+                            "participant": [
+                                {
+                                    "individual": {
+                                        "reference": "Practitioner/ra-prac01pat01"
+                                    }
+                                }
+                            ],
+                            "period": {
+                                "start": "2017-02-03",
+                                "end": "2017-02-03"
+                            },
+                            "diagnosis": [
+                                {
+                                    "condition": {
+                                        "reference": "Condition/ra-condition08pat01"
+                                    }
+                                }
+                            ],
+                            "serviceProvider": {
+                                "reference": "Organization/ra-org01pat01"
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Condition/ra-condition44pat01",
+                        "resource": {
+                            "resourceType": "Condition",
+                            "id": "ra-condition44pat01",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                ]
+                            },
+                            "clinicalStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                        "code": "active",
+                                        "display": "Active"
+                                    }
+                                ],
+                                "text": "Active"
+                            },
+                            "verificationStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                        "code": "confirmed",
+                                        "display": "Confirmed"
+                                    }
+                                ],
+                                "text": "Confirmed"
+                            },
+                            "category": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                            "code": "encounter-diagnosis",
+                                            "display": "Encounter Diagnosis"
+                                        }
+                                    ],
+                                    "text": "Problem"
+                                }
+                            ],
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                                        "code": "B44.81",
+                                        "display": "Allergic bronchopulmonary aspergillosis"
+                                    }
+                                ],
+                                "text": "B44.81: Allergic bronchopulmonary aspergillosis"
+                            },
+                            "subject": {
+                                "reference": "Patient/ra-patient01"
+                            },
+                            "onsetDateTime": "2017-01-18"
+                        }
+                    },
+                    {
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Encounter/ra-encounter02pat01",
+                        "resource": {
+                            "resourceType": "Encounter",
+                            "id": "ra-encounter02pat01",
+                            "meta": {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+                                        "valueString": "Encounter with Dr Howell on 20210714 for Patient 03"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+                                        "valueMarkdown": "This is Encounter with Dr Howell on 20210714 for Patient 03."
+                                    }
+                                ],
+                                "profile": [
+                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+                                ]
+                            },
+                            "status": "finished",
+                            "class": {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                "code": "AMB",
+                                "display": "ambulatory"
+                            },
+                            "type": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://www.ama-assn.org/go/cpt",
+                                            "code": "99215"
+                                        }
+                                    ],
+                                    "text": "Office Visit, High Complexity"
+                                }
+                            ],
+                            "subject": {
+                                "reference": "Patient/ra-patient01"
+                            },
+                            "participant": [
+                                {
+                                    "individual": {
+                                        "reference": "Practitioner/ra-prac01pat01"
+                                    }
+                                }
+                            ],
+                            "period": {
+                                "start": "2021-01-31",
+                                "end": "2021-01-31"
+                            },
+                            "diagnosis": [
+                                {
+                                    "condition": {
+                                        "reference": "Condition/ra-condition02pat01"
+                                    }
+                                },
+                                {
+                                    "condition": {
+                                        "reference": "Condition/ra-condition17pat01"
+                                    }
+                                }
+                            ],
+                            "serviceProvider": {
+                                "reference": "Organization/ra-org01pat01"
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Encounter/ra-encounter44pat01",
+                        "resource": {
+                            "resourceType": "Encounter",
+                            "id": "ra-encounter44pat01",
+                            "meta": {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+                                        "valueString": "Encounter with Dr Howell on 20210714 for Patient 03"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+                                        "valueMarkdown": "This is Encounter with Dr Howell on 20210714 for Patient 03."
+                                    }
+                                ],
+                                "profile": [
+                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+                                ]
+                            },
+                            "status": "finished",
+                            "class": {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                "code": "AMB",
+                                "display": "ambulatory"
+                            },
+                            "type": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://www.ama-assn.org/go/cpt",
+                                            "code": "99215"
+                                        }
+                                    ],
+                                    "text": "Office Visit, High Complexity"
+                                }
+                            ],
+                            "subject": {
+                                "reference": "Patient/ra-patient01"
+                            },
+                            "participant": [
+                                {
+                                    "individual": {
+                                        "reference": "Practitioner/ra-prac01pat01"
+                                    }
+                                }
+                            ],
+                            "period": {
+                                "start": "2017-01-18",
+                                "end": "2017-01-18"
+                            },
+                            "diagnosis": [
+                                {
+                                    "condition": {
+                                        "reference": "Condition/ra-condition44pat01"
+                                    }
+                                }
+                            ],
+                            "serviceProvider": {
+                                "reference": "Organization/ra-org01pat01"
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Condition/ra-condition08pat01",
+                        "resource": {
+                            "resourceType": "Condition",
+                            "id": "ra-condition08pat01",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                ]
+                            },
+                            "clinicalStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                        "code": "active",
+                                        "display": "Active"
+                                    }
+                                ],
+                                "text": "Active"
+                            },
+                            "verificationStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                        "code": "confirmed",
+                                        "display": "Confirmed"
+                                    }
+                                ],
+                                "text": "Confirmed"
+                            },
+                            "category": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                            "code": "encounter-diagnosis",
+                                            "display": "Encounter Diagnosis"
+                                        }
+                                    ],
+                                    "text": "Problem"
+                                }
+                            ],
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                                        "code": "F31.61",
+                                        "display": "Bipolar disorder, current episode mixed, mild"
+                                    }
+                                ],
+                                "text": "Bipolar disorder, current episode mixed, mild"
+                            },
+                            "subject": {
+                                "reference": "Patient/ra-patient01"
+                            },
+                            "onsetDateTime": "2017-02-03"
+                        }
+                    },
+                    {
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Condition/ra-condition43pat01",
+                        "resource": {
+                            "resourceType": "Condition",
+                            "id": "ra-condition43pat01",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                ]
+                            },
+                            "clinicalStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                        "code": "active",
+                                        "display": "Active"
+                                    }
+                                ],
+                                "text": "Active"
+                            },
+                            "verificationStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                        "code": "confirmed",
+                                        "display": "Confirmed"
+                                    }
+                                ],
+                                "text": "Confirmed"
+                            },
+                            "category": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                            "code": "encounter-diagnosis",
+                                            "display": "Encounter Diagnosis"
+                                        }
+                                    ],
+                                    "text": "Problem"
+                                }
+                            ],
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                                        "code": "E08.29",
+                                        "display": "Diabetes mellitus due to underlying condition with other diabetic kidney complication"
+                                    }
+                                ],
+                                "text": "E08.29: Diabetes mellitus due to underlying condition with other diabetic kidney complication"
+                            },
+                            "subject": {
+                                "reference": "Patient/ra-patient01"
+                            },
+                            "onsetDateTime": "2019-02-10"
+                        }
+                    },
+                    {
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Condition/ra-condition03pat01",
+                        "resource": {
+                            "resourceType": "Condition",
+                            "id": "ra-condition03pat01",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                ]
+                            },
+                            "clinicalStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                        "code": "active",
+                                        "display": "Active"
+                                    }
+                                ],
+                                "text": "Active"
+                            },
+                            "verificationStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                        "code": "confirmed",
+                                        "display": "Confirmed"
+                                    }
+                                ],
+                                "text": "Confirmed"
+                            },
+                            "category": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                            "code": "encounter-diagnosis",
+                                            "display": "Encounter Diagnosis"
+                                        }
+                                    ],
+                                    "text": "Problem"
+                                }
+                            ],
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                                        "code": "J45.31",
+                                        "display": "Mild persistent asthma with (acute) exacerbation"
+                                    }
+                                ],
+                                "text": "J45.31: Mild persistent asthma with (acute) exacerbation"
+                            },
+                            "subject": {
+                                "reference": "Patient/ra-patient01"
+                            },
+                            "onsetDateTime": "2021-09-26"
+                        }
+                    },
+                    {
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Condition/ra-condition11pat01",
+                        "resource": {
+                            "resourceType": "Condition",
+                            "id": "ra-condition11pat01",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                ]
+                            },
+                            "clinicalStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                        "code": "active",
+                                        "display": "Active"
+                                    }
+                                ],
+                                "text": "Active"
+                            },
+                            "verificationStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                        "code": "confirmed",
+                                        "display": "Confirmed"
+                                    }
+                                ],
+                                "text": "Confirmed"
+                            },
+                            "category": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                            "code": "encounter-diagnosis",
+                                            "display": "Encounter Diagnosis"
+                                        }
+                                    ],
+                                    "text": "Problem"
+                                }
+                            ],
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                                        "code": "J81.0",
+                                        "display": "Acute pulmonary edema"
+                                    }
+                                ],
+                                "text": "J81.0: Acute pulmonary edema"
+                            },
+                            "subject": {
+                                "reference": "Patient/ra-patient01"
+                            },
+                            "onsetDateTime": "2020-11-02"
+                        }
+                    },
+                    {
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Encounter/ra-encounter43pat01",
+                        "resource": {
+                            "resourceType": "Encounter",
+                            "id": "ra-encounter43pat01",
+                            "meta": {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+                                        "valueString": "Encounter with Dr Howell on 20210714 for Patient 03"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+                                        "valueMarkdown": "This is Encounter with Dr Howell on 20210714 for Patient 03."
+                                    }
+                                ],
+                                "profile": [
+                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+                                ]
+                            },
+                            "status": "finished",
+                            "class": {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                "code": "AMB",
+                                "display": "ambulatory"
+                            },
+                            "type": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://www.ama-assn.org/go/cpt",
+                                            "code": "99215"
+                                        }
+                                    ],
+                                    "text": "Office Visit, High Complexity"
+                                }
+                            ],
+                            "subject": {
+                                "reference": "Patient/ra-patient01"
+                            },
+                            "participant": [
+                                {
+                                    "individual": {
+                                        "reference": "Practitioner/ra-prac01pat01"
+                                    }
+                                }
+                            ],
+                            "period": {
+                                "start": "2019-02-10",
+                                "end": "2019-02-10"
+                            },
+                            "diagnosis": [
+                                {
+                                    "condition": {
+                                        "reference": "Condition/ra-condition43pat01"
+                                    }
+                                }
+                            ],
+                            "serviceProvider": {
+                                "reference": "Organization/ra-org01pat01"
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Encounter/ra-encounter09pat01",
+                        "resource": {
+                            "resourceType": "Encounter",
+                            "id": "ra-encounter09pat01",
+                            "meta": {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+                                        "valueString": "Encounter with Dr Howell on 20210714 for Patient 03"
+                                    },
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+                                        "valueMarkdown": "This is Encounter with Dr Howell on 20210714 for Patient 03."
+                                    }
+                                ],
+                                "profile": [
+                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+                                ]
+                            },
+                            "status": "finished",
+                            "class": {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                "code": "AMB",
+                                "display": "ambulatory"
+                            },
+                            "type": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://www.ama-assn.org/go/cpt",
+                                            "code": "99215"
+                                        }
+                                    ],
+                                    "text": "Office Visit, High Complexity"
+                                }
+                            ],
+                            "subject": {
+                                "reference": "Patient/ra-patient01"
+                            },
+                            "participant": [
+                                {
+                                    "individual": {
+                                        "reference": "Practitioner/ra-prac01pat01"
+                                    }
+                                }
+                            ],
+                            "period": {
+                                "start": "2021-09-26",
+                                "end": "2021-09-26"
+                            },
+                            "diagnosis": [
+                                {
+                                    "condition": {
+                                        "reference": "Condition/ra-condition09pat01"
+                                    }
+                                }
+                            ],
+                            "serviceProvider": {
+                                "reference": "Organization/ra-org01pat01"
+                            }
+                        }
+                    },
+                    {
+                        "fullUrl": "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/Condition/ra-condition17pat01",
+                        "resource": {
+                            "resourceType": "Condition",
+                            "id": "ra-condition17pat01",
+                            "meta": {
+                                "profile": [
+                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                                ]
+                            },
+                            "clinicalStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                        "code": "active",
+                                        "display": "Active"
+                                    }
+                                ],
+                                "text": "Active"
+                            },
+                            "verificationStatus": {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                        "code": "confirmed",
+                                        "display": "Confirmed"
+                                    }
+                                ],
+                                "text": "Confirmed"
+                            },
+                            "category": [
+                                {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                            "code": "encounter-diagnosis",
+                                            "display": "Encounter Diagnosis"
+                                        }
+                                    ],
+                                    "text": "Problem"
+                                }
+                            ],
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                                        "code": "Z68.42",
+                                        "display": "Body mass index [BMI] 45.0-49.9, adult"
+                                    }
+                                ],
+                                "text": "Z68.42: Body mass index [BMI] 45.0-49.9, adult"
+                            },
+                            "subject": {
+                                "reference": "Patient/ra-patient01"
+                            },
+                            "onsetDateTime": "2021-01-31"
                         }
                     }
                 ]

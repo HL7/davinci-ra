@@ -727,7 +727,7 @@
                     "valueString": "group-001"
                 }
             ],
-            "reference": "Encounter/ra-encounter44pat01"
+            "reference": "Encounter/ra-encounter43pat01"
         },
         {
             "extension": [
@@ -746,7 +746,51 @@
                 }
             ],
             "reference": "Observation/ra-obs21pat01"
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                    "valueString": "group-001"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                    "valueString": "group-002"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                    "valueString": "group-003"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                    "valueString": "group-004"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                    "valueString": "group-005"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                    "valueString": "group-006"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                    "valueString": "group-007"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                    "valueString": "group-008"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                    "valueString": "group-009"
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                    "valueString": "group-010"
+                }
+            ],
+            "reference": "Patient/ra-patient01"
         }
-
     ]
 }

@@ -4,7 +4,6 @@
 [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]: Bundle-ra-bundle01.html
 [Clinical Evaluation Period]:glossary.html#glossary
 [Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm
-[Condition01: Type 2 diabetes with unspecified manifestations]: Condition-ra-condition01.html
 [Condition01Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition01pat03.html
 [Condition02pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication]: Condition-ra-condition02pat01.html
 [Condition03pat01: Mild persistent asthma with (acute) exacerbation]: Condition-ra-condition03pat01.html  
@@ -30,7 +29,6 @@
 [Condition42Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition42pat03.html
 [Condition44Pat01: Allergic bronchopulmonary aspergillosis]: Condition-ra-condition43pat01.html
 [Condition44Pat01: Allergic bronchopulmonary aspergillosis]: Condition-ra-condition44pat01.html
-[Condition02: Major Depressive Disorder, Single episode]: Condition-ra-condition02.html
 [Da Vinci - Risk Based Contracts Member Attribution (ATR) List IG]: http://hl7.org/fhir/us/davinci-atr/
 [Downloads]: downloads.html
 [Examples]: examples.html

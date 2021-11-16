@@ -5,9 +5,9 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="Condition/ra-condition01" key="Condition-ra-condition01" name="Condition01: Type 2 diabetes with unspecified manisfestations"/>
+<artifact deprecated="true" id="Condition/ra-condition01" key="Condition-ra-condition01" name="Condition01: Type 2 diabetes with unspecified manisfestations"/>
 <artifact id="Condition/ra-condition01pat03" key="Condition-ra-condition01pat03" name="Condition01pat03: Other artificial openings of gastrointestinal tract status"/>
-<artifact id="Condition/ra-condition02" key="Condition-ra-condition02" name="Condition02: Major Depressive Disorder, Single episode"/>
+<artifact deprecated="true" id="Condition/ra-condition02" key="Condition-ra-condition02" name="Condition02: Major Depressive Disorder, Single episode"/>
 <artifact id="Condition/ra-condition02pat01" key="Condition-ra-condition02pat01" name="Condition02pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication"/>
 <artifact id="Condition/ra-condition03pat01" key="Condition-ra-condition03pat01" name="Condition03pat01: Mild persistent asthma with (acute) exacerbation"/>
 <artifact id="Condition/ra-condition04pat03" key="Condition-ra-condition04pat03" name="Condition04pat03: Chronic obstructive pulmonary disease with (acute) exacerbation"/>
@@ -69,7 +69,7 @@
 <artifact id="Parameters/Patient-ra-patient01-report" key="Parameters-Patient-ra-patient01-report" name="Patient01: Report"/>
 <artifact id="Patient/ra-patient02" key="Patient-ra-patient02" name="Patient02: Adam Everyman"/>
 <artifact id="Patient/ra-patient03" key="Patient-ra-patient03" name="Patient03: Nelda Nuclear"/>
-<artifact id="Patient/ra-patient04" key="Patient-ra-patient04" name="Patient04: Jane Doh"/>
+<artifact deprecated="true" id="Patient/ra-patient04" key="Patient-ra-patient04" name="Patient04: Jane Doh"/>
 <artifact id="Practitioner/ra-prac01pat01" key="Practitioner-ra-prac01pat01" name="Practitioner: Harold Hippocrates"/>
 <artifact id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner: Otto Osler"/>
 <artifact id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner: Patrick Pump"/>
@@ -102,8 +102,7 @@
 <artifact id="MeasureReport/ra-measurereport03" key="MeasureReport-ra-measurereport03" name="ra-measurereport03: Risk Adjustment Measure Report for HCC V24 for Patient 02"/>
 <artifact id="MeasureReport/ra-measurereport04" key="MeasureReport-ra-measurereport04" name="ra-measurereport04: Risk Adjustment Measure Report for HCC V21 for Patient 03"/>
 <artifact id="MeasureReport/ra-measurereport05" key="MeasureReport-ra-measurereport05" name="ra-measurereport05: Risk Adjustment Measure Report for RxHCC V5 for Patient03"/>
-<artifact id="MeasureReport/ra-measurereport06" key="MeasureReport-ra-measurereport06" name="ra-measurereport06: Risk Adjustment Measure Report"/>
-<artifact id="MeasureReport/ra-measurereport07" key="MeasureReport-ra-measurereport07" name="ra-measurereport07: Risk Adjustment Measure Report for RxHCC V5 for Patient02"/>
+<artifact id="MeasureReport/ra-measurereport06" key="MeasureReport-ra-measurereport06" name="ra-measurereport06: Risk Adjustment Measure Report for RxHCC V5 for Patient02"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>

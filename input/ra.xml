@@ -113,14 +113,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Condition/ra-condition01"/>
-      </reference>
-      <name value="Condition01: Type 2 diabetes with unspecified manisfestations"/>
-      <description value="Type 2 diabetes with unspecified manisfestations"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Condition/ra-condition01pat03"/>
       </reference>
       <name value="Condition01pat03: Other artificial openings of gastrointestinal tract status"/>
@@ -317,14 +309,6 @@
       </reference>
       <name value="Condition44pat01: Allergic bronchopulmonary aspergillosis"/>
       <description value="Allergic bronchopulmonary aspergillosis"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Condition/ra-condition02"/>
-      </reference>
-      <name value="Condition02: Major Depressive Disorder, Single episode"/>
-      <description value="Major Depressive Disorder, Single episode"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -715,18 +699,8 @@
         <title value="Examples"/>
         <generation value="markdown"/>
         <page>
-          <nameUrl value="Condition-ra-condition01.html"/>
-          <title value="Condition01"/>
-          <generation value="generated"/>
-        </page>
-        <page>
           <nameUrl value="Condition-ra-condition01pat03.html"/>
           <title value="Condition01Pat03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Condition-ra-condition02.html"/>
-          <title value="Condition02"/>
           <generation value="generated"/>
         </page>
         <page>
