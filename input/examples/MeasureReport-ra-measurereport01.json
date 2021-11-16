@@ -667,7 +667,7 @@
                 },
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
-                    "valueString": "group-20210714"
+                    "valueString": "group-007"
                 }
             ],
             "reference": "Encounter/ra-encounter02pat01"
