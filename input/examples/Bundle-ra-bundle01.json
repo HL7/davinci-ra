@@ -26,7 +26,7 @@
                 "extension": [
                     {
                         "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline",
-                        "valueDate": "2021-12-01"
+                        "valueDate": "2022-03-31"
                     }
                 ],
                 "status": "complete",
@@ -762,51 +762,6 @@
                             }
                         ],
                         "reference": "Observation/ra-obs21pat01"
-                    },
-                    {
-                        "extension": [
-                            {
-                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
-                                "valueString": "group-001"
-                            },
-                            {
-                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
-                                "valueString": "group-002"
-                            },
-                            {
-                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
-                                "valueString": "group-003"
-                            },
-                            {
-                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
-                                "valueString": "group-004"
-                            },
-                            {
-                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
-                                "valueString": "group-005"
-                            },
-                            {
-                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
-                                "valueString": "group-006"
-                            },
-                            {
-                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
-                                "valueString": "group-007"
-                            },
-                            {
-                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
-                                "valueString": "group-008"
-                            },
-                            {
-                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
-                                "valueString": "group-009"
-                            },
-                            {
-                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
-                                "valueString": "group-010"
-                            }
-                        ],
-                        "reference": "Patient/ra-patient01"
                     }
                 ]
             }

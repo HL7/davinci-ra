@@ -23,7 +23,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="This is the risk adjustment suspect type for an HCC gap"/>
-      <definition value="Risk adjustment suspect type, whether the HCC gap is historic or suspected"/>
+      <definition value="Risk adjustment suspect type, whether the HCC gap is historic, suspected or net new"/>
       <comment value="This extension is to represent risk adjustment suspect type"/>
       <min value="0"/>
       <max value="1"/>
@@ -37,7 +37,7 @@
     </element>
     <element id="Extension.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
-      <short value="Indicate whether HCC gap is historic, suspected, or unsuspected"/>
+      <short value="Indicate whether HCC gap is historic, suspected, or net new"/>
       <type>
         <code value="CodeableConcept"/>
       </type>

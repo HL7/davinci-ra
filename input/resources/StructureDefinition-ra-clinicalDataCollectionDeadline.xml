@@ -22,8 +22,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="This is the deadline, the last date, that providers must submit data to payers. This date is set by the Payer."/>
-      <definition value="This is the deadline, the last date, that providers must submit data to payers. This date is set by the Payer."/>
+      <short value="This is the deadline by which the providers must have all claims data to the payers to count for risk adjustment for a clinical evaluation period. This date is set by the Payer."/>
+      <definition value="This is the deadline by which the providers must have all claims data to the payers to count for risk adjustment for a clinical evaluation period. This date is set by the Payer."/>
       <comment value="This is an extension to represent the clinical data collection deadline"/>
       <min value="0"/>
       <max value="1"/>

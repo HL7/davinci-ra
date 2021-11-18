@@ -10,7 +10,7 @@
     "extension": [
         {
             "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline",
-            "valueDate": "2021-12-01"
+            "valueDate": "2022-03-31"
         }
     ],
     "status": "complete",
