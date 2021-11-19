@@ -59,7 +59,6 @@ Figure 3-3 provides a graphical view of how these resources are related to the e
 {% include img-portrait.html img="report-risk-adjustment-resource-graph.png" caption = "Figure 3-3 Resource Graph for Risk Adjustment Coding Gap Report" %}
 
 ### Usage
-{:.no_toc}
 
 `GET|[base]`
 
@@ -85,8 +84,14 @@ Query Parameters:
 Currently, only *application/fhir+ndjson* is supported.
 
 ### Attribution
-{:.no_toc}
 
 Member attribution establishes associations between providers and payers. The process of establishing and exchanging patient lists for risk adjustment coding gap report is not in the scope of this guide. One possible way of exchanging Member Attribution Lists between providers and payers is described in the [Da Vinci - Risk Based Contracts Member Attribution (ATR) List IG].
+
+### Must Support
+Certain elements in the profiles defined in this implementation guide are marked as Must Support. This flag is used to indicate that the element plays a critical role in defining and sharing risk adjustment coding gaps, and implementations SHALL understand and process the element.
+
+This implementation guide uses US Core profiles where appropriate, therefore, the implications of the Must Support flag for US Core profiles must also be considered.
+
+For more information, see the definition of [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) in the base FHIR specification.
 
 {% include link-list.md %}
