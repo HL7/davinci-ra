@@ -1,6 +1,7 @@
 {
   "resourceType": "CodeSystem",
   "status": "draft",
+  "caseSensitive": true,
   "content": "complete",
   "name": "RiskAdjustmenthierarchicalStatusCodeSystem",
   "id": "hierarchical-status",

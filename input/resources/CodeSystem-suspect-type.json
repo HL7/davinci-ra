@@ -1,6 +1,7 @@
 {
   "resourceType": "CodeSystem",
   "status": "draft",
+  "caseSensitive": true,
   "content": "complete",
   "name": "RiskAdjustmentSuspectTypeCodeSystem",
   "id": "suspect-type",
