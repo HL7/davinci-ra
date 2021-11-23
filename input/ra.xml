@@ -14,7 +14,7 @@
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/cqi/index.cfm"/>
+      <value value="http://www.hl7.org/Special/committees/cqi"/>
     </telecom>
   </contact>
   <description value="The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide (this IG) describes exchange of risk-based coding gaps among stakeholders such as payers, providers, and government care programs in support of driving towards accurate and complete documentation of health conditions that would lead to more accurate risk-adjustment payment calculations."/>
