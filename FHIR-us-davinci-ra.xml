@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-ra/2022Jan" ciUrl="http://build.fhir.org/ig/HL7/davinci-ra" defaultVersion="0.1.0" defaultWorkgroup="" gitUrl="https://github.com/HL7/davinci-ra" url="http://hl7.org/fhir/us/davinci-ra">
-<version code="0.1.0" url="http://hl7.org/fhir/us/davinci-ra/2022Jan"/>
-<version code="current" url="http://build.fhir.org/ig/HL7/davinci-ra"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="" defaultWorkgroup="" gitUrl="https://github.com/HL7/davinci-ra" url="http://hl7.org/fhir/us/davinci-ra">
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
@@ -42,7 +40,6 @@
 <artifact id="Encounter/ra-encounter05pat03" key="Encounter-ra-encounter05pat03" name="Encounter on 20200303"/>
 <artifact id="Encounter/ra-encounter15pat03" key="Encounter-ra-encounter15pat03" name="Encounter on 20200808"/>
 <artifact id="Encounter/ra-encounter11pat01" key="Encounter-ra-encounter11pat01" name="Encounter on 20201102"/>
-<artifact id="Encounter/ra-encounter18pat01" key="Encounter-ra-encounter18pat01" name="Encounter on 20201102"/>
 <artifact id="Encounter/ra-encounter21pat03" key="Encounter-ra-encounter21pat03" name="Encounter on 20210130"/>
 <artifact id="Encounter/ra-encounter02pat01" key="Encounter-ra-encounter02pat01" name="Encounter on 20210131"/>
 <artifact id="Encounter/ra-encounter35pat03" key="Encounter-ra-encounter35pat03" name="Encounter on 20210212"/>

@@ -1,24 +1,26 @@
 {
- "package-id" : "hl7.fhir.us.davinci-ra",
- "title" : "Da Vinci Risk Adjustment FHIR Implementation Guide",
- "canonical" : "http://hl7.org/fhir/us/davinci-ra",
- "introduction" : "The Da Vinci Risk Adjustment Implementation Guide will enable standard exchange of risk-based coding gaps among stakeholders such as payers, providers, and government care programs in support of driving towards accurate and complete documentation of health conditions that would lead to more accurate risk-adjustment payment calculations, reduced administrative burden, and improved quality of care.",
- "list" : [{
-  "version" : "current",
-  "desc" : "Continuous Integration Build (latest in version control)",
-  "path" : "http://build.fhir.org/ig/HL7/davinci-ra",
-  "status" : "ci-build",
-  "current": true
- },
- {
-    "version": "0.1.0",
-    "fhirversion": "4.0.1",
-    "date": "TBD",
-    "desc": "First public ballot - see [R4 Index](http://hl7.org/fhir/us/davinci-ra/2022Jan/index.html)",
-    "path": "http://hl7.org/fhir/us/davinci-ra/2022Jan",
-    "status": "ballot",
-    "sequence": "STU 1",
-    "current": true
-  }],
+  "package-id": "hl7.fhir.us.davinci-ra",
+  "title": "Da Vinci Risk Adjustment FHIR Implementation Guide",
+  "canonical": "http://hl7.org/fhir/us/davinci-ra",
+  "introduction": "The Da Vinci Risk Adjustment Implementation Guide will enable standard exchange of risk-based coding gaps among stakeholders such as payers, providers, and government care programs in support of driving towards accurate and complete documentation of health conditions that would lead to more accurate risk-adjustment payment calculations, reduced administrative burden, and improved quality of care.",
+  "list": [
+    {
+      "version": "0.1.0",
+      "fhirversion": "4.0.1",
+      "date": "TBD",
+      "desc": "First public ballot - see [R4 Index](http://hl7.org/fhir/us/davinci-ra/2022Jan/index.html)",
+      "path": "http://hl7.org/fhir/us/davinci-ra/2022Jan",
+      "status": "ballot",
+      "sequence": "STU 1",
+      "current": true
+    },
+    {
+      "version": "current",
+      "desc": "Continuous Integration Build (latest in version control)",
+      "path": "http://build.fhir.org/ig/HL7/davinci-ra",
+      "status": "ci-build",
+      "current": true
+    }
+  ],
   "category": "Financial"
 }
