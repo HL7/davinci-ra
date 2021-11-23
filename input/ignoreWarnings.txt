@@ -20,45 +20,7 @@ INFORMATION: Patient/example: Patient.name[0]: This element does not match any k
 INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient
 
 # The slice is open with the intention of allowing entries for non-defined resources.
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[14]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[15]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[16]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[17]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[18]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[19]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[20]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[14]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[15]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[16]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[17]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[18]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[19]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[20]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
 
 # The objective is to show a reference to an unknown code system, so these warnings are expected
 WARNING: ValueSet/valueset-no-codesystem: ValueSet.compose[0].include[0]: Unknown System/Version specified, so Concepts and Filters can''t be checked
@@ -67,16 +29,8 @@ WARNING: ValueSet.where(id = 'valueset-no-codesystem'): Error from server: Unabl
 # We don't want a code for the change reason (and this binding shouldn't be extensible anyhow)
 WARNING: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance).reason[0]: No code provided, and a code should be provided from the value set http://terminology.hl7.org/ValueSet/v3-PurposeOfUse (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse)
 
-# MEASURE_MR_M_SCORING_UNK (8): This is intended.  The measureScore attribute is not required.
-INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
-INFORMATION: MeasureReport/ra-measurereport02: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
-INFORMATION: MeasureReport/ra-measurereport03: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
-INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
-INFORMATION: MeasureReport/ra-measurereport05: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
-INFORMATION: MeasureReport/ra-measurereport06: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
-INFORMATION: MeasureReport/ra-measurereport07: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
+# MEASURE_MR_M_SCORING_UNK: This is intended.  The measureScore attribute is not required.
+The scoring system in this measure is unknown, so the measureScore values cannot be checked
 
 # MEASURE_M_NO_GROUPS (3): This is intended.  Currently, the support for Risk Adjustment does not include a practical way to model the groups as the number are prohibitive.  A solution is being worked on, but the Measure resource does not require a group so this should not be a blocking issue.
 WARNING: Measure/RAModelExample01: Measure: A measure should contain at least one group
@@ -87,61 +41,6 @@ WARNING: Measure/RAModelExample03: Measure: A measure should contain at least on
 Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
 [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type because the value set or a code system it depends on is not known to the validator, Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated]
 
-# Terminology_TX_System_NotKnown (27): Currently, there are no CMS HCC or RXHCC code systems.  Solutions are being worked on.
-INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.group[0].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.group[1].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.group[2].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.group[3].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.group[4].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.group[5].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.group[6].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.group[7].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.group[8].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport01: MeasureReport.group[9].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport02: MeasureReport.group[0].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport02: MeasureReport.group[1].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport02: MeasureReport.group[2].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport02: MeasureReport.group[3].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport02: MeasureReport.group[4].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport02: MeasureReport.group[5].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport03: MeasureReport.group[0].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[0].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[1].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[2].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[3].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[4].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[5].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[6].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[7].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[8].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[9].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[10].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[11].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport04: MeasureReport.group[12].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport05: MeasureReport.group[0].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport05: MeasureReport.group[1].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport05: MeasureReport.group[2].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport05: MeasureReport.group[3].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport05: MeasureReport.group[4].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport05: MeasureReport.group[5].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
-INFORMATION: MeasureReport/ra-measurereport06: MeasureReport.group[0].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[0].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[1].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[2].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[3].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[4].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[5].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[6].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[7].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[8].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Bundle/ra-bundle01: Bundle.entry[0].resource.ofType(MeasureReport).group[9].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[0].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[1].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[2].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[3].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[4].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[5].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[6].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[7].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[8].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
-INFORMATION: Parameters/Patient-ra-patient01-report: Parameters.parameter[0].resource.ofType(Bundle).entry[0].resource.ofType(MeasureReport).group[9].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
+# Terminology_TX_System_NotKnown: Currently, there are no CMS HCC or RXHCC code systems.  Solutions are being worked on.  Ref https://confluence.hl7.org/display/TA/CMS+Hierarchical+Condition+Categories and https://confluence.hl7.org/display/TA/CMS+Prescription+Drug+Hierarchical+Condition+Categories
+Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
+Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
