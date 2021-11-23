@@ -316,7 +316,7 @@
         <reference value="Encounter/ra-encounter01pat03"/>
       </reference>
       <name value="Encounter on 20210714"/>
-      <description value="Encounter on 20210714"/>
+      <description value="Encounter on 2021-07-14"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -324,7 +324,7 @@
         <reference value="Encounter/ra-encounter02pat01"/>
       </reference>
       <name value="Encounter on 20210131"/>
-      <description value="Encounter on 20210131"/>
+      <description value="Encounter on 2021-01-31"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -332,7 +332,7 @@
         <reference value="Encounter/ra-encounter03pat01"/>
       </reference>
       <name value="Encounter on 20210926"/>
-      <description value="Encounter on 20210926"/>
+      <description value="Encounter on 2021-09-26"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -340,7 +340,7 @@
         <reference value="Encounter/ra-encounter04pat03"/>
       </reference>
       <name value="Encounter on 20211218"/>
-      <description value="Encounter on 20201218"/>
+      <description value="Encounter on 2020-12-18"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -348,15 +348,15 @@
         <reference value="Encounter/ra-encounter05pat03"/>
       </reference>
       <name value="Encounter on 20200303"/>
-      <description value="Encounter on 20200303"/>
+      <description value="Encounter on 2020-03-03"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="Encounter/ra-encounter06pat03"/>
       </reference>
-      <name value="Encounter ib 20200917"/>
-      <description value="Encounter on 20200917"/>
+      <name value="Encounter on 20200917"/>
+      <description value="Encounter on 2020-09-17"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -364,23 +364,23 @@
         <reference value="Encounter/ra-encounter07pat03"/>
       </reference>
       <name value="Encounter on 20190207"/>
-      <description value="Encounter on 20190207"/>
+      <description value="Encounter on 2019-02-07"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="Encounter/ra-encounter08pat01"/>
       </reference>
-      <name value="Encounter on 2017-02-03"/>
-      <description value="Encounter on 20170203"/>
+      <name value="Encounter on 20170203"/>
+      <description value="Encounter on 2017-02-03"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
         <reference value="Encounter/ra-encounter09pat01"/>
       </reference>
-      <name value="Encounter on 20210926"/>
-      <description value="Encounter on 20210926"/>
+      <name value="Encounter on 20210327"/>
+      <description value="Encounter on 2021-03-27"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -388,7 +388,7 @@
         <reference value="Encounter/ra-encounter11pat01"/>
       </reference>
       <name value="Encounter on 20201102"/>
-      <description value="Encounter on 20201102"/>
+      <description value="Encounter on 2020-11-02"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -396,7 +396,7 @@
         <reference value="Encounter/ra-encounter15pat03"/>
       </reference>
       <name value="Encounter on 20200808"/>
-      <description value="Encounter on 20200808"/>
+      <description value="Encounter on 2020-08-08"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -404,7 +404,7 @@
         <reference value="Encounter/ra-encounter16pat03"/>
       </reference>
       <name value="Encounter on 20210727"/>
-      <description value="Encounter on 20210727"/>
+      <description value="Encounter on 2021-07-27"/>
       <exampleBoolean value="true"/>
     </resource>    
     <resource>
@@ -412,7 +412,7 @@
         <reference value="Encounter/ra-encounter19pat03"/>
       </reference>
       <name value="Encounter on 20210823"/>
-      <description value="Encounter on 20210823"/>
+      <description value="Encounter on 2021-08-23"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -420,7 +420,7 @@
         <reference value="Encounter/ra-encounter21pat03"/>
       </reference>
       <name value="Encounter on 20210130"/>
-      <description value="Encounter on 20210130"/>
+      <description value="Encounter on 2021-01-30"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -428,7 +428,7 @@
         <reference value="Encounter/ra-encounter22pat03"/>
       </reference>
       <name value="Encounter on 20210701"/>
-      <description value="Encounter on 20210701"/>
+      <description value="Encounter on 2021-07-01"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -436,7 +436,7 @@
         <reference value="Encounter/ra-encounter31pat02"/>
       </reference>
       <name value="Encounter on 20210806"/>
-      <description value="Encounter on 20210806"/>
+      <description value="Encounter on 2021-08-06"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -444,7 +444,7 @@
         <reference value="Encounter/ra-encounter35pat03"/>
       </reference>
       <name value="Encounter on 20210212"/>
-      <description value="Encounter on 20210212"/>
+      <description value="Encounter on 2021-02-12"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -452,7 +452,7 @@
         <reference value="Encounter/ra-encounter42pat03"/>
       </reference>
       <name value="Encounter on 20200210"/>
-      <description value="Encounter on 20200210"/>
+      <description value="Encounter on 2020-02-10"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -460,7 +460,7 @@
         <reference value="Encounter/ra-encounter43pat01"/>
       </reference>
       <name value="Encounter on 20190210"/>
-      <description value="Encounter on 20190210"/>
+      <description value="Encounter on 2019-02-10"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -468,7 +468,7 @@
         <reference value="Encounter/ra-encounter44pat01"/>
       </reference>
       <name value="Encounter on 20170118"/>
-      <description value="Encounter on 20170118"/>
+      <description value="Encounter on 2017-01-18"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -476,7 +476,7 @@
         <reference value="Encounter/ra-encounter45pat01"/>
       </reference>
       <name value="Encounter on 20180721"/>
-      <description value="Encounter on 201807217-21"/>
+      <description value="Encounter on 2018-07-21"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -484,7 +484,7 @@
         <reference value="Observation/ra-obs01pat03"/>
       </reference>
       <name value="Observation: Creatinine Result from 20210728"/>
-      <description value="Creatinine Result from 20210728"/>
+      <description value="Creatinine Result from 2021-07-28"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -492,7 +492,7 @@
         <reference value="Observation/ra-obs02pat03"/>
       </reference>
       <name value="Observation: PHQ9 from 20190823"/>
-      <description value="PHQ9 from 20190823"/>
+      <description value="PHQ9 from 2019-08-23"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

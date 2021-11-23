@@ -40,7 +40,7 @@
 [encounter06Pat03: Pat03 Encounter on 2020-09-17]: Encounter-ra-encounter06pat03.html
 [Encounter07Pat03: Pat03 Encounter on 2019-02-07]: Encounter-ra-encounter07pat03.html
 [Encounter08Pat01: Pat01 Encounter on 2017-02-03]: Encounter-ra-encounter08pat01.html
-[Encounter09Pat01: Pat01 Encounter on 2021-09-26]: Encounter-ra-encounter09pat01.html
+[Encounter09Pat01: Pat01 Encounter on 2021-03-27]: Encounter-ra-encounter09pat01.html
 [Encounter11Pat01: Pat01 Encounter on 2020-11-02]: Encounter-ra-encounter11pat01.html
 [Encounter15Pat03: Pat03 Encounter on 2021-08-08]: Encounter-ra-encounter15pat03.html
 [Encounter16Pat03: Pat03 Encounter on 2021-07-27]: Encounter-ra-encounter16pat03.html
