@@ -12,6 +12,7 @@
   <experimental value="false"/>
   <publisher value="HL7 Clinical Quality Information Work Group"/>
   <contact>
+    <name value="HL7 Clinical Quality Information Work Group"/>
     <telecom>
       <system value="url"/>
       <value value="http://www.hl7.org/Special/committees/cqi"/>
@@ -406,7 +407,7 @@
       <name value="Encounter on 20210727"/>
       <description value="Encounter on 2021-07-27"/>
       <exampleBoolean value="true"/>
-    </resource>    
+    </resource>
     <resource>
       <reference>
         <reference value="Encounter/ra-encounter19pat03"/>
