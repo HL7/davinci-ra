@@ -15,8 +15,7 @@
     {
       "version": "0.1.0",
       "date": "2022-11-23",
-      "desc": "First public ballot - see [R4 Index](http://hl7.org/fhir/us/davinci-ra/2022Jan/index.html)",
-      "changes": "",
+      "desc": "First public ballot - see (http://hl7.org/fhir/us/davinci-ra/2022Jan/index.html)",
       "path": "http://hl7.org/fhir/us/davinci-ra/2022Jan",
       "status": "ballot",
       "fhirversion": "4.0.1",
