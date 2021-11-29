@@ -11,9 +11,7 @@
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
         "valueMarkdown" : "This is a serum creatinine for Pat03*."
       }
-    ],
-    "versionId" : "926",
-    "lastUpdated" : "2019-08-23T14:28:57.327+00:00"
+    ]
   },
   "status" : "final",
   "category" : [

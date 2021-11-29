@@ -12,8 +12,6 @@
         "valueMarkdown" : "Trypsin [Mass/volume] in Serum or Plasma for Pat01*."
       }
     ],
-    "versionId" : "926",
-    "lastUpdated" : "2019-07-28T15:29:57.327+00:00",
     "profile" : [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
     ]
