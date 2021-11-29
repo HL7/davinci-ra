@@ -125,6 +125,11 @@
       <max value="1"/>
       <mustSupport value="true"/>
     </element>
+    <element id="MeasureReport.improvementNotation">
+      <path value="MeasureReport.improvementNotation"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
     <element id="MeasureReport.group">
       <path value="MeasureReport.group"/>
       <short value="A group contains information for a Condition Category. If a patient/member has multiple Condition Categories, there will be multiple group(s) and each group represents a Condition Category."/>
@@ -191,25 +196,38 @@
    <max value="1"/>
    <mustSupport value="true"/>
  </element>
+ <element id="MeasureReport.group.population">
+   <path value="MeasureReport.group.population"/>
+   <min value="0"/>
+   <max value="0"/>
+ </element>
+ <element id="MeasureReport.group.measureScore">
+   <path value="MeasureReport.group.measureScore"/>
+   <min value="0"/>
+   <max value="0"/>
+ </element>
+ <element id="MeasureReport.group.stratifier">
+   <path value="MeasureReport.group.stratifier"/>
+   <min value="0"/>
+   <max value="0"/>
+ </element>
  <element id="MeasureReport.evaluatedResource">
    <path value="MeasureReport.evaluatedResource"/>
    <short value="Supporting evidence for Condition Categories coding gaps, such as encounter, medication, and lab. An evidence is linked to a specific Condition Category through referencing the MeasureReport.group.id."/>
    <definition value="Supporting evidence for Condition Categories coding gaps, such as encounter, medication, and lab."/>
    <mustSupport value="true"/>
  </element>
-
  <element id="MeasureReport.evaluatedResource.extension:groupReference">
-  <path value="MeasureReport.evaluatedResource.extension"/>
-  <sliceName value="groupReference"/>
-  <definition value="This id references the `MeasureReport.group.id`, which allows linking a supporting resource to a specific Condition Categories coding gap."/>
-  <min value="0"/>
-  <max value="*"/>
-  <type>
-    <code value="Extension"/>
-    <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference"/>
-  </type>
-  <mustSupport value="true"/>
-</element>
-
+    <path value="MeasureReport.evaluatedResource.extension"/>
+    <sliceName value="groupReference"/>
+    <definition value="This id references the `MeasureReport.group.id`, which allows linking a supporting resource to a specific Condition Categories coding gap."/>
+    <min value="0"/>
+    <max value="*"/>
+    <type>
+      <code value="Extension"/>
+      <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference"/>
+    </type>
+    <mustSupport value="true"/>
+  </element>
   </differential>
 </StructureDefinition>
