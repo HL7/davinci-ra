@@ -10,8 +10,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "extension": [
                     {
@@ -812,8 +811,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -874,8 +872,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -936,8 +933,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -998,8 +994,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -1060,8 +1055,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -1122,8 +1116,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -1184,8 +1177,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -1246,8 +1238,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -1308,8 +1299,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -1370,8 +1360,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -1432,8 +1421,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -2069,8 +2057,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "extension": [
                     {
@@ -2189,8 +2176,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "extension": [
                     {
@@ -2309,8 +2295,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "extension": [
                     {
@@ -2453,8 +2438,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -2515,8 +2499,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -2577,8 +2560,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
-                    ],
-                    "source": "http://example.org/fhir/server"
+                    ]
                 },
                 "extension": [
                     {
