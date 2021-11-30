@@ -1,5 +1,5 @@
 
-List of extensions defined in this Implementation Guide:
+List of extensions defined in this implementation guide:
 
 |Link to Profile|
 |---|

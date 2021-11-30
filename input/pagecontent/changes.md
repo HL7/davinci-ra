@@ -1,8 +1,4 @@
 
-<div markdown="1" class="bg-info">
-The Da Vinci Risk Adjustment Implementation Guide is under development
-</div>
-
 ###  Change Logs
 
 #### STU Ballot 1

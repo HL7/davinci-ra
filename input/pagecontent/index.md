@@ -1,33 +1,33 @@
 
 ###  Summary
 
-The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide describes exchanging risk adjustment coding gaps between payers and providers. Risk adjusted premium calculations are important to government managed care. To better inform providers of opportunities to address risk adjusted conditions, better enable payers to communicate risk adjustment information, and enhance government sponsors' ability to allocate funding accurately, payers and providers need a standard protocol to share and receive clinical data related to risk adjustment and a standard methodology to communicate risk based coding, documentation and submission status of chronic conditions. This first release of this Implementation Guide focuses on the standard exchange format of risk adjustment coding gaps from payers to providers.
+The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide describes exchanging risk adjustment coding gaps between payers and providers. Risk adjusted premium calculations are important to government managed care. To better inform providers of opportunities to address risk adjusted conditions, better enable payers to communicate risk adjustment information, and enhance government sponsors' ability to allocate funding accurately, payers and providers need a standard protocol to share and receive clinical data related to risk adjustment and a standard methodology to communicate risk based coding, documentation and submission status of chronic conditions. This first release of this implementation guide focuses on the standard exchange format of risk adjustment coding gaps from payers to providers.
 
-This Implementation Guide is supported by the Da Vinci initiative which is a private effort to accelerate the adoption of Health Level Seven International Fast Healthcare Interoperability Resources (HL7® FHIR®) as the standard to support and integrate value-based care (VBC) data exchange across communities. Like all Da Vinci Implementation Guides, it follows the [HL7 Da Vinci Guiding Principles] for exchange of patient health information. As an HL7 FHIR Implementation Guide, changes to this specification are managed by the sponsoring [Clinical Quality Information (CQI) Work Group] and are incorporated as part of the standard balloting process.
+This implementation guide is supported by the Da Vinci initiative which is a private effort to accelerate the adoption of Health Level Seven International Fast Healthcare Interoperability Resources (HL7® FHIR®) as the standard to support and integrate value-based care (VBC) data exchange across communities. Like all Da Vinci Implementation Guides, it follows the [HL7 Da Vinci Guiding Principles] for exchange of patient health information. As an HL7 FHIR Implementation Guide, changes to this specification are managed by the sponsoring [Clinical Quality Information (CQI) Work Group] and are incorporated as part of the standard balloting process.
 
-### How to read this Guide
+### How to read this implementation guide
 
-This Implementation Guide (guide) is divided into several pages which are listed at the top of each page in the menu bar:
+This implementation guide is divided into several pages which are listed at the top of each page in the menu bar:
 
-- [Home]\: The home page provides the summary, background information, scope, and actors for this guide.
+- [Home]\: The home page provides the summary, background information, scope, and actors for this implementation guide.
 
-- [Guidance]\: The guidance page provides guidance on the resource profiles and operation defined in this guide.
+- [Guidance]\: The guidance page provides guidance on the resource profiles and operation defined in this implementation guide.
 
-- [FHIR Artifacts/Profiles]\: This page lists the set of Profiles that are defined in this guide to exchange risk adjustment coding gaps.
+- [FHIR Artifacts/Profiles]\: This page lists the set of Profiles that are defined in this implementation guide to exchange risk adjustment coding gaps.
 
-- [FHIR Artifacts/Extensions]\: This page lists the set of Extensions that are defined in this guide to exchange risk adjustment coding gaps.
+- [FHIR Artifacts/Extensions]\: This page lists the set of Extensions that are defined in this implementation guide to exchange risk adjustment coding gaps.
 
-- [FHIR Artifacts/Operations]\: This page lists operations defined in this guide.
+- [FHIR Artifacts/Operations]\: This page lists operations defined in this implementation guide.
 
-- [FHIR Artifacts/Terminology]\: This page lists code systems and value sets defined in this guide.
+- [FHIR Artifacts/Terminology]\: This page lists code systems and value sets defined in this implementation guide.
 
-- [FHIR Artifacts/Capability statements]\: This page describes the expected FHIR capabilities of the risk adjustment actors of this guide.
+- [FHIR Artifacts/Capability statements]\: This page describes the expected FHIR capabilities of the risk adjustment actors of this implementation guide.
 
-- [Examples]\: List of all the examples used in this guide.
+- [Examples]\: List of all the examples used in this implementation guide.
 
-- [Glossary/Acronyms]\: List of acronyms for this guide.
+- [Glossary/Acronyms]\: List of acronyms for this implementation guide.
 
-- [Glossary/Glossary]\: List of glossary for this guide.
+- [Glossary/Glossary]\: List of glossary for this implementation guide.
 
 - [Downloads]\: This page provides links to downloadable artifacts.
 
@@ -83,11 +83,11 @@ What’s going on with these three different model versions? There are three ans
 
 ### Scope
 
-After careful review with the risk adjustment subject matter experts, it was determined that the most challenging aspect of the current risk adjustment process was the inconsistent manner in which reports on risk adjustment coding gaps were communicated between a provider (or system operating on their behalf) and a payer (or system operating on the payer's behalf). Figure 2-2 shows a high level example of the risk adjustment workflow in CMS Medicare advantage program. This version of the guide focuses on specifying a standard exchange format, the [Risk Adjustment Coding Gap Report], from payers to providers.
+After careful review with the risk adjustment subject matter experts, it was determined that the most challenging aspect of the current risk adjustment process was the inconsistent manner in which reports on risk adjustment coding gaps were communicated between a provider (or system operating on their behalf) and a payer (or system operating on the payer's behalf). Figure 2-2 shows a high level example of the risk adjustment workflow in CMS Medicare advantage program. This version of the implementation guide focuses on specifying a standard exchange format, the [Risk Adjustment Coding Gap Report], from payers to providers.
 
 {% include img-portrait.html img="workflow-medicare-advantage.png" caption = "Figure 1-2 Workflow for Medicare Advantage Population" %}
 
-This guide does not define how payers determine a coding gap and how coding gaps are produced or managed on the payer side including hierarchies. This guide also does not define suspecting processes and algorithms/predictive models that are used for suspecting analytics. It is the intent of this guide to expand its specifications in future versions to support communication of coding gaps from providers back to the payers, for example to provide a mechanism to allow providers to communicate HCC invalidations to payers.  
+This implementation guide does not define how payers determine a coding gap and how coding gaps are produced or managed on the payer side including hierarchies. This implementation guide also does not define suspecting processes and algorithms/predictive models that are used for suspecting analytics. It is the intent of this implementation guide to expand its specifications in future versions to support communication of coding gaps from providers back to the payers, for example to provide a mechanism to allow providers to communicate HCC invalidations to payers.  
 
 ### Actors
 The actors involved in exchanging risk adjustment coding gap reports are Clients and Servers.
@@ -99,12 +99,13 @@ As shown in Figure 1-3, the Client calls the [$report] operation that is defined
 {% include img-portrait.html img="actors.png" caption = "Figure 1-3 Risk Adjustment Coding Gap Reporting Actors" %}
 
 ---
-This Implementation Guide was made possible by the thoughtful contributions of the following people and organizations:
+This implementation guide was made possible by the thoughtful contributions of the following people and organizations:
 
 - *The twenty-two founding [Da Vinci Project](http://www.hl7.org/about/davinci/index.cfm?ref=common) member organizations.*
 - *Amy Neftzger, United Healthcare*
 - *Brent Zenobia, Novillus*
 - *Brian J Murtha, Centene*
+- *Bryn Rhodes, Alphora*
 - *Linda Michaelsen, Optum*
 - *Rob Reynolds, Alphora*
 - *Viet Nguyen, Stratametrics*
