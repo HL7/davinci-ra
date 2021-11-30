@@ -10,8 +10,9 @@ The Da Vinci Project member organizations have identified the need of standardiz
 - It is the responsibility of the Server to ensure that the data used in the report is present in a structured and retrievable form.
 - The Server and the Client have agreed upon a process to identify specific patient(s) and exchange the Patient resource's logical id on the Server.
 - Although the exact mechanisms for securing these exchanges are not specified as part of this guide:
-    -  Exchanges are limited to mutually agreed upon (i.e., between the Server and Client) patient lists or population.
-    -  Systems should use standard authentication and authorization approaches. The [SMART App Launch] and [SMART backend services] authentication/authorization approach are recommended models.
+    - Exchanges are limited to mutually agreed upon (i.e., between the Server and Client) patient lists or population.
+    - Security and privacy should follow [Security and Privacy](https://build.fhir.org/ig/HL7/davinci-ehrx/security.html#security-and-privacy) guidance specified in the Da Vinci Health Record Exchange (HRex) Implementation Guide.   
+    - Systems should use standard authentication and authorization approaches. The [SMART App Launch] and [SMART backend services] authentication/authorization approach are recommended models.
 
 ### $Report Operation and Risk Adjustment Coding Gap Report
 
