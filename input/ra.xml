@@ -807,11 +807,6 @@
         <title value="Downloads"/>
         <generation value="html"/>
       </page>
-      <page>
-        <nameUrl value="changes.html"/>
-        <title value="Change History"/>
-        <generation value="markdown"/>
-      </page>
     </page>
     <!-- copyright year is a mandatory parameter -->
     <parameter>
