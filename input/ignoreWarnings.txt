@@ -1,32 +1,15 @@
 == Suppressed Messages ==
 
 # Have verified that these examples are being checked against the expected profiles/resources.
-INFORMATION: Binary/example: Binary: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Binary
 INFORMATION: Bundle/h1: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
-INFORMATION: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
-INFORMATION: Patient/example: Patient: Validate resource against profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient
-
-# This is inherited from the base resource
-WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element[15].mapping[3].map: value should not start or finish with whitespace
-
-# We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present
-INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient
-INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient
 
 # The slice is open with the intention of allowing entries for non-defined resources.
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
 
-# The objective is to show a reference to an unknown code system, so these warnings are expected
-WARNING: ValueSet/valueset-no-codesystem: ValueSet.compose[0].include[0]: Unknown System/Version specified, so Concepts and Filters can''t be checked
-WARNING: ValueSet.where(id = 'valueset-no-codesystem'): Error from server: Unable to provide support for code system http://not-a-known-code-system
-
-# We don't want a code for the change reason (and this binding shouldn't be extensible anyhow)
-WARNING: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance).reason[0]: No code provided, and a code should be provided from the value set http://terminology.hl7.org/ValueSet/v3-PurposeOfUse (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse)
-
 # MEASURE_MR_M_SCORING_UNK: This is intended.  The measureScore attribute is not required.
 The scoring system in this measure is unknown, so the measureScore values cannot be checked
 
-# MEASURE_M_NO_GROUPS (3): This is intended.  Currently, the support for Risk Adjustment does not include a practical way to model the groups as the number are prohibitive.  A solution is being worked on, but the Measure resource does not require a group so this should not be a blocking issue.
+# MEASURE_M_NO_GROUPS: This is intended.  Currently, the support for Risk Adjustment does not include a practical way to model the groups as the number are prohibitive.  A solution is being worked on, but the Measure resource does not require a group so this should not be a blocking issue.
 WARNING: Measure/RAModelExample01: Measure: A measure should contain at least one group
 WARNING: Measure/RAModelExample02: Measure: A measure should contain at least one group
 WARNING: Measure/RAModelExample03: Measure: A measure should contain at least one group
