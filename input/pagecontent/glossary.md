@@ -44,7 +44,7 @@
 |HCC|     |---Hierarchical Condition Category|
 |HHS-HCC|     |---Health and Human Services Hierarchical Condition Category|
 |MA|     |---Medicare Advantage|
-|MRX|     |---Medicaid Rx risk adjustment model|
+|MRX|     |---Medicaid Rx Risk Adjustment Model|
 |PACE|     |---All-encompassing Care for the Elderly|
 |RXC|     |---Health and Human Services (HHS) Prescription Drug Category|
 
