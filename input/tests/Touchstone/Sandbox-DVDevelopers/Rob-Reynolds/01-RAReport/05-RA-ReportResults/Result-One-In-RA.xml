@@ -244,7 +244,7 @@
         <direction value="response"/>
         <expression value="Parameters.parameter.resource.entry.count()"/>
         <operator value="equals"/>
-        <value value="4"/>
+        <value value="21"/>
         <warningOnly value="false"/>
       </assert>
     </action>
