@@ -8,7 +8,7 @@ The Da Vinci Project member organizations have identified the need of standardiz
 - A contract for medical services exists between the Server and the Client requesting the risk adjustment coding gap reports.
 - Risk adjustment coding gap reports are pre-generated on the Server by a backend system such as a risk adjustment engine for risk adjustment model(s).
 - It is the responsibility of the Server to ensure that the data used in the report is present in a structured and retrievable form.
-- The Server and the Client have agreed upon a process to identify specific patient(s) and exchange the Patient resource's logical id on the Server.
+- The Server and the Client have agreed upon a process to identify specific patient(s) and exchange the Patient resource's logical id or the Patient Group resource's logical id.
 - Although the exact mechanisms for securing these exchanges are not specified as part of this implementation guide:
     - Exchanges are limited to mutually agreed upon (i.e., between the Server and Client) patient lists or population.
     - Security and privacy should follow [Security and Privacy](https://build.fhir.org/ig/HL7/davinci-ehrx/security.html#security-and-privacy) guidance specified in the Da Vinci Health Record Exchange (HRex) Implementation Guide.   
