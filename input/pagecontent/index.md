@@ -83,7 +83,7 @@ What’s going on with these three different model versions? There are three ans
 
 ### Scope
 
-After careful review with the risk adjustment subject matter experts, it was determined that the most challenging aspect of the current risk adjustment process was the inconsistent manner in which reports on risk adjustment coding gaps were communicated between a provider (or system operating on their behalf) and a payer (or system operating on the payer's behalf). Figure 1-2 shows a high level example of the risk adjustment workflow in CMS Medicare advantage program. This version of the implementation guide focuses on specifying a standard exchange format, the [Risk Adjustment Coding Gap Report], from payers to providers.
+After careful review with the risk adjustment subject matter experts, it was determined that the most challenging aspect of the current risk adjustment process was the inconsistent manner in which reports on risk adjustment coding gaps were communicated between a provider (or system operating on their behalf) and a payer (or system operating on the payer's behalf). Figure 1-2 shows a high-level example of the risk adjustment workflow in CMS Medicare advantage program. This version of the implementation guide focuses on specifying a standard exchange format, the [Risk Adjustment Coding Gap Report], from payers to providers.
 
 {% include img-portrait.html img="workflow-medicare-advantage.png" caption = "Figure 1-2 Workflow for Medicare Advantage Population" %}
 
@@ -110,7 +110,6 @@ This implementation guide was made possible by the thoughtful contributions of t
 - *Rob Reynolds, Alphora*
 - *Viet Nguyen, Stratametrics*
 - *Yan Heras, Optimum eHealth*
-
 ---
 
 {% include link-list.md %}

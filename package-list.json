@@ -7,7 +7,7 @@
   "list": [
     {
       "version": "current",
-      "descmd": "Continuous Integration Build (latest in version control)",
+      "desc": "Continuous Integration Build (latest in version control)",
       "path": "http://build.fhir.org/ig/HL7/davinci-ra",
       "status": "ci-build",
       "current": true

@@ -213,8 +213,8 @@
  </element>
  <element id="MeasureReport.evaluatedResource">
    <path value="MeasureReport.evaluatedResource"/>
-   <short value="Supporting evidence for Condition Categories coding gaps, such as encounter, medication, and lab. An evidence is linked to a specific Condition Category through referencing the MeasureReport.group.id."/>
-   <definition value="Supporting evidence for Condition Categories coding gaps, such as encounter, medication, and lab."/>
+   <short value="An evaluated resource is any data a clinician would need to independently arrive at the clinical inference that a Condition Category (CC) listed on a Risk Adjustment Coding Gap Report could be present for a patient. Risk adjusted evaluated resources may include practitioners, encounters, diagnoses, medications, labs, or any other clinical evidence that the suspecting algorithm may have used as supporting evidence to infer the presence of a Condition Category (CC) gap."/>
+   <definition value="An evaluated resource is any data a clinician would need to independently arrive at the clinical inference that a Condition Category (CC) listed on a Risk Adjustment Coding Gap Report could be present for a patient. Risk adjusted evaluated resources may include practitioners, encounters, diagnoses, medications, labs, or any other clinical evidence that the suspecting algorithm may have used as supporting evidence to infer the presence of an Condition Category (CC) gap."/>
    <mustSupport value="true"/>
  </element>
  <element id="MeasureReport.evaluatedResource.extension:groupReference">
