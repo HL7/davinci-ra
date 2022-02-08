@@ -2,7 +2,7 @@
   "package-id": "hl7.fhir.us.davinci-ra",
   "title": "Da Vinci Risk Adjustment FHIR Implementation Guide",
   "canonical": "http://hl7.org/fhir/us/davinci-ra",
-  "introduction": "The DaVinci Risk Adjustment Implementation Guide will enable standard exchange of risk-based coding gaps among stakeholders such as payers, providers, and government care programs in support of driving towards accurate and complete documentation of health conditions that would lead to more accurate risk-adjustment payment calculations, reduced administrative burden, and improved quality of care.",
+  "introduction": "The Da Vinci Risk Adjustment Implementation Guide will enable standard exchange of risk-based coding gaps among stakeholders such as payers, providers, and government care programs in support of driving towards accurate and complete documentation of health conditions that would lead to more accurate risk-adjustment payment calculations, reduced administrative burden, and improved quality of care.",
   "category": "Financial",
   "list": [
     {
@@ -15,7 +15,7 @@
     {
       "version": "0.1.0",
       "date": "2021-12-01",
-      "descmd": "STU 1 Ballot for FHIR R4",
+      "desc": "STU 1 Ballot for FHIR R4",
       "path": "http://hl7.org/fhir/us/davinci-ra/2022Jan",
       "status": "ballot",
       "fhirversion": "4.0.1",
