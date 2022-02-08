@@ -2,19 +2,19 @@
   "package-id": "hl7.fhir.us.davinci-ra",
   "title": "Da Vinci Risk Adjustment FHIR Implementation Guide",
   "canonical": "http://hl7.org/fhir/us/davinci-ra",
-  "introduction": "The Da Vinci Risk Adjustment Implementation Guide will enable standard exchange of risk-based coding gaps among stakeholders such as payers, providers, and government care programs in support of driving towards accurate and complete documentation of health conditions that would lead to more accurate risk-adjustment payment calculations, reduced administrative burden, and improved quality of care.",
+  "introduction": "The DaVinci Risk Adjustment Implementation Guide will enable standard exchange of risk-based coding gaps among stakeholders such as payers, providers, and government care programs in support of driving towards accurate and complete documentation of health conditions that would lead to more accurate risk-adjustment payment calculations, reduced administrative burden, and improved quality of care.",
   "category": "Financial",
   "list": [
     {
       "version": "current",
-      "descmd": "Continuous Integration Build (latest in version control)\n\n **Applied**: Typo in Intro ([FHIR-34501](https:\/\/jira.hl7.org\/browse\/FHIR-34501))\r\n1. **Applied**: Plural possessive ([FHIR-34695](https:\/\/jira.hl7.org\/browse\/FHIR-34695))\r\n1. **Applied**: Over-specific precondition for patient resource logical id ([FHIR-34708](https:\/\/jira.hl7.org\/browse\/FHIR-34708))\r\n1. **Applied**: Cardinality confusion for MeasureReport.group.code ([FHIR-34711](https:\/\/jira.hl7.org\/browse\/FHIR-34711))\r\n1. **Applied**: Title for HCC 18 should be \"Diabetes with chronic complications\" not \"Diabetes without complications\" ([FHIR-35774](https:\/\/jira.hl7.org\/browse\/FHIR-35774))\r\n1. **Applied**: Typo in 1.4 Scope text ([FHIR-35971](https:\/\/jira.hl7.org\/browse\/FHIR-35871))\r\n1.",
+      "descmd": "Continuous Integration Build (latest in version control)",
       "path": "http://build.fhir.org/ig/HL7/davinci-ra",
       "status": "ci-build",
       "current": true
     },
     {
       "version": "0.1.0",
-      "date": "2022-11-23",
+      "date": "2021-12-01",
       "descmd": "STU 1 Ballot for FHIR R4",
       "path": "http://hl7.org/fhir/us/davinci-ra/2022Jan",
       "status": "ballot",
