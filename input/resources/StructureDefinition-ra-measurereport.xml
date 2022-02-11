@@ -125,11 +125,6 @@
       <max value="1"/>
       <mustSupport value="true"/>
     </element>
-    <element id="MeasureReport.improvementNotation">
-      <path value="MeasureReport.improvementNotation"/>
-      <min value="0"/>
-      <max value="0"/>
-    </element>
     <element id="MeasureReport.group">
       <path value="MeasureReport.group"/>
       <short value="A group contains information for a Condition Category. If a patient/member has multiple Condition Categories, there will be multiple group(s) and each group represents a Condition Category."/>
@@ -195,21 +190,6 @@
    <min value="0"/>
    <max value="1"/>
    <mustSupport value="true"/>
- </element>
- <element id="MeasureReport.group.population">
-   <path value="MeasureReport.group.population"/>
-   <min value="0"/>
-   <max value="0"/>
- </element>
- <element id="MeasureReport.group.measureScore">
-   <path value="MeasureReport.group.measureScore"/>
-   <min value="0"/>
-   <max value="0"/>
- </element>
- <element id="MeasureReport.group.stratifier">
-   <path value="MeasureReport.group.stratifier"/>
-   <min value="0"/>
-   <max value="0"/>
  </element>
  <element id="MeasureReport.evaluatedResource">
    <path value="MeasureReport.evaluatedResource"/>
