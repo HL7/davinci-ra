@@ -8,7 +8,7 @@
   <experimental value="false"/>
   <date value="2021-10-07"/>
   <publisher value="Da Vinci Project"/>
-  <description value="This extension is to indicate if hierarchies were applied to a Condition Category, and if applied, whether the Condition Category is superseded."/>
+  <description value="This extension is to indicate if hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded."/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -22,9 +22,9 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="This is to indicate whether hierarchies were applied to a Condition Category, and if applied, whether the Condition Category is superseded: applied-superseded|applied-not-superseded|not-applied|not-applicable"/>
-      <definition value="Hierarchies applied to a Condition Category status"/>
-      <comment value="This extension hierarchies were applied to a Condition Category, and if applied, whether the Condition Category is superseded."/>
+      <short value="This is to indicate whether hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded: applied-superseded|applied-not-superseded|not-applied|not-applicable"/>
+      <definition value="Hierarchies applied to a Condition Category (CC) status"/>
+      <comment value="This extension hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -37,7 +37,7 @@
     </element>
     <element id="Extension.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
-      <short value="Indicate whether hierarchies were applied to a Condition Category, and if applied, whether the Condition Category is superseded."/>
+      <short value="Indicate whether hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded."/>
       <type>
         <code value="CodeableConcept"/>
       </type>

@@ -6,7 +6,7 @@
   <title value="Risk Adjustment Coding Gap Report Profile"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2021-11-11"/>
+  <date value="2022-02-13"/>
   <publisher value="Da Vinci Project"/>
   <description value="This risk adjustment coding gap report profile is based on the [MeasureReport](http://hl7.org/fhir/R4/measurereport.html) to represent a risk adjustment coding gap report."/>
   <fhirVersion value="4.0.1"/>

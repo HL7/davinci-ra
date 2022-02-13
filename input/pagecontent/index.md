@@ -77,7 +77,7 @@ Since the data collection period is always longer than the clinical evaluation p
 - CMS-HCC V22 for the 2023 Payment Year (2022 dates of service)
 - CMS-RxHCC V05 for the 2023 Payment Year (2022 dates of service)
 
-To avoid confusion, the provider supplies dates for the clinical evaluation period, which is driven by dates of service. So if the provider sets the clinical evaluation period to run from Jan 1, 2022 through Dec 31, 2022, the payer would only report Condition Category(CC) gaps from these models:
+To avoid confusion, the provider supplies dates for the clinical evaluation period, which is driven by dates of service. So if the provider sets the clinical evaluation period to run from Jan 1, 2022 through Dec 31, 2022, the payer would only report Condition Category (CC) gaps from these models:
 - CMS-HCC V24 for the 2023 Payment Year (2022 dates of service)
 - CMS-HCC V22 for the 2023 Payment Year (2022 dates of service)
 - CMS-RxHCC V05 for the 2023 Payment Year (2022 dates of service)

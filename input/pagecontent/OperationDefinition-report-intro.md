@@ -20,7 +20,7 @@ The $report operation <b>SHALL</b> be able to resolve:
 The $report operation <b>SHALL</b> include the following output (OUT) parameters:
 - If the `subject` being processed is a Patient/[reference] and the patient is not valid, then the `Parameters.parameter` element SHALL include an [OperationOutcome](https://www.hl7.org/fhir/operationOutcome.html) resource that includes the `subject` (Patient/[reference]) being processed; <b>OR</b>
 - If the `subject` being processed is a Group/[reference] and the group itself is not valid or none of the patients in the group is valid, then the `Parameters.parameter` element SHALL include an [OperationOutcome](https://www.hl7.org/fhir/operationOutcome.html) resource that includes the `subject` (Group/[reference]) being processed; <b>OR</b>
-- If the patient is valid and no MeasureReport resources match the set of input (IN) parameters being processed, then the `Bundle.entry` SHALL include a [US Core Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) resource matching the subject (Patient/[reference]); <b>OR</b>
+- If the patient is valid and no MeasureReport resources match the set of input (IN) parameters being processed, then the `Bundle.entry` SHALL include a [US Core Patient](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html) resource matching the subject (Patient/[reference]); <b>OR</b>
 - If the patient is valid and one or more MeasureReport resources match the set of input (IN) parameters being processed, then the `Bundle.entry` SHALL include all matching MeasureReport resources and all resources referenced by the `evalautedResource` element of all matching MeasureReport resources.
 
 {% include link-list.md %}

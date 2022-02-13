@@ -32,7 +32,7 @@
   <dependsOn id="uscore">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <packageId value="hl7.fhir.us.core"/>
-    <version value="4.0.0"/>
+    <version value="3.1.1"/>
   </dependsOn>
   <dependsOn id="deqm">
     <uri value="http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm"/>

@@ -6,7 +6,7 @@
   <title value="Risk Adjustment Suspect Type Extension"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2021-07-20"/>
+  <date value="2022-02-13"/>
   <publisher value="Da Vinci Project"/>
   <description value="Risk Adjustment Suspect Type Extension"/>
   <fhirVersion value="4.0.1"/>
@@ -22,8 +22,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="This is the risk adjustment suspect type for an HCC gap"/>
-      <definition value="Risk adjustment suspect type, whether the HCC gap is historic, suspected or net new"/>
+      <short value="This is the risk adjustment suspect type for a Condition Category (CC) gap"/>
+      <definition value="Risk adjustment suspect type, whether the Condition Category (CC) gap is historic, suspected or net new"/>
       <comment value="This extension is to represent risk adjustment suspect type"/>
       <min value="0"/>
       <max value="1"/>
