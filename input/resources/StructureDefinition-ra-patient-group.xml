@@ -16,7 +16,15 @@
     <derivation value="constraint"/>
     <differential>
         <element id="Group">
-            <path value="Group"/>
+          <path value="Group"/>
+        </element>
+        <element id="Group.type">
+          <path value="Group.type"/>
+          <mustSupport value="true"/>
+        </element>
+        <element id="Group.actual">
+          <path value="Group.actual"/>
+          <mustSupport value="true"/>
         </element>
         <element id="Group.member">
           <path value="Group.member"/>

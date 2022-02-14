@@ -52,5 +52,9 @@
             <short value="E.g., CMS Hierarchical Category Condition (CMS-HCC) Risk Adjustment Model Version 24"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Measure.status">
+            <path value="Measure.status"/>
+            <mustSupport value="true"/>
+        </element>
     </differential>
 </StructureDefinition>

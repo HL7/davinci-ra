@@ -36,6 +36,7 @@
         <element id="Bundle.type">
             <path value="Bundle.type"/>
             <fixedCode value="collection"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Bundle.entry">
             <path value="Bundle.entry"/>
