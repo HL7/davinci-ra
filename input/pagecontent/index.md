@@ -7,7 +7,7 @@
 
 ###  Summary
 
-The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide describes exchanging risk adjustment coding gaps between payers and providers. Risk adjusted premium calculations are important to government managed care. To better inform providers of opportunities to address risk adjusted conditions, better enable payers to communicate risk adjustment information, and enhance government sponsors' ability to allocate funding accurately, payers and providers need a standard protocol to share and receive clinical data related to risk adjustment and a standard methodology to communicate risk based coding, documentation and submission status of chronic conditions. The first release of this implementation guide focuses on the standard exchange format of risk adjustment coding gaps from payers to providers.
+The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide describes exchanging risk adjustment coding gaps between payers and providers. Risk adjusted premium calculations are important to government managed care. To better inform providers of opportunities to address risk adjusted conditions, better enable payers to communicate risk adjustment information, and enhance government sponsors' ability to allocate funding accurately, payers and providers need a standard protocol to share and receive clinical data related to risk adjustment and a standard methodology to communicate risk based coding, documentation and submission status of chronic conditions. The STU1 of this implementation guide focuses on the standard exchange format of risk adjustment coding gaps from payers to providers, it offers potential for reducing administrative burden experienced by providers by standardizing the reporting they receive from all payers.
 
 This implementation guide is supported by the Da Vinci initiative which is a private effort to accelerate the adoption of Health Level Seven International Fast Healthcare Interoperability Resources (HL7® FHIR®) as the standard to support and integrate value-based care (VBC) data exchange across communities. Like all Da Vinci Implementation Guides, it follows the [HL7 Da Vinci Guiding Principles] for exchange of patient health information. As an HL7 FHIR Implementation Guide, changes to this specification are managed by the sponsoring [Clinical Quality Information (CQI) Work Group] and are incorporated as part of the standard balloting process.
 
@@ -97,12 +97,16 @@ This implementation guide does not define how payers determine a coding gap and 
 
 ### Actors
 The actors involved in exchanging risk adjustment coding gap reports are Clients and Servers.
-- <b>Clients</b> are the actors requesting risk adjustment coding gaps. For example, a provider is the Client when they request coding gaps for their patients from a payer system.
-- <b>Servers</b> are the actors receiving the request for retrieving the risk adjustment coding gaps. For example, a payer system receives a request for getting coding gaps for all members of a provider, the payer system acts as the Server.
+- <b>Clients</b> are the actors requesting risk adjustment coding gap reports using the $report operation.
+- <b>Servers</b> are the actors receiving the request for retrieving the risk adjustment coding gap reports using the $report operation.
 
-As shown in Figure 1-3, the Client calls the [$report] operation that is defined in this IG, the Server then queries matching Risk Adjustment Coding Gap Reports based on the parameters provided in the operation and returns the reports to the Client.
+In the example shown in Figure 1-3, a payer acts both as Client and Server in this scenario. The payer (acting as the Client) calls the [$report] operation on their Server to query matching Risk Adjustment Coding Gap Reports based on the parameters provided in the operation, then the payer posts the reports to providers.
 
-{% include img-portrait.html img="actors.png" caption = "Figure 1-3 Risk Adjustment Coding Gap Reporting Actors" %}
+As shown in Figure 1-4, the Client calls the [$report] operation that is defined in this IG, the Server then queries matching Risk Adjustment Coding Gap Reports based on the parameters provided in the operation and returns the reports to the Client.
+
+{% include img-portrait.html img="actors-post.png" caption = "Figure 1-3 Risk Adjustment Coding Gap Reporting Actors - Example 1" %}
+
+{% include img-portrait.html img="actors-request.png" caption = "Figure 1-4 Risk Adjustment Coding Gap Reporting Actors - Example 2" %}
 
 ---
 This implementation guide was made possible by the thoughtful contributions of the following people and organizations:
