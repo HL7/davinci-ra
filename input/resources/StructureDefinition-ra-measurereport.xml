@@ -191,6 +191,11 @@
    <max value="1"/>
    <mustSupport value="true"/>
  </element>
+ <element id="MeasureReport.group.stratifier.code">
+   <path value="MeasureReport.group.stratifier.code"/>
+   <min value="0"/>
+   <max value="1"/>
+ </element>
  <element id="MeasureReport.evaluatedResource">
    <path value="MeasureReport.evaluatedResource"/>
    <short value="An evaluated resource is any data a clinician would need to independently arrive at the clinical inference that a Condition Category (CC) listed on a Risk Adjustment Coding Gap Report could be present for a patient. Risk adjusted evaluated resources may include practitioners, encounters, diagnoses, medications, labs, or any other clinical evidence that the suspecting algorithm may have used as supporting evidence to infer the presence of a Condition Category (CC) gap."/>
