@@ -9,8 +9,9 @@ list:
       Da Vinci Risk Adjustment STU Balloting [Dashboard](https://jira.hl7.org/secure/Dashboard.jspa?selectPageId=14013)
 
       **Status**: **Summary** (**Jira Issue**)
-      
+
       Ballot Comments
+      1. **Applied**: Missing Must Support, $report comment, & extension comment ([FHIR-35139](https://jira.hl7.org/browse/FHIR-35139))
       1. **Applied**: Clarify provider-driven v. payer-driven approach to coding gaps ([FHIR-35324](https://jira.hl7.org/browse/FHIR-35324))
       1. **Applied**: Keep group.population and group.stratifier in as optional ([FHIR-35221](https://jira.hl7.org/browse/FHIR-35221))
       1. **Applied**: "Hierarchical Condition Categories (HCCs) with less severe HCCs superseded (ignored) if evidence of higher severity HCCs is present" statement is not accurate description. ([FHIR-34773](https://jira.hl7.org/browse/FHIR-34773))
