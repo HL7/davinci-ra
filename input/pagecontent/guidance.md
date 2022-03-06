@@ -61,15 +61,18 @@ Figure 3-3 provides a graphical view of how these resources are related to the e
 
 ### Usage
 
-`GET|[base]`
+#### Request Risk Adjustment Coding Gap Report
+
+`GET [base]`
 
 {% include examplebutton.html example="get-risk-adjustment-coding-gap-report-usage-example" b_title = "Click Here To See Example GET Risk Adjustment Coding Gap Report" %}
 
-#### Bulk data  
+
+#### Bulk data request for Risk Adjustment Coding Gap Reports  
 
 If Clients are requesting risk adjustment coding gap reports for many patients, they may consider using the FHIR [Asynchronous Request Patterns] for the Bulk Data exchange operation.
 
-`GET|[base]`
+`GET [base]/MeasureReport/$report`
 
 {% include examplebutton.html example="get-risk-adjustment-coding-gaps-report-usage-bulk-example" b_title = "Click Here To See Example GET Risk Adjustment Coding Gap Report Using Bulk Data" %}
 
@@ -83,6 +86,12 @@ Query Parameters:
 * `_outputFormat (string, optional, defaults to application/fhir+ndjson)`
 
 Currently, only *application/fhir+ndjson* is supported.
+
+#### Post Risk Adjustment Coding Gap Report
+
+`Post [base]/bundle`
+
+{% include examplebutton.html example="post-risk-adjustment-coding-gap-report-usage-example" b_title = "Click Here To See Example POST Risk Adjustment Coding Gap Report" %}
 
 ### Attribution
 
