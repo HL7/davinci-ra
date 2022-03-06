@@ -5,11 +5,11 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Serum Creatinine for Pat03"
+        "valueString" : "PHQ9 for Pat03"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-        "valueMarkdown" : "This is a serum creatinine for Pat03*."
+        "valueMarkdown" : "This is a PHQ9 Total Score for Pat03*."
       }
     ]
   },
