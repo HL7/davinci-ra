@@ -185,7 +185,7 @@
  </element>
  <element id="MeasureReport.group.code">
    <path value="MeasureReport.group.code"/>
-   <short value="Condition Category (CC) code."/>
+   <short value="Condition Category (CC) code for a Risk Adjustment Model"/>
    <definition value="Condition Category (CC) code for a Risk Adjustment Model."/>
    <min value="0"/>
    <max value="1"/>
@@ -194,7 +194,7 @@
    </type>
    <binding>
      <strength value="example"/>
-     <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/cmshcc"/>
+     <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/example-cmshcc"/>
    </binding>
    <mustSupport value="true"/>
  </element>
