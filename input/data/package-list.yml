@@ -11,6 +11,7 @@ list:
       **Status**: **Summary** (**Jira Issue**)
 
       Ballot Comments
+      1. **Applied**: Bind example value sets where ever possible instead of creating complicated element definitions ([FHIR-34774](https://jira.hl7.org/browse/FHIR-34774))
       1. **Applied**: Missing Must Support, $report comment, & extension comment ([FHIR-35139](https://jira.hl7.org/browse/FHIR-35139))
       1. **Applied**: Clarify provider-driven v. payer-driven approach to coding gaps ([FHIR-35324](https://jira.hl7.org/browse/FHIR-35324))
       1. **Applied**: Keep group.population and group.stratifier in as optional ([FHIR-35221](https://jira.hl7.org/browse/FHIR-35221))
@@ -24,6 +25,7 @@ list:
       1. **Applied**: Typo in Intro ([FHIR-34501](https://jira.hl7.org/browse/FHIR-34501))
 
       Other Trackers
+      1. **Applied**: Noted several errors in example data ([FHIR-35773](https://jira.hl7.org/browse/FHIR-35773))
       1. **Applied**: US Core 3.1.1 Alignment ([FHIR-35924](https://jira.hl7.org/browse/FHIR-35924))
       1. **Applied**: Add language to acknowledge physician burden reduction ([FHIR-35323](https://jira.hl7.org/browse/FHIR-35323))
       1. **Applied**: Correct MeasureReport.group.stratifier.code cardinality due to error in base resource ([FHIR-36053](https://jira.hl7.org/browse/FHIR-36053))
