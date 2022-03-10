@@ -63,7 +63,7 @@ Figure 3-3 provides a graphical view of how these resources are related to the e
 
 #### Request Risk Adjustment Coding Gap Report
 
-`GET [base]`
+`GET [base]/MeasureReport/$report`
 
 {% include examplebutton.html example="get-risk-adjustment-coding-gap-report-usage-example" b_title = "Click Here To See Example GET Risk Adjustment Coding Gap Report" %}
 
@@ -89,7 +89,7 @@ Currently, only *application/fhir+ndjson* is supported.
 
 #### Post Risk Adjustment Coding Gap Report
 
-`Post [base]/bundle`
+`POST [base]/bundle`
 
 {% include examplebutton.html example="post-risk-adjustment-coding-gap-report-usage-example" b_title = "Click Here To See Example POST Risk Adjustment Coding Gap Report" %}
 
