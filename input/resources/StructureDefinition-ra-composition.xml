@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="ra-composition"/>
+    <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-composition"/>
+    <name value="RACompositionProfile"/>
+    <title value="Risk Adjustment Composition Profile"/>
+    <status value="active"/>
+    <date value="2022-03-22"/>
+    <publisher value="Da Vinci Project"/>
+    <description value="RA Composition profile mockup"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Composition"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Composition">
+            <path value="Composition"/>
+        </element>
+        <element id="Composition.type">
+            <path value="Composition.type"/>
+            <comment value="Coding Gap report"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="96315-7"/>
+                    <display value="Gaps in care report"/>
+                </coding>
+            </fixedCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.subject">
+            <path value="Composition.subject"/>
+            <min value="1"/>
+            <short value="What individual the risk adjustment coding gap report is for."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section">
+            <path value="Composition.section"/>
+            <short value="Must contain at least one section"/>
+            <min value="1"/>
+        </element>
+        <element id="Composition.section.title">
+            <path value="Composition.section.title"/>
+            <short value="Risk adjustment coding gap report of a version specific Risk Adjustment Model for a patient"/>
+        </element>
+        <element id="Composition.section.focus">
+            <path value="Composition.section.focus"/>
+            <short value="This references a Risk Adjustment Coding Gap Report"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section.entry">
+            <path value="Composition.section.entry"/>
+            <short value="This references DetectedIssue"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-detectedissue"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

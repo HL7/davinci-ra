@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "DEQMGapsStatusCodeSystem",
+  "id": "gaps-status",
+  "title": "DEQM Gaps In Care Gap Status Code System",
+  "publisher":"Da Vinci Project",
+  "description": "This is a code system for Gaps in Care gap status.",
+  "version": "0.1.0",
+  "url": "http://hl7.org/fhir/us/davinci-deqm/CodeSystem/gaps-status",
+  "concept": [
+    {
+      "code": "open-gap",
+      "display": "Open Gap",
+      "definition": "A discrepancy exists between recommended best practices and the services that are actually provided and documented."
+    },
+    {
+      "code": "closed-gap",
+      "display": "Closed Gap",
+      "definition": "No discrepancy exists between recommended best practices and the services that are actually provided and documented. A previously identified open gap may become closed, if actions were taken to close the open gaps."
+    },
+    {
+      "code": "not-applicable",
+      "display": "Not Applicable",
+      "definition": "The patient does not meet the initial population criteria for the measure."
+    }
+  ],
+  "count": 3
+}

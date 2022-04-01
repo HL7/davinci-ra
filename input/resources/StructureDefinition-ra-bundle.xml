@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="ra-bundle"/>
+    <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-bundle"/>
+    <name value="RiskAdjustmentBundleProfile"/>
+    <title value="Risk Adjustment Bundle Profile"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <date value="2022-03-22"/>
+    <publisher value="Da Vinci Project"/>
+    <description value="Risk Adjustment Bundle mockup"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Bundle"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Bundle">
+            <path value="Bundle"/>
+        </element>
+        <element id="Bundle.type">
+            <path value="Bundle.type"/>
+            <fixedCode value="document"/>
+        </element>
+        <element id="Bundle.entry">
+            <path value="Bundle.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="type"/>
+                    <path value="resource"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:ra_composition_entry">
+          <path value="Bundle.entry"/>
+          <sliceName value="ra_composition_entry"/>
+          <short value=""/>
+          <min value="1"/>
+          <max value="*"/>
+          <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:gaps_composition_entry.resource">
+          <path value="Bundle.entry.resource"/>
+          <short value="mockup"/>
+          <min value="1"/>
+          <type>
+            <code value="Composition"/>
+            <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-composition"/>
+          </type>
+          <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:ra_coding_gap_report_entry">
+          <path value="Bundle.entry"/>
+          <sliceName value="ra_coding_gap_report_entry"/>
+          <short value="Contains the Risk Adjustment Coding Gap Report referenced in the ra composition"/>
+          <min value="0"/>
+          <max value="*"/>
+          <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:ra_coding_gap_report_entry.resource">
+          <path value="Bundle.entry.resource"/>
+          <short value="This MeasureReport uses the RA Coding Gap MeasureReport Profile"/>
+          <min value="1"/>
+          <type>
+            <code value="MeasureReport"/>
+            <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
+          </type>
+          <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>
