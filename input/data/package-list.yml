@@ -11,6 +11,7 @@ list:
       **Status**: **Summary** (**Jira Issue**)
 
       Ballot Comments
+      1. **Applied**: Change Usage section to clarify and add POST scenario ([FHIR-35982](https://jira.hl7.org/browse/FHIR-35982))
       1. **Applied**: Bind example value sets where ever possible instead of creating complicated element definitions ([FHIR-34774](https://jira.hl7.org/browse/FHIR-34774))
       1. **Applied**: Missing Must Support, $report comment, & extension comment ([FHIR-35139](https://jira.hl7.org/browse/FHIR-35139))
       1. **Applied**: Clarify provider-driven v. payer-driven approach to coding gaps ([FHIR-35324](https://jira.hl7.org/browse/FHIR-35324))

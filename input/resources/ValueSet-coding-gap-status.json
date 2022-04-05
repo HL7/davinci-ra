@@ -4,7 +4,7 @@
   "date": "2022-03-22",
   "name": "CodingGapStatusValueSet",
   "id": "coding-gap-status",
-  "title": "Mock up Coding Gap Status Value Set",
+  "title": "Draft Coding Gap Status Value Set",
   "description": "Concepts for coding gap status",
   "version": "0.1.0",
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-status",

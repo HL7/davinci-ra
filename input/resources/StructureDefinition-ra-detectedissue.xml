@@ -30,7 +30,19 @@
            </type>
            <mustSupport value="true"/>
            <isModifier value="true"/>
-           <isModifierReason value="Identifies coding gap status detected"/>
+           <isModifierReason value="What is the detected coding gap status"/>
+        </element>
+        <element id="DetectedIssue.extension:groupReference">
+          <path value="DetectedIssue.extension"/>
+          <sliceName value="groupReference"/>
+          <definition value="This id references the `MeasureReport.group.id`, which allows linking a detected issue to a specific Condition Category (CC) coding gap."/>
+          <min value="0"/>
+          <max value="*"/>
+          <type>
+            <code value="Extension"/>
+            <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference"/>
+          </type>
+          <mustSupport value="true"/>
         </element>
         <element id="DetectedIssue.code">
           <path value="DetectedIssue.code"/>
@@ -58,12 +70,19 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
+<!--
         <element id="DetectedIssue.evidence.detail">
             <path value="DetectedIssue.evidence.detail"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
             </type>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element> -->
+        <element id="DetectedIssue.detail">
+            <path value="DetectedIssue.detail"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>

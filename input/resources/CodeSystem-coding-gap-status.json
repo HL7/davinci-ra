@@ -2,29 +2,34 @@
   "resourceType": "CodeSystem",
   "status": "active",
   "content": "complete",
-  "name": "DEQMGapsStatusCodeSystem",
+  "name": "RACodingGapStatusCodeSystem",
   "id": "gaps-status",
-  "title": "DEQM Gaps In Care Gap Status Code System",
+  "title": "Risk Adjustment Coding Gap Status Code System",
   "publisher":"Da Vinci Project",
-  "description": "This is a code system for Gaps in Care gap status.",
+  "description": "This is a code system for coding gap status.",
   "version": "0.1.0",
-  "url": "http://hl7.org/fhir/us/davinci-deqm/CodeSystem/gaps-status",
+  "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gaps-status",
   "concept": [
-    {
-      "code": "open-gap",
-      "display": "Open Gap",
-      "definition": "A discrepancy exists between recommended best practices and the services that are actually provided and documented."
-    },
     {
       "code": "closed-gap",
       "display": "Closed Gap",
-      "definition": "No discrepancy exists between recommended best practices and the services that are actually provided and documented. A previously identified open gap may become closed, if actions were taken to close the open gaps."
+      "definition": "Gap closed"
     },
     {
-      "code": "not-applicable",
-      "display": "Not Applicable",
-      "definition": "The patient does not meet the initial population criteria for the measure."
+      "code": "gap-invalidated-never-had-condition",
+      "display": "Coding gap invalidated patient never had the condition",
+      "definition": "Patient was incorrectly diagnosed and has never had this condition."
+    },
+    {
+      "code": "gap-invalidated-inactive-condition",
+      "display": "Coding gap invalidated condition no longer active",
+      "definition": "Patient was correctly diagnosed, but the condition is no longer active."
+    },
+    {
+      "code": "gap-invalidated-inacurrate-coding",
+      "display": "Coding gap invalidated inaccurate coding",
+      "definition": "Patient has an active condition, but the gap doesn’t accurately describe it."
     }
   ],
-  "count": 3
+  "count": 4
 }

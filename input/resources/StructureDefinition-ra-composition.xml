@@ -63,7 +63,7 @@
         <element id="Composition.section.entry">
             <path value="Composition.section.entry"/>
             <short value="This references DetectedIssue"/>
-            <min value="1"/>
+            <min value="0"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-detectedissue"/>

@@ -9,7 +9,7 @@
   "experimental": false,
   "date": "2022-03-22",
   "publisher": "Da Vinci Project",
-  "description": "mock up value set",
+  "description": "RA Coding Gap Status value set",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
