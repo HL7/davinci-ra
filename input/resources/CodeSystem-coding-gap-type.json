@@ -16,17 +16,17 @@
       "definition": "gap closure request"
     },
     {
-      "code": "invalid-never-had-condition",
+      "code": "invalidation-request-never-had-condition",
       "display": "Coding gap invalidated patient never had the condition",
       "definition": "Patient was incorrectly diagnosed and has never had this condition."
     },
     {
-      "code": "gap-invalidated-inactive-condition",
+      "code": "invalidation-request-inactive-condition",
       "display": "Coding gap invalidated condition no longer active",
       "definition": "Patient was correctly diagnosed, but the condition is no longer active."
     },
     {
-      "code": "gap-invalidated-inacurate-coding",
+      "code": "invalidation-request-inacurate-coding",
       "display": "Coding gap invalidated inaccurate coding",
       "definition": "Patient has an active condition, but the gap doesn’t accurately describe it."
     }
