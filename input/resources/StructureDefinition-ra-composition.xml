@@ -5,10 +5,10 @@
     <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-composition"/>
     <name value="RACompositionProfile"/>
     <title value="Risk Adjustment Composition Profile"/>
-    <status value="active"/>
-    <date value="2022-03-22"/>
+    <status value="draft"/>
+    <date value="2022-04-07"/>
     <publisher value="Da Vinci Project"/>
-    <description value="RA Composition profile mockup"/>
+    <description value="This is a draft Risk Adjustment Composition profile that is under development."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -26,7 +26,7 @@
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="96315-7"/>
-                    <display value="Gaps in care report"/>
+                    <display value="Gaps in care report (TODO: this is a placeholder, need a new LOINC code for risk coding gap report)"/>
                 </coding>
             </fixedCodeableConcept>
             <mustSupport value="true"/>
@@ -62,8 +62,8 @@
         </element>
         <element id="Composition.section.entry">
             <path value="Composition.section.entry"/>
-            <short value="This references DetectedIssue"/>
-            <min value="0"/>
+            <short value="This references DetectedIssue. (Discussion Note: make detectedIssue 1..*. If a response is provided from provider to a certified coder/payer, then it will always return a detectedIssue."/>
+            <min value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-detectedissue"/>

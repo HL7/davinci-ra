@@ -2,21 +2,21 @@
   "resourceType": "CodeSystem",
   "status": "active",
   "content": "complete",
-  "name": "RACodingGapStatusCodeSystem",
-  "id": "gaps-status",
-  "title": "Risk Adjustment Coding Gap Status Code System",
+  "name": "RACodingGapTypeCodeSystem",
+  "id": "coding-gap-type",
+  "title": "Risk Adjustment Coding Gap Type Code System",
   "publisher":"Da Vinci Project",
-  "description": "This is a code system for coding gap status.",
+  "description": "This is a draft code system for coding gap type.",
   "version": "0.1.0",
-  "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gaps-status",
+  "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-type",
   "concept": [
     {
-      "code": "closed-gap",
-      "display": "Closed Gap",
-      "definition": "Gap closed"
+      "code": "gap-closure-request",
+      "display": "gap closure request",
+      "definition": "gap closure request"
     },
     {
-      "code": "gap-invalidated-never-had-condition",
+      "code": "invalid-never-had-condition",
       "display": "Coding gap invalidated patient never had the condition",
       "definition": "Patient was incorrectly diagnosed and has never had this condition."
     },
@@ -26,7 +26,7 @@
       "definition": "Patient was correctly diagnosed, but the condition is no longer active."
     },
     {
-      "code": "gap-invalidated-inacurrate-coding",
+      "code": "gap-invalidated-inacurate-coding",
       "display": "Coding gap invalidated inaccurate coding",
       "definition": "Patient has an active condition, but the gap doesn’t accurately describe it."
     }

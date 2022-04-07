@@ -13,7 +13,7 @@ List of profiles that define constrains on FHIR resources for systems conforming
 |Resource Type|Profile Name|Link to Profile|
 |---|---|---|
 |Bundle|Risk Adjustment Bundle Profile|[Risk Adjustment Bundle]|
-|Bundle|Risk Adjustment Bundle Composition Profile|[Risk Adjustment Composition]|
+|Bundle|Risk Adjustment Composition Profile|[Risk Adjustment Composition]|
 |Bundle|Risk Adjustment DetectedIssue Profile|[Risk Adjustment DetectedIssue]|
 
 

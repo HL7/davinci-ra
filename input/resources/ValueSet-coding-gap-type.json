@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "date": "2022-04-07",
+  "name": "CodingGapTypeValueSet",
+  "id": "coding-gap-type",
+  "title": "Risk Adjustment Coding Gap Type Value Set",
+  "description": "This is draft Risk Adjustment Coding Gap Type Value Set that is under development",
+  "version": "0.1.0",
+  "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-type",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-type"
+      }
+    ]
+  }
+}
