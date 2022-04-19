@@ -2556,7 +2556,7 @@
         {
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "ra-measurereport06",
+                "id": "ra-measurereport07",
                 "meta": {
                     "profile": [
                         "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
@@ -2565,7 +2565,7 @@
                 "extension": [
                     {
                         "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline",
-                        "valueDate": "2021-12-01"
+                        "valueDate": "2022-03-31"
                     }
                 ],
                 "status": "complete",
@@ -2582,18 +2582,12 @@
                     "start": "2021-01-01",
                     "end": "2021-09-30"
                 },
-                "evaluatedResource": [
-                    {
-                        "reference": "Condition/ra-condition01"
-                    },
-                    {
-                        "reference": "Condition/ra-condition02"
-                    }
-                ]
+                "group": [],
+                "evaluatedResource": []
             },
             "request": {
                 "method": "PUT",
-                "url": "MeasureReport/ra-measurereport06"
+                "url": "MeasureReport/ra-measurereport07"
             }
         }
     ]
