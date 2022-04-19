@@ -1,0 +1,29 @@
+[
+  {
+    "_id": "9bb3ab4c-5a88-41ff-b5a9-67c5c1416b42",
+    "colName": "Risk Adjustment",
+    "created": "2022-04-19T03:25:52.387Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "8f1844e1-a7c3-447c-8afb-b9026cb9a285",
+        "name": "Config",
+        "containerId": "",
+        "created": "2022-04-19T03:27:37.098Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "dd32590a-1df8-4026-aa6a-3384f8215f98",
+        "name": "Reset",
+        "containerId": "",
+        "created": "2022-04-19T03:27:46.185Z",
+        "sortNum": 20000
+      }
+    ],
+    "settings": {
+      "headers": [],
+      "tests": [],
+      "envId": "c6dfa3b1-9a18-468c-abbe-13c4a0bca9f5"
+    }
+  }
+]
