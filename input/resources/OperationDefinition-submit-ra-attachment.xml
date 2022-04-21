@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OperationDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="submit-ra-attachment"/>
+    <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/submit-ra-attachment"/>
+    <name value="Submit Risk Adjustment Attachment"/>
+    <title value="Submit Risk Adjustment Attachment Operation"/>
+    <status value="draft"/>
+    <kind value="operation"/>
+    <date value="2022-04-21"/>
+    <publisher value="Da Vinci Project"/>
+    <description value="This operation is used to submit attachments for a risk adjustable encounter."/>
+    <code value="submit-ra-attachment"/>
+    <comment value=""/>
+    <resource value="MeasureReport"/>
+    <system value="false"/>
+    <type value="true"/>
+    <instance value="false"/>
+    <parameter>
+        <name value="encounterId"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="The risk adjustable encounter id that this attachment is needed."/>
+        <type value="string"/>
+    </parameter>
+    <parameter>
+        <name value="patientId"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="Patient identifier"/>
+        <type value="Identifier"/>
+    </parameter>
+    <parameter>
+        <name value="serviceDateStart"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="Date of service or starting date of the service for the encounter.  This parameter **SHALL** be precise to the day."/>
+        <type value="date"/>
+    </parameter>
+    <parameter>
+        <name value="serviceDateEnd"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <documentation value="Date of service or starting date of the service for the encounter.  This parameter **SHALL** be precise to the day."/>
+        <type value="date"/>
+    </parameter>
+    <parameter>
+        <name value="attachment"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="*"/>
+        <documentation value="The actual attachments as FHIR resources. Note that non-FHIR data formats are attached to or referenced by `DocumentReference`.  Servers **SHALL** support  `DocumentReference` resource type and **SHOULD** support other types."/>
+        <type value="Resource"/>
+    </parameter>
+</OperationDefinition>

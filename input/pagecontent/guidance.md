@@ -111,5 +111,3 @@ For more information, see the definition of [Must Support](http://hl7.org/fhir/R
 This implementation guide relies on the following specifications:
 - [FHIR R4](http://hl7.org/fhir/R4/)
 - [US Core STU3.1.1](http://hl7.org/fhir/us/core/STU3.1.1)
-- Da Vinci Data Exchange for Quality Measure ([DEQM](http://hl7.org/fhir/us/davinci-deqm/)) Implementation Guide.
-  - Note that the only reason that this implementation guide relies on the DEQM IG is because of the use of the DEQM reporter group extension for MeasureReport. Once the reporter group extension is promoted to the base MeasureReport resource in FHIR R5, this dependency will not longer be needed.

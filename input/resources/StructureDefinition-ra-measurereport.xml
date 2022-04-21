@@ -84,17 +84,6 @@
       </type>
       <mustSupport value="true"/>
     </element>
-    <element id="MeasureReport.reporter.extension:group">
-      <path value="MeasureReport.reporter.extension"/>
-      <sliceName value="group"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reporterGroup"/>
-      </type>
-      <mustSupport value="true"/>
-    </element>
     <element id="MeasureReport.period">
       <path value="MeasureReport.period"/>
       <short value="Clinical evaluation period during which risk adjusting encounters could be conducted and documented with expectations of submission for risk adjustment purposes."/>
