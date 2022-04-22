@@ -1,10 +1,4 @@
 
-<div markdown="1" class="bg-info">
-
-{{ site.data.package-list.list[0].desc }}
-
-</div>
-
 ###  Summary
 
 The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide describes exchanging risk adjustment coding gaps between payers and providers. Risk adjusted premium calculations are important to government managed care. To better inform providers of opportunities to address risk adjusted conditions, better enable payers to communicate risk adjustment information, and enhance government sponsors' ability to allocate funding accurately, payers and providers need a standard protocol to share and receive clinical data related to risk adjustment and a standard methodology to communicate risk based coding, documentation and submission status of chronic conditions. The STU1 of this implementation guide focuses on the standard exchange format of risk adjustment coding gaps from payers to providers, it offers potential for reducing administrative burden experienced by providers by standardizing the reporting they receive from all payers.
