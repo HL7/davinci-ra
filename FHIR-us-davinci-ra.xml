@@ -73,7 +73,7 @@
 <artifact id="Practitioner/ra-prac01pat01" key="Practitioner-ra-prac01pat01" name="Practitioner: Harold Hippocrates"/>
 <artifact id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner: Otto Osler"/>
 <artifact id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner: Patrick Pump"/>
-<artifact id="StructureDefinition/extension-codingGapType" key="StructureDefinition-extension-codingGapType" name="RA Coding Gap Status Modifier Extension"/>
+<artifact id="StructureDefinition/extension-codingGapType" key="StructureDefinition-extension-codingGapType" name="RA Coding Gap Type Modifier Extension"/>
 <artifact id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
 <artifact id="StructureDefinition/ra-bundle" key="StructureDefinition-ra-bundle" name="Risk Adjustment Bundle Profile"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
