@@ -598,8 +598,13 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="guidance.html"/>
-        <title value="Guidance"/>
+        <nameUrl value="guidance-risk-adjustment-gap-reporting.html"/>
+        <title value="Guidance - Risk Adjustment Gap Reporting"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="guidance-risk-adjustment-gap-response.html"/>
+        <title value="Guidance - Risk Adjustment Gap Response"/>
         <generation value="markdown"/>
       </page>
       <page>

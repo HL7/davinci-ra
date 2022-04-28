@@ -17,6 +17,18 @@
     <type value="true"/>
     <instance value="false"/>
     <parameter>
+        <name value="attachTo"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="Whether the additional information is needed for an risk adjustable encounter."/>
+        <!-- <binding>
+          <strength value="extensible"/>
+          <valueSet value="http://hl7.org/fhir/us/davinci-deqm/ValueSet/gaps-status"/>
+        </binding> -->
+        <type value="code"/>
+    </parameter>
+    <parameter>
         <name value="encounterId"/>
         <use value="in"/>
         <min value="1"/>

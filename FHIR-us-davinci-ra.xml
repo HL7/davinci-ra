@@ -121,7 +121,9 @@
 <page key="examples" name="Examples"/>
 <page key="extensions" name="Extensions"/>
 <page key="glossary" name="Glossary"/>
-<page key="guidance" name="Guidance"/>
+<page deprecated="true" key="guidance" name="Guidance"/>
+<page key="guidance-risk-adjustment-gap-reporting" name="Guidance - Risk Adjustment Gap Reporting"/>
+<page key="guidance-risk-adjustment-gap-response" name="Guidance - Risk Adjustment Gap Response"/>
 <page key="operations" name="Operation"/>
 <page key="profiles" name="Profiles"/>
 <page key="toc" name="Table of Contents"/>
