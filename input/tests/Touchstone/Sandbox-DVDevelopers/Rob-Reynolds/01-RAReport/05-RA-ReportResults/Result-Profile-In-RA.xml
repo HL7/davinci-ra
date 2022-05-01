@@ -47,7 +47,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="Get all gaps for variable parameters. All $report operations are performed using the FHIR Operation Framework HTTP GET method with url inline parameters. Preconditions: Server has pre-loaded the Clinical Reasoning standard test data set patient and measure data for the patient.  The request is for json format as a default."/>
+  <description value="Test Conformance to profiles."/>
   <copyright value="(c) AEGIS.net, Inc. 2021"/>
   <origin>
     <index value="1" />
@@ -63,51 +63,70 @@
       <code value="FHIR-Server" />
     </profile>
   </destination>
+  <profile id="RABundleProfile">
+    <reference value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-bundle"/>
+  </profile>
+  <profile id="RACompositionProfile">
+    <reference value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-composition"/>
+  </profile>
   <profile id="RAMeasureReportProfile">
     <reference value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
   </profile>
-  <profile id="ParametersProfileBase">
-    <reference value="http://hl7.org/fhir/StructureDefinition/Parameters"/>
+  <profile id="RADetectedIssueProfile">
+    <reference value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-detectedissue"/>
   </profile>
   <variable>
-    <name value="periodStart"/>
-    <defaultValue value="2021-01-01"/>
-    <description value="Default start of a gaps through period."/>
+    <name value="bundleId"/>
+    <defaultValue value="Result-Profile-In-RA"/>
+    <description value="Enter a resource id for a valid Bundle on the destination system."/>
   </variable>
   <variable>
-    <name value="periodEnd"/>
-    <defaultValue value="2021-12-31"/>
-    <description value="Default end of a gaps through period."/>
+    <name value="expectedNumBundleEntries"/>
+    <defaultValue value="6"/>
+    <description value="Number of expected Bundle entries in response.  Will be validated in the test."/>
   </variable>
   <variable>
-    <name value="subject"/>
-    <defaultValue value="Patient/ra-patient01"/>
-    <description value="Patient subject."/>
+    <name value="expectedNumCompositions"/>
+    <defaultValue value="1"/>
+    <description value="Number of expected Composition resources in response.  Will be validated in the test."/>
   </variable>
   <variable>
-    <name value="expectedNumReports"/>
+    <name value="expectedNumMeasureReports"/>
     <defaultValue value="1"/>
     <description value="Number of expected MeasureReport resources in response.  Will be validated in the test."/>
   </variable>
-  <test id="Result-One-In">
-    <name value="Result-One-In"/>
-    <description value="Query for the gaps in care using subject/Patient in parameters. Expected response is 200 (OK)."/>
+  <variable>
+    <name value="expectedNumDetectedIssues"/>
+    <defaultValue value="1"/>
+    <description value="Number of expected DetectedIssues resources in response.  Will be validated in the test."/>
+  </variable>
+  <variable>
+    <name value="expectedNumPatients"/>
+    <defaultValue value="1"/>
+    <description value="Number of expected Patient resources in response.  Will be validated in the test."/>
+  </variable>
+  <variable>
+    <name value="expectedNumEvaluatedResources"/>
+    <defaultValue value="3"/>
+    <description value="Number of expected evaluatedResources resources in MeasureReport.  Will be validated in the test."/>
+  </variable>
+  <test id="Result-Profile-In">
+    <name value="Result-Profile-In"/>
+    <description value="Query for the RA Bundles. Expected response is 200 (OK)."/>
     <action>
       <operation>
         <type>
-          <system value="http://touchstone.com/fhir/testscript-operation-codes-extended"/>
-          <code value="report"/>
+          <system value="http://terminology.hl7.org/CodeSystem/testscript-operation-codes"/>
+          <code value="read"/>
         </type>
-        <resource value="MeasureReport"/>
-        <description value="Run the $report operation."/>
+        <resource value="Bundle"/>
+        <description value="Bundle read operation with HTTP Header Accept set to JSON format."/>
         <accept value="json"/>
-        <contentType value="json"/>
-        <destination value="1" />
+        <destination value="1"/>
         <encodeRequestUrl value="true"/>
-        <method value="get"/>
-        <origin value="1" />
-        <params value="/$report?periodStart=${periodStart}&amp;periodEnd=${periodEnd}&amp;subject=${subject}"/>
-        <responseId value="searchResponse"/>
+        <origin value="1"/>
+        <params value="/${BundleId}"/>
+        <responseId value="ReadBundleResponse"/>
       </operation>
     </action>
     <action>
@@ -166,9 +185,9 @@
         <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
           <valueBoolean value="false"/>
         </extension>
-        <description value="Confirm that the returned resource type is a Parameters."/>
+        <description value="Confirm that the returned resource type is a Bundle."/>
         <direction value="response"/>
-        <resource value="Parameters"/>
+        <resource value="Bundle"/>
         <warningOnly value="false"/>
       </assert>
     </action>
@@ -177,9 +196,9 @@
         <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
           <valueBoolean value="false"/>
         </extension>
-        <description value="Validate the response Parameters. Warning only to allow for review of results."/>
+        <description value="Validate the response Bundle profile."/>
         <direction value="response"/>
-        <validateProfileId value="ParametersProfileBase"/>
+        <validateProfileId value="RABundleProfile"/>
         <warningOnly value="false"/>
       </assert>
     </action>
@@ -188,24 +207,11 @@
         <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
           <valueBoolean value="false"/>
         </extension>
-        <description value="Confirm the returned Bundle profile"/>
-        <direction value="response"/>
-        <operator value="equals"/>        
-        <path value="Parameters.parameter.resource.meta.profile"/>
-        <value value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle"/>
-        <warningOnly value="false"/>
-      </assert>
-    </action>
-    <action>
-      <assert>
-        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
-          <valueBoolean value="false"/>
-        </extension>
-        <description value="Confirm that the returned Bundle type is Collection."/>
+        <description value="Confirm the returned Composition profile"/>
         <direction value="response"/>
         <operator value="equals"/>
-        <path value="Parameters.parameter.resource.type"/>
-        <value value="collection"/>
+        <path value="Bundle.entry[0].meta.profile"/>
+        <value value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-composition"/>
         <warningOnly value="false"/>
       </assert>
     </action>
@@ -214,11 +220,11 @@
         <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
           <valueBoolean value="false"/>
         </extension>
-        <description value="Verify that there are the number of report resources expected in the response"/>
+        <description value="Confirm the returned MeasureReport profile"/>
         <direction value="response"/>
-        <expression value="Parameters.parameter.resource.entry.resource.where(ofType(MeasureReport)).count()"/>
         <operator value="equals"/>
-        <value value="${expectedNumReports}"/>
+        <path value="Bundle.entry[1].meta.profile"/>
+        <value value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
         <warningOnly value="false"/>
       </assert>
     </action>
@@ -227,11 +233,24 @@
         <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
           <valueBoolean value="false"/>
         </extension>
-        <description value="Verify that there are the number of parameter elements expected in the response"/>
+        <description value="Confirm the returned DetectedIssue profile"/>
         <direction value="response"/>
-        <expression value="Parameters.parameter.count()"/>
         <operator value="equals"/>
-        <value value="1"/>
+        <path value="Bundle.entry[2].meta.profile"/>
+        <value value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-detectedissue"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Confirm that the returned Bundle type is Document."/>
+        <direction value="response"/>
+        <operator value="equals"/>
+        <path value="Bundle.type"/>
+        <value value="document"/>
         <warningOnly value="false"/>
       </assert>
     </action>
@@ -242,9 +261,74 @@
         </extension>
         <description value="Verify that there are the number of Bundle entries expected in the response"/>
         <direction value="response"/>
-        <expression value="Parameters.parameter.resource.entry.count()"/>
+        <expression value="Bundle.entry.count()"/>
         <operator value="equals"/>
-        <value value="21"/>
+        <value value="${expectedNumBundleEntries}"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Verify that there are the number of Composition resources expected in the response"/>
+        <direction value="response"/>
+        <expression value="Bundle.entry.resource.where(ofType(Composition)).count()"/>
+        <operator value="equals"/>
+        <value value="${expectedNumCompositions}"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Verify that there are the number of MeasureReport resources expected in the response"/>
+        <direction value="response"/>
+        <expression value="Bundle.entry.resource.where(ofType(MeasureReport)).count()"/>
+        <operator value="equals"/>
+        <value value="${expectedNumMeasureReports}"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Verify that there are the number of DetectedIssue resources expected in the response"/>
+        <direction value="response"/>
+        <expression value="Bundle.entry.resource.where(ofType(DetectedIssue)).count()"/>
+        <operator value="equals"/>
+        <value value="${expectedNumDetectedIssues}"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Verify that there are the number of Patient resources expected in the response"/>
+        <direction value="response"/>
+        <expression value="Bundle.entry.resource.where(ofType(Patient)).count()"/>
+        <operator value="equals"/>
+        <value value="${expectedNumPatients}"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Verify that there are the number of evaluatedResource elements expected in the MeasureReport"/>
+        <direction value="response"/>
+        <expression value="Bundle.entries.count()"/>
+        <operator value="equals"/>
+        <value value="${expectedNumEvaluatedResources}"/>
         <warningOnly value="false"/>
       </assert>
     </action>
