@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestScript xmlns="http://hl7.org/fhir">
+  <id value="Result-EvaluatedResources-Count-In-RA"/>
+  <meta>
+    <profile value="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Result-EvaluatedResources-Count-In-RA-json</p>
+    </div>
+  </text>
+  <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-rule">
+    <extension url="ruleId">
+      <valueId value="assert-by-path"/>
+    </extension>
+    <extension url="path">
+      <valueString value="/FHIRCommon/_reference/rule/AssertValidateJSONExtractProfileId.groovy"/>
+    </extension>
+    <extension url="param">
+      <extension url="name">
+        <valueString value="jsonPath"/>
+      </extension>
+      <extension url="value">
+        <valueString value="$.entry[?(@.resource.resourceType == 'MeasureReport')].resource"/>
+      </extension>
+    </extension>
+    <extension url="param">
+      <extension url="name">
+        <valueString value="profileId"/>
+      </extension>
+      <extension url="value">
+        <valueString value="RAMeasureReportProfile"/>
+      </extension>
+    </extension>
+  </extension>
+  <url value="http://wildfhir.aegis.net/fhir4-0-1/TestScript/Result-EvaluatedResources-Count-In-RA"/>
+  <name value="Result-EvaluatedResources-Count-In-RA-json"/>
+  <status value="active"/>
+  <date value="2021-06-22"/>
+  <publisher value="AEGIS.net, Inc."/>
+  <contact>
+    <name value="Touchstone Support"/>
+    <telecom>
+      <system value="email"/>
+      <value value="Touchstone_Support@aegis.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Get MeasureReport result. All $report operations are performed using the FHIR Operation Framework HTTP GET method with url inline parameters. Preconditions: Server has pre-loaded the Clinical Reasoning standard test data set patient and measure data for the patient.  The request is for json format as a default."/>
+  <copyright value="(c) AEGIS.net, Inc. 2021"/>
+  <origin>
+    <index value="1" />
+    <profile>
+      <system value="http://hl7.org/fhir/testscript-profile-origin-types" />
+      <code value="FHIR-Client" />
+    </profile>
+  </origin>
+  <destination>
+    <index value="1" />
+    <profile>
+      <system value="http://hl7.org/fhir/testscript-profile-destination-types" />
+      <code value="FHIR-Server" />
+    </profile>
+  </destination>
+  <profile id="RAMeasureReportProfile">
+    <reference value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
+  </profile>
+  <profile id="ParametersProfileBase">
+    <reference value="http://hl7.org/fhir/StructureDefinition/Parameters"/>
+  </profile>
+  <variable>
+    <name value="periodStart"/>
+    <defaultValue value="2021-01-01"/>
+    <description value="Default start of a gaps through period."/>
+  </variable>
+  <variable>
+    <name value="periodEnd"/>
+    <defaultValue value="2021-12-31"/>
+    <description value="Default end of a gaps through period."/>
+  </variable>
+  <variable>
+    <name value="subject"/>
+    <defaultValue value="Patient/result-evaluatedresources-count-in-ra"/>
+    <description value="Patient subject."/>
+  </variable>
+  <test id="Result-EvaluatedResources-Count-In">
+    <name value="Result-EvaluatedResources-Count-In"/>
+    <description value="Query for the Risk Adjustment MeasureReport using subject/Patient in parameters. Expected response is 200 (OK)."/>
+    <action>
+      <operation>
+        <type>
+          <system value="http://touchstone.com/fhir/testscript-operation-codes-extended"/>
+          <code value="report"/>
+        </type>
+        <resource value="MeasureReport"/>
+        <description value="Run the $report operation."/>
+        <accept value="json"/>
+        <contentType value="json"/>
+        <destination value="1" />
+        <encodeRequestUrl value="true"/>
+        <method value="get"/>
+        <origin value="1" />
+        <params value="/$report?periodStart=${periodStart}&amp;periodEnd=${periodEnd}&amp;subject=${subject}"/>
+        <responseId value="searchResponse"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="Confirm that the request HTTP Header Accept format is the FHIR mime-type 'application/fhir+json'."/>
+        <direction value="request"/>
+        <headerField value="Accept"/>
+        <operator value="contains"/>
+        <value value="application/fhir+json"/>
+        <warningOnly value="true"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <description value="Confirm that the request HTTP Header Accept contains 'charset=utf-8'."/>
+        <direction value="request"/>
+        <headerField value="Accept"/>
+        <operator value="contains"/>
+        <value value="charset=utf-8"/>
+        <warningOnly value="true"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Confirm that the returned HTTP status is 200(OK)."/>
+        <direction value="response"/>
+        <response value="okay"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <description value="Confirm that the response HTTP Header Content-Type format is the FHIR mime-type 'application/fhir+json'."/>
+        <direction value="response"/>
+        <headerField value="Content-Type"/>
+        <operator value="contains"/>
+        <value value="application/fhir+json"/>
+        <warningOnly value="true"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <description value="Confirm that the response HTTP Header Content-Type contains 'charset=utf-8'."/>
+        <direction value="response"/>
+        <headerField value="Content-Type"/>
+        <operator value="contains"/>
+        <value value="charset=utf-8"/>
+        <warningOnly value="true"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Confirm that the returned resource type is a Parameters."/>
+        <direction value="response"/>
+        <resource value="Parameters"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Validate the response Parameters. Warning only to allow for review of results."/>
+        <direction value="response"/>
+        <validateProfileId value="ParametersProfileBase"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Confirm the returned Bundle profile"/>
+        <direction value="response"/>
+        <operator value="equals"/>
+        <path value="Parameters.parameter.resource.meta.profile"/>
+        <value value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Confirm that the returned Bundle type is Collection."/>
+        <direction value="response"/>
+        <operator value="equals"/>
+        <path value="Parameters.parameter.resource.type"/>
+        <value value="collection"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Verify that there are the number of patient resources expected in the response"/>
+        <direction value="response"/>
+        <expression value="Parameters.parameter.resource.entry.count() - Parameters.parameter.resource.entry.resource.where(ofType(MeasureReport)).count() - Parameters.parameter.resource.entry.resource.where(ofType(MeasureReport)).evaluatedResource.count()"/>
+        <operator value="equals"/>
+        <value value="0"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+  </test>
+</TestScript>
