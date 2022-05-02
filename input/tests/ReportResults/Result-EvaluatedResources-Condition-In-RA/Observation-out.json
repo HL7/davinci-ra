@@ -1,6 +1,6 @@
 {
   "resourceType" : "Observation",
-  "id" : "ra-obs21xpat01",
+  "id" : "result-evaluatedresources-condition-in-ra-out",
   "meta" : {
     "extension" : [
       {
@@ -40,7 +40,7 @@
     "text" : "Sodium [Moles/volume] in Serum or Plasma"
   },
   "subject" : {
-    "reference" : "Patient/ra-patient01",
+    "reference" : "Patient/result-evaluatedresources-condition-in-ra",
     "display" : "Eve Everywoman"
   },
   "effectiveDateTime" : "2019-06-17",

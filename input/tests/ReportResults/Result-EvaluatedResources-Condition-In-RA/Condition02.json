@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "ra-condition18xpat01",
+  "id": "result-evaluatedresources-condition-in-ra-02",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
@@ -42,14 +42,14 @@
     "coding": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "code": "J10.1",
-        "display": "Influenza with other respiratory manifestations, seasonal influenza virus identified"
+        "code": "E08.29",
+        "display": "Diabetes mellitus due to underlying condition with other diabetic kidney complication"
       }
     ],
-    "text": "J10.1: Influenza with other respiratory manifestations, seasonal influenza virus identified"
+    "text": "E08.29: Diabetes mellitus due to underlying condition with other diabetic kidney complication"
   },
   "subject": {
-    "reference": "Patient/ra-patient01"
+    "reference": "Patient/result-evaluatedresources-condition-in-ra"
   },
-  "onsetDateTime": "2021-09-26"
+  "onsetDateTime": "2019-02-10"
 }

@@ -77,7 +77,7 @@
   </profile>
   <variable>
     <name value="bundleId"/>
-    <defaultValue value="Result-Profile-In-RA"/>
+    <defaultValue value="result-profile-in-ra"/>
     <description value="Enter a resource id for a valid Bundle on the destination system."/>
   </variable>
   <variable>

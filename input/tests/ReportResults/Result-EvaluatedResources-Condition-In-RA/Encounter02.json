@@ -1,14 +1,14 @@
 {
 	"resourceType": "Encounter",
-	"id": "ra-encounter43xpat01",
+	"id": "result-evaluatedresources-condition-in-ra-02",
 	"meta": {
 		"extension": [{
 				"url": "http://hl7.org/fhir/StructureDefinition/instance-name",
-				"valueString": "Encounter with Dr Smith on 20210810 for Patient 01"
+				"valueString": "Encounter with Dr Howell on 20210714 for Patient 01"
 			},
 			{
 				"url": "http://hl7.org/fhir/StructureDefinition/instance-description",
-				"valueMarkdown": "This is Encounter with Dr Smith on 20210810 for Patient 01."
+				"valueMarkdown": "This is Encounter with Dr Howell on 20210714 for Patient 01."
 			}
 		],
 		"lastUpdated": "2019-03-13T11:56:57.250-04:00",
@@ -30,25 +30,25 @@
 		"text": "Office Visit, High Complexity"
 	}],
 	"subject": {
-		"reference": "Patient/ra-patient01"
+		"reference": "Patient/result-evaluatedresources-condition-in-ra"
 	},
 
 	"participant": [{
 		"individual": {
-			"reference": "Practitioner/ra-prac01pat01"
+			"reference": "Practitioner/result-evaluatedresources-condition-in-ra"
 		}
 	}],
 	"diagnosis": [{
 			"condition": {
-				"reference": "Condition/ra-condition43pat01"
+				"reference": "Condition/result-evaluatedresources-condition-in-ra-02"
 			}
 		}
 	],
 	"period": {
-		"start": "2021-08-10",
-		"end": "2021-08-10"
+		"start": "2019-02-10",
+		"end": "2019-02-10"
 	},
 	"serviceProvider": {
-		"reference": "Organization/ra-org01pat01"
+		"reference": "Organization/result-evaluatedresources-condition-in-ra"
 	}
 }

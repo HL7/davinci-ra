@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "Result-Profile-In-RA",
+  "id": "result-profile-in-ra",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-bundle"
@@ -14,10 +14,10 @@
   "timestamp": "2022-05-01T13:02:53+00:00",
   "entry": [
     {
-      "fullUrl": "http://example.org/fhir/ra/Composition/ra-result-profile-in-composition",
+      "fullUrl": "http://example.org/fhir/ra/Composition/result-profile-in-ra",
       "resource": {
         "resourceType": "Composition",
-        "id": "ra-result-profile-in-composition",
+        "id": "result-profile-in-ra",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-composition"
@@ -34,12 +34,12 @@
           ]
         },
         "subject": {
-          "reference": "Patient/ra-result-profile-in-patient"
+          "reference": "Patient/result-profile-in-ra"
         },
         "date": "2022-05-01T13:02:53+00:00",
         "author": [
           {
-            "reference": "Organization/ra-result-profile-in-organization-author"
+            "reference": "Organization/result-profile-in-ra-author"
           }
         ],
         "title": "Risk Adjustment Bundle for patient ra-result-profile-in-patient",
@@ -47,11 +47,11 @@
           {
             "title": "Risk Adjustment Report",
             "focus": {
-              "reference": "MeasureReport/ra-result-profile-in-measurereport"
+              "reference": "MeasureReport/result-profile-in-ra"
             },
             "entry": [
               {
-                "reference": "DetectedIssue/ra-result-profile-in-detectedissue"
+                "reference": "DetectedIssue/result-profile-in-ra"
               }
             ]
           }
@@ -59,9 +59,10 @@
       }
     },
     {
+      "fullUrl": "http://example.org/fhir/ra/MeasureReport/result-profile-in-ra",
       "resource": {
         "resourceType": "MeasureReport",
-        "id": "ra-result-profile-in-measurereport",
+        "id": "result-profile-in-ra",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
@@ -77,11 +78,11 @@
         "type": "individual",
         "measure": "https://build.fhir.org/ig/HL7/davinci-ra/Measure-RAModelExample01",
         "subject": {
-          "reference": "Patient/ra-result-profile-in-patient"
+          "reference": "Patient/result-profile-in-ra"
         },
         "date": "2021-10-18",
         "reporter": {
-          "reference": "Organization/ra-result-profile-in-organization-reporter"
+          "reference": "Organization/result-profile-in-ra-reporter"
         },
         "period": {
           "start": "2021-01-01",
@@ -150,7 +151,7 @@
                 "valueString": "group-001"
               }
             ],
-            "reference": "Patient/ra-result-profile-in-patient"
+            "reference": "Patient/result-profile-in-ra"
           },
           {
             "extension": [
@@ -159,7 +160,7 @@
                 "valueString": "group-001"
               }
             ],
-            "reference": "Condition/ra-result-profile-in-condition"
+            "reference": "Condition/result-profile-in-ra"
           },
           {
             "extension": [
@@ -168,20 +169,16 @@
                 "valueString": "group-001"
               }
             ],
-            "reference": "Encounter/ra-result-profile-in-encounter"
+            "reference": "Encounter/result-profile-in-ra"
           }
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "MeasureReport/ra-result-profile-in-measurereport"
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/gaps/DetectedIssue/ra-result-profile-in-detectedissue",
+      "fullUrl": "http://example.org/fhir/gaps/DetectedIssue/result-profile-in-ra",
       "resource": {
         "resourceType": "DetectedIssue",
-        "id": "ra-result-profile-in-detectedissue",
+        "id": "result-profile-in-ra",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-detectedissue"
@@ -217,13 +214,13 @@
           ]
         },
         "patient": {
-          "reference": "Patient/ra-result-profile-in-patient"
+          "reference": "Patient/result-profile-in-ra"
         },
         "evidence": [
           {
             "detail": [
               {
-                "reference": "MeasureReport/ra-result-profile-in-measurereport"
+                "reference": "MeasureReport/result-profile-in-ra"
               }
             ]
           }
@@ -231,10 +228,10 @@
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/ra/Patient/ra-result-profile-in-patient",
+      "fullUrl": "http://example.org/fhir/ra/Patient/result-profile-in-ra",
       "resource": {
         "resourceType": "Patient",
-        "id": "ra-result-profile-in-patient",
+        "id": "result-profile-in-ra",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
@@ -305,9 +302,10 @@
       }
     },
     {
+      "fullUrl": "http://example.org/fhir/ra/Condition/result-profile-in-ra",
       "resource": {
         "resourceType": "Condition",
-        "id": "ra-result-profile-in-condition",
+        "id": "result-profile-in-ra",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
@@ -356,19 +354,16 @@
           "text": "Bipolar disorder, current episode mixed, mild"
         },
         "subject": {
-          "reference": "Patient/ra-result-profile-in-patient"
+          "reference": "Patient/result-profile-in-ra"
         },
         "onsetDateTime": "2017-02-03"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Condition/ra-result-profile-in-condition"
       }
     },
     {
+      "fullUrl": "http://example.org/fhir/ra/Encounter/result-profile-in-ra",
       "resource": {
         "resourceType": "Encounter",
-        "id": "ra-result-profile-in-encounter",
+        "id": "result-profile-in-ra",
         "meta": {
           "extension": [
             {
@@ -403,19 +398,19 @@
           }
         ],
         "subject": {
-          "reference": "Patient/ra-result-profile-in-patient"
+          "reference": "Patient/result-profile-in-ra"
         },
         "participant": [
           {
             "individual": {
-              "reference": "Practitioner/ra-result-profile-in-practitioner"
+              "reference": "Practitioner/result-profile-in-ra"
             }
           }
         ],
         "diagnosis": [
           {
             "condition": {
-              "reference": "Condition/ra-result-profile-in-condition"
+              "reference": "Condition/result-profile-in-ra"
             }
           }
         ],
@@ -424,12 +419,8 @@
           "end": "2017-02-03"
         },
         "serviceProvider": {
-          "reference": "Organization/ra-result-profile-in-organization"
+          "reference": "Organization/result-profile-in-ra"
         }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Encounter/ra-result-profile-in-encounter"
       }
     }
   ]
