@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition
-    xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ra-detectedissue"/>
     <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-detectedissue"/>
     <name value="RADetectedIssueProfile"/>
@@ -19,42 +18,42 @@
         <element id="DetectedIssue">
             <path value="DetectedIssue"/>
         </element>
-        <element id="DetectedIssue.modifierExtension:codingGapType">
-           <path value="DetectedIssue.modifierExtension"/>
-           <sliceName value="codingGapType"/>
-           <min value="1"/>
-           <max value="1"/>
-           <type>
-             <code value="Extension"/>
-             <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-codingGapType"/>
-           </type>
-           <mustSupport value="true"/>
-           <isModifier value="true"/>
-           <isModifierReason value="Type of the detected coding gap"/>
-        </element>
         <element id="DetectedIssue.extension:groupReference">
-          <path value="DetectedIssue.extension"/>
-          <sliceName value="groupReference"/>
-          <short value="This id references the `MeasureReport.group.id`, which allows linking a detected issue to a specific Condition Category (CC) coding gap. (Discussion Note: reference to group id is requried so a detected issue can be linked to a specific HCC, the cardinality is 1..1)"/>
-          <min value="1"/>
-          <max value="1"/>
-          <type>
-            <code value="Extension"/>
-            <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference"/>
-          </type>
-          <mustSupport value="true"/>
+            <path value="DetectedIssue.extension"/>
+            <sliceName value="groupReference"/>
+            <short value="This id references the `MeasureReport.group.id`, which allows linking a detected issue to a specific Condition Category (CC) coding gap. (Discussion Note: reference to group id is requried so a detected issue can be linked to a specific HCC, the cardinality is 1..1)"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DetectedIssue.modifierExtension:codingGapType">
+            <path value="DetectedIssue.modifierExtension"/>
+            <sliceName value="codingGapType"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-codingGapType"/>
+            </type>
+            <mustSupport value="true"/>
+            <isModifier value="true"/>
+            <isModifierReason value="Type of the detected coding gap"/>
         </element>
         <element id="DetectedIssue.code">
-          <path value="DetectedIssue.code"/>
-          <min value="1"/>
-          <fixedCodeableConcept>
-              <coding>
-                  <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-                  <code value="CODINGGAP"/>
-                  <display value="Coding Gaps"/>
-              </coding>
-          </fixedCodeableConcept>
-          <mustSupport value="true"/>
+            <path value="DetectedIssue.code"/>
+            <min value="1"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                    <code value="CODINGGAP"/>
+                    <display value="Coding Gaps"/>
+                </coding>
+            </fixedCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="DetectedIssue.patient">
             <path value="DetectedIssue.patient"/>
@@ -70,7 +69,7 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-<!--
+        <!--
         <element id="DetectedIssue.evidence.detail">
             <path value="DetectedIssue.evidence.detail"/>
             <type>

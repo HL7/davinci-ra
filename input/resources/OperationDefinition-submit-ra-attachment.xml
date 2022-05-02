@@ -3,7 +3,7 @@
     xmlns="http://hl7.org/fhir">
     <id value="submit-ra-attachment"/>
     <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/submit-ra-attachment"/>
-    <name value="Submit Risk Adjustment Attachment"/>
+    <name value="Submit_RA_Attachment"/>
     <title value="Submit Risk Adjustment Attachment Operation"/>
     <status value="draft"/>
     <kind value="operation"/>
