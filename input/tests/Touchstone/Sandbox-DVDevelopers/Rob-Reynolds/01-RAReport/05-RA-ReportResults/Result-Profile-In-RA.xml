@@ -125,7 +125,7 @@
         <destination value="1"/>
         <encodeRequestUrl value="true"/>
         <origin value="1"/>
-        <params value="/${BundleId}"/>
+        <params value="/${bundleId}"/>
         <responseId value="ReadBundleResponse"/>
       </operation>
     </action>

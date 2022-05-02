@@ -47,7 +47,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="Test Conformance to profiles."/>
+  <description value="Test that duplicate Bundle entries cause and error."/>
   <copyright value="(c) AEGIS.net, Inc. 2021"/>
   <origin>
     <index value="1" />
