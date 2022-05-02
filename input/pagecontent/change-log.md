@@ -1,9 +1,6 @@
 
 The Risk Adjustment Implementation Guide was developed under the  [Davinci Project](#)
 
-### Version 0.1.0
-Initial content for STU1 ballot.
-
 ### version 1.0.0
 **Status**: **Summary** (**Jira Issue**)
 
@@ -17,6 +14,7 @@ Ballot Comments
 1. **Applied**: Over-specific precondition for patient resource logical id ([FHIR-34708](https://jira.hl7.org/browse/FHIR-34708))
 1. **Applied**: Cardinality confusion for MeasureReport.group.code ([FHIR-34711](https://jira.hl7.org/browse/FHIR-34711))
 1. **Applied**: extracted diagnosis data element missing background ([FHIR-34696](https://jira.hl7.org/browse/FHIR-34696))
+1. **Applied**: Figure 1-2 Workflow for Medicare Advantage Population, Phase One misses the preceding step where provider sends initial diagnostic/condition codes before risk coding report is generated. ([FHIR-34778](https://jira.hl7.org/browse/FHIR-34778))
 1. **Applied**: plural possessive ([FHIR-34695](https://jira.hl7.org/browse/FHIR-34695))
 1. **Applied**: actor names ([FHIR-34698](https://jira.hl7.org/browse/FHIR-34698))
 1. **Applied**: Typo in Intro ([FHIR-34501](https://jira.hl7.org/browse/FHIR-34501))
@@ -32,5 +30,7 @@ Other Trackers
 1. **Applied**: Change to Condition Category (CC) gap instead of HCC gap in SuspectType definitions ([FHIR-36024](https://jira.hl7.org/browse/FHIR-36024))
 1. **Applied**: Typo in 1.4 Scope text ([FHIR-35971](https://jira.hl7.org/browse/FHIR-35971))
 
+### Version 0.1.0
+Initial content for STU1 ballot.
 
 {% include link-list.md %}
