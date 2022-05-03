@@ -69,7 +69,6 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <!--
         <element id="DetectedIssue.evidence.detail">
             <path value="DetectedIssue.evidence.detail"/>
             <type>
@@ -77,14 +76,14 @@
                 <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
             </type>
             <min value="1"/>
-            <max value="1"/>
             <mustSupport value="true"/>
-        </element> -->
+        </element>
+    <!--
         <element id="DetectedIssue.detail">
             <path value="DetectedIssue.detail"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
-        </element>
+        </element> -->
     </differential>
 </StructureDefinition>
