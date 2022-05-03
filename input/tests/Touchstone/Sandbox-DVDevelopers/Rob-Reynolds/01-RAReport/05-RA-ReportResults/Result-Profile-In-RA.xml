@@ -82,7 +82,7 @@
   </variable>
   <variable>
     <name value="expectedNumBundleEntries"/>
-    <defaultValue value="6"/>
+    <defaultValue value="7"/>
     <description value="Number of expected Bundle entries in response.  Will be validated in the test."/>
   </variable>
   <variable>
