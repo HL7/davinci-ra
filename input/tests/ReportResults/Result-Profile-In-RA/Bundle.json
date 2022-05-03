@@ -29,7 +29,7 @@
             {
               "system": "http://loinc.org",
               "code": "96315-7",
-              "display": "Gaps in care report"
+              "display": "Gaps in care report (TODO: this is a placeholder, need a new LOINC code for risk coding gap report)"
             }
           ]
         },
@@ -175,7 +175,7 @@
       }
     },
     {
-      "fullUrl": "http://example.org/fhir/gaps/DetectedIssue/result-profile-in-ra",
+      "fullUrl": "http://example.org/fhir/ra/DetectedIssue/result-profile-in-ra",
       "resource": {
         "resourceType": "DetectedIssue",
         "id": "result-profile-in-ra",
@@ -190,7 +190,7 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-type",
+                  "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-type",
                   "code": "gap-closure-request"
                 }
               ]

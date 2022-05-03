@@ -210,7 +210,7 @@
         <description value="Confirm the returned Composition profile"/>
         <direction value="response"/>
         <operator value="equals"/>
-        <path value="Bundle.entry[0].meta.profile"/>
+        <path value="Bundle.entry[0].resource.meta.profile"/>
         <value value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-composition"/>
         <warningOnly value="false"/>
       </assert>
@@ -223,7 +223,7 @@
         <description value="Confirm the returned MeasureReport profile"/>
         <direction value="response"/>
         <operator value="equals"/>
-        <path value="Bundle.entry[1].meta.profile"/>
+        <path value="Bundle.entry[1].resource.meta.profile"/>
         <value value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
         <warningOnly value="false"/>
       </assert>
@@ -236,7 +236,7 @@
         <description value="Confirm the returned DetectedIssue profile"/>
         <direction value="response"/>
         <operator value="equals"/>
-        <path value="Bundle.entry[2].meta.profile"/>
+        <path value="Bundle.entry[2].resource.meta.profile"/>
         <value value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-detectedissue"/>
         <warningOnly value="false"/>
       </assert>
@@ -326,7 +326,7 @@
         </extension>
         <description value="Verify that there are the number of evaluatedResource elements expected in the MeasureReport"/>
         <direction value="response"/>
-        <expression value="Bundle.entries.count()"/>
+        <expression value="Bundle.entry.resource.where(ofType(MeasureReport)).evaluatedResource.count()"/>
         <operator value="equals"/>
         <value value="${expectedNumEvaluatedResources}"/>
         <warningOnly value="false"/>
