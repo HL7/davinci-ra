@@ -35,10 +35,10 @@
                         "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
                         "version": "21",
                         "code": "188",
-                        "display": "Diabetes with Chronic Complications"
+                        "display": "Artificial Openings for Feeding or Elimination"
                     }
                 ],
-                "text": "CMS-HCC 188: Diabetes with Chronic Complications"
+                "text": "CMS-HCC 188: Artificial Openings for Feeding or Elimination"
             },
             "extension": [
                 {
@@ -87,7 +87,7 @@
                         "display": "Chronic Obstructive Pulmonary Disease"
                     }
                 ],
-                "text": "CMS-HCC 21: Chronic Obstructive Pulmonary Disease"
+                "text": "CMS-HCC 111: Chronic Obstructive Pulmonary Disease"
             },
             "extension": [
                 {
@@ -625,7 +625,7 @@
                         "display": "Vascular Disease"
                     }
                 ],
-                "text": "CMS-HCC 107: Vascular Disease"
+                "text": "CMS-HCC 108: Vascular Disease"
             },
             "extension": [
                 {

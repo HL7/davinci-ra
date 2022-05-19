@@ -14,7 +14,7 @@
 
 - [Condition01Pat03: Other artificial openings of gastrointestinal tract status]  
 - [Condition02pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication]
-- [Condition03pat01: Mild persistent asthma with (acute) exacerbation]
+- [Condition03pat01: Chronic obstructive pulmonary disease with (acute) exacerbation]
 - [Condition04Pat03: Chronic obstructive pulmonary disease with (acute) exacerbation]
 - [Condition05Pat03: Unspecified protein-calorie malnutrition]
 - [Condition06Pat03: Crohn's disease of large intestine with unspecified complications]

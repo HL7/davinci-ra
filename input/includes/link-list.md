@@ -6,7 +6,7 @@
 [Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm
 [Condition01Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition01pat03.html
 [Condition02pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication]: Condition-ra-condition02pat01.html
-[Condition03pat01: Mild persistent asthma with (acute) exacerbation]: Condition-ra-condition03pat01.html  
+[Condition03pat01: Chronic obstructive pulmonary disease with (acute) exacerbation]: Condition-ra-condition03pat01.html  
 [Condition04Pat03: Chronic obstructive pulmonary disease with (acute) exacerbation]: Condition-ra-condition04pat03.html
 [Condition05Pat03: Unspecified protein-calorie malnutrition]: Condition-ra-condition05pat03.html
 [Condition06Pat03: Crohn's disease of large intestine with unspecified complications]: Condition-ra-condition06pat03.html
