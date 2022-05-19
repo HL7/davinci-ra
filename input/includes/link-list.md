@@ -5,7 +5,7 @@
 [Clinical Evaluation Period]:glossary.html#glossary
 [Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm
 [Condition01Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition01pat03.html
-[Condition02pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication]: Condition-ra-condition02pat01.html
+[Condition02pat01: Diabetes mellitus due to underlying condition without complications]: Condition-ra-condition02pat01.html
 [Condition03pat01: Chronic obstructive pulmonary disease with (acute) exacerbation]: Condition-ra-condition03pat01.html  
 [Condition04Pat03: Chronic obstructive pulmonary disease with (acute) exacerbation]: Condition-ra-condition04pat03.html
 [Condition05Pat03: Unspecified protein-calorie malnutrition]: Condition-ra-condition05pat03.html

@@ -119,8 +119,8 @@
       <reference>
         <reference value="Condition/ra-condition02pat01"/>
       </reference>
-      <name value="Condition02pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication"/>
-      <description value="Diabetes mellitus due to underlying condition with other diabetic kidney complication"/>
+      <name value="Condition02pat01: Diabetes mellitus due to underlying condition without complications"/>
+      <description value="Diabetes mellitus due to underlying condition without complications"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

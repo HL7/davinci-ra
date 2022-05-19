@@ -13,7 +13,7 @@
 - [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]  
 
 - [Condition01Pat03: Other artificial openings of gastrointestinal tract status]  
-- [Condition02pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication]
+- [Condition02pat01: Diabetes mellitus due to underlying condition without complications]
 - [Condition03pat01: Chronic obstructive pulmonary disease with (acute) exacerbation]
 - [Condition04Pat03: Chronic obstructive pulmonary disease with (acute) exacerbation]
 - [Condition05Pat03: Unspecified protein-calorie malnutrition]

@@ -6,7 +6,7 @@
 <artifact deprecated="true" id="Condition/ra-condition01" key="Condition-ra-condition01" name="Condition01: Type 2 diabetes with unspecified manisfestations"/>
 <artifact id="Condition/ra-condition01pat03" key="Condition-ra-condition01pat03" name="Condition01pat03: Other artificial openings of gastrointestinal tract status"/>
 <artifact deprecated="true" id="Condition/ra-condition02" key="Condition-ra-condition02" name="Condition02: Major Depressive Disorder, Single episode"/>
-<artifact id="Condition/ra-condition02pat01" key="Condition-ra-condition02pat01" name="Condition02pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication"/>
+<artifact id="Condition/ra-condition02pat01" key="Condition-ra-condition02pat01" name="Condition02pat01: Diabetes mellitus due to underlying condition without complications"/>
 <artifact id="Condition/ra-condition03pat01" key="Condition-ra-condition03pat01" name="Condition03pat01: Chronic obstructive pulmonary disease with (acute) exacerbation"/>
 <artifact id="Condition/ra-condition04pat03" key="Condition-ra-condition04pat03" name="Condition04pat03: Chronic obstructive pulmonary disease with (acute) exacerbation"/>
 <artifact id="Condition/ra-condition05pat03" key="Condition-ra-condition05pat03" name="Condition05pat03: Unspecified protein-calorie malnutrition"/>
