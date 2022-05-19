@@ -31,6 +31,7 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 1. **Applied**: Example MeasureReport01 HCC Code Consistency ([FHIR-37348](https://jira.hl7.org/browse/FHIR-37348))
 1. **Applied**: Example MeasureReport04 HCC Code Consistency ([FHIR-37351](https://jira.hl7.org/browse/FHIR-37351))
 1. **Applied**: Example MeasureReport06 Links Different Patient Than EvaluatedResource ([FHIR-37354](https://jira.hl7.org/browse/FHIR-37354))
+1. **Applied**: Example MeasureReport04 Group-013 Condition May Not be Applicable ([FHIR-37352](https://jira.hl7.org/browse/FHIR-37352))
 
 ### Version 0.1.0
 Initial content for STU1 ballot.

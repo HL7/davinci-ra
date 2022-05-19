@@ -127,8 +127,8 @@
       <reference>
         <reference value="Condition/ra-condition03pat01"/>
       </reference>
-      <name value="Condition03pat01: Mild persistent asthma with (acute) exacerbation"/>
-      <description value="Mild persistent asthma with (acute) exacerbation"/>
+      <name value="Condition03pat01: Chronic obstructive pulmonary disease with (acute) exacerbation"/>
+      <description value="Chronic obstructive pulmonary disease with (acute) exacerbation"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -279,8 +279,8 @@
       <reference>
         <reference value="Condition/ra-condition35pat03"/>
       </reference>
-      <name value="Condition35pat03: Hypertension secondary to other renal disorders"/>
-      <description value="Hypertension secondary to other renal disorders"/>
+      <name value="Condition35pat03: Aneurysm of renal artery"/>
+      <description value="Aneurysm of renal artery"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
