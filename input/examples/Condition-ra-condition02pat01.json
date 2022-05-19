@@ -42,11 +42,11 @@
     "coding": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "code": "E08.9",
-        "display": "Diabetes mellitus due to underlying condition without complications"
+        "code": "E08.29",
+        "display": "Diabetes mellitus due to underlying condition with other diabetic kidney complication"
       }
     ],
-    "text": "E08.9: Diabetes mellitus due to underlying condition without complications"
+    "text": "E08.29: Diabetes mellitus due to underlying condition with other diabetic kidney complication"
   },
   "subject": {
     "reference": "Patient/ra-patient01"

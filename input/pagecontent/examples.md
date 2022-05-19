@@ -13,7 +13,7 @@
 - [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]  
 
 - [Condition01Pat03: Other artificial openings of gastrointestinal tract status]  
-- [Condition02pat01: Diabetes mellitus due to underlying condition without complications]
+- [Condition02pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication]
 - [Condition03pat01: Chronic obstructive pulmonary disease with (acute) exacerbation]
 - [Condition04Pat03: Chronic obstructive pulmonary disease with (acute) exacerbation]
 - [Condition05Pat03: Unspecified protein-calorie malnutrition]
@@ -21,7 +21,7 @@
 - [Condition07Pat03: Other persistent atrial fibrillation]
 - [Condition08pat01: Bipolar disorder, current episode mixed, mild]
 - [Condition09Pat01: Allergic bronchopulmonary aspergillosis]
-- [Condition10Pat01: Mild persistent asthma with (acute) exacerbation]
+- [Condition10Pat01: Long term (current) use of insulin]
 - [Condition11Pat01: Acute pulmonary edema]
 - [Condition15Pat03: Diabetes mellitus due to underlying condition with diabetic chronic kidney disease]
 - [Condition16Pat03: Dependence on renal dialysis]

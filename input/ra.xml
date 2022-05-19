@@ -119,8 +119,8 @@
       <reference>
         <reference value="Condition/ra-condition02pat01"/>
       </reference>
-      <name value="Condition02pat01: Diabetes mellitus due to underlying condition without complications"/>
-      <description value="Diabetes mellitus due to underlying condition without complications"/>
+      <name value="Condition02pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication"/>
+      <description value="Diabetes mellitus due to underlying condition with other diabetic kidney complication"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -183,8 +183,8 @@
       <reference>
         <reference value="Condition/ra-condition10pat01"/>
       </reference>
-      <name value="Condition10pat01: Mild persistent asthma with (acute) exacerbation"/>
-      <description value="Mild persistent asthma with (acute) exacerbation"/>
+      <name value="Condition10pat01: Long term (current) use of insulin"/>
+      <description value="Long term (current) use of insulin"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

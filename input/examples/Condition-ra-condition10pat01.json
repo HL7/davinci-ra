@@ -42,11 +42,11 @@
     "coding": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "code": "J45.31",
-        "display": "Mild persistent asthma with (acute) exacerbation"
+        "code": "Z79.4",
+        "display": "Long term (current) use of insulin"
       }
     ],
-    "text": "J45.31: Mild persistent asthma with (acute) exacerbation"
+    "text": "Z79.4: Long term (current) use of insulin"
   },
   "subject": {
     "reference": "Patient/ra-patient01"
