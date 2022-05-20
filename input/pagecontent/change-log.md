@@ -34,6 +34,7 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 1. **Applied**: Example MeasureReport01 Group vs Condition Data Conflict ([FHIR-37347](https://jira.hl7.org/browse/FHIR-37347))
 1. **Applied**: Example MeasureReport02 Group vs Condition Data Conflict ([FHIR-37350](https://jira.hl7.org/browse/FHIR-37350))
 1. **Applied**: Example MeasureReport05 Encounter and Condition Link Consistency Issue ([FHIR-37353](https://jira.hl7.org/browse/FHIR-37353))
+1. **Applied**: Example MeasureReport04 Group-013 Condition May Not be Applicable ([FHIR-37352](https://jira.hl7.org/browse/FHIR-37352))
 
 ### Version 0.1.0
 Initial content for STU1 ballot.

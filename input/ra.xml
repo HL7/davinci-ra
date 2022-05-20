@@ -279,8 +279,8 @@
       <reference>
         <reference value="Condition/ra-condition35pat03"/>
       </reference>
-      <name value="Condition35pat03: Hypertension secondary to other renal disorders"/>
-      <description value="Hypertension secondary to other renal disorders"/>
+      <name value="Condition35pat03: Type 2 diabetes mellitus With peripheral circulatory complications Uncontrolled"/>
+      <description value="Type 2 diabetes mellitus With peripheral circulatory complications Uncontrolled"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

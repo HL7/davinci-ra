@@ -42,11 +42,11 @@
     "coding": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "code": "I15.1",
-        "display": "Hypertension secondary to other renal disorders"
+        "code": "E11.51",
+        "display": "Type 2 diabetes mellitus With peripheral circulatory complications Uncontrolled"
       }
     ],
-    "text": "Hypertension secondary to other renal disorders"
+    "text": "Type 2 diabetes mellitus With peripheral circulatory complications Uncontrolled"
   },
   "subject": {
     "reference": "Patient/ra-patient03"
