@@ -33,7 +33,7 @@
 - [Condition31Pat02: Typical atrial flutter]
 - [Condition32Pat03: Chronic pulmonary embolism]
 - [Condition33Pat01: Respiratory arrest]
-- [Condition35Pat03: Aneurysm of renal artery]
+- [Condition35Pat03: Hypertension secondary to other renal disorders]
 - [Condition42Pat03: Other artificial openings of gastrointestinal tract status]
 - [Condition43pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication]
 - [Condition44Pat01: Allergic bronchopulmonary aspergillosis]

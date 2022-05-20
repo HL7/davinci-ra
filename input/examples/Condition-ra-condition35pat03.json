@@ -42,11 +42,11 @@
     "coding": [
       {
         "system": "http://hl7.org/fhir/sid/icd-10-cm",
-        "code": "I72.2",
-        "display": "Aneurysm of renal artery"
+        "code": "I15.1",
+        "display": "Hypertension secondary to other renal disorders"
       }
     ],
-    "text": "Aneurysm of renal artery"
+    "text": "Hypertension secondary to other renal disorders"
   },
   "subject": {
     "reference": "Patient/ra-patient03"

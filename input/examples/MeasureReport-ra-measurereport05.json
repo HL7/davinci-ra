@@ -279,11 +279,11 @@
                     {
                         "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
                         "version": "5",
-                        "code": "262",
-                        "display": "Chronic Kidney Disease Stage 5"
+                        "code": "216",
+                        "display": "Peripheral Vascular Disease"
                     }
                 ],
-                "text": "CMS-RxHCC 262: Chronic Kidney Disease Stage 5"
+                "text": "CMS-RxHCC 216: Peripheral Vascular Disease"
             },
             "extension": [
                 {
@@ -291,7 +291,7 @@
                     "valueCodeableConcept": {
                         "coding": [
                             {
-                                "code": "suspected",
+                                "code": "net-new",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
                             }
                         ]
@@ -302,7 +302,7 @@
                     "valueCodeableConcept": {
                         "coding": [
                             {
-                                "code": "open-gap",
+                                "code": "closed-gap",
                                 "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
                             }
                         ]
@@ -384,7 +384,7 @@
                         "valueString" : "group-002"
                       }
                     ],
-                      "reference": "Encounter/ra-encounter15pat03"
+                      "reference": "Encounter/ra-encounter21pat03"
                     },
                     {
                       "extension" : [
@@ -393,7 +393,7 @@
                           "valueString" : "group-003"
                         }
                       ],
-                        "reference": "Encounter/ra-encounter16pat03"
+                        "reference": "Encounter/ra-encounter15pat03"
                       },
                       {
                         "extension" : [
@@ -402,7 +402,7 @@
                             "valueString" : "group-004"
                           }
                         ],
-                          "reference": "Encounter/ra-encounter35pat03"
+                          "reference": "Encounter/ra-encounter16pat03"
                         },
                         {
                           "extension" : [

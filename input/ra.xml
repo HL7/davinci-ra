@@ -279,8 +279,8 @@
       <reference>
         <reference value="Condition/ra-condition35pat03"/>
       </reference>
-      <name value="Condition35pat03: Aneurysm of renal artery"/>
-      <description value="Aneurysm of renal artery"/>
+      <name value="Condition35pat03: Hypertension secondary to other renal disorders"/>
+      <description value="Hypertension secondary to other renal disorders"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
