@@ -25,7 +25,7 @@
 [Condition31Pat02: Typical atrial flutter]: Condition-ra-condition31pat02.html
 [Condition32Pat03: Chronic pulmonary embolism]: Condition-ra-condition32pat03.html
 [Condition33Pat01: Respiratory arrest]: Condition-ra-condition33pat01.html
-[Condition35Pat03: Type 2 diabetes mellitus With peripheral circulatory complications Uncontrolled]: Condition-ra-condition35pat03.html
+[Condition35Pat03: Type 2 diabetes mellitus with diabetic peripheral angiopathy without gangrene]: Condition-ra-condition35pat03.html
 [Condition42Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition42pat03.html
 [Condition43pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication]: Condition-ra-condition43pat01.html
 [Condition44Pat01: Allergic bronchopulmonary aspergillosis]: Condition-ra-condition44pat01.html
