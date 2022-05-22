@@ -395,10 +395,10 @@
                                     "system": "http://cms.gov/cms-hcc/",
                                     "version": "21",
                                     "code": "188",
-                                    "display": "Diabetes with Chronic Complications"
+                                    "display": "Artificial Openings for Feeding or Elimination"
                                 }
                             ],
-                            "text": "CMS-HCC 188: Diabetes with Chronic Complications"
+                            "text": "CMS-HCC 188: Artificial Openings for Feeding or Elimination"
                         },
                         "extension": [
                             {
