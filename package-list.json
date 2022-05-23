@@ -13,6 +13,16 @@
       "current": true
     },
     {
+      "version": "1.0.0",
+      "date": "2022-05-27",
+      "desc": "The current official published version of the Risk Adjustment IG for FHIR R4.",
+      "changes": "change-notes.html",
+      "path": "http://hl7.org/fhir/us/davinci-ra/STU1",
+      "status": "trial-use",
+      "fhirversion": "4.0.1",
+      "sequence": "STU 1"
+    },
+    {
       "version": "0.1.0",
       "date": "2021-12-01",
       "desc": "STU 1 Ballot for FHIR R4",

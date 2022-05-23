@@ -2,7 +2,7 @@
     "resourceType": "CapabilityStatement",
     "id": "ra-server",
     "url": "http://hl7.org/fhir/us/davinci-ra/CapabilityStatement/ra-server",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "name": "RAServerCapabilityStatement",
     "title": "Risk Adjustment Server Capability Statement",
     "status": "active",
