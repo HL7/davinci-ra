@@ -20,8 +20,7 @@
       "path": "http://hl7.org/fhir/us/davinci-ra/STU1",
       "status": "trial-use",
       "fhirversion": "4.0.1",
-      "sequence": "STU 1",
-      "current": true
+      "sequence": "STU 1"
     },
     {
       "version": "0.1.0",
