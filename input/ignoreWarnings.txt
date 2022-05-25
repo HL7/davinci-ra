@@ -15,7 +15,7 @@ WARNING: Measure/RAModelExample03: Measure: A measure should contain at least on
 Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
 [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type because the value set or a code system it depends on is not known to the validator, Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated]
 
-# Terminology_TX_System_NotKnown: URIs for external code systems CMS-HCC and RxHCC were approved by HTA on 12/2/2021 and will be available officially pending THO publication.  Ref https://confluence.hl7.org/display/TA/CMS+Hierarchical+Condition+Categories and https://confluence.hl7.org/display/TA/CMS+Prescription+Drug+Hierarchical+Condition+Categories
+# Terminology_TX_System_NotKnown: URIs for external code systems CMSHCC and RxHCC are published in https://terminology.hl7.org/external_terminologies.html
 Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
 Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
 
