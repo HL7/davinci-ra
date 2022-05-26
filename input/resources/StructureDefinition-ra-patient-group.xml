@@ -5,7 +5,6 @@
     <name value="PatientGroupProfile"/>
     <title value="Patient Group Profile"/>
     <status value="active"/>
-    <date value="2022-02-13"/>
     <publisher value="Da Vinci Project"/>
     <description value="The Patient Group Profile describes a group consisting of one or more patients."/>
     <fhirVersion value="4.0.1"/>

@@ -4,9 +4,8 @@
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference"/>
   <name value="GroupReference"/>
   <title value="Group Reference Extension"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
-  <date value="2022-02-13"/>
   <publisher value="Da Vinci Project"/>
   <description value="This extension identifies which Condition Category (CC) gap the supporting evidence (represented by `MeasureReport.group.evaluatedResource`) is for."/>
   <fhirVersion value="4.0.1"/>

@@ -4,9 +4,8 @@
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline"/>
   <name value="RAClinicalDataCollectionDeadlineExtension"/>
   <title value="Risk Adjustment Clinical Data Collection Deadline Extension"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
-  <date value="2021-07-20"/>
   <publisher value="Da Vinci Project"/>
   <description value="Risk Adjustment Clinical Data Collection Deadline Extension"/>
   <fhirVersion value="4.0.1"/>
