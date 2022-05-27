@@ -1,7 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
-  "date": "2021-11-11",
+  "status": "active",
   "name": "RiskAdjustmenthierarchicalStatusValueSet",
   "id": "hierarchical-status",
   "title": "Risk Adjustment Hierarchical Status Value Set",

@@ -1,7 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
-  "date": "2022-02-24",
+  "status": "active",
   "name": "ExampleCMSHCCValueSet",
   "id": "example-cmshcc",
   "title": "Example CMS Hierarchical Condition Category Value Set",

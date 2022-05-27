@@ -6,7 +6,6 @@
     <title value="Risk Adjustment Model Measure"/>
     <status value="active"/>
     <experimental value="false"/>
-    <date value="2021-11-11"/>
     <description value="This risk adjustment model measure profile is based on the [Measure](http://hl7.org/fhir/R4/measure.html) resoure to represent a risk adjustment model and its version such as CMS-HCC version 24."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
