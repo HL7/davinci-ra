@@ -8,19 +8,19 @@
   },
   "extension":[
   {
-      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference"
+      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
       "valueString": "group-009"}
   ],
   "modifierExtension": [
     {
       "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-codingGapType",
-      "valueCodeableConcept":
-        "coding": [
-          {
-            "system": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-codingGapType",
-            "code": "gap-closure-request"
-          }
-        ]
+      "valueCodeableConcept": {
+          "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-codingGapType",
+                "code": "gap-closure-request"
+              }
+          ]
       }
     }
   ],
@@ -38,38 +38,25 @@
     "reference": "Patient/ra-patient01"
   },
   "evidence": [
-    {
-      "detail": [
+    {"detail": [
         {
           "reference": "MeasureReport/ra-measurereport01"
         }
-      ]
-    }
-  ],
-  "evidence": [
-    {
-      "detail": [
-        {
-          "reference": "Condition/ra-conditionR01pat01"
-        }
-      ]
-    }
-  ],
-  "evidence": [
-    {
-      "detail": [
-        {
-          "reference": "Encounter/ra-encounter09pat01"
-        }
-      ]
-    }
-  ],  "evidence": [
-      {
-        "detail": [
-          {
-            "reference": "DocumentReference/ra-documentreference01pat01"
+    ]},
+    {"detail": [
+            {
+            "reference": "Condition/ra-conditionR01pat01"
           }
-        ]
-      }
-    ]
+    ]},
+    {"detail": [
+          {
+          "reference": "Encounter/ra-encounter09pat01"
+          }
+    ]},
+    {"detail": [
+          {
+          "reference": "DocumentReference/ra-documentreference01pat01"
+          }
+    ]}
+  ]
 }
