@@ -4,7 +4,7 @@ using FHIR version '4.0.1'
 
 include MATGlobalCommonFunctionsFHIR4 version '6.1.000' called Global
 include FHIRHelpers version '4.0.001' called FHIRHelpers
-/**include MedicareAdvantage called MedicareAdvantage
+include MedicareAdvantage version '0.0.001' called MedicareAdvantage
 
 /** Has to define the HCC model version (e.g., CMSHCC v24) and whether to use ICD10CM to HCC mapping for either initial run, mid-year (sweep), or final run --**/
 codesystem "CMSHCC": 'http://terminology.hl7.org/CodeSystem/cmshcc'
@@ -51,7 +51,20 @@ code "Other deformities of toe(s) (acquired), unspecified foot": 'M20.5X9' from 
 ... and more
 **/
 
-/** what will be the measurement period ? **/
+/* Measure/$risk-adjustment
+
+Condition Category Measure
+
+define "Measure Category Inclusion":
+  "Initial Population"
+    and "Category Population"
+    and not "Category Exclusions"
+
+Conformance Requirement
+1. CQL "Initial Population", "Category Population", and "Category Exclusions" must return a Boolean
+2. CQL "Condition Category" definition must return a Coding
+*/
+
 parameter "Measurement Period" Interval<DateTime>
 
 context Patient
@@ -68,47 +81,18 @@ and exists "HCC Qualifying Encounters" **/
 /** use this for the demo to define QualifyingMembers: AgeInYearsAt(date from start of "Measurement Period") >=65 **/
 /** does it need encounters? HCC189 is unusual, since it's amputation. We will include encounters**/
 define "Initial Population":
-  /** uncomment after creating a MedicareAdvantage cql **/
-  /**MedicareAdvantage.QualifyingMembers
-  and **/
-  exists "HCC Qualifying Encounters with Eligible Providers"
+  MedicareAdvantage."Qualifying Member"
+    and exists "HCC Qualifying Encounters with Eligible Providers"
 
-define "Risk Adjustment Population Coding":
- "Initial Population" and exists "Has HCC189 Diagnosis"
+define "Category Population":
+  exists "Has HCC189 Diagnosis" 
 
-/** what do we need to get back from this HCC189 cql?
-step 1) call $evalaute-riskadjustment operation on Measure, it will execute HCC189.cql
-step 2) it generates MeasureReport, in the MeasureReport, it has the .group.code = HCC189
-
-CodeableConcept {
-        coding: {
-            Coding {
-                system: uri { value: 'http://terminology.hl7.org/CodeSystem/cmshcc' },
-                code: code { value: '189' },
-                display: string { value: 'Amputation Status, Lower Limb/Amputation Complications' }
-            }
-        }
-    }
-
-
-
-When run this HCC189.cql against all qualified members, it would return patients that have conditions that meet HCC189.
-
-It returns HCC189.
-
-**/
-
-define "Denominator":
-  exists "Has HCC189 Diagnosis"
-
-/** Does it also need encounter diagnosis? or only conditions? **/
-define "Denominator Exclusions":
+define "Category Exclusions":
   exists "Has HCC189 Exclusion Conditions"
-  or exists "Has HCC189 Exclusion Encounter Diagnosis"
+   or exists "Has HCC189 Exclusion Encounter Diagnosis"
 
-/** by definition, Numerator is Denominator minus Denominator Exclusions **/
-/**define "Numerator":
-    "Denominator" **/
+define "Condition Category":
+  "Amputation Status, Lower Limb/Amputation Complications"
 
 define "Has HCC189 Diagnosis":
   Global.EncounterDiagnosis("HCC Qualifying Encounters with Eligible Providers") EncounterDiagnosis
