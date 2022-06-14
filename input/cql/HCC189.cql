@@ -31,8 +31,8 @@ valueset "Example Acquired Lower Limb Deformities": 'http://hl7.org/fhir/us/davi
 code "Acquired deformities of fingers and toes": 'M20' from "ICD10CM" display 'Acquired deformities of fingers and toes'
 code "Other acquired deformities of limbs": 'M21' from "ICD10CM" display 'Other acquired deformities of limbs'
 **/
-
-code "Amputation Status, Lower Limb/Amputation Complications": '189' from "CMSHCC" display 'Amputation Status, Lower Limb/Amputation Complications' version'2'
+/*need to add version to the hcc code*/
+code "Amputation Status, Lower Limb/Amputation Complications": '189' from "CMSHCC" display 'Amputation Status, Lower Limb/Amputation Complications'
 code "Acquired absence of right great toe": 'Z89.411' from "ICD10CM" display 'Acquired absence of right great toe'
 
 /** what about the child concepts of M20 and M21? **/
