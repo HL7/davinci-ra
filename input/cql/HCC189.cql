@@ -32,7 +32,7 @@ code "Acquired deformities of fingers and toes": 'M20' from "ICD10CM" display 'A
 code "Other acquired deformities of limbs": 'M21' from "ICD10CM" display 'Other acquired deformities of limbs'
 **/
 
-code "Amputation Status, Lower Limb/Amputation Complications": '189' from "CMSHCC" display 'Amputation Status, Lower Limb/Amputation Complications'
+code "Amputation Status, Lower Limb/Amputation Complications": '189' from "CMSHCC" display 'Amputation Status, Lower Limb/Amputation Complications' version'2'
 code "Acquired absence of right great toe": 'Z89.411' from "ICD10CM" display 'Acquired absence of right great toe'
 
 /** what about the child concepts of M20 and M21? **/
@@ -55,13 +55,25 @@ code "Other deformities of toe(s) (acquired), unspecified foot": 'M20.5X9' from 
 
 Condition Category Measure
 
+Populations:
+"Initial Population" - eligible medicare advantage
+"Category Population" - closed-gaps/confirmed
+"Suspected Population" - open-gaps
+"Pending Population" - provisionally closed, but waiting for confirmation (maybe not in POC)
+
 define "Measure Category Inclusion":
   "Initial Population"
     and "Category Population"
     and not "Category Exclusions"
 
+define "Measure Suspected Inclusion":
+  "Initial Population"
+    and "Suspected Population"
+    and not "Suspected Exclusions"
+
 Conformance Requirement
 1. CQL "Initial Population", "Category Population", and "Category Exclusions" must return a Boolean
+2. CQL "Suspected Population" (union of the Suspected and the Confirmed is the )
 2. CQL "Condition Category" definition must return a Coding
 */
 
