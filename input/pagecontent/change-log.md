@@ -2,9 +2,7 @@
 The Risk Adjustment Implementation Guide was developed under the  [Davinci Project](#)
 
 ### version 1.0.0
-**Status**: **Summary** (**Jira Issue**)
-
-Ballot Comments
+**Ballot Comments Applied**: **Summary** (**Jira Issue**)
 1. **Applied**: Bind example value sets where ever possible instead of creating complicated element definitions ([FHIR-34774](https://jira.hl7.org/browse/FHIR-34774))
 1. **Applied**: Missing Must Support, $report comment, & extension comment ([FHIR-35139](https://jira.hl7.org/browse/FHIR-35139))
 1. **Applied**: Clarify provider-driven v. payer-driven approach to coding gaps ([FHIR-35324](https://jira.hl7.org/browse/FHIR-35324))
@@ -19,7 +17,7 @@ Ballot Comments
 1. **Applied**: actor names ([FHIR-34698](https://jira.hl7.org/browse/FHIR-34698))
 1. **Applied**: Typo in Intro ([FHIR-34501](https://jira.hl7.org/browse/FHIR-34501))
 
-Other Trackers
+**Other Changes Applied**: **Summary** (**Jira Issue**)
 1. **Applied**: Remove extension-reporterGroup extension from RA Coding Gap MeasureReport ([FHIR-36850](https://jira.hl7.org/browse/FHIR-36850))
 1. **Applied**: Noted several errors in example data ([FHIR-35773](https://jira.hl7.org/browse/FHIR-35773))
 1. **Applied**: US Core 3.1.1 Alignment ([FHIR-35924](https://jira.hl7.org/browse/FHIR-35924))
@@ -29,6 +27,14 @@ Other Trackers
 1. **Applied**: Add more details to the description of the evaluatedResource element ([FHIR-35980](https://jira.hl7.org/browse/FHIR-35980))
 1. **Applied**: Change to Condition Category (CC) gap instead of HCC gap in SuspectType definitions ([FHIR-36024](https://jira.hl7.org/browse/FHIR-36024))
 1. **Applied**: Typo in 1.4 Scope text ([FHIR-35971](https://jira.hl7.org/browse/FHIR-35971))
+1. **Applied**: Example MeasureReport01 Group vs EvaluatedResources Data Conflict ([FHIR-37345](https://jira.hl7.org/browse/FHIR-37345))
+1. **Applied**: Example MeasureReport01 HCC Code Consistency ([FHIR-37348](https://jira.hl7.org/browse/FHIR-37348))
+1. **Applied**: Example MeasureReport04 HCC Code Consistency ([FHIR-37351](https://jira.hl7.org/browse/FHIR-37351))
+1. **Applied**: Example MeasureReport06 Links Different Patient Than EvaluatedResource ([FHIR-37354](https://jira.hl7.org/browse/FHIR-37354))
+1. **Applied**: Example MeasureReport01 Group vs Condition Data Conflict ([FHIR-37347](https://jira.hl7.org/browse/FHIR-37347))
+1. **Applied**: Example MeasureReport02 Group vs Condition Data Conflict ([FHIR-37350](https://jira.hl7.org/browse/FHIR-37350))
+1. **Applied**: Example MeasureReport05 Encounter and Condition Link Consistency Issue ([FHIR-37353](https://jira.hl7.org/browse/FHIR-37353))
+1. **Applied**: Example MeasureReport04 Group-013 Condition May Not be Applicable ([FHIR-37352](https://jira.hl7.org/browse/FHIR-37352))
 
 ### Version 0.1.0
 Initial content for STU1 ballot.

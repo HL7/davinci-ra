@@ -4,9 +4,8 @@
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus"/>
   <name value="HierarchicalStatusExtension"/>
   <title value="Hierarchical Status Extension"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
-  <date value="2021-10-07"/>
   <publisher value="Da Vinci Project"/>
   <description value="This extension is to indicate if hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded."/>
   <fhirVersion value="4.0.1"/>

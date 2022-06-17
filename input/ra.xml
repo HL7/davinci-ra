@@ -4,9 +4,9 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
   <id value="hl7.fhir.us.davinci-ra"/>
   <url value="http://hl7.org/fhir/us/davinci-ra/ImplementationGuide/fhir.us.davinci-ra"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="RiskAdjustment"/>
-  <title value="Da Vinci Risk Adjustment Implementation Guide (STU1 Ballot)"/>
+  <title value="Da Vinci Risk Adjustment Implementation Guide"/>
   <status value="draft"/>
   <copyright value="Used by permission of HL7 International - Clinical Quality Information Work Group, all rights reserved Creative Commons License"/>
   <experimental value="false"/>
@@ -127,8 +127,8 @@
       <reference>
         <reference value="Condition/ra-condition03pat01"/>
       </reference>
-      <name value="Condition03pat01: Mild persistent asthma with (acute) exacerbation"/>
-      <description value="Mild persistent asthma with (acute) exacerbation"/>
+      <name value="Condition03pat01: Chronic obstructive pulmonary disease with (acute) exacerbation"/>
+      <description value="Chronic obstructive pulmonary disease with (acute) exacerbation"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -183,8 +183,8 @@
       <reference>
         <reference value="Condition/ra-condition10pat01"/>
       </reference>
-      <name value="Condition10pat01: Mild persistent asthma with (acute) exacerbation"/>
-      <description value="Mild persistent asthma with (acute) exacerbation"/>
+      <name value="Condition10pat01: Long term (current) use of insulin"/>
+      <description value="Long term (current) use of insulin"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -279,8 +279,8 @@
       <reference>
         <reference value="Condition/ra-condition35pat03"/>
       </reference>
-      <name value="Condition35pat03: Hypertension secondary to other renal disorders"/>
-      <description value="Hypertension secondary to other renal disorders"/>
+      <name value="Condition35pat03: Type 2 diabetes mellitus with diabetic peripheral angiopathy without gangrene"/>
+      <description value="Type 2 diabetes mellitus with diabetic peripheral angiopathy without gangrene"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

@@ -581,6 +581,15 @@
             "extension": [
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                    "valueString": "group-009"
+                }
+            ],
+            "reference": "Observation/ra-obs21pat01"
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
                     "valueString": "group-003"
                 }
             ],
@@ -736,15 +745,6 @@
                 }
             ],
             "reference": "Encounter/ra-encounter44pat01"
-        },
-        {
-            "extension": [
-                {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
-                    "valueString": "group-004"
-                }
-            ],
-            "reference": "Encounter/ra-encounter44xpat01"
         },
         {
             "extension": [

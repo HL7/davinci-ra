@@ -6,14 +6,14 @@
 [Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm
 [Condition01Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition01pat03.html
 [Condition02pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication]: Condition-ra-condition02pat01.html
-[Condition03pat01: Mild persistent asthma with (acute) exacerbation]: Condition-ra-condition03pat01.html  
+[Condition03pat01: Chronic obstructive pulmonary disease with (acute) exacerbation]: Condition-ra-condition03pat01.html  
 [Condition04Pat03: Chronic obstructive pulmonary disease with (acute) exacerbation]: Condition-ra-condition04pat03.html
 [Condition05Pat03: Unspecified protein-calorie malnutrition]: Condition-ra-condition05pat03.html
 [Condition06Pat03: Crohn's disease of large intestine with unspecified complications]: Condition-ra-condition06pat03.html
 [Condition07Pat03: Other persistent atrial fibrillation]: Condition-ra-condition07pat03.html
 [Condition08Pat01: Bipolar disorder, current episode mixed, mild]: Condition-ra-condition08pat01.html
 [Condition09Pat01: Allergic bronchopulmonary aspergillosis]: Condition-ra-condition09pat01.html
-[Condition10Pat01: Mild persistent asthma with (acute) exacerbation]: Condition-ra-condition10pat01.html
+[Condition10Pat01: Long term (current) use of insulin]: Condition-ra-condition10pat01.html
 [Condition11Pat01: Acute pulmonary edema]: Condition-ra-condition11pat01.html
 [Condition15Pat03: Diabetes mellitus due to underlying condition with diabetic chronic kidney disease]: Condition-ra-condition15pat03.html
 [Condition16Pat03: Dependence on renal dialysis]: Condition-ra-condition16pat03.html
@@ -25,7 +25,7 @@
 [Condition31Pat02: Typical atrial flutter]: Condition-ra-condition31pat02.html
 [Condition32Pat03: Chronic pulmonary embolism]: Condition-ra-condition32pat03.html
 [Condition33Pat01: Respiratory arrest]: Condition-ra-condition33pat01.html
-[Condition35Pat03: Hypertension secondary to other renal disorders]: Condition-ra-condition35pat03.html
+[Condition35Pat03: Type 2 diabetes mellitus with diabetic peripheral angiopathy without gangrene]: Condition-ra-condition35pat03.html
 [Condition42Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition42pat03.html
 [Condition43pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication]: Condition-ra-condition43pat01.html
 [Condition44Pat01: Allergic bronchopulmonary aspergillosis]: Condition-ra-condition44pat01.html

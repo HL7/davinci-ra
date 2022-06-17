@@ -4,9 +4,8 @@
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate"/>
   <name value="RAClinicalEvidenceStatusDateExtension"/>
   <title value="Risk Adjustment Evidence Status Date Extension"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
-  <date value="2021-07-20"/>
   <publisher value="Da Vinci Project"/>
   <description value="Risk Adjustment Evidence Status Date Extension"/>
   <fhirVersion value="4.0.1"/>
