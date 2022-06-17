@@ -1,0 +1,35 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "RACodingGapTypeCodeSystem",
+  "id": "coding-gap-type",
+  "title": "Risk Adjustment Coding Gap Type Code System",
+  "publisher":"Da Vinci Project",
+  "description": "This is a draft code system for coding gap type.",
+  "version": "0.1.0",
+  "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-type",
+  "concept": [
+    {
+      "code": "gap-closure-request",
+      "display": "gap closure request",
+      "definition": "gap closure request"
+    },
+    {
+      "code": "invalidation-request-never-had-condition",
+      "display": "Coding gap invalidated patient never had the condition",
+      "definition": "Patient was incorrectly diagnosed and has never had this condition."
+    },
+    {
+      "code": "invalidation-request-inactive-condition",
+      "display": "Coding gap invalidated condition no longer active",
+      "definition": "Patient was correctly diagnosed, but the condition is no longer active."
+    },
+    {
+      "code": "invalidation-request-inaccurate-coding",
+      "display": "Coding gap invalidated inaccurate coding",
+      "definition": "Patient has an active condition, but the gap doesn't accurately describe it."
+    }
+  ],
+  "count": 4
+}

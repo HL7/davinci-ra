@@ -1,0 +1,54 @@
+{
+	"resourceType": "Encounter",
+	"id": "result-evaluatedresources-multiple-in-ra-02",
+	"meta": {
+		"extension": [{
+				"url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+				"valueString": "Encounter with Dr Howell on 20210714 for Patient 01"
+			},
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+				"valueMarkdown": "This is Encounter with Dr Howell on 20210714 for Patient 01."
+			}
+		],
+		"lastUpdated": "2019-03-13T11:56:57.250-04:00",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+		]
+	},
+	"status": "finished",
+	"class": {
+		"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+		"code": "AMB",
+		"display": "ambulatory"
+	},
+	"type": [{
+		"coding": [{
+			"system": "http://www.ama-assn.org/go/cpt",
+			"code": "99215"
+		}],
+		"text": "Office Visit, High Complexity"
+	}],
+	"subject": {
+		"reference": "Patient/result-evaluatedresources-multiple-in-ra"
+	},
+
+	"participant": [{
+		"individual": {
+			"reference": "Practitioner/result-evaluatedresources-multiple-in-ra"
+		}
+	}],
+	"diagnosis": [{
+			"condition": {
+				"reference": "Condition/result-evaluatedresources-multiple-in-ra-02"
+			}
+		}
+	],
+	"period": {
+		"start": "2019-02-10",
+		"end": "2019-02-10"
+	},
+	"serviceProvider": {
+		"reference": "Organization/result-evaluatedresources-multiple-in-ra"
+	}
+}

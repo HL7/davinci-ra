@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestScript xmlns="http://hl7.org/fhir">
+  <id value="Result-Bundle-Duplicates-Out-RA"/>
+  <meta>
+    <profile value="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Result-Bundle-Duplicates-Out-RA-json</p>
+    </div>
+  </text>
+  <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-rule">
+    <extension url="ruleId">
+      <valueId value="assert-by-path"/>
+    </extension>
+    <extension url="path">
+      <valueString value="/FHIRCommon/_reference/rule/AssertValidateJSONExtractProfileId.groovy"/>
+    </extension>
+    <extension url="param">
+      <extension url="name">
+        <valueString value="jsonPath"/>
+      </extension>
+      <extension url="value">
+        <valueString value="$.entry[?(@.resource.resourceType == 'MeasureReport')].resource"/>
+      </extension>
+    </extension>
+    <extension url="param">
+      <extension url="name">
+        <valueString value="profileId"/>
+      </extension>
+      <extension url="value">
+        <valueString value="RAMeasureReportProfile"/>
+      </extension>
+    </extension>
+  </extension>
+  <url value="http://wildfhir.aegis.net/fhir4-0-1/TestScript/Result-Bundle-Duplicates-Out-RA"/>
+  <name value="Result-Bundle-Duplicates-Out-RA-json"/>
+  <status value="active"/>
+  <date value="2022-05-01"/>
+  <publisher value="AEGIS.net, Inc."/>
+  <contact>
+    <name value="Touchstone Support"/>
+    <telecom>
+      <system value="email"/>
+      <value value="Touchstone_Support@aegis.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Test that duplicate Bundle entries cause and error."/>
+  <copyright value="(c) AEGIS.net, Inc. 2021"/>
+  <origin>
+    <index value="1" />
+    <profile>
+      <system value="http://hl7.org/fhir/testscript-profile-origin-types" />
+      <code value="FHIR-Client" />
+    </profile>
+  </origin>
+  <destination>
+    <index value="1" />
+    <profile>
+      <system value="http://hl7.org/fhir/testscript-profile-destination-types" />
+      <code value="FHIR-Server" />
+    </profile>
+  </destination>
+  <profile id="RAMeasureReportProfile">
+    <reference value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
+  </profile>
+  <variable>
+    <name value="bundleId"/>
+    <defaultValue value="result-evaluatedresources-duplicates-out-ra"/>
+    <description value="Enter a resource id for a valid Bundle on the destination system."/>
+  </variable>
+  <test id="Result-Bundle-Duplicates-Out">
+    <name value="Result-Bundle-Duplicates-Out"/>
+    <description value="Query for the RA Bundles. Expected response is 200 (OK)."/>
+    <action>
+      <operation>
+        <type>
+          <system value="http://terminology.hl7.org/CodeSystem/testscript-operation-codes"/>
+          <code value="read"/>
+        </type>
+        <resource value="Bundle"/>
+        <description value="Bundle read operation with HTTP Header Accept set to JSON format."/>
+        <accept value="json"/>
+        <destination value="1"/>
+        <encodeRequestUrl value="true"/>
+        <origin value="1"/>
+        <params value="/${bundleId}"/>
+        <responseId value="ReadBundleResponse"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="Confirm that the request HTTP Header Accept format is the FHIR mime-type 'application/fhir+json'."/>
+        <direction value="request"/>
+        <headerField value="Accept"/>
+        <operator value="contains"/>
+        <value value="application/fhir+json"/>
+        <warningOnly value="true"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <description value="Confirm that the request HTTP Header Accept contains 'charset=utf-8'."/>
+        <direction value="request"/>
+        <headerField value="Accept"/>
+        <operator value="contains"/>
+        <value value="charset=utf-8"/>
+        <warningOnly value="true"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Confirm that the returned HTTP status is 200(OK)."/>
+        <direction value="response"/>
+        <response value="okay"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <description value="Confirm that the response HTTP Header Content-Type format is the FHIR mime-type 'application/fhir+json'."/>
+        <direction value="response"/>
+        <headerField value="Content-Type"/>
+        <operator value="contains"/>
+        <value value="application/fhir+json"/>
+        <warningOnly value="true"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <description value="Confirm that the response HTTP Header Content-Type contains 'charset=utf-8'."/>
+        <direction value="response"/>
+        <headerField value="Content-Type"/>
+        <operator value="contains"/>
+        <value value="charset=utf-8"/>
+        <warningOnly value="true"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Confirm that the returned resource type is a Bundle."/>
+        <direction value="response"/>
+        <resource value="Bundle"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>   
+    <!-- TODO implment a check that ensures bundle entries are unique.
+      <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Verify that the bundle has no duplicates."/>
+        <direction value="response"/>
+        <expression value=""/>
+        <operator value="equals"/>
+        <value value=""/>
+        <warningOnly value="false"/>
+      </assert>
+    </action> -->
+  </test>
+</TestScript>

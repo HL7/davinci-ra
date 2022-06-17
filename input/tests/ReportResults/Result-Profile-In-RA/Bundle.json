@@ -1,0 +1,483 @@
+{
+  "resourceType": "Bundle",
+  "id": "result-profile-in-ra",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-bundle"
+    ]
+  },
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:53200545-98fd-42bb-91f8-02bc4c99e592"
+  },
+  "type": "document",
+  "timestamp": "2022-05-01T13:02:53+00:00",
+  "entry": [
+    {
+      "fullUrl": "http://example.org/fhir/ra/Composition/result-profile-in-ra",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "result-profile-in-ra",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-composition"
+          ]
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "96315-7",
+              "display": "Gaps in care report (TODO: this is a placeholder, need a new LOINC code for risk coding gap report)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/result-profile-in-ra"
+        },
+        "date": "2022-05-01T13:02:53+00:00",
+        "author": [
+          {
+            "reference": "Organization/result-profile-in-ra-author"
+          }
+        ],
+        "title": "Risk Adjustment Bundle for patient ra-result-profile-in-patient",
+        "section": [
+          {
+            "title": "Risk Adjustment Report",
+            "focus": {
+              "reference": "MeasureReport/result-profile-in-ra"
+            },
+            "entry": [
+              {
+                "reference": "DetectedIssue/result-profile-in-ra"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/ra/MeasureReport/result-profile-in-ra",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "result-profile-in-ra",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline",
+            "valueDate": "2021-12-01"
+          }
+        ],
+        "status": "complete",
+        "type": "individual",
+        "measure": "https://build.fhir.org/ig/HL7/davinci-ra/Measure-RAModelExample01",
+        "subject": {
+          "reference": "Patient/result-profile-in-ra"
+        },
+        "date": "2021-10-18",
+        "reporter": {
+          "reference": "Organization/result-profile-in-ra-reporter"
+        },
+        "period": {
+          "start": "2021-01-01",
+          "end": "2021-09-30"
+        },
+        "group": [
+          {
+            "id": "group-001",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                  "version": "24",
+                  "code": "53",
+                  "display": "Major Depressive, Bipolar, and Paranoid Disorders"
+                }
+              ],
+              "text": "HCC 59: Major Depressive, Bipolar, and Paranoid Disorders"
+            },
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "historic",
+                      "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "open-gap",
+                      "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                "valueDate": "2020-07-15"
+              },
+              {
+                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "applied-not-superseded",
+                      "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "evaluatedResource": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                "valueString": "group-001"
+              }
+            ],
+            "reference": "Patient/result-profile-in-ra"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                "valueString": "group-001"
+              }
+            ],
+            "reference": "Condition/result-profile-in-ra"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+                "valueString": "group-001"
+              }
+            ],
+            "reference": "Encounter/result-profile-in-ra"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/ra/DetectedIssue/result-profile-in-ra",
+      "resource": {
+        "resourceType": "DetectedIssue",
+        "id": "result-profile-in-ra",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-detectedissue"
+          ]
+        },
+        "modifierExtension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-codingGapType",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-type",
+                  "code": "gap-closure-request"
+                }
+              ]
+            }
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+            "valueString": "group-001"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "CODINGGAP",
+              "display": "Coding Gaps"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/result-profile-in-ra"
+        },
+        "evidence": [
+          {
+            "detail": [
+              {
+                "reference": "MeasureReport/result-profile-in-ra"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/ra/Patient/result-profile-in-ra",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "result-profile-in-ra",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+          ]
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "code": "2028-9",
+                  "display": "Asian"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "Asian"
+              }
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+          },
+          {
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "code": "2135-2",
+                  "display": "Hispanic or Latino"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "Hispanic or Latino"
+              }
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR",
+                  "display": "Medical Record Number"
+                }
+              ]
+            },
+            "system": "http://hospital.smarthealthit.org",
+            "value": "999995992"
+          }
+        ],
+        "name": [
+          {
+            "family": "Result",
+            "given": [
+              "ProfileIn"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1965-01-01"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/ra/Condition/result-profile-in-ra",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "result-profile-in-ra",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ],
+          "text": "Active"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ],
+          "text": "Confirmed"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis"
+              }
+            ],
+            "text": "Problem"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "F31.61",
+              "display": "Bipolar disorder, current episode mixed, mild"
+            }
+          ],
+          "text": "Bipolar disorder, current episode mixed, mild"
+        },
+        "subject": {
+          "reference": "Patient/result-profile-in-ra"
+        },
+        "onsetDateTime": "2017-02-03"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/ra/Encounter/result-profile-in-ra",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "result-profile-in-ra",
+        "meta": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+              "valueString": "Encounter with Dr Howell on 20210714 for Patient 03"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+              "valueMarkdown": "This is Encounter with Dr Howell on 20210714 for Patient 03."
+            }
+          ],
+          "lastUpdated": "2021-07-14T11:56:57.250-04:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+          ]
+        },
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "99215"
+              }
+            ],
+            "text": "Office Visit, High Complexity"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/result-profile-in-ra"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/result-profile-in-ra"
+            }
+          }
+        ],
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "Condition/result-profile-in-ra"
+            }
+          }
+        ],
+        "period": {
+          "start": "2017-02-03",
+          "end": "2017-02-03"
+        },
+        "serviceProvider": {
+          "reference": "Organization/result-profile-in-ra"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/ra/Organization/result-profile-in-ra-author",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "result-profile-in-ra-author",
+        "meta": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+              "valueString": "Payer"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+              "valueMarkdown": "Payer that generated Risk Adjustment Coding Gap Report."
+            }
+          ],
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+          ]
+        },
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "pay",
+                "display": "payer"
+              }
+            ]
+          }
+        ],
+        "name": "ABC Payer",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(+1) 123-456-7890"
+          },
+          {
+            "system": "email",
+            "value": "customer-service@ABCPayer.com"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "100 Insurance Lane, Suite 700"
+            ],
+            "city": "Amherst",
+            "state": "MA",
+            "postalCode": "01002",
+            "country": "USA"
+          }
+        ]
+      }
+    }
+  ]
+}
