@@ -57,24 +57,25 @@ Condition Category Measure
 
 Populations:
 "Initial Population" - eligible medicare advantage
-"Category Population" - closed-gaps/confirmed
-"Suspected Population" - open-gaps
-"Pending Population" - provisionally closed, but waiting for confirmation (maybe not in POC)
+"Historic HCC Population" - closed-gaps/confirmed
+"Suspected HCC Population" - open-gaps
+"Pending HCC Population" - provisionally closed, but waiting for confirmation (maybe not in POC)
+//"net-new"?
 
-define "Measure Category Inclusion":
+define "Measure Historic Condition Catetory Inclusion":
   "Initial Population"
-    and "Category Population"
-    and not "Category Exclusions"
+    and "Historic HCC Population"
+    and not "Historic HCC Exclusions"
 
-define "Measure Suspected Inclusion":
+define "Measure Suspected Condition Category Inclusion":
   "Initial Population"
-    and "Suspected Population"
-    and not "Suspected Exclusions"
+    and "Suspected HCC Population"
+    and not "Suspected HCC Exclusions"
 
 Conformance Requirement
-1. CQL "Initial Population", "Category Population", and "Category Exclusions" must return a Boolean
-2. CQL "Suspected Population" (union of the Suspected and the Confirmed is the )
-2. CQL "Condition Category" definition must return a Coding
+1. CQL "Initial Population", "Historic HCC Population", and "Historic HCC Exclusions" must return a Boolean
+2. CQL "Suspected HCC Population" (union of the Suspected and the Confirmed is the ...)
+2. CQL "Condition Category" definition must return a code (CodableConcept.coding)
 */
 
 parameter "Measurement Period" Interval<DateTime>
@@ -83,45 +84,48 @@ context Patient
 
 /** Is the initial population all members of a payer? example below use age limit for Medicare Advantage Program**/
 /** Members have to be enrolled during the risk adjustment clinical evaluation period. Need to do entrollment look up **/
-/** Cannot be simply based on age, even for Medicare Advantage Program. For the demo purpose, we could use age limit **/
-/** AgeInYearsAt(date from start of "Measurement Period") >=65
+/** Cannot be simply based on age, even for Medicare Advantage Program. For the demo purpose, 
+use this to define QualifyingMembers: AgeInYearsAt(date from start of "Measurement Period") >=65 
 and exists "HCC Qualifying Encounters" **/
-/**
-  define population is Medicare Advantage Part C Members
-  make this as a helper library
-**/
-/** use this for the demo to define QualifyingMembers: AgeInYearsAt(date from start of "Measurement Period") >=65 **/
-/** does it need encounters? HCC189 is unusual, since it's amputation. We will include encounters**/
+/** Discussed whether encounters are needed when define initial population. HCC189 is unusual, since it's amputation, encounters may not be needed. 
+There was comment that even for HCC189, encounters will be needed. For the demo purpose, we will include encounters**/
+/** define population is Medicare Advantage Part C Members. make this as a helper library: MedicareAdvantage.cql **/
+
+/** Medicare Advantage patients who are age 65 years and older and have face to face encounters during the clincial evaluation period */
 define "Initial Population":
   MedicareAdvantage."Qualifying Member"
     and exists "HCC Qualifying Encounters with Eligible Providers"
 
-define "Category Population":
-  exists "Has HCC189 Diagnosis" 
+/** Patient has historic conditions that are mapped to HCC189 Amputation Status, Lower Limb/Amputation Complications*/
+define "Historic HCC Population":
+  exists "Has HCC189 Encounter Diagnosis" 
 
-define "Category Exclusions":
+/** Patient has HCC189 exclusions*/
+define "Historic HCC Exclusions":
   exists "Has HCC189 Exclusion Conditions"
    or exists "Has HCC189 Exclusion Encounter Diagnosis"
 
 define "Condition Category":
   "Amputation Status, Lower Limb/Amputation Complications"
 
-define "Has HCC189 Diagnosis":
-  Global.EncounterDiagnosis("HCC Qualifying Encounters with Eligible Providers") EncounterDiagnosis
-      where
-        EncounterDiagnosis.code ~ 'Amputation Status, Lower Limb/Amputation Complications'
+/** Patient has an Encounter Diagnosis of Acquired absence of right great toe*/
+define "Has HCC189 Encounter Diagnosis":
+  from
+      "HCC Qualifying Encounters with Eligible Providers" HCCQualifyingEncounters
+      let HCCEncounterDiagnosis: HCCQualifyingEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global."GetId"(D.condition.reference))
+      where HCCEncounterDiagnosis.code ~ 'Acquired absence of right great toe'
+      return true
 
+/** Patient has an Encounter Diagnosis in one of the exclusion conditions*/
 /** Is timing needed ? **/
 define "Has HCC189 Exclusion Conditions":
- [Condition: "Example Acquired Lower Limb Deformities"] AcquiredLowerLimbDeformities
+  from
+      "HCC Qualifying Encounters with Eligible Providers" HCCQualifyingEncounters
+      let HCCEncounterDiagnosis: HCCQualifyingEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global."GetId"(D.condition.reference))
+      where HCCEncounterDiagnosis.code in "Example Acquired Lower Limb Deformities"
     /**where Global."Prevalence Period" ( AcquiredLowerLimbDeformities ) starts on or before
     end of "Measurement Period" **/
-
-/** error in this definition: EncounterDiagnosis function takes an Encounter not a list **/
-define "Has HCC189 Exclusion Encounter Diagnosis":
-  Global.EncounterDiagnosis("HCC Qualifying Encounters with Eligible Providers") EncounterDiagnosis
-      where
-        EncounterDiagnosis.code in "Example Acquired Lower Limb Deformities"
+      return true
 
 /** Measurement Period is clinical Evaluation Period **/
 define "HCC Qualifying Encounters with Eligible Providers":
@@ -141,6 +145,6 @@ define "HCC Qualifying Encounters with Eligible Providers":
         and Global."Normalize Interval"(ValidEncounter.period) during "Measurement Period"
 
 
-    /**
-    Eligible Provider need to be in the provider Taxonomy codes defined in RADV table (with Provider Taxonomy codes)
-    **/
+/**
+  Eligible Provider need to be in the provider Taxonomy codes defined in RADV table (with Provider Taxonomy codes)
+**/
