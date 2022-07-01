@@ -19,48 +19,26 @@ valueset "Preventive Care Services-Initial Office Visit, 18 and Up": 'http://cts
 valueset "Hospice care ambulatory": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1108.15'
 /**valueset "Nursing Facility Visit": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1012'
 valueset "Home Healthcare Services": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016'**/
-
 valueset "Emergency Department Visit": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292'
 valueset "Encounter Inpatient": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307'
 valueset "Acute Inpatient": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1083'
 valueset "Nonacute Inpatient": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1084'
 valueset "Observation": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1086'
-
-valueset "Example Acquired Lower Limb Deformities": 'http://hl7.org/fhir/us/davinci-ra/ValueSet/example-acquired-lower-limb-deformities'
-/** codes for the value set
+/** codes for the Example Acquired Lower Limb Deformities value set
 code "Acquired deformities of fingers and toes": 'M20' from "ICD10CM" display 'Acquired deformities of fingers and toes'
 code "Other acquired deformities of limbs": 'M21' from "ICD10CM" display 'Other acquired deformities of limbs'
 **/
-/*need to add version to the hcc code*/
+valueset "Example Acquired Lower Limb Deformities": 'http://hl7.org/fhir/us/davinci-ra/ValueSet/example-acquired-lower-limb-deformities'
 code "Amputation Status, Lower Limb/Amputation Complications": '189' from "CMSHCC" display 'Amputation Status, Lower Limb/Amputation Complications'
-code "Acquired absence of right great toe": 'Z89.411' from "ICD10CM" display 'Acquired absence of right great toe'
-
-/** what about the child concepts of M20 and M21? **/
-/**
-code "Acquired clawhand, clubhand, clawfoot and clubfoot": 'M21.5' from "ICD10CM" display 'Acquired clawhand, clubhand, clawfoot and clubfoot'
-
-code "Acquired deformities of toe(s), unspecified": 'M20.6' from "ICD10CM" display 'Acquired deformities of toe(s), unspecified'
-code "Acquired deformities of toe(s), unspecified, unspecified foot": 'M20.60' from "ICD10CM" display 'Acquired deformities of toe(s), unspecified, unspecified foot'
-code "Acquired deformities of toe(s), unspecified, right foot": 'M20.61' from "ICD10CM" display 'Acquired deformities of toe(s), unspecified, right foot'
-code "Acquired deformities of toe(s), unspecified, left foot": 'M20.62' from "ICD10CM" display 'Acquired deformities of toe(s), unspecified, left foot'
-code "Other deformities of toe(s) (acquired)": 'M20.5' from "ICD10CM" display 'Other deformities of toe(s) (acquired)'
-code "Other deformities of toe(s) (acquired), right foot": 'M20.5X1' from "ICD10CM" display 'Other deformities of toe(s) (acquired), right foot'
-code "Other deformities of toe(s) (acquired), left foot": 'M20.5X2' from "ICD10CM" display 'Other deformities of toe(s) (acquired), left foot'
-code "Other hammer toe(s) (acquired)": 'M20.4' from "ICD10CM" display 'Other hammer toe(s) (acquired)'
-code "Other deformities of toe(s) (acquired), unspecified foot": 'M20.5X9' from "ICD10CM" display 'Other deformities of toe(s) (acquired), unspecified foot'
-... and more
+/**code "Acquired absence of right great toe": 'Z89.411' from "ICD10CM" display 'Acquired absence of right great toe' **/
+valueset "Example HCC189 Exclusion": 'http://hl7.org/fhir/us/davinci-ra/ValueSet/example-hcc189-exclusion'
+/** contains 
+M20 Acquired deformities of fingers and toes
+M21 Other acquired deformities of limbs
 **/
 
 /* Measure/$risk-adjustment
-
 Condition Category Measure
-
-Populations:
-"Initial Population" - eligible medicare advantage
-"Historic HCC Population" - closed-gaps/confirmed
-"Suspected HCC Population" - open-gaps
-"Pending HCC Population" - provisionally closed, but waiting for confirmation (maybe not in POC)
-//"net-new"?
 
 define "Measure Historic Condition Catetory Inclusion":
   "Initial Population"
@@ -82,28 +60,26 @@ parameter "Measurement Period" Interval<DateTime>
 
 context Patient
 
-/** Is the initial population all members of a payer? example below use age limit for Medicare Advantage Program**/
-/** Members have to be enrolled during the risk adjustment clinical evaluation period. Need to do entrollment look up **/
-/** Cannot be simply based on age, even for Medicare Advantage Program. For the demo purpose, 
-use this to define QualifyingMembers: AgeInYearsAt(date from start of "Measurement Period") >=65 
-and exists "HCC Qualifying Encounters" **/
-/** Discussed whether encounters are needed when define initial population. HCC189 is unusual, since it's amputation, encounters may not be needed. 
-There was comment that even for HCC189, encounters will be needed. For the demo purpose, we will include encounters**/
-/** define population is Medicare Advantage Part C Members. make this as a helper library: MedicareAdvantage.cql **/
-
 /** Medicare Advantage patients who are age 65 years and older and have face to face encounters during the clincial evaluation period */
 define "Initial Population":
   MedicareAdvantage."Qualifying Member"
     and exists "HCC Qualifying Encounters with Eligible Providers"
 
-/** Patient has historic conditions that are mapped to HCC189 Amputation Status, Lower Limb/Amputation Complications*/
-define "Historic HCC Population":
+define "Closed Gap Population":
+  "Initial Population"  
+  and exists "Has HCC189 Encounter Diagnosis"
+  
+
+define "Closed Gap Exclusion":
+  exists "Has HCC189 Exclusions"  
+
+define "Historic Population":
   exists "Has HCC189 Encounter Diagnosis" 
 
 /** Patient has HCC189 exclusions*/
-define "Historic HCC Exclusions":
+define "Historic Exclusions":
   exists "Has HCC189 Exclusion Conditions"
-   or exists "Has HCC189 Exclusion Encounter Diagnosis"
+   or exists "Has HCC189 Exclusions"
 
 define "Condition Category":
   "Amputation Status, Lower Limb/Amputation Complications"
@@ -113,8 +89,16 @@ define "Has HCC189 Encounter Diagnosis":
   from
       "HCC Qualifying Encounters with Eligible Providers" HCCQualifyingEncounters
       let HCCEncounterDiagnosis: HCCQualifyingEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global."GetId"(D.condition.reference))
-      where HCCEncounterDiagnosis.code ~ 'Acquired absence of right great toe'
+      where HCCEncounterDiagnosis.code in "Example Acquired Lower Limb Deformities"
+      and HCCQualifyingEncounters.period starts during "Measurement Period"
       return true
+
+define "Has HCC189 Exclusions":
+  from 
+    "HCC Qualifying Encounters with Eligible Providers" HCCQualifyingEncounters
+     let HCCEncounterDiagnosis: HCCQualifyingEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global."GetId"(D.condition.reference))
+     where HCCEncounterDiagnosis.code in "Example HCC189 Exclusion"
+  return true
 
 /** Patient has an Encounter Diagnosis in one of the exclusion conditions*/
 /** Is timing needed ? **/
@@ -148,3 +132,11 @@ define "HCC Qualifying Encounters with Eligible Providers":
 /**
   Eligible Provider need to be in the provider Taxonomy codes defined in RADV table (with Provider Taxonomy codes)
 **/
+/** Is the initial population all members of a payer? example below use age limit for Medicare Advantage Program**/
+/** Members have to be enrolled during the risk adjustment clinical evaluation period. Need to do entrollment look up **/
+/** Cannot be simply based on age, even for Medicare Advantage Program. For the demo purpose, 
+use this to define QualifyingMembers: AgeInYearsAt(date from start of "Measurement Period") >=65 
+and exists "HCC Qualifying Encounters" **/
+/** Discussed whether encounters are needed when define initial population. HCC189 is unusual, since it's amputation, encounters may not be needed. 
+There was comment that even for HCC189, encounters will be needed. For the demo purpose, we will include encounters**/
+/** define population is Medicare Advantage Part C Members. make this as a helper library: MedicareAdvantage.cql **/

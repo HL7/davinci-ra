@@ -1,6 +1,11 @@
 
 The Risk Adjustment Implementation Guide was developed under the  [Davinci Project](#)
 
+### Version 1.0.1
+Draft content in preparation for STU2
+1. **Applied**: Add "data collection period" to Glossary ([FHIR-37672](https://jira.hl7.org/browse/FHIR-37672))
+
+
 ### version 1.0.0
 **Ballot Comments Applied**: **Summary** (**Jira Issue**)
 1. **Applied**: Bind example value sets where ever possible instead of creating complicated element definitions ([FHIR-34774](https://jira.hl7.org/browse/FHIR-34774))
