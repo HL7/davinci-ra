@@ -103,3 +103,6 @@
 [Risk Adjustment Bundle]: StructureDefinition-ra-bundle.html
 [Risk Adjustment Composition]: StructureDefinition-ra-composition.html
 [Risk Adjustment DetectedIssue]: StructureDefinition-ra-detectedissue.html
+
+[$risk-adjustment]:OperationDefinition-risk-adjustment.html
+

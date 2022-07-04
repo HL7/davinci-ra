@@ -99,6 +99,9 @@
 <artifact id="Measure/RAModelExample02" key="Measure-RAModelExample02" name="Risk Adjustment Model Version 21 - CMS Hierarchical Category Condition (CMS-HCC)"/>
 <artifact id="Measure/RAModelExample01" key="Measure-RAModelExample01" name="Risk Adjustment Model Version 24 - CMS Hierarchical Category Condition (CMS-HCC)"/>
 <artifact id="Measure/RAModelExample03" key="Measure-RAModelExample03" name="Risk Adjustment Model Version 5 - CMS Prescribing Drug Hierarchical Category Condition (CMS-HCC)"/>
+<artifact id="OperationDefinition/risk-adjustment" key="OperationDefinition-risk-adjustment" name="Risk Adjustment Operation"/>
+<artifact id="CodeSystem/ra-operation-type" key="CodeSystem-ra-operation-type" name="Risk Adjustment Operation Type Code System"/>
+<artifact id="ValueSet/operation-type" key="ValueSet-operation-type" name="Risk Adjustment Operation Type Value Set"/>
 <artifact id="CapabilityStatement/ra-server" key="CapabilityStatement-ra-server" name="Risk Adjustment Server Capability Statement"/>
 <artifact id="CodeSystem/suspect-type" key="CodeSystem-suspect-type" name="Risk Adjustment Suspect Type Code System"/>
 <artifact id="StructureDefinition/ra-suspectType" key="StructureDefinition-ra-suspectType" name="Risk Adjustment Suspect Type Extension"/>
@@ -126,9 +129,9 @@
 <page key="extensions" name="Extensions"/>
 <page key="glossary" name="Glossary"/>
 <page deprecated="true" key="guidance" name="Guidance"/>
+<page key="guidance-risk-adjustment-using-cql" name="Guidance - Digital Condition Category Measure Using CQL"/>
 <page key="guidance-risk-adjustment-gap-reporting" name="Guidance - Risk Adjustment Gap Reporting"/>
 <page key="guidance-risk-adjustment-gap-response" name="Guidance - Risk Adjustment Gap Response"/>
-<page key="guidance-risk-adjustment-using-cql" name="Guidance - Using CQL in Condition Category Coding"/>
 <page key="operations" name="Operation"/>
 <page key="profiles" name="Profiles"/>
 <page key="toc" name="Table of Contents"/>

@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "caseSensitive": true,
+  "content": "complete",
+  "name": "RiskAdjustmentOperationTypeCodeSystem",
+  "id": "ra-operation-type",
+  "title": "Risk Adjustment Operation Type Code System",
+  "publisher":"Da Vinci Project",
+  "description": "This is a code system for the risk adjustment operation type, whether as a report or response.",
+  "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-operation-type",
+  "concept": [
+    {
+      "code": "report",
+      "display": "Report",
+      "definition": "TBD"
+    },
+    {
+      "code": "response",
+      "display": "Response",
+      "definition": "TBD"
+    }
+  ],
+  "count": 2
+}
