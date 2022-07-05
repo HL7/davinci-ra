@@ -55,5 +55,11 @@
             <path value="Measure.status"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Measure.library">
+            <path value="Measure.library"/>
+            <short value="Risk Adjustment Model library"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
     </differential>
 </StructureDefinition>
