@@ -63,7 +63,7 @@
         "valueString": "HCC189 Historic Encounter Diagnosis"
       }, {
         "url": "statement",
-        "valueString": "/** Patient has an Encounter Diagnosis of \"Acquired absence of right great toe\": 'Z89.411' outside of the Clinical Evaluation Period (could be prior or after) **/\ndefine \"HCC189 Historic Encounter Diagnosis\":\n    from\n      MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers outside Clinical Evaluation Period\" HCCEncounters,\n        ([Condition] C where C.code in \"Example Acquired Lower Limb Deformities\") HCCDiagnosis\n        let HCCEncounterDiagnosis: HCCEncounters.diagnosis D \n        where HCCDiagnosis.id = Global.\"GetId\"(D.condition.reference)"
+        "valueString": "/** Patient has an Encounter Diagnosis of \"Acquired absence of right great toe\": 'Z89.411' outside of the Clinical Evaluation Period (could be prior or after) **/\ndefine \"HCC189 Historic Encounter Diagnosis\":\n    from\n      MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers outside Clinical Evaluation Period\" HCCEncounter,\n        ([Condition] C where C.code in \"Example Acquired Lower Limb Deformities\") HCCDiagnosis\n        let HCCEncounterDiagnosis: HCCEncounter.diagnosis D \n        where HCCDiagnosis.id = Global.\"GetId\"(D.condition.reference)"
       }, {
         "url": "displaySequence",
         "valueInteger": 3
@@ -108,7 +108,7 @@
         "valueString": "HCC189 Exclusions"
       }, {
         "url": "statement",
-        "valueString": "/** Patient has an Encounter Diagnosis of the following exclusion conditions during Clinical Evaluation Period\nM20 Acquired deformities of fingers and toes\nM21 Other acquired deformities of limbs */\ndefine \"HCC189 Exclusions\":\n    from \n      MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period\" HCCEncounters\n      let HCCEncounterDiagnosis: HCCEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global.\"GetId\"(D.condition.reference))\n        where HCCEncounterDiagnosis.code in \"Example HCC189 Exclusion\""
+        "valueString": "/** Patient has an Encounter Diagnosis of the following exclusion conditions during Clinical Evaluation Period\nM20 Acquired deformities of fingers and toes\nM21 Other acquired deformities of limbs */\ndefine \"HCC189 Exclusions\":\n    from \n      MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period\" HCCEncounter\n      let HCCEncounterDiagnosis: HCCEncounter.diagnosis D return singleton from ([Condition] C where C.id = Global.\"GetId\"(D.condition.reference))\n        where HCCEncounterDiagnosis.code in \"Example HCC189 Exclusion\""
       }, {
         "url": "displaySequence",
         "valueInteger": 6
@@ -138,7 +138,7 @@
         "valueString": "Historic Encounter"
       }, {
         "url": "statement",
-        "valueString": "define \"Historic Encounter\":\n  \"HCC189 Historic Encounter Diagnosis\".HCCEncounters"
+        "valueString": "define \"Historic Encounter\":\n  \"HCC189 Historic Encounter Diagnosis\".HCCEncounter"
       }, {
         "url": "displaySequence",
         "valueInteger": 8
@@ -183,7 +183,7 @@
         "valueString": "HCC189 Encounter Diagnosis"
       }, {
         "url": "statement",
-        "valueString": "/** Patient has an Encounter Diagnosis of \"Acquired absence of right great toe\": 'Z89.411' during Clinical Evaluation Period\nZ89.411 maps to HCC189 */\ndefine \"HCC189 Encounter Diagnosis\":\n    from\n      MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period\" HCCEncounters\n      let HCCEncounterDiagnosis: HCCEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global.\"GetId\"(D.condition.reference))\n        where HCCEncounterDiagnosis.code in \"Example Acquired Lower Limb Deformities\""
+        "valueString": "/** Patient has an Encounter Diagnosis of \"Acquired absence of right great toe\": 'Z89.411' during Clinical Evaluation Period\nZ89.411 maps to HCC189 */\ndefine \"HCC189 Encounter Diagnosis\":\n    from\n      MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period\" HCCEncounter\n      let HCCEncounterDiagnosis: HCCEncounter.diagnosis D return singleton from ([Condition] C where C.id = Global.\"GetId\"(D.condition.reference))\n        where HCCEncounterDiagnosis.code in \"Example Acquired Lower Limb Deformities\""
       }, {
         "url": "displaySequence",
         "valueInteger": 11
