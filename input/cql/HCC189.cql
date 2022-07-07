@@ -67,12 +67,15 @@ define "Qualifying Population":
 define "Cohort Exclusions":
   "HCC189 Exclusions" 
 
-define "Historic Diagnosis":
-  "HCC189 Historic Encounter Diagnosis"
-
 define "Historic Population":
-  exists "Historic Diagnosis"
+  exists "HCC189 Historic Encounter Diagnosis"
 
+define "Historic Diagnosis":
+  "HCC189 Historic Encounter Diagnosis".HCCDiagnosis
+
+define "Historic Encounter":
+  "HCC189 Historic Encounter Diagnosis".HCCEncounters
+  
 /** 
 Suspected population may be defined by organizations that create suspecting algorithms.
 This placeholder definition is included for information only */
@@ -80,7 +83,7 @@ define "Suspecting Algorithm":
   null
 
 define "Suspected Population":
-  exists "Suspecting Algorithm"
+  false
 
 define "Initial Population":
   "Qualifying Population"
@@ -111,6 +114,7 @@ define "HCC189 Exclusions":
 /** Patient has an Encounter Diagnosis of "Acquired absence of right great toe": 'Z89.411' outside of the Clinical Evaluation Period (could be prior or after) **/
 define "HCC189 Historic Encounter Diagnosis":
     from
-      MedicareAdvantage."HCC Qualifying Encounters with Eligible Providers outside Clinical Evaluation Period" HCCEncounters
-      let HCCEncounterDiagnosis: HCCEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global."GetId"(D.condition.reference))
-        where HCCEncounterDiagnosis.code in "Example Acquired Lower Limb Deformities"   
+      MedicareAdvantage."HCC Qualifying Encounters with Eligible Providers outside Clinical Evaluation Period" HCCEncounters,
+        ([Condition] C where C.code in "Example Acquired Lower Limb Deformities") HCCDiagnosis
+        let HCCEncounterDiagnosis: HCCEncounters.diagnosis D 
+        where HCCDiagnosis.id = Global."GetId"(D.condition.reference)      
