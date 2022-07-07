@@ -258,7 +258,7 @@
         "valueString": "Initial Population"
       }, {
         "url": "statement",
-        "valueString": "define \"Initial Population\":\n  \"Qualifying Population\"\n    and not exists \"Closed Gap Diagnosis\"\n    and (\"Historic Population\" or \"Suspected Population\")\n    and not exists \"Cohort Exclusions\""
+        "valueString": "define \"Initial Population\":\n  \"Qualifying Population\"\n    and (\"Historic Population\" or \"Suspected Population\")\n    and not exists \"Closed Gap Diagnosis\"    \n    and not exists \"Cohort Exclusions\""
       }, {
         "url": "displaySequence",
         "valueInteger": 16

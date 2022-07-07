@@ -87,8 +87,8 @@ define "Suspected Population":
 
 define "Initial Population":
   "Qualifying Population"
-    and not exists "Closed Gap Diagnosis"
     and ("Historic Population" or "Suspected Population")
+    and not exists "Closed Gap Diagnosis"    
     and not exists "Cohort Exclusions"
 
 define "Closed Gap Diagnosis":
