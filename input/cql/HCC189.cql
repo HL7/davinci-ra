@@ -13,8 +13,8 @@ include FHIRHelpers version '4.0.001' called FHIRHelpers
 include MedicareAdvantage version '0.0.001' called MedicareAdvantage
 
 /** Has to define the HCC model version (e.g., CMSHCC v24) and whether to use ICD10CM to HCC mapping for either initial run, mid-year (sweep), or final run --**/
-codesystem "CMSHCC": 'http://terminology.hl7.org/CodeSystem/cmshcc' version '24.1.001'
-codesystem "ICD10CM": 'http://hl7.org/fhir/sid/icd-10-cm'
+// codesystem "CMSHCC": 'http://terminology.hl7.org/CodeSystem/cmshcc' version '24.1.001'
+// codesystem "ICD10CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 
 
 /** codes for the Example Acquired Lower Limb Deformities value set
@@ -22,7 +22,7 @@ code "Acquired deformities of fingers and toes": 'M20' from "ICD10CM" display 'A
 code "Other acquired deformities of limbs": 'M21' from "ICD10CM" display 'Other acquired deformities of limbs'
 **/
 valueset "Example Acquired Lower Limb Deformities": 'http://hl7.org/fhir/us/davinci-ra/ValueSet/example-acquired-lower-limb-deformities'
-code "Amputation Status, Lower Limb/Amputation Complications": '189' from "CMSHCC" display 'Amputation Status, Lower Limb/Amputation Complications'
+// code "Amputation Status, Lower Limb/Amputation Complications": '189' from "CMSHCC" display 'Amputation Status, Lower Limb/Amputation Complications'
 /**code "Acquired absence of right great toe": 'Z89.411' from "ICD10CM" display 'Acquired absence of right great toe' **/
 valueset "Example HCC189 Exclusion": 'http://hl7.org/fhir/us/davinci-ra/ValueSet/example-hcc189-exclusion'
 /** contains 
