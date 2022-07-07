@@ -60,10 +60,10 @@
         "valueString": "HCC189"
       }, {
         "url": "name",
-        "valueString": "Has HCC189 Historic Encounter Diagnosis"
+        "valueString": "HCC189 Historic Encounter Diagnosis"
       }, {
         "url": "statement",
-        "valueString": "/** Patient has an Encounter Diagnosis of \"Acquired absence of right great toe\": 'Z89.411' outside of the Clinical Evaluation Period (could be prior or after) **/\ndefine \"Has HCC189 Historic Encounter Diagnosis\":\n  exists\n    from\n      MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers outside Clinical Evaluation Period\" HCCEncounters\n      let HCCEncounterDiagnosis: HCCEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global.\"GetId\"(D.condition.reference))\n        where HCCEncounterDiagnosis.code in \"Example Acquired Lower Limb Deformities\""
+        "valueString": "/** Patient has an Encounter Diagnosis of \"Acquired absence of right great toe\": 'Z89.411' outside of the Clinical Evaluation Period (could be prior or after) **/\ndefine \"HCC189 Historic Encounter Diagnosis\":\n    from\n      MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers outside Clinical Evaluation Period\" HCCEncounters\n      let HCCEncounterDiagnosis: HCCEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global.\"GetId\"(D.condition.reference))\n        where HCCEncounterDiagnosis.code in \"Example Acquired Lower Limb Deformities\""
       }, {
         "url": "displaySequence",
         "valueInteger": 3
@@ -75,73 +75,13 @@
         "valueString": "HCC189"
       }, {
         "url": "name",
-        "valueString": "Historic Population"
+        "valueString": "Historic Diagnosis"
       }, {
         "url": "statement",
-        "valueString": "define \"Historic Population\":\n  \"Has HCC189 Historic Encounter Diagnosis\""
+        "valueString": "define \"Historic Diagnosis\":\n  \"HCC189 Historic Encounter Diagnosis\""
       }, {
         "url": "displaySequence",
         "valueInteger": 4
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "HCC189"
-      }, {
-        "url": "name",
-        "valueString": "Suspected Population"
-      }, {
-        "url": "statement",
-        "valueString": "/** \nSuspected population may be defined by organizations that create suspecting algorithms.\nThis placeholder definition is included for information only */\ndefine \"Suspected Population\":\n  null\n    and not \"Has HCC189 Historic Encounter Diagnosis\""
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 5
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "HCC189"
-      }, {
-        "url": "name",
-        "valueString": "Numerator"
-      }, {
-        "url": "statement",
-        "valueString": "define \"Numerator\":\n  \"Historic Population\"\n    or \"Suspected Population\""
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 6
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "MedicareAdvantage"
-      }, {
-        "url": "name",
-        "valueString": "Qualifying Member"
-      }, {
-        "url": "statement",
-        "valueString": "define \"Qualifying Member\":\n    AgeInYearsAt(date from start of \"Clinical Evaluation Period\") >=65"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 7
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "HCC189"
-      }, {
-        "url": "name",
-        "valueString": "Qualifying Population"
-      }, {
-        "url": "statement",
-        "valueString": "define \"Qualifying Population\":\n  MedicareAdvantage.\"Qualifying Member\"\n    and exists MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers\""
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 8
       } ]
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
@@ -156,6 +96,66 @@
         "valueString": "define \"HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period\":\n    \"HCC Qualifying Encounters with Eligible Providers\" QualifyingEncounter\n    \twhere Global.\"Normalize Interval\"(QualifyingEncounter.period) during \"Clinical Evaluation Period\""
       }, {
         "url": "displaySequence",
+        "valueInteger": 5
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HCC189"
+      }, {
+        "url": "name",
+        "valueString": "HCC189 Exclusions"
+      }, {
+        "url": "statement",
+        "valueString": "/** Patient has an Encounter Diagnosis of the following exclusion conditions during Clinical Evaluation Period\nM20 Acquired deformities of fingers and toes\nM21 Other acquired deformities of limbs */\ndefine \"HCC189 Exclusions\":\n    from \n      MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period\" HCCEncounters\n      let HCCEncounterDiagnosis: HCCEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global.\"GetId\"(D.condition.reference))\n        where HCCEncounterDiagnosis.code in \"Example HCC189 Exclusion\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 6
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HCC189"
+      }, {
+        "url": "name",
+        "valueString": "Cohort Exclusions"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Cohort Exclusions\":\n  \"HCC189 Exclusions\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 7
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HCC189"
+      }, {
+        "url": "name",
+        "valueString": "Suspecting Algorithm"
+      }, {
+        "url": "statement",
+        "valueString": "/** \nSuspected population may be defined by organizations that create suspecting algorithms.\nThis placeholder definition is included for information only */\ndefine \"Suspecting Algorithm\":\n  null"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 8
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HCC189"
+      }, {
+        "url": "name",
+        "valueString": "Historic Population"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Historic Population\":\n  exists \"Historic Diagnosis\""
+      }, {
+        "url": "displaySequence",
         "valueInteger": 9
       } ]
     }, {
@@ -165,10 +165,10 @@
         "valueString": "HCC189"
       }, {
         "url": "name",
-        "valueString": "Has HCC189 Encounter Diagnosis"
+        "valueString": "HCC189 Encounter Diagnosis"
       }, {
         "url": "statement",
-        "valueString": "/** Patient has an Encounter Diagnosis of \"Acquired absence of right great toe\": 'Z89.411' during Clinical Evaluation Period\nZ89.411 maps to HCC189 */\ndefine \"Has HCC189 Encounter Diagnosis\":\n  exists \n    from\n      MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period\" HCCEncounters\n      let HCCEncounterDiagnosis: HCCEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global.\"GetId\"(D.condition.reference))\n        where HCCEncounterDiagnosis.code in \"Example Acquired Lower Limb Deformities\""
+        "valueString": "/** Patient has an Encounter Diagnosis of \"Acquired absence of right great toe\": 'Z89.411' during Clinical Evaluation Period\nZ89.411 maps to HCC189 */\ndefine \"HCC189 Encounter Diagnosis\":\n    from\n      MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period\" HCCEncounters\n      let HCCEncounterDiagnosis: HCCEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global.\"GetId\"(D.condition.reference))\n        where HCCEncounterDiagnosis.code in \"Example Acquired Lower Limb Deformities\""
       }, {
         "url": "displaySequence",
         "valueInteger": 10
@@ -180,10 +180,10 @@
         "valueString": "HCC189"
       }, {
         "url": "name",
-        "valueString": "Initial Population"
+        "valueString": "Closed Gap Diagnosis"
       }, {
         "url": "statement",
-        "valueString": "/** Medicare Advantage patients who are age 65 years and older and have an eligible encounter */\ndefine \"Initial Population\":\n  \"Qualifying Population\"\n    and not \"Has HCC189 Encounter Diagnosis\""
+        "valueString": "define \"Closed Gap Diagnosis\":\n    \"HCC189 Encounter Diagnosis\""
       }, {
         "url": "displaySequence",
         "valueInteger": 11
@@ -192,13 +192,13 @@
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "HCC189"
+        "valueString": "MedicareAdvantage"
       }, {
         "url": "name",
-        "valueString": "Has HCC189 Exclusions"
+        "valueString": "Qualifying Member"
       }, {
         "url": "statement",
-        "valueString": "/** Patient has an Encounter Diagnosis of the following exclusion conditions during Clinical Evaluation Period\nM20 Acquired deformities of fingers and toes\nM21 Other acquired deformities of limbs */\ndefine \"Has HCC189 Exclusions\":\n  exists \n    from \n      MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period\" HCCEncounters\n      let HCCEncounterDiagnosis: HCCEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global.\"GetId\"(D.condition.reference))\n        where HCCEncounterDiagnosis.code in \"Example HCC189 Exclusion\""
+        "valueString": "define \"Qualifying Member\":\n    AgeInYearsAt(date from start of \"Clinical Evaluation Period\") >=65"
       }, {
         "url": "displaySequence",
         "valueInteger": 12
@@ -210,10 +210,10 @@
         "valueString": "HCC189"
       }, {
         "url": "name",
-        "valueString": "Denominator Exclusions"
+        "valueString": "Qualifying Population"
       }, {
         "url": "statement",
-        "valueString": "define \"Denominator Exclusions\":\n  \"Has HCC189 Exclusions\""
+        "valueString": "/** Medicare Advantage patients who are age 65 years and older and have an eligible encounter */\ndefine \"Qualifying Population\":\n  MedicareAdvantage.\"Qualifying Member\"\n    and exists MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers\""
       }, {
         "url": "displaySequence",
         "valueInteger": 13
@@ -225,10 +225,10 @@
         "valueString": "HCC189"
       }, {
         "url": "name",
-        "valueString": "Denominator"
+        "valueString": "Suspected Population"
       }, {
         "url": "statement",
-        "valueString": "define \"Denominator\":\n  \"Initial Population\"\n    and not \"Denominator Exclusions\""
+        "valueString": "define \"Suspected Population\":\n  exists \"Suspecting Algorithm\""
       }, {
         "url": "displaySequence",
         "valueInteger": 14
@@ -240,10 +240,10 @@
         "valueString": "HCC189"
       }, {
         "url": "name",
-        "valueString": "Closed Gap Population"
+        "valueString": "Initial Population"
       }, {
         "url": "statement",
-        "valueString": "define \"Closed Gap Population\":\n  \"Qualifying Population\"\n    and \"Has HCC189 Encounter Diagnosis\""
+        "valueString": "define \"Initial Population\":\n  \"Qualifying Population\"\n    and not exists \"Closed Gap Diagnosis\"\n    and (\"Historic Population\" or \"Suspected Population\")\n    and not exists \"Cohort Exclusions\""
       }, {
         "url": "displaySequence",
         "valueInteger": 15
@@ -324,17 +324,23 @@
       "max": "1",
       "type": "Period"
     }, {
-      "name": "Numerator",
+      "name": "Historic Diagnosis",
       "use": "out",
       "min": 0,
-      "max": "1",
-      "type": "boolean"
+      "max": "*",
+      "type": "Encounter"
     }, {
-      "name": "Denominator",
+      "name": "Cohort Exclusions",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "Encounter"
+    }, {
+      "name": "Suspecting Algorithm",
       "use": "out",
       "min": 0,
       "max": "1",
-      "type": "boolean"
+      "type": "Any"
     }, {
       "name": "Historic Population",
       "use": "out",
@@ -342,19 +348,13 @@
       "max": "1",
       "type": "boolean"
     }, {
+      "name": "Closed Gap Diagnosis",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "Encounter"
+    }, {
       "name": "Initial Population",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "boolean"
-    }, {
-      "name": "Denominator Exclusions",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "boolean"
-    }, {
-      "name": "Closed Gap Population",
       "use": "out",
       "min": 0,
       "max": "1",
@@ -527,21 +527,20 @@
   "scoring": {
     "coding": [ {
       "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
-      "code": "proportion",
-      "display": "Proportion"
+      "code": "cohort",
+      "display": "Cohort"
     } ]
   },
   "type": [ {
     "coding": [ {
       "system": "http://terminology.hl7.org/CodeSystem/measure-type",
-      "code": "process"
+      "code": "outcome"
     } ]
   } ],
   "improvementNotation": {
     "coding": [ {
       "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
-      "code": "increase",
-      "display": "Increased score indicates improvement"
+      "code": "decrease"
     } ]
   },
   "group": [ {
@@ -553,64 +552,25 @@
       } ]
     },
     "population": [ {
-      "id": "59495760-F805-422E-BA85-243861A8EC6D",
+      "id": "fdf03cc1-a75b-48ea-9902-426a004cb782",
       "code": {
         "coding": [ {
           "system": "http://terminology.hl7.org/CodeSystem/measure-population",
           "code": "initial-population",
           "display": "Initial Population"
-        } ]
-      },
-      "description": "Medicare Care Advantage members who were age 65 years and older with (risk adjustable) eligible encounters during the Clinical Evaluation Period.",
-      "criteria": {
-        "language": "text/cql.identifier",
-        "expression": "Initial Population"
-      }
-    }, {
-      "code": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-          "code": "denominator",
-          "display": "Denominator"
-        } ]
-      },
-      "description": "The Initial Population, minus Exclusions.",
-      "criteria": {
-        "language": "text/cql-identifier",
-        "expression": "Denominator"
-      }
-    }, {
-      "code": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-          "code": "denominator-exclusion",
-          "display": "Denominator Exclusion"
-        } ]
-      },
-      "description": "Members who had an excluded condition.",
-      "criteria": {
-        "language": "text/cql-identifier",
-        "expression": "Denominator Exclusions"
-      }
-    }, {
-      "code": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-          "code": "numerator",
-          "display": "Numerator"
         }, {
           "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
           "code": "open-gap"
         } ]
       },
-      "description": "Either a historic or suspected open gap.",
+      "description": "* Medicare Care Advantage members who were age 65 years and older with (risk adjustable) eligible encounters during the Clinical Evaluation Period.\n* Members who did not have and Exclusion.\n * Members who either had a Historic or Suspected open gap.",
       "criteria": {
-        "language": "text/cql-identifier",
-        "expression": "Numerator"
+        "language": "text/cql.identifier",
+        "expression": "Initial Population"
       }
     } ],
     "stratifier": [ {
-      "id": "92B4344D-15D1-400A-A423-A28ACE3CA8E0",
+      "id": "9ab5f42e-dfa3-4504-993f-28199056cff6",
       "code": {
         "coding": [ {
           "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
@@ -622,7 +582,7 @@
         "expression": "Historic Population"
       }
     }, {
-      "id": "634DE8E1-5412-43C3-A5F0-46C237E62785",
+      "id": "97e4df34-75d5-4874-942f-d24a5e2dd794",
       "code": {
         "coding": [ {
           "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
@@ -636,7 +596,43 @@
     } ]
   } ],
   "supplementalData": [ {
-    "id": "B6107A12-4D72-4F7C-B4E8-BA9FC0BE6E9B",
+    "id": "53739093-31d2-4bf2-a749-6d5170b205e4",
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "criteria": {
+      "language": "text/cql.identifier",
+      "expression": "Cohort Exclusions"
+    }
+  }, {
+    "id": "ef8da0b3-9080-41e2-b9b3-d68855edb4bf",
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "criteria": {
+      "language": "text/cql.identifier",
+      "expression": "Historic Diagnosis"
+    }
+  }, {
+    "id": "44fde183-23ab-43ce-a10e-1ab48f57cbd5",
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "criteria": {
+      "language": "text/cql.identifier",
+      "expression": "Suspecting Algorithm"
+    }
+  }, {
+    "id": "0e86e498-1122-4b7c-bf2e-e7eb02ef5467",
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
@@ -648,7 +644,7 @@
     } ],
     "criteria": {
       "language": "text/cql.identifier",
-      "expression": "Closed Gap Population"
+      "expression": "Closed Gap Diagnosis"
     }
   } ]
 }
