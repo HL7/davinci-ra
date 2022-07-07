@@ -1,0 +1,161 @@
+{
+  "resourceType": "Measure",
+  "id": "ConditionCategoryPOC",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-model-measure"
+    ]
+  },
+  "language": "en",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
+      "valueReference": {
+        "reference": "Device/cqf-tooling"
+      }
+    }
+  ],
+  "url": "https://build.fhir.org/ig/HL7/davinci-ra/ConditionCategoryPOC",
+  "identifier": [
+    {
+      "use": "temp",
+      "system": "http://example.org/fhir/server",
+      "value": "CMS-HCC"
+    }
+  ],
+  "version": "0.0.001",
+  "name": "ConditionCategoryPOC",
+  "title": "Condition Category Proof Of Concept",
+  "status": "draft",
+  "experimental": true,
+  "date": "2022-07-06",
+  "publisher": "HL7 International - Clinical Quality Information Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cqi/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "A proof of concept for using CQL to evaluate CMS-HCC Models",
+  "effectivePeriod": {
+    "start": "2022-01-01",
+    "end": "2022-12-31"
+  },
+  "library": [
+    "https://build.fhir.org/ig/HL7/davinci-ra/Library/ConditionCategoryPOC"
+  ],
+  "disclaimer": "This is a proof of concept and not intended for actual use.",
+  "scoring": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+        "code": "cohort",
+        "display": "cohort"
+      }
+    ]
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-type",
+          "code": "process"
+        }
+      ]
+    }
+  ],
+  "group": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+            "code": "189",
+            "display": "Amputation Status, Lower Limb/Amputation Complications"
+          }
+        ]
+      },
+      "population": [
+        {
+          "id": "59495760-F805-422E-BA85-243861A8EC6D",
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population",
+                "display": "Initial Population"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
+                "code": "open-gap"                
+              }
+            ]
+          },
+          "criteria": {
+            "language": "text/cql.identifier",
+            "expression": "Initial Population"
+          }
+        }
+      ],
+      "stratifier": [
+        {
+          "id": "92B4344D-15D1-400A-A423-A28ACE3CA8E0",
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
+                "code": "historic"
+              }
+            ]
+          },
+          "criteria": {
+            "language": "text/cql.identifier",
+            "expression": "Historic Population"
+          }
+        },
+        {
+          "id": "634DE8E1-5412-43C3-A5F0-46C237E62785",
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
+                "code": "suspected"
+              }
+            ]
+          },
+          "criteria": {
+            "language": "text/cql.identifier",
+            "expression": "Suspected Population"
+          }
+        }
+      ]
+    }
+  ],
+  "supplementalData": [
+    {
+      "id": "B6107A12-4D72-4F7C-B4E8-BA9FC0BE6E9B",
+      "usage": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+              "code": "supplemental-data"
+            },
+            {
+              "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
+              "code": "closed-gap"              
+            }
+          ]
+        }
+      ],
+      "criteria": {
+        "language": "text/cql.identifier",
+        "expression": "Closed Gap Population"
+      }
+    }
+  ]
+}
