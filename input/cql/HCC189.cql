@@ -64,36 +64,44 @@ define "Qualifying Population":
   MedicareAdvantage."Qualifying Member"
     and exists MedicareAdvantage."HCC Qualifying Encounters with Eligible Providers"
 
-define "Cohort Exclusions":
-  "HCC189 Exclusions" 
-
-define "Historic Population":
-  exists "HCC189 Historic Encounter Diagnosis"
-
-define "Historic Diagnosis":
-  "HCC189 Historic Encounter Diagnosis".HCCDiagnosis
-
-define "Historic Encounter":
-  "HCC189 Historic Encounter Diagnosis".HCCEncounter
-
-/** 
-Suspected population may be defined by organizations that create suspecting algorithms.
-This placeholder definition is included for information only */
-define "Suspecting Algorithm":
-  null
-
-define "Suspected Population":
-  false
-
+// Cohort Population
 define "Initial Population":
   "Qualifying Population"
     and ("Historic Population" or "Suspected Population")
     and not exists "Closed Gap Diagnosis"    
     and not exists "Cohort Exclusions"
 
+// Stratifier
+define "Historic Population":
+  exists "HCC189 Historic Encounter Diagnosis"
+
+// Stratifier
+define "Suspected Population":
+  false
+
+// SDE
+define "Cohort Exclusions":
+  "HCC189 Exclusions" 
+
+// SDE
 define "Closed Gap Diagnosis":
     "HCC189 Encounter Diagnosis"
-    
+
+// SDE
+define "Historic Diagnosis":
+  "HCC189 Historic Encounter Diagnosis".HCCDiagnosis
+  
+// SDE
+define "Historic Encounter":
+  "HCC189 Historic Encounter Diagnosis".HCCEncounter
+
+/** 
+Suspected population may be defined by organizations that create suspecting algorithms.
+This placeholder definition is included for information only */
+// SDE
+define "Suspecting Algorithm":
+  null
+
 /** Patient has an Encounter Diagnosis of "Acquired absence of right great toe": 'Z89.411' during Clinical Evaluation Period
 Z89.411 maps to HCC189 */
 define "HCC189 Encounter Diagnosis":
