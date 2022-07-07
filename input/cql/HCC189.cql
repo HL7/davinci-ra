@@ -68,12 +68,12 @@ define "Initial Population":
   "Qualifying Population"
     and not "Has HCC189 Encounter Diagnosis"
 
-define "Denominator Exclusion":
+define "Denominator Exclusions":
   "Has HCC189 Exclusions" 
 
 define "Denominator":
   "Initial Population"
-    and not "Denominator Exclusion"
+    and not "Denominator Exclusions"
 
 define "Numerator":
   "Historic Population"
@@ -81,7 +81,6 @@ define "Numerator":
   
 define "Historic Population":
   "Has HCC189 Historic Encounter Diagnosis"
-    and "Initial Population"
 
 define "Closed Gap Population":
   "Qualifying Population"
@@ -121,4 +120,3 @@ This placeholder definition is included for information only */
 define "Suspected Population":
   null
     and not "Has HCC189 Historic Encounter Diagnosis"
-    and "Initial Population"

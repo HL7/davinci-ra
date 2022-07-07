@@ -72,6 +72,51 @@
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
       "extension": [ {
         "url": "libraryName",
+        "valueString": "HCC189"
+      }, {
+        "url": "name",
+        "valueString": "Historic Population"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Historic Population\":\n  \"Has HCC189 Historic Encounter Diagnosis\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 4
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HCC189"
+      }, {
+        "url": "name",
+        "valueString": "Suspected Population"
+      }, {
+        "url": "statement",
+        "valueString": "/** \nSuspected population may be defined by organizations that create suspecting algorithms.\nThis placeholder definition is included for information only */\ndefine \"Suspected Population\":\n  null\n    and not \"Has HCC189 Historic Encounter Diagnosis\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 5
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HCC189"
+      }, {
+        "url": "name",
+        "valueString": "Numerator"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Numerator\":\n  \"Historic Population\"\n    or \"Suspected Population\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 6
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
         "valueString": "MedicareAdvantage"
       }, {
         "url": "name",
@@ -81,7 +126,7 @@
         "valueString": "define \"Qualifying Member\":\n    AgeInYearsAt(date from start of \"Clinical Evaluation Period\") >=65"
       }, {
         "url": "displaySequence",
-        "valueInteger": 4
+        "valueInteger": 7
       } ]
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
@@ -96,7 +141,7 @@
         "valueString": "define \"Qualifying Population\":\n  MedicareAdvantage.\"Qualifying Member\"\n    and exists MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 5
+        "valueInteger": 8
       } ]
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
@@ -111,7 +156,7 @@
         "valueString": "define \"HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period\":\n    \"HCC Qualifying Encounters with Eligible Providers\" QualifyingEncounter\n    \twhere Global.\"Normalize Interval\"(QualifyingEncounter.period) during \"Clinical Evaluation Period\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 6
+        "valueInteger": 9
       } ]
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
@@ -126,7 +171,7 @@
         "valueString": "/** Patient has an Encounter Diagnosis of \"Acquired absence of right great toe\": 'Z89.411' during Clinical Evaluation Period\nZ89.411 maps to HCC189 */\ndefine \"Has HCC189 Encounter Diagnosis\":\n  exists \n    from\n      MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period\" HCCEncounters\n      let HCCEncounterDiagnosis: HCCEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global.\"GetId\"(D.condition.reference))\n        where HCCEncounterDiagnosis.code in \"Example Acquired Lower Limb Deformities\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 7
+        "valueInteger": 10
       } ]
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
@@ -139,51 +184,6 @@
       }, {
         "url": "statement",
         "valueString": "/** Medicare Advantage patients who are age 65 years and older and have an eligible encounter */\ndefine \"Initial Population\":\n  \"Qualifying Population\"\n    and not \"Has HCC189 Encounter Diagnosis\""
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 8
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "HCC189"
-      }, {
-        "url": "name",
-        "valueString": "Historic Population"
-      }, {
-        "url": "statement",
-        "valueString": "define \"Historic Population\":\n  \"Has HCC189 Historic Encounter Diagnosis\"\n    and \"Initial Population\""
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 9
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "HCC189"
-      }, {
-        "url": "name",
-        "valueString": "Suspected Population"
-      }, {
-        "url": "statement",
-        "valueString": "/** \nSuspected population may be defined by organizations that create suspecting algorithms.\nThis placeholder definition is included for information only */\ndefine \"Suspected Population\":\n  null\n    and not \"Has HCC189 Historic Encounter Diagnosis\"\n    and \"Initial Population\""
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 10
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "HCC189"
-      }, {
-        "url": "name",
-        "valueString": "Numerator"
-      }, {
-        "url": "statement",
-        "valueString": "define \"Numerator\":\n  \"Historic Population\"\n    or \"Suspected Population\""
       }, {
         "url": "displaySequence",
         "valueInteger": 11
@@ -210,10 +210,10 @@
         "valueString": "HCC189"
       }, {
         "url": "name",
-        "valueString": "Denominator Exclusion"
+        "valueString": "Denominator Exclusions"
       }, {
         "url": "statement",
-        "valueString": "define \"Denominator Exclusion\":\n  \"Has HCC189 Exclusions\""
+        "valueString": "define \"Denominator Exclusions\":\n  \"Has HCC189 Exclusions\""
       }, {
         "url": "displaySequence",
         "valueInteger": 13
@@ -228,7 +228,7 @@
         "valueString": "Denominator"
       }, {
         "url": "statement",
-        "valueString": "define \"Denominator\":\n  \"Initial Population\"\n    and not \"Denominator Exclusion\""
+        "valueString": "define \"Denominator\":\n  \"Initial Population\"\n    and not \"Denominator Exclusions\""
       }, {
         "url": "displaySequence",
         "valueInteger": 14
@@ -343,6 +343,12 @@
       "type": "boolean"
     }, {
       "name": "Initial Population",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "Denominator Exclusions",
       "use": "out",
       "min": 0,
       "max": "1",

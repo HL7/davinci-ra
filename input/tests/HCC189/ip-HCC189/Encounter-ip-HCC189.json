@@ -22,12 +22,6 @@
 	"subject": {
 		"reference": "Patient/ip-HCC189"
 	},
-
-	"participant": [{
-		"individual": {
-			"reference": "Practitioner/ip-HCC189"
-		}
-	}],
 	"period": {
 		"start": "2022-01-31",
 		"end": "2022-01-31"
