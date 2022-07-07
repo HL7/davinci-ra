@@ -1485,6 +1485,38 @@
     }
   }, {
     "resource": {
+      "resourceType": "Encounter",
+      "id": "hist-HCC189",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter" ]
+      },
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB",
+        "display": "ambulatory"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99202"
+        } ],
+        "text": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using time for code selection, 15-29 minutes of total time is spent on the date of the encounter."
+      } ],
+      "subject": {
+        "reference": "Patient/hist-HCC189"
+      },
+      "period": {
+        "start": "2022-01-31",
+        "end": "2022-01-31"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/hist-HCC189"
+    }
+  }, {
+    "resource": {
       "resourceType": "ValueSet",
       "id": "2.16.840.1.113762.1.4.1111.143",
       "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143",
@@ -1552,6 +1584,38 @@
     "request": {
       "method": "PUT",
       "url": "ValueSet/2.16.840.1.113883.3.666.5.307"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "ip-HCC189",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter" ]
+      },
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB",
+        "display": "ambulatory"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99202"
+        } ],
+        "text": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using time for code selection, 15-29 minutes of total time is spent on the date of the encounter."
+      } ],
+      "subject": {
+        "reference": "Patient/ip-HCC189"
+      },
+      "period": {
+        "start": "2022-01-31",
+        "end": "2022-01-31"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/ip-HCC189"
     }
   }, {
     "resource": {
@@ -3838,6 +3902,54 @@
     "request": {
       "method": "PUT",
       "url": "ValueSet/example-hcc189-exclusion"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "hist2-HCC189",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition" ]
+      },
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        } ],
+        "text": "Active"
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ],
+        "text": "Confirmed"
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ],
+        "text": "Encounter Diagnosis"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+          "code": "189",
+          "display": "Amputation Status, Lower Limb/Amputation Complications"
+        } ],
+        "text": "189: Amputation Status, Lower Limb/Amputation Complications"
+      },
+      "subject": {
+        "reference": "Patient/hist-HCC189"
+      },
+      "onsetDateTime": "2020-01-31"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/hist2-HCC189"
     }
   } ]
 }
