@@ -13,7 +13,7 @@ include FHIRHelpers version '4.0.001' called FHIRHelpers
 include MedicareAdvantage version '0.0.001' called MedicareAdvantage
 
 /** Has to define the HCC model version (e.g., CMSHCC v24) and whether to use ICD10CM to HCC mapping for either initial run, mid-year (sweep), or final run --**/
-codesystem "CMSHCC": 'http://terminology.hl7.org/CodeSystem/cmshcc' version 'http://terminology.hl7.org/CodeSystem/cmshcc/version/v24'
+codesystem "CMSHCC": 'http://terminology.hl7.org/CodeSystem/cmshcc' version '24.0.001'
 codesystem "ICD10CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 
 
@@ -49,61 +49,76 @@ Conformance Requirement
 2. CQL "Condition Category" definition must return a code (CodableConcept.coding)
 */
 
-parameter "Clinical Evaluation Period" Interval<DateTime>
 //$risk-adjustment periodStart and periodEnd
+//Workaround: the service we're using for the POC defines a "Measurement Period" not a "Clinical Evaluation Period"
+parameter "Measurement Period" Interval<DateTime>
+  default Interval[@2022-01-01T00:00:00.0, @2023-01-01T00:00:00.0)
 
 context Patient
 
+define "Clinical Evaluation Period":
+  "Measurement Period"
+
+define "Qualifying Population":
+  MedicareAdvantage."Qualifying Member"
+    and exists MedicareAdvantage."HCC Qualifying Encounters with Eligible Providers"
+
 /** Medicare Advantage patients who are age 65 years and older and have an eligible encounter */
 define "Initial Population":
-  MedicareAdvantage."Qualifying Member"
-  and exists MedicareAdvantage."HCC Qualifying Encounters with Eligible Providers"
+  "Qualifying Population"
+    and not "Has HCC189 Encounter Diagnosis"
+
+define "Denominator Exclusion":
+  "Has HCC189 Exclusions" 
+
+define "Denominator":
+  "Initial Population"
+    and not "Denominator Exclusion"
+
+define "Numerator":
+  "Historic Population"
+    or "Suspected Population"
+  
+define "Historic Population":
+  "Has HCC189 Historic Encounter Diagnosis"
+    and "Initial Population"
 
 define "Closed Gap Population":
-  "Initial Population" 
-  and exists "Has HCC189 Encounter Diagnosis"
-
-define "Closed Gap Exclusion":
-  exists "Has HCC189 Exclusions"  
-
-/** Do we need to ensure it is not in closed gap population already?*/
-define "Historic Population":
-  exists "Has HCC189 Historic Encounter Diagnosis" 
-  and not exists "Has HCC189 Encounter Diagnosis"
-
-/** Patient has HCC189 exclusions*/
-define "Historic Exclusions":
-  exists "Has HCC189 Exclusions"
-
+  "Qualifying Population"
+    and "Has HCC189 Encounter Diagnosis"
+    
 /** Patient has an Encounter Diagnosis of "Acquired absence of right great toe": 'Z89.411' during Clinical Evaluation Period
 Z89.411 maps to HCC189 */
 define "Has HCC189 Encounter Diagnosis":
-  from
+  exists 
+    from
       MedicareAdvantage."HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period" HCCEncounters
       let HCCEncounterDiagnosis: HCCEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global."GetId"(D.condition.reference))
-      where HCCEncounterDiagnosis.code in "Example Acquired Lower Limb Deformities"
-      return true     
+        where HCCEncounterDiagnosis.code in "Example Acquired Lower Limb Deformities"
+       
 
 /** Patient has an Encounter Diagnosis of the following exclusion conditions during Clinical Evaluation Period
 M20 Acquired deformities of fingers and toes
 M21 Other acquired deformities of limbs */
 define "Has HCC189 Exclusions":
-  from 
-    MedicareAdvantage."HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period" HCCEncounters
-     let HCCEncounterDiagnosis: HCCEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global."GetId"(D.condition.reference))
-     where HCCEncounterDiagnosis.code in "Example HCC189 Exclusion"
-  return true
+  exists 
+    from 
+      MedicareAdvantage."HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period" HCCEncounters
+      let HCCEncounterDiagnosis: HCCEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global."GetId"(D.condition.reference))
+        where HCCEncounterDiagnosis.code in "Example HCC189 Exclusion"
 
 /** Patient has an Encounter Diagnosis of "Acquired absence of right great toe": 'Z89.411' outside of the Clinical Evaluation Period (could be prior or after) **/
 define "Has HCC189 Historic Encounter Diagnosis":
-  from
+  exists
+    from
       MedicareAdvantage."HCC Qualifying Encounters with Eligible Providers outside Clinical Evaluation Period" HCCEncounters
       let HCCEncounterDiagnosis: HCCEncounters.diagnosis D return singleton from ([Condition] C where C.id = Global."GetId"(D.condition.reference))
-      where HCCEncounterDiagnosis.code in "Example Acquired Lower Limb Deformities"
-      return true    
+        where HCCEncounterDiagnosis.code in "Example Acquired Lower Limb Deformities"   
 
 /** 
 Suspected population may be defined by organizations that create suspecting algorithms.
 This placeholder definition is included for information only */
 define "Suspected Population":
   null
+    and not "Has HCC189 Historic Encounter Diagnosis"
+    and "Initial Population"

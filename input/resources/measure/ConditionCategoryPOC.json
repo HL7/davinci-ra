@@ -53,8 +53,8 @@
     "coding": [
       {
         "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
-        "code": "cohort",
-        "display": "cohort"
+        "code": "proportion",
+        "display": "Proportion"
       }
     ]
   },
@@ -68,6 +68,15 @@
       ]
     }
   ],
+  "improvementNotation": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+        "code": "decrease",
+        "display": "Decreased score indicates improvement"
+      }
+    ]
+  },
   "group": [
     {
       "code": {
@@ -88,16 +97,65 @@
                 "system": "http://terminology.hl7.org/CodeSystem/measure-population",
                 "code": "initial-population",
                 "display": "Initial Population"
-              },
-              {
-                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
-                "code": "open-gap"                
               }
             ]
           },
+          "description": "Medicare Care Advantage members who were age 65 years and older with (risk adjustable) eligible encounters during the Clinical Evaluation Period.",
           "criteria": {
             "language": "text/cql.identifier",
             "expression": "Initial Population"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "denominator",
+                "display": "Denominator"
+              }
+            ]
+          },
+          "description": "The Initial Population, minus Exclusions.",
+          "criteria": {
+            "language": "text/cql-identifier",
+            "expression": "Denominator"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "denominator-exclusion",
+                "display": "Denominator Exclusion"
+              }
+            ]
+          },
+          "description": "Members who had an excluded condition.",
+          "criteria": {
+            "language": "text/cql-identifier",
+            "expression": "Denominator Exclusions"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "numerator",
+                "display": "Numerator"
+              },
+              {
+                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
+                "code": "open-gap"
+              }
+            ]
+          },
+          "description": "Either a historic or suspected open gap.",
+          "criteria": {
+            "language": "text/cql-identifier",
+            "expression": "Numerator"
           }
         }
       ],
@@ -147,7 +205,7 @@
             },
             {
               "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
-              "code": "closed-gap"              
+              "code": "closed-gap"
             }
           ]
         }

@@ -1,0 +1,26 @@
+{
+    "resourceType": "ValueSet",
+    "id": "example-hcc189-exclusion",
+    "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/example-hcc189-exclusion",
+    "identifier": [
+      {
+        "value": "example-hcc189-exclusion"
+      }
+    ],
+    "version": "Working",
+    "name": "Example_HCC189_Exclusion",
+    "title": "Example HCC189 Exclusion",
+    "status": "active",
+    "expansion": {
+      "timestamp": "2022-07-06T14:51:05-04:00",
+      "total": 1,
+      "offset": 0,
+      "contains": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10-cm",
+          "code": "Z89.411",
+          "display": "Acquired absence of right great toe"
+        }
+      ]
+    }
+  }

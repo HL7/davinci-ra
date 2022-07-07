@@ -19,9 +19,14 @@ valueset "Observation": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.
 /**valueset "Nursing Facility Visit": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1012'
 valueset "Home Healthcare Services": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016'**/
 
-parameter "Clinical Evaluation Period" Interval<DateTime>
-
+//Workaround: the service we're using for the POC defines a "Measurement Period" not a "Clinical Evaluation Period"
+parameter "Measurement Period" Interval<DateTime>
+  default Interval[@2022-01-01T00:00:00.0, @2023-01-01T00:00:00.0)
+  
 context Patient
+
+define "Clinical Evaluation Period":
+  "Measurement Period"
 
 define "Qualifying Member":
     AgeInYearsAt(date from start of "Clinical Evaluation Period") >=65
@@ -38,14 +43,12 @@ define "HCC Qualifying Encounters with Eligible Providers":
         union [Encounter: "Acute Inpatient"]
         union [Encounter: "Nonacute Inpatient"]
         union [Encounter: "Observation"]
-  )
+  ) ValidEncounter where ValidEncounter.status  = 'finished'
 
 define "HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period":
-    "HCC Qualifying Encounters with Eligible Providers" ValidEncounter
-    	where ValidEncounter.status  = 'finished'
-        and Global."Normalize Interval"(ValidEncounter.period) during "Clinical Evaluation Period"
+    "HCC Qualifying Encounters with Eligible Providers" QualifyingEncounter
+    	where Global."Normalize Interval"(QualifyingEncounter.period) during "Clinical Evaluation Period"
 
 define "HCC Qualifying Encounters with Eligible Providers outside Clinical Evaluation Period":
-    "HCC Qualifying Encounters with Eligible Providers" ValidEncounter
-    	where ValidEncounter.status  = 'finished'
-        and not Global."Normalize Interval"(ValidEncounter.period) during "Clinical Evaluation Period"
+    "HCC Qualifying Encounters with Eligible Providers" QualifyingEncounter 
+        where not (Global."Normalize Interval"(QualifyingEncounter.period) during "Clinical Evaluation Period")

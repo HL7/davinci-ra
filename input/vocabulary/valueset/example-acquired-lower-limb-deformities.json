@@ -1,0 +1,27 @@
+{
+    "resourceType": "ValueSet",
+    "id": "example-acquired-lower-limb-deformities",
+    "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/example-acquired-lower-limb-deformities",
+    "identifier": [
+      {
+        "value": "example-acquired-lower-limb-deformities"
+      }
+    ],
+    "version": "Working",
+    "name": "Example_Acquired_Lower_Limb_Deformities",
+    "title": "Example Acquired Lower Limb Deformities",
+    "status": "active",
+    "expansion": {
+      "timestamp": "2022-07-06T14:51:05-04:00",
+      "total": 1,
+      "offset": 0,
+      "contains": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+          "version": "24.0.001",
+          "code": "189",
+          "display": "Amputation Status, Lower Limb/Amputation Complications"
+        }
+      ]
+    }
+  }
