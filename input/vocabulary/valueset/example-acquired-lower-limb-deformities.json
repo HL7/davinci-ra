@@ -18,7 +18,7 @@
       "contains": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
-          "version": "24.0.001",
+          "version": "24.1.001",
           "code": "189",
           "display": "Amputation Status, Lower Limb/Amputation Complications"
         }

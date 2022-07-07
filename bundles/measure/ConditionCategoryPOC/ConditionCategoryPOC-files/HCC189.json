@@ -29,7 +29,7 @@
   }, {
     "type": "depends-on",
     "display": "Code system CMSHCC",
-    "resource": "http://terminology.hl7.org/CodeSystem/cmshcc|24.0.001"
+    "resource": "http://terminology.hl7.org/CodeSystem/cmshcc|24.1.001"
   }, {
     "type": "depends-on",
     "display": "Code system ICD10CM",

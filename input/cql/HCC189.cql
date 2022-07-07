@@ -13,7 +13,7 @@ include FHIRHelpers version '4.0.001' called FHIRHelpers
 include MedicareAdvantage version '0.0.001' called MedicareAdvantage
 
 /** Has to define the HCC model version (e.g., CMSHCC v24) and whether to use ICD10CM to HCC mapping for either initial run, mid-year (sweep), or final run --**/
-codesystem "CMSHCC": 'http://terminology.hl7.org/CodeSystem/cmshcc' version '24.0.001'
+codesystem "CMSHCC": 'http://terminology.hl7.org/CodeSystem/cmshcc' version '24.1.001'
 codesystem "ICD10CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 
 

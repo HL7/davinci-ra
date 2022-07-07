@@ -770,8 +770,8 @@
       "improvementNotation": {
         "coding": [ {
           "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
-          "code": "decrease",
-          "display": "Decreased score indicates improvement"
+          "code": "increase",
+          "display": "Increased score indicates improvement"
         } ]
       },
       "group": [ {
@@ -904,7 +904,7 @@
         "offset": 0,
         "contains": [ {
           "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
-          "version": "24.0.001",
+          "version": "24.1.001",
           "code": "189",
           "display": "Amputation Status, Lower Limb/Amputation Complications"
         } ]
@@ -946,7 +946,7 @@
       }, {
         "type": "depends-on",
         "display": "Code system CMSHCC",
-        "resource": "http://terminology.hl7.org/CodeSystem/cmshcc|24.0.001"
+        "resource": "http://terminology.hl7.org/CodeSystem/cmshcc|24.1.001"
       }, {
         "type": "depends-on",
         "display": "Code system ICD10CM",
