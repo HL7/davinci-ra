@@ -64,6 +64,9 @@ define "Qualifying Members":
   MedicareAdvantage."Qualifying Member"
     and exists MedicareAdvantage."HCC Qualifying Encounters with Eligible Providers"
 
+define "Closed Gap Diagnosis":
+  exists "HCC189 Encounter Diagnosis"
+
 define "Initial Population":
   "Qualifying Members"
 
@@ -73,7 +76,7 @@ define "Denominator":
       "Historic Population" 
         or "Suspected Population" 
         or "Net-New Population" 
-        or exists "Closed Gap Encounter"
+        or "Closed Gap Diagnosis"
     )
     and not "Denominator Exclusions" 
 
@@ -81,7 +84,7 @@ define "Denominator Exclusions":
   exists "HCC189 Exclusions" 
 
 define "Numerator":
-  exists "Closed Gap Encounter"
+  "Closed Gap Diagnosis"
     and not "Denominator Exclusions"
 
 // Stratifier
@@ -91,12 +94,12 @@ define "Historic Population":
 
 // Stratifier
 define "Suspected Population":
-  false
+  exists "Suspecting Algorithm Encounter"
     and not "Denominator Exclusions"
 
 // Stratifier
 define "Net-New Population":
-  exists "Closed Gap Encounter"
+  "Closed Gap Diagnosis"
     and not "Historic Population"
     and not "Denominator Exclusions" 
 
@@ -130,20 +133,35 @@ define "Net-New Diagnosis":
 Suspected population may be defined by organizations that create suspecting algorithms.
 This placeholder definition is included for information only */
 // SDE
-define "Suspecting Algorithm":
-  null
+define "Suspecting Algorithm Encounter":
+  null as List<Encounter>
+
+define "Suspecting Algorithm Diagnosis":
+  null as List<Condition>
 
 // SDE
-define "Closed Gap Encounter":
-  if not "Denominator Exclusions"then
+define "Evidence Status Encounter":
+  if "Numerator" then
     "HCC189 Encounter Diagnosis".HCCEncounter
+  else if "Historic Population" then
+    "Historic Encounter"
+  else if "Suspected Population" then 
+    "Suspecting Algorithm Encounter"
   else null as Encounter
 
 // SDE
-define "Closed Gap Diagnosis":
-  if not "Denominator Exclusions" then
+define "Evidence Status Diagnosis":
+  if "Numerator" then
     "HCC189 Encounter Diagnosis".HCCDiagnosis
+  else if "Historic Population" then
+    "Historic Diagnosis"
+  else if "Suspected Population" then 
+    "Suspecting Algorithm Diagnosis"
   else null as Condition
+
+// SDE
+define "Evidence Status Date":
+  "Evidence Status Encounter".period.start
 
 /** Patient has an Encounter Diagnosis of "Acquired absence of right great toe": 'Z89.411' during Clinical Evaluation Period
 Z89.411 maps to HCC189 */
