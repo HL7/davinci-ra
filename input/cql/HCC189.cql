@@ -75,30 +75,30 @@ define "Denominator":
         or "Net-New Population" 
         or exists "Closed Gap Encounter"
     )
-    and not "Exclusions" 
+    and not "Denominator Exclusions" 
 
-define "Exclusions":
+define "Denominator Exclusions":
   exists "HCC189 Exclusions" 
 
 define "Numerator":
   exists "Closed Gap Encounter"
-    and not "Exclusions" 
+    and not "Denominator Exclusions"
 
 // Stratifier
 define "Historic Population":
   exists "HCC189 Historic Encounter Diagnosis"
-    and not "Exclusions" 
+    and not "Denominator Exclusions"
 
 // Stratifier
 define "Suspected Population":
   false
-    and not "Exclusions" 
+    and not "Denominator Exclusions"
 
 // Stratifier
 define "Net-New Population":
   exists "Closed Gap Encounter"
     and not "Historic Population"
-    and not "Exclusions" 
+    and not "Denominator Exclusions" 
 
 // SDE
 define "Exclusion Encounter":
@@ -135,13 +135,13 @@ define "Suspecting Algorithm":
 
 // SDE
 define "Closed Gap Encounter":
-  if not "Exclusions" then
+  if not "Denominator Exclusions"then
     "HCC189 Encounter Diagnosis".HCCEncounter
   else null as Encounter
 
 // SDE
 define "Closed Gap Diagnosis":
-  if not "Exclusions" then
+  if not "Denominator Exclusions" then
     "HCC189 Encounter Diagnosis".HCCDiagnosis
   else null as Condition
 

@@ -48,7 +48,7 @@
         "valueString": "Closed Gap Encounter"
       }, {
         "url": "statement",
-        "valueString": "// SDE\ndefine \"Closed Gap Encounter\":\n  if not \"Exclusions\" then\n    \"HCC189 Encounter Diagnosis\".HCCEncounter\n  else null as Encounter"
+        "valueString": "// SDE\ndefine \"Closed Gap Encounter\":\n  if not \"Denominator Exclusions\"then\n    \"HCC189 Encounter Diagnosis\".HCCEncounter\n  else null as Encounter"
       }, {
         "url": "displaySequence",
         "valueInteger": 2
@@ -180,10 +180,10 @@
         "valueString": "HCC189"
       }, {
         "url": "name",
-        "valueString": "Exclusions"
+        "valueString": "Denominator Exclusions"
       }, {
         "url": "statement",
-        "valueString": "define \"Exclusions\":\n  exists \"HCC189 Exclusions\""
+        "valueString": "define \"Denominator Exclusions\":\n  exists \"HCC189 Exclusions\""
       }, {
         "url": "displaySequence",
         "valueInteger": 11
@@ -198,7 +198,7 @@
         "valueString": "Historic Population"
       }, {
         "url": "statement",
-        "valueString": "// Stratifier\ndefine \"Historic Population\":\n  exists \"HCC189 Historic Encounter Diagnosis\"\n    and not \"Exclusions\""
+        "valueString": "// Stratifier\ndefine \"Historic Population\":\n  exists \"HCC189 Historic Encounter Diagnosis\"\n    and not \"Denominator Exclusions\""
       }, {
         "url": "displaySequence",
         "valueInteger": 12
@@ -213,7 +213,7 @@
         "valueString": "Closed Gap Diagnosis"
       }, {
         "url": "statement",
-        "valueString": "// SDE\ndefine \"Closed Gap Diagnosis\":\n  if not \"Exclusions\" then\n    \"HCC189 Encounter Diagnosis\".HCCDiagnosis\n  else null as Condition"
+        "valueString": "// SDE\ndefine \"Closed Gap Diagnosis\":\n  if not \"Denominator Exclusions\" then\n    \"HCC189 Encounter Diagnosis\".HCCDiagnosis\n  else null as Condition"
       }, {
         "url": "displaySequence",
         "valueInteger": 13
@@ -228,7 +228,7 @@
         "valueString": "Suspected Population"
       }, {
         "url": "statement",
-        "valueString": "// Stratifier\ndefine \"Suspected Population\":\n  false\n    and not \"Exclusions\""
+        "valueString": "// Stratifier\ndefine \"Suspected Population\":\n  false\n    and not \"Denominator Exclusions\""
       }, {
         "url": "displaySequence",
         "valueInteger": 14
@@ -243,7 +243,7 @@
         "valueString": "Numerator"
       }, {
         "url": "statement",
-        "valueString": "define \"Numerator\":\n  exists \"Closed Gap Encounter\"\n    and not \"Exclusions\""
+        "valueString": "define \"Numerator\":\n  exists \"Closed Gap Encounter\"\n    and not \"Denominator Exclusions\""
       }, {
         "url": "displaySequence",
         "valueInteger": 15
@@ -318,7 +318,7 @@
         "valueString": "Net-New Population"
       }, {
         "url": "statement",
-        "valueString": "// Stratifier\ndefine \"Net-New Population\":\n  exists \"Closed Gap Encounter\"\n    and not \"Historic Population\"\n    and not \"Exclusions\""
+        "valueString": "// Stratifier\ndefine \"Net-New Population\":\n  exists \"Closed Gap Encounter\"\n    and not \"Historic Population\"\n    and not \"Denominator Exclusions\""
       }, {
         "url": "displaySequence",
         "valueInteger": 20
@@ -333,7 +333,7 @@
         "valueString": "Denominator"
       }, {
         "url": "statement",
-        "valueString": "define \"Denominator\":\n  \"Initial Population\"\n    and (\n      \"Historic Population\" \n        or \"Suspected Population\" \n        or \"Net-New Population\" \n        or exists \"Closed Gap Encounter\"\n    )\n    and not \"Exclusions\""
+        "valueString": "define \"Denominator\":\n  \"Initial Population\"\n    and (\n      \"Historic Population\" \n        or \"Suspected Population\" \n        or \"Net-New Population\" \n        or exists \"Closed Gap Encounter\"\n    )\n    and not \"Denominator Exclusions\""
       }, {
         "url": "displaySequence",
         "valueInteger": 21
@@ -493,6 +493,12 @@
       "type": "boolean"
     }, {
       "name": "Net-New Population",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "Denominator Exclusions",
       "use": "out",
       "min": 0,
       "max": "1",
