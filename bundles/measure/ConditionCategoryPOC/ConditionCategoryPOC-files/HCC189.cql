@@ -75,25 +75,30 @@ define "Denominator":
         or "Net-New Population" 
         or exists "Closed Gap Encounter"
     )
-    and not "Denominator Exclusions" 
+    and not "Exclusions" 
 
-define "Denominator Exclusions":
+define "Exclusions":
   exists "HCC189 Exclusions" 
 
 define "Numerator":
   exists "Closed Gap Encounter"
+    and not "Exclusions" 
 
 // Stratifier
 define "Historic Population":
   exists "HCC189 Historic Encounter Diagnosis"
+    and not "Exclusions" 
 
 // Stratifier
 define "Suspected Population":
   false
+    and not "Exclusions" 
 
 // Stratifier
 define "Net-New Population":
-  exists "Net-New Encounter"
+  exists "Closed Gap Encounter"
+    and not "Historic Population"
+    and not "Exclusions" 
 
 // SDE
 define "Exclusion Encounter":
@@ -101,11 +106,25 @@ define "Exclusion Encounter":
 
 // SDE
 define "Historic Encounter":
-  "HCC189 Historic Encounter Diagnosis"
+  if "Historic Population" then
+    "HCC189 Historic Encounter Diagnosis".HCCEncounter
+  else null as Encounter
+
+define "Historic Diagnosis":
+  if "Historic Population" then
+    "HCC189 Historic Encounter Diagnosis".HCCDiagnosis
+  else null as Condition
 
 // SDE
 define "Net-New Encounter":
-  null as List<Encounter>
+  if "Net-New Population" then
+    "HCC189 Encounter Diagnosis".HCCEncounter
+  else null as Encounter
+
+define "Net-New Diagnosis":
+  if "Net-New Population" then
+    "HCC189 Encounter Diagnosis".HCCDiagnosis
+  else null as Condition
 
 /** 
 Suspected population may be defined by organizations that create suspecting algorithms.
@@ -116,25 +135,36 @@ define "Suspecting Algorithm":
 
 // SDE
 define "Closed Gap Encounter":
-  "HCC189 Encounter Diagnosis"
+  if not "Exclusions" then
+    "HCC189 Encounter Diagnosis".HCCEncounter
+  else null as Encounter
+
+// SDE
+define "Closed Gap Diagnosis":
+  if not "Exclusions" then
+    "HCC189 Encounter Diagnosis".HCCDiagnosis
+  else null as Condition
 
 /** Patient has an Encounter Diagnosis of "Acquired absence of right great toe": 'Z89.411' during Clinical Evaluation Period
 Z89.411 maps to HCC189 */
 define "HCC189 Encounter Diagnosis":
-  MedicareAdvantage."HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period" HCCEncounter
-    with ([Condition] C where C.code in "Example Acquired Lower Limb Deformities") HCCDiagnosis
-      such that HCCDiagnosis in Global.EncounterDiagnosis(HCCEncounter) 
+  from
+  MedicareAdvantage."HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period" HCCEncounter,
+  ([Condition] C where C.code in "Example Acquired Lower Limb Deformities") HCCDiagnosis
+      where HCCDiagnosis in Global.EncounterDiagnosis(HCCEncounter) 
        
 /** Patient has an Encounter Diagnosis of the following exclusion conditions during Clinical Evaluation Period
 M20 Acquired deformities of fingers and toes
 M21 Other acquired deformities of limbs */
 define "HCC189 Exclusions":
-  MedicareAdvantage."HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period" HCCEncounter
-    with ([Condition] C where C.code in "Example HCC189 Exclusion") Diagnosis
-      such that Diagnosis in Global.EncounterDiagnosis(HCCEncounter) 
+  from
+  MedicareAdvantage."HCC Qualifying Encounters with Eligible Providers" Encounter,
+    ([Condition] C where C.code in "Example HCC189 Exclusion") Diagnosis
+      where Diagnosis in Global.EncounterDiagnosis(Encounter) 
 
 /** Patient has an Encounter Diagnosis of "Acquired absence of right great toe": 'Z89.411' outside of the Clinical Evaluation Period (could be prior or after) **/
 define "HCC189 Historic Encounter Diagnosis":    
-  MedicareAdvantage."HCC Qualifying Encounters with Eligible Providers outside Clinical Evaluation Period" HCCEncounter
-    with ([Condition] C where C.code in "Example Acquired Lower Limb Deformities") HCCDiagnosis
-      such that HCCDiagnosis in Global.EncounterDiagnosis(HCCEncounter)
+  from 
+  MedicareAdvantage."HCC Qualifying Encounters with Eligible Providers outside Clinical Evaluation Period" HCCEncounter,
+    ([Condition] C where C.code in "Example Acquired Lower Limb Deformities") HCCDiagnosis
+     where HCCDiagnosis in Global.EncounterDiagnosis(HCCEncounter)
