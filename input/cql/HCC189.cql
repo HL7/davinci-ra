@@ -93,7 +93,8 @@ define "Suspected Population":
 
 // Stratifier
 define "Net-New Population":
-  exists "Net-New Encounter"
+  exists "Closed Gap Encounter"
+    and not "Historic Population"
 
 // SDE
 define "Exclusion Encounter":
@@ -108,7 +109,10 @@ define "Historic Diagnosis":
 
 // SDE
 define "Net-New Encounter":
-  null as List<Encounter>
+  "HCC189 Encounter Diagnosis".HCCEncounter
+
+define "Net-New Diagnosis":
+  "HCC189 Encounter Diagnosis".HCCDiagnosis
 
 /** 
 Suspected population may be defined by organizations that create suspecting algorithms.

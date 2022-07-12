@@ -1,6 +1,6 @@
 {
 	"resourceType": "Encounter",
-	"id": "closed-HCC189",
+	"id": "netnew-HCC189",
 	"meta": {
 		"profile": [
 			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
@@ -24,12 +24,12 @@
 		}
 	],
 	"subject": {
-		"reference": "Patient/closed-HCC189"
+		"reference": "Patient/netnew-HCC189"
 	},
 	"diagnosis": [
 		{
 			"condition": {
-				"reference": "Condition/closed-HCC189"
+				"reference": "Condition/netnew-HCC189"
 			}
 		}
 	],
