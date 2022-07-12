@@ -1,6 +1,6 @@
 {
 	"resourceType": "Encounter",
-	"id": "hist2-HCC189",
+	"id": "hist-open2-HCC189",
 	"meta": {		
 		"profile": [
 			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
@@ -20,11 +20,11 @@
 		"text": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using time for code selection, 15-29 minutes of total time is spent on the date of the encounter."
 	}],
 	"subject": {
-		"reference": "Patient/hist-HCC189"
+		"reference": "Patient/hist-open-HCC189"
 	},
 	"diagnosis": [{
 			"condition": {
-				"reference": "Condition/hist2-HCC189"
+				"reference": "Condition/hist-open2-HCC189"
 			}
 		}
 	],

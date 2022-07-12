@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "tests-hist-HCC189-bundle",
+  "id": "tests-hist-closed-HCC189-bundle",
   "type": "transaction",
   "entry": [ {
     "resource": {
@@ -42,7 +42,7 @@
         "text": "189: Amputation Status, Lower Limb/Amputation Complications"
       },
       "subject": {
-        "reference": "Patient/hist-HCC189"
+        "reference": "Patient/hist-closed-HCC189"
       },
       "onsetDateTime": "2020-01-31"
     },
@@ -53,7 +53,7 @@
   }, {
     "resource": {
       "resourceType": "Encounter",
-      "id": "hist-HCC189",
+      "id": "hist-closed-HCC189",
       "meta": {
         "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter" ]
       },
@@ -71,7 +71,7 @@
         "text": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using time for code selection, 15-29 minutes of total time is spent on the date of the encounter."
       } ],
       "subject": {
-        "reference": "Patient/hist-HCC189"
+        "reference": "Patient/hist-closed-HCC189"
       },
       "period": {
         "start": "2022-01-31",
@@ -80,7 +80,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Encounter/hist-HCC189"
+      "url": "Encounter/hist-closed-HCC189"
     }
   }, {
     "resource": {
@@ -103,7 +103,7 @@
         "text": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using time for code selection, 15-29 minutes of total time is spent on the date of the encounter."
       } ],
       "subject": {
-        "reference": "Patient/hist-HCC189"
+        "reference": "Patient/hist-closed-HCC189"
       },
       "period": {
         "start": "2020-01-31",
@@ -122,7 +122,7 @@
   }, {
     "resource": {
       "resourceType": "Patient",
-      "id": "hist-HCC189",
+      "id": "hist-closed-HCC189",
       "meta": {
         "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" ]
       },
@@ -205,7 +205,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Patient/hist-HCC189"
+      "url": "Patient/hist-closed-HCC189"
     }
   } ]
 }

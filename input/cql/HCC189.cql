@@ -109,10 +109,14 @@ define "Historic Diagnosis":
 
 // SDE
 define "Net-New Encounter":
-  "HCC189 Encounter Diagnosis".HCCEncounter
+  if exists "Closed Gap Encounter" then
+    "HCC189 Encounter Diagnosis".HCCEncounter
+  else null as Encounter
 
 define "Net-New Diagnosis":
-  "HCC189 Encounter Diagnosis".HCCDiagnosis
+  if exists "Closed Gap Encounter" then
+    "HCC189 Encounter Diagnosis".HCCDiagnosis
+  else null as Condition
 
 /** 
 Suspected population may be defined by organizations that create suspecting algorithms.
