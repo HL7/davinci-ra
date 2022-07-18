@@ -1,0 +1,45 @@
+{
+	"resourceType": "Encounter",
+	"id": "ra-encounter02pat01",
+	"meta": {
+		"extension": [{
+				"url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+				"valueString": "Encounter with Dr Howell on 20210714 for Patient 03"
+			},
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+				"valueMarkdown": "This is Encounter with Dr Howell on 20210714 for Patient 03."
+			}
+		],
+		"lastUpdated": "2021-07-14T11:56:57.250-04:00",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+		]
+	},
+	"status": "finished",
+	"class": {
+		"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+		"code": "AMB",
+		"display": "ambulatory"
+	},
+	"type": [{
+		"coding": [{
+			"system": "http://www.ama-assn.org/go/cpt",
+			"code": "99215"
+		}],
+		"text": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using time for code selection, 40-54 minutes of total time is spent on the date of the encounter."
+	}],
+	"subject": {
+		"reference": "Patient/netnew2-HCC189"
+	},
+	"diagnosis": [{
+			"condition": {
+				"reference": "Condition/ra-conditionnetnew02pat01"
+			}
+		}
+	],
+	"period": {
+		"start": "2022-02-10",
+		"end": "2022-02-10"
+	}
+}
