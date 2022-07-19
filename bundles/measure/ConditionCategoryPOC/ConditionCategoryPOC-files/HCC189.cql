@@ -140,28 +140,17 @@ define "Suspecting Algorithm Diagnosis":
   null as List<Condition>
 
 // SDE
-define "Evidence Status Encounter":
-  if "Numerator" then
-    "HCC189 Encounter Diagnosis".HCCEncounter
-  else if "Historic Population" then
-    "Historic Encounter"
-  else if "Suspected Population" then 
-    "Suspecting Algorithm Encounter"
-  else null as Encounter
-
-// SDE
-define "Evidence Status Diagnosis":
-  if "Numerator" then
-    "HCC189 Encounter Diagnosis".HCCDiagnosis
-  else if "Historic Population" then
-    "Historic Diagnosis"
-  else if "Suspected Population" then 
-    "Suspecting Algorithm Diagnosis"
-  else null as Condition
+define "Evidence Status Report":
+  First(
+    [MeasureReport] MR 
+      where MR.measure ~'https://build.fhir.org/ig/HL7/davinci-ra/ConditionCategoryPOC'
+        and MR.date in "Clinical Evaluation Period"
+  )
+  
 
 // SDE
 define "Evidence Status Date":
-  "Evidence Status Encounter".period.start
+  Coalesce("Evidence Status Report".date, Now())
 
 /** Patient has an Encounter Diagnosis of "Acquired absence of right great toe": 'Z89.411' during Clinical Evaluation Period
 Z89.411 maps to HCC189 */

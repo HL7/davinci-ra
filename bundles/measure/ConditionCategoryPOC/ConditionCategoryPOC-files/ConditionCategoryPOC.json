@@ -180,10 +180,10 @@
         "valueString": "HCC189"
       }, {
         "url": "name",
-        "valueString": "Evidence Status Encounter"
+        "valueString": "Clinical Evaluation Period"
       }, {
         "url": "statement",
-        "valueString": "// SDE\ndefine \"Evidence Status Encounter\":\n  if \"Numerator\" then\n    \"HCC189 Encounter Diagnosis\".HCCEncounter\n  else if \"Historic Population\" then\n    \"Historic Encounter\"\n  else if \"Suspected Population\" then \n    \"Suspecting Algorithm Encounter\"\n  else null as Encounter"
+        "valueString": "define \"Clinical Evaluation Period\":\n  \"Measurement Period\""
       }, {
         "url": "displaySequence",
         "valueInteger": 11
@@ -195,13 +195,28 @@
         "valueString": "HCC189"
       }, {
         "url": "name",
-        "valueString": "Evidence Status Date"
+        "valueString": "Evidence Status Report"
       }, {
         "url": "statement",
-        "valueString": "// SDE\ndefine \"Evidence Status Date\":\n  \"Evidence Status Encounter\".period.start"
+        "valueString": "// SDE\ndefine \"Evidence Status Report\":\n  First(\n    [MeasureReport] MR \n      where MR.measure ~'https://build.fhir.org/ig/HL7/davinci-ra/ConditionCategoryPOC'\n        and MR.date in \"Clinical Evaluation Period\"\n  )"
       }, {
         "url": "displaySequence",
         "valueInteger": 12
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HCC189"
+      }, {
+        "url": "name",
+        "valueString": "Evidence Status Date"
+      }, {
+        "url": "statement",
+        "valueString": "// SDE\ndefine \"Evidence Status Date\":\n  Coalesce(\"Evidence Status Report\".date, Now())"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 13
       } ]
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
@@ -214,21 +229,6 @@
       }, {
         "url": "statement",
         "valueString": "/** \nSuspected population may be defined by organizations that create suspecting algorithms.\nThis placeholder definition is included for information only */\n// SDEdefine \"Suspecting Algorithm Encounter\":\n  null as List<Encounter>"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 13
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "HCC189"
-      }, {
-        "url": "name",
-        "valueString": "Evidence Status Diagnosis"
-      }, {
-        "url": "statement",
-        "valueString": "// SDE\ndefine \"Evidence Status Diagnosis\":\n  if \"Numerator\" then\n    \"HCC189 Encounter Diagnosis\".HCCDiagnosis\n  else if \"Historic Population\" then\n    \"Historic Diagnosis\"\n  else if \"Suspected Population\" then \n    \"Suspecting Algorithm Diagnosis\"\n  else null as Condition"
       }, {
         "url": "displaySequence",
         "valueInteger": 14
@@ -522,26 +522,14 @@
       "name": "Evidence Status Date",
       "use": "out",
       "min": 0,
-      "max": "*",
+      "max": "1",
       "type": "dateTime"
-    }, {
-      "name": "Evidence Status Encounter",
-      "use": "out",
-      "min": 0,
-      "max": "*",
-      "type": "Encounter"
     }, {
       "name": "Suspecting Algorithm Encounter",
       "use": "out",
       "min": 0,
       "max": "*",
       "type": "Encounter"
-    }, {
-      "name": "Evidence Status Diagnosis",
-      "use": "out",
-      "min": 0,
-      "max": "*",
-      "type": "Condition"
     }, {
       "name": "Suspecting Algorithm Diagnosis",
       "use": "out",
@@ -554,6 +542,12 @@
       "min": 0,
       "max": "1",
       "type": "boolean"
+    }, {
+      "name": "Evidence Status Report",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "MeasureReport"
     }, {
       "name": "Numerator",
       "use": "out",
@@ -709,6 +703,18 @@
       "type": "Condition",
       "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
       "mustSupport": [ "id", "code" ]
+    }, {
+      "type": "uri",
+      "profile": [ "http://hl7.org/fhir/uri" ],
+      "mustSupport": [ "value" ]
+    }, {
+      "type": "MeasureReport",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/MeasureReport" ],
+      "mustSupport": [ "measure", "date" ]
+    }, {
+      "type": "MeasureReport",
+      "profile": [ "http://hl7.org/fhir/MeasureReport" ],
+      "mustSupport": [ "date" ]
     } ]
   } ],
   "extension": [ {
@@ -734,7 +740,7 @@
   "title": "Condition Category Proof Of Concept",
   "status": "draft",
   "experimental": true,
-  "date": "2022-07-12",
+  "date": "2022-07-19",
   "publisher": "HL7 International - Clinical Quality Information Work Group",
   "contact": [ {
     "telecom": [ {
@@ -960,18 +966,6 @@
       "expression": "Suspecting Algorithm Diagnosis"
     }
   }, {
-    "id": "2b28ca39-d3c2-41da-8901-2985e6c96841",
-    "usage": [ {
-      "coding": [ {
-        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "supplemental-data"
-      } ]
-    } ],
-    "criteria": {
-      "language": "text/cql.identifier",
-      "expression": "Evidence Status Encounter"
-    }
-  }, {
     "id": "e3fe294f-3396-4ada-a9fc-399f88a62605",
     "usage": [ {
       "coding": [ {
@@ -981,7 +975,7 @@
     } ],
     "criteria": {
       "language": "text/cql.identifier",
-      "expression": "Evidence Status Diagnosis"
+      "expression": "Evidence Status Report"
     }
   }, {
     "id": "91d7fbe5-4c2e-40fd-bbd3-d5594164b6e1",

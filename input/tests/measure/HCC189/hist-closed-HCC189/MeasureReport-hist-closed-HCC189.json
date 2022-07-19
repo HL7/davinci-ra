@@ -220,7 +220,7 @@
                         "coding": [
                             {
                                 "system": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-                                "code": "closed-gap"
+                                "code": "open-gap"
                             }
                         ]
                     }
@@ -231,7 +231,7 @@
                         "coding": [
                             {
                                 "system": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
-                                "code": "2022-01-31"
+                                "code": "2022-02-05"
                             }
                         ]
                     }
