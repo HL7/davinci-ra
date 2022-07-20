@@ -129,7 +129,7 @@
 <page key="extensions" name="Extensions"/>
 <page key="glossary" name="Glossary"/>
 <page deprecated="true" key="guidance" name="Guidance"/>
-<page key="guidance-risk-adjustment-using-cql" name="Guidance - Digital Condition Category Measure Using CQL"/>
+<page key="guidance-risk-adjustment-using-cql" name="Guidance - Digital Condition Category"/>
 <page key="guidance-risk-adjustment-gap-reporting" name="Guidance - Risk Adjustment Gap Reporting"/>
 <page key="guidance-risk-adjustment-gap-response" name="Guidance - Risk Adjustment Gap Response"/>
 <page key="operations" name="Operation"/>
