@@ -2650,11 +2650,11 @@
       } ],
       "code": {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
-          "code": "189",
-          "display": "Amputation Status, Lower Limb/Amputation Complications"
+          "system": "http://hl7.org/fhir/sid/icd-10-cm",
+          "code": "Z89.411",
+          "display": "Acquired absence of right great toe"
         } ],
-        "text": "189: Amputation Status, Lower Limb/Amputation Complications"
+        "text": "Z89.411: Acquired absence of right great toe"
       },
       "subject": {
         "reference": "Patient/hist-closed-HCC189"
@@ -2698,11 +2698,11 @@
       } ],
       "code": {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
-          "code": "189",
-          "display": "Amputation Status, Lower Limb/Amputation Complications"
+          "system": "http://hl7.org/fhir/sid/icd-10-cm",
+          "code": "Z89.411",
+          "display": "Acquired absence of right great toe"
         } ],
-        "text": "189: Amputation Status, Lower Limb/Amputation Complications"
+        "text": "Z89.411: Acquired absence of right great toe"
       },
       "subject": {
         "reference": "Patient/netnew-HCC189"
@@ -2834,11 +2834,11 @@
       } ],
       "code": {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
-          "code": "189",
-          "display": "Amputation Status, Lower Limb/Amputation Complications"
+          "system": "http://hl7.org/fhir/sid/icd-10-cm",
+          "code": "Z89.411",
+          "display": "Acquired absence of right great toe"
         } ],
-        "text": "189: Amputation Status, Lower Limb/Amputation Complications"
+        "text": "Z89.411: Acquired absence of right great toe"
       },
       "subject": {
         "reference": "Patient/hist-closed-HCC189"
@@ -2981,11 +2981,11 @@
       } ],
       "code": {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
-          "code": "189",
-          "display": "Amputation Status, Lower Limb/Amputation Complications"
+          "system": "http://hl7.org/fhir/sid/icd-10-cm",
+          "code": "Z89.411",
+          "display": "Acquired absence of right great toe"
         } ],
-        "text": "189: Amputation Status, Lower Limb/Amputation Complications"
+        "text": "Z89.411: Acquired absence of right great toe"
       },
       "subject": {
         "reference": "Patient/hist-open-HCC189"
@@ -4837,11 +4837,11 @@
       } ],
       "code": {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
-          "code": "189",
-          "display": "Amputation Status, Lower Limb/Amputation Complications"
+          "system": "http://hl7.org/fhir/sid/icd-10-cm",
+          "code": "Z89.411",
+          "display": "Acquired absence of right great toe"
         } ],
-        "text": "189: Amputation Status, Lower Limb/Amputation Complications"
+        "text": "Z89.411: Acquired absence of right great toe"
       },
       "subject": {
         "reference": "Patient/exclusion-HCC189"
