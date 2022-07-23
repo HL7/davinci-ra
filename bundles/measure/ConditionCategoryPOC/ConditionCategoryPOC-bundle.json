@@ -3970,7 +3970,7 @@
       "title": "Condition Category Proof Of Concept",
       "status": "draft",
       "experimental": true,
-      "date": "2022-07-19",
+      "date": "2022-07-22",
       "publisher": "HL7 International - Clinical Quality Information Work Group",
       "contact": [ {
         "telecom": [ {
@@ -4014,7 +4014,7 @@
           } ]
         },
         "population": [ {
-          "id": "44dda657-2a78-4760-aee4-a81b2e070c69",
+          "id": "initial-population",
           "code": {
             "coding": [ {
               "system": "http://terminology.hl7.org/CodeSystem/measure-population",
@@ -4028,7 +4028,7 @@
             "expression": "Initial Population"
           }
         }, {
-          "id": "3a8aff03-feea-4087-8e56-95891395466b",
+          "id": "denominator",
           "code": {
             "coding": [ {
               "system": "http://terminology.hl7.org/CodeSystem/measure-population",
@@ -4042,7 +4042,7 @@
             "expression": "Denominator"
           }
         }, {
-          "id": "a3654276-be9f-4233-aa0d-26d00b1336e4",
+          "id": "denominator-exclusion",
           "code": {
             "coding": [ {
               "system": "http://terminology.hl7.org/CodeSystem/measure-population",
@@ -4056,7 +4056,7 @@
             "expression": "Denominator Exclusions"
           }
         }, {
-          "id": "dfc5e656-55ab-4cfc-a073-757b03a7417f",
+          "id": "numerator",
           "code": {
             "coding": [ {
               "system": "http://terminology.hl7.org/CodeSystem/measure-population",
@@ -4074,7 +4074,7 @@
           }
         } ],
         "stratifier": [ {
-          "id": "9ab5f42e-dfa3-4504-993f-28199056cff6",
+          "id": "historic",
           "code": {
             "coding": [ {
               "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
@@ -4086,7 +4086,7 @@
             "expression": "Historic Population"
           }
         }, {
-          "id": "97e4df34-75d5-4874-942f-d24a5e2dd794",
+          "id": "suspected",
           "code": {
             "coding": [ {
               "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
@@ -4098,7 +4098,7 @@
             "expression": "Suspected Population"
           }
         }, {
-          "id": "f1788d06-d229-424f-ab11-d6009c022bce",
+          "id": "net-new",
           "code": {
             "coding": [ {
               "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
@@ -4113,6 +4113,12 @@
       } ],
       "supplementalData": [ {
         "id": "exclusion-encounter",
+        "code": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence",
+            "code": "exclusion-evidence"
+          } ]
+        },
         "usage": [ {
           "coding": [ {
             "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
@@ -4125,6 +4131,12 @@
         }
       }, {
         "id": "historic-encounter",
+        "code": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence",
+            "code": "historic-evidence"
+          } ]
+        },
         "usage": [ {
           "coding": [ {
             "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
@@ -4137,6 +4149,12 @@
         }
       }, {
         "id": "historic-diagnosis",
+        "code": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence",
+            "code": "historic-evidence"
+          } ]
+        },
         "usage": [ {
           "coding": [ {
             "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
@@ -4149,6 +4167,12 @@
         }
       }, {
         "id": "net-new-encounter",
+        "code": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence",
+            "code": "net-new-evidence"
+          } ]
+        },
         "usage": [ {
           "coding": [ {
             "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
@@ -4161,6 +4185,12 @@
         }
       }, {
         "id": "net-new-diagnosis",
+        "code": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence",
+            "code": "net-new-evidence"
+          } ]
+        },
         "usage": [ {
           "coding": [ {
             "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
@@ -4173,6 +4203,12 @@
         }
       }, {
         "id": "suspecting-algorithm-encounter",
+        "code": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence",
+            "code": "suspecting-evidence"
+          } ]
+        },
         "usage": [ {
           "coding": [ {
             "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
@@ -4185,6 +4221,12 @@
         }
       }, {
         "id": "suspecting-algorithm-diagnosis",
+        "code": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence",
+            "code": "suspecting-evidence"
+          } ]
+        },
         "usage": [ {
           "coding": [ {
             "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
@@ -4196,7 +4238,13 @@
           "expression": "Suspecting Algorithm Diagnosis"
         }
       }, {
-        "id": "evidence-status-report",
+        "id": "status-evidence-report",
+        "code": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence",
+            "code": "status-evidence"
+          } ]
+        },
         "usage": [ {
           "coding": [ {
             "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
@@ -4208,7 +4256,13 @@
           "expression": "Evidence Status Report"
         }
       }, {
-        "id": "evidence-status-date",
+        "id": "status-evidence-date",
+        "code": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence",
+            "code": "status-evidence"
+          } ]
+        },
         "usage": [ {
           "coding": [ {
             "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
