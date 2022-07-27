@@ -14,7 +14,5 @@
   "verifyOnly":false,
   "errorLevel":"Info",
   "signatureLevel":"None",
-  "compatibilityLevel":"1.5",
-  "analyzeDataRequirements":false,
-  "collapseDataRequirements":true
+  "compatibilityLevel":"1.5"
 }
