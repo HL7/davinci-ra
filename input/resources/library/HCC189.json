@@ -28,6 +28,18 @@
     "resource": "http://hl7.org/fhir/us/davinci-ra/Library/MedicareAdvantage|0.0.001"
   }, {
     "type": "depends-on",
+    "display": "Library FHIRHelpers",
+    "resource": "http://hl7.org/fhir/us/davinci-ra/Library/FHIRHelpers|4.0.001"
+  }, {
+    "type": "depends-on",
+    "display": "Library Global",
+    "resource": "http://hl7.org/fhir/us/davinci-ra/Library/MATGlobalCommonFunctionsFHIR4|6.1.000"
+  }, {
+    "type": "depends-on",
+    "display": "Library FHIRHelpers",
+    "resource": "http://hl7.org/fhir/us/davinci-ra/Library/FHIRHelpers|4.0.001"
+  }, {
+    "type": "depends-on",
     "display": "Value set Example Acquired Lower Limb Deformities",
     "resource": "http://hl7.org/fhir/us/davinci-ra/ValueSet/example-acquired-lower-limb-deformities"
   }, {
@@ -224,6 +236,9 @@
     "type": "Patient",
     "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
   }, {
+    "type": "Patient",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
+  }, {
     "profile": [ "http://hl7.org/fhir/EncounterStatus" ],
     "mustSupport": [ "value" ]
   }, {
@@ -320,6 +335,9 @@
     "mustSupport": [ "value" ]
   }, {
     "type": "Patient",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
+  }, {
+    "type": "Patient",
     "profile": [ "http://hl7.org/fhir/Patient" ],
     "mustSupport": [ "birthDate" ]
   }, {
@@ -337,7 +355,31 @@
   }, {
     "type": "Condition",
     "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
-    "mustSupport": [ "id", "code" ]
+    "mustSupport": [ "id" ]
+  }, {
+    "type": "Condition",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+    "mustSupport": [ "code" ]
+  }, {
+    "type": "Condition",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+    "mustSupport": [ "code" ]
+  }, {
+    "type": "Condition",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+    "mustSupport": [ "code" ]
+  }, {
+    "type": "Condition",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+    "mustSupport": [ "code" ]
+  }, {
+    "type": "Condition",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+    "mustSupport": [ "code" ]
+  }, {
+    "type": "Condition",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+    "mustSupport": [ "code" ]
   }, {
     "type": "uri",
     "profile": [ "http://hl7.org/fhir/uri" ],

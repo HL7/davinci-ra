@@ -435,6 +435,18 @@
       "resource": "http://hl7.org/fhir/us/davinci-ra/Library/MATGlobalCommonFunctionsFHIR4|6.1.000"
     }, {
       "type": "depends-on",
+      "display": "Library FHIRHelpers",
+      "resource": "http://hl7.org/fhir/us/davinci-ra/Library/FHIRHelpers|4.0.001"
+    }, {
+      "type": "depends-on",
+      "display": "Library FHIRHelpers",
+      "resource": "http://hl7.org/fhir/us/davinci-ra/Library/FHIRHelpers|4.0.001"
+    }, {
+      "type": "depends-on",
+      "display": "Library Global",
+      "resource": "http://hl7.org/fhir/us/davinci-ra/Library/MATGlobalCommonFunctionsFHIR4|6.1.000"
+    }, {
+      "type": "depends-on",
       "display": "Value set Office Visit",
       "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001"
     }, {
@@ -702,7 +714,23 @@
     }, {
       "type": "Condition",
       "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
-      "mustSupport": [ "id", "code" ]
+      "mustSupport": [ "id" ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+      "mustSupport": [ "code" ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+      "mustSupport": [ "code" ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+      "mustSupport": [ "code" ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+      "mustSupport": [ "code" ]
     }, {
       "type": "uri",
       "profile": [ "http://hl7.org/fhir/uri" ],
@@ -715,6 +743,17 @@
       "type": "MeasureReport",
       "profile": [ "http://hl7.org/fhir/MeasureReport" ],
       "mustSupport": [ "date" ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+      "mustSupport": [ "code" ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+      "mustSupport": [ "code" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
     } ]
   } ],
   "extension": [ {
@@ -740,7 +779,7 @@
   "title": "Condition Category Proof Of Concept",
   "status": "draft",
   "experimental": true,
-  "date": "2022-07-22",
+  "date": "2022-08-02",
   "publisher": "HL7 International - Clinical Quality Information Work Group",
   "contact": [ {
     "telecom": [ {

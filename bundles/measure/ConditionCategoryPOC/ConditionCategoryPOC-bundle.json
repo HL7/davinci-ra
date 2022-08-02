@@ -321,14 +321,6 @@
       }, {
         "type": "Encounter",
         "profile": [ "http://hl7.org/fhir/StructureDefinition/Encounter" ],
-        "mustSupport": [ "type", "period" ],
-        "codeFilter": [ {
-          "path": "type",
-          "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143"
-        } ]
-      }, {
-        "type": "Encounter",
-        "profile": [ "http://hl7.org/fhir/StructureDefinition/Encounter" ],
         "mustSupport": [ "type", "status", "period" ],
         "codeFilter": [ {
           "path": "type",
@@ -341,6 +333,38 @@
       }, {
         "profile": [ "http://hl7.org/fhir/Encounter.Location" ],
         "mustSupport": [ "period" ]
+      }, {
+        "type": "Encounter",
+        "profile": [ "http://hl7.org/fhir/StructureDefinition/Encounter" ],
+        "mustSupport": [ "type", "period" ],
+        "codeFilter": [ {
+          "path": "type",
+          "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143"
+        } ]
+      }, {
+        "type": "Encounter",
+        "profile": [ "http://hl7.org/fhir/StructureDefinition/Encounter" ],
+        "mustSupport": [ "type", "period" ],
+        "codeFilter": [ {
+          "path": "type",
+          "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292"
+        } ]
+      }, {
+        "type": "Encounter",
+        "profile": [ "http://hl7.org/fhir/StructureDefinition/Encounter" ],
+        "mustSupport": [ "type", "period" ],
+        "codeFilter": [ {
+          "path": "type",
+          "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143"
+        } ]
+      }, {
+        "type": "Encounter",
+        "profile": [ "http://hl7.org/fhir/StructureDefinition/Encounter" ],
+        "mustSupport": [ "type", "period" ],
+        "codeFilter": [ {
+          "path": "type",
+          "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292"
+        } ]
       }, {
         "type": "dateTime",
         "profile": [ "http://hl7.org/fhir/dateTime" ],
@@ -374,6 +398,10 @@
         "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
         "mustSupport": [ "id" ]
       }, {
+        "type": "Condition",
+        "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+        "mustSupport": [ "id" ]
+      }, {
         "type": "Reference",
         "profile": [ "http://hl7.org/fhir/Reference" ],
         "mustSupport": [ "reference" ]
@@ -389,6 +417,10 @@
         "type": "integer",
         "profile": [ "http://hl7.org/fhir/integer" ],
         "mustSupport": [ "value" ]
+      }, {
+        "type": "Condition",
+        "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+        "mustSupport": [ "id" ]
       }, {
         "type": "Location",
         "profile": [ "http://hl7.org/fhir/StructureDefinition/Location" ],
@@ -3023,6 +3055,10 @@
         "resource": "http://hl7.org/fhir/us/davinci-ra/Library/FHIRHelpers|4.0.001"
       }, {
         "type": "depends-on",
+        "display": "Library FHIRHelpers",
+        "resource": "http://hl7.org/fhir/us/davinci-ra/Library/FHIRHelpers|4.0.001"
+      }, {
+        "type": "depends-on",
         "display": "Value set Office Visit",
         "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001"
       }, {
@@ -3203,6 +3239,9 @@
         "type": "date",
         "profile": [ "http://hl7.org/fhir/date" ],
         "mustSupport": [ "value" ]
+      }, {
+        "type": "Patient",
+        "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
       }, {
         "type": "Patient",
         "profile": [ "http://hl7.org/fhir/Patient" ],
@@ -4310,6 +4349,18 @@
         "resource": "http://hl7.org/fhir/us/davinci-ra/Library/MedicareAdvantage|0.0.001"
       }, {
         "type": "depends-on",
+        "display": "Library FHIRHelpers",
+        "resource": "http://hl7.org/fhir/us/davinci-ra/Library/FHIRHelpers|4.0.001"
+      }, {
+        "type": "depends-on",
+        "display": "Library Global",
+        "resource": "http://hl7.org/fhir/us/davinci-ra/Library/MATGlobalCommonFunctionsFHIR4|6.1.000"
+      }, {
+        "type": "depends-on",
+        "display": "Library FHIRHelpers",
+        "resource": "http://hl7.org/fhir/us/davinci-ra/Library/FHIRHelpers|4.0.001"
+      }, {
+        "type": "depends-on",
         "display": "Value set Example Acquired Lower Limb Deformities",
         "resource": "http://hl7.org/fhir/us/davinci-ra/ValueSet/example-acquired-lower-limb-deformities"
       }, {
@@ -4506,6 +4557,9 @@
         "type": "Patient",
         "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
       }, {
+        "type": "Patient",
+        "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
+      }, {
         "profile": [ "http://hl7.org/fhir/EncounterStatus" ],
         "mustSupport": [ "value" ]
       }, {
@@ -4602,6 +4656,9 @@
         "mustSupport": [ "value" ]
       }, {
         "type": "Patient",
+        "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
+      }, {
+        "type": "Patient",
         "profile": [ "http://hl7.org/fhir/Patient" ],
         "mustSupport": [ "birthDate" ]
       }, {
@@ -4619,7 +4676,31 @@
       }, {
         "type": "Condition",
         "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
-        "mustSupport": [ "id", "code" ]
+        "mustSupport": [ "id" ]
+      }, {
+        "type": "Condition",
+        "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+        "mustSupport": [ "code" ]
+      }, {
+        "type": "Condition",
+        "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+        "mustSupport": [ "code" ]
+      }, {
+        "type": "Condition",
+        "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+        "mustSupport": [ "code" ]
+      }, {
+        "type": "Condition",
+        "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+        "mustSupport": [ "code" ]
+      }, {
+        "type": "Condition",
+        "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+        "mustSupport": [ "code" ]
+      }, {
+        "type": "Condition",
+        "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+        "mustSupport": [ "code" ]
       }, {
         "type": "uri",
         "profile": [ "http://hl7.org/fhir/uri" ],

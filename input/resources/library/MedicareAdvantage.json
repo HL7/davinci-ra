@@ -24,6 +24,10 @@
     "resource": "http://hl7.org/fhir/us/davinci-ra/Library/FHIRHelpers|4.0.001"
   }, {
     "type": "depends-on",
+    "display": "Library FHIRHelpers",
+    "resource": "http://hl7.org/fhir/us/davinci-ra/Library/FHIRHelpers|4.0.001"
+  }, {
+    "type": "depends-on",
     "display": "Value set Office Visit",
     "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001"
   }, {
@@ -204,6 +208,9 @@
     "type": "date",
     "profile": [ "http://hl7.org/fhir/date" ],
     "mustSupport": [ "value" ]
+  }, {
+    "type": "Patient",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
   }, {
     "type": "Patient",
     "profile": [ "http://hl7.org/fhir/Patient" ],
