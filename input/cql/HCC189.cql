@@ -94,7 +94,7 @@ define "Historic Population":
 
 // Stratifier
 define "Suspected Population":
-  exists "Suspecting Algorithm Encounter"
+  IsNull("Suspecting Algorithm Encounter")
     and not "Denominator Exclusions"
 
 // Stratifier
@@ -129,15 +129,109 @@ define "Net-New Diagnosis":
     "HCC189 Encounter Diagnosis".HCCDiagnosis
   else null as Condition
 
+define function ReferenceTo(patient Patient):
+    Reference { reference: string { value: 'Patient/' + patient.id } }
+
+define function ReferenceTo(condition Condition):
+    Reference { reference: string { value: 'Condition/' + condition.id } }
+
 /** 
 Suspected population may be defined by organizations that create suspecting algorithms.
 This placeholder definition is included for information only */
 // SDE
 define "Suspecting Algorithm Encounter":
-  null as List<Encounter>
+  Encounter {
+    id: id { value: Patient.id + '-suspecting-algorithm-encounter-' + ToString(Today()) },
+    meta: 
+      Meta {
+          profile: {
+              canonical { value: 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter' }
+          }
+      },
+    subject: ReferenceTo(Patient),
+    status: EncounterStatus { value: 'finished' },
+    class: Coding {
+      system: uri { value: 'http://terminology.hl7.org/CodeSystem/v3-ActCode' },
+      code: code { value: 'AMB' },
+      display: string { value: 'ambulatory' }
+    },
+    type: { 
+      CodeableConcept {
+        coding: { 
+          Coding {
+            system: uri { value: 'http://www.ama-assn.org/go/cpt' },
+            code: code { value: '99202' }
+          }
+        },
+        text: string { value: 'Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using time for code selection, 15-29 minutes of total time is spent on the date of the encounter.' }
+      }
+    },	
+    //This errors during evaluation 
+    // diagnosis: { 
+    //   FHIR.Encounter.Diagnosis {
+    //     condition: ReferenceTo("Suspecting Algorithm Diagnosis") 
+    //   } 
+    // },
+    period: Period {
+      start: dateTime { value: Now() },
+      end: dateTime { value: Now() }
+    }
+  }
 
 define "Suspecting Algorithm Diagnosis":
-  null as List<Condition>
+      Condition {
+        id: id { value: Patient.id + '-suspecting-algorithm-diagnosis-' + ToString(Today()) },
+        meta: 
+            Meta {
+                profile: {
+                    canonical { value: 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition' }
+                }
+            },
+        clinicalStatus: CodeableConcept {          
+          coding: {
+            Coding {
+              system: uri { value: 'http://terminology.hl7.org/CodeSystem/condition-clinical' },
+              code: code { value: 'active' },
+              display: string { value: 'Active' }
+            }
+          },
+          text: string { value: 'Active' }
+        },
+        verificationStatus: CodeableConcept {
+          coding: {
+            Coding {
+              system: uri { value: 'http://terminology.hl7.org/CodeSystem/condition-ver-status' },
+              code: code { value: 'confirmed' },
+              display: string { value: 'Confirmed' }
+            }
+          },
+          text: string { value: 'Confirmed' }
+        },
+      category: {
+        CodeableConcept {        
+          coding: {
+            Coding {
+              system: uri { value: 'http://terminology.hl7.org/CodeSystem/condition-category' },
+              code: code { value: 'encounter-diagnosis' },
+              display: string { value: 'Encounter Diagnosis' }
+            }         
+          },
+          text: string { value: 'Encounter Diagnosis' }
+        }
+      },
+      code: CodeableConcept {
+        coding: {
+           Coding {
+            system: uri { value: 'http://example.org/fhir/sid/proprietary-encoding' },
+            code: code { value: '12345' },
+            display: string { value: 'Proprietary Suspecting Algorithm' }
+          }
+        },
+        text: string { value: '12345: Proprietary Suspecting Algorithm' }
+      },
+      subject: ReferenceTo(Patient),
+      onset: dateTime { value: Now() }
+    }
 
 // SDE
 define "Evidence Status Report":

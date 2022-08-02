@@ -8,6 +8,7 @@
 <artifactPageExtension value="-mappings"/>
 <artifact id="Condition/ra-conditionR01pat01" key="Condition-ra-conditionR01pat01" name=""/>
 <artifact id="DocumentReference/documentreference01pat01" key="DocumentReference-documentreference01pat01" name=""/>
+<artifact id="Library/HCC189" key="Library-HCC189" name=""/>
 <artifact deprecated="true" id="Condition/ra-condition01" key="Condition-ra-condition01" name="Condition01: Type 2 diabetes with unspecified manisfestations"/>
 <artifact id="Condition/ra-condition01pat03" key="Condition-ra-condition01pat03" name="Condition01pat03: Other artificial openings of gastrointestinal tract status"/>
 <artifact deprecated="true" id="Condition/ra-condition02" key="Condition-ra-condition02" name="Condition02: Major Depressive Disorder, Single episode"/>
