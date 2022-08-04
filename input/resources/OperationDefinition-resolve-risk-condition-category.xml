@@ -1,32 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OperationDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="risk-adjustment"/>
-    <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/risk-adjustment"/>
-    <name value="Risk Adjustment"/>
-    <title value="Risk Adjustment Operation"/>
+    <id value="resolve-risk-condition-category"/>
+    <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/resolve-risk-condition-category"/>
+    <name value="Resolve Risk Condition Category"/>
+    <title value="Resolve Risk Condition Category Operation"/>
     <status value="draft"/>
     <kind value="operation"/>
     <publisher value="Da Vinci Project"/>
     <description value="Generate a measure report"/>
-    <code value="risk-adjustment"/>
+    <code value="resolve-risk-condition-category"/>
     <comment value=""/>
     <resource value="MeasureReport"/>
     <system value="false"/>
     <type value="true"/>
     <instance value="false"/>
-    <parameter>
-        <name value="type"/>
-        <use value="in"/>
-        <min value="1"/>
-        <max value="1"/>
-        <documentation value="The type of this operation is either for report or reponse."/>
-        <binding>
-          <strength value="extensible"/>
-          <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/ra-operation-type"/>
-        </binding>
-        <type value="code"/>
-    </parameter>
     <parameter>
         <name value="periodStart"/>
         <use value="in"/>
@@ -53,6 +41,22 @@
         <type value="string"/>
         <searchType value="reference"/>
     </parameter>
+    <parameter>
+        <name value="measureId"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="*"/>
+        <documentation value="The id of a Measure resource that is on the server for which the coding gaps reports were for."/>
+        <type value="id"/>
+    </parameter> 
+    <parameter>
+        <name value="measureReportId"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="*"/>
+        <documentation value="The id of coding gap MeasureReport."/>
+        <type value="id"/>
+    </parameter>     
     <parameter>
         <name value="return"/>
         <use value="out"/>

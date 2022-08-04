@@ -56,12 +56,14 @@
 <artifact id="Encounter/ra-encounter19pat03" key="Encounter-ra-encounter19pat03" name="Encounter on 20210823"/>
 <artifact id="Encounter/ra-encounter03pat01" key="Encounter-ra-encounter03pat01" name="Encounter on 20210926"/>
 <artifact id="Encounter/ra-encounter04pat03" key="Encounter-ra-encounter04pat03" name="Encounter on 20211218"/>
+<artifact id="OperationDefinition/evaluate-risk-condition-category" key="OperationDefinition-evaluate-risk-condition-category" name="Evaluate Risk Condition Category Operation"/>
 <artifact id="StructureDefinition/ra-evidenceStatus" key="StructureDefinition-ra-evidenceStatus" name="Evidence Status Extension"/>
 <artifact id="ValueSet/example-cmshcc" key="ValueSet-example-cmshcc" name="Example CMS Hierarchical Condition Category Value Set"/>
 <artifact id="DetectedIssue/detectedIssue-ra-measurereport01" key="DetectedIssue-detectedIssue-ra-measurereport01" name="Example DetectedIssue - detectedIssue-ra-measurereport01"/>
 <artifact id="StructureDefinition/ra-groupReference" key="StructureDefinition-ra-groupReference" name="Group Reference Extension"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hiearchicalStatus" key="StructureDefinition-ra-hiearchicalStatus" name="Hiearchical Status Extension"/>
 <artifact id="StructureDefinition/ra-hierarchicalStatus" key="StructureDefinition-ra-hierarchicalStatus" name="Hierarchical Status Extension"/>
+<artifact id="OperationDefinition/merge-risk-condition-category" key="OperationDefinition-merge-risk-condition-category" name="Merge Risk Condition Category Operation"/>
 <artifact id="Observation/ra-obs01pat03" key="Observation-ra-obs01pat03" name="Observation: Creatinine Result from 20210728"/>
 <artifact id="Observation/ra-obs02pat03" key="Observation-ra-obs02pat03" name="Observation: PHQ9 from 20190823"/>
 <artifact id="Organization/ra-payer01" key="Organization-ra-payer01" name="Organization01: ABC Payer"/>
@@ -79,6 +81,7 @@
 <artifact id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner: Patrick Pump"/>
 <artifact id="StructureDefinition/extension-codingGapType" key="StructureDefinition-extension-codingGapType" name="RA Coding Gap Type Modifier Extension"/>
 <artifact id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
+<artifact id="OperationDefinition/resolve-risk-condition-category" key="OperationDefinition-resolve-risk-condition-category" name="Resolve Risk Condition Category Operation"/>
 <artifact id="StructureDefinition/ra-bundle" key="StructureDefinition-ra-bundle" name="Risk Adjustment Bundle Profile"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
 <artifact id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Risk Adjustment Clinical Data Collection Deadline Extension"/>
@@ -99,7 +102,6 @@
 <artifact id="Measure/RAModelExample02" key="Measure-RAModelExample02" name="Risk Adjustment Model Version 21 - CMS Hierarchical Category Condition (CMS-HCC)"/>
 <artifact id="Measure/RAModelExample01" key="Measure-RAModelExample01" name="Risk Adjustment Model Version 24 - CMS Hierarchical Category Condition (CMS-HCC)"/>
 <artifact id="Measure/RAModelExample03" key="Measure-RAModelExample03" name="Risk Adjustment Model Version 5 - CMS Prescribing Drug Hierarchical Category Condition (CMS-HCC)"/>
-<artifact id="OperationDefinition/risk-adjustment" key="OperationDefinition-risk-adjustment" name="Risk Adjustment Operation"/>
 <artifact id="CodeSystem/ra-operation-type" key="CodeSystem-ra-operation-type" name="Risk Adjustment Operation Type Code System"/>
 <artifact id="ValueSet/operation-type" key="ValueSet-operation-type" name="Risk Adjustment Operation Type Value Set"/>
 <artifact id="CapabilityStatement/ra-server" key="CapabilityStatement-ra-server" name="Risk Adjustment Server Capability Statement"/>

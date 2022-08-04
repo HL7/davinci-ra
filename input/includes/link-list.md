@@ -104,5 +104,6 @@
 [Risk Adjustment Composition]: StructureDefinition-ra-composition.html
 [Risk Adjustment DetectedIssue]: StructureDefinition-ra-detectedissue.html
 
-[$risk-adjustment]:OperationDefinition-risk-adjustment.html
-
+[$evaluate-risk-condition-category]:OperationDefinition-evaluate-risk-condition-category.html
+[$resolve-risk-condition-category]:OperationDefinition-resolve-risk-condition-category.html
+[$merge-risk-condition-category]:OperationDefinition-merge-risk-condition-category.html
