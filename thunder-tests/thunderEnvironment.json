@@ -5,15 +5,11 @@
     "default": true,
     "sortNum": 10000,
     "created": "2022-04-19T03:26:03.029Z",
-    "modified": "2022-07-29T16:15:39.960Z",
+    "modified": "2022-08-02T17:28:15.859Z",
     "data": [
       {
         "name": "RAServer",
         "value": "http://localhost:8080/fhir/"
-      },
-      {
-        "name": "prior",
-        "value": "https://cloud.alphora.com/sandbox/r4/ra/fhir/"
       }
     ]
   }

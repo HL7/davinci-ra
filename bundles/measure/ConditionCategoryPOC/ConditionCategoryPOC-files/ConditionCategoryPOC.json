@@ -267,6 +267,21 @@
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
       "extension": [ {
         "url": "libraryName",
+        "valueString": "HCC189"
+      }, {
+        "url": "name",
+        "valueString": "SDE Minimal Patient2"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Minimal Patient2\":\n    Patient P"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 17
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
         "valueString": "MedicareAdvantage"
       }, {
         "url": "name",
@@ -276,7 +291,7 @@
         "valueString": "define \"HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period\":\n    \"HCC Qualifying Encounters with Eligible Providers\" QualifyingEncounter\n    \twhere Global.\"Normalize Interval\"(QualifyingEncounter.period) during \"Clinical Evaluation Period\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 17
+        "valueInteger": 18
       } ]
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
@@ -291,7 +306,7 @@
         "valueString": "/** Patient has an Encounter Diagnosis of \"Acquired absence of right great toe\": 'Z89.411' during Clinical Evaluation Period\nZ89.411 maps to HCC189 */\ndefine \"HCC189 Encounter Diagnosis\":\n  from\n  MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period\" HCCEncounter,\n  ([Condition] C where C.code in \"Example Acquired Lower Limb Deformities\") HCCDiagnosis\n      where HCCDiagnosis in Global.EncounterDiagnosis(HCCEncounter)"
       }, {
         "url": "displaySequence",
-        "valueInteger": 18
+        "valueInteger": 19
       } ]
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
@@ -306,7 +321,7 @@
         "valueString": "define \"Closed Gap Diagnosis\":\n  exists \"HCC189 Encounter Diagnosis\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 19
+        "valueInteger": 20
       } ]
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
@@ -321,7 +336,7 @@
         "valueString": "define \"Numerator\":\n  \"Closed Gap Diagnosis\"\n    and not \"Denominator Exclusions\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 20
+        "valueInteger": 21
       } ]
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
@@ -336,7 +351,52 @@
         "valueString": "// SDE\ndefine \"Exclusion Encounter\":\n  \"HCC189 Exclusions\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 21
+        "valueInteger": 22
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "MedicareAdvantage"
+      }, {
+        "url": "name",
+        "valueString": "Last Appointment"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Last Appointment\":\n  Last(\n    \"HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period\"\n  )"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 23
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "MedicareAdvantage"
+      }, {
+        "url": "name",
+        "valueString": "Resource Construction"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Resource Construction\":\n  FHIR.Observation {\n  id: FHIR.id { id: 'observation-sdetest-' + ToString(Now()) },\n  status: FHIR.ObservationStatus { value: 'final' },\n  code: FHIR.CodeableConcept { coding: { FHIR.Coding { code: FHIR.code { value: 'days-since-appointment' } } } },\n  subject: FHIR.Reference { reference: FHIR.string { value: Patient.id.value }},\n  value: FHIR.integer { value: Abs(difference in days between end of \"Last Appointment\".period and ToDateTime(Today())) }\n}"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 24
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HCC189"
+      }, {
+        "url": "name",
+        "valueString": "Resource Construction Test"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Resource Construction Test\":\n  MedicareAdvantage.\"Resource Construction\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 25
       } ]
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
@@ -351,7 +411,7 @@
         "valueString": "define \"Qualifying Member\":\n    AgeInYearsAt(date from start of \"Clinical Evaluation Period\") >=65"
       }, {
         "url": "displaySequence",
-        "valueInteger": 22
+        "valueInteger": 26
       } ]
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
@@ -366,7 +426,7 @@
         "valueString": "/** Medicare Advantage patients who are age 65 years and older and have an eligible encounter */\ndefine \"Qualifying Members\":\n  MedicareAdvantage.\"Qualifying Member\"\n    and exists MedicareAdvantage.\"HCC Qualifying Encounters with Eligible Providers\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 23
+        "valueInteger": 27
       } ]
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
@@ -381,7 +441,7 @@
         "valueString": "define \"Initial Population\":\n  \"Qualifying Members\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 24
+        "valueInteger": 28
       } ]
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
@@ -396,7 +456,7 @@
         "valueString": "// Stratifier\ndefine \"Net-New Population\":\n  \"Closed Gap Diagnosis\"\n    and not \"Historic Population\"\n    and not \"Denominator Exclusions\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 25
+        "valueInteger": 29
       } ]
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
@@ -411,7 +471,37 @@
         "valueString": "define \"Denominator\":\n  \"Initial Population\"\n    and (\n      \"Historic Population\" \n        or \"Suspected Population\" \n        or \"Net-New Population\" \n        or \"Closed Gap Diagnosis\"\n    )\n    and not \"Denominator Exclusions\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 26
+        "valueInteger": 30
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HCC189"
+      }, {
+        "url": "name",
+        "valueString": "SDE Minimal Patient"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Minimal Patient\":\n  Patient P\n  return Patient{\n    id: P.id,\n    gender: P.gender,\n    birthDate: P.birthDate\n  }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 31
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HCC189"
+      }, {
+        "url": "name",
+        "valueString": "Test Workaround"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Test Workaround\":\n    Patient {\n        id: Patient.id,\n        gender: Patient.gender,\n        birthDate: Patient.birthDate       \n    }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 32
       } ]
     } ],
     "status": "active",
@@ -561,6 +651,12 @@
       "max": "1",
       "type": "MeasureReport"
     }, {
+      "name": "SDE Minimal Patient2",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Patient"
+    }, {
       "name": "Numerator",
       "use": "out",
       "min": 0,
@@ -572,6 +668,12 @@
       "min": 0,
       "max": "*",
       "type": "Any"
+    }, {
+      "name": "Resource Construction Test",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Observation"
     }, {
       "name": "Denominator",
       "use": "out",
@@ -596,6 +698,18 @@
       "min": 0,
       "max": "1",
       "type": "boolean"
+    }, {
+      "name": "SDE Minimal Patient",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Patient"
+    }, {
+      "name": "Test Workaround",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Patient"
     } ],
     "dataRequirement": [ {
       "profile": [ "http://hl7.org/fhir/EncounterStatus" ],
@@ -698,7 +812,7 @@
     }, {
       "type": "Patient",
       "profile": [ "http://hl7.org/fhir/Patient" ],
-      "mustSupport": [ "birthDate", "id" ]
+      "mustSupport": [ "birthDate", "id", "id.value", "gender" ]
     }, {
       "type": "Range",
       "profile": [ "http://hl7.org/fhir/Range" ],
@@ -747,6 +861,9 @@
       "type": "Patient",
       "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
     }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
+    }, {
       "type": "Condition",
       "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
       "mustSupport": [ "code" ]
@@ -754,6 +871,26 @@
       "type": "Condition",
       "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
       "mustSupport": [ "code" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/Encounter" ],
+      "mustSupport": [ "period" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ],
+      "mustSupport": [ "id", "gender", "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
     }, {
       "type": "Patient",
       "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
@@ -788,7 +925,7 @@
   "title": "Condition Category Proof Of Concept",
   "status": "draft",
   "experimental": true,
-  "date": "2022-07-29",
+  "date": "2022-08-26",
   "publisher": "HL7 International - Clinical Quality Information Work Group",
   "contact": [ {
     "telecom": [ {
@@ -930,6 +1067,78 @@
     } ]
   } ],
   "supplementalData": [ {
+    "id": "construction-test",
+    "code": {
+      "coding": [ {
+        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence",
+        "code": "test-evidence"
+      } ]
+    },
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "criteria": {
+      "language": "text/cql.identifier",
+      "expression": "Resource Construction Test"
+    }
+  }, {
+    "id": "SDE-Minimal-Patient",
+    "code": {
+      "coding": [ {
+        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence",
+        "code": "test-evidence"
+      } ]
+    },
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "criteria": {
+      "language": "text/cql.identifier",
+      "expression": "SDE Minimal Patient"
+    }
+  }, {
+    "id": "test-workaround",
+    "code": {
+      "coding": [ {
+        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence",
+        "code": "test-evidence"
+      } ]
+    },
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "criteria": {
+      "language": "text/cql.identifier",
+      "expression": "Test Workaround"
+    }
+  }, {
+    "id": "SDE-Minimal-Patient2",
+    "code": {
+      "coding": [ {
+        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence",
+        "code": "test-evidence"
+      } ]
+    },
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "criteria": {
+      "language": "text/cql.identifier",
+      "expression": "SDE Minimal Patient2"
+    }
+  }, {
     "id": "exclusion-encounter",
     "code": {
       "coding": [ {

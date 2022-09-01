@@ -269,3 +269,38 @@ define "HCC189 Historic Encounter Diagnosis":
   MedicareAdvantage."HCC Qualifying Encounters with Eligible Providers outside Clinical Evaluation Period" HCCEncounter,
     ([Condition] C where C.code in "Example Acquired Lower Limb Deformities") HCCDiagnosis
      where HCCDiagnosis in Global.EncounterDiagnosis(HCCEncounter)
+
+define "Resource Construction Test":
+  MedicareAdvantage."Resource Construction"
+
+define "FirstObservation":
+  [Observation] O
+    where O.id = 'UACRgt30lt6M-1'
+
+define "SecondObservation":
+  singleton from ([Observation] O
+    where O.id = 'UACRgt30lt6M-2')
+
+define "FirstTest":
+  "FirstObservation" First
+    where (First.effective as FHIR.dateTime) 6 months or less on or before day of ("SecondObservation".effective as FHIR.dateTime)
+  
+
+define "SDE Minimal Patient":
+  Patient P
+  return Patient{
+    id: P.id,
+    gender: P.gender,
+    birthDate: P.birthDate
+  }
+
+  define "SDE Minimal Patient2":
+    Patient P
+
+  define "Test Workaround":
+    Patient {
+        id: Patient.id,
+        gender: Patient.gender,
+        birthDate: Patient.birthDate       
+    }
+ 

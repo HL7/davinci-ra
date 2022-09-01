@@ -52,3 +52,17 @@ define "HCC Qualifying Encounters with Eligible Providers during Clinical Evalua
 define "HCC Qualifying Encounters with Eligible Providers outside Clinical Evaluation Period":
     "HCC Qualifying Encounters with Eligible Providers" QualifyingEncounter 
         where not (Global."Normalize Interval"(QualifyingEncounter.period) during "Clinical Evaluation Period")
+
+define "Last Appointment":
+  Last(
+    "HCC Qualifying Encounters with Eligible Providers during Clinical Evaluation Period"
+  )
+
+define "Resource Construction":
+  FHIR.Observation {
+  id: FHIR.id { id: 'observation-sdetest-' + ToString(Now()) },
+  status: FHIR.ObservationStatus { value: 'final' },
+  code: FHIR.CodeableConcept { coding: { FHIR.Coding { code: FHIR.code { value: 'days-since-appointment' } } } },
+  subject: FHIR.Reference { reference: FHIR.string { value: Patient.id.value }},
+  value: FHIR.integer { value: Abs(difference in days between end of "Last Appointment".period and ToDateTime(Today())) }
+}
