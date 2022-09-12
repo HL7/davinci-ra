@@ -26,9 +26,9 @@
       "definition": "Patient was correctly diagnosed, but the condition is no longer active."
     },
     {
-      "code": "invalidation-request-inaccurate-coding",
-      "display": "Coding gap invalidated inaccurate coding",
-      "definition": "Patient has an active condition, but the gap doesn't accurately describe it."
+      "code": "invalidation-request-inaccurate-gap",
+      "display": "Coding gap invalidated inaccurate gap",
+      "definition": "Patient has an active condition, but the gap does not accurately describe it."
     }
   ],
   "count": 4

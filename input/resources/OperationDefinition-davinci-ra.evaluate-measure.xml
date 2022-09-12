@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OperationDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="davinci-ra.evaluate-measure"/>
+    <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/davinci-ra.evaluate-measure"/>
+    <name value="Evaluate Measure"/>
+    <title value="Evaluate Measure Operation"/>
+    <status value="draft"/>
+    <kind value="operation"/>
+    <publisher value="Da Vinci Project"/>
+    <description value="Evaluate a condition category measure and generate a measure report"/>
+    <code value="davinci-ra.evaluate-measure"/>
+    <comment value=""/>
+    <resource value="MeasureReport"/>
+    <system value="false"/>
+    <type value="true"/>
+    <instance value="false"/>
+    <parameter>
+        <name value="periodStart"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="The start of a clinical evaluation period. The periodStart and periodEnd parameters will be compared with the clinical evaluation period (`MeasureReport.period.start` and `MeasureReport.period.end`)
+          of a [Risk Adjustment Coding Gap MeasureReport](StructureDefinition-ra-measurereport.html) available on the Server. The MeasureReport will be returned if there is an overlap of the two periods."/>
+        <type value="date"/>
+    </parameter>
+    <parameter>
+        <name value="periodEnd"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="The end of a clinical evaluation period."/>
+        <type value="date"/>
+    </parameter>
+    <parameter>
+        <name value="subject"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="Subject will be a reference to either Patient ([US Core Patient](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html)) or Group ([Patient Group](StructureDefinition-ra-patient-group.html)). Must provide either Patient/123 or Group/123, cannot simply provide 123. If only 123 is provided, then the operation would not know if it is a Patient reference or a Group reference."/>
+        <type value="string"/>
+        <searchType value="reference"/>
+    </parameter>
+    <parameter>
+        <name value="measureId"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="*"/>
+        <documentation value="The id of a Measure resource (risk adjustment model)that is on the server for which the risk adjustment coding gaps were run against."/>
+        <type value="id"/>
+    </parameter>
+    <parameter>
+        <name value="measureIdentifier"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="*"/>
+        <documentation value="The business identifier of a measure (risk adjustment model) for which the risk adjustment coding gaps were run against."/>
+        <type value="string"/>
+        <searchType value="token"/>
+    </parameter>
+    <parameter>
+        <name value="measureUrl"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="*"/>
+        <documentation value="This the the URL of a measure (risk adjustment model) for which the risk adjustment coding gaps were run against. A measure URL is specified in the [url](https://www.hl7.org/fhir/measure-definitions.html#Measure.url) element of the Measure resource. The measure URL remains the same when the measure is stored on different servers."/>
+        <type value="canonical"/>
+    </parameter>     
+    <parameter>
+        <name value="return"/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="*"/>
+        <documentation value="This operation will always return one [Parameters](https://www.hl7.org/fhir/parameters.html). The [Risk Adjustment Coding Gap Report Bundle](StructureDefinition-ra-measurereport-bundle.html) for a patient is returned in a `Parameters.parameter` element, with each `Parameters.parameter`element for a unique patient."
+/>
+        <type value="Bundle"/>
+    </parameter>
+</OperationDefinition>

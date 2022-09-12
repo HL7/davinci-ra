@@ -104,6 +104,5 @@
 [Risk Adjustment Composition]: StructureDefinition-ra-composition.html
 [Risk Adjustment DetectedIssue]: StructureDefinition-ra-detectedissue.html
 
-[$evaluate-risk-condition-category]:OperationDefinition-evaluate-risk-condition-category.html
-[$resolve-risk-condition-category]:OperationDefinition-resolve-risk-condition-category.html
-[$merge-risk-condition-category]:OperationDefinition-merge-risk-condition-category.html
+[$davinci-ra.evaluate-measure]:OperationDefinition-davinci-ra.evaluate-measure.html
+[$davinci-ra.resolve]:OperationDefinition-davinci-ra.resolve.html

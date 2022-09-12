@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OperationDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="resolve-risk-condition-category"/>
-    <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/resolve-risk-condition-category"/>
+    <id value="davinci-ra.resolve"/>
+    <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/davinci-ra.resolve"/>
     <name value="Resolve Risk Condition Category"/>
     <title value="Resolve Risk Condition Category Operation"/>
     <status value="draft"/>
     <kind value="operation"/>
     <publisher value="Da Vinci Project"/>
-    <description value="Generate a measure report"/>
-    <code value="resolve-risk-condition-category"/>
+    <description value="Resolves condition category gaps, update and/or generate measure report(s)"/>
+    <code value="davinci-ra.resolve"/>
     <comment value=""/>
     <resource value="MeasureReport"/>
     <system value="false"/>
@@ -56,16 +56,21 @@
         <max value="*"/>
         <documentation value="The id of coding gap MeasureReport."/>
         <type value="id"/>
-    </parameter>     
+    </parameter>  
+    <parameter>
+        <name value="measureUrl"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="*"/>
+        <documentation value="This the the URL of a measure (risk adjustment model) for which the risk adjustment coding gaps were run against. A measure URL is specified in the [url](https://www.hl7.org/fhir/measure-definitions.html#Measure.url) element of the Measure resource. The measure URL remains the same when the measure is stored on different servers."/>
+        <type value="canonical"/>
+    </parameter>            
     <parameter>
         <name value="return"/>
         <use value="out"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="The $report operation will always return one [Parameters](https://www.hl7.org/fhir/parameters.html) whether the subject is a single patient or a group of patients.
-[Risk Adjustment Coding Gap Report Bundle](StructureDefinition-ra-measurereport-bundle.html) for a patient is in a `Parameters.parameter` element.
-A Risk Adjustment Coding Gap Report Bundle contains the Risk Adjustment Coding Gap Reports for the same patient.
-For example, if a Group has 10 valid patients, then a [Parameters](https://www.hl7.org/fhir/parameters.html) will contain 10 `Parameters.parameter`elements, with each `Parameters.parameter` for a unique patient."/>
+        <documentation value="This operation returns one [Parameters](https://www.hl7.org/fhir/parameters.html). The [Risk Adjustment Coding Gap Report Bundle](StructureDefinition-ra-measurereport-bundle.html) for a patient is returned in a `Parameters.parameter` element, with each `Parameters.parameter`element for a unique patient."/>
         <type value="Bundle"/>
     </parameter>
     <parameter>

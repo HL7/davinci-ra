@@ -7,13 +7,9 @@ The operation specified in this implementation guide:
 <div class="bg-info" markdown="1">
 Draft operation definitions that are under discussions and development. 
 
-- **[$evaluate-risk-condition-category Operation](OperationDefinition-evaluate-risk-condition-category.html)**
+- **[$davinci-ra.evaluate-measure Operation](OperationDefinition-davinci-ra.evaluate-measure.html)**
 
-- **[$resolve-risk-condition-category Operation](OperationDefinition-resolve-risk-condition-category.html)**
-
-- **[$merge-risk-condition-category Operation](OperationDefinition-merge-risk-condition-category.html)**
-
-- **[$compose-risk-condition-category Operation]**
+- **[$davinci-ra.resolve Operation](OperationDefinition-davinci-ra.resolve.html)**
 
 </div>
 <br />
