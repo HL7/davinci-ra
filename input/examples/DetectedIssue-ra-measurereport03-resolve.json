@@ -38,6 +38,11 @@
   "patient": {
     "reference": "Patient/ra-patient02"
   },
+  "implicated": [
+    {
+      "reference": "MeasureReport/ra-measurereport03"
+    }
+  ],
   "evidence": [
     {
       "detail": [
