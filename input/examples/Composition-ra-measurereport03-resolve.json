@@ -1,0 +1,42 @@
+{
+  "resourceType": "Composition",
+  "id": "ra-measurereport03-resolve",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-composition"
+    ]
+  },
+  "status": "preliminary",
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "96315-7",
+        "display": "Gaps in care report"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ra-patient02"
+  },
+  "date": "2022-09-13T19:48:53+00:00",
+  "author": [
+    {
+      "reference": "Organization/ra-org02pat02"
+    }
+  ],
+  "title": "Risk Adjustment Report for patient ra-patient02",
+  "section": [
+    {
+      "title": "Measure Report ra-measurereport03, group-002",
+      "focus": {
+        "reference": "MeasureReport/ra-measurereport03"
+      },
+      "entry": [
+        {
+          "reference": "DetectedIssue/ra-measurereport03-resolve"
+        }
+      ]
+    }
+  ]
+}
