@@ -88,7 +88,7 @@
       <operation>
         <type>
           <system value="http://touchstone.com/fhir/testscript-operation-codes-extended"/>
-          <value value="report"/>
+          <code value="evaluate-measure"/>
         </type>
         <resource value="Measure"/>
         <description value="Run the $davinci-ra.evaluate-measure operation."/>
