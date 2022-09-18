@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestScript xmlns="http://hl7.org/fhir">
+  <id value="PeriodStart-None-RA-ME"/>
+  <meta>
+    <profile value="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>PeriodStart-None-RA-ME-json</p>
+    </div>
+  </text>
+  <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-rule">
+    <extension url="ruleId">
+      <valueId value="assert-by-path"/>
+    </extension>
+    <extension url="path">
+      <valueString value="/FHIRCommon/_reference/rule/AssertValidateJSONExtractProfileId.groovy"/>
+    </extension>
+    <extension url="param">
+      <extension url="name">
+        <valueString value="jsonPath"/>
+      </extension>
+      <extension url="value">
+        <valueString value="$.entry[?(@.resource.resourceType == 'MeasureReport')].resource"/>
+      </extension>
+    </extension>
+    <extension url="param">
+      <extension url="name">
+        <valueString value="profileId"/>
+      </extension>
+      <extension url="value">
+        <valueString value="RAMeasureReportProfile"/>
+      </extension>
+    </extension>
+  </extension>
+  <url value="http://wildfhir.aegis.net/fhir4-0-1/TestScript/PeriodStart-None-RA-ME"/>
+  <name value="PeriodStart-None-RA-ME-json"/>
+  <status value="active"/>
+  <date value="2021-06-22"/>
+  <publisher value="AEGIS.net, Inc."/>
+  <contact>
+    <name value="Touchstone Support"/>
+    <telecom>
+      <system value="email"/>
+      <value value="Touchstone_Support@aegis.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Get all gaps for variable parameters. All $davinci-ra.evaluate-measure operations are performed using the FHIR Operation Framework HTTP GET method with url inline parameters. Preconditions: Server has pre-loaded the Clinical Reasoning standard test data set patient and measure data for the patient.  The request is for json format as a default."/>
+  <copyright value="(c) AEGIS.net, Inc. 2021"/>
+  <origin>
+    <index value="1" />
+    <profile>
+      <system value="http://hl7.org/fhir/testscript-profile-origin-types" />
+      <code value="FHIR-Client" />
+    </profile>
+  </origin>
+  <destination>
+    <index value="1" />
+    <profile>
+      <system value="http://hl7.org/fhir/testscript-profile-destination-types" />
+      <code value="FHIR-Server" />
+    </profile>
+  </destination>
+  <profile id="ParametersProfileBase">
+    <reference value="http://hl7.org/fhir/StructureDefinition/Parameters" />
+  </profile>
+  <variable>
+    <name value="periodEnd"/>
+    <defaultValue value="2022-12-31"/>
+    <description value="Default end of a gaps through period."/>
+  </variable>
+  <variable>
+    <name value="subject"/>
+    <defaultValue value="Patient/hist-closed-HCC189"/>
+    <description value="Default end of a gaps through subject."/>
+  </variable>
+  <variable>
+    <name value="expectedNumReports"/>
+    <defaultValue value="0"/>
+    <description value="Number of expected MeasureReport resources in response.  Will be validated in the test."/>
+  </variable>
+  <test id="PeriodStart-None">
+    <name value="PeriodStart-None"/>
+    <description value="Query for the gaps in care using periodStart missing parameters. Expected response is OperationOutcome (error)."/>
+    <action>
+      <operation>
+        <type>
+          <system value="http://touchstone.com/fhir/testscript-operation-codes-extended"/>
+          <value value="report"/>
+        </type>
+        <resource value="Measure"/>
+        <description value="Run the $davinci-ra.evaluate-measure operation."/>
+        <accept value="json"/>
+        <contentType value="json"/>
+        <destination value="1" />
+        <encodeRequestUrl value="true"/>
+        <method value="get"/>
+        <origin value="1" />
+        <params value="/ConditionCategoryPOC/$davinci-ra.evaluate-measure?periodEnd=${periodEnd}&amp;subject=${subject}"/>
+        <responseId value="searchResponse"/>
+      </operation>
+    </action>
+    <action>
+      <assert>
+        <description value="Confirm that the request HTTP Header Accept format is the FHIR mime-type 'application/fhir+json'."/>
+        <direction value="request"/>
+        <headerField value="Accept"/>
+        <operator value="contains"/>
+        <value value="application/fhir+json"/>
+        <warningOnly value="true"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <description value="Confirm that the request HTTP Header Accept contains 'charset=utf-8'."/>
+        <direction value="request"/>
+        <headerField value="Accept"/>
+        <operator value="contains"/>
+        <value value="charset=utf-8"/>
+        <warningOnly value="true"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Confirm that the returned HTTP status is 500(Internal Server Error)."/>
+        <direction value="response"/>
+        <responseCode value="500"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <description value="Confirm that the response HTTP Header Content-Type format is the FHIR mime-type 'application/fhir+json'."/>
+        <direction value="response"/>
+        <headerField value="Content-Type"/>
+        <operator value="contains"/>
+        <value value="application/fhir+json"/>
+        <warningOnly value="true"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <description value="Confirm that the response HTTP Header Content-Type contains 'charset=utf-8'."/>
+        <direction value="response"/>
+        <headerField value="Content-Type"/>
+        <operator value="contains"/>
+        <value value="charset=utf-8"/>
+        <warningOnly value="true"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Confirm that the returned resource type is an OperationOutcome."/>
+        <direction value="response"/>
+        <resource value="OperationOutcome"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+    <action>
+      <assert>
+        <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
+          <valueBoolean value="false"/>
+        </extension>
+        <description value="Verify that there are the number of report resources expected in the response"/>
+        <direction value="response"/>
+        <expression value="Parameters.parameter.resource.entry.resource.where(ofType(MeasureReport)).count()"/>
+        <operator value="equals"/>
+        <value value="${expectedNumReports}"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+  </test>
+</TestScript>
