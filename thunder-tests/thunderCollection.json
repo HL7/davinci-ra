@@ -24,7 +24,8 @@
         "name": "Config",
         "containerId": "c61d51b5-0c16-42d8-8f21-d62ba5f247c8",
         "created": "2022-07-07T13:19:14.379Z",
-        "sortNum": 50000
+        "sortNum": 50000,
+        "settings": {}
       },
       {
         "_id": "a8086e55-fffc-4a4c-80e4-cdc87b6342f4",
@@ -38,7 +39,8 @@
         "name": "Config",
         "containerId": "a8086e55-fffc-4a4c-80e4-cdc87b6342f4",
         "created": "2022-07-19T17:19:23.279Z",
-        "sortNum": 70000
+        "sortNum": 70000,
+        "settings": {}
       },
       {
         "_id": "0537525c-ef2c-4a44-a770-59415995c590",
@@ -59,21 +61,24 @@
         "name": "$davinci-ra.resolve",
         "containerId": "",
         "created": "2022-09-14T01:29:20.822Z",
-        "sortNum": 100000
+        "sortNum": 100000,
+        "settings": {}
       },
       {
         "_id": "9126cdce-eb11-4230-ab45-6726155c7fcc",
         "name": "Config",
         "containerId": "ce8d6455-2af4-49dd-a637-e3872f919ba1",
         "created": "2022-09-14T01:29:38.943Z",
-        "sortNum": 110000
+        "sortNum": 110000,
+        "settings": {}
       },
       {
         "_id": "06d01d43-0d0c-49b1-868e-df7d1b092ad3",
         "name": "$report Data",
         "containerId": "9126cdce-eb11-4230-ab45-6726155c7fcc",
         "created": "2022-09-14T01:41:07.223Z",
-        "sortNum": 120000
+        "sortNum": 120000,
+        "settings": {}
       },
       {
         "_id": "193c28f8-6877-4165-9649-ecf72fc5457c",
@@ -81,6 +86,20 @@
         "containerId": "9126cdce-eb11-4230-ab45-6726155c7fcc",
         "created": "2022-09-14T01:41:41.512Z",
         "sortNum": 130000
+      },
+      {
+        "_id": "261f7a9a-311f-4c9d-a891-e4fe4615c09b",
+        "name": "Touchstone",
+        "containerId": "32b623d8-c1e7-4d3f-a792-c741149ae097",
+        "created": "2022-09-17T12:08:03.572Z",
+        "sortNum": 150000
+      },
+      {
+        "_id": "7806c657-48a5-47d2-bdeb-13d48cf798e6",
+        "name": "Assisted",
+        "containerId": "",
+        "created": "2022-09-18T18:50:01.633Z",
+        "sortNum": 160000
       }
     ],
     "settings": {
