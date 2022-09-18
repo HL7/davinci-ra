@@ -7,17 +7,17 @@
     "folders": [
       {
         "_id": "8f1844e1-a7c3-447c-8afb-b9026cb9a285",
-        "name": "Config",
+        "name": "IG Examples",
         "containerId": "",
         "created": "2022-04-19T03:27:37.098Z",
-        "sortNum": 10000
+        "sortNum": 180000
       },
       {
         "_id": "c61d51b5-0c16-42d8-8f21-d62ba5f247c8",
         "name": "$davinci-ra.evaluate-measure",
-        "containerId": "",
+        "containerId": "083d7151-d599-40ac-b588-942ec072d596",
         "created": "2022-07-07T04:57:54.731Z",
-        "sortNum": 40000
+        "sortNum": 30000
       },
       {
         "_id": "32b623d8-c1e7-4d3f-a792-c741149ae097",
@@ -29,10 +29,10 @@
       },
       {
         "_id": "a8086e55-fffc-4a4c-80e4-cdc87b6342f4",
-        "name": "$report Operation (STU1)",
-        "containerId": "",
+        "name": "$report",
+        "containerId": "083d7151-d599-40ac-b588-942ec072d596",
         "created": "2022-07-19T17:18:49.928Z",
-        "sortNum": 25000
+        "sortNum": 20000
       },
       {
         "_id": "7255d65d-bf57-4976-83ef-4b4599f82e60",
@@ -59,9 +59,9 @@
       {
         "_id": "ce8d6455-2af4-49dd-a637-e3872f919ba1",
         "name": "$davinci-ra.resolve",
-        "containerId": "",
+        "containerId": "ace390c2-88f8-4627-a600-d41c2f5bb2a7",
         "created": "2022-09-14T01:29:20.822Z",
-        "sortNum": 100000,
+        "sortNum": 10000,
         "settings": {}
       },
       {
@@ -97,9 +97,30 @@
       {
         "_id": "7806c657-48a5-47d2-bdeb-13d48cf798e6",
         "name": "Assisted",
-        "containerId": "",
+        "containerId": "083d7151-d599-40ac-b588-942ec072d596",
         "created": "2022-09-18T18:50:01.633Z",
-        "sortNum": 160000
+        "sortNum": 10000
+      },
+      {
+        "_id": "083d7151-d599-40ac-b588-942ec072d596",
+        "name": "Generate",
+        "containerId": "",
+        "created": "2022-09-18T19:09:50.141Z",
+        "sortNum": 67500
+      },
+      {
+        "_id": "ace390c2-88f8-4627-a600-d41c2f5bb2a7",
+        "name": "Remediate",
+        "containerId": "",
+        "created": "2022-09-18T19:10:56.958Z",
+        "sortNum": 135000
+      },
+      {
+        "_id": "3eafc2bb-40fd-48ac-ba4f-4d383d91c3f5",
+        "name": "Resolve",
+        "containerId": "",
+        "created": "2022-09-18T19:11:20.086Z",
+        "sortNum": 157500
       }
     ],
     "settings": {
