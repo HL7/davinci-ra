@@ -25,5 +25,4 @@ The figure below shows a Condition Category Measure using HCC189 Amputation Stat
 
 {% include img-portrait.html img="hcc-189-vann-diagram.png" caption = "Figure 4-2: Condition Category Measure Vann Diagram - HCC189 Example" %}
 
-
 </div>
