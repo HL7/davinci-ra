@@ -23,7 +23,7 @@ A Condition Category Measure is structured as a proportion measure, which consis
 
 The figure below shows a Condition Category Measure using HCC189 Amputation Status, Lower Limb/Amputation Complications as an exmaple. The initial population for HCC189 is defined as enrolled Medicare Advantage members. The denominator population for HCC189 includes all open and closed historic gaps, suspected gaps, and closed net-new gaps for the ICD-10 codes that map to HCC189, for example, Z89.411 Acquired absence of right great toe. The denominator exclusion for HCC189 defines criteria that will exlude patients from the denominator population, for example ICD-10 code M20 Acquired deformities of fingers and toes and M21 Other acquired deformities of limbs. 
 
-{% include img-portrait.html img="HCC189-vann-diagram.png" caption = "Figure 4-2: Condition Category Measure Vann Diagram - HCC189 Example" %}
+{% include img-portrait.html img="hcc-189-vann-diagram.png" caption = "Figure 4-2: Condition Category Measure Vann Diagram - HCC189 Example" %}
 
 
 </div>
