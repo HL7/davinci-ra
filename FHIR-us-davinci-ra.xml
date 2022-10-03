@@ -87,15 +87,15 @@
 <artifact id="StructureDefinition/extension-codingGapType" key="StructureDefinition-extension-codingGapType" name="RA Coding Gap Type Modifier Extension"/>
 <artifact id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
 <artifact id="OperationDefinition/davinci-ra.resolve" key="OperationDefinition-davinci-ra.resolve" name="Resolve Risk Condition Category Operation"/>
-<artifact id="StructureDefinition/ra-bundle" key="StructureDefinition-ra-bundle" name="Risk Adjustment Bundle Profile"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
 <artifact id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Risk Adjustment Clinical Data Collection Deadline Extension"/>
+<artifact id="StructureDefinition/ra-coding-gap-bundle" key="StructureDefinition-ra-coding-gap-bundle" name="Risk Adjustment Coding Gap Bundle Profile"/>
+<artifact id="StructureDefinition/ra-coding-gap-composition" key="StructureDefinition-ra-coding-gap-composition" name="Risk Adjustment Coding Gap Composition Profile"/>
+<artifact id="StructureDefinition/ra-coding-gap-detectedissue" key="StructureDefinition-ra-coding-gap-detectedissue" name="Risk Adjustment Coding Gap Detected Issue Profile"/>
 <artifact id="StructureDefinition/ra-measurereport-bundle" key="StructureDefinition-ra-measurereport-bundle" name="Risk Adjustment Coding Gap Report Bundle Profile"/>
 <artifact id="StructureDefinition/ra-measurereport" key="StructureDefinition-ra-measurereport" name="Risk Adjustment Coding Gap Report Profile"/>
 <artifact id="CodeSystem/coding-gap-type" key="CodeSystem-coding-gap-type" name="Risk Adjustment Coding Gap Type Code System"/>
 <artifact id="ValueSet/coding-gap-type" key="ValueSet-coding-gap-type" name="Risk Adjustment Coding Gap Type Value Set"/>
-<artifact id="StructureDefinition/ra-composition" key="StructureDefinition-ra-composition" name="Risk Adjustment Composition Profile"/>
-<artifact id="StructureDefinition/ra-detectedissue" key="StructureDefinition-ra-detectedissue" name="Risk Adjustment Detected Issue Profile"/>
 <artifact id="CodeSystem/evidence-status" key="CodeSystem-evidence-status" name="Risk Adjustment Evidence Status Code System"/>
 <artifact id="StructureDefinition/ra-evidenceStatusDate" key="StructureDefinition-ra-evidenceStatusDate" name="Risk Adjustment Evidence Status Date Extension"/>
 <artifact id="ValueSet/evidence-status" key="ValueSet-evidence-status" name="Risk Adjustment Evidence Status Value Set"/>

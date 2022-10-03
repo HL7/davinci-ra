@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="ra-detectedissue"/>
-    <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-detectedissue"/>
-    <name value="RADetectedIssueProfile"/>
-    <title value="Risk Adjustment Detected Issue Profile"/>
+    <id value="ra-coding-gap-detectedissue"/>
+    <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-detectedissue"/>
+    <name value="RiskAdjustmentCodingGapDetectedIssueProfile"/>
+    <title value="Risk Adjustment Coding Gap Detected Issue Profile"/>
     <status value="draft"/>
-    <date value="2022-04-07"/>
     <publisher value="Da Vinci Project"/>
-    <description value="This is draft Risk Adjustment DetectedIssue profile that is under development"/>
+    <description value="This is draft Risk Adjustment Coding Gap DetectedIssue profile that is under development"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -18,6 +17,7 @@
         <element id="DetectedIssue">
             <path value="DetectedIssue"/>
         </element>
+        <!--
         <element id="DetectedIssue.extension:groupReference">
             <path value="DetectedIssue.extension"/>
             <sliceName value="groupReference"/>
@@ -30,6 +30,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        -->
         <element id="DetectedIssue.modifierExtension:codingGapType">
             <path value="DetectedIssue.modifierExtension"/>
             <sliceName value="codingGapType"/>
@@ -66,15 +67,17 @@
         </element>
         <element id="DetectedIssue.evidence">
             <path value="DetectedIssue.evidence"/>
+            <short value="Clinical evaluation evidence for the detected issue of Condition Category"/>
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="DetectedIssue.evidence.detail">
             <path value="DetectedIssue.evidence.detail"/>
+            <!--
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
             </type>
+            -->
             <min value="1"/>
             <mustSupport value="true"/>
         </element>

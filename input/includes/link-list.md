@@ -100,9 +100,9 @@
 [SMART App Launch]: http://hl7.org/fhir/smart-app-launch/history.html
 [SMART Backend Services]: https://hl7.org/fhir/uv/bulkdata/authorization/index.html
 
-[Risk Adjustment Bundle]: StructureDefinition-ra-bundle.html
-[Risk Adjustment Composition]: StructureDefinition-ra-composition.html
-[Risk Adjustment DetectedIssue]: StructureDefinition-ra-detectedissue.html
+[Risk Adjustment Coding Gap Bundle]: StructureDefinition-ra-coding-gap-bundle.html
+[Risk Adjustment Coding Gap Composition]: StructureDefinition-ra-coding-gap-composition.html
+[Risk Adjustment Coding Gap DetectedIssue]: StructureDefinition-ra-coding-gap-detectedissue.html
 
 [$davinci-ra.evaluate-measure]:OperationDefinition-davinci-ra.evaluate-measure.html
 [$davinci-ra.resolve]:OperationDefinition-davinci-ra.resolve.html

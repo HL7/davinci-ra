@@ -14,9 +14,9 @@ Draft profiles that are under discussions and development:
 
 |Resource Type|Profile Name|Link to Profile|
 |---|---|---|
-|Bundle|Risk Adjustment Bundle Profile|[Risk Adjustment Bundle]|
-|Bundle|Risk Adjustment Composition Profile|[Risk Adjustment Composition]|
-|Bundle|Risk Adjustment DetectedIssue Profile|[Risk Adjustment DetectedIssue]|
+|Bundle|Risk Adjustment Coding Gap Bundle Profile|[Risk Adjustment Coding Gap Bundle]|
+|Composition|Risk Adjustment Coding Gap Composition Profile|[Risk Adjustment Coding Gap Composition]|
+|DetectedIssue|Risk Adjustment Coding Gap DetectedIssue Profile|[Risk Adjustment Coding Gap DetectedIssue]|
 {: .grid}
 
 </div>
