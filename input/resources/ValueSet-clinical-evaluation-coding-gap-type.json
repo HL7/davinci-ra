@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ClinicalEvaluationCodingGapTypeValueSet",
+  "id": "clinical-evaluation-coding-gap-type",
+  "title": "Risk Adjustment Coding Gap Type Value Set",
+  "description": "This is draft Risk Adjustment Coding Gap Type Value Set that is under development",
+  "version": "0.1.0",
+  "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/clinical-evaluation-coding-gap-type",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-type"
+      },
+      {
+      "concept": [
+        {
+          "code": "gap-closure-request",
+          "display": "Gap closure request",
+          "definition": "Request to close the gap."
+        },
+        {
+          "code": "invalidation-request-never-had-condition",
+          "display": "Coding gap invalidated patient never had the condition",
+          "definition": "Patient was incorrectly diagnosed and has never had this condition."
+        },
+        {
+          "code": "invalidation-request-inactive-condition",
+          "display": "Coding gap invalidated condition no longer active",
+          "definition": "Patient was correctly diagnosed, but the condition is no longer active."
+        },
+        {
+          "code": "invalidation-request-inaccurate-gap",
+          "display": "Coding gap invalidated inaccurate gap",
+          "definition": "Patient has an active condition, but the gap does not accurately describe it."
+        }
+      ]
+      }
+    ]
+  }
+}

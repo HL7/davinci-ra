@@ -90,11 +90,13 @@
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
 <artifact id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Risk Adjustment Clinical Data Collection Deadline Extension"/>
 <artifact id="StructureDefinition/ra-coding-gap-bundle" key="StructureDefinition-ra-coding-gap-bundle" name="Risk Adjustment Coding Gap Bundle Profile"/>
+<artifact id="StructureDefinition/ra-coding-gap-clinical-evaluation-detectedissue" key="StructureDefinition-ra-coding-gap-clinical-evaluation-detectedissue" name="Risk Adjustment Coding Gap Clinical Evaluation Detected Issue Profile"/>
 <artifact id="StructureDefinition/ra-coding-gap-composition" key="StructureDefinition-ra-coding-gap-composition" name="Risk Adjustment Coding Gap Composition Profile"/>
-<artifact id="StructureDefinition/ra-coding-gap-detectedissue" key="StructureDefinition-ra-coding-gap-detectedissue" name="Risk Adjustment Coding Gap Detected Issue Profile"/>
+<artifact id="StructureDefinition/ra-coding-gap-original-detectedissue" key="StructureDefinition-ra-coding-gap-original-detectedissue" name="Risk Adjustment Coding Gap Original Detected Issue Profile"/>
 <artifact id="StructureDefinition/ra-measurereport-bundle" key="StructureDefinition-ra-measurereport-bundle" name="Risk Adjustment Coding Gap Report Bundle Profile"/>
 <artifact id="StructureDefinition/ra-measurereport" key="StructureDefinition-ra-measurereport" name="Risk Adjustment Coding Gap Report Profile"/>
 <artifact id="CodeSystem/coding-gap-type" key="CodeSystem-coding-gap-type" name="Risk Adjustment Coding Gap Type Code System"/>
+<artifact id="ValueSet/clinical-evaluation-coding-gap-type" key="ValueSet-clinical-evaluation-coding-gap-type" name="Risk Adjustment Coding Gap Type Value Set"/>
 <artifact id="ValueSet/coding-gap-type" key="ValueSet-coding-gap-type" name="Risk Adjustment Coding Gap Type Value Set"/>
 <artifact id="CodeSystem/evidence-status" key="CodeSystem-evidence-status" name="Risk Adjustment Evidence Status Code System"/>
 <artifact id="StructureDefinition/ra-evidenceStatusDate" key="StructureDefinition-ra-evidenceStatusDate" name="Risk Adjustment Evidence Status Date Extension"/>

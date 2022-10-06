@@ -54,17 +54,23 @@
             <mustSupport value="true"/>
         </element>
 
-        <element id="Composition.section:ra_coding_gap_report_section">
+        <element id="Composition.section:ra_original_detected_issue_section">
             <path value="Composition.section"/>
-            <sliceName value="ra_coding_gap_report_section"/>
-            <short value="The focus of this section is a Risk Adjustment Coding Gap MeasureReport"/>
-            <min value="1"/>
+            <sliceName value="ra_original_detected_issue_section"/>
+            <short value="The section contains coding gaps originally identified in payer generated risk adjustment coding gap report. 
+            The focus of this section is a Risk Adjustment Coding Gap MeasureReport profile"/>
+            <min value="0"/>
         </element>
-        <element id="Composition.section:ra_coding_gap_report_section.title">
+        <!--<element id="Composition.section:ra_original_detected_issue_section.title">
             <path value="Composition.section.title"/>
             <short value="Risk adjustment coding gap report of a version specific Risk Adjustment Model for a patient"/>
+        </element> -->
+        <element id="Composition.section:ra_original_detected_issue_section.code">
+            <path value="Composition.section.code"/>
+            <short value="Risk adjustment Condition Category code"/>
+            <min value="1"/>
         </element>
-        <element id="Composition.section:ra_coding_gap_report_section.focus">
+        <element id="Composition.section:ra_original_detected_issue_section.focus">
             <path value="Composition.section.focus"/>
             <short value="This references a Risk Adjustment Coding Gap MeasureReport"/>
             <min value="1"/>
@@ -74,19 +80,33 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition.section:ra_original_detected_issue_section.entry">
+            <path value="Composition.section.entry"/>
+            <short value="This references a Risk Adjustment Original Coding Gap DetectedIssue"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-original-detectedissue"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>               
 
-        <element id="Composition.section:ra_detected_issue_section">
+        <element id="Composition.section:ra_clinical_evaluation_detected_issue_section">
             <path value="Composition.section"/>
-            <sliceName value="ra_detected_issue_section"/>
+            <sliceName value="ra_clinical_evaluation_detected_issue_section"/>
             <short value="This section contains a Condition Category code that has detected issue along with its clinical evaluation evidence"/>
             <min value="0"/>
         </element>
-        <element id="Composition.section:ra_detected_issue_section.code">
+        <element id="Composition.section:ra_clinical_evaluation_detected_issue_section.code">
             <path value="Composition.section.code"/>
             <short value="Risk adjustment Condition Category code"/>
             <min value="1"/>
         </element>
-        <element id="Composition.section:ra_detected_issue_section.focus">
+        <!--<element id="Composition.section:ra_original_detected_issue_section.title">
+            <path value="Composition.section.title"/>
+            <short value="Risk adjustment coding gap report of a version specific Risk Adjustment Model for a patient"/>
+        </element> -->
+        <element id="Composition.section:ra_clinical_evaluation_detected_issue_section.focus">
             <path value="Composition.section.focus"/>
             <short value="This references a Risk Adjustment Coding Gap MeasureReport that this Condition Category was initially identified"/>
             <min value="1"/>
@@ -96,13 +116,13 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:ra_detected_issue_section.entry">
+        <element id="Composition.section:ra_clinical_evaluation_detected_issue_section.entry">
             <path value="Composition.section.entry"/>
-            <short value="This references a Risk Adjustment Coding Gap DetectedIssue"/>
+            <short value="This references a Risk Adjustment Clinical Evaluation Coding Gap DetectedIssue"/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-detectedissue"/>
+                <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-clinical-evaluation-detectedissue"/>
             </type>
             <mustSupport value="true"/>
         </element>         

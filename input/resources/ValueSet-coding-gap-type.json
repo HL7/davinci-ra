@@ -1,7 +1,6 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "date": "2022-04-07",
   "name": "CodingGapTypeValueSet",
   "id": "coding-gap-type",
   "title": "Risk Adjustment Coding Gap Type Value Set",

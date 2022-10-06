@@ -1,5 +1,5 @@
 <div class="bg-info" markdown="1">
-This Continuous Integration Build contains new draft content that is under development since the STU1 release. Where possible, draft content will be highlighted with blue text and background
+This Continuous Integration Build contains new draft content that is under development since the STU1 release. Where possible, draft content will be highlighted with blue background.
 </div>
 
 ###  Summary
