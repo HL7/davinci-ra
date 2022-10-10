@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OperationDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="davinci-ra.resolve"/>
-    <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/davinci-ra.resolve"/>
-    <name value="Resolve"/>
-    <title value="Risk Adjustment Resolve"/>
+    <id value="davinci-ra.remediate"/>
+    <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/davinci-ra.remediate"/>
+    <name value="Remediate"/>
+    <title value="Risk Adjustment Remediate"/>
     <status value="draft"/>
     <kind value="operation"/>
     <publisher value="Da Vinci Project"/>
-    <description value="Resolves condition category gaps, update and/or generate measure report(s)"/>
-    <code value="davinci-ra.resolve"/>
+    <description value="Remediate condition category gaps, update Risk Adjustment Coding Gap Bundle"/>
+    <code value="davinci-ra.remediate"/>
     <comment value=""/>
     <resource value="MeasureReport"/>
     <system value="false"/>
@@ -37,10 +37,19 @@
         <use value="in"/>
         <min value="1"/>
         <max value="1"/>
-        <documentation value="Subject will be a reference to either Patient ([US Core Patient](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html)) or Group ([Patient Group](StructureDefinition-ra-patient-group.html)). Must provide either Patient/123 or Group/123, cannot simply provide 123. If only 123 is provided, then the operation would not know if it is a Patient reference or a Group reference."/>
+        <documentation value="Subject will be a reference to Patient ([US Core Patient](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html))."/>
         <type value="string"/>
         <searchType value="reference"/>
     </parameter>
+    <parameter>
+        <name value="raBundleId"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <documentation value="Risk Adjustmen Coding Gap Bundle id to be remediated for coding gaps."/>
+        <type value="string"/>
+    </parameter>    
+    <!--
     <parameter>
         <name value="measureId"/>
         <use value="in"/>
@@ -64,13 +73,14 @@
         <max value="*"/>
         <documentation value="This the the URL of a measure (risk adjustment model) for which the risk adjustment coding gaps were run against. A measure URL is specified in the [url](https://www.hl7.org/fhir/measure-definitions.html#Measure.url) element of the Measure resource. The measure URL remains the same when the measure is stored on different servers."/>
         <type value="canonical"/>
-    </parameter>            
+    </parameter>        
+    -->    
     <parameter>
         <name value="return"/>
         <use value="out"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="This operation returns one [Parameters](https://www.hl7.org/fhir/parameters.html). The [Risk Adjustment Bundle](StructureDefinition-ra-bundle.html) for a patient is returned in a `Parameters.parameter` element, with each `Parameters.parameter`element for a unique patient."/>
+        <documentation value="This operation returns one [Parameters](https://www.hl7.org/fhir/parameters.html). The [Risk Adjustment Bundle](StructureDefinition-ra-bundle.html) for a patient is returned in a `Parameters.parameter` element."/>
         <type value="Bundle"/>
     </parameter>
 </OperationDefinition>

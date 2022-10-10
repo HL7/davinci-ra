@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ra-patient-group"/>
     <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-patient-group"/>
-    <name value="PatientGroupProfile"/>
-    <title value="Patient Group Profile"/>
+    <name value="PatientGroup"/>
+    <title value="Patient Group"/>
     <status value="active"/>
     <publisher value="Da Vinci Project"/>
     <description value="The Patient Group Profile describes a group consisting of one or more patients."/>

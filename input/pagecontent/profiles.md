@@ -16,8 +16,8 @@ Draft profiles that are under discussions and development:
 |---|---|---|
 |Bundle|Risk Adjustment Coding Gap Bundle Profile|[Risk Adjustment Coding Gap Bundle]|
 |Composition|Risk Adjustment Coding Gap Composition Profile|[Risk Adjustment Coding Gap Composition]|
-|DetectedIssue|[Risk Adjustment Coding Gap Clinical Evaluation DetectedIssue]|[Risk Adjustment Coding Gap Clinical Evaluation DetectedIssue]|
-|DetectedIssue|[Risk Adjustment Coding Gap Original DetectedIssue]|[Risk Adjustment Coding Gap Original DetectedIssue]|
+|DetectedIssue|Risk Adjustment Coding Gap Clinical Evaluation DetectedIssue|[Risk Adjustment Coding Gap Clinical Evaluation DetectedIssue]|
+|DetectedIssue|Risk Adjustment Coding Gap Original DetectedIssue|[Risk Adjustment Coding Gap Original DetectedIssue]|
 {: .grid}
 
 </div>

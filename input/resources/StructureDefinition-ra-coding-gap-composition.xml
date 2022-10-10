@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="ra-coding-gap-composition"/>
     <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-composition"/>
-    <name value="RiskAdjustmentCodingGapCompositionProfile"/>
-    <title value="Risk Adjustment Coding Gap Composition Profile"/>
+    <name value="RiskAdjustmentCodingGapComposition"/>
+    <title value="Risk Adjustment Coding Gap Composition"/>
     <status value="draft"/>
     <publisher value="Da Vinci Project"/>
     <description value="This is a draft Risk Adjustment Coding Gap Composition profile that is under development."/>
@@ -18,6 +18,10 @@
         <element id="Composition">
             <path value="Composition"/>
         </element>
+        <element id="Composition.status">
+            <path value="Composition.status"/>
+            <mustSupport value="true"/>
+        </element>
         <element id="Composition.type">
             <path value="Composition.type"/>
             <comment value="Risk Adjustment Coding Gap report"/>
@@ -25,7 +29,7 @@
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="96315-7"/>
-                    <display value="TODO: This is a place holder for a new LOINC code for Risk Adjustment Coding Gap Report. LOINC submission ID: 6482.)"/>
+                    <display value="TODO: This is a place holder for a new LOINC code for Risk Adjustment Coding Gap Report. LOINC submission ID: 6482."/>
                 </coding>
             </fixedCodeableConcept>
             <mustSupport value="true"/>
@@ -69,6 +73,10 @@
             <path value="Composition.section.code"/>
             <short value="Risk adjustment Condition Category code"/>
             <min value="1"/>
+               <binding>
+                  <strength value="example"/>
+                  <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/example-cmshcc"/>
+               </binding>
         </element>
         <element id="Composition.section:ra_original_detected_issue_section.focus">
             <path value="Composition.section.focus"/>
@@ -84,6 +92,7 @@
             <path value="Composition.section.entry"/>
             <short value="This references a Risk Adjustment Original Coding Gap DetectedIssue"/>
             <min value="1"/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-original-detectedissue"/>
@@ -101,11 +110,11 @@
             <path value="Composition.section.code"/>
             <short value="Risk adjustment Condition Category code"/>
             <min value="1"/>
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/example-cmshcc"/>
+            </binding>            
         </element>
-        <!--<element id="Composition.section:ra_original_detected_issue_section.title">
-            <path value="Composition.section.title"/>
-            <short value="Risk adjustment coding gap report of a version specific Risk Adjustment Model for a patient"/>
-        </element> -->
         <element id="Composition.section:ra_clinical_evaluation_detected_issue_section.focus">
             <path value="Composition.section.focus"/>
             <short value="This references a Risk Adjustment Coding Gap MeasureReport that this Condition Category was initially identified"/>
@@ -120,43 +129,12 @@
             <path value="Composition.section.entry"/>
             <short value="This references a Risk Adjustment Clinical Evaluation Coding Gap DetectedIssue"/>
             <min value="1"/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-clinical-evaluation-detectedissue"/>
             </type>
             <mustSupport value="true"/>
         </element>         
-
-        <!--
-        <element id="Composition.section">
-            <path value="Composition.section"/>
-            <short value="Must contain at least one section"/>
-            <min value="1"/>
-        </element>
-        <element id="Composition.section.title">
-            <path value="Composition.section.title"/>
-            <short value="Risk adjustment coding gap report of a version specific Risk Adjustment Model for a patient"/>
-        </element>
-        <element id="Composition.section.focus">
-            <path value="Composition.section.focus"/>
-            <short value="This references a Risk Adjustment Coding Gap MeasureReport"/>
-            <min value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section.entry">
-            <path value="Composition.section.entry"/>
-            <short value="This references a Risk Adjustment Coding Gap DetectedIssue"/>
-            <min value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-detectedissue"/>
-            </type>
-            <mustSupport value="true"/>
-        </element> 
-        -->
     </differential>
 </StructureDefinition>

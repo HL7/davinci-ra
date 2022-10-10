@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ra-coding-gap-original-detectedissue"/>
     <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-original-detectedissue"/>
-    <name value="RiskAdjustmentCodingGapOriginalDetectedIssueProfile"/>
-    <title value="Risk Adjustment Coding Gap Original Detected Issue Profile"/>
+    <name value="RiskAdjustmentCodingGapOriginalDetectedIssue"/>
+    <title value="Risk Adjustment Coding Gap Original DetectedIssue"/>
     <status value="draft"/>
     <publisher value="Da Vinci Project"/>
     <description value="This is draft Risk Adjustment Coding Gap Original DetectedIssue profile that is under development.
@@ -18,20 +18,6 @@
         <element id="DetectedIssue">
             <path value="DetectedIssue"/>
         </element>
-        <!--
-        <element id="DetectedIssue.extension:groupReference">
-            <path value="DetectedIssue.extension"/>
-            <sliceName value="groupReference"/>
-            <short value="This id references the `MeasureReport.group.id`, which allows linking a detected issue to a specific Condition Category (CC) coding gap. (Discussion Note: reference to group id is requried so a detected issue can be linked to a specific HCC, the cardinality is 1..1)"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        -->
         <element id="DetectedIssue.modifierExtension:codingGapType">
             <path value="DetectedIssue.modifierExtension"/>
             <sliceName value="codingGapType"/>
@@ -45,7 +31,6 @@
                 <coding>
                     <system value="http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-type"/>
                     <code value="payer-generated"/>
-                    <display value="Payer generated coding gap"/>
                 </coding>
             </fixedCodeableConcept>            
             <mustSupport value="true"/>
@@ -81,20 +66,8 @@
         </element>
         <element id="DetectedIssue.evidence.detail">
             <path value="DetectedIssue.evidence.detail"/>
-            <!--
-            <type>
-                <code value="Reference"/>
-            </type>
-            -->
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-    <!--
-        <element id="DetectedIssue.detail">
-            <path value="DetectedIssue.detail"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element> -->
     </differential>
 </StructureDefinition>

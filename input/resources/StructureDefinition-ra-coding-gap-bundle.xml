@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="ra-coding-gap-bundle"/>
     <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-bundle"/>
-    <name value="RiskAdjustmentCodingGapBundleProfile"/>
-    <title value="Risk Adjustment Coding Gap Bundle Profile"/>
+    <name value="RiskAdjustmentCodingGapBundle"/>
+    <title value="Risk Adjustment Coding Gap Bundle"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Da Vinci Project"/>
@@ -22,6 +22,7 @@
         <element id="Bundle.type">
             <path value="Bundle.type"/>
             <fixedCode value="document"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Bundle.entry">
             <path value="Bundle.entry"/>
@@ -40,7 +41,7 @@
           <sliceName value="ra_coding_gap_composition_entry"/>
           <short value=""/>
           <min value="1"/>
-          <max value="*"/>
+          <max value="1"/>
           <mustSupport value="true"/>
         </element>
         <element id="Bundle.entry:ra_coding_gap_composition_entry.resource">

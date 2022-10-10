@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="davinci-ra.evaluate-measure"/>
     <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/davinci-ra.evaluate-measure"/>
-    <name value="Evaluate Measure"/>
-    <title value="Evaluate Measure Operation"/>
+    <name value="EvaluateMeasure"/>
+    <title value="Risk Adjustment Evaluate Measure"/>
     <status value="draft"/>
     <kind value="operation"/>
     <publisher value="Da Vinci Project"/>
