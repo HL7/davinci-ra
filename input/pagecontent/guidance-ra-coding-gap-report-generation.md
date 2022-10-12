@@ -1,3 +1,6 @@
+<div class="bg-info" markdown="1">
+Content that was on the published version 1.0.0 Guidance page was moved to this page. This page yet needs to be updated for STU2 ballot.
+</div>
 
 ### Introduction
 

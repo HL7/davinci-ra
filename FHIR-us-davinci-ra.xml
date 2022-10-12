@@ -138,13 +138,17 @@
 <page key="downloads" name="Downloads"/>
 <page key="examples" name="Examples"/>
 <page key="extensions" name="Extensions"/>
+<page key="guidance-ra-general-guidance" name="General Guidance"/>
 <page key="glossary" name="Glossary"/>
 <page deprecated="true" key="guidance" name="Guidance"/>
-<page key="guidance-risk-adjustment-using-cql" name="Guidance - Digital Condition Category"/>
-<page key="guidance-risk-adjustment-gap-reporting" name="Guidance - Risk Adjustment Gap Reporting"/>
-<page key="guidance-risk-adjustment-gap-response" name="Guidance - Risk Adjustment Gap Response"/>
 <page key="operations" name="Operation"/>
 <page key="profiles" name="Profiles"/>
+<page key="guidance-ra-coding-gap-remediation" name="Risk Adjustment Coding Gap Remediation"/>
+<page key="guidance-ra-coding-gap-report-generation" name="Risk Adjustment Coding Gap Report Generation"/>
+<page key="guidance-ra-coding-gap-resolution" name="Risk Adjustment Coding Gap Resolution"/>
+<page key="dcc" name="Specifying dCCs"/>
 <page key="toc" name="Table of Contents"/>
 <page key="terminology" name="Terminology"/>
+<page key="dcc-transition-strategy" name="Transition Strategy"/>
+<page key="dcc-using-cql" name="Using CQL"/>
 </specification>

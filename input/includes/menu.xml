@@ -3,11 +3,20 @@
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"></b></a>
     <ul class="dropdown-menu">
-      <li><a href="guidance-risk-adjustment-gap-reporting.html">Risk Adjustment Gap Reporting</a></li>
-      <li><a href="guidance-risk-adjustment-gap-response.html">Risk Adjustment Gap Response</a></li>
-      <li><a href="guidance-risk-adjustment-using-cql.html">Digital Condition Category</a></li>
+      <li><a href="guidance-ra-general-guidance.html">General Guidance</a></li>
+      <li><a href="guidance-ra-coding-gap-report-generation.html">Risk Adjustment Coding Gap Report Generation</a></li>
+      <li><a href="guidance-ra-coding-gap-remediation.html">Risk Adjustment Coding Gap Remediation</a></li>
+      <li><a href="guidance-ra-coding-gap-resolution.html">Risk Adjustment Coding Gap Resolution</a></li>
     </ul>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Digital Condition Category (dCC)<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="dcc.html">Specifying dCC</a></li>
+      <li><a href="dcc-using-cql.html">Using CQL</a></li>
+      <li><a href="dcc-transition-strategy.html">Transition Strategy</a></li>
+    </ul>
+  </li>  
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts<b class="caret"></b></a>
     <ul class="dropdown-menu">

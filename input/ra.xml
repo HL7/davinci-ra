@@ -598,20 +598,42 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="guidance-risk-adjustment-gap-reporting.html"/>
-        <title value="Guidance - Risk Adjustment Gap Reporting"/>
+        <nameUrl value="guidance-ra-general-guidance.html"/>
+        <title value="General Guidance"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="guidance-risk-adjustment-gap-response.html"/>
-        <title value="Guidance - Risk Adjustment Gap Response"/>
+        <nameUrl value="guidance-ra-coding-gap-report-generation.html"/>
+        <title value="Risk Adjustment Coding Gap Report Generation"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="guidance-risk-adjustment-using-cql.html"/>
-        <title value="Guidance - Digital Condition Category"/>
+        <nameUrl value="guidance-ra-coding-gap-remediation.html"/>
+        <title value="Risk Adjustment Coding Gap Remediation"/>
         <generation value="markdown"/>
       </page>
+      <page>
+        <nameUrl value="guidance-ra-coding-gap-resolution.html"/>
+        <title value="Risk Adjustment Coding Gap Resolution"/>
+        <generation value="markdown"/>
+      </page>
+
+      <page>
+        <nameUrl value="dcc.html"/>
+        <title value="Specifying dCCs"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="dcc-using-cql.html"/>
+        <title value="Using CQL"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="dcc-transition-strategy.html"/>
+        <title value="Transition Strategy"/>
+        <generation value="markdown"/>
+      </page>
+
       <page>
         <nameUrl value="profiles.html"/>
         <title value="Profiles"/>
