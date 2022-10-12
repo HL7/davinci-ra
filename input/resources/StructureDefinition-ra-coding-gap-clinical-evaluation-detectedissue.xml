@@ -57,6 +57,17 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
+        <element id="DetectedIssue.implicated">
+            <path value="DetectedIssue.implicated"/>
+            <short value="Problem resource - Risk Adjustment Coding Gap MeasureReport"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
+            </type>            
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>        
         <element id="DetectedIssue.evidence">
             <path value="DetectedIssue.evidence"/>
             <short value="Clinical evaluation evidence for the detected issue of Condition Category"/>
