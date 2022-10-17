@@ -7,8 +7,7 @@
   "id": "suspect-type",
   "title": "Risk Adjustment Suspect Type Code System",
   "publisher":"Da Vinci Project",
-  "description": "This is a code system for Risk Adjustment suspect type to indicate whether it is a suspected Condition Category (CC) gap,
-  a historic Condition Category (CC) gap, or an unsuspected Condition Category (CC). Historic, suspected, and net-new are mutually exclusive.",
+  "description": "This is a code system for Risk Adjustment suspect type to indicate whether it is a suspected Condition Category (CC) gap, a historic Condition Category (CC) gap, or an unsuspected Condition Category (CC). Historic, suspected, and net-new are mutually exclusive.",
   "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type",
   "concept": [
     {
@@ -24,8 +23,7 @@
     {
       "code": "net-new",
       "display": "Net-New Condition Category",
-      "definition": "Net-New Condition Category (CC). New Condition Category (CC), not from suspected process or historic. A Net-New Condition Category (CC) is documented for the first time during the clinical evaluation period for the
-      risk adjustment model. Any Condition Categories (CCs) that are net new must be either closed-gap or pending, and can not be open-gap."
+      "definition": "Net-New Condition Category (CC). New Condition Category (CC), not from suspected process or historic. A Net-New Condition Category (CC) is documented for the first time during the clinical evaluation period for the risk adjustment model. Any Condition Categories (CCs) that are net new must be either closed-gap or pending, and can not be open-gap."
     }
   ],
   "count": 3
