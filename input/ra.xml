@@ -624,11 +624,6 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="dcc-using-cql.html"/>
-        <title value="Using CQL"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
         <nameUrl value="dcc-transition-strategy.html"/>
         <title value="Transition Strategy"/>
         <generation value="markdown"/>

@@ -1,7 +1,6 @@
 
 <div class="bg-info" markdown="1">
 
-**This page is under development.** Describes the CSV approach, standardized CSV header, workflow and using POST.
-
+**This is a new page that is under development for Jan2023 ballot.**
 
 </div>

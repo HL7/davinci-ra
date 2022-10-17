@@ -13,7 +13,6 @@
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Digital Condition Category (dCC)<b class="caret"></b></a>
     <ul class="dropdown-menu">
       <li><a href="dcc.html">Specifying dCC</a></li>
-      <li><a href="dcc-using-cql.html">Using CQL</a></li>
       <li><a href="dcc-transition-strategy.html">Transition Strategy</a></li>
     </ul>
   </li>  
