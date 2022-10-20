@@ -3,11 +3,11 @@
   "id": "extension-codingGapType",
   "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-codingGapType",
   "name": "CodingGapTypeModifierExtension",
-  "title": "RA Coding Gap Type Modifier Extension",
+  "title": "Risk Adjustment Coding Gap Type Modifier Extension",
   "status": "draft",
   "experimental": false,
   "publisher": "Da Vinci Project",
-  "description": "This draft Risk Adjustment Coding Gap Type value set is under development",
+  "description": "(This draft Risk Adjustment Coding Gap Type value set is under development) What type of risk adjustment coding gap request.",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -25,12 +25,12 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "What type of coding gap request",
-        "definition": "what type of coding gap request",
+        "short": "What type of risk adjustment coding gap request",
+        "definition": "what type of risk adjustment coding gap request",
         "min": 0,
         "max": "1",
         "isModifier": true,
-        "isModifierReason": "TODO: add reason"
+        "isModifierReason": "Different coding gap type implies different action needs to be taken to address the detected issue"
       },
       {
         "id": "Extension.url",
@@ -40,7 +40,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-codingGapType"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-ra-codingGapType"
       },
       {
         "id": "Extension.value[x]",

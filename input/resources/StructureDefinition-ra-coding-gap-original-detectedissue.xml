@@ -35,7 +35,7 @@
             </fixedCodeableConcept>            
             <mustSupport value="true"/>
             <isModifier value="true"/>
-            <isModifierReason value="Type of the detected coding gap"/>
+            <isModifierReason value="Type of detected issue for risk adjustment coding gap"/>
         </element>
         <element id="DetectedIssue.code">
             <path value="DetectedIssue.code"/>

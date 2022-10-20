@@ -13,24 +13,24 @@
          "concept" : 
          [
           {
-            "code": "gap-closure-request",
+            "code": "closure-request",
             "display": "Gap closure request"
           },
           {
             "code": "invalidation-request-never-had-condition",
-            "display": "Coding gap invalidated patient never had the condition"
+            "display": "Coding gap invalidated, patient never had the condition"
           },
           {
             "code": "invalidation-request-inactive-condition",
-            "display": "Coding gap invalidated condition no longer active"
+            "display": "Coding gap invalidated, condition no longer active"
           },
           {
             "code": "invalidation-request-inaccurate-gap",
-            "display": "Coding gap invalidated inaccurate gap"
+            "display": "Coding gap invalidated, inaccurate gap"
           },
           {
-            "code": "net-new-request",
-            "display": "Net new coding gap"
+            "code": "creation-request",
+            "display": "Gap creation request"
           }
          ]  
       }      

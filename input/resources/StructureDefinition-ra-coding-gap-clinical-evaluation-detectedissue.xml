@@ -30,7 +30,7 @@
             </type>
             <mustSupport value="true"/>
             <isModifier value="true"/>
-            <isModifierReason value="Type of the detected issue with coding gap during clinical evaluation"/>
+            <isModifierReason value="Type of detected issue for risk adjustment coding gap"/>
             <binding>
                 <strength value="extensible"/>
                 <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/clinical-evaluation-coding-gap-type"/>

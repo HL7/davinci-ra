@@ -14,7 +14,7 @@ This implementation guide is divided into several pages which are listed at the 
 
 - [Home]\: The home page provides the summary, background information, scope, and actors for this implementation guide.
 
-- [Guidance]\: The guidance page provides guidance on the resource profiles and operation defined in this implementation guide.
+- Guidance\: The guidance pages provide guidance on the resource profiles and operation defined in this implementation guide.
 
 - [FHIR Artifacts/Profiles]\: This page lists the set of Profiles that are defined in this implementation guide to exchange risk adjustment coding gaps.
 
