@@ -14,7 +14,7 @@
          [
           {
             "code": "closure-request",
-            "display": "Gap closure request"
+            "display": "Coding gap closure request"
           },
           {
             "code": "invalidation-request-never-had-condition",
@@ -30,7 +30,7 @@
           },
           {
             "code": "creation-request",
-            "display": "Gap creation request"
+            "display": "Coding gap creation request"
           }
          ]  
       }      
