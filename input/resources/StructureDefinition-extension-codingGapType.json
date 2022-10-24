@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "extension-codingGapType",
-  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-codingGapType",
+  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-ra-codingGapType",
   "name": "CodingGapTypeModifierExtension",
   "title": "Risk Adjustment Coding Gap Type Modifier Extension",
   "status": "draft",

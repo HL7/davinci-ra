@@ -25,7 +25,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-codingGapType"/>
+                <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-ra-codingGapType"/>
             </type>
             <fixedCodeableConcept>
                 <coding>
