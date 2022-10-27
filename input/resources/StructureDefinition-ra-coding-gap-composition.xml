@@ -18,6 +18,18 @@
         <element id="Composition">
             <path value="Composition"/>
         </element>
+        <element id="Composition.meta">
+            <path value="Composition.meta.lastUpdated"/>
+            <min value="1"/>
+            <max value="1"/>            
+            <mustSupport value="true"/>
+        </element>           
+        <element id="Composition.identifier">
+            <path value="Composition.identifier"/>
+            <min value="1"/>
+            <max value="1"/>            
+            <mustSupport value="true"/>
+        </element>         
         <element id="Composition.status">
             <path value="Composition.status"/>
             <mustSupport value="true"/>

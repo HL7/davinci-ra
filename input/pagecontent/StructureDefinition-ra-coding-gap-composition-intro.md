@@ -9,6 +9,8 @@ The following data-elements are mandatory (i.e data MUST be present).
 
 **Each {{site.data.structuredefinitions.[id].type}} must have:**
 
+1. A `Composition.meta.lastUpated`
+1. A `Composition.identifier`
 1. A `Composition.status`
 1. A `Composition.type` with a fixed LOINC code (pending new LOINC code. LOINC submission ID:6482)
 1. A `Composition` contains a `subject` that is a [US Core Patient](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html)
