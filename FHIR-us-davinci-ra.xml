@@ -139,12 +139,13 @@
 <page deprecated="true" key="changes" name="Change History"/>
 <page key="change-log" name="Change Log"/>
 <page key="index" name="Da Vinci Risk Adjustment Implementation Guide Home Page"/>
+<page key="digital-condition-category" name="Digital Condition Category (dCC)"/>
 <page key="downloads" name="Downloads"/>
 <page key="examples" name="Examples"/>
 <page key="extensions" name="Extensions"/>
 <page key="guidance-ra-general-guidance" name="General Guidance"/>
 <page key="glossary" name="Glossary"/>
-<page deprecated="true" key="guidance" name="Guidance"/>
+<page key="guidance" name="Guidance"/>
 <page key="operations" name="Operation"/>
 <page key="profiles" name="Profiles"/>
 <page key="guidance-ra-coding-gap-remediation" name="Risk Adjustment Coding Gap Remediation"/>

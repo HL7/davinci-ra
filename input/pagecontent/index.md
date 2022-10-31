@@ -4,7 +4,9 @@ This Continuous Integration Build contains new draft content that is under devel
 
 ###  Summary
 
-The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide describes exchanging risk adjustment coding gaps between payers and providers. Risk adjusted premium calculations are important to government managed care. To better inform providers of opportunities to address risk adjusted conditions, better enable payers to communicate risk adjustment information, and enhance government sponsors' ability to allocate funding accurately, payers and providers need a standard protocol to share and receive clinical data related to risk adjustment and a standard methodology to communicate risk based coding, documentation and submission status of chronic conditions. The STU1 of this implementation guide focuses on the standard exchange format of risk adjustment coding gaps from payers to providers, it offers potential for reducing administrative burden experienced by providers by standardizing the reporting they receive from all payers.
+The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide describes exchanging risk adjustment coding gaps between payers and providers. Risk adjusted premium calculations are important to government managed care. To better inform providers of opportunities to address risk adjusted conditions, better enable payers to communicate risk adjustment information, and enhance government sponsors' ability to allocate funding accurately, payers and providers need a standard protocol to share and receive clinical data related to risk adjustment and a standard methodology to communicate risk based coding, documentation and submission status of chronic conditions. The first STU of this implementation guide focused on the standard exchange format of risk adjustment coding gaps from payers to providers, it offers potential for reducing administrative burden experienced by providers by standardizing the reporting they receive from all payers.
+
+This version of the implementation enhances the reporting functionality and adds the ability for a provider to remediate issues with the Risk Adjustment Gap
 
 This implementation guide is supported by the Da Vinci initiative which is a private effort to accelerate the adoption of Health Level Seven International Fast Healthcare Interoperability Resources (HL7® FHIR®) as the standard to support and integrate value-based care (VBC) data exchange across communities. Like all Da Vinci Implementation Guides, it follows the [HL7 Da Vinci Guiding Principles] for exchange of patient health information. As an HL7 FHIR Implementation Guide, changes to this specification are managed by the sponsoring [Clinical Quality Information (CQI) Work Group] and are incorporated as part of the standard balloting process.
 
@@ -14,7 +16,17 @@ This implementation guide is divided into several pages which are listed at the 
 
 - [Home]\: The home page provides the summary, background information, scope, and actors for this implementation guide.
 
-- Guidance\: The guidance pages provide guidance on the resource profiles and operation defined in this implementation guide.
+- [Guidance]\: The guidance pages provide guidance on the resource profiles and operation defined in this implementation guide.
+    - [General Guidance]\: guidance that applies to all functionality in this Implementation Guide
+    - [Risk Adjustment Coding Gap Report Generation]\: how generating Risk Adjustment Coding Gap Report is accomplished
+    - [Risk Adjustment Coding Gap Remediation]\: the process to follow when finding changes you want to make to the Coding Gap Report including closing a gap or disputing a gap
+    - [Risk Adjustment Coding Gap Resolution]\: process to complete the remediation process when all supporting data has been reviewed
+
+
+- [Digital Condition Category (dCC)]\: Section explaining how Risk Adjustment Condition Category codes can be represented by CQL in a similar fashion to quality measures
+    - [Specifying dCC]\: Defines how to represent digital Condition Category codes and includes a simple example
+    - [Transition Strategy]\: We know dCC's will take time to incorporate.  This documents a transition strategy that can be used to get to the point where we can represent at least most CC's using dCC's.
+    
 
 - [FHIR Artifacts/Profiles]\: This page lists the set of Profiles that are defined in this implementation guide to exchange risk adjustment coding gaps.
 
