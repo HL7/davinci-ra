@@ -30,6 +30,7 @@
 [Condition43pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication]: Condition-ra-condition43pat01.html
 [Condition44Pat01: Allergic bronchopulmonary aspergillosis]: Condition-ra-condition44pat01.html
 [Da Vinci - Risk Based Contracts Member Attribution (ATR) List IG]: http://hl7.org/fhir/us/davinci-atr/
+[Digital Condition Category (dCC)]: digital-condition-category.html
 [Downloads]: downloads.html
 [Examples]: examples.html
 [Encounter01Pat03: Pat03 Encounter on 2021-07-14]: Encounter-ra-encounter01pat03.html
@@ -58,6 +59,7 @@
 [FHIR Artifacts/Operations]: operations.html
 [FHIR Artifacts/Profiles]: profiles.html
 [FHIR Artifacts/Terminology]: terminology.html
+[General Guidance]: guidance-ra-general-guidance.html
 [Glossary/Acronyms]: glossary.html#acronyms
 [Glossary/Glossary]: glossary.html
 [Group01: Risk Adjustment Patient Group, (Patient01: Eve Everywoman)]: Group-ra-group01.html
@@ -92,13 +94,18 @@
 [Practitioner02: Patrick Pump]: Practitioner-ra-prac02pat02.html
 [Practitioner03: Otto Osler]: Practitioner-ra-prac03pat03.html
 [$report]:OperationDefinition-report.html
+[Risk Adjustment Coding Gap Remediation]: guidance-ra-coding-gap-remediation.html
+[Risk Adjustment Coding Gap Resolution]: guidance-ra-coding-gap-resolution.html
 [Risk Adjustment Coding Gap Report Bundle]: StructureDefinition-ra-measurereport-bundle.html
 [Risk Adjustment Coding Gap Report]: StructureDefinition-ra-measurereport.html
+[Risk Adjustment Coding Gap Report Generation]: guidance-ra-coding-gap-report-generation.html
 [Risk Adjustment Coding Gap Report Profile]: StructureDefinition-ra-measurereport.html
 [Risk Adjustment Model Measure]: StructureDefinition-ra-model-measure.html
 [Risk Adjustment Model Measure Profile]: StructureDefinition-ra-model-measure.html
 [SMART App Launch]: http://hl7.org/fhir/smart-app-launch/history.html
 [SMART Backend Services]: https://hl7.org/fhir/uv/bulkdata/authorization/index.html
+[Specifying dCC]: dcc.html
+[Transition Strategy]: dcc-transition-strategy.html
 
 [Risk Adjustment Coding Gap Bundle]: StructureDefinition-ra-coding-gap-bundle.html
 [Risk Adjustment Coding Gap Composition]: StructureDefinition-ra-coding-gap-composition.html
