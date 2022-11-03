@@ -19,14 +19,13 @@ This implementation guide is divided into several pages which are listed at the 
 - [Guidance]\: The guidance pages provide guidance on the resource profiles and operation defined in this implementation guide.
     - [General Guidance]\: guidance that applies to all functionality in this Implementation Guide
     - [Risk Adjustment Coding Gap Report Generation]\: how generating Risk Adjustment Coding Gap Report is accomplished
-    - [Risk Adjustment Coding Gap Remediation]\: the process to follow when finding changes you want to make to the Coding Gap Report including closing a gap or disputing a gap
-    - [Risk Adjustment Coding Gap Resolution]\: process to complete the remediation process when all supporting data has been reviewed
 
+- [Risk Adjustment Coding Gap Remediation]\: the process to follow when finding changes you want to make to the Coding Gap Report including closing a gap or disputing a gap
+- [Risk Adjustment Coding Gap Resolution]\: process to complete the remediation process when all supporting data has been reviewed
 
 - [Digital Condition Category (dCC)]\: Section explaining how Risk Adjustment Condition Category codes can be represented by CQL in a similar fashion to quality measures
     - [Specifying dCC]\: Defines how to represent digital Condition Category codes and includes a simple example
     - [Transition Strategy]\: We know dCC's will take time to incorporate.  This documents a transition strategy that can be used to get to the point where we can represent at least most CC's using dCC's.
-    
 
 - [FHIR Artifacts/Profiles]\: This page lists the set of Profiles that are defined in this implementation guide to exchange risk adjustment coding gaps.
 
@@ -96,37 +95,45 @@ What’s going on with these three different model versions? There are three ans
 2.	Risk scores for members diagnosed with certain medical conditions such as End Stage Renal Disease (ESRD) or who are enrolled in a special Medicare Advantage Plan for All-encompassing Care for the Elderly (PACE<sup>[1](glossary.html#acronyms)</sup>) are always scored using the model which is one version previous to the current one. While the V22 and V24 models were being blended both were considered current, meaning that the next previous version was V21. When a member is diagnosed with renal disease and CMS designates them as ESRD, the member shifts from being scored under the V22/V24 models to being scored under the V21 model. By 2022 the blending period was over, the V24 model became the most current model, the V22 model came into use for ESRD and PACE, and the V21 model was phased out.
 3.	Throughout this period the CMS-RxHCC V05 model was also in continuous use. The purpose of the CMS-RxHCC model is to normalize the expected cost of medications across populations, just as the CMS-HCC model normalizes the expected cost of medical treatment. Despite the name, the RxHCC model is derived from medical claims – not pharmacy claims. The RxHCC model overlaps with CMS-HCC to a considerable degree; many times the same diagnosis will close both an HCC and an RxHCC, although there are some diagnoses that only roll up to RxHCCs and not HCCs. Many risk adjustment models feature this separation between the medical and prescription drug portions of the model (Medicare CMS-HCC and CMS-RxHCC; Medicaid CPDS and MRX; ACA HHS-HCC and RXC.)
 
+<div class="bg-success" markdown="1">
+
 ### Scope
 
-After careful review with the risk adjustment subject matter experts, it was determined that the most challenging aspect of the current risk adjustment process was the inconsistent manner in which reports on risk adjustment coding gaps were communicated between a provider (or system operating on their behalf) and a payer (or system operating on the payer's behalf). Figure 1-2 shows a high-level example of the risk adjustment workflow in CMS Medicare advantage program. This version of the implementation guide focuses on specifying a standard exchange format, the [Risk Adjustment Coding Gap Report], from payers to providers. This diagram does not depict preceding steps such as the payer receiving clinical or claims data from providers or other sources, nor does it attempt to define contractual relationships. 
+This version of the Risk Adjustment Implementation Guide has been updated to include not only how to generate a Risk Adjustment Condition Category Coding Gap report for a patient or group of patients but also includes new processes to remediate discrepancies or open gaps on the report.  Finally it allows for the resolution of these discrepancies and gaps and the updating of the payer's system.
+
+This guide also introduces a concept called "digital Condition Categories" where we represent a risk adjustment condition category using CQL.  The $evaluate-measure can be used with the CQL in the Risk Adjustment Measure to generate the MeasureReport including the evaluated resources.  Using the dCC to create the MeasureReport is called the "evaluated" method
+
+This is just one of three ways to generate the MeasureReport.  You can programmatically generate the MeasureReport directly from the software that maintains this data (generated) this can include or not include the evaluated resources.
+
+The last way to generate the MeasureReport is using a RESTful API with a csv input file.  This is called "assisted".  
+
+Once a MeasureReport is created, you can use the $cc-gaps operation to generate a Risk Adjustment Condition Category Coding Gap Report.  You will find more information on creating the MeasureReports and generating the reports here, [Risk Adjustment Coding Gap Report Generation] 
+
+The [Risk Adjustment Coding Gap Remediation] section defines how a provider, when they find an issue or have data to close a gap, can start the remediation process.  This process allows them to send evidence back to the risk adjustment coder to support the change in gap status.
+
+The Risk Adjustment Coder also has the ability to use this same process to either request more data needed from the provider or create new Condition Categories if warranted by the data they receive from the provider.
+
+This remediation process between the Provider and the Risk Adjustment Coder can continue until all issues are addressed.  At that time, the Risk Adjustment Coder can send the updated report which includes all new evidence as well as any new Condition Categories to the payer.  The [Risk Adjustment Coding Gap Resolution] sections defines how the payer can then accept this information, finalize the report and then  update all the information on their system.
+
+Figure 1-2 shows a high-level example of the risk adjustment workflow in CMS Medicare advantage program. This version of the implementation guide focuses on specifying a standard exchange format, the [Risk Adjustment Coding Gap Report], from payers to providers. This diagram does not depict preceding steps such as the payer receiving clinical or claims data from providers or other sources, nor does it attempt to define contractual relationships. 
+</div><!-- new-content -->
 
 {% include img-portrait.html img="workflow-medicare-advantage.png" caption = "Figure 1-2 Workflow for Medicare Advantage Population" %}
 
 This implementation guide does not define how payers determine a coding gap and how coding gaps are produced or managed on the payer side including hierarchies. This implementation guide also does not define suspecting processes and algorithms/predictive models that are used for suspecting analytics. It is the intent of this implementation guide to expand its specifications in future versions to support communication of coding gaps from providers back to the payers, for example to provide a mechanism to allow providers to communicate HCC invalidations to payers.  
 
-### Actors
-The actors involved in exchanging risk adjustment coding gap reports are Clients and Servers.
-- <b>Clients</b> are the actors requesting risk adjustment coding gap reports using the $report operation.
-- <b>Servers</b> are the actors receiving the request for retrieving the risk adjustment coding gap reports using the $report operation.
-
-In the example shown in Figure 1-3, a payer acts both as Client and Server in this scenario. The payer (acting as the Client) calls the [$report] operation on their Server to query matching Risk Adjustment Coding Gap Reports based on the parameters provided in the operation, then the payer posts the reports to providers.
-
-As shown in Figure 1-4, the Client calls the [$report] operation that is defined in this IG, the Server then queries matching Risk Adjustment Coding Gap Reports based on the parameters provided in the operation and returns the reports to the Client.
-
-{% include img-portrait.html img="actors-post.png" caption = "Figure 1-3 Risk Adjustment Coding Gap Reporting Actors - Example 1" %}
-
-{% include img-portrait.html img="actors-request.png" caption = "Figure 1-4 Risk Adjustment Coding Gap Reporting Actors - Example 2" %}
 
 ---
+
 This implementation guide was made possible by the thoughtful contributions of the following people and organizations:
 
 - *The twenty-two founding [Da Vinci Project](http://www.hl7.org/about/davinci/index.cfm?ref=common) member organizations.*
 - *Amy Neftzger, United Healthcare*
 - *Brent Zenobia, Novillus*
 - *Brian J Murtha, Centene*
-- *Bryn Rhodes, Alphora*
+- *Bryn Rhodes, SmileDH*
 - *Linda Michaelsen, Optum*
-- *Rob Reynolds, Alphora*
+- *Rob Reynolds, SmileDH*
 - *Viet Nguyen, Stratametrics*
 - *Yan Heras, Optimum eHealth*
 

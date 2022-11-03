@@ -15,6 +15,9 @@
   The Data Collection period refers to the first day of the clinical evaluation period through the date that data from the clinical evaluation period can be submitted to the risk adjustment organization.
 </div>
 
+
+- <b>Digital Condition Categories (dCCs)</b> are condition category measures organized as self-contained measure specification and code packages, that use one or more sources of health information that is captured and can be transmitted electronically via interoperable systems. Digital condition categories use machine-readable measure logic, such as logics written in in Clinical Quality Language, and use common data model such as FHIR.
+
 - <b>Hierarchical Condition Category</b>
   Condition Categories (CCs) become Hierarchical Condition Categories (HCCs) after imposing hierarchies. Hierarchies are imposed among related Condition Categories (CCs), so that a person is coded for only the most severe manifestation among related diseases. If a person is coded with more than one CC in a hierarchy, only the highest (most severe) CC in the hierarchy will be coded as the HCC. For example, if a beneficiary has an ICD-9-CM code that groups into HCC 86, having CC 86 precludes HCCs 87 or 88 from being assigned, even if ICD-9-CM codes that group into those categories were also present. Similarly, a person with ICD-9-CM codes that group into both CC 87 *Unstable Angina* and Other Acute Ischemic Heart Disease and CC 88 *Angina Pectoris/Old Myocardial Infarction* is coded for HCC 87, but not HCC 88.
 
@@ -42,6 +45,7 @@
 |CMS-HCC|     |---The Centers for Medicare and Medicaid Services Hierarchical Condition Category model|
 |CMS-RxHCC|     |---The Centers for Medicare and Medicaid Services Prescription Drug Hierarchical Condition Category model|
 |CDPS|     |---The Chronic Illness and Disability Payment System|
+|dCC|     |---Digital Condition Category|
 |DCG|     |---Diagnostic Cost Group|
 |DxCG|     |---DxCG is an American company located in Boston, MA, that develops predictive modeling software solutions used by the healthcare industry.|
 |DXG|     |---Diagnostic Group|
