@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SampleCMSHCC",
+  "id": "sample-cmshcc",
+  "title": "Sample CMS Hierarchical Condition Category",
+  "description": "This is a sample of the concepts that can be found in the CMS Hierarchical Condition Categories (CMS-HCC) code system version 24. The source of the codes included in this example was published at https://www.cms.gov/Medicare/Health-Plans/MedicareAdvtgSpecRateStats/Downloads/Announcement2020.pdf. The CMS-HCC model uses more than 9,000 ICD-10-CM codes, which are mapped to condition categories (CCs) that predict costs well. The condition categories (CCs) are based on diagnoses clinically related to one another and with similar predicted cost implications. Hierarchies are imposed on the Condition Categories (CCs) to capture the most costly diagnoses. Hierarchy logic is imposed on certain Condition Categories (CCs) to account for different hierarchical costs, thus, the term Hierarchical Condition Category, or HCC.",
+  "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/sample-cmshcc",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+        "version": "24",
+        "concept": [
+          {
+            "code": "22",
+            "display": "Morbid Obesity"
+          },
+          {
+            "code": "88",
+            "display": "Angina Pectoris"
+          },
+          {
+            "code": "112",
+            "display": "Fibrosis of Lung and Other Chronic Lung Disorders"
+          }
+        ]
+        }
+     ]    
+  }
+}
