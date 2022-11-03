@@ -1,10 +1,9 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "date": "2021-11-11",
-  "name": "RiskAdjustmentSuspectTypeValueSet",
+  "name": "RiskAdjustmentSuspectType",
   "id": "suspect-type",
-  "title": "Risk Adjustment Suspect Type Value Set",
+  "title": "Risk Adjustment Suspect Type",
   "description": "Concepts for risk adjustment suspect type",
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/suspect-type",
   "compose": {

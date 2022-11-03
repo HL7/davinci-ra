@@ -1,9 +1,9 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "RiskAdjustmenthierarchicalStatusValueSet",
+  "name": "RiskAdjustmenthierarchicalStatus",
   "id": "hierarchical-status",
-  "title": "Risk Adjustment Hierarchical Status Value Set",
+  "title": "Risk Adjustment Hierarchical Status",
   "description": "Concepts for risk adjustment hierarchical status",
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/hierarchical-status",
   "compose": {

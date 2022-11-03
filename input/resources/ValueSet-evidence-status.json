@@ -1,9 +1,9 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "RiskAdjustmentEvidenceStatusValueSet",
+  "name": "RiskAdjustmentEvidenceStatus",
   "id": "evidence-status",
-  "title": "Risk Adjustment Evidence Status Value Set",
+  "title": "Risk Adjustment Evidence Status",
   "description": "Concepts for risk adjustment evidence status",
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/evidence-status",
   "compose": {

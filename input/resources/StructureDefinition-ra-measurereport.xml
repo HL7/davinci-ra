@@ -182,7 +182,7 @@
    </type>
    <binding>
      <strength value="example"/>
-     <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/example-cmshcc"/>
+     <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/sample-cmshcc"/>
    </binding>
    <mustSupport value="true"/>
  </element>
