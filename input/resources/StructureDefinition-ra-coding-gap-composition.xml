@@ -85,10 +85,11 @@
             <path value="Composition.section.code"/>
             <short value="Risk adjustment Condition Category code"/>
             <min value="1"/>
-               <binding>
-                  <strength value="example"/>
-                  <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/sample-cmshcc"/>
-               </binding>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/sample-cmshcc"/>
+            </binding>
         </element>
         <element id="Composition.section:ra_original_detected_issue_section.focus">
             <path value="Composition.section.focus"/>
@@ -122,10 +123,11 @@
             <path value="Composition.section.code"/>
             <short value="Risk adjustment Condition Category code"/>
             <min value="1"/>
+            <mustSupport value="true"/>
             <binding>
                 <strength value="example"/>
                 <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/sample-cmshcc"/>
-            </binding>            
+            </binding>                        
         </element>
         <element id="Composition.section:ra_clinical_evaluation_detected_issue_section.focus">
             <path value="Composition.section.focus"/>
