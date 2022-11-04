@@ -112,9 +112,14 @@
 [Risk Adjustment Coding Gap Clinical Evaluation DetectedIssue]: StructureDefinition-ra-coding-gap-clinical-evaluation-detectedissue.html
 [Risk Adjustment Coding Gap Original DetectedIssue]: StructureDefinition-ra-coding-gap-original-detectedissue.html
 
+
 [$davinci-ra.evaluate-measure]:OperationDefinition-davinci-ra.evaluate-measure.html
 [$davinci-ra.resolve]:OperationDefinition-davinci-ra.resolve.html
 [$davinci-ra.report]:OperationDefinition-davinci-ra.report.html
 [$davinci-ra.remediate]:OperationDefinition-davinci-ra.remediate.html
 
 [Risk Adjustment Coding Gap MeasureReport]: StructureDefinition-ra-measurereport.html
+[$evaluateMeasure]: http://hl7.org/fhir/R4/measure-operation-evaluate-measure.html
+[Generated]:guidance-ra-coding-gap-report-generation.html
+[Assisted]:guidance-ra-coding-gap-report-generation.html
+[Evaluated]:guidance-ra-coding-gap-report-generation.html
