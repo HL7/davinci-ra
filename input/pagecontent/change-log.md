@@ -4,6 +4,8 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 ### Version 1.0.1
 Draft content in preparation for STU2
 1. **Applied**: Add "data collection period" to Glossary ([FHIR-37672](https://jira.hl7.org/browse/FHIR-37672))
+1. **Applied**: Make "Example CMS Hierarchical Condition Category Value Set" a true sample ([FHIR-39371](https://jira.hl7.org/browse/FHIR-39371))
+1. **Applied**: Remove "Code System" and "Value Set" from names and titles of code system and value set ([FHIR-39374](https://jira.hl7.org/browse/FHIR-39374))
 
 
 ### version 1.0.0

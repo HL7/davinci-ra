@@ -2,6 +2,7 @@
 
 [Asynchronous Request Patterns]: https://www.hl7.org/fhir/async.html
 [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]: Bundle-ra-bundle01.html
+[$cc-gaps]:OperationDefinition-report.html
 [Clinical Evaluation Period]:glossary.html#glossary
 [Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm
 [Condition01Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition01pat03.html
@@ -79,7 +80,6 @@
 [Observation01Pat03: Pat03 Creatinine on 20210728]: Observation-ra-obs01pat03.html
 [Observation02Pat03: Pat03 PHQ9 on 20190823]: Observation-ra-obs02pat03.html
 [Observation21Pat01: Pat01 Trypsin (Mass/volume) in Serum or Plasma from 20170617]: Observation-ra-obs21pat01.html
-[$report]:OperationDefinition-report.html
 [Organization01: Payer Organization ABC Payer]: Organization-ra-payer01.html
 [Organization01Pat01: Community Urgent Care]: Organization-ra-org01pat01.html
 [Organization02Pat02: GHH Outpatient Clinic]: Organization-ra-org02pat02.html
@@ -112,9 +112,14 @@
 [Risk Adjustment Coding Gap Clinical Evaluation DetectedIssue]: StructureDefinition-ra-coding-gap-clinical-evaluation-detectedissue.html
 [Risk Adjustment Coding Gap Original DetectedIssue]: StructureDefinition-ra-coding-gap-original-detectedissue.html
 
+
 [$davinci-ra.evaluate-measure]:OperationDefinition-davinci-ra.evaluate-measure.html
 [$davinci-ra.resolve]:OperationDefinition-davinci-ra.resolve.html
 [$davinci-ra.report]:OperationDefinition-davinci-ra.report.html
 [$davinci-ra.remediate]:OperationDefinition-davinci-ra.remediate.html
 
 [Risk Adjustment Coding Gap MeasureReport]: StructureDefinition-ra-measurereport.html
+[$evaluateMeasure]: http://hl7.org/fhir/R4/measure-operation-evaluate-measure.html
+[Generated]:guidance-ra-coding-gap-report-generation.html
+[Assisted]:guidance-ra-coding-gap-report-generation.html
+[Evaluated]:guidance-ra-coding-gap-report-generation.html
