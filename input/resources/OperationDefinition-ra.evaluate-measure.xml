@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OperationDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="davinci-ra.evaluate-measure"/>
-    <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/davinci-ra.evaluate-measure"/>
-    <name value="EvaluateMeasure"/>
+    <id value="ra.evaluate-measure"/>
+    <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/ra.evaluate-measure"/>
+    <name value="RAEvaluateMeasure"/>
     <title value="Risk Adjustment Evaluate Measure"/>
-    <status value="draft"/>
     <kind value="operation"/>
     <publisher value="Da Vinci Project"/>
     <description value="Evaluate a condition category measure and generate a measure report"/>
-    <code value="davinci-ra.evaluate-measure"/>
-    <comment value=""/>
+    <code value="ra.evaluate-measure"/>
+    <comment value="TODO"/>
     <resource value="MeasureReport"/>
     <system value="false"/>
     <type value="true"/>
@@ -46,7 +45,7 @@
         <use value="out"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="This operation will always return one [Parameters](https://www.hl7.org/fhir/parameters.html). The [Risk Adjustment Coding Gap Report Bundle](StructureDefinition-ra-measurereport-bundle.html) for a patient is returned in a `Parameters.parameter` element, with each `Parameters.parameter`element for a unique patient."
+        <documentation value="This operation will always return one [Parameters](https://www.hl7.org/fhir/parameters.html). The [Risk Adjustment MeasureReport Bundle](StructureDefinition-ra-measurereport-bundle.html) for a patient is returned in a `Parameters.parameter` element, with each `Parameters.parameter`element for a unique patient."
 />
         <type value="Bundle"/>        
     </parameter>

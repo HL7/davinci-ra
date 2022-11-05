@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OperationDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="davinci-ra.resolve"/>
-    <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/davinci-ra.resolve"/>
-    <name value="Resolve"/>
-    <title value="Risk Adjustment Resolve"/>
-    <status value="draft"/>
+    <id value="ra.cc-gaps"/>
+    <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/ra.cc-gaps"/>
+    <name value="ConditionCateogryGaps"/>
+    <title value="Risk Adjustment Condition Category Gaps"/>
     <kind value="operation"/>
     <publisher value="Da Vinci Project"/>
-    <description value="Resolves condition category gaps, update and/or generate measure report(s)"/>
-    <code value="davinci-ra.resolve"/>
-    <comment value=""/>
+    <description value="Generate a Risk Adjustment Coding Gap Bundle"/>
+    <code value="ra.cc-gaps"/>
+    <comment value="The $report operation specified in STU1 was renamed to $ra.cc-gaps in STU2."/>
     <resource value="MeasureReport"/>
     <system value="false"/>
     <type value="true"/>
@@ -40,13 +39,16 @@
         <documentation value="Subject will be a reference to either Patient ([US Core Patient](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html)) or Group ([Patient Group](StructureDefinition-ra-patient-group.html)). Must provide either Patient/123 or Group/123, cannot simply provide 123. If only 123 is provided, then the operation would not know if it is a Patient reference or a Group reference."/>
         <type value="string"/>
         <searchType value="reference"/>
-    </parameter>        
+    </parameter>
     <parameter>
         <name value="return"/>
         <use value="out"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="This operation returns one [Parameters](https://www.hl7.org/fhir/parameters.html). The [Risk Adjustment Bundle](StructureDefinition-ra-bundle.html) for a patient is returned in a `Parameters.parameter` element, with each `Parameters.parameter`element for a unique patient."/>
+        <documentation value="The $report operation will always return one [Parameters](https://www.hl7.org/fhir/parameters.html) whether the subject is a single patient or a group of patients.
+[Risk Adjustment Coding Gap Bundle](StructureDefinition-ra-coding-gap-bundle.html) for a patient is in a `Parameters.parameter` element.
+A Risk Adjustment Coding Gap Bundle contains a Risk Adjustment Coding Gap Composition for the patient, which includes Risk adjustment Coding Gap MeasureReports and supporting evidence.
+For example, if a Group has 10 valid patients, then a [Parameters](https://www.hl7.org/fhir/parameters.html) will contain 10 `Parameters.parameter`elements, with each `Parameters.parameter` for a unique patient."/>
         <type value="Bundle"/>
     </parameter>
 </OperationDefinition>

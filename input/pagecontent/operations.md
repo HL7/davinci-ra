@@ -1,20 +1,23 @@
 
-The operation specified in this implementation guide:
+The table below lists the operations specified in this implementation guide. 
 
-**[$report Operation](OperationDefinition-report.html)**
-
-<div class="bg-info" markdown="1">
-Draft operation definitions that are under discussions and development. 
+<div class="bg-success" markdown="1">
 
 |Operation Name|Link to Operation|Description|
 |---|---|---|
-|Risk Adjustment Report Operation|[$davinci-ra.report]|Payer calls this operation to generate Risk Adjustment Coding Gap Bundle including supporting original evidence to be sent to the Provider.|
-|Risk Adjustment Remediate Operation|[$davinci-ra.remediate]|After Provider receives the Risk Adjustment Coding Gap Bundle from Payer, Provider or Certified Coder calls this operation during their their clinical evaluation process to update the risk adjustment coding gaps and providing supporting clinical evaluation evidence. Updated Risk Adjustment Coding Gap Bundle as result of the remediation process will be sent back to the Payer by either POST or PULL.|
-|Risk Adjustment Resolve Operation|[$davinci-ra.resolve]|Payer calls this operation to resolve risk adjustment coding gaps after receiving the updated Risk Adjustment Coding Gap Bundle with supporting clinical evaluation evidence from Payer or Certified Coder.|
-|Risk Adjustment Evaluate Measure Operation|[$davinci-ra.evaluate-measure]|This operation evaluates digital Condition Category against patient data to generate Risk Adjustment Coding Gap MeasureReport.|
+|Risk Adjustment Condition Category Gaps|[$ra.cc-gaps]|Payer calls this operation to generate Risk Adjustment Coding Gap Bundle including original evidence that supports the condition category gaps.|
+|Risk Adjustment Remediate Condition Category Gaps|[$ra.remediate-cc-gaps]|This operation supports the collaboration between Provider and Risk Adjustment Coder throughout the remediation step. Provider or Risk Adjustment Coder calls this operation during their their clinical evaluation process to update the risk adjustment Condition Category gaps and providing clinical evaluation evidence to support the changes.|
+|Risk Adjustment Approve Condition Category Gaps|[$ra.approve-cc-gaps]|At the end of the remediation process, Risk Adjustment Coder approves Condition Category gaps by setting the DetectedIsssue contained in the Risk Adjustment Coding Gap Bundle from status of `preliminary` to `final`.|
+|Risk Adjustment Resolve Condition Category Gaps|[$ra.resolve-cc-gaps]|Payer calls this operation to resolve Condition Category gaps after Risk Adjustment Coder completed the remediation process and sent the updated Risk Adjustment Coding Gap Bundle with the supporting clinical evaluation evidence to Payer.|
+|Risk Adjustment Evaluate Measure|[$ra.evaluate-measure]|This operation evaluates digital Condition Category against patient data to generate Risk Adjustment Coding Gap Bundle.|
 {: .grid}
 
+</div><!-- new-content -->
+
+<div class="note-to-balloters" markdown="1">
+The $report operation specified in STU1 is renamed to $ra.cc-gaps in this ballot.
 </div>
+
 <br />
 
 {% include link-list.md %}

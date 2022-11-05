@@ -11,7 +11,7 @@
 <artifact id="DocumentReference/documentreference01pat01" key="DocumentReference-documentreference01pat01" name=""/>
 <artifact id="Encounter/ra-measurereport03-resolve" key="Encounter-ra-measurereport03-resolve" name=""/>
 <artifact id="Observation/ra-obs01pat02" key="Observation-ra-obs01pat02" name=""/>
-<artifact id="Parameters/ra-measurereport03-report" key="Parameters-ra-measurereport03-report" name=""/>
+<artifact id="Parameters/condition-category-report-5029dba3-251f-4360-81d5-e6bc746295c8" key="Parameters-condition-category-report-5029dba3-251f-4360-81d5-e6bc746295c8" name=""/>
 <artifact id="Parameters/ra-measurereport03-resolve" key="Parameters-ra-measurereport03-resolve" name=""/>
 <artifact deprecated="true" id="Condition/ra-condition01" key="Condition-ra-condition01" name="Condition01: Type 2 diabetes with unspecified manisfestations"/>
 <artifact id="Condition/ra-condition01pat03" key="Condition-ra-condition01pat03" name="Condition01pat03: Other artificial openings of gastrointestinal tract status"/>
@@ -70,7 +70,6 @@
 <artifact id="StructureDefinition/ra-groupReference" key="StructureDefinition-ra-groupReference" name="Group Reference Extension"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hiearchicalStatus" key="StructureDefinition-ra-hiearchicalStatus" name="Hiearchical Status Extension"/>
 <artifact id="StructureDefinition/ra-hierarchicalStatus" key="StructureDefinition-ra-hierarchicalStatus" name="Hierarchical Status Extension"/>
-<artifact id="OperationDefinition/merge-risk-condition-category" key="OperationDefinition-merge-risk-condition-category" name="Merge Risk Condition Category Operation"/>
 <artifact id="Observation/ra-obs01pat03" key="Observation-ra-obs01pat03" name="Observation: Creatinine Result from 20210728"/>
 <artifact id="Observation/ra-obs02pat03" key="Observation-ra-obs02pat03" name="Observation: PHQ9 from 20190823"/>
 <artifact id="Organization/ra-payer01" key="Organization-ra-payer01" name="Organization01: ABC Payer"/>
@@ -87,6 +86,7 @@
 <artifact id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner: Otto Osler"/>
 <artifact id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner: Patrick Pump"/>
 <artifact id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
+<artifact id="OperationDefinition/ra.approve-cc-gaps" key="OperationDefinition-ra.approve-cc-gaps" name="Risk Adjustment Approve Condition Category Gaps"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
 <artifact id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Risk Adjustment Clinical Data Collection Deadline Extension"/>
 <artifact id="ValueSet/clinical-evaluation-coding-gap-type" key="ValueSet-clinical-evaluation-coding-gap-type" name="Risk Adjustment Clinical Evaluation Coding Gap Type"/>
@@ -99,7 +99,8 @@
 <artifact id="ValueSet/coding-gap-type" key="ValueSet-coding-gap-type" name="Risk Adjustment Coding Gap Type"/>
 <artifact id="CodeSystem/coding-gap-type" key="CodeSystem-coding-gap-type" name="Risk Adjustment Coding Gap Type Code System"/>
 <artifact id="StructureDefinition/extension-codingGapType" key="StructureDefinition-extension-codingGapType" name="Risk Adjustment Coding Gap Type Modifier Extension"/>
-<artifact id="OperationDefinition/davinci-ra.evaluate-measure" key="OperationDefinition-davinci-ra.evaluate-measure" name="Risk Adjustment Evaluate Measure"/>
+<artifact id="OperationDefinition/ra.cc-gaps" key="OperationDefinition-ra.cc-gaps" name="Risk Adjustment Condition Category Gaps"/>
+<artifact id="OperationDefinition/ra.evaluate-measure" key="OperationDefinition-ra.evaluate-measure" name="Risk Adjustment Evaluate Measure"/>
 <artifact id="CodeSystem/evidence-status" key="CodeSystem-evidence-status" name="Risk Adjustment Evidence Status"/>
 <artifact id="ValueSet/evidence-status" key="ValueSet-evidence-status" name="Risk Adjustment Evidence Status"/>
 <artifact id="StructureDefinition/ra-evidenceStatusDate" key="StructureDefinition-ra-evidenceStatusDate" name="Risk Adjustment Evidence Status Date Extension"/>
@@ -111,11 +112,10 @@
 <artifact id="Measure/RAModelExample02" key="Measure-RAModelExample02" name="Risk Adjustment Model Version 21 - CMS Hierarchical Category Condition (CMS-HCC)"/>
 <artifact id="Measure/RAModelExample01" key="Measure-RAModelExample01" name="Risk Adjustment Model Version 24 - CMS Hierarchical Category Condition (CMS-HCC)"/>
 <artifact id="Measure/RAModelExample03" key="Measure-RAModelExample03" name="Risk Adjustment Model Version 5 - CMS Prescribing Drug Hierarchical Category Condition (CMS-HCC)"/>
-<artifact id="OperationDefinition/davinci-ra.remediate" key="OperationDefinition-davinci-ra.remediate" name="Risk Adjustment Remediate"/>
-<artifact id="OperationDefinition/davinci-ra.report" key="OperationDefinition-davinci-ra.report" name="Risk Adjustment Report"/>
+<artifact id="OperationDefinition/ra.remediate-cc-gaps" key="OperationDefinition-ra.remediate-cc-gaps" name="Risk Adjustment Remediate Condition Category Gaps"/>
 <artifact id="Composition/ra-measurereport03-report" key="Composition-ra-measurereport03-report" name="Risk Adjustment Report for patient ra-patient02"/>
 <artifact id="Composition/ra-measurereport03-resolve" key="Composition-ra-measurereport03-resolve" name="Risk Adjustment Report for patient ra-patient02"/>
-<artifact id="OperationDefinition/davinci-ra.resolve" key="OperationDefinition-davinci-ra.resolve" name="Risk Adjustment Resolve"/>
+<artifact id="OperationDefinition/ra.resolve-cc-gaps" key="OperationDefinition-ra.resolve-cc-gaps" name="Risk Adjustment Resolve Condition Category Gaps"/>
 <artifact id="CapabilityStatement/ra-server" key="CapabilityStatement-ra-server" name="Risk Adjustment Server Capability Statement"/>
 <artifact id="CodeSystem/suspect-type" key="CodeSystem-suspect-type" name="Risk Adjustment Suspect Type"/>
 <artifact id="ValueSet/suspect-type" key="ValueSet-suspect-type" name="Risk Adjustment Suspect Type"/>
