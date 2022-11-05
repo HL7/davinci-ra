@@ -1,6 +1,6 @@
 
 {% assign id = {{page.id}} %}
-<div class="bg-info" markdown="1">
+<div class="bg-success" markdown="1">
 
 This profile builds on [Bundle](https://www.hl7.org/fhir/bundle.html).
 
@@ -19,6 +19,7 @@ The following data-elements are mandatory (i.e data MUST be present).
 **Each {{site.data.structuredefinitions.[id].type}} *should* have:**
 
 1. A `Bundle` contains zero to many `Bundle.entry` which contains a [Risk Adjustment Coding Gap MeasureReport](StructureDefinition-ra-measurereport.html) resource
-</div>
+
+</div><!-- new-content -->
 
 {% include link-list.md %}

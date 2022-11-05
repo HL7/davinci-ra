@@ -1,6 +1,7 @@
 
 {% assign id = {{page.id}} %}
-<div class="bg-info" markdown="1">
+<div class="bg-success" markdown="1">
+
 This profile builds on [Composition](https://www.hl7.org/fhir/composition.html).
 
 ### Mandatory Data Elements and Terminology
@@ -25,7 +26,7 @@ The following data-elements are mandatory (i.e data MUST be present).
     1. contains one `Composition.section.focus` which references [Risk Adjustment Coding Gap Report] profile
     1. contains one `Composition.section.entry` which references [Risk Adjustment Coding Gap Clinical Evaluation DetectedIssue] profile
 
-</div>
+</div><!-- new-content -->
 
 
 {% include link-list.md %}

@@ -110,7 +110,7 @@
                 ],
                 "modifierExtension": [
                   {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-ra-codingGapType",
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-codingGapType",
                     "valueCodeableConcept": {
                       "coding": [
                         {
@@ -204,7 +204,7 @@
                 ],
                 "modifierExtension": [
                   {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-ra-codingGapType",
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-codingGapType",
                     "valueCodeableConcept": {
                       "coding": [
                         {

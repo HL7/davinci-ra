@@ -6,8 +6,7 @@
     <title value="Risk Adjustment Coding Gap Original DetectedIssue"/>
     <status value="draft"/>
     <publisher value="Da Vinci Project"/>
-    <description value="This is draft Risk Adjustment Coding Gap Original DetectedIssue profile that is under development.
-    This profile describes coding gaps originally identified by payers using their data and suspecting algorithms."/>
+    <description value="This profile describes coding gaps originally identified by a payer using their data and suspecting algorithms."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -25,7 +24,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-ra-codingGapType"/>
+                <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-codingGapType"/>
             </type>
             <fixedCodeableConcept>
                 <coding>
@@ -37,6 +36,12 @@
             <isModifier value="true"/>
             <isModifierReason value="Type of detected issue for risk adjustment coding gap"/>
         </element>
+        <element id="DetectedIssue.meta">
+            <path value="DetectedIssue.meta.lastUpdated"/>
+            <min value="1"/>
+            <max value="1"/>            
+            <mustSupport value="true"/>
+        </element>         
         <element id="DetectedIssue.code">
             <path value="DetectedIssue.code"/>
             <min value="1"/>
@@ -44,11 +49,55 @@
                 <coding>
                     <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
                     <code value="CODINGGAP"/>
-                    <display value="Coding Gaps"/>
+                    <display value="Codinggap"/>
                 </coding>
             </fixedCodeableConcept>
             <mustSupport value="true"/>
         </element>
+        <element id="DetectedIssue.extension:suspectType">
+            <path value="DetectedIssue.extension"/>
+            <sliceName value="suspectType"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DetectedIssue.extension:evidenceStatus">
+            <path value="DetectedIssue.extension"/>
+            <sliceName value="evidenceStatus"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DetectedIssue.extension:evidenceStatusDate">
+            <path value="DetectedIssue.extension"/>
+            <sliceName value="evidenceStatusDate"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DetectedIssue.extension:hierarchiesAppliedStatus">
+            <path value="DetectedIssue.extension"/>
+            <sliceName value="hierarchicalStatus"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>            
         <element id="DetectedIssue.patient">
             <path value="DetectedIssue.patient"/>
             <type>

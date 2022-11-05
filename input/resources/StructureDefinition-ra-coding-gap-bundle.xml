@@ -8,7 +8,7 @@
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Da Vinci Project"/>
-    <description value="This is a draft Risk Adjustment Coding Gap Bundle profile that is under development"/>
+    <description value="This bundle contains Risk Adjustment Coding Gap MeasureReport, the supporting evidence including original evidence used by payer to produce the coding gaps and the clinical evaluation evidence provided by provider and/or Risk Adjustment Coder to support coding gap invalildation."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

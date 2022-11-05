@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "extension-codingGapType",
-  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-ra-codingGapType",
-  "name": "CodingGapTypeModifierExtension",
-  "title": "Risk Adjustment Coding Gap Type Modifier Extension",
+  "id": "ra-codingGapType",
+  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-codingGapType",
+  "name": "CodingGapType",
+  "title": "Risk Adjustment Coding Gap Type",
   "status": "draft",
   "experimental": false,
   "publisher": "Da Vinci Project",
-  "description": "(This draft Risk Adjustment Coding Gap Type value set is under development) What type of risk adjustment coding gap request.",
+  "description": "This extension indicates the type of risk adjustment coding gap request.",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -40,11 +40,11 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/extension-ra-codingGapType"
+        "fixedUri": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-codingGapType"
       },
       {
-        "id": "Extension.value[x]",
-        "path": "Extension.value[x]",
+        "id": "Extension.valueCodeableConcept",
+        "path": "Extension.valueCodeableConcept",
         "type": [
           {
             "code": "CodeableConcept"
