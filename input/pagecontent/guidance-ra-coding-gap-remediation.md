@@ -1,15 +1,18 @@
 
 <div class="bg-info" markdown="1">
 **This page is under development.**
-
-The diagram below is part of active discussion notes for STU2 development.
-
-- HCC 22: morbid obesity
-- HCC 88: Coronary Artery Disease (CAD) with angina
-- RxHCC 188: Coronary Artery Disease
-
-{% include img-portrait.html img="remediate.png" caption = "" %}
-
 </div>
+
+### Introduction
+
+This section details the workflow, operation and profiles involved in the coding gap remediation.
+
+{% include img-portrait.html img="three-stages-remediation.png" caption = "Figure 2-: " %}
+
+### Actors
+
+
+
+
 
 

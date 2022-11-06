@@ -20,6 +20,11 @@
             <path value="Bundle"/>
         </element>
         <element id="Bundle.meta">
+            <path value="Bundle.meta"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>           
+        <element id="Bundle.meta">
             <path value="Bundle.meta.lastUpdated"/>
             <min value="1"/>
             <max value="1"/>            

@@ -15,7 +15,7 @@ The table below lists the operations specified in this implementation guide.
 </div><!-- new-content -->
 
 <div class="note-to-balloters" markdown="1">
-The $report operation specified in STU1 is renamed to $ra.cc-gaps in this ballot.
+The $report operation specified in STU1 is renamed to $ra.cc-gaps in this ballot and with updates.
 </div>
 
 <br />

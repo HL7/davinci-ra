@@ -37,6 +37,11 @@
             <isModifierReason value="Type of detected issue for risk adjustment coding gap"/>
         </element>
         <element id="DetectedIssue.meta">
+            <path value="DetectedIssue.meta"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>          
+        <element id="DetectedIssue.meta">
             <path value="DetectedIssue.meta.lastUpdated"/>
             <min value="1"/>
             <max value="1"/>            
