@@ -96,9 +96,9 @@
 <artifact id="StructureDefinition/ra-measurereport" key="StructureDefinition-ra-measurereport" name="Risk Adjustment Coding Gap MeasureReport"/>
 <artifact id="StructureDefinition/ra-coding-gap-original-detectedissue" key="StructureDefinition-ra-coding-gap-original-detectedissue" name="Risk Adjustment Coding Gap Original DetectedIssue"/>
 <artifact id="StructureDefinition/ra-measurereport-bundle" key="StructureDefinition-ra-measurereport-bundle" name="Risk Adjustment Coding Gap Report Bundle Profile"/>
+<artifact id="CodeSystem/coding-gap-type" key="CodeSystem-coding-gap-type" name="Risk Adjustment Coding Gap Type"/>
 <artifact id="StructureDefinition/ra-codingGapType" key="StructureDefinition-ra-codingGapType" name="Risk Adjustment Coding Gap Type"/>
 <artifact id="ValueSet/coding-gap-type" key="ValueSet-coding-gap-type" name="Risk Adjustment Coding Gap Type"/>
-<artifact id="CodeSystem/coding-gap-type" key="CodeSystem-coding-gap-type" name="Risk Adjustment Coding Gap Type Code System"/>
 <artifact id="OperationDefinition/ra.cc-gaps" key="OperationDefinition-ra.cc-gaps" name="Risk Adjustment Condition Category Gaps"/>
 <artifact id="OperationDefinition/ra.evaluate-measure" key="OperationDefinition-ra.evaluate-measure" name="Risk Adjustment Evaluate Measure"/>
 <artifact id="CodeSystem/evidence-status" key="CodeSystem-evidence-status" name="Risk Adjustment Evidence Status"/>

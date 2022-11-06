@@ -1,12 +1,12 @@
 {
   "resourceType": "CodeSystem",
-  "status": "active",
+  "status": "draft",
   "content": "complete",
-  "name": "RACodingGapTypeCodeSystem",
+  "name": "RACodingGapType",
   "id": "coding-gap-type",
-  "title": "Risk Adjustment Coding Gap Type Code System",
+  "title": "Risk Adjustment Coding Gap Type",
   "publisher":"Da Vinci Project",
-  "description": "This is a draft code system for coding gap type.",
+  "description": "Indicates the type of risk adjustment coding gap.",
   "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-type",
   "concept": [
     {

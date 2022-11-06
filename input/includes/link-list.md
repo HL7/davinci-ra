@@ -111,6 +111,8 @@
 [Risk Adjustment Coding Gap Composition]: StructureDefinition-ra-coding-gap-composition.html
 [Risk Adjustment Coding Gap Clinical Evaluation DetectedIssue]: StructureDefinition-ra-coding-gap-clinical-evaluation-detectedissue.html
 [Risk Adjustment Coding Gap Original DetectedIssue]: StructureDefinition-ra-coding-gap-original-detectedissue.html
+[Risk Adjustment Coding Gap MeasureReport]: StructureDefinition-ra-measurereport.html
+
 
 [$ra.evaluate-measure]:OperationDefinition-ra.evaluate-measure.html
 [$ra.cc-gaps]:OperationDefinition-ra.cc-gaps.html

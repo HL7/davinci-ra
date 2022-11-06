@@ -15,10 +15,8 @@ The following data-elements are mandatory (i.e data MUST be present).
 1. A `Bundle.identifier` 
 1. A `Bundle` contains one to many `Bundle.entry`
 1. A `Bundle` contains one `Bundle.entry` that contains a [Risk Adjustment Coding Gap Composition](StructureDefinition-ra-coding-gap-composition.html) resource
+1. A `Bundle` contains one to many `Bundle.entry` which contains a [Risk Adjustment Coding Gap MeasureReport](StructureDefinition-ra-measurereport.html) resource
 
-**Each {{site.data.structuredefinitions.[id].type}} *should* have:**
-
-1. A `Bundle` contains zero to many `Bundle.entry` which contains a [Risk Adjustment Coding Gap MeasureReport](StructureDefinition-ra-measurereport.html) resource
 
 </div><!-- new-content -->
 

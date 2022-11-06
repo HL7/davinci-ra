@@ -69,7 +69,7 @@
         <element id="Bundle.entry:ra_coding_gap_report_entry">
           <path value="Bundle.entry"/>
           <sliceName value="ra_coding_gap_report_entry"/>
-          <min value="0"/>
+          <min value="1"/>
           <max value="*"/>
           <mustSupport value="true"/>
         </element>
