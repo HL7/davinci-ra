@@ -22,8 +22,8 @@ This implementation guide is divided into several pages which are listed at the 
 <div class="bg-success" markdown="1">
 - [Guidance]\: The guidance pages provide guidance on the resource profiles and operation defined in this implementation guide.
     - [General Guidance]\: guidance that applies to all functionalities in this implementation guide
-    - [Risk Adjustment Coding Gap Report Generation]\: how generating Risk Adjustment Coding Gap Report is accomplished
-    - [Risk Adjustment Coding Gap Remediation]\: the process to follow when finding changes you want to make to the Coding Gap Report including closing a gap or invalidating a gap
+    - [Risk Adjustment Coding Gap Report Generation]\: how generating risk adjustment coding gap report is accomplished
+    - [Risk Adjustment Coding Gap Remediation]\: the process to follow when finding changes you want to make to the coding gap report including closing a gap or invalidating a gap
     - [Risk Adjustment Coding Gap Resolution]\: process to complete the remediation process when all supporting data has been reviewed
 
 - [Digital Condition Category (dCC)]\: Section explaining how Risk Adjustment Condition Category codes can be represented by CQL in a similar fashion to quality measures
@@ -111,7 +111,7 @@ This is just one of three ways to generate the MeasureReport.  You can programma
 
 The last way to generate the MeasureReport is using a RESTful API with a csv input file.  This is called "assisted".  
 
-Once a MeasureReport is created, you can use the $cc-gaps operation to generate a Risk Adjustment Condition Category Coding Gap Report.  You will find more information on creating the MeasureReports and generating the reports here, [Risk Adjustment Coding Gap Report Generation] 
+Once a MeasureReport is created, you can use the $cc-gaps operation to generate a Risk Adjustment Condition Category Coding Gap MeasureReport.  You will find more information on creating the MeasureReports and generating the reports here, [Risk Adjustment Coding Gap Report Generation] 
 
 The [Risk Adjustment Coding Gap Remediation] section defines how a provider, when they find an issue or have data to close a gap, can start the remediation process.  This process allows them to send evidence back to the risk adjustment coder to support the change in gap status.
 
@@ -119,7 +119,7 @@ The Risk Adjustment Coder also has the ability to use this same process to eithe
 
 This remediation process between the Provider and the Risk Adjustment Coder can continue until all issues are addressed.  At that time, the Risk Adjustment Coder can send the updated report which includes all new evidence as well as any new Condition Categories to the payer.  The [Risk Adjustment Coding Gap Resolution] sections defines how the payer can then accept this information, finalize the report and then  update all the information on their system.
 
-Figure 1-2 shows a high-level example of the risk adjustment workflow in CMS Medicare advantage program. This version of the implementation guide focuses on specifying a standard exchange format, the [Risk Adjustment Coding Gap Report], from payers to providers. This diagram does not depict preceding steps such as the payer receiving clinical or claims data from providers or other sources, nor does it attempt to define contractual relationships. 
+Figure 1-2 shows a high-level example of the risk adjustment workflow in CMS Medicare advantage program. This version of the implementation guide focuses on specifying a standard exchange format, the [Risk Adjustment Coding Gap MeasureReport], from payers to providers. This diagram does not depict preceding steps such as the payer receiving clinical or claims data from providers or other sources, nor does it attempt to define contractual relationships. 
 </div><!-- new-content -->
 
 {% include img-portrait.html img="workflow-medicare-advantage.png" caption = "Figure 1-2 Workflow for Medicare Advantage Population" %}

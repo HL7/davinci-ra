@@ -86,7 +86,7 @@
 <artifact id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner: Otto Osler"/>
 <artifact id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner: Patrick Pump"/>
 <artifact id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
-<artifact id="OperationDefinition/ra.approve-cc-gaps" key="OperationDefinition-ra.approve-cc-gaps" name="Risk Adjustment Approve Condition Category Gaps"/>
+<artifact id="OperationDefinition/ra.approve-coding-gaps" key="OperationDefinition-ra.approve-coding-gaps" name="Risk Adjustment Approve Coding Gaps"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
 <artifact id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Risk Adjustment Clinical Data Collection Deadline"/>
 <artifact id="ValueSet/clinical-evaluation-coding-gap-type" key="ValueSet-clinical-evaluation-coding-gap-type" name="Risk Adjustment Clinical Evaluation Coding Gap Type"/>
@@ -99,7 +99,7 @@
 <artifact id="CodeSystem/coding-gap-type" key="CodeSystem-coding-gap-type" name="Risk Adjustment Coding Gap Type"/>
 <artifact id="StructureDefinition/ra-codingGapType" key="StructureDefinition-ra-codingGapType" name="Risk Adjustment Coding Gap Type"/>
 <artifact id="ValueSet/coding-gap-type" key="ValueSet-coding-gap-type" name="Risk Adjustment Coding Gap Type"/>
-<artifact id="OperationDefinition/ra.cc-gaps" key="OperationDefinition-ra.cc-gaps" name="Risk Adjustment Condition Category Gaps"/>
+<artifact id="OperationDefinition/ra.coding-gaps" key="OperationDefinition-ra.coding-gaps" name="Risk Adjustment Coding Gaps"/>
 <artifact id="OperationDefinition/ra.evaluate-measure" key="OperationDefinition-ra.evaluate-measure" name="Risk Adjustment Evaluate Measure"/>
 <artifact id="CodeSystem/evidence-status" key="CodeSystem-evidence-status" name="Risk Adjustment Evidence Status"/>
 <artifact id="ValueSet/evidence-status" key="ValueSet-evidence-status" name="Risk Adjustment Evidence Status"/>
@@ -112,10 +112,10 @@
 <artifact id="Measure/RAModelExample02" key="Measure-RAModelExample02" name="Risk Adjustment Model Version 21 - CMS Hierarchical Category Condition (CMS-HCC)"/>
 <artifact id="Measure/RAModelExample01" key="Measure-RAModelExample01" name="Risk Adjustment Model Version 24 - CMS Hierarchical Category Condition (CMS-HCC)"/>
 <artifact id="Measure/RAModelExample03" key="Measure-RAModelExample03" name="Risk Adjustment Model Version 5 - CMS Prescribing Drug Hierarchical Category Condition (CMS-HCC)"/>
-<artifact id="OperationDefinition/ra.remediate-cc-gaps" key="OperationDefinition-ra.remediate-cc-gaps" name="Risk Adjustment Remediate Condition Category Gaps"/>
+<artifact id="OperationDefinition/ra.remediate-coding-gaps" key="OperationDefinition-ra.remediate-coding-gaps" name="Risk Adjustment Remediate Coding Gaps"/>
 <artifact id="Composition/ra-measurereport03-report" key="Composition-ra-measurereport03-report" name="Risk Adjustment Report for patient ra-patient02"/>
 <artifact id="Composition/ra-measurereport03-resolve" key="Composition-ra-measurereport03-resolve" name="Risk Adjustment Report for patient ra-patient02"/>
-<artifact id="OperationDefinition/ra.resolve-cc-gaps" key="OperationDefinition-ra.resolve-cc-gaps" name="Risk Adjustment Resolve Condition Category Gaps"/>
+<artifact id="OperationDefinition/ra.resolve-coding-gaps" key="OperationDefinition-ra.resolve-coding-gaps" name="Risk Adjustment Resolve Coding Gaps"/>
 <artifact id="CapabilityStatement/ra-server" key="CapabilityStatement-ra-server" name="Risk Adjustment Server Capability Statement"/>
 <artifact id="CodeSystem/suspect-type" key="CodeSystem-suspect-type" name="Risk Adjustment Suspect Type"/>
 <artifact id="ValueSet/suspect-type" key="ValueSet-suspect-type" name="Risk Adjustment Suspect Type"/>

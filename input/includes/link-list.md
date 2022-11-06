@@ -2,7 +2,6 @@
 
 [Asynchronous Request Patterns]: https://www.hl7.org/fhir/async.html
 [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]: Bundle-ra-bundle01.html
-[$cc-gaps]:OperationDefinition-report.html
 [Clinical Evaluation Period]:glossary.html#glossary
 [Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm
 [Condition01Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition01pat03.html
@@ -115,10 +114,10 @@
 
 
 [$ra.evaluate-measure]:OperationDefinition-ra.evaluate-measure.html
-[$ra.cc-gaps]:OperationDefinition-ra.cc-gaps.html
-[$ra.remediate-cc-gaps]:OperationDefinition-ra.remediate-cc-gaps.html
-[$ra.approve-cc-gaps]:OperationDefinition-ra.approve-cc-gaps.html
-[$ra.resolve-cc-gaps]:OperationDefinition-ra.resolve-cc-gaps.html
+[$ra.coding-gaps]:OperationDefinition-ra.coding-gaps.html
+[$ra.remediate-coding-gaps]:OperationDefinition-ra.remediate-coding-gaps.html
+[$ra.approve-coding-gaps]:OperationDefinition-ra.approve-coding-gaps.html
+[$ra.resolve-coding-gaps]:OperationDefinition-ra.resolve-coding-gaps.html
 
 [Risk Adjustment Coding Gap MeasureReport]: StructureDefinition-ra-measurereport.html
 [$evaluateMeasure]: http://hl7.org/fhir/R4/measure-operation-evaluate-measure.html
