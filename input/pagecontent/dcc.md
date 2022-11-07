@@ -5,8 +5,18 @@
 
 </div>
 
+###  Benefits of Digital Condition Categories (dCCs)
+
+Complete, accurate, and timely data collection is crucial to the long-term financial stability of Medicare Advantage (MA) and other risk adjustment programs. To ensure reliable financial reporting, diagnostic coding guidelines must be correctly applied to encounter data. In MA coding intensity refers to observed differences in the prevalence of diagnostic coding between private MA plans and traditional Fee-For-Service Medicare. Both the Centers for Medicare and Medicaid Services (CMS) and the General Accounting Office (GAO) have long been concerned about the coding intensity issue, which resulted in an estimated $12 billion in excess Medicare spending in 2020 alone. The GAO estimates that roughly a tenth of Medicare payments to MA plans in 2021 were improper, totaling about $23 billion for the year.
+
+Under risk adjustment, risk adjustment coders (e.g., Certified Risk Adjustment Coder (CRC)) review encounter data to determine if patients have certain medical conditions that might increase their expected cost of claims during an enrollment period. If the coders find evidence that meets quality standards, the payer can typically expect to receive a payment adjustment that is meant to offset the higher-than-expected cost of claims. Unfortunately, there is a financial incentive for payers to misuse the HCC coding process to make patients appear to be is sicker than they actually are, thus generating inflated and improper payments. For this reason, coding intensity is subject to such extensive regulation and safeguards. Several attempts have been made over the years to address the problem, such as correction factors and stepped-up enforcement of contract-level Risk Adjustment Data Validation (RADV) audits. These efforts have met with only limited success, and the US Federal Government is still actively seeking a solution to the problem. 
+The root cause of the problem is the improper manual application of the ICD-10-CM coding guidelines to unstructured encounter data. The operative terms here are “manual” and “unstructured”. By using Clinical Quality Language (CQL) to program the ICD-10-CM coding logic, together with FHIR resources to structure the encounter data and create a stable target for the CQL, a practical and definitive solution to the coding intensity problem may finally be at hand. Digital Condition Categories (dCCs) are the risk adjustment counterpart to Digital Quality Measures (dQMs) which are increasingly being used for the quality measure evaluation. A dCC, then, is the risk adjustment equivalent to a dQM.
+
+During the July 2022 CMS Connectathon a dCC proof-of-concept was conducted to demonstrate automated coding for HCC 179 (amputation of lower limb). In principle, any risk adjustable Condition Category could be coded by this method, prior to applying the HCC hierarchies.
+
 ###  Digital Condition Category 
-This implementation guide introduces digital condition categories (dCCs), a new term coined after digital quality measures (dQMs). Similar to the definitions of digital quality measures<sup>[1](https://ecqi.healthit.gov/dqm?qt-tabs_dqm=1)</sup>, digital condition categories are condition category measures organized as self-contained measure specification and code packages, that use one or more sources of health information that is captured and can be transmitted electronically via interoperable systems. Digital condition categories use machine-readable measure logic, such as logics written in in Clinical Quality Language, an use common data model such as FHIR. 
+
+Similar to the definitions of digital quality measures<sup>[1](https://ecqi.healthit.gov/dqm?qt-tabs_dqm=1)</sup>, digital condition categories are condition category measures organized as self-contained measure specification and code packages, that use one or more sources of health information that is captured and can be transmitted electronically via interoperable systems. Digital condition categories use machine-readable measure logic, such as logics written in in Clinical Quality Language, an use common data model such as FHIR. 
 
 A digital condition category is structured as a proportion measure, which consists of an initial population, denominator, numerator, and an optional denominator exclusions as shown in the Vann diagram in Figure 4-1. 
 
@@ -27,6 +37,13 @@ A digital condition category is structured as a proportion measure, which consis
 - historic gaps closed are defined as patients with an eligible encounter diagnosis outside of the current clinical evaluation period and coding gaps are closed. 
 - suspected open or closed gaps are determined using payers/vendors' internal suspecting algorithms. 
 
+
+###  $ra.evaluate-measure Operation
+
+*Describe and provides details on [$ra.evaluate-measure] operation.* 
+
+
+
 ###  Example Digital Condition Category 
 Figure 4-2 is a Vann diagram that shows the condition catetory measure population using a hiearchical condition category code, HCC189 "Amputation Status, Lower Limb/Amputation Complications" as an exmaple. 
 - The initial population for HCC189 is defined as enrolled Medicare Advantage members. 
@@ -44,3 +61,4 @@ This section describes additional considerations when specifying dCCs using CQL.
 ```cql
 TODO: example cql
 ```
+

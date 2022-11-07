@@ -7,7 +7,7 @@
   "id": "evidence-status",
   "title": "Risk Adjustment Evidence Status",
   "publisher":"Da Vinci Project",
-  "description": "This is a code system for Risk Adjustment evidence status to indicate whether a Condition Category (CC) gap is open-gap, closed-gap, or pending.",
+  "description": "Indicates whether a Condition Category (CC) is open-gap, invalid-gap, closed-gap, or pending.",
   "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
   "concept": [
     {
@@ -16,13 +16,20 @@
       "definition": "Evidence to support a Condition Category (CC) was confirmed."
     },
     {
+      "code": "invalid-gap",
+      "display": "Invalid Condition Category Gap",
+      "definition": "Evidence to support a Condition Category (CC) was invalidated."
+    },    
+    {
       "code": "open-gap",
       "display": "Open Condition Category Gap",
-      "definition": "Action is needed to confirm whether the Condition Category (CC) is valid."},
+      "definition": "Action is needed to confirm whether the Condition Category (CC) is valid."
+    },
     {
       "code": "pending",
       "display": "Pending Condition Category Gap",
-      "definition": "Evidence was received and is in the process of being evaluated."}
+      "definition": "Evidence was received by the payer and is in the process of being evaluated."
+    }
   ],
-  "count": 3
+  "count": 4
 }
