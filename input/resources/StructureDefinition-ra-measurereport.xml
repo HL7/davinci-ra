@@ -95,9 +95,8 @@
       <constraint>
         <key value="ra-1"/>
         <severity value="error"/>
-        <human value="Date precision SHALL  be at least to day ( YYYY-MM-DD )"/>
-        <expression value="start.matches(&#39;^([0-9]{4})(-)(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]).*&#39;) and end.matches(&#39;^([0-9]{4})(-)(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]).*&#39;)"/>
-        <xpath value="f:start[matches(^([0-9]{4})(-)(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]).*)] and end.matches[(^([0-9]{4})(-)(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]).*)]"/>
+        <human value="Date precision SHALL be at least to day ( YYYY-MM-DD )"/>
+        <expression value="start.value.matches(&#39;^([0-9]{4})(-)(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]).*&#39;) and end.value.matches(&#39;^([0-9]{4})(-)(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]).*&#39;)"/>
       </constraint>
       <mustSupport value="true"/>
     </element>

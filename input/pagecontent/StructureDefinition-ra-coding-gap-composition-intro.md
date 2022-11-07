@@ -28,5 +28,8 @@ The following data-elements are mandatory (i.e data MUST be present).
 
 </div><!-- new-content -->
 
+<div class="note-to-balloters" markdown="1">
+The Composition.type uses the LOINC code 96315-7 for "Gaps in care report" as a placeholder. A new LOINC code fo "Risk adjustment coding gap report" was requested and the LOINC submission ID is 6482.
+</div>
 
 {% include link-list.md %}
