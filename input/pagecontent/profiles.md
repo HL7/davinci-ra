@@ -8,7 +8,7 @@ List of profiles that define constrains on FHIR resources for systems conforming
 |Group|Patient Group|[Patient Group]|
 {: .grid}
 
-<div class="bg-info" markdown="1">
+<div class="bg-success" markdown="1">
 
 |Resource Type|Profile Name|Link to Profile|
 |---|---|---|
