@@ -1,6 +1,6 @@
 {
     "resourceType": "DetectedIssue",
-    "id": "ra-measurereport03-report-96",
+    "id": "ra-measurereport03-gaps-110",
     "meta": {
         "profile": [
             "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-original-detectedissue"
@@ -9,7 +9,7 @@
     "extension": [
         {
             "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
-            "valueString": "group-001"
+            "valueString": "group-002"
         }
     ],
     "modifierExtension": [
@@ -54,14 +54,7 @@
         {
             "detail": [
                 {
-                    "reference": "Condition/ra-condition31pat02"
-                }
-            ]
-        },
-        {
-            "detail": [
-                {
-                    "reference": "Encounter/ra-encounter31pat02"
+                    "reference": "Observation/ra-obs01pat02"
                 }
             ]
         }

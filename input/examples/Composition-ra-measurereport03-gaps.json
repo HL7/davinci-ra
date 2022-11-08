@@ -1,6 +1,6 @@
 {
     "resourceType": "Composition",
-    "id": "ra-measurereport03-report",
+    "id": "ra-measurereport03-gaps",
     "meta": {
         "profile": [
             "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-composition"
@@ -50,7 +50,7 @@
             },
             "entry": [
                 {
-                    "reference": "DetectedIssue/ra-measurereport03-report-96"
+                    "reference": "DetectedIssue/ra-measurereport03-gaps-96"
                 }
             ]
         },
@@ -72,7 +72,7 @@
             },
             "entry": [
                 {
-                    "reference": "DetectedIssue/ra-measurereport03-report-110"
+                    "reference": "DetectedIssue/ra-measurereport03-gaps-110"
                 }
             ]
         }
