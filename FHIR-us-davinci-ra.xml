@@ -7,12 +7,12 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="Condition/ra-conditionR01pat01" key="Condition-ra-conditionR01pat01" name=""/>
-<artifact id="Condition/ra-measurereport03-resolve" key="Condition-ra-measurereport03-resolve" name=""/>
+<artifact id="Condition/ra-measurereport03-remediate" key="Condition-ra-measurereport03-remediate" name=""/>
 <artifact id="DocumentReference/documentreference01pat01" key="DocumentReference-documentreference01pat01" name=""/>
-<artifact id="Encounter/ra-measurereport03-resolve" key="Encounter-ra-measurereport03-resolve" name=""/>
+<artifact id="Encounter/ra-measurereport03-remediate" key="Encounter-ra-measurereport03-remediate" name=""/>
 <artifact id="Observation/ra-obs01pat02" key="Observation-ra-obs01pat02" name=""/>
 <artifact id="Parameters/condition-category-report-5029dba3-251f-4360-81d5-e6bc746295c8" key="Parameters-condition-category-report-5029dba3-251f-4360-81d5-e6bc746295c8" name=""/>
-<artifact id="Parameters/ra-measurereport03-resolve" key="Parameters-ra-measurereport03-resolve" name=""/>
+<artifact id="Parameters/ra-measurereport03-remediate" key="Parameters-ra-measurereport03-remediate" name=""/>
 <artifact deprecated="true" id="Condition/ra-condition01" key="Condition-ra-condition01" name="Condition01: Type 2 diabetes with unspecified manisfestations"/>
 <artifact id="Condition/ra-condition01pat03" key="Condition-ra-condition01pat03" name="Condition01pat03: Other artificial openings of gastrointestinal tract status"/>
 <artifact deprecated="true" id="Condition/ra-condition02" key="Condition-ra-condition02" name="Condition02: Major Depressive Disorder, Single episode"/>
@@ -66,7 +66,7 @@
 <artifact id="DetectedIssue/detectedIssue-ra-measurereport01" key="DetectedIssue-detectedIssue-ra-measurereport01" name="Example DetectedIssue - detectedIssue-ra-measurereport01"/>
 <artifact id="DetectedIssue/ra-measurereport03-report-110" key="DetectedIssue-ra-measurereport03-report-110" name="Example DetectedIssue - ra-measurereport03-report-110"/>
 <artifact id="DetectedIssue/ra-measurereport03-report-96" key="DetectedIssue-ra-measurereport03-report-96" name="Example DetectedIssue - ra-measurereport03-report-96"/>
-<artifact id="DetectedIssue/ra-measurereport03-resolve" key="DetectedIssue-ra-measurereport03-resolve" name="Example DetectedIssue - ra-measurereport03-resolve"/>
+<artifact id="DetectedIssue/ra-measurereport03-remediate" key="DetectedIssue-ra-measurereport03-remediate" name="Example DetectedIssue - ra-measurereport03-remediate"/>
 <artifact id="StructureDefinition/ra-groupReference" key="StructureDefinition-ra-groupReference" name="Group Reference Extension"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hiearchicalStatus" key="StructureDefinition-ra-hiearchicalStatus" name="Hiearchical Status Extension"/>
 <artifact id="StructureDefinition/ra-hierarchicalStatus" key="StructureDefinition-ra-hierarchicalStatus" name="Hierarchical Status Extension"/>
@@ -114,7 +114,7 @@
 <artifact id="Measure/RAModelExample03" key="Measure-RAModelExample03" name="Risk Adjustment Model Version 5 - CMS Prescribing Drug Hierarchical Category Condition (CMS-HCC)"/>
 <artifact id="OperationDefinition/ra.remediate-coding-gaps" key="OperationDefinition-ra.remediate-coding-gaps" name="Risk Adjustment Remediate Coding Gaps"/>
 <artifact id="Composition/ra-measurereport03-report" key="Composition-ra-measurereport03-report" name="Risk Adjustment Report for patient ra-patient02"/>
-<artifact id="Composition/ra-measurereport03-resolve" key="Composition-ra-measurereport03-resolve" name="Risk Adjustment Report for patient ra-patient02"/>
+<artifact id="Composition/ra-measurereport03-remediate" key="Composition-ra-measurereport03-remediate" name="Risk Adjustment Report for patient ra-patient02"/>
 <artifact id="OperationDefinition/ra.resolve-coding-gaps" key="OperationDefinition-ra.resolve-coding-gaps" name="Risk Adjustment Resolve Coding Gaps"/>
 <artifact id="CapabilityStatement/ra-server" key="CapabilityStatement-ra-server" name="Risk Adjustment Server Capability Statement"/>
 <artifact id="CodeSystem/suspect-type" key="CodeSystem-suspect-type" name="Risk Adjustment Suspect Type"/>
