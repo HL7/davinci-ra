@@ -77,7 +77,7 @@ If the `subject` is valid, the dates provided in `periodStart` and `periodEnd` w
 
 The $ra.coding-gaps operation will always return one [Parameters](https://www.hl7.org/fhir/parameters.html) whether the `subject` is a single patient or a group of patients. Risk Adjustment Coding Gap Report Bundle for a patient is in a `Parameters.parameter` element. A Risk Adjustment Coding Gap Report Bundle contains the Risk Adjustment Coding Gap Reports for the same patient. For example, if a Group has 10 valid patients, then a Parameters will contain 10 `Parameters.parameter` elements, with each `Parameters.parameter` for a unique patient. Detailed documentation and conformance statements are listed on the page for [$ra.coding-gaps].
 
---start here add [Risk Adjustement Coding Gap Original DetectedIssue]
+--start here add [Risk Adjustement Coding Gap Original DetectedIssue] review examples
 
 An example workflow of a Client calls the [$ra.coding-gaps] operation to request risk adjustment coding gap reports for a single patient is shown below in Figure 3-1.
 

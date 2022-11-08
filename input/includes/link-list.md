@@ -112,7 +112,6 @@
 [Risk Adjustment Coding Gap Original DetectedIssue]: StructureDefinition-ra-coding-gap-original-detectedissue.html
 [Risk Adjustment Coding Gap MeasureReport]: StructureDefinition-ra-measurereport.html
 
-
 [$ra.evaluate-measure]:OperationDefinition-ra.evaluate-measure.html
 [$ra.coding-gaps]:OperationDefinition-ra.coding-gaps.html
 [$ra.remediate-coding-gaps]:OperationDefinition-ra.remediate-coding-gaps.html
