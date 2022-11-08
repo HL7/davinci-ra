@@ -23,13 +23,14 @@ The [$ra.resolve-coding-gaps] operation occurs on the payer side. It requires th
 If the `subject` is valid, the dates provided in `periodStart` and `periodEnd` will then be evaluated for any overlaps against the clinical evaluation period (`MeasureReport.period.start` and `MeasureReport.period.end`) of the [Risk Adjustment Coding Gap MeasureReport](s) contained in the [Risk Adjustment Coding Gap Bundle] for the patient. 
 
 The [$ra.resolve-coding-gaps] performs a series of actions:
+
 - copies the existing [Risk Adjustment Coding Gap Composition] contained in the [Risk Adjustment Coding Gap Bundle] received from the risk adjustment coder;
 - updates the copied Composition.status from `preliminary` to `final`;
 - creates a *new* [Risk Adjustment Coding Gap Bundle] and adds the copied [Risk Adjustment Coding Gap Composition] to the new Bundle;
 - updates the [Risk Adjustment Coding Gap MeasureReport] referenced by the Composition:
-    - for each Condition Category code contained in the MeasureReport (`MeasureReport.group.code`)
-        - select the most recent of all DetectedIssue entries in the [Risk Adjustment Coding Gap Composition] using the `DetectedIssue.meta.lastUpdated` field
-        - update the corresponding Condition Category code contained in the MeasureReport (`MeasureReport.group.code`) to the selected value;
+  - for each Condition Category code contained in the MeasureReport (`MeasureReport.group.code`)
+    - select the most recent of all DetectedIssue entries in the [Risk Adjustment Coding Gap Composition] using the `DetectedIssue.meta.lastUpdated` field
+    - update the corresponding Condition Category code contained in the MeasureReport (`MeasureReport.group.code`) to the selected value;
 - copies all the existing DetectedIssue and supporting evidence resources from the [Risk Adjustment Coding Gap Bundle] received from the risk adjustment coder to the *new* [Risk Adjustment Coding Gap Bundle].  This includes resources for Original DetectedIssue, the original evidence, the Clinical Evaluation DetectedIssue, and the clinical evaluation evidence;  
 - returns the *new* [Risk Adjustment Coding Gap Bundle].
 
