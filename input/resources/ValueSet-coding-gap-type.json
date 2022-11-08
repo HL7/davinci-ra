@@ -6,6 +6,7 @@
   "title": "Risk Adjustment Coding Gap Type",
   "description": "This draft Risk Adjustment Coding Gap Type Value Set that is under development",
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-type",
+  "experimental": false,
   "compose": {
     "include": [
       {
