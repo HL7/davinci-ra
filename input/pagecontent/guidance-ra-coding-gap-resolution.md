@@ -23,11 +23,14 @@ The [$ra.resolve-coding-gaps] operation occurs on the payer side. It requires th
 If the `subject` is valid, the dates provided in `periodStart` and `periodEnd` will then be evaluated for any overlaps against the clinical evaluation period (`MeasureReport.period.start` and `MeasureReport.period.end`) of the [Risk Adjustment Coding Gap MeasureReport](s) contained in the [Risk Adjustment Coding Gap Bundle] for the patient. 
 
 The [$ra.resolve-coding-gaps] performs a series of actions:
-- extracts the existing [Risk Adjustment Coding Gap Composition] contained in the [Risk Adjustment Coding Gap Bundle] received from the risk adjustment coder
-- sets the extracted existing Composition.status from `preliminary` to `final`;
-- creates a *new* [Risk Adjustment Coding Gap Bundle] and adds to it the etracted existing [Risk Adjustment Coding Gap Composition];
-- updates the [Risk Adjustment Coding Gap MeasureReport] contained in the Composition by sorting through the `DetectedIssue.meta.lastUpdated` field of all Detectedissue entries in the [Risk Adjustment Coding Gap Composition], the Condition Category codes contained in the MeasureReport (`MeasureReport.group.code`) are updated accordingly based on the most recent DetectedIssue entry information for those Condition Category codes; 
-- adds to the *new* [Risk Adjustment Coding Gap Bundle] all of the DetectedIsssue resources and supporting evidence for the coding gaps included in the MeasureReports. This includes resources for Original DetectedIssue, the original evidence, the Clinical Evaluation DetectedIssue, and the clinical evaluation evidence extracted from the [Risk Adjustment Coding Gap Bundle] received from the risk adjustment code;  
+- copies the existing [Risk Adjustment Coding Gap Composition] contained in the [Risk Adjustment Coding Gap Bundle] received from the risk adjustment coder;
+- updates the copied Composition.status from `preliminary` to `final`;
+- creates a *new* [Risk Adjustment Coding Gap Bundle] and adds the copied [Risk Adjustment Coding Gap Composition] to the new Bundle;
+- updates the [Risk Adjustment Coding Gap MeasureReport] referenced by the Composition:
+    - for each Condition Category code contained in the MeasureReport (`MeasureReport.group.code`)
+        - select the most recent of all DetectedIssue entries in the [Risk Adjustment Coding Gap Composition] using the `DetectedIssue.meta.lastUpdated` field
+        - update the corresponding Condition Category code contained in the MeasureReport (`MeasureReport.group.code`) to the selected value;
+- copies all the existing DetectedIssue and supporting evidence resources from the [Risk Adjustment Coding Gap Bundle] received from the risk adjustment coder to the *new* [Risk Adjustment Coding Gap Bundle].  This includes resources for Original DetectedIssue, the original evidence, the Clinical Evaluation DetectedIssue, and the clinical evaluation evidence;  
 - returns the *new* [Risk Adjustment Coding Gap Bundle].
 
 ```cql
