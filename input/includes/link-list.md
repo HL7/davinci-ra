@@ -120,7 +120,7 @@
 [$ra.resolve-coding-gaps]:OperationDefinition-ra.resolve-coding-gaps.html
 
 [Risk Adjustment Coding Gap MeasureReport]: StructureDefinition-ra-measurereport.html
-[$evaluateMeasure]: http://hl7.org/fhir/R4/measure-operation-evaluate-measure.html
+[$ra.evaluate-Measure]: OperationDefinition-ra.evaluate-measure.html
 [Generated]:guidance-ra-coding-gap-report-generation.html
 [Assisted]:guidance-ra-coding-gap-report-generation.html
 [Evaluated]:guidance-ra-coding-gap-report-generation.html
