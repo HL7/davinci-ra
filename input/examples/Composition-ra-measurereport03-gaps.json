@@ -17,7 +17,7 @@
             {
                 "system": "http://loinc.org",
                 "code": "96315-7",
-                "display": "TODO: This is a place holder for a new LOINC code for Risk Adjustment Coding Gap Report. LOINC submission ID: 6482"
+                "display": "Gaps in care report"
             }
         ]
     },

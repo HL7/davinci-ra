@@ -108,26 +108,13 @@
                     "valueString": "group-001"
                   }
                 ],
-                "modifierExtension": [
-                  {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-codingGapType",
-                    "valueCodeableConcept": {
-                      "coding": [
-                        {
-                          "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-type",
-                          "code": "payer-generated"
-                        }
-                      ]
-                    }
-                  }
-                ],
                 "status": "preliminary",
                 "code": {
                   "coding": [
                     {
                       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
                       "code": "CODINGGAP",
-                      "display": "Coding Gaps"
+                      "display": "Codinggap"
                     }
                   ]
                 },
@@ -202,26 +189,13 @@
                     "valueString": "group-002"
                   }
                 ],
-                "modifierExtension": [
-                  {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-codingGapType",
-                    "valueCodeableConcept": {
-                      "coding": [
-                        {
-                          "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-type",
-                          "code": "payer-generated"
-                        }
-                      ]
-                    }
-                  }
-                ],
                 "status": "preliminary",
                 "code": {
                   "coding": [
                     {
                       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
                       "code": "CODINGGAP",
-                      "display": "Coding Gaps"
+                      "display": "Codinggap"
                     }
                   ]
                 },

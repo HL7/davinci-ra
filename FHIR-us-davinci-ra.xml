@@ -12,7 +12,7 @@
 <artifact id="Encounter/ra-measurereport03-remediate" key="Encounter-ra-measurereport03-remediate" name=""/>
 <artifact id="Observation/ra-obs01pat02" key="Observation-ra-obs01pat02" name=""/>
 <artifact id="Parameters/condition-category-report-5029dba3-251f-4360-81d5-e6bc746295c8" key="Parameters-condition-category-report-5029dba3-251f-4360-81d5-e6bc746295c8" name=""/>
-<artifact id="Parameters/remediate-cc-5029dba3-251f-4360-81d5-e6bc746295c8" key="Parameters-remediate-cc-5029dba3-251f-4360-81d5-e6bc746295c8" name=""/>
+<artifact id="Parameters/remediate-cc-gaps-5029dba3-251f-4360-81d5-e6bc746295c8" key="Parameters-remediate-cc-gaps-5029dba3-251f-4360-81d5-e6bc746295c8" name=""/>
 <artifact deprecated="true" id="Condition/ra-condition01" key="Condition-ra-condition01" name="Condition01: Type 2 diabetes with unspecified manisfestations"/>
 <artifact id="Condition/ra-condition01pat03" key="Condition-ra-condition01pat03" name="Condition01pat03: Other artificial openings of gastrointestinal tract status"/>
 <artifact deprecated="true" id="Condition/ra-condition02" key="Condition-ra-condition02" name="Condition02: Major Depressive Disorder, Single episode"/>
@@ -89,7 +89,6 @@
 <artifact id="OperationDefinition/ra.approve-coding-gaps" key="OperationDefinition-ra.approve-coding-gaps" name="Risk Adjustment Approve Coding Gaps"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
 <artifact id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Risk Adjustment Clinical Data Collection Deadline"/>
-<artifact id="ValueSet/clinical-evaluation-coding-gap-type" key="ValueSet-clinical-evaluation-coding-gap-type" name="Risk Adjustment Clinical Evaluation Coding Gap Type"/>
 <artifact id="StructureDefinition/ra-coding-gap-bundle" key="StructureDefinition-ra-coding-gap-bundle" name="Risk Adjustment Coding Gap Bundle"/>
 <artifact id="StructureDefinition/ra-coding-gap-clinical-evaluation-detectedissue" key="StructureDefinition-ra-coding-gap-clinical-evaluation-detectedissue" name="Risk Adjustment Coding Gap Clinical Evaluation DetectedIssue"/>
 <artifact id="StructureDefinition/ra-coding-gap-composition" key="StructureDefinition-ra-coding-gap-composition" name="Risk Adjustment Coding Gap Composition"/>

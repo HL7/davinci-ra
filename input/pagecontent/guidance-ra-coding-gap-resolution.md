@@ -20,7 +20,7 @@ Upon completion of the remediation step, the risk adjustment coder sends the res
 
 The [$ra.resolve-coding-gaps] operation occurs on the payer side. It requires three input (IN) parameters: `subject`, `periodStart`, and `periodEnd`. The `subject` parameter references either a single patient or a group of patients (as specified in the [Patient Group] profile). The term clinical evaluation period refers to the time period during which the risk adjusting encounters could be conducted and documented with expectations of submissions for risk adjustment purposes. The `periodStart` and `periodEnd` parameters are the start and end dates of the clinical evaluation period.
 
-If the `subject` is valid, the dates provided in `periodStart` and `periodEnd` will then be evaluated for any overlaps against the clinical evaluation period (`MeasureReport.period.start` and `MeasureReport.period.end`) of the [Risk Adjustment Coding Gap MeasureReport](s) contained in the [Risk Adjustment Coding Gap Bundle] for the patient. 
+If the `subject` is valid, the dates provided in `periodStart` and `periodEnd` will then be evaluated for any overlaps against the clinical evaluation period (`MeasureReport.period.start` and `MeasureReport.period.end`) of the [Risk Adjustment Coding Gap MeasureReport] contained in the [Risk Adjustment Coding Gap Bundle] for the patient. 
 
 The [$ra.resolve-coding-gaps] performs a series of actions:
 
