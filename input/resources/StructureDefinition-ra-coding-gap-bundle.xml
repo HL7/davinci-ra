@@ -5,7 +5,7 @@
     <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-bundle"/>
     <name value="RiskAdjustmentCodingGapBundle"/>
     <title value="Risk Adjustment Coding Gap Bundle"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Da Vinci Project"/>
     <description value="This bundle contains Risk Adjustment Coding Gap MeasureReport, the supporting evidence including original evidence used by payer to produce the coding gaps and the clinical evaluation evidence provided by provider and/or Risk Adjustment Coder to support coding gap invalildation."/>

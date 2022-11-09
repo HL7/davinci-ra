@@ -11,7 +11,6 @@ The following data-elements are mandatory (i.e data MUST be present).
 **Each {{site.data.structuredefinitions.[id].type}} must have:**
 
 1. A `DetectedIssue.meta` and a `DetectedIssue.meta.lastUpdated` 
-1. A Modifier Extension `codingGapType` and its `value` is a fixed code `payer-generated`
 1. A `DetectedIssue.code` with a fixed code `CODINGGAP`
 1. A `DetectedIssue.patient` references a [US Core Patient](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html)
 1. A `DetectedIssue.implicated` that references a [Risk Adjustment Coding Gap MeasureReport]
