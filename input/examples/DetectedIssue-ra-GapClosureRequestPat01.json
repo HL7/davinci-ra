@@ -14,11 +14,11 @@
   ],
   "modifierExtension": [
     {
-      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-codingGapType",
+      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-codingGapRequest",
       "valueCodeableConcept": {
           "coding": [
               {
-                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-type",
+                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-request",
                 "code": "closure-request"
               }
           ]

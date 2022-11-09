@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ra-suspectType"/>
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType"/>
-  <name value="RASuspectTypeExtension"/>
-  <title value="Risk Adjustment Suspect Type Extension"/>
+  <name value="RASuspectType"/>
+  <title value="Risk Adjustment Suspect Type"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="Da Vinci Project"/>
-  <description value="Risk Adjustment Suspect Type Extension"/>
+  <description value="Risk adjustment suspect type"/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>

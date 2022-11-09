@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ra-evidenceStatusDate"/>
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate"/>
-  <name value="RAClinicalEvidenceStatusDateExtension"/>
-  <title value="Risk Adjustment Evidence Status Date Extension"/>
+  <name value="RAClinicalEvidenceStatusDate"/>
+  <title value="Risk Adjustment Evidence Status Date"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="Da Vinci Project"/>
-  <description value="Risk Adjustment Evidence Status Date Extension"/>
+  <description value="Risk adjustment evidence status date"/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>

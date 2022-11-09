@@ -14,7 +14,7 @@ List of extensions defined in this implementation guide:
 
 |Link to Modifier Extension|
 |---|
-|[Risk Adjustment Coding Gap Type](StructureDefinition-ra-codingGapType.html)|
+|[Coding Gap Request](StructureDefinition-ra-codingGapRequest.html)|
 
 </div><!-- new-content -->
 

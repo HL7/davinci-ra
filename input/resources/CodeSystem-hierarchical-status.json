@@ -1,14 +1,17 @@
 {
   "resourceType": "CodeSystem",
-  "status": "active",
-  "caseSensitive": true,
-  "content": "complete",
-  "name": "RiskAdjustmenthierarchicalStatus",
   "id": "hierarchical-status",
-  "title": "Risk Adjustment Hierarchical Status",
-  "publisher":"Da Vinci Project",
-  "description": "This is a code system for Risk Adjustment Hierarchical Status to indicate whether hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded.",
   "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
+  "version": "1.0.0",
+  "name": "RiskAdjustmenthierarchicalStatus",
+  "title": "Risk Adjustment Hierarchical Status",
+  "status": "active",
+  "experimental": false,
+  "publisher":"Clinical Quality Information Workgroup",
+  "description": "Indicate whether hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/us/davinci-ra/ValueSet/hierarchical-status",
+  "content": "complete",
   "concept": [
     {
       "code": "applied-superseded",
@@ -28,7 +31,8 @@
     {
       "code": "not-applicable",
       "display": "Not applicable",
-      "definition": "Applying hierarchies to a Condition Category (CC) is not applicable."}
+      "definition": "Applying hierarchies to a Condition Category (CC) is not applicable."
+    }
   ],
   "count": 4
 }

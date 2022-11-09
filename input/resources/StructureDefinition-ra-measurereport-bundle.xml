@@ -4,7 +4,7 @@
     <id value="ra-measurereport-bundle"/>
     <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle"/>
     <name value="RAMeasureReportBundle"/>
-    <title value="Risk Adjustment Coding Gap Report Bundle Profile"/>
+    <title value="Risk Adjustment Coding Gap Report Bundle"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Da Vinci Project"/>

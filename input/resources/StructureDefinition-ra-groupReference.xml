@@ -3,7 +3,7 @@
   <id value="ra-groupReference"/>
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference"/>
   <name value="GroupReference"/>
-  <title value="Group Reference Extension"/>
+  <title value="Group Reference"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="Da Vinci Project"/>

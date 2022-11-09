@@ -4,7 +4,7 @@
     <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-original-detectedissue"/>
     <name value="RiskAdjustmentCodingGapOriginalDetectedIssue"/>
     <title value="Risk Adjustment Coding Gap Original DetectedIssue"/>
-    <status value="draft"/>
+    <status value="active"/>
     <publisher value="Da Vinci Project"/>
     <description value="This profile describes coding gaps originally identified by a payer using their data and suspecting algorithms."/>
     <fhirVersion value="4.0.1"/>

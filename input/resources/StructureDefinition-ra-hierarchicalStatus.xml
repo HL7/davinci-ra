@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ra-hierarchicalStatus"/>
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus"/>
-  <name value="HierarchicalStatusExtension"/>
-  <title value="Hierarchical Status Extension"/>
+  <name value="HierarchicalStatus"/>
+  <title value="Hierarchical Status"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="Da Vinci Project"/>

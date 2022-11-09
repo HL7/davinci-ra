@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ra-evidenceStatus"/>
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus"/>
-  <name value="EvidenceExtension"/>
-  <title value="Evidence Status Extension"/>
+  <name value="EvidenceStatus"/>
+  <title value="Evidence Status"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="Da Vinci Project"/>
-  <description value="This extension is for evidence status of a Condition Category (CC) coding gap, which is closed-gap, open-gap, or pending."/>
+  <description value="Evidence status of a Condition Category (CC) coding gap, which is closed-gap, open-gap, or pending."/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>

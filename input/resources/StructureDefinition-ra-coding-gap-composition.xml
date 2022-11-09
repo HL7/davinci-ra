@@ -5,7 +5,7 @@
     <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-composition"/>
     <name value="RiskAdjustmentCodingGapComposition"/>
     <title value="Risk Adjustment Coding Gap Composition"/>
-    <status value="draft"/>
+    <status value="active"/>
     <publisher value="Da Vinci Project"/>
     <description value="This is a draft Risk Adjustment Coding Gap Composition profile that is under development."/>
     <fhirVersion value="4.0.1"/>

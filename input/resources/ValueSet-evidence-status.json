@@ -1,12 +1,19 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
-  "name": "RiskAdjustmentEvidenceStatus",
   "id": "evidence-status",
-  "title": "Risk Adjustment Evidence Status",
-  "description": "Concepts for risk adjustment evidence status",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/evidence-status",
+  "version": "1.0.0",
+  "name": "RiskAdjustmentEvidenceStatus",
+  "title": "Risk Adjustment Evidence Status",
+  "status": "active",
   "experimental": false,
+  "description": "Concepts for risk adjustment evidence status",
+  "publisher": "Clinical Quality Information Workgroup",
   "compose": {
     "include": [
       {
