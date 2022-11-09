@@ -1,0 +1,43 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "coding-gap-request",
+  "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-request",
+  "version": "1.0.0",
+  "name": "CodingGapRequest",
+  "title": "Coding Gap Request",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Clinical Quality Information Workgroup",
+  "description": "Type of risk adjustment coding gap request",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-request",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "closure-request",
+      "display": "Coding gap closure request",
+      "definition": "Provider or certified coder to request to close the risk adjustment coding gap."
+    },
+    {
+      "code": "invalidation-request-never-had-condition",
+      "display": "Coding gap invalidated, patient never had the condition",
+      "definition": "Provider or certified coder to request an invalidation of the coding gap that was inaccurate because the patient has never had this condition."
+    },
+    {
+      "code": "invalidation-request-inactive-condition",
+      "display": "Coding gap invalidated, condition no longer active",
+      "definition": "Provider or certified coder to request an invalidation of the coding gap because the patient was correctly diagnosed but the condition is no longer active."
+    },
+    {
+      "code": "invalidation-request-inaccurate-gap",
+      "display": "Coding gap invalidated, inaccurate gap",
+      "definition": "Provider or certified coder to request an invalidation of the coding gap because the patient has an active condition but the gap does not accurately describe it."
+    },
+    {
+      "code": "creation-request",
+      "display": "Coding gap creation request",
+      "definition": "Provider or certified coder to create and request to close a net-new risk adjustment coding gap discovered during medical review."
+    }   
+  ],
+  "count": 5
+}
