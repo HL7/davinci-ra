@@ -12,7 +12,7 @@ The following data-elements are mandatory (i.e data MUST be present).
 
 1. A `DetectedIssue.meta` and a `DetectedIssue.meta.lastUpdated` 
 1. A Modifier Extension `codingTypeRequest` and its `value` must be a valid code from the [Coding Gap Request](ValueSet-coding-gap-request.html) value set
-1. A `DetectedIssue.code` with a fixed code `CODINGGAP`
+1. A `DetectedIssue.code` that is a Condition Category code
 1. A `DetectedIssue.patient` references a [US Core Patient](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html)
 1. A `DetectedIssue.implicated` that references a [Risk Adjustment Coding Gap MeasureReport]
 1. Contains one to many `DetectedIssue.evidence` which are clinical evaluation evidence to support DetectedIssue for a coding gap

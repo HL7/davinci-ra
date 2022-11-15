@@ -30,16 +30,14 @@
         </element>         
         <element id="DetectedIssue.code">
             <path value="DetectedIssue.code"/>
+            <short value="Risk adjustment Condition Category code"/>
             <min value="1"/>
-            <fixedCodeableConcept>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-                    <code value="CODINGGAP"/>
-                    <display value="Codinggap"/>
-                </coding>
-            </fixedCodeableConcept>
             <mustSupport value="true"/>
-        </element>        
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/sample-cmshcc"/>
+            </binding>
+        </element>       
         <element id="DetectedIssue.patient">
             <path value="DetectedIssue.patient"/>
             <type>
