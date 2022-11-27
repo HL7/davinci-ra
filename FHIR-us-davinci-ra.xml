@@ -11,8 +11,8 @@
 <artifact id="DocumentReference/documentreference01pat01" key="DocumentReference-documentreference01pat01" name=""/>
 <artifact id="Encounter/ra-measurereport03-remediate" key="Encounter-ra-measurereport03-remediate" name=""/>
 <artifact id="Observation/ra-obs01pat02" key="Observation-ra-obs01pat02" name=""/>
-<artifact id="Parameters/coding-gaps-498928bc-6e2e-410e-a207-89ef207778c2" key="Parameters-coding-gaps-498928bc-6e2e-410e-a207-89ef207778c2" name=""/>
-<artifact id="Parameters/remediate-cc-gaps-5029dba3-251f-4360-81d5-e6bc746295c8" key="Parameters-remediate-cc-gaps-5029dba3-251f-4360-81d5-e6bc746295c8" name=""/>
+<artifact id="Parameters/coding-gaps-06d878ea-7567-4ac6-a65a-2ba5e0deb134" key="Parameters-coding-gaps-06d878ea-7567-4ac6-a65a-2ba5e0deb134" name=""/>
+<artifact id="Parameters/remediate-coding-gaps-e489f691-41a8-432d-ba85-8715b1d8a108" key="Parameters-remediate-coding-gaps-e489f691-41a8-432d-ba85-8715b1d8a108" name=""/>
 <artifact id="CodeSystem/coding-gap-request" key="CodeSystem-coding-gap-request" name="Coding Gap Request"/>
 <artifact id="StructureDefinition/ra-codingGapRequest" key="StructureDefinition-ra-codingGapRequest" name="Coding Gap Request"/>
 <artifact id="ValueSet/coding-gap-request" key="ValueSet-coding-gap-request" name="Coding Gap Request"/>

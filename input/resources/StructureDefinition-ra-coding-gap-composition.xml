@@ -90,6 +90,7 @@
             <path value="Composition.section.code"/>
             <short value="Risk adjustment Condition Category code"/>
             <min value="1"/>
+            <max value="1"/>
             <mustSupport value="true"/>
             <binding>
                 <strength value="example"/>
@@ -100,6 +101,7 @@
             <path value="Composition.section.focus"/>
             <short value="This references a Risk Adjustment Coding Gap MeasureReport"/>
             <min value="1"/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
@@ -128,6 +130,7 @@
             <path value="Composition.section.code"/>
             <short value="Risk adjustment Condition Category code"/>
             <min value="1"/>
+            <max value="1"/>
             <mustSupport value="true"/>
             <binding>
                 <strength value="example"/>
@@ -138,6 +141,7 @@
             <path value="Composition.section.focus"/>
             <short value="This references a Risk Adjustment Coding Gap MeasureReport that this Condition Category was initially identified"/>
             <min value="1"/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
