@@ -8,7 +8,7 @@
 <artifactPageExtension value="-mappings"/>
 <artifact id="Condition/ra-conditionR01pat01" key="Condition-ra-conditionR01pat01" name=""/>
 <artifact id="Condition/ra-measurereport03-remediate" key="Condition-ra-measurereport03-remediate" name=""/>
-<artifact id="DocumentReference/documentreference01pat01" key="DocumentReference-documentreference01pat01" name=""/>
+<artifact id="DocumentReference/ra-documentreference01pat01" key="DocumentReference-ra-documentreference01pat01" name=""/>
 <artifact id="Encounter/ra-measurereport03-remediate" key="Encounter-ra-measurereport03-remediate" name=""/>
 <artifact id="Observation/ra-obs01pat02" key="Observation-ra-obs01pat02" name=""/>
 <artifact id="CodeSystem/coding-gap-request" key="CodeSystem-coding-gap-request" name="Coding Gap Request"/>
