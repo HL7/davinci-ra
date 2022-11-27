@@ -533,10 +533,26 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/Patient-ra-patient01-report"/>
+        <reference value="Parameters/Parameters-ra-measurereport03-gaps"/>
       </reference>
-      <name value="Patient01: Report"/>
-      <description value="Report01: Single Risk Adjustment Measure-RAModelExample01 Report for Patient01"/>
+      <name value="Coding Gaps Result"/>
+      <description value="Example of a Coding Gaps ($ra.coding-gaps) result for Patient02"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/Parameters-ra-measurereport03-remediate"/>
+      </reference>
+      <name value="Remediate Coding Gaps Result"/>
+      <description value="Example of a Remediate Coding Gaps ($ra.remediate-coding-gaps) result for Patient02"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/Parameters-ra-measurereport03-resolve"/>
+      </reference>
+      <name value="Resolve Coding Gaps Result"/>
+      <description value="Example of a Resolve Coding Gaps ($ra.resolve-coding-gaps) result for Patient02"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

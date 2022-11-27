@@ -11,11 +11,10 @@
 <artifact id="DocumentReference/documentreference01pat01" key="DocumentReference-documentreference01pat01" name=""/>
 <artifact id="Encounter/ra-measurereport03-remediate" key="Encounter-ra-measurereport03-remediate" name=""/>
 <artifact id="Observation/ra-obs01pat02" key="Observation-ra-obs01pat02" name=""/>
-<artifact id="Parameters/coding-gaps-06d878ea-7567-4ac6-a65a-2ba5e0deb134" key="Parameters-coding-gaps-06d878ea-7567-4ac6-a65a-2ba5e0deb134" name=""/>
-<artifact id="Parameters/remediate-coding-gaps-e489f691-41a8-432d-ba85-8715b1d8a108" key="Parameters-remediate-coding-gaps-e489f691-41a8-432d-ba85-8715b1d8a108" name=""/>
 <artifact id="CodeSystem/coding-gap-request" key="CodeSystem-coding-gap-request" name="Coding Gap Request"/>
 <artifact id="StructureDefinition/ra-codingGapRequest" key="StructureDefinition-ra-codingGapRequest" name="Coding Gap Request"/>
 <artifact id="ValueSet/coding-gap-request" key="ValueSet-coding-gap-request" name="Coding Gap Request"/>
+<artifact id="Parameters/Parameters-ra-measurereport03-gaps" key="Parameters-Parameters-ra-measurereport03-gaps" name="Coding Gaps Result"/>
 <artifact deprecated="true" id="Condition/ra-condition01" key="Condition-ra-condition01" name="Condition01: Type 2 diabetes with unspecified manisfestations"/>
 <artifact id="Condition/ra-condition01pat03" key="Condition-ra-condition01pat03" name="Condition01pat03: Other artificial openings of gastrointestinal tract status"/>
 <artifact deprecated="true" id="Condition/ra-condition02" key="Condition-ra-condition02" name="Condition02: Major Depressive Disorder, Single episode"/>
@@ -81,14 +80,16 @@
 <artifact id="Organization/ra-org02pat02" key="Organization-ra-org02pat02" name="Organization: GHH Outpatient Clinic"/>
 <artifact id="StructureDefinition/ra-patient-group" key="StructureDefinition-ra-patient-group" name="Patient Group"/>
 <artifact id="Patient/ra-patient01" key="Patient-ra-patient01" name="Patient01: Eve Everywoman"/>
-<artifact id="Parameters/Patient-ra-patient01-report" key="Parameters-Patient-ra-patient01-report" name="Patient01: Report"/>
+<artifact deprecated="true" id="Parameters/Patient-ra-patient01-report" key="Parameters-Patient-ra-patient01-report" name="Patient01: Report"/>
 <artifact id="Patient/ra-patient02" key="Patient-ra-patient02" name="Patient02: Adam Everyman"/>
 <artifact id="Patient/ra-patient03" key="Patient-ra-patient03" name="Patient03: Nelda Nuclear"/>
 <artifact deprecated="true" id="Patient/ra-patient04" key="Patient-ra-patient04" name="Patient04: Jane Doh"/>
 <artifact id="Practitioner/ra-prac01pat01" key="Practitioner-ra-prac01pat01" name="Practitioner: Harold Hippocrates"/>
 <artifact id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner: Otto Osler"/>
 <artifact id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner: Patrick Pump"/>
+<artifact id="Parameters/Parameters-ra-measurereport03-remediate" key="Parameters-Parameters-ra-measurereport03-remediate" name="Remediate Coding Gaps Result"/>
 <artifact id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
+<artifact id="Parameters/Parameters-ra-measurereport03-resolve" key="Parameters-Parameters-ra-measurereport03-resolve" name="Resolve Coding Gaps Result"/>
 <artifact id="OperationDefinition/ra.approve-coding-gaps" key="OperationDefinition-ra.approve-coding-gaps" name="Risk Adjustment Approve Coding Gaps"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
 <artifact id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Risk Adjustment Clinical Data Collection Deadline"/>
