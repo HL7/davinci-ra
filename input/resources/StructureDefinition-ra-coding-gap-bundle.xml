@@ -70,23 +70,6 @@
             <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-composition"/>
           </type>
           <mustSupport value="true"/>
-        </element>
-        <element id="Bundle.entry:ra_coding_gap_report_entry">
-          <path value="Bundle.entry"/>
-          <sliceName value="ra_coding_gap_report_entry"/>
-          <min value="1"/>
-          <max value="*"/>
-          <mustSupport value="true"/>
-        </element>
-        <element id="Bundle.entry:ra_coding_gap_report_entry.resource">
-          <path value="Bundle.entry.resource"/>
-          <short value="This entry is the Risk Adjustment Coding Gap Report resource referenced in the Risk Adjustment Coding Gap Composition"/>
-          <min value="1"/>
-          <type>
-            <code value="MeasureReport"/>
-            <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
-          </type>
-          <mustSupport value="true"/>
-        </element>
+        </element>      
     </differential>
 </StructureDefinition>
