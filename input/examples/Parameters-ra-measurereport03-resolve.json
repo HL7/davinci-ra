@@ -7,17 +7,17 @@
             "resource": {
                 "resourceType": "Bundle",
                 "meta": {
-                    "lastUpdated": "2022-11-26T22:16:07.403-07:00",
+                    "lastUpdated": "2022-11-27T08:29:50.346-07:00",
                     "profile": [
                         "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-bundle"
                     ]
                 },
                 "identifier": {
                     "system": "urn:ietf:rfc:3986",
-                    "value": "urn:uuid:526d7ca9-2795-4fac-b0d5-ac5fc1a1eb99"
+                    "value": "urn:uuid:c7651be1-1b74-4c53-8303-48d6efc9d2b4"
                 },
                 "type": "document",
-                "timestamp": "2022-11-26T23:10:18.664-07:00",
+                "timestamp": "2022-11-27T08:29:50.348-07:00",
                 "entry": [
                     {
                         "fullUrl": "http://localhost:8080/fhir/Composition/6839e14d-0486-4bd1-a125-8d0769441d85",
@@ -25,7 +25,7 @@
                             "resourceType": "Composition",
                             "id": "6839e14d-0486-4bd1-a125-8d0769441d85",
                             "meta": {
-                                "lastUpdated": "2022-11-26T22:16:07.403-07:00",
+                                "lastUpdated": "2022-11-27T08:29:50.346-07:00",
                                 "profile": [
                                     "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-composition"
                                 ]
@@ -322,9 +322,9 @@
                             "id": "ra-measurereport03",
                             "meta": {
                                 "versionId": "1",
-                                "lastUpdated": "2022-11-26T22:16:07.403-07:00",
+                                "lastUpdated": "2022-11-27T08:29:50.346-07:00",
                                 "profile": [
-                                    "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-bundle"
+                                    "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
                                 ]
                             },
                             "extension": [
@@ -503,8 +503,8 @@
                             "id": "ra-patient02",
                             "meta": {
                                 "versionId": "1",
-                                "lastUpdated": "2022-11-26T13:16:16.265-07:00",
-                                "source": "#wIx499KWI9iK0diu",
+                                "lastUpdated": "2022-11-27T08:01:53.900-07:00",
+                                "source": "#ryJwncGcyhl7IrYP",
                                 "profile": [
                                     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
                                 ]
@@ -626,8 +626,8 @@
                             "id": "ra-measurereport03-remediate",
                             "meta": {
                                 "versionId": "1",
-                                "lastUpdated": "2022-11-26T20:51:56.658-07:00",
-                                "source": "#aQgTkHj4zjPWxtIk",
+                                "lastUpdated": "2022-11-27T08:05:53.105-07:00",
+                                "source": "#ga7Geh19yM6bVUZw",
                                 "profile": [
                                     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
                                 ]
@@ -697,8 +697,8 @@
                                     }
                                 ],
                                 "versionId": "1",
-                                "lastUpdated": "2022-11-26T13:16:16.795-07:00",
-                                "source": "#DkaWlGZ62lrmQW1j",
+                                "lastUpdated": "2022-11-27T08:01:54.463-07:00",
+                                "source": "#NTqMrv2zUunnUfgA",
                                 "profile": [
                                     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
                                 ]
@@ -763,8 +763,8 @@
                                     }
                                 ],
                                 "versionId": "1",
-                                "lastUpdated": "2022-11-26T13:16:16.861-07:00",
-                                "source": "#2thGL9GcyLmo6Ehy",
+                                "lastUpdated": "2022-11-27T08:01:54.544-07:00",
+                                "source": "#hfuxDEK7EMELNJSi",
                                 "profile": [
                                     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
                                 ]
@@ -837,8 +837,8 @@
                             "id": "ra-condition31pat02",
                             "meta": {
                                 "versionId": "1",
-                                "lastUpdated": "2022-11-26T13:16:16.733-07:00",
-                                "source": "#N4ZwazYPcvoQs2UT",
+                                "lastUpdated": "2022-11-27T08:01:54.395-07:00",
+                                "source": "#8LrTA64aI4Geqzlk",
                                 "profile": [
                                     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
                                 ]
@@ -908,8 +908,8 @@
                                     }
                                 ],
                                 "versionId": "1",
-                                "lastUpdated": "2022-11-26T20:51:42.829-07:00",
-                                "source": "#imE2p1DpP63kgahu",
+                                "lastUpdated": "2022-11-27T08:05:53.150-07:00",
+                                "source": "#JdSjf3gh6qNEppfv",
                                 "profile": [
                                     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
                                 ]
