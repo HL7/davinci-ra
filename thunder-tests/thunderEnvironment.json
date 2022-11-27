@@ -9,7 +9,7 @@
     "data": [
       {
         "name": "RAServer",
-        "value": "http://localhost:8080/fhir/"
+        "value": "https://cloud.alphora.com/sandbox/r4/ra/fhir/"
       },
       {
         "name": "Public Endpoint",
