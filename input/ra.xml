@@ -908,10 +908,6 @@
       <value value="resources\capabilitystatement"/>
     </parameter>
     <parameter>
-      <code value="path-binary"/>
-      <value value="input\cql"/>
-    </parameter>
-    <parameter>
       <code value="path-expansion-params"/>
       <value value="../input/exp-params.json"/>
     </parameter>
