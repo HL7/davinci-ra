@@ -6,11 +6,6 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="Condition/ra-conditionR01pat01" key="Condition-ra-conditionR01pat01" name=""/>
-<artifact id="Condition/ra-measurereport03-remediate" key="Condition-ra-measurereport03-remediate" name=""/>
-<artifact id="DocumentReference/ra-documentreference01pat01" key="DocumentReference-ra-documentreference01pat01" name=""/>
-<artifact id="Encounter/ra-measurereport03-remediate" key="Encounter-ra-measurereport03-remediate" name=""/>
-<artifact id="Observation/ra-obs01pat02" key="Observation-ra-obs01pat02" name=""/>
 <artifact id="CodeSystem/coding-gap-request" key="CodeSystem-coding-gap-request" name="Coding Gap Request"/>
 <artifact id="StructureDefinition/ra-codingGapRequest" key="StructureDefinition-ra-codingGapRequest" name="Coding Gap Request"/>
 <artifact id="ValueSet/coding-gap-request" key="ValueSet-coding-gap-request" name="Coding Gap Request"/>
@@ -42,6 +37,8 @@
 <artifact id="Condition/ra-condition42pat03" key="Condition-ra-condition42pat03" name="Condition42pat03: Other artificial openings of gastrointestinal tract status"/>
 <artifact id="Condition/ra-condition43pat01" key="Condition-ra-condition43pat01" name="Condition43pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication"/>
 <artifact id="Condition/ra-condition44pat01" key="Condition-ra-condition44pat01" name="Condition44pat01: Allergic bronchopulmonary aspergillosis"/>
+<artifact id="Condition/ra-conditionR01pat01" key="Condition-ra-conditionR01pat01" name="ConditionR01pat01: Cystic fibrosis with other intestinal manifestations"/>
+<artifact id="DocumentReference/ra-documentreference01pat01" key="DocumentReference-ra-documentreference01pat01" name="Documentreference01pat01: Outpatient Note"/>
 <artifact id="Encounter/ra-encounter44pat01" key="Encounter-ra-encounter44pat01" name="Encounter on 20170118"/>
 <artifact id="Encounter/ra-encounter08pat01" key="Encounter-ra-encounter08pat01" name="Encounter on 20170203"/>
 <artifact id="Encounter/ra-encounter45pat01" key="Encounter-ra-encounter45pat01" name="Encounter on 20180721"/>
@@ -56,6 +53,7 @@
 <artifact id="Encounter/ra-encounter02pat01" key="Encounter-ra-encounter02pat01" name="Encounter on 20210131"/>
 <artifact id="Encounter/ra-encounter35pat03" key="Encounter-ra-encounter35pat03" name="Encounter on 20210212"/>
 <artifact id="Encounter/ra-encounter09pat01" key="Encounter-ra-encounter09pat01" name="Encounter on 20210327"/>
+<artifact id="Encounter/ra-measurereport03-remediate" key="Encounter-ra-encounter09pat01" name="Encounter on 20210327"/>
 <artifact id="Encounter/ra-encounter22pat03" key="Encounter-ra-encounter22pat03" name="Encounter on 20210701"/>
 <artifact id="Encounter/ra-encounter01pat03" key="Encounter-ra-encounter01pat03" name="Encounter on 20210714"/>
 <artifact id="Encounter/ra-encounter16pat03" key="Encounter-ra-encounter16pat03" name="Encounter on 20210727"/>
@@ -72,8 +70,10 @@
 <artifact id="StructureDefinition/ra-groupReference" key="StructureDefinition-ra-groupReference" name="Group Reference"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hiearchicalStatus" key="StructureDefinition-ra-hiearchicalStatus" name="Hiearchical Status Extension"/>
 <artifact id="StructureDefinition/ra-hierarchicalStatus" key="StructureDefinition-ra-hierarchicalStatus" name="Hierarchical Status"/>
+<artifact id="Condition/ra-measurereport03-remediate" key="Condition-ra-measurereport03-remediate" name="Measurereport03-remediate: Cystic fibrosis with other intestinal manifestations"/>
 <artifact id="Observation/ra-obs01pat03" key="Observation-ra-obs01pat03" name="Observation: Creatinine Result from 20210728"/>
 <artifact id="Observation/ra-obs02pat03" key="Observation-ra-obs02pat03" name="Observation: PHQ9 from 20190823"/>
+<artifact id="Observation/ra-obs01pat02" key="Observation-ra-obs01pat02" name="Observation: Trypsin [Mass/volume] in Serum or Plasma result from 20190617"/>
 <artifact id="Organization/ra-payer01" key="Organization-ra-payer01" name="Organization01: ABC Payer"/>
 <artifact id="Organization/ra-org03pat03" key="Organization-ra-org03pat03" name="Organization: Community HealthCenter"/>
 <artifact id="Organization/ra-org01pat01" key="Organization-ra-org01pat01" name="Organization: Community Urgent Care"/>

@@ -229,6 +229,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Condition/ra-conditionR01pat01"/>
+      </reference>
+      <name value="ConditionR01pat01: Cystic fibrosis with other intestinal manifestations"/>
+      <description value="Cystic fibrosis with other intestinal manifestations"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Condition/ra-condition21pat03"/>
       </reference>
       <name value="Condition21pat03: Type 2 diabetes mellitus without complications"/>
@@ -296,7 +304,15 @@
         <reference value="Condition/ra-condition43pat01"/>
       </reference>
       <name value="Condition43pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication"/>
-      <description value="Diabetes mellitus due to underlying condition with other diabetic kidney complicationt"/>
+      <description value="Diabetes mellitus due to underlying condition with other diabetic kidney complication"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-measurereport03-remediate"/>
+      </reference>
+      <name value="Measurereport03-remediate: Cystic fibrosis with other intestinal manifestations"/>
+      <description value="Cystic fibrosis with other intestinal manifestations - for remediation"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -305,6 +321,14 @@
       </reference>
       <name value="Condition44pat01: Allergic bronchopulmonary aspergillosis"/>
       <description value="Allergic bronchopulmonary aspergillosis"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="DocumentReference/ra-documentreference01pat01"/>
+      </reference>
+      <name value="Documentreference01pat01: Outpatient Note"/>
+      <description value="Outpatient Note"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -477,6 +501,22 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Encounter/ra-measurereport03-remediate"/>
+      </reference>
+      <name value="Encounter on 20210327"/>
+      <description value="Encounter on 2021-03-27 - for remediation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/ra-obs01pat02"/>
+      </reference>
+      <name value="Observation: Trypsin [Mass/volume] in Serum or Plasma result from 20190617"/>
+      <description value="Trypsin [Mass/volume] in Serum or Plasma result from 2019-06-17"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Observation/ra-obs01pat03"/>
       </reference>
       <name value="Observation: Creatinine Result from 20210728"/>
@@ -496,7 +536,7 @@
         <reference value="Observation/ra-obs21pat01"/>
       </reference>
       <name value="Trypsin [Mass/volume] in Serum or Plasma from 20170617"/>
-      <description value="Trypsin [Mass/volume] in Serum or Plasma from 20170617"/>
+      <description value="Trypsin [Mass/volume] in Serum or Plasma from 2017-06-17"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -837,11 +877,6 @@
         <page>
           <nameUrl value="Measure-RAModelExample03.html"/>
           <title value="Measure03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Parameters-Patient-ra-patient01-report.html"/>
-          <title value="Parameters01"/>
           <generation value="generated"/>
         </page>
       </page>
