@@ -589,6 +589,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Parameters/Parameters-ra-measurereport03-approve"/>
+      </reference>
+      <name value="Approve Coding Gaps Result"/>
+      <description value="Example of a Coding Gaps ($ra.approve-coding-gaps) result for Patient02"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Parameters/Parameters-ra-measurereport03-resolve"/>
       </reference>
       <name value="Resolve Coding Gaps Result"/>

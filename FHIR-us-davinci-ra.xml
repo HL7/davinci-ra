@@ -6,6 +6,7 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="Parameters/Parameters-ra-measurereport03-approve" key="Parameters-Parameters-ra-measurereport03-approve" name="Approve Coding Gaps Result"/>
 <artifact id="CodeSystem/coding-gap-request" key="CodeSystem-coding-gap-request" name="Coding Gap Request"/>
 <artifact id="StructureDefinition/ra-codingGapRequest" key="StructureDefinition-ra-codingGapRequest" name="Coding Gap Request"/>
 <artifact id="ValueSet/coding-gap-request" key="ValueSet-coding-gap-request" name="Coding Gap Request"/>
