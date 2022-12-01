@@ -122,3 +122,5 @@
 [Generated]:guidance-ra-coding-gap-report-generation.html
 [Assisted]:guidance-ra-coding-gap-report-generation.html
 [Evaluated]:guidance-ra-coding-gap-report-generation.html
+
+[Clinical Evaluation DetectedIssue]: StructureDefinition-ra-coding-gap-clinical-evaluation-detectedissue.html
