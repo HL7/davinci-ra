@@ -1,0 +1,54 @@
+{
+    "resourceType" : "Organization",
+    "id" : "ra-org-author",
+    "meta" : {
+      "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+          "valueString" : "Risk Adjustment Author"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+          "valueMarkdown" : "Organization that is the Author of the RA report"
+        }
+      ],
+      "profile" : [
+        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+      ]
+    },
+    "active" : true,
+    "type" : [
+      {
+        "coding" : [
+          {
+            "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+            "code" : "prov",
+            "display" : "Healthcare Provider"
+          }
+        ]
+      }
+    ],
+    "name" : "Risk Adjustment Author",
+    "telecom" : [
+      {
+        "system" : "phone",
+        "value" : "(+1) 555-555-3013 (ext 999)"
+      },
+      {
+        "system" : "email",
+        "value" : "patient_question_outpatient_clinic@GHH.com"
+      }
+    ],
+    "address" : [
+      {
+        "line" : [
+          "1060 Village Avenue"
+        ],
+        "city" : "Ann Harbor",
+        "state" : "MI",
+        "postalCode" : "99999",
+        "country" : "USA"
+      }
+    ]
+  }
+  

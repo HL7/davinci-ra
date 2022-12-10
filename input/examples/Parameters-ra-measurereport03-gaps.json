@@ -6,34 +6,34 @@
       "name": "return",
       "resource": {
         "resourceType": "Bundle",
-        "id": "2162de77-7259-4732-a5d9-0bf96a9d74e0",
+        "id": "9a29bd55-0d20-4939-82b6-7fdff87b39d6",
         "meta": {
-          "lastUpdated": "2022-12-10T22:35:42.888+00:00",
+          "lastUpdated": "2022-12-10T22:47:30.770+00:00",
           "profile": [
             "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-bundle"
           ]
         },
         "identifier": {
           "system": "urn:ietf:rfc:3986",
-          "value": "urn:uuid:ab84a889-5232-4f4d-a9ab-6e9ba63e2c62"
+          "value": "urn:uuid:afe41d2e-2e29-49ec-a27c-231b585c3124"
         },
         "type": "document",
-        "timestamp": "2022-12-10T22:36:30.460+00:00",
+        "timestamp": "2022-12-10T22:47:33.545+00:00",
         "entry": [
           {
-            "fullUrl": "http://localhost:8080/fhir/Composition/edb9e309-4149-4f40-8b0d-c11402c1382e",
+            "fullUrl": "http://localhost:8080/fhir/Composition/bd4ec2b3-5d98-4ee9-97f1-d2cf57137547",
             "resource": {
               "resourceType": "Composition",
-              "id": "edb9e309-4149-4f40-8b0d-c11402c1382e",
+              "id": "bd4ec2b3-5d98-4ee9-97f1-d2cf57137547",
               "meta": {
-                "lastUpdated": "2022-12-10T22:35:42.888+00:00",
+                "lastUpdated": "2022-12-10T22:47:30.770+00:00",
                 "profile": [
                   "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-composition"
                 ]
               },
               "identifier": {
                 "system": "urn:ietf:rfc:3986",
-                "value": "urn:uuid:0a0f59f4-30ca-4342-8e23-973021f5a27f"
+                "value": "urn:uuid:8862e447-80a1-4fbb-be45-508bd5e33ab6"
               },
               "status": "preliminary",
               "type": {
@@ -48,10 +48,10 @@
               "subject": {
                 "reference": "Patient/ra-patient02"
               },
-              "date": "2022-12-10T22:36:30+00:00",
+              "date": "2022-12-10T22:47:33+00:00",
               "author": [
                 {
-                  "reference": "Organization/alphora"
+                  "reference": "Organization/ra-org-author"
                 }
               ],
               "title": "Risk Adjustment Coding Gaps Report for Patient/ra-patient02",
@@ -107,7 +107,7 @@
               "resourceType": "DetectedIssue",
               "id": "ra-measurereport03-group-001",
               "meta": {
-                "lastUpdated": "2022-12-10T22:36:30.457+00:00",
+                "lastUpdated": "2022-12-10T22:47:33.542+00:00",
                 "profile": [
                   "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-original-detectedissue"
                 ]
@@ -169,7 +169,7 @@
               "resourceType": "DetectedIssue",
               "id": "ra-measurereport03-group-002",
               "meta": {
-                "lastUpdated": "2022-12-10T22:36:30.458+00:00",
+                "lastUpdated": "2022-12-10T22:47:33.543+00:00",
                 "profile": [
                   "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-original-detectedissue"
                 ]
@@ -225,8 +225,8 @@
               "id": "ra-measurereport03",
               "meta": {
                 "versionId": "1",
-                "lastUpdated": "2022-12-10T22:35:26.427+00:00",
-                "source": "#kuqGZ7XmAh1kSOZy",
+                "lastUpdated": "2022-12-10T22:46:50.066+00:00",
+                "source": "#c1O3Svq2CJKMZdA9",
                 "profile": [
                   "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
                 ]
@@ -400,24 +400,24 @@
             }
           },
           {
-            "fullUrl": "http://localhost:8080/fhir/Organization/alphora",
+            "fullUrl": "http://localhost:8080/fhir/Organization/ra-org-author",
             "resource": {
               "resourceType": "Organization",
-              "id": "alphora",
+              "id": "ra-org-author",
               "meta": {
                 "extension": [
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
-                    "valueString": "Organization for STU2 Testing"
+                    "valueString": "Risk Adjustment Author"
                   },
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
-                    "valueMarkdown": "Provider Organization for STU2 Testing data"
+                    "valueMarkdown": "Organization that is the Author of the RA report"
                   }
                 ],
                 "versionId": "1",
-                "lastUpdated": "2022-12-10T22:35:31.714+00:00",
-                "source": "#nsNDl5d0pjp63Cfv",
+                "lastUpdated": "2022-12-10T22:47:16.420+00:00",
+                "source": "#LmUoc1wdFTl4NOvN",
                 "profile": [
                   "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
                 ]
@@ -434,7 +434,7 @@
                   ]
                 }
               ],
-              "name": "GHH Outpatient Clinic",
+              "name": "Risk Adjustment Author",
               "telecom": [
                 {
                   "system": "phone",
@@ -465,8 +465,8 @@
               "id": "ra-patient02",
               "meta": {
                 "versionId": "1",
-                "lastUpdated": "2022-12-10T22:35:31.875+00:00",
-                "source": "#0KzWyzgRr8jcFBOB",
+                "lastUpdated": "2022-12-10T22:47:01.386+00:00",
+                "source": "#RRJkOTxDcpe6i7I2",
                 "profile": [
                   "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
                 ]
@@ -598,8 +598,8 @@
                   }
                 ],
                 "versionId": "1",
-                "lastUpdated": "2022-12-10T22:35:32.482+00:00",
-                "source": "#arSiexOawAYgjT71",
+                "lastUpdated": "2022-12-10T22:47:01.728+00:00",
+                "source": "#03zMOc3AkZqUW4KP",
                 "profile": [
                   "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
                 ]
@@ -664,8 +664,8 @@
                   }
                 ],
                 "versionId": "1",
-                "lastUpdated": "2022-12-10T22:35:32.579+00:00",
-                "source": "#XkEWRh3NUMDY7sSW",
+                "lastUpdated": "2022-12-10T22:47:01.833+00:00",
+                "source": "#cCetRI7DgwvX3hBk",
                 "profile": [
                   "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
                 ]
@@ -738,8 +738,8 @@
               "id": "ra-condition31pat02",
               "meta": {
                 "versionId": "1",
-                "lastUpdated": "2022-12-10T22:35:32.386+00:00",
-                "source": "#QJdfQ5CJpOrqWmhj",
+                "lastUpdated": "2022-12-10T22:47:01.628+00:00",
+                "source": "#iT6AUMaYr2C9Wfkd",
                 "profile": [
                   "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
                 ]
