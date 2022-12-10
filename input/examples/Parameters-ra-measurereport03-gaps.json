@@ -6,34 +6,34 @@
       "name": "return",
       "resource": {
         "resourceType": "Bundle",
-        "id": "d7c8a4ae-f99a-483d-8ffb-1762fae83b5e",
+        "id": "2162de77-7259-4732-a5d9-0bf96a9d74e0",
         "meta": {
-          "lastUpdated": "2022-11-27T11:41:40.374-07:00",
+          "lastUpdated": "2022-12-10T22:35:42.888+00:00",
           "profile": [
             "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-bundle"
           ]
         },
         "identifier": {
           "system": "urn:ietf:rfc:3986",
-          "value": "urn:uuid:198f4f4a-a00c-44ac-823f-4ebc17a2c5be"
+          "value": "urn:uuid:ab84a889-5232-4f4d-a9ab-6e9ba63e2c62"
         },
         "type": "document",
-        "timestamp": "2022-11-27T11:42:12.848-07:00",
+        "timestamp": "2022-12-10T22:36:30.460+00:00",
         "entry": [
           {
-            "fullUrl": "http://localhost:8080/fhir/Composition/e1e54c14-dd88-4843-8a6a-4ebc8481c0e2",
+            "fullUrl": "http://localhost:8080/fhir/Composition/edb9e309-4149-4f40-8b0d-c11402c1382e",
             "resource": {
               "resourceType": "Composition",
-              "id": "e1e54c14-dd88-4843-8a6a-4ebc8481c0e2",
+              "id": "edb9e309-4149-4f40-8b0d-c11402c1382e",
               "meta": {
-                "lastUpdated": "2022-11-27T11:41:40.374-07:00",
+                "lastUpdated": "2022-12-10T22:35:42.888+00:00",
                 "profile": [
                   "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-composition"
                 ]
               },
               "identifier": {
                 "system": "urn:ietf:rfc:3986",
-                "value": "urn:uuid:86130cbc-a8f0-461e-a02f-7c1b18a7fd9f"
+                "value": "urn:uuid:0a0f59f4-30ca-4342-8e23-973021f5a27f"
               },
               "status": "preliminary",
               "type": {
@@ -48,10 +48,10 @@
               "subject": {
                 "reference": "Patient/ra-patient02"
               },
-              "date": "2022-11-27T11:42:12-07:00",
+              "date": "2022-12-10T22:36:30+00:00",
               "author": [
                 {
-                  "reference": "Organization/alphora-author"
+                  "reference": "Organization/alphora"
                 }
               ],
               "title": "Risk Adjustment Coding Gaps Report for Patient/ra-patient02",
@@ -107,7 +107,7 @@
               "resourceType": "DetectedIssue",
               "id": "ra-measurereport03-group-001",
               "meta": {
-                "lastUpdated": "2022-11-27T11:42:12.844-07:00",
+                "lastUpdated": "2022-12-10T22:36:30.457+00:00",
                 "profile": [
                   "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-original-detectedissue"
                 ]
@@ -169,7 +169,7 @@
               "resourceType": "DetectedIssue",
               "id": "ra-measurereport03-group-002",
               "meta": {
-                "lastUpdated": "2022-11-27T11:42:12.846-07:00",
+                "lastUpdated": "2022-12-10T22:36:30.458+00:00",
                 "profile": [
                   "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-original-detectedissue"
                 ]
@@ -225,8 +225,8 @@
               "id": "ra-measurereport03",
               "meta": {
                 "versionId": "1",
-                "lastUpdated": "2022-11-27T11:41:32.446-07:00",
-                "source": "#wAgGoE23HHuP7Olf",
+                "lastUpdated": "2022-12-10T22:35:26.427+00:00",
+                "source": "#kuqGZ7XmAh1kSOZy",
                 "profile": [
                   "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
                 ]
@@ -400,10 +400,10 @@
             }
           },
           {
-            "fullUrl": "http://localhost:8080/fhir/Organization/alphora-author",
+            "fullUrl": "http://localhost:8080/fhir/Organization/alphora",
             "resource": {
               "resourceType": "Organization",
-              "id": "alphora-author",
+              "id": "alphora",
               "meta": {
                 "extension": [
                   {
@@ -416,8 +416,8 @@
                   }
                 ],
                 "versionId": "1",
-                "lastUpdated": "2022-11-27T11:41:32.782-07:00",
-                "source": "#5Ky1usO18wcPq977",
+                "lastUpdated": "2022-12-10T22:35:31.714+00:00",
+                "source": "#nsNDl5d0pjp63Cfv",
                 "profile": [
                   "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
                 ]
@@ -465,8 +465,8 @@
               "id": "ra-patient02",
               "meta": {
                 "versionId": "1",
-                "lastUpdated": "2022-11-27T11:41:32.865-07:00",
-                "source": "#L6a8KNlpUj1zD7Wq",
+                "lastUpdated": "2022-12-10T22:35:31.875+00:00",
+                "source": "#0KzWyzgRr8jcFBOB",
                 "profile": [
                   "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
                 ]
@@ -598,8 +598,8 @@
                   }
                 ],
                 "versionId": "1",
-                "lastUpdated": "2022-11-27T11:41:33.479-07:00",
-                "source": "#vPSJNOHeU56J67w1",
+                "lastUpdated": "2022-12-10T22:35:32.482+00:00",
+                "source": "#arSiexOawAYgjT71",
                 "profile": [
                   "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
                 ]
@@ -664,8 +664,8 @@
                   }
                 ],
                 "versionId": "1",
-                "lastUpdated": "2022-11-27T11:41:33.556-07:00",
-                "source": "#vf05vDlGPNIU5oBM",
+                "lastUpdated": "2022-12-10T22:35:32.579+00:00",
+                "source": "#XkEWRh3NUMDY7sSW",
                 "profile": [
                   "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
                 ]
@@ -738,8 +738,8 @@
               "id": "ra-condition31pat02",
               "meta": {
                 "versionId": "1",
-                "lastUpdated": "2022-11-27T11:41:33.395-07:00",
-                "source": "#otgPmT2aiMeoCSO4",
+                "lastUpdated": "2022-12-10T22:35:32.386+00:00",
+                "source": "#QJdfQ5CJpOrqWmhj",
                 "profile": [
                   "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
                 ]
