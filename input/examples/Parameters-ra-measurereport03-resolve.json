@@ -7,32 +7,32 @@
             "resource": {
                 "resourceType": "Bundle",
                 "meta": {
-                    "lastUpdated": "2022-11-28T21:47:19.971-07:00",
+                    "lastUpdated": "2022-12-11T04:10:01.653+00:00",
                     "profile": [
                         "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-bundle"
                     ]
                 },
                 "identifier": {
                     "system": "urn:ietf:rfc:3986",
-                    "value": "urn:uuid:13bdddf2-be3b-4112-94b6-d5b2676eb014"
+                    "value": "urn:uuid:53d7ee27-255f-44fd-b46a-25cf4acf1c57"
                 },
                 "type": "document",
-                "timestamp": "2022-11-28T21:52:22.436-07:00",
+                "timestamp": "2022-12-11T04:11:38.927+00:00",
                 "entry": [
                     {
-                        "fullUrl": "http://localhost:8080/fhir/Composition/e1e54c14-dd88-4843-8a6a-4ebc8481c0e2",
+                        "fullUrl": "http://localhost:8080/fhir/Composition/fda52dd3-bf60-442d-bbda-01de8158c44d",
                         "resource": {
                             "resourceType": "Composition",
-                            "id": "e1e54c14-dd88-4843-8a6a-4ebc8481c0e2",
+                            "id": "fda52dd3-bf60-442d-bbda-01de8158c44d",
                             "meta": {
-                                "lastUpdated": "2022-11-28T21:47:19.971-07:00",
+                                "lastUpdated": "2022-12-11T04:10:01.653+00:00",
                                 "profile": [
                                     "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-composition"
                                 ]
                             },
                             "identifier": {
                                 "system": "urn:ietf:rfc:3986",
-                                "value": "urn:uuid:86130cbc-a8f0-461e-a02f-7c1b18a7fd9f"
+                                "value": "urn:uuid:ee2bc63e-956f-4002-9db6-054d224e85He3"
                             },
                             "status": "final",
                             "type": {
@@ -47,10 +47,10 @@
                             "subject": {
                                 "reference": "Patient/ra-patient02"
                             },
-                            "date": "2022-11-27T11:42:12-07:00",
+                            "date": "2022-11-30T00:14:48+00:00",
                             "author": [
                                 {
-                                    "reference": "Organization/alphora-author"
+                                    "reference": "Organization/ra-org-author"
                                 }
                             ],
                             "title": "Risk Adjustment Coding Gaps Report for Patient/ra-patient02",
@@ -128,8 +128,8 @@
                             "id": "ra-measurereport03-remediate",
                             "meta": {
                                 "versionId": "1",
-                                "lastUpdated": "2022-11-28T21:47:19.969-07:00",
-                                "source": "#0j179M7WsPgvYFoV",
+                                "lastUpdated": "2022-11-30T03:16:18.198+00:00",
+                                "source": "#VHGS3h4rPplmdwv6",
                                 "profile": [
                                     "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-clinical-evaluation-detectedissue"
                                 ]
@@ -204,7 +204,7 @@
                             "resourceType": "DetectedIssue",
                             "id": "ra-measurereport03-group-002",
                             "meta": {
-                                "lastUpdated": "2022-11-28T21:47:19.969-07:00",
+                                "lastUpdated": "2022-11-30T03:16:18.198+00:00",
                                 "profile": [
                                     "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-original-detectedissue"
                                 ]
@@ -259,7 +259,7 @@
                             "resourceType": "DetectedIssue",
                             "id": "ra-measurereport03-group-001",
                             "meta": {
-                                "lastUpdated": "2022-11-28T21:47:19.969-07:00",
+                                "lastUpdated": "2022-11-30T03:16:18.198+00:00",
                                 "profile": [
                                     "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-original-detectedissue"
                                 ]
@@ -322,7 +322,7 @@
                             "id": "ra-measurereport03",
                             "meta": {
                                 "versionId": "1",
-                                "lastUpdated": "2022-11-28T21:47:19.970-07:00",
+                                "lastUpdated": "2022-12-11T04:10:01.653+00:00",
                                 "profile": [
                                     "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
                                 ]
@@ -497,10 +497,10 @@
                         }
                     },
                     {
-                        "fullUrl": "http://localhost:8080/fhir/Organization/alphora-author",
+                        "fullUrl": "http://localhost:8080/fhir/Organization/ra-org-author",
                         "resource": {
                             "resourceType": "Organization",
-                            "id": "alphora-author",
+                            "id": "ra-org-author",
                             "meta": {
                                 "extension": [
                                     {
@@ -513,8 +513,8 @@
                                     }
                                 ],
                                 "versionId": "1",
-                                "lastUpdated": "2022-11-27T11:41:32.782-07:00",
-                                "source": "#5Ky1usO18wcPq977",
+                                "lastUpdated": "2022-11-30T00:13:41.032+00:00",
+                                "source": "#RxQXPYLDqTpqmNxO",
                                 "profile": [
                                     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
                                 ]
@@ -562,8 +562,8 @@
                             "id": "ra-patient02",
                             "meta": {
                                 "versionId": "1",
-                                "lastUpdated": "2022-11-28T21:46:42.915-07:00",
-                                "source": "#aGfe3BHmhDm2zaDM",
+                                "lastUpdated": "2022-12-11T04:09:52.824+00:00",
+                                "source": "#2cjMnbUJBp3t3Czg",
                                 "profile": [
                                     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
                                 ]
@@ -685,8 +685,8 @@
                             "id": "ra-measurereport03-remediate",
                             "meta": {
                                 "versionId": "1",
-                                "lastUpdated": "2022-11-28T21:47:00.721-07:00",
-                                "source": "#RAfmKeEjTFPy1wfw",
+                                "lastUpdated": "2022-12-11T04:11:27.673+00:00",
+                                "source": "#yPOpdXBp8SYfSapc",
                                 "profile": [
                                     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
                                 ]
@@ -756,8 +756,8 @@
                                     }
                                 ],
                                 "versionId": "1",
-                                "lastUpdated": "2022-11-28T21:46:43.181-07:00",
-                                "source": "#ZcsXEaVF0dfhsHkA",
+                                "lastUpdated": "2022-12-11T04:11:34.544+00:00",
+                                "source": "#oZUrklkswqJrrOxm",
                                 "profile": [
                                     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
                                 ]
@@ -822,8 +822,8 @@
                                     }
                                 ],
                                 "versionId": "1",
-                                "lastUpdated": "2022-11-28T21:46:43.244-07:00",
-                                "source": "#GD8wwQ2S6UydU1Sh",
+                                "lastUpdated": "2022-12-11T04:11:32.623+00:00",
+                                "source": "#7qQIsJCVmgA1n7mV",
                                 "profile": [
                                     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
                                 ]
@@ -906,8 +906,8 @@
                                     }
                                 ],
                                 "versionId": "1",
-                                "lastUpdated": "2022-11-28T21:47:00.768-07:00",
-                                "source": "#QaTizV9drruQ8n5F",
+                                "lastUpdated": "2022-12-11T04:11:30.223+00:00",
+                                "source": "#x8YC7uEuw2Fgu3ob",
                                 "profile": [
                                     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
                                 ]
@@ -962,8 +962,8 @@
                             "id": "ra-condition31pat02",
                             "meta": {
                                 "versionId": "1",
-                                "lastUpdated": "2022-11-28T21:46:43.118-07:00",
-                                "source": "#5JFplyNTi3OsmpfK",
+                                "lastUpdated": "2022-12-11T04:11:36.562+00:00",
+                                "source": "#wlSrejtwz21GEE9Y",
                                 "profile": [
                                     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
                                 ]
