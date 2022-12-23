@@ -9,7 +9,7 @@
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-request",
   "version": "1.0.0",
   "name": "CodingGapRequest",
-  "title": "Coding Gap Request",
+  "title": "Coding Gap Request ValueSet",
   "status": "draft",
   "experimental": false,
   "publisher": "Clinical Quality Information Workgroup",

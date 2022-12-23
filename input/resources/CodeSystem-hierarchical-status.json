@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
   "version": "1.0.0",
   "name": "RiskAdjustmenthierarchicalStatus",
-  "title": "Risk Adjustment Hierarchical Status",
+  "title": "Risk Adjustment Hierarchical Status CodeSystem",
   "status": "active",
   "experimental": false,
   "publisher":"Clinical Quality Information Workgroup",

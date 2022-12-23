@@ -9,7 +9,7 @@
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/hierarchical-status",
   "version": "1.0.0",
   "name": "RiskAdjustmenthierarchicalStatus",
-  "title": "Risk Adjustment Hierarchical Status",
+  "title": "Risk Adjustment Hierarchical Status ValueSet",
   "status": "active",
   "experimental": false,
   "description": "Risk adjustment hierarchical status",

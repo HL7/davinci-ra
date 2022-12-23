@@ -4,7 +4,7 @@
   "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
   "version": "1.0.0",
   "name": "RiskAdjustmentEvidenceStatus",
-  "title": "Risk Adjustment Evidence Status",
+  "title": "Risk Adjustment Evidence Status CodeSystem",
   "status": "active",
   "experimental": false,
   "publisher":"Clinical Quality Information Workgroup",

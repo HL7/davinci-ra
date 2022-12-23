@@ -503,7 +503,7 @@
       <reference>
         <reference value="Encounter/ra-measurereport03-remediate"/>
       </reference>
-      <name value="Encounter on 20210327"/>
+      <name value="Encounter on 20210327 for remediation"/>
       <description value="Encounter on 2021-03-27 - for remediation"/>
       <exampleBoolean value="true"/>
     </resource>
@@ -569,6 +569,14 @@
       </reference>
       <name value="Organization: Community HealthCenter"/>
       <description value="Community HealthCenter"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/ra-org-author"/>
+      </reference>
+      <name value="Organization: Risk Adjustment Author"/>
+      <description value="Risk Adjustment Author"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

@@ -9,7 +9,7 @@
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/evidence-status",
   "version": "1.0.0",
   "name": "RiskAdjustmentEvidenceStatus",
-  "title": "Risk Adjustment Evidence Status",
+  "title": "Risk Adjustment Evidence Status ValueSet",
   "status": "active",
   "experimental": false,
   "description": "Concepts for risk adjustment evidence status",
