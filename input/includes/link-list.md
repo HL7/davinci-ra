@@ -105,6 +105,7 @@
 [Specifying dCC]: dcc.html
 [Transition Strategy]: dcc-transition-strategy.html
 
+[Risk Adjustment Clinical Evaluation Evidence Task]: guidance.html
 [Risk Adjustment Coding Gap Bundle]: StructureDefinition-ra-coding-gap-bundle.html
 [Risk Adjustment Coding Gap Composition]: StructureDefinition-ra-coding-gap-composition.html
 [Risk Adjustment Coding Gap Clinical Evaluation DetectedIssue]: StructureDefinition-ra-coding-gap-clinical-evaluation-detectedissue.html
