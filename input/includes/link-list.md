@@ -59,7 +59,7 @@
 [FHIR Artifacts/Operations]: operations.html
 [FHIR Artifacts/Profiles]: profiles.html
 [FHIR Artifacts/Terminology]: terminology.html
-[General Guidance]: guidance-ra-general-guidance.html
+[General Guidance]: general-guidance.html
 [Glossary/Acronyms]: glossary.html#acronyms
 [Glossary/Glossary]: glossary.html
 [Group01: Risk Adjustment Patient Group, (Patient01: Eve Everywoman)]: Group-ra-group01.html
@@ -76,6 +76,7 @@
 [MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Nelda Nuclear)]: MeasureReport-ra-measurereport05.html
 [MeasureReport06: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient02: Adam Everyman)]: MeasureReport-ra-measurereport06.html
 [MeasureReport]: {{site.data.fhir.path}}measurereport.html
+[Methodology]: methodology.html
 [Observation01Pat03: Pat03 Creatinine on 20210728]: Observation-ra-obs01pat03.html
 [Observation02Pat03: Pat03 PHQ9 on 20190823]: Observation-ra-obs02pat03.html
 [Observation21Pat01: Pat01 Trypsin (Mass/volume) in Serum or Plasma from 20170617]: Observation-ra-obs21pat01.html
@@ -91,7 +92,10 @@
 [Practitioner01: Harold Hippocrates]: Practitioner-ra-prac01pat01.html
 [Practitioner02: Patrick Pump]: Practitioner-ra-prac02pat02.html
 [Practitioner03: Otto Osler]: Practitioner-ra-prac03pat03.html
+[Remediation]: remediation.html
 [$report]:OperationDefinition-report.html
+[Report Generation]: report-generation.html
+[Report Query]: report-query.html
 [Risk Adjustment Coding Gap Remediation]: guidance-ra-coding-gap-remediation.html
 [Risk Adjustment Coding Gap Resolution]: guidance-ra-coding-gap-resolution.html
 [Risk Adjustment Coding Gap Report Bundle]: StructureDefinition-ra-measurereport-bundle.html
