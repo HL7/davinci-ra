@@ -38,11 +38,11 @@ This implementation guide relies on the following specifications:
 ### Overview of the Risk Adjustment workflow
 
 The Risk Adjustment Condition Category workflow consists of three major phases
-- [Risk Adjustment Coding Gap Report Generation]
+- [Report Generation]
 - [Report Query]
 - [Remediation]
 
-In the [Risk Adjustment Coding Gap Report Generation] phase, this IG documents three ways to create a MeasureReport; some with possible evaluated resources. 
+In the [Report Generation] phase, this IG documents three ways to create a MeasureReport; some with possible evaluated resources. 
    - [Generated] where the payer's software generated a FHIR MeasureReport format not using FHIR operations.  The payer can choose to also reference and create evaluated resources.  Note that these Resources should be conformant with US Core if the resource is profiled there.
    - [Assisted] where the payer uses a non-FHIR RESTful API with a CSV file containing the data to populate the MeasureReport.  This method will not contain evaluatedResources
    - [Evaluated] which is where the payer has defined their Condition Categories using CQL and FHIR.  These are called Digital Condition Categories (dCC).  They can then run the [$evaluateMeasure] operation against their FHIR server to generate the MeasureReport which points to the evaluated resources used by the CQL.
@@ -53,8 +53,8 @@ The provider can then use the Task resource to [Remediate] any gaps on the repor
 
 The provider then posts the Task on the payer's system.  The payer will review and either accept the evidence or reject it.  The provider can retrieve the completed Task(s) from the payer's system.
 
-PENDING - need latest diagram
-{% include img-portrait.html img="risk-adjustment-workflow.png" caption = "Figure 2.1-1 The diagram below shows the entire Risk Adjustment Coding Gap workflow.  This includes the report generation, remediation steps by both the provider and risk adjustment coder and finally the gap resolution by the payer.  Each of these steps are detailed on separate tabs below this tab" %}
+
+{% include img-portrait.html img="risk-adjustment-workflow.png" caption = "Figure 2.1-1 The diagram below shows the entire Risk Adjustment Coding Gap workflow.  This includes the report generation, query, remediation task steps by both the provider and risk adjustment coder. Each of these steps are detailed on separate tabs below this tab" %}
 
 
 </div><!-- new-content -->

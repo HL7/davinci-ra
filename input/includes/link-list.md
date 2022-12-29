@@ -1,6 +1,7 @@
 [Home]: index.html "Home Page"
 
 [Asynchronous Request Patterns]: https://www.hl7.org/fhir/async.html
+[Bulk]: report-generation.html#Bulk-data-request-for-Risk-Adjustment-Coding-Gap-MeasureReport
 [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]: Bundle-ra-bundle01.html
 [Clinical Evaluation Period]:glossary.html#glossary
 [Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm
@@ -109,7 +110,7 @@
 [Specifying dCC]: dcc.html
 [Transition Strategy]: dcc-transition-strategy.html
 
-[Risk Adjustment Clinical Evaluation Evidence Task]: guidance.html
+[Risk Adjustment Clinical Evaluation Evidence Task]: StructureDefinition-risk-adjustment-clinical-evaluation-evidence-task.html
 [Risk Adjustment Coding Gap Bundle]: StructureDefinition-ra-coding-gap-bundle.html
 [Risk Adjustment Coding Gap Composition]: StructureDefinition-ra-coding-gap-composition.html
 [Risk Adjustment Coding Gap Clinical Evaluation DetectedIssue]: StructureDefinition-ra-coding-gap-clinical-evaluation-detectedissue.html
@@ -124,8 +125,8 @@
 
 [Risk Adjustment Coding Gap MeasureReport]: StructureDefinition-ra-measurereport.html
 [$ra.evaluate-Measure]: OperationDefinition-ra.evaluate-measure.html
-[Generated]:guidance-ra-coding-gap-report-generation.html
-[Assisted]:guidance-ra-coding-gap-report-generation.html
-[Evaluated]:guidance-ra-coding-gap-report-generation.html
+[Generated]: report-generation.html#the-generated-approach
+[Assisted]: report-generation.html#the-assisted-approach
+[Evaluated]:report-generation.html#the-evaluated-approach
 
 [Clinical Evaluation DetectedIssue]: StructureDefinition-ra-coding-gap-clinical-evaluation-detectedissue.html

@@ -26,37 +26,32 @@ Once the CC gaps have been identified and their filtering flags are set, the nex
 
 To support a transition strategy for dCC and to simplify adoption of this IG, all three of these processes may be used in parallel. For example, a payer organization might use dCCs for evaluating diabetes, heart disease, heart failure, and COPD, with all other CC evaluated through certified CC coders. This means that some means must be provided for generating a single combined MeasureReport containing CC gaps from different input streams: the diabetes CC gaps might come from dCCs, while other CC gaps might come from SAS datasets or the like. In future state as dCCs become available, a MeasureReport may result from the merger of the assisted, generated, and evaluated data streams. In this way a MeasureReport will contain a holistic view of a patient’s CC gaps, no matter where those gaps originated.
 
-Once all Measure Reports have been created, this IG defines an operation, [$ra.coding-gaps] which will create a Risk Adjustment Coding Bundle for a single patient or group of patients.  This operation can be run by either the provider to pull the report to their system.  Or it can be run by the payer and pushed/posted to the provider’s system.  The Risk Adjustment Coding Bundle is a document consisting of the [Risk Adjustment Coding Gap Report] and a [Risk Adjustment Coding Gap Original DetectedIssue] for each CC on the report.  This document can be updated/remediated in the next step of the process, [Risk Adjustment Coding Gap Remediation]
+Once all Measure Reports have been created, a query can be run for one or more [Risk Adjustment Coding Gap Report] for a single patient or group of patients.  This query can be run by either the provider to pull the report to their system.  Or it can be run by the payer and pushed/posted to the provider’s system.  
 
 ### Actors
 The actors involved in generating and exchanging risk adjustment coding gap reports are defined as the Provider and the Payer for ease of understanding in this IG.  These roles may be played by other entities in your scenario.
-- <b>Providers</b> are the actors requesting risk adjustment coding gap reports using the $ra.coding-gaps operation.
-- <b>Payors</b> are the actors receiving the request for retrieving the risk adjustment coding gap reports using the $ra.coding-gaps operation.
+- <b>Providers</b> are the actors requesting risk adjustment coding gap reports using a FHIR query on the MeasureReport resource.
+- <b>Payors</b> are the actors receiving the query request for retrieving the risk adjustment coding gap MeasureReport resources.
 
-In the example shown in Figure 2.2-1, a payer acts both as Client and Server in this scenario. The payer (acting as the Client) calls the [$ra.coding-gaps] operation on their Server to query matching Risk Adjustment Coding Gap Reports based on the parameters provided in the operation, then the payer posts the reports to providers.
+In the example shown in Figure 2.2-1, a payer acts both as Client and Server in this scenario. The payer (acting as the Client) calls queries for the [Risk Adjustment Coding Gaps Report] on their Server based on the parameters provided, then the payer posts the searchset bundle to providers.
 
-As shown in Figure 2.2-2, the Provider calls the [$ra.coding-gaps] operation that is defined in this IG and based on the parameters provided in the operation  returns the Risk Adjustment  to the Client.
+As shown in Figure 2.2-2, the Provider queries as is defined in this IG and based on the parameters provided returns the Risk Adjustment MeasureReport and evaluated Resources to the Client.
 
 {% include img-portrait.html img="actors-post.png" caption = "Figure 2.2-1 Risk Adjustment Coding Gap Reporting Actors - Example 1" %}
 
 {% include img-portrait.html img="actors-request.png" caption = "Figure 2.2-2 Risk Adjustment Coding Gap Reporting Actors - Example 2" %}
 
 
-### $ra.coding-gaps Operation and Risk Adjustment Coding Gap Report
+### Approaches for Generating Risk Adjustment Coding Gap Reports
+The payer must create MeasureReports for the patient(s) in order to share their view of the condition categories.  There are three methods to accomplish this.  As mentioned above, the payer can use one or more of these processes as fits their need or stage as they transition their processes. The [Risk Adjustment Coding Gap MeasureReport], a profile of the [MeasureReport] resource, provides a standardized representation to construct these reports.
 
-The risk adjustment coding gap reports are generated in one of three ways described below. The [Risk Adjustment Coding Gap MeasureReport], a profile of the [MeasureReport] resource, provides a standardized representation to construct these reports. The [$ra.coding-gaps] operation defined in this implementation guide can be used by a Client to request risk adjustment coding gap reports of applicable risk adjustment models for one or more patients (a Group) from the Server.
-
-
-#### Risk Adjustment Coding Gap Report
-Before the operation is run to generate the Risk Adjustment Coding Gap Bundle, the MeasureReports for the patient(s) must be created.  There are three methods to accomplish this.  As mentioned above, the payer can use one or more of these processes as fits their need or stage as they transition their processes.
-
-##### The Assisted Approach
+#### The Assisted Approach
 This method is described here, [Assisted].  The payer's risk adjustment system can create a .csv file that is used as input to a RESTful operation to create the Risk Adjustment Coding Gap Report.  Note that using this approach means that no evaluated resources will be created or referenced by the Risk Adjustment Coding Gap Report.
 
-##### The Generated Approach
+#### The Generated Approach
 This approach has the payer's back end systems creating a FHIR MeasureReport following the [Risk Adjustment Coding Gap Report] profile.  If desired, the payer's system can also created the resources pointed to in the evaluatedResources element.
 
-##### The Evaluated Approach
+#### The Evaluated Approach
 This approach introduces a new concept to Risk Adjustment, showing that CC's can be represented by using CQL and the FHIR Resources to generate the report directly from FHIR using the [$ra.evaluate-measure] operation.  You can find more information on this process in the [Specifying dCC] section
 
 
@@ -69,25 +64,11 @@ The [MeasureReport] resource has zero to many `group` elements. Each `group` ele
  - the hierarchical status indicating whether hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded. The status can be either applied-superseded, applied-not-superseded, not-applied, or not-applicable.
 
 In addition, the [Risk Adjustment Coding Gap MeasureReport] provides capability of sharing supporting evidence for a Condition Category (CC) through the use of the `MeasureReport.evaluatedResource` element. This supporting evidence may include resources for data such as encounters, lab results, medications, and procedures, and the `evaluatedResource` shall reference the appropriate US Core profile. The extension [ra-groupReference](StructureDefinition-ra-groupReference.html) added to the `evaluatedResource` element enables tying a specific supporting evidence to a Condition Category (CC). This is accomplished by setting the extension’s `valueString` to be the same value of the `MeasureGroup.group.id` of the Condition Category (CC) to establish the association between a supporting evidence and one or more Condition Categories.  
-
-#### $ra.coding-gaps Operation
-The [$ra.coding-gaps] operation requires three input (IN) parameters: `subject`, `periodStart`, and `periodEnd`. The `subject` parameter references either a single patient or a group of patients (as specified in the [Patient Group] profile). The term clinical evaluation period refers to the time period during which the risk adjusting encounters could be conducted and documented with expectations of submissions for risk adjustment purposes. The `periodStart` and `periodEnd` parameters are the start and end dates of the clinical evaluation period.
-
-If the `subject` is valid, the dates provided in `periodStart` and `periodEnd` will then be evaluated for any overlaps against the clinical evaluation period (`MeasureReport.period.start` and `MeasureReport.period.end`) of risk adjustment coding gap reports available on the Server for that patient. The [$ra.coding-gaps] operation returns a [Risk Adjustment Coding Gap Report Bundle] if matching risk adjustment coding gap reports were found for a patient. This bundle is a FHIR collection bundle, which must contain a patient ([US Core Patient](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html)) entry and zero or more entries of risk adjustment coding gap reports ([Risk Adjustment Coding Gap MeasureReport]). All risk adjustment coding gap reports contained in a [Risk Adjustment Coding Gap Report Bundle] must be for the same patient.
-
-The $ra.coding-gaps operation will always return one [Parameters](https://www.hl7.org/fhir/parameters.html) whether the `subject` is a single patient or a group of patients. Risk Adjustment Coding Gap Report Bundle for a patient is in a `Parameters.parameter` element. A Risk Adjustment Coding Gap Report Bundle contains the Risk Adjustment Coding Gap Reports for the same patient. For example, if a Group has 10 valid patients, then a Parameters will contain 10 `Parameters.parameter` elements, with each `Parameters.parameter` for a unique patient. Detailed documentation and conformance statements are listed on the page for [$ra.coding-gaps].
-
---start here add [Risk Adjustement Coding Gap Original DetectedIssue] review examples
-
-An example workflow of a Client calls the [$ra.coding-gaps] operation to request risk adjustment coding gap reports for a single patient is shown below in Figure 3-1.
-
-{% include img-portrait.html img="risk-adjustment-coding-gap-report-single-patient.png" caption = "Figure 3-1 Report Operation Workflow for a Single Patient" %}
-
 ### Example Risk Adjustment Coding Gaps Report
 
-Figure 3-2 is an example risk adjustment coding gap report. The Client calls the [$ra.coding-gaps] operation for patient Eve Everywoman (`subject`) and for a clinical evaluation period from January 1, 2021 to December 31, 2021 (`periodStart` and `periodEnd`). The Server receives the request and finds a matching risk adjustment coding gap report for Eve Everywoman that has a clinical evaluation period of January 1, 2021 to September 30, 2021, which overlaps the `periodStart` and `periodEnd` dates provided in the [$ra.coding-gaps] operation. This report was created by a backend risk adjustment engine on October 18th, 2021 using the risk adjustment model CMS-HCC V24. As shown in this example report, Eve Everywoman has five Hierarchical Condition Categories (HCCs). Three of the HCCs are historic diagnoses and two are suspected diagnoses. For example, one of the historic diagnoses is HCC 18 (Diabetes with no Complications). The status of this coding gap is shown as closed and the evidence status date is April 1, 2021. The supporting evidence field shows the clinical data that was used to close the coding gap HCC 18.
+Figure 2-2 is an example risk adjustment coding gap report. The Client queries for the [Risk Adjustment Coding Gap MeasureReport]s for patient Eve Everywoman (`subject`) and for a clinical evaluation period from January 1, 2021 to December 31, 2021 (`periodStart` and `periodEnd`). The Server receives the request and finds a matching risk adjustment coding gap report for Eve Everywoman that has a clinical evaluation period of January 1, 2021 to September 30, 2021, which overlaps the `periodStart` and `periodEnd` dates provided in the query - see [Report Query]. This report was created by a backend risk adjustment engine on October 18th, 2021 using the risk adjustment model CMS-HCC V24. As shown in this example report, Eve Everywoman has five Hierarchical Condition Categories (HCCs). Three of the HCCs are historic diagnoses and two are suspected diagnoses. For example, one of the historic diagnoses is HCC 18 (Diabetes with no Complications). The status of this coding gap is shown as closed and the evidence status date is April 1, 2021. The supporting evidence field shows the clinical data that was used to close the coding gap HCC 18.
 
-{% include img-portrait.html img="report-risk-adjustment.png" caption = "Figure 3-2 Example Risk Adjustment Coding Gap Report" %}
+{% include img-portrait.html img="report-risk-adjustment.png" caption = "Figure 2-2 Example Risk Adjustment Coding Gap Report" %}
 
 ### Resources and Profiles
 
@@ -95,21 +76,21 @@ The following resources and their profiles specified in this implementation guid
 
 |Resource Type|Profile Name|Link to Profile|
 |---|---|---|
-|Bundle|Risk Adjustment Coding Gap Report Bundle|[Risk Adjustment Coding Gap Report Bundle]|
 |Group|Patient Group Profile|[Patient Group]|
 |MeasureReport|Risk Adjustment Coding Gap MeasureReport|[Risk Adjustment Coding Gap MeasureReport]|
 |Measure|Risk Adjustment Model Measure|[Risk Adjustment Model Measure]|
 
-Figure 3-3 provides a graphical view of how these resources are related to the example report above. The main resource is the [Risk Adjustment Coding Gap MeasureReport] profile. This coding gap report references a [Risk Adjustment Model Measure], which indicates CMS-HCC V24 is the risk adjustment model this report is based on. The coding gap report also references the Patient ([US Core Patient](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html)) as well as the Organization ([US Core Organization](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-organization.html)) that generated the report. The graph shows three groups within a [Risk Adjustment Coding Gap MeasureReport] using three example HCCs from Figure 3-2 to illustrate each `group` corresponds to an HCC including its attributes.
+Figure 2-3 provides a graphical view of how these resources are related to the example report above. The main resource is the [Risk Adjustment Coding Gap MeasureReport] profile. This coding gap report references a [Risk Adjustment Model Measure], which indicates CMS-HCC V24 is the risk adjustment model this report is based on. The coding gap report also references the Patient ([US Core Patient](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html)) as well as the Organization ([US Core Organization](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-organization.html)) that generated the report. The graph shows three groups within a [Risk Adjustment Coding Gap MeasureReport] using three example HCCs from Figure 2-2 to illustrate each `group` corresponds to an HCC including its attributes.
 
-{% include img-portrait.html img="report-risk-adjustment-resource-graph.png" caption = "Figure 3-3 Resource Graph for Risk Adjustment Coding Gap Report" %}
+{% include img-portrait.html img="report-risk-adjustment-resource-graph.png" caption = "Figure 2-3 Resource Graph for Risk Adjustment Coding Gap Report" %}
 
 ### Usage
 
 #### Request Risk Adjustment Coding Gap MeasureReport
 
-`GET [base]/MeasureReport/$ra.coding-gaps`
+`GET [base]/MeasureReport/?subject=Patient/ra-patient02&period=ge2021-01-01&period=le2021-12-31&_include=MeasureReport:evaluated-resource`
 
+Needs review
 {% include examplebutton.html example="get-risk-adjustment-coding-gap-report-usage-example" b_title = "Click Here To See Example GET Risk Adjustment Coding Gap Report" %}
 
 
@@ -117,7 +98,7 @@ Figure 3-3 provides a graphical view of how these resources are related to the e
 
 If Clients are requesting risk adjustment coding gap reports for many patients, they may consider using the FHIR [Asynchronous Request Patterns] for the Bulk Data exchange operation.
 
-`GET [base]/MeasureReport/$ra.coding-gaps`
+`GET [base]/MeasureReport/?subject=Group/ra-group123&period=ge2021-01-01&period=le2021-12-31&_include=MeasureReport:evaluated-resource`
 
 {% include examplebutton.html example="get-risk-adjustment-coding-gaps-report-usage-bulk-example" b_title = "Click Here To See Example GET Risk Adjustment Coding Gap Report Using Bulk Data" %}
 
