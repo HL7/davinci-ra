@@ -1,14 +1,13 @@
 <div class="bg-info" markdown="1">
-This Continuous Integration Build is under development to prepare for the STU2 ballot. Where possible, draft content will be highlighted with blue or green background.
+This IG is under development to prepare for the STU2 ballot. Where possible, draft content will be highlighted with blue or green background.
 </div>
-
 
 ###  Summary
 
-The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide describes exchanging risk adjustment coding gaps between payers and providers. Risk adjusted premium calculations are important to government managed care. To better inform providers of opportunities to address risk adjusted conditions, better enable payers to communicate risk adjustment information, and enhance government sponsors' ability to allocate funding accurately, payers and providers need a standard protocol to share and receive clinical data related to risk adjustment and a standard methodology to communicate risk based coding, documentation and submission status of chronic conditions. The first STU of this implementation guide focused on the standard exchange format of risk adjustment coding gaps from payers to providers, it offers potential for reducing administrative burden experienced by providers by standardizing the reporting they receive from all payers.
+The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide describes exchanging risk adjustment coding gaps between payers and providers. Risk adjusted premium calculations are important to government managed care. To better inform providers of opportunities to address risk adjusted conditions, better enable payers to communicate risk adjustment information, and enhance government sponsors' ability to allocate funding accurately, payers and providers need a standard protocol to share and receive clinical data related to risk adjustment and a standard methodology to communicate risk based coding, documentation and submission status of chronic conditions. The <span class="bg-success" markdown="1">first Standard for Trial Use (STU) version</span><!-- new-content --> of this implementation guide focused on the standard exchange format of risk adjustment coding gaps from payers to providers, it offers potential for reducing administrative burden experienced by providers by standardizing the reporting they receive from all payers.
 
 <div class="bg-success" markdown="1">
-This version of the implementation guide focuses on the communication from providers back to payers. It adds functionalities to support the workflow that allows providers and risk adjustment coders to review and remediate the risk adjustment coding gap reports provided by the payer. Providers and risk adjustment coders may close gaps, invalidate gaps, or discover net-new condition category during medical record review. The added functionalities allow them to provide the updated coding gap reports along with supporting clinical evaluation evidence back to payers. This version also introduces digital Condition Category (dCC). It describes how to specify dCCs using Clinical Quality Language (CQL) through an example and provides a transition strategy for moving toward the pathway of taking a more automated process of generating risk adjustment coding gap reports by evaluating dCCs against clinical data. 
+This version of the implementation guide focuses on the communication from providers back to payers. It adds functionalities to support the workflow that allows providers and certified risk adjustment coders to review and remediate the risk adjustment coding gap reports provided by the payer. Providers and risk adjustment coders may close gaps, invalidate gaps, or discover net-new condition category during medical record review. The added functionalities allow them to provide the updated coding gap data along with supporting clinical evaluation evidence back to payers. This version also introduces digital Condition Category (dCC). It describes how to specify dCCs using Clinical Quality Language (CQL) through an example and provides a transition strategy for moving toward the pathway of taking a more automated process of generating risk adjustment coding gap reports by evaluating dCCs against clinical data. 
 </div><!-- new-content -->
 
 This implementation guide is supported by the Da Vinci initiative which is a private effort to accelerate the adoption of Health Level Seven International Fast Healthcare Interoperability Resources (HL7® FHIR®) as the standard to support and integrate value-based care (VBC) data exchange across communities. Like all Da Vinci Implementation Guides, it follows the [HL7 Da Vinci Guiding Principles] for exchange of patient health information. As an HL7 FHIR Implementation Guide, changes to this specification are managed by the sponsoring [Clinical Quality Information (CQI) Work Group] and are incorporated as part of the standard balloting process.
@@ -20,33 +19,23 @@ This implementation guide is divided into several pages which are listed at the 
 - [Home]\: The home page provides the summary, background information, scope, and actors for this implementation guide.
 
 <div class="bg-success" markdown="1">
-- [Methodology]\: The methodology pages provide guidance on the resource profiles and operation defined in this implementation guide.
-    - [General Guidance]\: guidance that applies to all functionalities in this implementation guide
-    - [Report Generation]\: how generating risk adjustment coding gap report is accomplished
-    - [Report Query]\: using query to return Risk Adjustment Coding Gap Reports and their evaluated resources
-    - [Remediation]\: how to use Task to request a change to gap status or add to new condition category to those that appears on the report
-
-- [Digital Condition Category (dCC)]\: Section explaining how Risk Adjustment Condition Category codes can be represented by CQL in a similar fashion to quality measures
-    - [Specifying dCC]\: Defines how to represent digital Condition Category codes and includes a simple example
-    - [Transition Strategy]\: We know dCC's will take time to incorporate.  This documents a transition strategy that can be used to get to the point where we can represent at least most CC's using dCC's.
-</div><!-- new-content -->
-
-- [FHIR Artifacts/Profiles]\: This page lists the set of Profiles that are defined in this implementation guide to exchange risk adjustment coding gaps.
-
-- [FHIR Artifacts/Extensions]\: This page lists the set of Extensions that are defined in this implementation guide to exchange risk adjustment coding gaps.
-
-- [FHIR Artifacts/Operations]\: This page lists operations defined in this implementation guide.
-
-- [FHIR Artifacts/Terminology]\: This page lists code systems and value sets defined in this implementation guide.
-
-- [FHIR Artifacts/Capability statements]\: This page describes the expected FHIR capabilities of the risk adjustment actors of this implementation guide.
-
-- [Examples]\: List of all the examples used in this implementation guide.
-
-- [Glossary/Acronyms]\: List of acronyms for this implementation guide.
-
-- [Glossary/Glossary]\: List of glossary for this implementation guide.
-
+- [Methodology]\: These pages provide guidance on the resource profiles and operation defined in this implementation guide.
+    - [General Guidance]\: This page provides guidance that applies to all functionalities in this implementation guide.
+    - [Report Generation]\: This page describes how generating Risk Adjustment Coding Gap Report is accomplished.
+    - [Report Query]\: This page provides guidance on using query to return Risk Adjustment Coding Gap Report(s) and their evaluated resources.
+    - [Remediation]\: This page documents how to use Task to request gap closure, gap invalidation, or add a net-new to coding gaps reported in a Risk Adjustment Coding Gap Report and provide clinical evaluation evidence.
+- [Digital Condition Category (dCC)]\: These pages explain how a Condition Category can be structured as a proportion measure and be specified using CQL as a digital Condition Category in a similar fashion to electronic quality measures.
+    - [Specifying dCC]\: This page defines digital Condition Category and provides an example.
+    - [Transition Strategy]\: This page describes transition strategy that could help support the transition state where more Condition Categories will be specified as dCCs in a phased manner.   
+</div><!-- new-content -->   
+- FHIR Artifacts: These pages lists FHIR artifacts specified in this implementation guide. 
+    - [Profiles]\: This page lists the set of Profiles that are defined in this implementation guide to exchange risk adjustment coding gaps.
+    - [Extensions]\: This page lists the set of Extensions that are defined in this implementation guide to exchange risk adjustment coding gaps.
+    - [Operations]\: This page lists operations defined in this implementation guide.
+    - [Terminology]\: This page lists code systems and value sets defined in this implementation guide.
+    - [Capability statements]\: This page describes the expected FHIR capabilities of the risk adjustment actors of this implementation guide.
+- [Examples]\: This page lists of all the examples used in this implementation guide.
+- [Glossary]\: This page lists of glossary and acronyms for this implementation guide.
 - [Downloads]\: This page provides links to downloadable artifacts.
 
 ### Background
@@ -99,29 +88,13 @@ What’s going on with these three different model versions? There are three ans
 2.	Risk scores for members diagnosed with certain medical conditions such as End Stage Renal Disease (ESRD) or who are enrolled in a special Medicare Advantage Plan for All-encompassing Care for the Elderly (PACE<sup>[1](glossary.html#acronyms)</sup>) are always scored using the model which is one version previous to the current one. While the V22 and V24 models were being blended both were considered current, meaning that the next previous version was V21. When a member is diagnosed with renal disease and CMS designates them as ESRD, the member shifts from being scored under the V22/V24 models to being scored under the V21 model. By 2022 the blending period was over, the V24 model became the most current model, the V22 model came into use for ESRD and PACE, and the V21 model was phased out.
 3.	Throughout this period the CMS-RxHCC V05 model was also in continuous use. The purpose of the CMS-RxHCC model is to normalize the expected cost of medications across populations, just as the CMS-HCC model normalizes the expected cost of medical treatment. Despite the name, the RxHCC model is derived from medical claims – not pharmacy claims. The RxHCC model overlaps with CMS-HCC to a considerable degree; many times the same diagnosis will close both an HCC and an RxHCC, although there are some diagnoses that only roll up to RxHCCs and not HCCs. Many risk adjustment models feature this separation between the medical and prescription drug portions of the model (Medicare CMS-HCC and CMS-RxHCC; Medicaid CPDS and MRX; ACA HHS-HCC and RXC.)
 
-<div class="bg-success" markdown="1">
-
 ### Scope
 
-This version of the Risk Adjustment Implementation Guide has been updated to include not only how to generate a Risk Adjustment Condition Category Coding Gap report for a patient or group of patients but also includes new processes to remediate discrepancies or open gaps on the report.  Finally it allows for the resolution of these discrepancies and gaps and the updating of the payer's system.
-
-This guide also introduces a concept called "digital Condition Categories" where we represent a risk adjustment condition category using CQL.  The $evaluate-measure can be used with the CQL in the Risk Adjustment Measure to generate the MeasureReport including the evaluated resources.  Using the dCC to create the MeasureReport is called the "evaluated" method
-
-This is just one of three ways to generate the MeasureReport.  You can programmatically generate the MeasureReport directly from the software that maintains this data (generated) this can include or not include the evaluated resources.
-
-The last way to generate the MeasureReport is using a RESTful API with a csv input file.  This is called "assisted".  
-
-Once a MeasureReport is created, you can use a standard FHIR query to retrieve the MeasureReport and evaluated resources.  You will find more information on creating the MeasureReports in [General Guidaince] and on generating the reports here, [Report Generation] 
-
-The [Remediation] section defines how a provider, when they find an issue or have data to close a gap, can start the remediation process.  This process allows them to show clinical evidence to the risk adjustment coder to support the change in gap status using the Task Resource.  This same Task allows the Risk Adjustment Coder to let the provider know if they were able to successfuly close or change the gap or if there were issues.
-
-Figure 1-2 shows a high-level example of the risk adjustment workflow in CMS Medicare advantage program. This version of the implementation guide focuses on specifying a standard exchange format, the [Risk Adjustment Coding Gap MeasureReport], from payers to providers. This diagram does not depict preceding steps such as the payer receiving clinical or claims data from providers or other sources, nor does it attempt to define contractual relationships. 
-</div><!-- new-content -->
+After careful review with the risk adjustment subject matter experts, it was determined that the most challenging aspect of the current risk adjustment process was the inconsistent manner in which reports on risk adjustment coding gaps were communicated between a provider (or system operating on their behalf) and a payer (or system operating on the payer’s behalf). Figure 1-2 shows a high-level example of the risk adjustment workflow in CMS Medicare advantage program. <span class="bg-success" markdown="1">This</span><!-- new-content --> implementation guide focuses on specifying a standard exchange format, the Risk Adjustment Coding Gap Report, <span class="bg-success" markdown="1">between </span><!-- new-content -->payers <span class="bg-success" markdown="1">and </span><!-- new-content -->providers. This diagram does not depict preceding steps such as the payer receiving clinical or claims data from providers or other sources, nor does it attempt to define contractual relationships.
 
 {% include img-portrait.html img="workflow-medicare-advantage.png" caption = "Figure 1-2 Workflow for Medicare Advantage Population" %}
 
 This implementation guide does not define how payers determine a coding gap and how coding gaps are produced or managed on the payer side including hierarchies. This implementation guide also does not define suspecting processes and algorithms/predictive models that are used for suspecting analytics. It is the intent of this implementation guide to expand its specifications in future versions to support communication of coding gaps from providers back to the payers, for example to provide a mechanism to allow providers to communicate HCC invalidations to payers.  
-
 
 ---
 
