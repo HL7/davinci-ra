@@ -5,14 +5,14 @@
 
 ### Introduction
 
-The Da Vinci Project member organizations have identified the need of standardizing how risk adjustment coding gaps are communicated between payers and providers. This release of the implementation guide specifies standardized risk adjustment coding gap reports and defines an operation for a Client to query the coding gap reports from a Server for one or more patients. Standardizing the reporting structure helps lessen the burden on the providers in processing the reports so they can more easily address the patients’ care needs. This standardized structure also supports the payer sharing information that they have but the providers may not, such as data from other providers’ claims, lab results, filled prescriptions, etc.
+The Da Vinci Project member organizations have identified the need of standardizing how risk adjustment coding gaps are communicated between payers and providers. This implementation guide specifies standardized risk adjustment coding gap reports and <span class="bg-success" markdown="1">provides guidance</span><!-- new-content --> for <span class="bg-success" markdown="1">Data Consumer</span><!-- new-content --> to query the coding gap reports from <span class="bg-success" markdown="1">payer</span><!-- new-content --> for one or more patients. Standardizing the reporting structure helps lessen the burden on the providers in processing the reports so they can more easily address the patients’ care needs. This standardized structure also supports the payer sharing information that they have but the providers may not, such as data from other providers’ claims, lab results, filled prescriptions, etc. <span class="bg-success" markdown="1">This implementation guide also specifies how the Task resource can be used to support the workflow that enables the feedback loop from Provider and Risk Adjustment Coder back to the Payer after receiving the risk adjustment coding gap reports and conducting medical record review. This feedback loop is important for ahieving the goal of improving the accuracy and completeness of risk adjustment.</span><!-- new-content -->
 
 ### Preconditions and Assumptions
 
-- A contract for medical services exists between the Server and the Client requesting the risk adjustment coding gap reports.
-- Risk adjustment coding gap reports are pre-generated on the Server by a backend system such as a risk adjustment engine for risk adjustment model(s).
-- It is the responsibility of the Server to ensure that the data used in the report is present in a structured and retrievable form.
-- The Server and the Client have agreed upon a process to identify specific patient(s) and exchange the Patient resource's logical id or the Patient Group resource's logical id.
+- A contract for medical services exists between <span class="bg-success" markdown="1">the Data Producer and the Data Consumer</span><!-- new-content --> requesting the risk adjustment coding gap reports.
+- Risk adjustment coding gap reports are pre-generated on the <span class="bg-success" markdown="1">Payer</span><!-- new-content --> by a backend system such as a risk adjustment engine for risk adjustment model(s).
+- It is the responsibility of the <span class="bg-success" markdown="1">Data Producer</span><!-- new-content --> to ensure that the data used in the report is present in a structured and retrievable form.
+- <span class="bg-success" markdown="1">The Data Producer and the Data Consumer</span><!-- new-content --> have agreed upon a process to identify specific patient(s) and exchange the Patient resource's logical id or the Patient Group resource's logical id.
 - Although the exact mechanisms for securing these exchanges are not specified as part of this implementation guide:
     - Exchanges are limited to mutually agreed upon (i.e., between the Server and Client) patient lists or population.
     - Security and privacy should follow [Security and Privacy](https://build.fhir.org/ig/HL7/davinci-ehrx/security.html#security-and-privacy) guidance specified in the Da Vinci Health Record Exchange (HRex) Implementation Guide.   
@@ -20,7 +20,7 @@ The Da Vinci Project member organizations have identified the need of standardiz
 
 ### Attribution
 
-Member attribution establishes associations between providers and payers. The process of establishing and exchanging patient lists for risk adjustment coding gap report is not in the scope of this implementation guide. One possible way of exchanging Member Attribution Lists between providers and payers is described in the [Da Vinci - Risk Based Contracts Member Attribution (ATR) List IG].
+Member attribution establishes associations between providers and payers. The process of establishing and exchanging patient lists for risk adjustment coding gap report is not in the scope of this implementation guide. One possible way of exchanging Member Attribution Lists between providers and payers is described in the [Da Vinci - Member Attribution (ATR) List] implementation guide.
 
 ### Must Support
 Certain elements in the profiles defined in this implementation guide are marked as Must Support. This flag is used to indicate that the element plays a critical role in defining and sharing risk adjustment coding gaps, and implementations SHALL understand and process the element.

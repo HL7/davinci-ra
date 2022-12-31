@@ -98,7 +98,17 @@ This implementation guide does not define how payers determine a coding gap and 
 
 ### Actors
 
-The actors involved in exchanging risk adjustment coding gap reports are <span class="bg-success" markdown="1">payers, providers, and risk adjustment coders such as Certified Risk Adjustment Coder (CRC). The roles that these actors may play in the context of report generation, query and remediation process are described in the Methodology section of this implementation guide.</span><!-- new-content -->
+The actors involved in exchanging risk adjustment coding gap reports are <span class="bg-success" markdown="1">Payer, Provider, and Risk Adjustment Coder. This implementation guide also uses the terms Data Consumer and Data Producer to denote actors.</span><!-- new-content -->
+
+<div class="bg-success" markdown="1">
+- Data Consumer: the term Data Consumer is used to mean either Payer, Provider, or Risk Adjustment Coder when they are in the consumption and use of healthcare data.
+- Data Producer: the term Data Producer is used to mean either Payer, Provider, or Risk Adjustment Coder when they are involved in the de novo creation of healthcare data. 
+- Payer: payer system that can be either the Data Consumer or the Data Producer.
+- Provider: provider system that can be either the Data Consumer or the Data Producer.
+- Risk Adjustment Coder: Risk Adjustment Coder could be a third party system that can be either the Data Consumer or the Data Producer. 
+
+The Methodology section of this implementation guide describes these actors in more detail in the context of report generation, query, and remediation steps of risk adjustment lifecycle. 
+</div><!-- new-content -->   
 
 ---
 
