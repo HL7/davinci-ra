@@ -34,8 +34,8 @@ This implementation guide is divided into several pages which are listed at the 
     - [Operations]\: This page lists operations defined in this implementation guide.
     - [Terminology]\: This page lists code systems and value sets defined in this implementation guide.
     - [Capability statements]\: This page describes the expected FHIR capabilities of the risk adjustment actors of this implementation guide.
-- [Examples]\: This page lists of all the examples used in this implementation guide.
-- [Glossary]\: This page lists of glossary and acronyms for this implementation guide.
+- [Examples]\: This page lists all the examples used in this implementation guide.
+- [Glossary]\: This page lists glossary and acronyms for this implementation guide.
 - [Downloads]\: This page provides links to downloadable artifacts.
 
 ### Background
@@ -94,7 +94,11 @@ After careful review with the risk adjustment subject matter experts, it was det
 
 {% include img-portrait.html img="workflow-medicare-advantage.png" caption = "Figure 1-2 Workflow for Medicare Advantage Population" %}
 
-This implementation guide does not define how payers determine a coding gap and how coding gaps are produced or managed on the payer side including hierarchies. This implementation guide also does not define suspecting processes and algorithms/predictive models that are used for suspecting analytics. It is the intent of this implementation guide to expand its specifications in future versions to support communication of coding gaps from providers back to the payers, for example to provide a mechanism to allow providers to communicate HCC invalidations to payers.  
+This implementation guide does not define how payers determine a coding gap and how coding gaps are produced or managed on the payer side including hierarchies. This implementation guide also does not define suspecting processes and algorithms/predictive models that are used for suspecting analytics.   
+
+### Actors
+
+The actors involved in exchanging risk adjustment coding gap reports are <span class="bg-success" markdown="1">payers, providers, and risk adjustment coders such as Certified Risk Adjustment Coder (CRC). The roles that these actors may play in the context of report generation, query and remediation process are described in the Methodology section of this implementation guide.</span><!-- new-content -->
 
 ---
 
@@ -104,9 +108,9 @@ This implementation guide was made possible by the thoughtful contributions of t
 - *Amy Neftzger, United Healthcare*
 - *Brent Zenobia, Novillus*
 - *Brian J Murtha, Centene*
-- *Bryn Rhodes, SmileDH*
+- *Bryn Rhodes, Smile Digital Health*
 - *Linda Michaelsen, Optum*
-- *Rob Reynolds, SmileDH*
+- *Rob Reynolds, Smile Digital Health*
 - *Viet Nguyen, Stratametrics*
 - *Yan Heras, Optimum eHealth*
 
