@@ -20,7 +20,7 @@ The Da Vinci Project member organizations have identified the need of standardiz
 
 <div class="bg-success" markdown="1">
 
-### Risk Adjustment Workflow Overview
+### Risk Adjustment Lifecycle and Workflow Overview
 
 Figure 2.1-1 shows a high level overview of the risk adjustment workflow, which consists of three main stages: [Report Generation], [Report Query], and [Remediation]. Detailed guidance for each stage is provided on a seperate page under the Methodolody section. 
 </div><!-- new-content -->
