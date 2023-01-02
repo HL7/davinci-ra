@@ -5,7 +5,7 @@
 
 ### Introduction
 
-The Da Vinci Project member organizations have identified the need of standardizing how risk adjustment coding gaps are communicated between payers and providers. This implementation guide specifies standardized risk adjustment coding gap reports and <span class="bg-success" markdown="1">provides guidance</span><!-- new-content --> for <span class="bg-success" markdown="1">Data Consumer</span><!-- new-content --> to query the coding gap reports from <span class="bg-success" markdown="1">payer</span><!-- new-content --> for one or more patients. Standardizing the reporting structure helps lessen the burden on the providers in processing the reports so they can more easily address the patients’ care needs. This standardized structure also supports the payer sharing information that they have but the providers may not, such as data from other providers’ claims, lab results, filled prescriptions, etc. <span class="bg-success" markdown="1">This implementation guide also specifies how the Task resource can be used to support the workflow that enables the feedback loop from Provider and Risk Adjustment Coder back to the Payer after receiving the risk adjustment coding gap reports and conducting medical record review. This feedback loop is important for ahieving the goal of improving the accuracy and completeness of risk adjustment.</span><!-- new-content -->
+The Da Vinci Project member organizations have identified the need of standardizing how risk adjustment coding gaps are communicated between payers and providers. This implementation guide (IG) specifies standardized risk adjustment coding gap reports and <span class="bg-success" markdown="1">provides guidance</span><!-- new-content --> for <span class="bg-success" markdown="1">Data Consumer</span><!-- new-content --> to query the coding gap reports from <span class="bg-success" markdown="1">payer</span><!-- new-content --> for one or more patients. Standardizing the reporting structure helps lessen the burden on the providers in processing the reports so they can more easily address the patients’ care needs. This standardized structure also supports the payer sharing information that they have but the providers may not, such as data from other providers’ claims, lab results, filled prescriptions, etc. <span class="bg-success" markdown="1">This IG also specifies how the Task resource can be used to support the workflow that enables the feedback loop from Provider and Risk Adjustment Coder back to the Payer after receiving the risk adjustment coding gap reports and conducting medical record review. This feedback loop is important for ahieving the goal of improving the accuracy and completeness of risk adjustment.</span><!-- new-content -->
 
 ### Preconditions and Assumptions
 
@@ -13,10 +13,49 @@ The Da Vinci Project member organizations have identified the need of standardiz
 - Risk adjustment coding gap reports are pre-generated on the <span class="bg-success" markdown="1">Payer</span><!-- new-content --> by a backend system such as a risk adjustment engine for risk adjustment model(s).
 - It is the responsibility of the <span class="bg-success" markdown="1">Data Producer</span><!-- new-content --> to ensure that the data used in the report is present in a structured and retrievable form.
 - <span class="bg-success" markdown="1">The Data Producer and the Data Consumer</span><!-- new-content --> have agreed upon a process to identify specific patient(s) and exchange the Patient resource's logical id or the Patient Group resource's logical id.
-- Although the exact mechanisms for securing these exchanges are not specified as part of this implementation guide:
+- Although the exact mechanisms for securing these exchanges are not specified as part of this IG:
     - Exchanges are limited to mutually agreed upon (i.e., between the Server and Client) patient lists or population.
-    - Security and privacy should follow [Security and Privacy](https://build.fhir.org/ig/HL7/davinci-ehrx/security.html#security-and-privacy) guidance specified in the Da Vinci Health Record Exchange (HRex) Implementation Guide.   
+    - Security and privacy should follow [Security and Privacy](https://build.fhir.org/ig/HL7/davinci-ehrx/security.html#security-and-privacy) guidance specified in the Da Vinci Health Record Exchange (HRex) IG.   
     - Systems should use standard authentication and authorization approaches. The [SMART App Launch] and [SMART backend services] authentication/authorization approach are recommended models.
+
+<div class="bg-success" markdown="1">
+
+### Risk Adjustment Workflow Overview
+
+Figure 2.1-1 shows a high level overview of the risk adjustment workflow, which consists of three main stages: [Report Generation], [Report Query], and [Remediation]. Detailed guidance for each stage is provided on a seperate page under the Methodolody section. 
+</div><!-- new-content -->
+
+{% include img-portrait.html img="workflow-overview.png" caption="Figure 2.1-1 Risk Adjustment Workflow Three Stages"%}
+
+<div class="bg-success" markdown="1">
+
+#### Report Generation
+
+Report generation describes three different approaches to generate [Risk Adjustment Coding Gap MeasureReport], which are referred to as Assisted, Generated, and Evaluated in this IG. 
+
+- [Assisted](report-generation.html#the-assisted-approach): A non-FHIR approach. The Payer uses their existing processes, such as SQL, SAS, and object-oriented languages, to generate a comma-separated values (CSV) file with tuples of patient and risk adjustment data. The Payer uses a non-FHIR RESTful API to populate [Risk Adjustment Coding Gap MeasureReport] based on data in the CSV file. A REST server then POST the generated MeasureReports to the FHIR server. A standardized CSV header that could be used by this approach is defined in this IG. This approach will not contain evaluatedResources in a MeasureReport. 
+- [Generated](report-generation.html#the-generated-approach): Mostly a non-FHIR approach. The Payer generates FHIR [Risk Adjustment Coding Gap MeasureReport] and evaluated resources based on data from *traditional* risk adjustment coding gap reports. These *traditional* reports are generated by their existing processes using patient data and risk adjustment data produced by risk adjustment engines. A REST server then POST generated MeasureReports to the FHIR server. 
+- [Evaluated](eport-generation.html#the-evaluated-approach): An FHIR approach. This approach uses the [$ra.evaluate-measure] operation and requires [digital Condition Categories (dCCs)](digital-condition-category.html). The FHIR server is pre-populated with patient data and dCCs. Payer runs the [$ra.evaluate-measure] operation against their FHIR server, CQL is executed against the patient and risk adjustment data to produce [Risk Adjustment Coding Gap MeasureReport] which references the evaluated resources used by CQL logics evaluation.
+
+#### Report Query
+
+Data Consumer can query Risk Adjustment Coding Gap MeasureReports once they are generated. For example, Payer acts as Data Consumer can query reports based on search parameters and POST them to the Provider server. See the [Report Query] page for details and guidance. 
+
+#### Remediation
+
+Once the queried Risk Adjustment Coding Gap MeasureReports have been sent to the intended recipient and filtered to ensure that only germane coding gaps (e.g., HCC gaps) are made available to providers. The provider (or a software program acting on behalf of the provider) determines whether the gap is currently valid, and whether the requested encounter data evidence exists to close the gap. The provider will be able to use the functionalities specified in this IG to begin remediation process to request for a gap closure, gap invalidation, and/or addition of a net-new coding gap, and submits clinical evaluation evidence to support the request. 
+
+The remediation workflow is supported by using the Task resource. Remediation allows the Risk Adjustment Coder to validate evidence and adjudicate coding gap change requests through Task from the Provider，and POST the updated Task to the Payer server and updates the records on the Payer system. 
+
+See the [Remediation] page for more details and guidance. 
+
+#### Workflow Overview
+
+*This is a draft diagram*
+</div><!-- new-content -->
+
+{% include img-portrait.html img="risk-adjustment-workflow.png" caption="Figure 2.1-2 Risk Adjustment Workflow Overview"%}
+
 
 ### Attribution
 
@@ -34,29 +73,5 @@ For more information, see the definition of [Must Support](http://hl7.org/fhir/R
 This implementation guide relies on the following specifications:
 - [FHIR R4](http://hl7.org/fhir/R4/)
 - [US Core STU3.1.1](http://hl7.org/fhir/us/core/STU3.1.1)
-<div class="bg-success" markdown="1">
-### Overview of the Risk Adjustment workflow
-
-The Risk Adjustment Condition Category workflow consists of three major phases
-- [Report Generation]
-- [Report Query]
-- [Remediation]
-
-In the [Report Generation] phase, this IG documents three ways to create a MeasureReport; some with possible evaluated resources. 
-   - [Generated] where the payer's software generated a FHIR MeasureReport format not using FHIR operations.  The payer can choose to also reference and create evaluated resources.  Note that these Resources should be conformant with US Core if the resource is profiled there.
-   - [Assisted] where the payer uses a non-FHIR RESTful API with a CSV file containing the data to populate the MeasureReport.  This method will not contain evaluatedResources
-   - [Evaluated] which is where the payer has defined their Condition Categories using CQL and FHIR.  These are called Digital Condition Categories (dCC).  They can then run the [$evaluateMeasure] operation against their FHIR server to generate the MeasureReport which points to the evaluated resources used by the CQL.
-
-Once a MeasureReport is created, it can then be queried by the practitioner or queried by the payer and posted to the provider's server. See [Report Query]
-
-The provider can then use the Task resource to [Remediate] any gaps on the report.  Using the Task resource, the provider can ask that a gap be closed, request an invalidation of a gap and/or request a new condition category be added.  Supporting clinical evidence can be pointed to or included in the Task as contained resources.
-
-The provider then posts the Task on the payer's system.  The payer will review and either accept the evidence or reject it.  The provider can retrieve the completed Task(s) from the payer's system.
-
-
-{% include img-portrait.html img="risk-adjustment-workflow.png" caption = "Figure 2.1-1 The diagram below shows the entire Risk Adjustment Coding Gap workflow.  This includes the report generation, query, remediation task steps by both the provider and risk adjustment coder. Each of these steps are detailed on separate tabs below this tab" %}
-
-
-</div><!-- new-content -->
 
 {% include link-list.md %}

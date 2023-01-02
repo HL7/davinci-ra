@@ -905,7 +905,7 @@
       <page>
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="change-log.html"/>
