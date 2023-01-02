@@ -96,7 +96,7 @@
 [$report]:OperationDefinition-report.html
 [Report Generation]: report-generation.html
 [Report Query]: report-query.html
-[Risk Adjustment Clinical Evaluation Evidence Task]: StructureDefinition-risk-adjustment-clinical-evaluation-evidence-task.html
+[Risk Adjustment Clinical Evaluation Evidence Task]: StructureDefinition-ra-clinical-evaluation-evidence-task.html
 [Risk Adjustment Coding Gap Remediation]: guidance-ra-coding-gap-remediation.html
 [Risk Adjustment Coding Gap Resolution]: guidance-ra-coding-gap-resolution.html
 [Risk Adjustment Coding Gap Report Bundle]: StructureDefinition-ra-measurereport-bundle.html
