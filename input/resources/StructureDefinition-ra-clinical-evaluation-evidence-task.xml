@@ -83,7 +83,7 @@
             <path value="Task.input"/>            
             <slicing>
                 <discriminator>
-                    <type value="value"/>
+                    <type value="pattern"/>
                     <path value="type"/>
                 </discriminator>
                 <rules value="open"/>
@@ -100,19 +100,20 @@
             <mustSupport value="true"/>
         </element>         
         <element id="Task.input:measurereport_group_id.type">
-            <path value="Task.input.type"/>
-<!--            
+            <path value="Task.input.type"/> 
+<!--                            
             <patternCodableConcept>
                 <coding>
                     <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-task-input-type"/>
                     <code value="measurereport-group-id"/>
                 </coding>
-            </patternCodableConcept>
-<-->            
+            </patternCodableConcept>   
+-->                   
             <mustSupport value="true"/>
         </element>  
        <element id="Task.input:measurereport_group_id.value[x]">
-            <path value="Task.input.value[x]"/>
+            <path value="Task.input.valueString"/>
+            <short value="Value of MeasureReport.group.id"/>
             <type>
                <code value="string"/>
             </type>

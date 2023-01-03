@@ -1,7 +1,10 @@
 
-<div class="bg-info" markdown="1">
-Risk Adjustment Operation Type Code System and Value Set are in draft and for discussions.
-</div>
+<div class="bg-success" markdown="1">
+New value sets and code systems added for STU2:
+- Coding Gap Task Status ValueSet
+- Coding Gap Request ValueSet
+- Coding Gap Request CodeSystem
+</div><!-- new-content -->
 
 ### Value Sets
 
