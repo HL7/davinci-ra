@@ -92,10 +92,12 @@
 
         <element id="Composition.section.entry">
             <path value="Composition.section.entry"/>
-            <!-- <slicing>
+            <!-- note: in order to slice by profile like this the DetectedIssue profiles would need need some differentiator.  
+            As is, they only differ by modifierExtension and that's not sufficient because both could have one.
+            <slicing>
                 <discriminator>
-                    <type value="value"/>
-                    <path value="resolve().meta.profile"/>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing> -->
