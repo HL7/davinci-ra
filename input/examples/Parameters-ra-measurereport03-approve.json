@@ -127,9 +127,7 @@
                             "resourceType": "DetectedIssue",
                             "id": "ra-measurereport03-remediate",
                             "meta": {
-                                "versionId": "1",
                                 "lastUpdated": "2022-12-11T03:59:47.062+00:00",
-                                "source": "#VHGS3h4rPplmdwv6",
                                 "profile": [
                                     "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-clinical-evaluation-detectedissue"
                                 ]
