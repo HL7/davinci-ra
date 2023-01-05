@@ -1,8 +1,4 @@
 
-<div class="bg-info" markdown="1">
-**This page is under development.**
-</div>
-
 ### Introduction
 
 The Da Vinci Project member organizations have identified the need of standardizing how risk adjustment coding gaps are communicated between payers and providers. This implementation guide (IG) specifies standardized risk adjustment coding gap reports and <span class="bg-success" markdown="1">provides guidance</span><!-- new-content --> for <span class="bg-success" markdown="1">Data Consumer</span><!-- new-content --> to query the coding gap reports from <span class="bg-success" markdown="1">payer</span><!-- new-content --> for one or more patients. Standardizing the reporting structure helps lessen the burden on the providers in processing the reports so they can more easily address the patients’ care needs. This standardized structure also supports the payer sharing information that they have but the providers may not, such as data from other providers’ claims, lab results, filled prescriptions, etc. <span class="bg-success" markdown="1">This IG also specifies how the Task resource can be used to support the workflow that enables the feedback loop from Provider and Risk Adjustment Coder back to the Payer after receiving the risk adjustment coding gap reports and conducting medical record review. This feedback loop is important for ahieving the goal of improving the accuracy and completeness of risk adjustment.</span><!-- new-content -->
