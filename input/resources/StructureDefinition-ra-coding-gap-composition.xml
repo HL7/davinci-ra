@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition
-    xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ra-coding-gap-composition"/>
     <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-composition"/>
     <name value="RiskAdjustmentCodingGapComposition"/>
@@ -22,19 +21,19 @@
             <path value="Composition.meta"/>
             <min value="1"/>
             <mustSupport value="true"/>
-        </element>          
+        </element>
         <element id="Composition.meta">
             <path value="Composition.meta.lastUpdated"/>
             <min value="1"/>
-            <max value="1"/>            
+            <max value="1"/>
             <mustSupport value="true"/>
-        </element>           
+        </element>
         <element id="Composition.identifier">
             <path value="Composition.identifier"/>
             <min value="1"/>
-            <max value="1"/>            
+            <max value="1"/>
             <mustSupport value="true"/>
-        </element>         
+        </element>
         <element id="Composition.status">
             <path value="Composition.status"/>
             <mustSupport value="true"/>
@@ -93,18 +92,23 @@
 
         <element id="Composition.section.entry">
             <path value="Composition.section.entry"/>
-            <slicing>
+            <!-- <slicing>
                 <discriminator>
-                    <type value="profile"/>
-                    <path value="resolve()"/>
+                    <type value="value"/>
+                    <path value="resolve().meta.profile"/>
                 </discriminator>
-                <rules value="closed"/>
-            </slicing>
+                <rules value="open"/>
+            </slicing> -->
             <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-original-detectedissue"/>
+                <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-clinical-evaluation-detectedissue"/>
+            </type>
             <mustSupport value="true"/>
         </element>
 
-        <element id="Composition.section.entry:ra_original_detected_issue_entry">
+        <!-- <element id="Composition.section.entry:ra_original_detected_issue_entry">
             <path value="Composition.section.entry"/>
             <sliceName value="ra_original_detected_issue_entry"/>
             <short value="This references a Risk Adjustment Original Coding Gap DetectedIssue"/>
@@ -128,6 +132,6 @@
                 <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-coding-gap-clinical-evaluation-detectedissue"/>
             </type>
             <mustSupport value="true"/>
-        </element>         
+        </element>          -->
     </differential>
 </StructureDefinition>
