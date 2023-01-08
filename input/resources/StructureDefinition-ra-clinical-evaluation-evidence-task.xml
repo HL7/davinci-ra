@@ -76,7 +76,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-request"/>
+                <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-task-reason"/>
             </binding>        
         </element>  
         <element id="Task.input">

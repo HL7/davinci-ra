@@ -1,0 +1,43 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "coding-gap-task-reason",
+  "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-task-reason",
+  "version": "1.0.0",
+  "name": "CodingGapTaskReason",
+  "title": "Coding Gap Task Reason CodeSystem",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "Clinical Quality Information Workgroup",
+  "description": "Risk adjustment clinical evaluation evidence task reason",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-task-reason",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "closure",
+      "display": "Close coding gap",
+      "definition": "Task reason is to provide clinical evalaution evidence to close a risk adjustment coding gap."
+    },
+    {
+      "code": "invalidation-never-had-condition",
+      "display": "Invalidate coding gap, patient never had the condition",
+      "definition": "Task reason is to provide clinical evalaution evidence to invalidate the coding gap that was inaccurate because the patient has never had this condition."
+    },
+    {
+      "code": "invalidation-request-inactive-condition",
+      "display": "Invalidate coding gap, condition no longer active",
+      "definition": "Task reason is to provide clinical evalaution evidence to invalidate the coding gap because the patient was correctly diagnosed but the condition is no longer active."
+    },
+    {
+      "code": "invalidation-request-inaccurate-gap",
+      "display": "Invalidate coding gap, inaccurate gap",
+      "definition": "Task reason is to provide clinical evalaution evidence to invalidate the coding gap because the patient has an active condition but the gap does not accurately describe it."
+    },
+    {
+      "code": "creation-request",
+      "display": "Creaete coding gap",
+      "definition": "Task reason is provide clinical evaluation evidence to create and close a net-new risk adjustment coding gap discovered during medical review."
+    }   
+  ],
+  "count": 5
+}
