@@ -24,18 +24,18 @@
       "definition": "Task reason is to provide clinical evalaution evidence to invalidate the coding gap that was inaccurate because the patient has never had this condition."
     },
     {
-      "code": "invalidation-request-inactive-condition",
+      "code": "invalidation-inactive-condition",
       "display": "Invalidate coding gap, condition no longer active",
       "definition": "Task reason is to provide clinical evalaution evidence to invalidate the coding gap because the patient was correctly diagnosed but the condition is no longer active."
     },
     {
-      "code": "invalidation-request-inaccurate-gap",
+      "code": "invalidation-inaccurate-gap",
       "display": "Invalidate coding gap, inaccurate gap",
       "definition": "Task reason is to provide clinical evalaution evidence to invalidate the coding gap because the patient has an active condition but the gap does not accurately describe it."
     },
     {
-      "code": "creation-request",
-      "display": "Creaete coding gap",
+      "code": "creation",
+      "display": "Create coding gap",
       "definition": "Task reason is provide clinical evaluation evidence to create and close a net-new risk adjustment coding gap discovered during medical review."
     }   
   ],
