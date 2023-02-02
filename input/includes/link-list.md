@@ -1,7 +1,9 @@
 [Home]: index.html "Home Page"
 
 [Asynchronous Request Patterns]: https://www.hl7.org/fhir/async.html
+[Bulk]: report-generation.html#Bulk-data-request-for-Risk-Adjustment-Coding-Gap-MeasureReport
 [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]: Bundle-ra-bundle01.html
+[Capability Statements]: capabilities.html
 [Clinical Evaluation Period]:glossary.html#glossary
 [Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm
 [Condition01Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition01pat03.html
@@ -29,7 +31,7 @@
 [Condition42Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition42pat03.html
 [Condition43pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication]: Condition-ra-condition43pat01.html
 [Condition44Pat01: Allergic bronchopulmonary aspergillosis]: Condition-ra-condition44pat01.html
-[Da Vinci - Risk Based Contracts Member Attribution (ATR) List IG]: http://hl7.org/fhir/us/davinci-atr/
+[Da Vinci - Member Attribution (ATR) List]: http://build.fhir.org/ig/HL7/davinci-atr/
 [Digital Condition Category (dCC)]: digital-condition-category.html
 [Downloads]: downloads.html
 [Examples]: examples.html
@@ -54,14 +56,9 @@
 [Encounter43Pat01: Pat01 Encounter on 2019-02-10]: Encounter-ra-encounter43pat01.html
 [Encounter44Pat01: Pat01 Encounter on 2017-01-18]: Encounter-ra-encounter44pat01.html
 [Encounter45Pat01: Pat01 Encounter on 2018-07-21]: Encounter-ra-encounter45pat01.html
-[FHIR Artifacts/Capability Statements]: capabilities.html
-[FHIR Artifacts/Extensions]: extensions.html
-[FHIR Artifacts/Operations]: operations.html
-[FHIR Artifacts/Profiles]: profiles.html
-[FHIR Artifacts/Terminology]: terminology.html
-[General Guidance]: guidance-ra-general-guidance.html
-[Glossary/Acronyms]: glossary.html#acronyms
-[Glossary/Glossary]: glossary.html
+[Extensions]: extensions.html
+[General Guidance]: general-guidance.html
+[Glossary]: glossary.html
 [Group01: Risk Adjustment Patient Group, (Patient01: Eve Everywoman)]: Group-ra-group01.html
 [Group02: Risk Adjustment Patient Group, (Patient02: Adam Everyman, Patient03: Nelda Nuclear)]: Group-ra-group02.html
 [Guidance]: guidance.html
@@ -76,9 +73,11 @@
 [MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Nelda Nuclear)]: MeasureReport-ra-measurereport05.html
 [MeasureReport06: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient02: Adam Everyman)]: MeasureReport-ra-measurereport06.html
 [MeasureReport]: {{site.data.fhir.path}}measurereport.html
+[Methodology]: methodology.html
 [Observation01Pat03: Pat03 Creatinine on 20210728]: Observation-ra-obs01pat03.html
 [Observation02Pat03: Pat03 PHQ9 on 20190823]: Observation-ra-obs02pat03.html
 [Observation21Pat01: Pat01 Trypsin (Mass/volume) in Serum or Plasma from 20170617]: Observation-ra-obs21pat01.html
+[Operations]: operations.html
 [Organization01: Payer Organization ABC Payer]: Organization-ra-payer01.html
 [Organization01Pat01: Community Urgent Care]: Organization-ra-org01pat01.html
 [Organization02Pat02: GHH Outpatient Clinic]: Organization-ra-org02pat02.html
@@ -91,7 +90,13 @@
 [Practitioner01: Harold Hippocrates]: Practitioner-ra-prac01pat01.html
 [Practitioner02: Patrick Pump]: Practitioner-ra-prac02pat02.html
 [Practitioner03: Otto Osler]: Practitioner-ra-prac03pat03.html
+[Profiles]: profiles.html
+
+[Remediation]: remediation.html
 [$report]:OperationDefinition-report.html
+[Report Generation]: report-generation.html
+[Report Query]: report-query.html
+[Risk Adjustment Clinical Evaluation Evidence Task]: StructureDefinition-ra-clinical-evaluation-evidence-task.html
 [Risk Adjustment Coding Gap Remediation]: guidance-ra-coding-gap-remediation.html
 [Risk Adjustment Coding Gap Resolution]: guidance-ra-coding-gap-resolution.html
 [Risk Adjustment Coding Gap Report Bundle]: StructureDefinition-ra-measurereport-bundle.html
@@ -100,9 +105,12 @@
 [Risk Adjustment Coding Gap Report Profile]: StructureDefinition-ra-measurereport.html
 [Risk Adjustment Model Measure]: StructureDefinition-ra-model-measure.html
 [Risk Adjustment Model Measure Profile]: StructureDefinition-ra-model-measure.html
+
 [SMART App Launch]: http://hl7.org/fhir/smart-app-launch/history.html
 [SMART Backend Services]: https://hl7.org/fhir/uv/bulkdata/authorization/index.html
 [Specifying dCC]: dcc.html
+
+[Terminology]: terminology.html
 [Transition Strategy]: dcc-transition-strategy.html
 
 [Risk Adjustment Coding Gap Bundle]: StructureDefinition-ra-coding-gap-bundle.html
@@ -119,8 +127,8 @@
 
 [Risk Adjustment Coding Gap MeasureReport]: StructureDefinition-ra-measurereport.html
 [$ra.evaluate-Measure]: OperationDefinition-ra.evaluate-measure.html
-[Generated]:guidance-ra-coding-gap-report-generation.html
-[Assisted]:guidance-ra-coding-gap-report-generation.html
-[Evaluated]:guidance-ra-coding-gap-report-generation.html
+[Generated]: report-generation.html#the-generated-approach
+[Assisted]: report-generation.html#the-assisted-approach
+[Evaluated]:report-generation.html#the-evaluated-approach
 
 [Clinical Evaluation DetectedIssue]: StructureDefinition-ra-coding-gap-clinical-evaluation-detectedissue.html

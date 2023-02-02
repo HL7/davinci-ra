@@ -8,9 +8,10 @@
 <artifactPageExtension value="-mappings"/>
 <artifact id="Parameters/Parameters-ra-measurereport03-approve" key="Parameters-Parameters-ra-measurereport03-approve" name="Approve Coding Gaps Result"/>
 <artifact id="StructureDefinition/ra-codingGapRequest" key="StructureDefinition-ra-codingGapRequest" name="Coding Gap Request"/>
-<artifact id="CodeSystem/coding-gap-request" key="CodeSystem-coding-gap-request" name="Coding Gap Request CodeSystem"/>
-<artifact id="ValueSet/coding-gap-request" key="ValueSet-coding-gap-request" name="Coding Gap Request ValueSet"/>
 <artifact id="Parameters/Parameters-ra-measurereport03-gaps" key="Parameters-Parameters-ra-measurereport03-gaps" name="Coding Gaps Result"/>
+<artifact id="CodeSystem/coding-gap-task-reason" key="CodeSystem-coding-gap-task-reason" name="Coding Gap Task Reason CodeSystem"/>
+<artifact id="ValueSet/coding-gap-task-reason" key="ValueSet-coding-gap-task-reason" name="Coding Gap Task Reason ValueSet"/>
+<artifact id="ValueSet/coding-gap-task-status" key="ValueSet-coding-gap-task-status" name="Coding Gap Task Status ValueSet"/>
 <artifact deprecated="true" id="Condition/ra-condition01" key="Condition-ra-condition01" name="Condition01: Type 2 diabetes with unspecified manisfestations"/>
 <artifact id="Condition/ra-condition01pat03" key="Condition-ra-condition01pat03" name="Condition01pat03: Other artificial openings of gastrointestinal tract status"/>
 <artifact deprecated="true" id="Condition/ra-condition02" key="Condition-ra-condition02" name="Condition02: Major Depressive Disorder, Single episode"/>
@@ -104,6 +105,7 @@
 <artifact id="OperationDefinition/ra.approve-coding-gaps" key="OperationDefinition-ra.approve-coding-gaps" name="Risk Adjustment Approve Coding Gaps"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
 <artifact id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Risk Adjustment Clinical Data Collection Deadline"/>
+<artifact id="StructureDefinition/ra-clinical-evaluation-evidence-task" key="StructureDefinition-ra-clinical-evaluation-evidence-task" name="Risk Adjustment Clinical Evaluation Evidence Task"/>
 <artifact id="StructureDefinition/ra-coding-gap-bundle" key="StructureDefinition-ra-coding-gap-bundle" name="Risk Adjustment Coding Gap Bundle"/>
 <artifact id="StructureDefinition/ra-coding-gap-clinical-evaluation-detectedissue" key="StructureDefinition-ra-coding-gap-clinical-evaluation-detectedissue" name="Risk Adjustment Coding Gap Clinical Evaluation DetectedIssue"/>
 <artifact id="StructureDefinition/ra-coding-gap-composition" key="StructureDefinition-ra-coding-gap-composition" name="Risk Adjustment Coding Gap Composition"/>
@@ -130,6 +132,7 @@
 <artifact id="StructureDefinition/ra-suspectType" key="StructureDefinition-ra-suspectType" name="Risk Adjustment Suspect Type"/>
 <artifact id="CodeSystem/suspect-type" key="CodeSystem-suspect-type" name="Risk Adjustment Suspect Type CodeSystem"/>
 <artifact id="ValueSet/suspect-type" key="ValueSet-suspect-type" name="Risk Adjustment Suspect Type ValueSet"/>
+<artifact id="CodeSystem/ra-task-input-type" key="CodeSystem-ra-task-input-type" name="Risk Adjustment Task Input Type CodeSystem"/>
 <artifact id="ValueSet/sample-cmshcc" key="ValueSet-sample-cmshcc" name="Sample CMS Hierarchical Condition Category"/>
 <artifact id="Observation/ra-obs21pat01" key="Observation-ra-obs21pat01" name="Trypsin [Mass/volume] in Serum or Plasma from 20170617"/>
 <page key="many" name="(many)"/>
@@ -143,14 +146,15 @@
 <page key="downloads" name="Downloads"/>
 <page key="examples" name="Examples"/>
 <page key="extensions" name="Extensions"/>
-<page key="guidance-ra-general-guidance" name="General Guidance"/>
+<page key="general-guidance" name="General Guidance"/>
 <page key="glossary" name="Glossary"/>
-<page key="guidance" name="Guidance"/>
+<page deprecated="true" key="guidance" name="Guidance"/>
+<page key="methodology" name="Methodology"/>
 <page key="operations" name="Operation"/>
 <page key="profiles" name="Profiles"/>
-<page key="guidance-ra-coding-gap-remediation" name="Risk Adjustment Coding Gap Remediation"/>
-<page key="guidance-ra-coding-gap-report-generation" name="Risk Adjustment Coding Gap Report Generation"/>
-<page key="guidance-ra-coding-gap-resolution" name="Risk Adjustment Coding Gap Resolution"/>
+<page key="remediation" name="Remediation"/>
+<page key="report-generation" name="Report Generation"/>
+<page key="report-query" name="Report Query"/>
 <page key="dcc" name="Specifying dCCs"/>
 <page key="toc" name="Table of Contents"/>
 <page key="terminology" name="Terminology"/>

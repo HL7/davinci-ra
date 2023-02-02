@@ -669,28 +669,29 @@
         <title value="Da Vinci Risk Adjustment Implementation Guide Home Page"/>
         <generation value="markdown"/>
       </page>
+      
       <page>
-        <nameUrl value="guidance.html"/>
-        <title value="Guidance"/>
+        <nameUrl value="methodology.html"/>
+        <title value="Methodology"/>
         <generation value="markdown"/>
         <page>
-          <nameUrl value="guidance-ra-general-guidance.html"/>
+          <nameUrl value="general-guidance.html"/>
           <title value="General Guidance"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <nameUrl value="guidance-ra-coding-gap-report-generation.html"/>
-          <title value="Risk Adjustment Coding Gap Report Generation"/>
+          <nameUrl value="report-generation.html"/>
+          <title value="Report Generation"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <nameUrl value="guidance-ra-coding-gap-remediation.html"/>
-          <title value="Risk Adjustment Coding Gap Remediation"/>
+          <nameUrl value="report-query.html"/>
+          <title value="Report Query"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <nameUrl value="guidance-ra-coding-gap-resolution.html"/>
-          <title value="Risk Adjustment Coding Gap Resolution"/>
+          <nameUrl value="remediation.html"/>
+          <title value="Remediation"/>
           <generation value="markdown"/>
         </page>
       </page>
@@ -904,7 +905,7 @@
       <page>
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="change-log.html"/>
@@ -920,7 +921,7 @@
     <!-- releaselabel should be the ballot status for HL7-published IGs. -->
     <parameter>
       <code value="releaselabel"/>
-      <value value="STU 1"/>
+      <value value="STU2 Ballot"/>
     </parameter>
     <parameter>
       <code value="find-other-resources"/>

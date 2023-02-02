@@ -3,22 +3,29 @@ List of profiles that define constrains on FHIR resources for systems conforming
 
 |Resource Type|Profile Name|Link to Profile|
 |---|---|---|
-|MeasureReport|Risk Adjustment Coding Gap Report|[Risk Adjustment Coding Gap Report]|
+|MeasureReport|Risk Adjustment Coding Gap MeasureReport|[Risk Adjustment Coding Gap MeasureReport]|
 |Measure|Risk Adjustment Model Measure|[Risk Adjustment Model Measure]|
 |Group|Patient Group|[Patient Group]|
 {: .grid}
 
 <div class="bg-success" markdown="1">
-
 |Resource Type|Profile Name|Link to Profile|
 |---|---|---|
-|Bundle|Risk Adjustment Coding Gap Bundle|[Risk Adjustment Coding Gap Bundle]|
-|Composition|Risk Adjustment Coding Gap Composition|[Risk Adjustment Coding Gap Composition]|
-|DetectedIssue|Risk Adjustment Coding Gap Clinical Evaluation DetectedIssue|[Risk Adjustment Coding Gap Clinical Evaluation DetectedIssue]|
-|DetectedIssue|Risk Adjustment Coding Gap Original DetectedIssue|[Risk Adjustment Coding Gap Original DetectedIssue]|
+|Task|Risk Adjustment Clinical Evaluation Evidence Task|[Risk Adjustment Clinical Evaluation Evidence Task]|
 {: .grid}
 
 </div>
+
+<div class="note-to-balloters" markdown="1">
+**Deprecated Profile** - with the query approach, this profile is not needed
+
+|Resource Type|Profile Name|Link to Profile|
+|---|---|---|
+|Bundle|Risk Adjustment Coding Gap Report Bundle|[Risk Adjustment Coding Gap Report Bundle]|
+{: .grid}
+
+</div>
+
 
 <br />
 

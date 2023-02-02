@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="ra-clinical-evaluation-evidence-task"/>
+    <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinical-evaluation-evidence-task"/>
+    <name value="RiskAdjustmentClinicalEvaluationEvidenceTask"/>
+    <title value="Risk Adjustment Clinical Evaluation Evidence Task"/>
+    <status value="draft"/>
+    <publisher value="Da Vinci Project"/>
+    <description value="This profile is under development. This Task profile is used to support the risk adjustment coding gap remediation process."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Task"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Task"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Task">
+            <path value="Task"/>
+        </element>       
+        <element id="Task.identifier">
+            <path value="Task.identifier"/>          
+            <mustSupport value="true"/>
+        </element>         
+        <element id="Task.status">
+            <path value="Task.status"/>
+            <short value="requested|completed|rejected|on-hold|cancelled"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-task-status"/>
+            </binding>        
+        </element>
+        <element id="Task.statusReason">
+            <path value="Task.statusReason"/>          
+            <mustSupport value="true"/>
+        </element>   
+        <element id="Task.statusReason.text">
+            <path value="Task.statusReason.text"/>  
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>                
+        <element id="Task.intent">
+            <path value="Task.intent"/>
+            <fixedCode value="order"/>
+            <mustSupport value="true"/>
+        </element>        
+        <element id="Task.focus">
+            <path value="Task.focus"/>
+            <short value="The MeasureReport that the task is acting on."/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>      
+        <element id="Task.authoredOn">
+            <path value="Task.authoredOn"/>
+            <min value="1"/>
+            <max value="1"/>            
+            <mustSupport value="true"/>
+        </element>   
+        <element id="Task.lastModified">
+            <path value="Task.lastModified"/>
+            <min value="0"/>
+            <max value="1"/>            
+            <mustSupport value="true"/>
+        </element>   
+        <element id="Task.reasonCode">
+            <path value="Task.reasonCode"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-task-reason"/>
+            </binding>        
+        </element>  
+        <element id="Task.input">
+            <path value="Task.input"/>            
+            <slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="type"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>      
+        <element id="Task.input:measurereport_group_id">
+            <path value="Task.input"/>
+            <sliceName value="measurereport_group_id"/>
+            <short value="MeasureReport.group.id from the Risk Adjustment Coding Gap MeasureReport (Task focus)"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>         
+        <element id="Task.input:measurereport_group_id.type">
+            <path value="Task.input.type"/> 
+<!--                            
+            <patternCodableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-task-input-type"/>
+                    <code value="measurereport-group-id"/>
+                </coding>
+            </patternCodableConcept>   
+-->                   
+            <mustSupport value="true"/>
+        </element>  
+       <element id="Task.input:measurereport_group_id.value[x]">
+            <path value="Task.input.valueString"/>
+            <short value="Value of MeasureReport.group.id"/>
+            <type>
+               <code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>   
+
+    </differential>
+</StructureDefinition>

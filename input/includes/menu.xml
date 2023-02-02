@@ -1,12 +1,12 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"></b></a>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Methodology<b class="caret"></b></a>
     <ul class="dropdown-menu">
-      <li><a href="guidance-ra-general-guidance.html">General Guidance</a></li>
-      <li><a href="guidance-ra-coding-gap-report-generation.html">Risk Adjustment Coding Gap Report Generation</a></li>
-      <li><a href="guidance-ra-coding-gap-remediation.html">Risk Adjustment Coding Gap Remediation</a></li>
-      <li><a href="guidance-ra-coding-gap-resolution.html">Risk Adjustment Coding Gap Resolution</a></li>
+      <li><a href="general-guidance.html">General Guidance</a></li>
+      <li><a href="report-generation.html">Report Generation</a></li>
+      <li><a href="report-query.html">Report Query</a></li>
+      <li><a href="remediation.html">Remediation</a></li>
     </ul>
   </li>
   <li class="dropdown">
