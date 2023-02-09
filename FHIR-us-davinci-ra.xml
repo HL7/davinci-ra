@@ -8,10 +8,10 @@
 <artifactPageExtension value="-mappings"/>
 <artifact id="Parameters/Parameters-ra-measurereport03-approve" key="Parameters-Parameters-ra-measurereport03-approve" name="Approve Coding Gaps Result"/>
 <artifact id="StructureDefinition/ra-codingGapRequest" key="StructureDefinition-ra-codingGapRequest" name="Coding Gap Request"/>
-<artifact id="Parameters/Parameters-ra-measurereport03-gaps" key="Parameters-Parameters-ra-measurereport03-gaps" name="Coding Gaps Result"/>
 <artifact id="CodeSystem/coding-gap-task-reason" key="CodeSystem-coding-gap-task-reason" name="Coding Gap Task Reason CodeSystem"/>
 <artifact id="ValueSet/coding-gap-task-reason" key="ValueSet-coding-gap-task-reason" name="Coding Gap Task Reason ValueSet"/>
 <artifact id="ValueSet/coding-gap-task-status" key="ValueSet-coding-gap-task-status" name="Coding Gap Task Status ValueSet"/>
+<artifact id="Parameters/Parameters-ra-measurereport03-gaps" key="Parameters-Parameters-ra-measurereport03-gaps" name="Coding Gaps Result"/>
 <artifact deprecated="true" id="Condition/ra-condition01" key="Condition-ra-condition01" name="Condition01: Type 2 diabetes with unspecified manisfestations"/>
 <artifact id="Condition/ra-condition01pat03" key="Condition-ra-condition01pat03" name="Condition01pat03: Other artificial openings of gastrointestinal tract status"/>
 <artifact deprecated="true" id="Condition/ra-condition02" key="Condition-ra-condition02" name="Condition02: Major Depressive Disorder, Single episode"/>
@@ -40,6 +40,7 @@
 <artifact id="Condition/ra-condition43pat01" key="Condition-ra-condition43pat01" name="Condition43pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication"/>
 <artifact id="Condition/ra-condition44pat01" key="Condition-ra-condition44pat01" name="Condition44pat01: Allergic bronchopulmonary aspergillosis"/>
 <artifact id="Condition/ra-conditionR01pat01" key="Condition-ra-conditionR01pat01" name="ConditionR01pat01: Cystic fibrosis with other intestinal manifestations"/>
+<artifact id="StructureDefinition/ra-confidenceScore" key="StructureDefinition-ra-confidenceScore" name="Confidence Score"/>
 <artifact id="DocumentReference/ra-documentreference01pat01" key="DocumentReference-ra-documentreference01pat01" name="Documentreference01pat01: Outpatient Note"/>
 <artifact id="Encounter/ra-encounter44pat01" key="Encounter-ra-encounter44pat01" name="Encounter on 20170118"/>
 <artifact id="Encounter/ra-encounter08pat01" key="Encounter-ra-encounter08pat01" name="Encounter on 20170203"/>
@@ -76,29 +77,20 @@
 <artifact id="Observation/ra-obs01pat03" key="Observation-ra-obs01pat03" name="Observation: Creatinine Result from 20210728"/>
 <artifact id="Observation/ra-obs02pat03" key="Observation-ra-obs02pat03" name="Observation: PHQ9 from 20190823"/>
 <artifact id="Observation/ra-obs01pat02" key="Observation-ra-obs01pat02" name="Observation: Trypsin [Mass/volume] in Serum or Plasma result from 20190617"/>
+<artifact id="Organization/ra-payer01" key="Organization-ra-payer01" name="Organization01: ABC Payer"/>
 <artifact id="Organization/ra-org03pat03" key="Organization-ra-org03pat03" name="Organization: Community HealthCenter"/>
 <artifact id="Organization/ra-org01pat01" key="Organization-ra-org01pat01" name="Organization: Community Urgent Care"/>
 <artifact id="Organization/ra-org02pat02" key="Organization-ra-org02pat02" name="Organization: GHH Outpatient Clinic"/>
 <artifact id="Organization/ra-org-author" key="Organization-ra-org-author" name="Organization: Risk Adjustment Author"/>
-<artifact id="Organization/ra-payer01" key="Organization-ra-payer01" name="Organization01: ABC Payer"/>
+<artifact id="StructureDefinition/ra-patient-group" key="StructureDefinition-ra-patient-group" name="Patient Group"/>
 <artifact id="Patient/ra-patient01" key="Patient-ra-patient01" name="Patient01: Eve Everywoman"/>
 <artifact deprecated="true" id="Parameters/Patient-ra-patient01-report" key="Parameters-Patient-ra-patient01-report" name="Patient01: Report"/>
 <artifact id="Patient/ra-patient02" key="Patient-ra-patient02" name="Patient02: Adam Everyman"/>
 <artifact id="Patient/ra-patient03" key="Patient-ra-patient03" name="Patient03: Nelda Nuclear"/>
 <artifact deprecated="true" id="Patient/ra-patient04" key="Patient-ra-patient04" name="Patient04: Jane Doh"/>
-<artifact id="StructureDefinition/ra-patient-group" key="StructureDefinition-ra-patient-group" name="Patient Group"/>
 <artifact id="Practitioner/ra-prac01pat01" key="Practitioner-ra-prac01pat01" name="Practitioner: Harold Hippocrates"/>
 <artifact id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner: Otto Osler"/>
 <artifact id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner: Patrick Pump"/>
-<artifact id="Bundle/ra-bundle01" key="Bundle-ra-bundle01" name="ra-bundle01: Risk Adjustment Bundle"/>
-<artifact id="Group/ra-group01" key="Group-ra-group01" name="ra-group01: Risk Adjustment Patient Group"/>
-<artifact id="Group/ra-group02" key="Group-ra-group02" name="ra-group02: Risk Adjustment Patient Group"/>
-<artifact id="MeasureReport/ra-measurereport01" key="MeasureReport-ra-measurereport01" name="ra-measurereport01: Risk Adjustment Measure Report"/>
-<artifact id="MeasureReport/ra-measurereport02" key="MeasureReport-ra-measurereport02" name="ra-measurereport02: Risk Adjustment Measure Report"/>
-<artifact id="MeasureReport/ra-measurereport03" key="MeasureReport-ra-measurereport03" name="ra-measurereport03: Risk Adjustment Measure Report for HCC V24 for Patient 02"/>
-<artifact id="MeasureReport/ra-measurereport04" key="MeasureReport-ra-measurereport04" name="ra-measurereport04: Risk Adjustment Measure Report for HCC V21 for Patient 03"/>
-<artifact id="MeasureReport/ra-measurereport05" key="MeasureReport-ra-measurereport05" name="ra-measurereport05: Risk Adjustment Measure Report for RxHCC V5 for Patient03"/>
-<artifact id="MeasureReport/ra-measurereport06" key="MeasureReport-ra-measurereport06" name="ra-measurereport06: Risk Adjustment Measure Report for RxHCC V5 for Patient02"/>
 <artifact id="Parameters/Parameters-ra-measurereport03-remediate" key="Parameters-Parameters-ra-measurereport03-remediate" name="Remediate Coding Gaps Result"/>
 <artifact id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
 <artifact id="Parameters/Parameters-ra-measurereport03-resolve" key="Parameters-Parameters-ra-measurereport03-resolve" name="Resolve Coding Gaps Result"/>
@@ -132,11 +124,19 @@
 <artifact id="StructureDefinition/ra-suspectType" key="StructureDefinition-ra-suspectType" name="Risk Adjustment Suspect Type"/>
 <artifact id="CodeSystem/suspect-type" key="CodeSystem-suspect-type" name="Risk Adjustment Suspect Type CodeSystem"/>
 <artifact id="ValueSet/suspect-type" key="ValueSet-suspect-type" name="Risk Adjustment Suspect Type ValueSet"/>
-<artifact id="CodeSystem/ra-task-input-type" key="CodeSystem-ra-task-input-type" name="Risk Adjustment Task Input Type CodeSystem"/>
 <artifact id="ValueSet/sample-cmshcc" key="ValueSet-sample-cmshcc" name="Sample CMS Hierarchical Condition Category"/>
 <artifact id="Observation/ra-obs21pat01" key="Observation-ra-obs21pat01" name="Trypsin [Mass/volume] in Serum or Plasma from 20170617"/>
-<page key="many" name="(many)"/>
+<artifact id="Bundle/ra-bundle01" key="Bundle-ra-bundle01" name="ra-bundle01: Risk Adjustment Bundle"/>
+<artifact id="Group/ra-group01" key="Group-ra-group01" name="ra-group01: Risk Adjustment Patient Group"/>
+<artifact id="Group/ra-group02" key="Group-ra-group02" name="ra-group02: Risk Adjustment Patient Group"/>
+<artifact id="MeasureReport/ra-measurereport01" key="MeasureReport-ra-measurereport01" name="ra-measurereport01: Risk Adjustment Measure Report"/>
+<artifact id="MeasureReport/ra-measurereport02" key="MeasureReport-ra-measurereport02" name="ra-measurereport02: Risk Adjustment Measure Report"/>
+<artifact id="MeasureReport/ra-measurereport03" key="MeasureReport-ra-measurereport03" name="ra-measurereport03: Risk Adjustment Measure Report for HCC V24 for Patient 02"/>
+<artifact id="MeasureReport/ra-measurereport04" key="MeasureReport-ra-measurereport04" name="ra-measurereport04: Risk Adjustment Measure Report for HCC V21 for Patient 03"/>
+<artifact id="MeasureReport/ra-measurereport05" key="MeasureReport-ra-measurereport05" name="ra-measurereport05: Risk Adjustment Measure Report for RxHCC V5 for Patient03"/>
+<artifact id="MeasureReport/ra-measurereport06" key="MeasureReport-ra-measurereport06" name="ra-measurereport06: Risk Adjustment Measure Report for RxHCC V5 for Patient02"/>
 <page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="capabilities" name="Capability Statement"/>
 <page deprecated="true" key="changes" name="Change History"/>

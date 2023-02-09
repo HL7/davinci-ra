@@ -170,6 +170,17 @@
    </type>
    <mustSupport value="true"/>
  </element>
+ <element id="MeasureReport.group.extension:confidenceScore">
+   <path value="MeasureReport.group.extension"/>
+   <sliceName value="confidenceScore"/>
+   <min value="0"/>
+   <max value="1"/>
+   <type>
+     <code value="Extension"/>
+     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-confidenceScore"/>
+   </type>
+   <mustSupport value="true"/>
+ </element> 
  <element id="MeasureReport.group.code">
    <path value="MeasureReport.group.code"/>
    <short value="Condition Category (CC) code for a Risk Adjustment Model"/>
