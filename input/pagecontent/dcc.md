@@ -18,9 +18,9 @@ During the July 2022 CMS Connectathon a dCC proof-of-concept was conducted to de
 
 Similar to the definitions of digital quality measures<sup>[1](https://ecqi.healthit.gov/dqm?qt-tabs_dqm=1)</sup>, digital condition categories are condition category measures organized as self-contained measure specification and code packages, that use one or more sources of health information that is captured and can be transmitted electronically via interoperable systems. Digital condition categories use machine-readable measure logic, such as logics written in in Clinical Quality Language, an use common data model such as FHIR. 
 
-A digital condition category is structured as a proportion measure, which consists of an initial population, denominator, numerator, and an optional denominator exclusions as shown in the Vann diagram in Figure 4-1. 
+A digital condition category is structured as a proportion measure, which consists of an initial population, denominator, numerator, and an optional denominator exclusions as shown in the Venn diagram in Figure 4-1. 
 
-{% include img-portrait.html img="dCC-vann-diagram.png" caption = "Figure 4-1: Condition Category Measure Vann Diagram" %}
+{% include img-portrait.html img="dCC-venn-diagram.png" caption = "Figure 4-1: Condition Category Measure Venn Diagram" %}
 
 **Table 4-1: Condition Category Measure Population.**
 
@@ -45,12 +45,12 @@ A digital condition category is structured as a proportion measure, which consis
 
 
 ###  Example Digital Condition Category 
-Figure 4-2 is a Vann diagram that shows the condition catetory measure population using a hiearchical condition category code, HCC189 "Amputation Status, Lower Limb/Amputation Complications" as an exmaple. 
+Figure 4-2 is a Venn diagram that shows the condition catetory measure population using a hiearchical condition category code, HCC189 "Amputation Status, Lower Limb/Amputation Complications" as an exmaple. 
 - The initial population for HCC189 is defined as enrolled Medicare Advantage members. 
 - The denominator population for HCC189 includes all open and closed historic gaps, suspected gaps, and closed net-new gaps for the ICD-10 codes that map to HCC189, for example, Z89.411 Acquired absence of right great toe. 
 - The denominator exclusion for HCC189 defines criteria that will exlude patients from the denominator population, for example ICD-10 code M20 Acquired deformities of fingers and toes and M21 Other acquired deformities of limbs. 
 
-{% include img-portrait.html img="hcc-189-vann-diagram.png" caption = "Figure 4-2: Condition Category Measure Vann Diagram - HCC189 Example" %}
+{% include img-portrait.html img="hcc-189-venn-diagram.png" caption = "Figure 4-2: Condition Category Measure Venn Diagram - HCC189 Example" %}
 
 ###  Using CQL
 
