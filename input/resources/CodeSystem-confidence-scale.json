@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "confidence-scale",
+  "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/confidence-scale",
+  "version": "1.0.0",
+  "name": "RAConditionCategoryConfidenceScale",
+  "title": "Risk Adjustment Condition Category (CC) Confidence Scale CodeSystem",
+  "status": "active",
+  "experimental": false,
+  "publisher":"Clinical Quality Information Workgroup",
+  "description": "Indicates the level of confidence for a risk adjustment Condition Category (CC).",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/us/davinci-ra/ValueSet/confidence-scale",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "low",
+      "display": "Low confidence scale",
+      "definition": "Condition Category (CC) confidence scale is low."
+    },
+    {
+      "code": "medium",
+      "display": "Medium confidence scale",
+      "definition": "Condition Category (CC) confidence scale is medium."
+    },
+    {
+      "code": "high",
+      "display": "High confidence scale",
+      "definition": "Condition Category (CC) confidence scale is high."
+    },
+    {
+      "code": "very high",
+      "display": "Very high confidence scale",
+      "definition": "Condition Category (CC) confidence scale is very high."
+    }    
+  ],
+  "count": 4
+}

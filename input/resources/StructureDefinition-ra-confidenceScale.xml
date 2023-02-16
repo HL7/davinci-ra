@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ra-confidenceScale"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-confidenceScale"/>
+  <name value="ConfidenceScale"/>
+  <title value="Confidence Scale"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="Da Vinci Project"/>
+  <description value="Confidence scale for a Condition Category (CC) coding gap."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="MeasureReport.group"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Confidence scale for a coding gap"/>
+      <definition value="Condition Category gap confidence scale"/>
+      <comment value="Confidence scale by a suspecting algorithm for a Condition Category (CC) coding gap especially a suspected gap."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-confidenceScale"/>
+    </element>
+    <element id="Extension.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
+      <short value="Confidence scale for a Condition Category (CC) coding gap"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/confidence-scale"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

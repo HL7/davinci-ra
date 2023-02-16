@@ -40,7 +40,7 @@
 <artifact id="Condition/ra-condition43pat01" key="Condition-ra-condition43pat01" name="Condition43pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication"/>
 <artifact id="Condition/ra-condition44pat01" key="Condition-ra-condition44pat01" name="Condition44pat01: Allergic bronchopulmonary aspergillosis"/>
 <artifact id="Condition/ra-conditionR01pat01" key="Condition-ra-conditionR01pat01" name="ConditionR01pat01: Cystic fibrosis with other intestinal manifestations"/>
-<artifact id="StructureDefinition/ra-confidenceScore" key="StructureDefinition-ra-confidenceScore" name="Confidence Score"/>
+<artifact id="StructureDefinition/ra-confidenceScale" key="StructureDefinition-ra-confidenceScale" name="Confidence Scale"/>
 <artifact id="DocumentReference/ra-documentreference01pat01" key="DocumentReference-ra-documentreference01pat01" name="Documentreference01pat01: Outpatient Note"/>
 <artifact id="Encounter/ra-encounter44pat01" key="Encounter-ra-encounter44pat01" name="Encounter on 20170118"/>
 <artifact id="Encounter/ra-encounter08pat01" key="Encounter-ra-encounter08pat01" name="Encounter on 20170203"/>
@@ -105,6 +105,8 @@
 <artifact id="StructureDefinition/ra-coding-gap-original-detectedissue" key="StructureDefinition-ra-coding-gap-original-detectedissue" name="Risk Adjustment Coding Gap Original DetectedIssue"/>
 <artifact id="StructureDefinition/ra-measurereport-bundle" key="StructureDefinition-ra-measurereport-bundle" name="Risk Adjustment Coding Gap Report Bundle"/>
 <artifact id="OperationDefinition/ra.coding-gaps" key="OperationDefinition-ra.coding-gaps" name="Risk Adjustment Coding Gaps"/>
+<artifact id="ValueSet/confidence-scale" key="ValueSet-confidence-scale" name="Risk Adjustment Condition Category (CC) Confidence Scale"/>
+<artifact id="CodeSystem/confidence-scale" key="CodeSystem-confidence-scale" name="Risk Adjustment Condition Category (CC) Confidence Scale CodeSystem"/>
 <artifact id="OperationDefinition/ra.evaluate-measure" key="OperationDefinition-ra.evaluate-measure" name="Risk Adjustment Evaluate Measure"/>
 <artifact id="CodeSystem/evidence-status" key="CodeSystem-evidence-status" name="Risk Adjustment Evidence Status CodeSystem"/>
 <artifact id="StructureDefinition/ra-evidenceStatusDate" key="StructureDefinition-ra-evidenceStatusDate" name="Risk Adjustment Evidence Status Date"/>
