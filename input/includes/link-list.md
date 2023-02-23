@@ -113,22 +113,11 @@
 [Terminology]: terminology.html
 [Transition Strategy]: dcc-transition-strategy.html
 
-[Risk Adjustment Coding Gap Bundle]: StructureDefinition-ra-coding-gap-bundle.html
-[Risk Adjustment Coding Gap Composition]: StructureDefinition-ra-coding-gap-composition.html
-[Risk Adjustment Coding Gap Clinical Evaluation DetectedIssue]: StructureDefinition-ra-coding-gap-clinical-evaluation-detectedissue.html
-[Risk Adjustment Coding Gap Original DetectedIssue]: StructureDefinition-ra-coding-gap-original-detectedissue.html
 [Risk Adjustment Coding Gap MeasureReport]: StructureDefinition-ra-measurereport.html
 
 [$ra.evaluate-measure]:OperationDefinition-ra.evaluate-measure.html
-[$ra.coding-gaps]:OperationDefinition-ra.coding-gaps.html
-[$ra.remediate-coding-gaps]:OperationDefinition-ra.remediate-coding-gaps.html
-[$ra.approve-coding-gaps]:OperationDefinition-ra.approve-coding-gaps.html
-[$ra.resolve-coding-gaps]:OperationDefinition-ra.resolve-coding-gaps.html
 
-[Risk Adjustment Coding Gap MeasureReport]: StructureDefinition-ra-measurereport.html
 [$ra.evaluate-Measure]: OperationDefinition-ra.evaluate-measure.html
 [Generated]: report-generation.html#the-generated-approach
 [Assisted]: report-generation.html#the-assisted-approach
 [Evaluated]:report-generation.html#the-evaluated-approach
-
-[Clinical Evaluation DetectedIssue]: StructureDefinition-ra-coding-gap-clinical-evaluation-detectedissue.html

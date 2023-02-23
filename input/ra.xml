@@ -309,14 +309,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Condition/ra-measurereport03-remediate"/>
-      </reference>
-      <name value="Measurereport03-remediate: Cystic fibrosis with other intestinal manifestations"/>
-      <description value="Cystic fibrosis with other intestinal manifestations - for remediation"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Condition/ra-condition44pat01"/>
       </reference>
       <name value="Condition44pat01: Allergic bronchopulmonary aspergillosis"/>
@@ -501,14 +493,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Encounter/ra-measurereport03-remediate"/>
-      </reference>
-      <name value="Encounter on 20210327 for remediation"/>
-      <description value="Encounter on 2021-03-27 - for remediation"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Observation/ra-obs01pat02"/>
       </reference>
       <name value="Observation: Trypsin [Mass/volume] in Serum or Plasma result from 20190617"/>
@@ -577,38 +561,6 @@
       </reference>
       <name value="Organization: Risk Adjustment Author"/>
       <description value="Risk Adjustment Author"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/Parameters-ra-measurereport03-gaps"/>
-      </reference>
-      <name value="Coding Gaps Result"/>
-      <description value="Example of a Coding Gaps ($ra.coding-gaps) result for Patient02"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/Parameters-ra-measurereport03-remediate"/>
-      </reference>
-      <name value="Remediate Coding Gaps Result"/>
-      <description value="Example of a Remediate Coding Gaps ($ra.remediate-coding-gaps) result for Patient02"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/Parameters-ra-measurereport03-approve"/>
-      </reference>
-      <name value="Approve Coding Gaps Result"/>
-      <description value="Example of a Coding Gaps ($ra.approve-coding-gaps) result for Patient02"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/Parameters-ra-measurereport03-resolve"/>
-      </reference>
-      <name value="Resolve Coding Gaps Result"/>
-      <description value="Example of a Resolve Coding Gaps ($ra.resolve-coding-gaps) result for Patient02"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
