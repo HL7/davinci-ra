@@ -22,8 +22,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Confidence scale for a coding gap"/>
-      <definition value="Condition Category gap confidence scale"/>
-      <comment value="Confidence scale by a suspecting algorithm for a Condition Category (CC) coding gap especially a suspected gap."/>
+      <definition value="Coding gap confidence scale"/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -36,7 +35,7 @@
     </element>
     <element id="Extension.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
-      <short value="Confidence scale for a Condition Category (CC) coding gap"/>
+      <short value="Confidence scale for a coding gap"/>
       <type>
         <code value="CodeableConcept"/>
       </type>

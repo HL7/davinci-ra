@@ -8,11 +8,11 @@
   },
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/confidence-scale",
   "version": "1.0.0",
-  "name": "RAConditionCategoryConfidenceScale",
-  "title": "Risk Adjustment Condition Category (CC) Confidence Scale",
+  "name": "ConfidenceScale",
+  "title": "Confidence Scale",
   "status": "active",
   "experimental": false,
-  "description": "The level of confidence for a risk adjustment Condition Category (CC).",
+  "description": "The level of confidence for a risk adjustment coding gap.",
   "compose": {
     "include": [
       {

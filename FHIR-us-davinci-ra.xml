@@ -9,6 +9,7 @@
 <artifact id="StructureDefinition/ra-annotation" key="StructureDefinition-ra-annotation" name="Annotation"/>
 <artifact id="ValueSet/annotation" key="ValueSet-annotation" name="Annotation"/>
 <artifact id="CodeSystem/annotation" key="CodeSystem-annotation" name="Annotation CodeSystem"/>
+<artifact id="CodeSystem/confidence-scale" key="CodeSystem-confidence-scale" name="Coding Gap Confidence Scale CodeSystem"/>
 <artifact id="StructureDefinition/ra-codingGapRequest" key="StructureDefinition-ra-codingGapRequest" name="Coding Gap Request"/>
 <artifact id="CodeSystem/coding-gap-task-reason" key="CodeSystem-coding-gap-task-reason" name="Coding Gap Task Reason CodeSystem"/>
 <artifact id="ValueSet/coding-gap-task-reason" key="ValueSet-coding-gap-task-reason" name="Coding Gap Task Reason ValueSet"/>
@@ -42,6 +43,7 @@
 <artifact id="Condition/ra-condition44pat01" key="Condition-ra-condition44pat01" name="Condition44pat01: Allergic bronchopulmonary aspergillosis"/>
 <artifact id="Condition/ra-conditionR01pat01" key="Condition-ra-conditionR01pat01" name="ConditionR01pat01: Cystic fibrosis with other intestinal manifestations"/>
 <artifact id="StructureDefinition/ra-confidenceScale" key="StructureDefinition-ra-confidenceScale" name="Confidence Scale"/>
+<artifact id="ValueSet/confidence-scale" key="ValueSet-confidence-scale" name="Confidence Scale"/>
 <artifact id="DocumentReference/ra-documentreference01pat01" key="DocumentReference-ra-documentreference01pat01" name="Documentreference01pat01: Outpatient Note"/>
 <artifact id="Encounter/ra-encounter44pat01" key="Encounter-ra-encounter44pat01" name="Encounter on 20170118"/>
 <artifact id="Encounter/ra-encounter08pat01" key="Encounter-ra-encounter08pat01" name="Encounter on 20170203"/>
@@ -92,8 +94,6 @@
 <artifact id="StructureDefinition/ra-clinical-evaluation-evidence-task" key="StructureDefinition-ra-clinical-evaluation-evidence-task" name="Risk Adjustment Clinical Evaluation Evidence Task"/>
 <artifact id="StructureDefinition/ra-measurereport" key="StructureDefinition-ra-measurereport" name="Risk Adjustment Coding Gap MeasureReport"/>
 <artifact id="StructureDefinition/ra-measurereport-bundle" key="StructureDefinition-ra-measurereport-bundle" name="Risk Adjustment Coding Gap Report Bundle"/>
-<artifact id="ValueSet/confidence-scale" key="ValueSet-confidence-scale" name="Risk Adjustment Condition Category (CC) Confidence Scale"/>
-<artifact id="CodeSystem/confidence-scale" key="CodeSystem-confidence-scale" name="Risk Adjustment Condition Category (CC) Confidence Scale CodeSystem"/>
 <artifact id="CodeSystem/evidence-status" key="CodeSystem-evidence-status" name="Risk Adjustment Evidence Status CodeSystem"/>
 <artifact id="StructureDefinition/ra-evidenceStatusDate" key="StructureDefinition-ra-evidenceStatusDate" name="Risk Adjustment Evidence Status Date"/>
 <artifact id="ValueSet/evidence-status" key="ValueSet-evidence-status" name="Risk Adjustment Evidence Status ValueSet"/>
