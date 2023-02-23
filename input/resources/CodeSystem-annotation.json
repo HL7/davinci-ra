@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "annotation",
+  "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/annotation",
+  "version": "1.0.0",
+  "name": "Annotation",
+  "title": "Annotation CodeSystem",
+  "status": "active",
+  "experimental": false,
+  "publisher":"Clinical Quality Information Workgroup",
+  "description": "Coded annotation.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/us/davinci-ra/ValueSet/annotation",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "acknowledged-dismissed",
+      "display": "Acknowledged dismissed",
+      "definition": "Acknowleged and dismissed"
+    },
+    {
+      "code": "acknowledged-submitted-on-claim",
+      "display": "Acknowledged submitted on claim",
+      "definition": "Acknowleged and submitted on claim"
+    },
+    {
+      "code": "acknowledged-other-specialty-to-address",
+      "display": "Acknowledged other specialty to address",
+      "definition": "Acknowleged and other specialty to address"
+    },
+    {
+      "code": "acknowledged-other-specialty-to-close",
+      "display": "Acknowledged other specialty to close",
+      "definition": "Acknowleged and other specialty to close"
+    }
+  ],
+  "count": 4
+}

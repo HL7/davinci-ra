@@ -6,6 +6,9 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/ra-annotation" key="StructureDefinition-ra-annotation" name="Annotation"/>
+<artifact id="ValueSet/annotation" key="ValueSet-annotation" name="Annotation"/>
+<artifact id="CodeSystem/annotation" key="CodeSystem-annotation" name="Annotation CodeSystem"/>
 <artifact id="StructureDefinition/ra-codingGapRequest" key="StructureDefinition-ra-codingGapRequest" name="Coding Gap Request"/>
 <artifact id="CodeSystem/coding-gap-task-reason" key="CodeSystem-coding-gap-task-reason" name="Coding Gap Task Reason CodeSystem"/>
 <artifact id="ValueSet/coding-gap-task-reason" key="ValueSet-coding-gap-task-reason" name="Coding Gap Task Reason ValueSet"/>
