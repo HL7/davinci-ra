@@ -26,9 +26,9 @@
       <min value="0"/>
       <max value="1"/>
     </element>
-    <element id="Extension.extension:sender">
+    <element id="Extension.extension:annotator">
       <path value="Extension.extension"/>
-      <sliceName value="sender"/>
+      <sliceName value="annotator"/>
       <short value="Who added the annotation"/>
       <min value="0"/>
       <max value="1"/>
@@ -36,14 +36,14 @@
         <code value="Extension"/>
       </type>
     </element>
-    <element id="Extension.extension:sender.url">
+    <element id="Extension.extension:annotator.url">
       <path value="Extension.extension.url"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="sender"/>
+      <fixedUri value="annotator"/>
     </element>   
     <element id="Extension.extension:sender.value[x]">
       <path value="Extension.extension.value[x]"/>
@@ -113,24 +113,24 @@
       </type>
     </element>  
 
-    <element id="Extension.extension:codedAnnotation">
+    <element id="Extension.extension:code">
       <path value="Extension.extension"/>
-      <sliceName value="codedAnnotation"/>
-      <short value="Coded annotation"/>
+      <sliceName value="code"/>
+      <short value="Coded anotation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
       </type>
     </element>
-    <element id="Extension.extension:codedAnnotation.url">
+    <element id="Extension.extension:code.url">
       <path value="Extension.extension.url"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="codedAnnotation"/>
+      <fixedUri value="code"/>
     </element>   
     <element id="Extension.extension:codedAnnotation.valueCodableConcept">
       <path value="Extension.extension.value[x]"/>
@@ -141,10 +141,45 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/annotation"/>
+        <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-annotation"/>
       </binding>      
     </element>  
 
+    <element id="Extension.extension:relatedData">
+      <path value="Extension.extension"/>
+      <sliceName value="relatedData"/>
+      <short value="Related data"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:relatedData.url">
+      <path value="Extension.extension.url"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="relatedData"/>
+    </element>   
+    <element id="Extension.extension:text.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>  
+
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-annotation"/>
+    </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="0"/>

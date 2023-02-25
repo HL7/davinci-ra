@@ -1,16 +1,16 @@
 {
   "resourceType": "CodeSystem",
-  "id": "annotation",
-  "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/annotation",
+  "id": "coding-gap-annotation",
+  "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-annotation",
   "version": "1.0.0",
-  "name": "Annotation",
-  "title": "Annotation CodeSystem",
+  "name": "Coding gap annotation",
+  "title": "Coding Gap Annotation CodeSystem",
   "status": "active",
   "experimental": false,
   "publisher":"Clinical Quality Information Workgroup",
-  "description": "Coded annotation.",
+  "description": "Coded annotation for coding gap",
   "caseSensitive": true,
-  "valueSet": "http://hl7.org/fhir/us/davinci-ra/ValueSet/annotation",
+  "valueSet": "http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-annotation",
   "content": "complete",
   "concept": [
     {

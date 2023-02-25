@@ -100,15 +100,7 @@
             <mustSupport value="true"/>
         </element>         
         <element id="Task.input:measurereport_group_id.type">
-            <path value="Task.input.type"/> 
-<!--                            
-            <patternCodableConcept>
-                <coding>
-                    <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-task-input-type"/>
-                    <code value="measurereport-group-id"/>
-                </coding>
-            </patternCodableConcept>   
--->                   
+            <path value="Task.input.type"/>              
             <mustSupport value="true"/>
         </element>  
        <element id="Task.input:measurereport_group_id.value[x]">

@@ -7,8 +7,8 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/ra-annotation" key="StructureDefinition-ra-annotation" name="Annotation"/>
-<artifact id="ValueSet/annotation" key="ValueSet-annotation" name="Annotation"/>
-<artifact id="CodeSystem/annotation" key="CodeSystem-annotation" name="Annotation CodeSystem"/>
+<artifact id="ValueSet/coding-gap-annotation" key="ValueSet-coding-gap-annotation" name="Coding Gap Annotation"/>
+<artifact id="CodeSystem/coding-gap-annotation" key="CodeSystem-coding-gap-annotation" name="Coding Gap Annotation CodeSystem"/>
 <artifact id="CodeSystem/confidence-scale" key="CodeSystem-confidence-scale" name="Coding Gap Confidence Scale CodeSystem"/>
 <artifact id="StructureDefinition/ra-codingGapRequest" key="StructureDefinition-ra-codingGapRequest" name="Coding Gap Request"/>
 <artifact id="CodeSystem/coding-gap-task-reason" key="CodeSystem-coding-gap-task-reason" name="Coding Gap Task Reason CodeSystem"/>
