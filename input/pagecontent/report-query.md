@@ -1,4 +1,6 @@
-<div class="bg-success" markdown="1">
+<div class="new-content" markdown="1">
+All sections on this page are new content.
+</div><!-- new-content -->
 
 ### Querying for MeasureReports and their Evaluated Resources
 

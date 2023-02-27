@@ -9,13 +9,7 @@
       <li><a href="remediation.html">Remediation</a></li>
     </ul>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Digital Condition Category (dCC)<b class="caret"></b></a>
-    <ul class="dropdown-menu">
-      <li><a href="dcc.html">Specifying dCC</a></li>
-      <li><a href="dcc-transition-strategy.html">Transition Strategy</a></li>
-    </ul>
-  </li>  
+  <li><a href="dcc.html">Digital Condition Category (dCC)</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts<b class="caret"></b></a>
     <ul class="dropdown-menu">

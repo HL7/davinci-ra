@@ -111,7 +111,7 @@ Mostly a non-FHIR approach. The Payer generates FHIR [Risk Adjustment Coding Gap
 
 #### The Evaluated Approach
 
-An FHIR approach. This de novo approach uses the [$ra.evaluate-measure] operation and requires [digital Condition Categories (dCCs)](digital-condition-category.html). The FHIR server is pre-populated with patient data and dCCs. Payer runs the [$ra.evaluate-measure] operation against their FHIR server, CQL is executed against the patient and risk adjustment data to produce [Risk Adjustment Coding Gap MeasureReport] which references the evaluated resources used by CQL logics evaluation.
+An FHIR approach. This de novo approach uses the [$ra.evaluate-measure] operation and requires [digital Condition Categories (dCCs)](dcc.html). The FHIR server is pre-populated with patient data and dCCs. Payer runs the [$ra.evaluate-measure] operation against their FHIR server, CQL is executed against the patient and risk adjustment data to produce [Risk Adjustment Coding Gap MeasureReport] which references the evaluated resources used by CQL logics evaluation.
 
 </div><!-- new-content -->
 

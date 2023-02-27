@@ -32,7 +32,6 @@
 [Condition43pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication]: Condition-ra-condition43pat01.html
 [Condition44Pat01: Allergic bronchopulmonary aspergillosis]: Condition-ra-condition44pat01.html
 [Da Vinci - Member Attribution (ATR) List]: http://build.fhir.org/ig/HL7/davinci-atr/
-[Digital Condition Category (dCC)]: digital-condition-category.html
 [Downloads]: downloads.html
 [Examples]: examples.html
 [Encounter01Pat03: Pat03 Encounter on 2021-07-14]: Encounter-ra-encounter01pat03.html
@@ -106,6 +105,8 @@
 [Risk Adjustment Model Measure]: StructureDefinition-ra-model-measure.html
 [Risk Adjustment Model Measure Profile]: StructureDefinition-ra-model-measure.html
 
+[Risk Adjustment SearchSet Bundle]: StructureDefinition-ra-searchset-bundle.html
+
 [SMART App Launch]: http://hl7.org/fhir/smart-app-launch/history.html
 [SMART Backend Services]: https://hl7.org/fhir/uv/bulkdata/authorization/index.html
 [Specifying dCC]: dcc.html
@@ -115,9 +116,8 @@
 
 [Risk Adjustment Coding Gap MeasureReport]: StructureDefinition-ra-measurereport.html
 
-[$ra.evaluate-measure]:OperationDefinition-ra.evaluate-measure.html
-
 [$ra.evaluate-Measure]: OperationDefinition-ra.evaluate-measure.html
 [Generated]: report-generation.html#the-generated-approach
 [Assisted]: report-generation.html#the-assisted-approach
 [Evaluated]:report-generation.html#the-evaluated-approach
+[Digital Condition Category (dCC)]: dcc.html

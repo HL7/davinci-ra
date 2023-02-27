@@ -1,27 +1,28 @@
 
-List of profiles that define constrains on FHIR resources for systems conforming to this implementation guide.
+<div class="bg-success" markdown="1"><!-- new content -->
 
-|Resource Type|Profile Name|Link to Profile|
-|---|---|---|
-|MeasureReport|Risk Adjustment Coding Gap MeasureReport|[Risk Adjustment Coding Gap MeasureReport]|
-|Measure|Risk Adjustment Model Measure|[Risk Adjustment Model Measure]|
-|Group|Patient Group|[Patient Group]|
-{: .grid}
-
-<div class="bg-success" markdown="1">
-|Resource Type|Profile Name|Link to Profile|
-|---|---|---|
-|Task|Risk Adjustment Clinical Evaluation Evidence Task|[Risk Adjustment Clinical Evaluation Evidence Task]|
-{: .grid}
-
+New profiles: 
+- Risk Adjustment Clinical Evaluation Evidence Task
+- Risk Adjustment SearchSet Bundle
 </div>
 
-<div class="note-to-balloters" markdown="1">
-**Deprecated Profile** - with the query approach, this profile is not needed
+List of profiles that define constrains on FHIR resources for systems conforming to this implementation guide.
 
-|Resource Type|Profile Name|Link to Profile|
+|Resource Type|Profile|
 |---|---|---|
-|Bundle|Risk Adjustment Coding Gap Report Bundle|[Risk Adjustment Coding Gap Report Bundle]|
+|Bundle|[Risk Adjustment SearchSet Bundle]
+|Group|[Patient Group]|
+MeasureReport|[Risk Adjustment Coding Gap MeasureReport]|
+|Measure|[Risk Adjustment Model Measure]|
+|Task|[Risk Adjustment Clinical Evaluation Evidence Task]|
+{: .grid}
+
+<div class="note-to-balloters" markdown="1">
+**Deprecated Profile** - because the $report operation is deprecated to use direct RESTful query (see [Report Query]), this profile is not needed
+
+|Resource Type|Profile|
+|---|---|---|
+|Bundle|[Risk Adjustment Coding Gap Report Bundle]|
 {: .grid}
 
 </div>

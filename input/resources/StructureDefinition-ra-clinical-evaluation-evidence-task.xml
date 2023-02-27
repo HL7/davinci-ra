@@ -17,7 +17,30 @@
     <differential>
         <element id="Task">
             <path value="Task"/>
-        </element>       
+        </element>      
+        <element id="Task.contained">
+            <path value="Task.contained"/>  
+            <slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="value"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>                    
+            <mustSupport value="true"/>
+        </element>          
+        <element id="Task.contained:searchset_bundle">
+            <path value="Task.contained"/>
+            <sliceName value="searchset_bundle"/>
+            <short value="A searchSet Bundle contains fullUrl of clinical evaluation evidence resource(s)"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Bundle"/>
+                <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-searchset-bundle"/>
+            </type>            
+            <mustSupport value="true"/>
+        </element>  
         <element id="Task.identifier">
             <path value="Task.identifier"/>          
             <mustSupport value="true"/>
@@ -111,6 +134,28 @@
             </type>
             <mustSupport value="true"/>
         </element>   
+
+        <element id="Task.input:searchset_bundle">
+            <path value="Task.input"/>
+            <sliceName value="searchset_bundle"/>
+            <short value="Risk Adjustment SearchSet Bundle"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>         
+        <element id="Task.input:searchset_bundle.type">
+            <path value="Task.input.type"/>              
+            <mustSupport value="true"/>
+        </element>  
+       <element id="Task.input:searchset_bundle.value[x]">
+            <path value="Task.input.Reference"/>
+            <short value="Value of MeasureReport.group.id"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-searchset-bundle"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>           
 
     </differential>
 </StructureDefinition>

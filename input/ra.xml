@@ -4,10 +4,10 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
   <id value="hl7.fhir.us.davinci-ra"/>
   <url value="http://hl7.org/fhir/us/davinci-ra/ImplementationGuide/fhir.us.davinci-ra"/>
-  <version value="1.0.1"/>
+  <version value="2.0.0-ballot"/>
   <name value="RiskAdjustment"/>
   <title value="Da Vinci Risk Adjustment Implementation Guide"/>
-  <status value="draft"/>
+  <status value="active"/>
   <copyright value="Used by permission of HL7 International - Clinical Quality Information Work Group, all rights reserved Creative Commons License"/>
   <experimental value="false"/>
   <publisher value="HL7 Clinical Quality Information Work Group"/>
@@ -649,19 +649,9 @@
       </page>
 
       <page>
-        <nameUrl value="digital-condition-category.html"/>
+        <nameUrl value="dcc.html"/>
         <title value="Digital Condition Category (dCC)"/>
         <generation value="markdown"/>
-        <page>
-          <nameUrl value="dcc.html"/>
-          <title value="Specifying dCCs"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="dcc-transition-strategy.html"/>
-          <title value="Transition Strategy"/>
-          <generation value="markdown"/>
-        </page>
       </page>
 
       <page>

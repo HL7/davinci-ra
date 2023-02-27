@@ -1,5 +1,7 @@
 
-<div class="bg-success" markdown="1">
+<div class="new-content" markdown="1">
+All sections on this page are new content.
+</div><!-- new-content -->
 
 ### Introduction and Background
 
@@ -21,17 +23,20 @@ The actors involved in the remediation phase are Provider, Risk Adjustment Coder
 - **Payer** reviews the Task sent from the Risk Adjustment Coder and formally updates in the Payer's database.
 
 ### Using Task
-Figure 2.4-1 and Figure 2.4-2 provide an overview of how the Task resource, [Risk Adjustment Clinical Evaluation Evidence Task], is used to support the remediation process. The [Task State Machine](StructureDefinition-ra-clinical-evaluation-evidence-task.html#task-state-machine) includes a diagram for the state machine used by this profile. 
+Figure 2.4-1 provides an overview of how the Task resource, [Risk Adjustment Clinical Evaluation Evidence Task], is used to support the remediation process. The [Task State Machine](StructureDefinition-ra-clinical-evaluation-evidence-task.html#task-state-machine) includes a diagram for the state machine used by this profile. 
 
-After the [Report Query] step, the Provider reviews the coding gaps and determines whether they need to initiate gap closure/invalidation process based on the clinical evaluation evidence after the review. 
+After the [Report Query] step, the Provider reviews the coding gaps and determines whether they need to initiate the gap closure/invalidation process based on the clinical evaluation evidence after the review. 
 - If no changes are needed, the process stops, no action is taken. 
-- If clinical evaluation evidence reveals that changes are needed, the Provider creates a new [Risk Adjustment Clinical Evaluation Evidence Task]. Each instance of the Task resource corresponds to each coding gap with proposed changes along with supporting clinical evaluation evidence. This also applies to net-new. For example, if a patient has five HCCs, after the review, the Provider determines that two of the five HCCs need to be updated and a net-new also need to be added based on the clinical evaluation evidence, the Provider will need to create three seperate Task resources for each of the three HCCs in this scenario. When create each Task:
+- If clinical evaluation evidence reveals that changes are needed, for each coding gap that needs a change, the Provider creates a [Risk Adjustment Clinical Evaluation Evidence Task] with proposed changes along with supporting clinical evaluation evidence. This also applies to needing to create a net-new. For example, if a patient has five HCCs, after the review, the Provider determines that two of the five HCCs need to be updated and a net-new also need to be added based on the clinical evaluation evidence, the Provider will need to create three seperate Task resources in this scenario. When create a Risk Adjustment Clinical Evaluation Evidence Task:
     - Set the `Task.status` to `requested`
-    - Set the `Task.focus` to reference the [Risk Adjustment Coding Gap MeasureReport] resource that contains the Condition Category code (a.k.a, HCC) that this Task request is for
-    - Set the `Task.reasonCode` using an appropriate code, such as closure-request or invalidation-request-never-had-condition, from the [Coding Gap Task Reason ValueSet](ValueSet-coding-gap-task-reason.html). Use the code creation-request for net-new. [*TODO: discussing appropriate name for this value set and any changes needed to the codes. Note that these are not requests to make changes, but to provide latest and accurate data to Payer, so the next round of report generation would be based on the new/updated evidence.*]   
-    - The Task resource must include one to many `Task.input` and one of the `input` must be the value of `MeasureReport.group.id`, for example, the group.id in the MeasureReport for HCC 189. Because `MeasureReport.group.id` uniquely identifies a Condition Category code that is included in a MeasureReport, this is how to indicate in Task which coding gap (a.k.a, HCC) this Task is created for. 
-    - This Task profile also supports clinical evaluation evidence be provided to support this Task. For example, if a new face-to-face encounter was recently conducted with a documented diagnosis that would close the gap, the Provider can include those Encounter and the Condition resources as input by having two additional `Task.input`, one references the Encounter resource, and the other references the Condition resource. 
-    - Resources provided as the clinical evaluation evidence are included in the Task as contained resources. 
+    - Set the `Task.focus` to reference the [Risk Adjustment Coding Gap MeasureReport] resource that contains the Condition Category code (a.k.a, HCC) that this Task is for
+    - Set the `Task.reasonCode` using an appropriate code, such as closure-request or invalidation-request-never-had-condition, from the [Coding Gap Task Reason ValueSet](ValueSet-coding-gap-task-reason.html). Use the code creation-request for net-new. This is the reason for providing clinical evaluation evidence.      
+    - `Task.input` with `MeasureReport.group.id` as value
+        - If the `Task.reasonCode` is other than `creation`, then a Task must have an `input` with `MeasureReport.group.id` as value. For example, the `input.value` is the group.id in the MeasureReport for HCC 189. Because `MeasureReport.group.id` uniquely identifies a Condition Category code that is included in a MeasureReport, this is how to indicate in Task which coding gap (a.k.a, HCC) this Task is for. 
+    - `Task.input` that reference a [Risk Adjustment SearchSet Bundle]
+        - To provide clinical evaluation evidence, this is done by having the `Task.input` references a searchSet Bundle, the [Risk Adjustment SearchSet Bundle]. 
+    - `Task.contained` contains the searchSet Bundle resource
+        - Note that the searchSet Bundle resource itself is contained using `Task.contained`, but the resources (for clinical evaluation evidence) in the Bundle are not contained. The absolute url of the resource for a clinical evaluation evidence is provided in `Bundle.entry.fullUrl`. For example, if the Provider provides an Encounter and a Condition as clinical evaluation evidence, the Task will have a `Task.input` references a searchSet Bundle with two entries, one entry with the fullUrl for the Encounter resource and the other entry with the fullUrl for the Condition resource.  
 
 Provider posts (POST) the Task resource (in a `requsted` status) to the Payer or a 3rd Party server for review by the Risk Adjustment Coder. The Risk Adjustment Coder reviews the Task and the supplied clinical evaluation evidence and conducts medical record review. The Risk Adjustment Coder has option to either reject or complete a Task.
 - In a rejected scenario, for example, if evidence is missing or signature is missing, the Risk Adjustment Coder updates the Task with the following changes. The process then stops and no further action is taken (no patient records will be updated on the Payer system). 
@@ -42,12 +47,9 @@ Provider posts (POST) the Task resource (in a `requsted` status) to the Payer or
 
 The risk adjustment lifecycle then renews. The Risk adjustment engine runs against the patient records with the updated information and the report generation results in Risk Adjustment Coding Gap MeasureReports that reflect more accurate and up-to-date coding gap information.  
 
-Note that since these Task resources are stored, so the Provider, the Risk Adjustment Coder, or the Payer would be able to access them and review details and updates history made throughout the lifecyle.
+Note that since these Task resources are stored, the Provider, the Risk Adjustment Coder, or the Payer will be able to access them and review details and updates history made throughout the lifecyle.
 
 {% include img-portrait.html img="remediation.png" caption="Figure 2.4-1: Using Task to Support Remediation"%}
-
-
-</div><!-- new-content -->
 
 
 {% include link-list.md %}

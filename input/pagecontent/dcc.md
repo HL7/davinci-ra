@@ -1,7 +1,10 @@
 
-<div class="bg-info" markdown="1">
+<div class="new-content" markdown="1">
+All sections on this page are new content.
+</div><!-- new-content -->
+<div class="note-to-balloters" markdown="1">
 
-**This is a new page that is under development for Jan2023 ballot.**
+**The Digital Condition Category sections are DRAFT and open for review.**
 
 </div>
 

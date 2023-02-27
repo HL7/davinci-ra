@@ -13,13 +13,14 @@ The following data-elements are mandatory (i.e data MUST be present).
 1. A `Task.focus` element that references a [Risk Adjustment Coding Gap MeasureReport]
 1. A `Task.authoredOn` element
 1. A `Task.reasonCode` element with a code from the [Coding Gap Task Reason ValueSet](ValueSet-coding-gap-task-reason.html)
-1. A `Task.input` element with value of `MeasureReport.group.id` from the [Risk Adjustment Coding Gap MeasureReport] referenced by `Task.focus`
+1. A `Task.input` element with value of `MeasureReport.group.id` from the [Risk Adjustment Coding Gap MeasureReport] referenced by `Task.focus` if `reasonCode` other than creation
+1. A `Task.input` element references [Risk Adjustment SearchSet Bundle]
 
 **Each {{site.data.structuredefinitions.[id].type}} *should* have ([Must Support]):**
 
-1. A `Task.statusReason` element
-1. A `Task.statusReason` element if `Task.statusReason` element is present     
-1. A `Task.lastModified` element
+1. A `Task.contained` references [Risk Adjustment SearchSet Bundle]
+1. A `Task.lastModified`
+
 
 **Additional Profile specific implementation guidance:**
 1. See the [Task State Machine](StructureDefinition-ra-clinical-evaluation-evidence-task.html#task-state-machine) for risk adjustment remediation

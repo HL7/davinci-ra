@@ -1,5 +1,5 @@
 
-<div class="new-content" markdown="1">
+<div class="bg-success" markdown="1"><!-- new content -->
 
 ### Package File
 
@@ -21,7 +21,7 @@ All the examples that are used in this IG are available for download:
 - [XML](examples.xml.zip)
 - [JSON](examples.json.zip)
 
-<div class="new-content" markdown="1">
+<div class="bg-success" markdown="1"><!-- new content -->
 
 ### Schematrons
 
