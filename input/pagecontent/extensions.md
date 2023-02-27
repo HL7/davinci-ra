@@ -10,14 +10,6 @@ List of extensions defined in this implementation guide:
 |[Risk Adjustment Hierarchical Status](StructureDefinition-ra-hierarchicalStatus.html)|
 |[Risk Adjustment Suspect Type](StructureDefinition-ra-suspectType.html)|
 
-<div class="bg-success" markdown="1">
-
-|Link to Modifier Extension|
-|---|
-|[Coding Gap Request](StructureDefinition-ra-codingGapRequest.html)|
-
-</div><!-- new-content -->
-
 <br />
 
 {% include link-list.md %}
