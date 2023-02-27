@@ -31,7 +31,7 @@
 [Condition42Pat03: Other artificial openings of gastrointestinal tract status]: Condition-ra-condition42pat03.html
 [Condition43pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication]: Condition-ra-condition43pat01.html
 [Condition44Pat01: Allergic bronchopulmonary aspergillosis]: Condition-ra-condition44pat01.html
-[Da Vinci - Member Attribution (ATR) List]: http://build.fhir.org/ig/HL7/davinci-atr/
+[Da Vinci - Member Attribution (ATR) List]: http://hl7.org/fhir/us/davinci-atr/
 [Downloads]: downloads.html
 [Examples]: examples.html
 [Encounter01Pat03: Pat03 Encounter on 2021-07-14]: Encounter-ra-encounter01pat03.html

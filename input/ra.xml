@@ -658,6 +658,7 @@
         <nameUrl value="profiles.html"/>
         <title value="Profiles"/>
         <generation value="markdown"/>
+<!--        
         <page>
           <nameUrl value="StructureDefinition-ra-model-measure.html"/>
           <title value="Risk Adjustment Model Measure"/>
@@ -678,41 +679,12 @@
           <title value="Risk Adjustment Measure Report Bundle"/>
           <generation value="generated"/>
         </page>
+-->        
       </page>
       <page>
         <nameUrl value="extensions.html"/>
         <title value="Extensions"/>
-        <generation value="markdown"/>
-        <page>
-          <nameUrl value="StructureDefinition-ra-clinicalDataCollectionDeadline.html"/>
-          <title value="Risk Adjustment Clinical Data Collection Deadline"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-ra-evidenceStatus.html"/>
-          <title value="Risk Adjustment HCC Gap Evidence Status"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-ra-evidenceStatusDate.html"/>
-          <title value="Risk Adjustment HCC Gap Evidence Status Last Change Date"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-ra-groupReference.html"/>
-          <title value="Risk Adjustment Group Reference Extension"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-ra-hierarchicalStatus.html"/>
-          <title value="Risk Adjustment Hierarchical Status"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-ra-suspectType.html"/>
-          <title value="Risk Adjustment Suspect Type"/>
-          <generation value="generated"/>
-        </page>
+        <generation value="markdown"/>      
       </page>
       <page>
         <nameUrl value="terminology.html"/>
@@ -727,118 +699,13 @@
       <page>
         <nameUrl value="capabilities.html"/>
         <title value="Capability Statement"/>
-        <generation value="markdown"/>
-        <page>
-          <nameUrl value="CapabilityStatement-ra-server.html"/>
-          <title value="Risk Adjustment Server Capability Statement"/>
-          <generation value="generated"/>
-        </page>
+        <generation value="markdown"/>     
       </page>
       <page>
         <nameUrl value="examples.html"/>
         <title value="Examples"/>
         <generation value="markdown"/>
-        <page>
-          <nameUrl value="Condition-ra-condition01pat03.html"/>
-          <title value="Condition01Pat03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Encounter-ra-encounter01pat03.html"/>
-          <title value="Encounter01Pat03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Encounter-ra-encounter04pat03.html"/>
-          <title value="Encounter04Pat03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Encounter-ra-encounter05pat03.html"/>
-          <title value="Encounter05Pat03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Encounter-ra-encounter06pat03.html"/>
-          <title value="Encounter06Pat03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Encounter-ra-encounter07pat03.html"/>
-          <title value="Encounter07Pat03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Encounter-ra-encounter15pat03.html"/>
-          <title value="Encounter15Pat03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Encounter-ra-encounter16pat03.html"/>
-          <title value="Encounter16Pat03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Encounter-ra-encounter19pat03.html"/>
-          <title value="Encounter19Pat03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Encounter-ra-encounter21pat03.html"/>
-          <title value="Encounter21Pat03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Encounter-ra-encounter22pat03.html"/>
-          <title value="Encounter22Pat03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Encounter-ra-encounter31pat02.html"/>
-          <title value="Encounter31Pat02"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Encounter-ra-encounter35pat03.html"/>
-          <title value="Encounter35Pat03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Observation-ra-obs01pat03.html"/>
-          <title value="Observation01Pat03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Observation-ra-obs01pat03.html"/>
-          <title value="Observation02Pat03"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Patient-ra-patient01.html"/>
-          <title value="Patient01"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="MeasureReport-ra-measurereport01.html"/>
-          <title value="MeasureReport01"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Measure-RAModelExample01.html"/>
-          <title value="Measure01"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Measure-RAModelExample02.html"/>
-          <title value="Measure02"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="Measure-RAModelExample03.html"/>
-          <title value="Measure03"/>
-          <generation value="generated"/>
-        </page>
-      </page>
+      </page>      
       <page>
         <nameUrl value="glossary.html"/>
         <title value="Glossary"/>
