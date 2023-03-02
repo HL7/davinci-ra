@@ -7,7 +7,20 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="Da Vinci Project"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/cqi/index.cfm"/>
+    </telecom>
+  </contact>
   <description value="This profile is based on the [MeasureReport](http://hl7.org/fhir/R4/measurereport.html) to represent a risk adjustment coding gap report."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <kind value="resource"/>
   <abstract value="false"/>
@@ -20,8 +33,9 @@
       <short value="This is a risk adjustment coding gap report."/>
       <definition value="This is a risk adjustment coding gap report of a patient/member using a specific version of a particular Risk Adjustment model."/>
     </element>
-    <element id="MeasureReport:clinicalDataCollectionDeadline">
+    <element id="MeasureReport.extension:clinicalDataCollectionDeadline">
       <path value="MeasureReport.extension"/>
+      <sliceName value="clinicalDataCollectionDeadline"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -126,108 +140,108 @@
       <max value="1"/>
       <mustSupport value="true"/>
     </element>
- <element id="MeasureReport.group.extension:suspectType">
-   <path value="MeasureReport.group.extension"/>
-   <sliceName value="suspectType"/>
-   <min value="0"/>
-   <max value="1"/>
-   <type>
-     <code value="Extension"/>
-     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType"/>
-   </type>
-   <mustSupport value="true"/>
- </element>
- <element id="MeasureReport.group.extension:evidenceStatus">
-   <path value="MeasureReport.group.extension"/>
-   <sliceName value="evidenceStatus"/>
-   <min value="0"/>
-   <max value="1"/>
-   <type>
-     <code value="Extension"/>
-     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus"/>
-   </type>
-   <mustSupport value="true"/>
- </element>
- <element id="MeasureReport.group.extension:evidenceStatusDate">
-   <path value="MeasureReport.group.extension"/>
-   <sliceName value="evidenceStatusDate"/>
-   <min value="0"/>
-   <max value="1"/>
-   <type>
-     <code value="Extension"/>
-     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate"/>
-   </type>
-   <mustSupport value="true"/>
- </element>
- <element id="MeasureReport.group.extension:hierarchiesAppliedStatus">
-   <path value="MeasureReport.group.extension"/>
-   <sliceName value="hierarchicalStatus"/>
-   <min value="0"/>
-   <max value="1"/>
-   <type>
-     <code value="Extension"/>
-     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus"/>
-   </type>
-   <mustSupport value="true"/>
- </element>
- <element id="MeasureReport.group.extension:confidenceScale">
-   <path value="MeasureReport.group.extension"/>
-   <sliceName value="confidenceScale"/>
-   <min value="0"/>
-   <max value="1"/>
-   <type>
-     <code value="Extension"/>
-     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-confidenceScale"/>
-   </type>
-   <mustSupport value="true"/>
- </element> 
- <element id="MeasureReport.group.extension:annotation">
-   <path value="MeasureReport.group.extension"/>
-   <sliceName value="annotation"/>
-   <min value="0"/>
-   <max value="1"/>
-   <type>
-     <code value="Extension"/>
-     <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-annotation"/>
-   </type>
- </element>  
- <element id="MeasureReport.group.code">
-   <path value="MeasureReport.group.code"/>
-   <short value="Condition Category (CC) code for a Risk Adjustment Model"/>
-   <definition value="Condition Category (CC) code for a Risk Adjustment Model."/>
-   <min value="0"/>
-   <max value="1"/>
-   <type>
-     <code value="CodeableConcept"/>
-   </type>
-   <binding>
-     <strength value="example"/>
-     <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/sample-cmshcc"/>
-   </binding>
-   <mustSupport value="true"/>
- </element>
- <element id="MeasureReport.group.stratifier.code">
-   <path value="MeasureReport.group.stratifier.code"/>
-   <min value="0"/>
-   <max value="1"/>
- </element>
- <element id="MeasureReport.evaluatedResource">
-   <path value="MeasureReport.evaluatedResource"/>
-   <short value="An evaluated resource is any data a clinician would need to independently arrive at the clinical inference that a Condition Category (CC) listed on a Risk Adjustment Coding Gap Report could be present for a patient. Risk adjusted evaluated resources may include practitioners, encounters, diagnoses, medications, labs, or any other clinical evidence that the suspecting algorithm may have used as supporting evidence to infer the presence of a Condition Category (CC) gap."/>
-   <definition value="An evaluated resource is any data a clinician would need to independently arrive at the clinical inference that a Condition Category (CC) listed on a Risk Adjustment Coding Gap Report could be present for a patient. Risk adjusted evaluated resources may include practitioners, encounters, diagnoses, medications, labs, or any other clinical evidence that the suspecting algorithm may have used as supporting evidence to infer the presence of an Condition Category (CC) gap."/>
-   <mustSupport value="true"/>
- </element>
- <element id="MeasureReport.evaluatedResource.extension:groupReference">
-    <path value="MeasureReport.evaluatedResource.extension"/>
-    <sliceName value="groupReference"/>
-    <definition value="This id references the `MeasureReport.group.id`, which allows linking a supporting resource to a specific Condition Categories coding gap."/>
-    <min value="0"/>
-    <max value="*"/>
-    <type>
-      <code value="Extension"/>
-      <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference"/>
-    </type>
-    <mustSupport value="true"/>
-  </element>
+    <element id="MeasureReport.group.extension:suspectType">
+      <path value="MeasureReport.group.extension"/>
+      <sliceName value="suspectType"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.group.extension:evidenceStatus">
+      <path value="MeasureReport.group.extension"/>
+      <sliceName value="evidenceStatus"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.group.extension:evidenceStatusDate">
+      <path value="MeasureReport.group.extension"/>
+      <sliceName value="evidenceStatusDate"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.group.extension:hierarchiesAppliedStatus">
+      <path value="MeasureReport.group.extension"/>
+      <sliceName value="hierarchicalStatus"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.group.extension:confidenceScale">
+      <path value="MeasureReport.group.extension"/>
+      <sliceName value="confidenceScale"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-confidenceScale"/>
+      </type>
+      <mustSupport value="true"/>
+    </element> 
+    <element id="MeasureReport.group.extension:annotation">
+      <path value="MeasureReport.group.extension"/>
+      <sliceName value="annotation"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-annotation"/>
+      </type>
+    </element>  
+    <element id="MeasureReport.group.code">
+      <path value="MeasureReport.group.code"/>
+      <short value="Condition Category (CC) code for a Risk Adjustment Model"/>
+      <definition value="Condition Category (CC) code for a Risk Adjustment Model."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/sample-cmshcc"/>
+      </binding>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.group.stratifier.code">
+      <path value="MeasureReport.group.stratifier.code"/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="MeasureReport.evaluatedResource">
+      <path value="MeasureReport.evaluatedResource"/>
+      <short value="An evaluated resource is any data a clinician would need to independently arrive at the clinical inference that a Condition Category (CC) listed on a Risk Adjustment Coding Gap Report could be present for a patient. Risk adjusted evaluated resources may include practitioners, encounters, diagnoses, medications, labs, or any other clinical evidence that the suspecting algorithm may have used as supporting evidence to infer the presence of a Condition Category (CC) gap."/>
+      <definition value="An evaluated resource is any data a clinician would need to independently arrive at the clinical inference that a Condition Category (CC) listed on a Risk Adjustment Coding Gap Report could be present for a patient. Risk adjusted evaluated resources may include practitioners, encounters, diagnoses, medications, labs, or any other clinical evidence that the suspecting algorithm may have used as supporting evidence to infer the presence of an Condition Category (CC) gap."/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.evaluatedResource.extension:groupReference">
+      <path value="MeasureReport.evaluatedResource.extension"/>
+      <sliceName value="groupReference"/>
+      <definition value="This id references the `MeasureReport.group.id`, which allows linking a supporting resource to a specific Condition Categories coding gap."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
   </differential>
 </StructureDefinition>
