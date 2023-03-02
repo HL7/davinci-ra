@@ -1,8 +1,5 @@
 == Suppressed Messages ==
 
-# The slice is open with the intention of allowing entries for non-defined resources.
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle
-
 # MEASURE_MR_M_SCORING_UNK: This is intended.  The measureScore attribute is not required.
 The scoring system in this measure is unknown, so the measureScore values cannot be checked
 
@@ -13,12 +10,9 @@ WARNING: Measure/RAModelExample03: Measure: A measure should contain at least on
 
 # Terminology_TX_System_NotKnown: Valid CPT code Related to http://www.ama-assn.org/go/cpt
 Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
-[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type because the value set or a code system it depends on is not known to the validator, Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated]
 
 # Terminology_TX_System_NotKnown: URIs for external code systems CMSHCC and CMSRxHCC are published in https://terminology.hl7.org/external_terminologies.html
 Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
 Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
 
-# This is an example ValueSet that is WIP
-WARNING: ValueSet/example-cmshcc: ValueSet.compose[0].include[0]: Unknown System/Version specified, so Concepts and Filters can''t be checked
-WARNING: ValueSet.where(id = 'example-cmshcc'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/cmshcc
+

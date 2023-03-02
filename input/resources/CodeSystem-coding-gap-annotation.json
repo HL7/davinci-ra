@@ -3,7 +3,7 @@
   "id": "coding-gap-annotation",
   "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-annotation",
   "version": "1.0.0",
-  "name": "Coding gap annotation",
+  "name": "CodingGapAnnotation",
   "title": "Coding Gap Annotation CodeSystem",
   "status": "active",
   "experimental": false,

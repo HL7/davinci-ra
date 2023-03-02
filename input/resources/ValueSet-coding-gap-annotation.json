@@ -8,7 +8,7 @@
   },
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-annotation",
   "version": "1.0.0",
-  "name": "Coding gap annotation",
+  "name": "CodingGapAnnotation",
   "title": "Coding Gap Annotation",
   "status": "active",
   "experimental": false,

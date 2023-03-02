@@ -3,7 +3,7 @@
     xmlns="http://hl7.org/fhir">
     <id value="ra.evaluate-measure"/>
     <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/ra.evaluate-measure"/>
-    <name value="evaluate emeasure"/>
+    <name value="RAEvaluateMeasure"/>
     <title value="Evaluate Measure"/>
     <status value="active"/>
     <kind value="operation"/>

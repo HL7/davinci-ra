@@ -3,7 +3,7 @@
     xmlns="http://hl7.org/fhir">
     <id value="ra-searchset-bundle"/>
     <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-searchset-bundle"/>
-    <name value="Risk Adjustment SearchSet Bundle"/>
+    <name value="RASearchSetBundle"/>
     <title value="Risk Adjustment SearchSet Bundle"/>
     <status value="active"/>
     <experimental value="false"/>

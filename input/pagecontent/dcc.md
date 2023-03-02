@@ -45,7 +45,11 @@ A digital condition category is structured as a proportion measure, which consis
 
 *Describe and provides details on [$ra.evaluate-measure] operation.* 
 
+{% include img-portrait.html img="evaluate-measure-payer-to-provider.png" caption = "Figure 14-1: Evaluate Measure - Payer to Provider" %}
 
+{% include img-portrait.html img="evaluate-measure-payer-server.png" caption = "Figure 14-2: Evaluate Measure - Payer Server" %}
+
+{% include img-portrait.html img="evaluate-measure-provider-server.png" caption = "Figure 14-3: Evaluate Measure - Provider Server" %}
 
 ###  Example Digital Condition Category 
 Figure 4-2 is a Venn diagram that shows the condition catetory measure population using a hiearchical condition category code, HCC189 "Amputation Status, Lower Limb/Amputation Complications" as an exmaple. 
