@@ -1,8 +1,17 @@
 
+<div class="bg-success" markdown="1"><!-- new content -->
+
+New extensions: 
+- [Annotation](StructureDefinition-ra-annotation.html)
+- [Risk Adjustment Confidence Scale](StructureDefinition-ra-confidenceScale.html)
+</div>
+
 List of extensions defined in this implementation guide:
 
 |Link to Extension|
 |---|
+|[Annotation](StructureDefinition-ra-annotation.html)|
+|[Risk Adjustment Confidence Scale](StructureDefinition-ra-confidenceScale.html)|
 |[Risk Adjustment Clinical Data Collection Deadline](StructureDefinition-ra-clinicalDataCollectionDeadline.html)|
 |[Risk Adjustment Evidence Status](StructureDefinition-ra-evidenceStatus.html)|
 |[Risk Adjustment Evidence Status Date](StructureDefinition-ra-evidenceStatusDate.html)|

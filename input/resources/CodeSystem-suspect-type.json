@@ -20,7 +20,7 @@
     },
     {
       "code": "suspected",
-      "display": "Suspected Condtion Category Gap",
+      "display": "Suspected Condition Category Gap",
       "definition": "Suspected Condition Category (CC) Gap. A member never has Condition Category (CC) before, but when a Server runs a suspecting algorithm, suspected Condition Categories (CCs) are identified for the member."
     },
     {
