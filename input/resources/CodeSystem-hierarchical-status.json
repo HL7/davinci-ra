@@ -16,17 +16,17 @@
     {
       "code": "applied-superseded",
       "display": "Hierarchies applied and Condition Category is superseded",
-      "definition": "Hierarchies were applied to a Condition Catetory (CC) and the Condition Category (CC) is superseded."
+      "definition": "Hierarchies were applied to a Condition Category (CC) and the Condition Category (CC) is superseded."
     },
     {
       "code": "applied-not-superseded",
       "display": "Hierarchies applied and Condition Category is not superseded",
-      "definition": "Hierarchies were applied to a Condition Catetory (CC) and the Condition Category (CC) is not superseded."
+      "definition": "Hierarchies were applied to a Condition Category (CC) and the Condition Category (CC) is not superseded."
     },
     {
       "code": "not-applied",
       "display": "Hierarchies not applied",
-      "definition": "Hierarchies were not applied to a Condition Catetory (CC)."
+      "definition": "Hierarchies were not applied to a Condition Category (CC)."
     },
     {
       "code": "not-applicable",
