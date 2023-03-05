@@ -501,6 +501,17 @@
                             }
                         ]
                     }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-confidenceScale",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "medium",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/confidence-scale"
+                            }
+                        ]
+                    }
                 }
             ]
         },
