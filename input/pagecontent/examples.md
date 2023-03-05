@@ -70,6 +70,7 @@
 - [Measure03: Risk Adjustment Model CMS-RxHCC V05]  
 
 - [MeasureReport01: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]
+- [MeasureReport01WithAnnotations: Risk Adjustment Coding Report with Annotations Added, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]
 - [MeasureReport02: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient01: Eve Everywoman)]
 - [MeasureReport03: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient02: Adam Everyman)]
 - [MeasureReport04: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V21 (Patient03: Nelda Nuclear)]

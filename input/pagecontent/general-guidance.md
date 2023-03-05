@@ -52,7 +52,10 @@ See the [Remediation] page for more details and guidance.
 
 {% include img-portrait.html img="risk-adjustment-workflow.png" caption="Figure 2.1-2 Risk Adjustment Workflow Overview"%}
 
+#### Report Annotation
+An electronical medical record (EMR) may choose to display all or part of the Risk Adjustment Gap Report to the provider at the point of care.  At that time, if the provider wants to note the action they took in regard to a Risk Adjustment gap, they can put that comment on the Risk Adjustment Gap and return it to the payer.  This process is called [Report Annotation].
 
+{% include img-portrait.html img="report-annotation-overview.png" caption="Figure 2.1-3 Report Annotation Overview"%}
 ### Attribution
 
 Member attribution establishes associations between providers and payers. The process of establishing and exchanging patient lists for risk adjustment coding gap report is not in the scope of this implementation guide. One possible way of exchanging Member Attribution Lists between providers and payers is described in the [Da Vinci - Member Attribution (ATR) List] implementation guide.

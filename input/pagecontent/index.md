@@ -24,6 +24,7 @@ This implementation guide is divided into several pages which are listed at the 
     - [Report Generation]\: This page describes how generating Risk Adjustment Coding Gap Report is accomplished.
     - [Report Query]\: This page provides guidance on using query to return Risk Adjustment Coding Gap Report(s) and their evaluated resources.
     - [Remediation]\: This page documents how to use Task to request gap closure, gap invalidation, or add a net-new to coding gaps reported in a Risk Adjustment Coding Gap Report and provide clinical evaluation evidence.
+    - [Report Annotation]\: This page describes how a provider can add a comment/annotation to the Risk Adjustment Coding Gap Report to indicate that he took an action while seeing the patient
 - [Digital Condition Category (dCC)]\: This page describes how a Condition Category can be structured as a proportion measure and be specified using CQL as a digital Condition Category in a similar fashion to electronic quality measures through an example. 
 </div><!-- new-content -->   
 - FHIR Artifacts: These pages lists FHIR artifacts specified in this implementation guide. 

@@ -69,6 +69,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="MeasureReport/ra-measurereport01-with-annotation"/>
+      </reference>
+      <name value="ra-measurereport01-with-annotation: Risk Adjustment Measure Report with Annotation"/>
+      <description value="Example Risk Adjustment Measure Report with Annotations"/>
+      <exampleBoolean value="true"/>
+    </resource>  
+    <resource>
+      <reference>
         <reference value="MeasureReport/ra-measurereport02"/>
       </reference>
       <name value="ra-measurereport02: Risk Adjustment Measure Report"/>
@@ -644,6 +652,11 @@
         <page>
           <nameUrl value="remediation.html"/>
           <title value="Remediation"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="report-annotation.html"/>
+          <title value="Report Annotation"/>
           <generation value="markdown"/>
         </page>
       </page>
