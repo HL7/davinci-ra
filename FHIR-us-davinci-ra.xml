@@ -116,6 +116,7 @@
 <artifact id="Bundle/ra-bundle01" key="Bundle-ra-bundle01" name="ra-bundle01: Risk Adjustment Bundle"/>
 <artifact id="Group/ra-group01" key="Group-ra-group01" name="ra-group01: Risk Adjustment Patient Group"/>
 <artifact id="Group/ra-group02" key="Group-ra-group02" name="ra-group02: Risk Adjustment Patient Group"/>
+<artifact id="MeasureReport/ra-measurereport01-with-annotation" key="MeasureReport-ra-measurereport01-with-annotation" name="ra-measurereport01-with-annotation: Risk Adjustment Measure Report with Annotation"/>
 <artifact id="MeasureReport/ra-measurereport01" key="MeasureReport-ra-measurereport01" name="ra-measurereport01: Risk Adjustment Measure Report"/>
 <artifact id="MeasureReport/ra-measurereport02" key="MeasureReport-ra-measurereport02" name="ra-measurereport02: Risk Adjustment Measure Report"/>
 <artifact id="MeasureReport/ra-measurereport03" key="MeasureReport-ra-measurereport03" name="ra-measurereport03: Risk Adjustment Measure Report for HCC V24 for Patient 02"/>
@@ -140,6 +141,7 @@
 <page key="operations" name="Operation"/>
 <page key="profiles" name="Profiles"/>
 <page key="remediation" name="Remediation"/>
+<page key="report-annotation" name="Report Annotation"/>
 <page key="report-generation" name="Report Generation"/>
 <page key="report-query" name="Report Query"/>
 <page key="toc" name="Table of Contents"/>

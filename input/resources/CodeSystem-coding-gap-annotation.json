@@ -14,24 +14,24 @@
   "content": "complete",
   "concept": [
     {
-      "code": "acknowledged-dismissed",
-      "display": "Acknowledged dismissed",
-      "definition": "Acknowleged and dismissed"
+      "code": "acknowledged",
+      "display": "Acknowledged",
+      "definition": "Acknowleged"
     },
     {
-      "code": "acknowledged-submitted-on-claim",
-      "display": "Acknowledged submitted on claim",
-      "definition": "Acknowleged and submitted on claim"
+      "code": "assessed-not-present",
+      "display": "Assessed and not present",
+      "definition": "Assessed the gap and acknowledged it is not present"
     },
     {
-      "code": "acknowledged-other-specialty-to-address",
-      "display": "Acknowledged other specialty to address",
-      "definition": "Acknowleged and other specialty to address"
+      "code": "assessed-present",
+      "display": "Assessed and present",
+      "definition": "Assessed the gap and acknowledged it is still present"
     },
     {
-      "code": "acknowledged-other-specialty-to-close",
-      "display": "Acknowledged other specialty to close",
-      "definition": "Acknowleged and other specialty to close"
+      "code": "deferred",
+      "display": "Deferred",
+      "definition": "Deferred"
     }
   ],
   "count": 4
