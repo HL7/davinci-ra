@@ -41,7 +41,7 @@ Content-Type: application/fhir+json;charset=UTF-8
   "type" : "collection",
   "entry" : [
     {
-      "fullUrl" : "https://ra-sandbox.alphora.com/cqf-ruler-r4/fhir/MeasureReport/ra-measurereport01",
+      "fullUrl" : "https://cloud.alphora.com/sandbox/r4/ra/fhir/MeasureReport/ra-measurereport01",
       "resource" : {
         "resourceType" : "MeasureReport",
         "id" : "ra-measurereport01",
