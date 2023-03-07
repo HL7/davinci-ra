@@ -183,6 +183,38 @@
                             }
                         ]
                     }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-annotation",
+                    "extension": [
+                        {"url": "annotator",
+                        "valueReference": {
+                            "reference": "Practitioner/ra-prac01pat01"
+                            }
+                        },
+                        {"url": "annotated",
+                        "valueDateTime": "2021-11-01"
+                        },
+                        {"url": "text",
+                        "valueString": "Diagnosis added"
+                        },
+                        {"url": "code",
+                            "valueCodeableConcept" : {
+                                "coding": [
+                                    {
+                                    "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-annotation",
+                                    "code": "assessed-present",
+                                    "display": "Assessed and present"
+                                    }
+                                ]
+                            }
+                        },
+                        {"url": "relatedData",
+                            "valueIdentifier":  {
+                                "system": "http://example.org/fhir/myclaimno",
+                                "value": "CLM23333"}
+                        }
+                    ]
                 }
             ]
         },
@@ -342,8 +374,36 @@
                             }
                         ]
                     }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-annotation",
+                    "extension": [
+                        {"url": "annotator",
+                        "valueReference": {
+                            "reference": "Practitioner/ra-prac01pat01"
+                            }
+                        },
+                        {"url": "annotated",
+                        "valueDateTime": "2021-11-01"
+                        },
+                        {"url": "text",
+                        "valueString": "Continue evaluation"
+                        },
+                        {"url": "code",
+                            "valueCodeableConcept" : {
+                                "coding": [
+                                    {
+                                    "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-annotation",
+                                    "code": "deferred",
+                                    "display": "Deferred"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
                 }
             ]
+
         },
         {
             "id": "group-007",
@@ -501,6 +561,49 @@
                             }
                         ]
                     }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-confidenceScale",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "medium",
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/confidence-scale"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-annotation",
+                    "extension": [
+                        {"url": "annotator",
+                        "valueReference": {
+                            "reference": "Practitioner/ra-prac01pat01"
+                            }
+                        },
+                        {"url": "annotated",
+                        "valueDateTime": "2021-11-01"
+                        },
+                        {"url": "text",
+                        "valueString": "Not diagnosed"
+                        },
+                        {"url": "code",
+                            "valueCodeableConcept" : {
+                                "coding": [
+                                    {
+                                    "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-annotation",
+                                    "code": "assessed-not-present"
+                                    
+                                    }
+                                ]
+                            }
+                        },
+                        {"url": "relatedData",
+                            "valueIdentifier":  {
+                                "system": "http://example.org/fhir/mychart",
+                                "value": "432203939"}
+                        }
+                    ]
                 }
             ]
         },
