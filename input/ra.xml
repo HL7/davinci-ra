@@ -34,6 +34,11 @@
     <packageId value="hl7.fhir.us.core"/>
     <version value="3.1.1"/>
   </dependsOn>
+  <dependsOn id="hrex">
+    <uri value="http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/hl7.fhir.us.davinci-hrex"/>
+    <packageId value="hl7.fhir.us.davinci-hrex"/>
+    <version value="1.0.0"/>
+  </dependsOn>
   <definition>
     <resource>
       <reference>
@@ -43,6 +48,14 @@
       <description value="Example Risk Adjustment Bundle"/>
       <exampleBoolean value="true"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/ra-searchsetbundle01pat01"/>
+      </reference>
+      <name value="ra-searchsetbundle01pat01: SearchSet Bundle Pat1 MeasureReport01 group003"/>
+      <description value="Example Risk Adjustment SearchSet Bundle with clinical evaluation evidence for Patient01 Eve Everywoman MeasureReport01 group003 HCC 59: Major Depressive, Bipolar, and Paranoid Disorders"/>
+      <exampleBoolean value="true"/>
+    </resource>    
     <resource>
       <reference>
         <reference value="Group/ra-group01"/>
@@ -203,6 +216,14 @@
       <description value="Acute pulmonary edema"/>
       <exampleBoolean value="true"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/ra-condition12pat01"/>
+      </reference>
+      <name value="Condition12pat01: Manic episode, unspecified"/>
+      <description value="Manic episode, unspecified (clinical evaluation evidence)"/>
+      <exampleBoolean value="true"/>
+    </resource>    
     <resource>
       <reference>
         <reference value="Condition/ra-condition15pat03"/>
@@ -501,6 +522,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Encounter/ra-encounter46pat01"/>
+      </reference>
+      <name value="Encounter on 2021-10-15"/>
+      <description value="Encounter on 2021-10-15 (clinical evaluation evidence)"/>
+      <exampleBoolean value="true"/>
+    </resource>    
+    <resource>
+      <reference>
         <reference value="Observation/ra-obs01pat02"/>
       </reference>
       <name value="Observation: Trypsin [Mass/volume] in Serum or Plasma result from 20190617"/>
@@ -618,7 +647,15 @@
       <name value="Practitioner: Otto Osler"/>
       <description value="Otto Osler"/>
       <exampleBoolean value="true"/>
-    </resource>
+    </resource>  
+    <resource>
+      <reference>
+        <reference value="Task/ra-task01measurereport01group003"/>
+      </reference>
+      <name value="Task: Clinical Evaluation Task"/>
+      <description value="Task for Patient01 Eve Everywoman MeasureReport01 group003 HCC 59: Major Depressive, Bipolar, and Paranoid Disorders"/>
+      <exampleBoolean value="true"/>
+    </resource>   
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -670,29 +707,7 @@
       <page>
         <nameUrl value="profiles.html"/>
         <title value="Profiles"/>
-        <generation value="markdown"/>
-<!--        
-        <page>
-          <nameUrl value="StructureDefinition-ra-model-measure.html"/>
-          <title value="Risk Adjustment Model Measure"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-ra-measurereport.html"/>
-          <title value="Risk Adjustment Measure Report"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-ra-patient-group.html"/>
-          <title value="Patient Group"/>
-          <generation value="generated"/>
-        </page>
-        <page>
-          <nameUrl value="StructureDefinition-ra-measurereport-bundle.html"/>
-          <title value="Risk Adjustment Measure Report Bundle"/>
-          <generation value="generated"/>
-        </page>
--->        
+        <generation value="markdown"/>    
       </page>
       <page>
         <nameUrl value="extensions.html"/>

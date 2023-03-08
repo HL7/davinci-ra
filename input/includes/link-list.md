@@ -4,6 +4,7 @@
 [Asynchronous Request Patterns]: https://www.hl7.org/fhir/async.html
 [Bulk]: report-generation.html#Bulk-data-request-for-Risk-Adjustment-Coding-Gap-MeasureReport
 [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]: Bundle-ra-bundle01.html
+[SearchSetBundle01Pat01: Pat01 MeasureReport01 group003]: Bundle-ra-searchsetbundle01pat01.html
 [Capability Statements]: capabilities.html
 [Clinical Evaluation Period]:glossary.html#glossary
 [Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm
@@ -18,6 +19,8 @@
 [Condition09Pat01: Allergic bronchopulmonary aspergillosis]: Condition-ra-condition09pat01.html
 [Condition10Pat01: Long term (current) use of insulin]: Condition-ra-condition10pat01.html
 [Condition11Pat01: Acute pulmonary edema]: Condition-ra-condition11pat01.html
+[Condition12Pat01: Manic episode, unspecified (clinical evaluation evidence for Task01)]: Condition-ra-condition12pat01.html
+
 [Condition15Pat03: Diabetes mellitus due to underlying condition with diabetic chronic kidney disease]: Condition-ra-condition15pat03.html
 [Condition16Pat03: Dependence on renal dialysis]: Condition-ra-condition16pat03.html
 [Condition17Pat01: Body mass index (BMI) 45.0-49.9, adult]: Condition-ra-condition17pat01.html
@@ -56,6 +59,8 @@
 [Encounter43Pat01: Pat01 Encounter on 2019-02-10]: Encounter-ra-encounter43pat01.html
 [Encounter44Pat01: Pat01 Encounter on 2017-01-18]: Encounter-ra-encounter44pat01.html
 [Encounter45Pat01: Pat01 Encounter on 2018-07-21]: Encounter-ra-encounter45pat01.html
+[Encounter46Pat01: Pat01 Encounter on 2021-10-15 (clinical evaluation evidence for Task01)]: Encounter-ra-encounter46pat01.html
+
 [Extensions]: extensions.html
 [General Guidance]: general-guidance.html
 [Glossary]: glossary.html
@@ -91,8 +96,8 @@
 [Practitioner01: Harold Hippocrates]: Practitioner-ra-prac01pat01.html
 [Practitioner02: Patrick Pump]: Practitioner-ra-prac02pat02.html
 [Practitioner03: Otto Osler]: Practitioner-ra-prac03pat03.html
-[Profiles]: profiles.html
 
+[Profiles]: profiles.html
 [Remediation]: remediation.html
 [$report]:OperationDefinition-report.html
 [Report Annotation]: report-annotation.html
@@ -116,6 +121,7 @@
 
 [Terminology]: terminology.html
 [Transition Strategy]: dcc-transition-strategy.html
+[Task-ra-task01measurereport01group003: Eve Everywoman HCC59]: Task-ra-task01measurereport01group003.html
 
 [Risk Adjustment Coding Gap MeasureReport]: StructureDefinition-ra-measurereport.html
 

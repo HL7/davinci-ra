@@ -5,11 +5,11 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Organization for PAtient 2"
+        "valueString" : "Organization"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-        "valueMarkdown" : "Provider Organization for Patient 2 data"
+        "valueMarkdown" : "Provider Organization"
       }
     ],
     "profile" : [

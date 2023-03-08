@@ -114,41 +114,54 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>      
-        <element id="Task.input:group_id">
+        <element id="Task.input:groupid">
             <path value="Task.input"/>
-            <sliceName value="group_id"/>
-            <short value="MeasureReport.group.id from the Risk Adjustment Coding Gap MeasureReport that is referenced by Task.focus"/>
+            <sliceName value="groupid"/>
+            <short value="MeasureReport group id"/>
+            <definition value="MeasureReport.group.id from the Risk Adjustment Coding Gap MeasureReport that is referenced by Task.focus"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>         
-        <element id="Task.input:group_id.type">
-            <path value="Task.input.type"/>              
+        <element id="Task.input:groupid.type">
+            <path value="Task.input.type"/> 
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/task-label"/>
+                    <code value="group-id"/>
+                </coding>
+            </patternCodeableConcept>             
             <mustSupport value="true"/>
         </element>  
-       <element id="Task.input:group_id.value[x]">
-            <path value="Task.input.valueString"/>
+       <element id="Task.input:groupid.value[x]">
+            <path value="Task.input.value[x]"/>
             <short value="Value of MeasureReport.group.id"/>
             <type>
                <code value="string"/>
             </type>
             <mustSupport value="true"/>
         </element>   
-
         <element id="Task.input:searchset_bundle">
             <path value="Task.input"/>
             <sliceName value="searchset_bundle"/>
             <short value="Risk Adjustment SearchSet Bundle"/>
+            <definition value="A searchSet Bundle that includes resources that are clinical evaluation evidence for coding gaps"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>         
         <element id="Task.input:searchset_bundle.type">
-            <path value="Task.input.type"/>              
+            <path value="Task.input.type"/>  
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/task-label"/>
+                    <code value="clinical-evaluation-evidence"/>
+                </coding>
+            </patternCodeableConcept>                          
             <mustSupport value="true"/>
         </element>  
        <element id="Task.input:searchset_bundle.value[x]">
-            <path value="Task.input.valueReference"/>
+            <path value="Task.input.value[x]"/>
             <short value="Reference to the Risk Adjustment SearchSet Bundle"/>
             <type>
                 <code value="Reference"/>
@@ -156,6 +169,5 @@
             </type>
             <mustSupport value="true"/>
         </element>           
-
     </differential>
 </StructureDefinition>

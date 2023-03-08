@@ -27,6 +27,7 @@
 <artifact id="Condition/ra-condition09pat01" key="Condition-ra-condition09pat01" name="Condition09pat01: Allergic bronchopulmonary aspergillosis"/>
 <artifact id="Condition/ra-condition10pat01" key="Condition-ra-condition10pat01" name="Condition10pat01: Long term (current) use of insulin"/>
 <artifact id="Condition/ra-condition11pat01" key="Condition-ra-condition11pat01" name="Condition11pat01: Acute pulmonary edema"/>
+<artifact id="Condition/ra-condition12pat01" key="Condition-ra-condition12pat01" name="Condition12pat01: Manic episode, unspecified"/>
 <artifact id="Condition/ra-condition15pat03" key="Condition-ra-condition15pat03" name="Condition15pat03: Diabetes mellitus due to underlying condition with diabetic chronic kidney diseases"/>
 <artifact id="Condition/ra-condition16pat03" key="Condition-ra-condition16pat03" name="Condition16pat03: Dependence on renal dialysis"/>
 <artifact id="Condition/ra-condition17pat01" key="Condition-ra-condition17pat01" name="Condition17pat01: Body mass index [BMI] 45.0-49.9, adult"/>
@@ -55,6 +56,7 @@
 <artifact id="Encounter/ra-encounter15pat03" key="Encounter-ra-encounter15pat03" name="Encounter on 20200808"/>
 <artifact id="Encounter/ra-encounter06pat03" key="Encounter-ra-encounter06pat03" name="Encounter on 20200917"/>
 <artifact id="Encounter/ra-encounter11pat01" key="Encounter-ra-encounter11pat01" name="Encounter on 20201102"/>
+<artifact id="Encounter/ra-encounter46pat01" key="Encounter-ra-encounter46pat01" name="Encounter on 2021-10-15"/>
 <artifact id="Encounter/ra-encounter21pat03" key="Encounter-ra-encounter21pat03" name="Encounter on 20210130"/>
 <artifact id="Encounter/ra-encounter02pat01" key="Encounter-ra-encounter02pat01" name="Encounter on 20210131"/>
 <artifact id="Encounter/ra-encounter35pat03" key="Encounter-ra-encounter35pat03" name="Encounter on 20210212"/>
@@ -112,6 +114,8 @@
 <artifact id="CodeSystem/suspect-type" key="CodeSystem-suspect-type" name="Risk Adjustment Suspect Type CodeSystem"/>
 <artifact id="ValueSet/suspect-type" key="ValueSet-suspect-type" name="Risk Adjustment Suspect Type ValueSet"/>
 <artifact id="ValueSet/sample-cmshcc" key="ValueSet-sample-cmshcc" name="Sample CMS Hierarchical Condition Category"/>
+<artifact id="CodeSystem/task-label" key="CodeSystem-task-label" name="Task Input Type CodeSystem"/>
+<artifact id="Task/ra-task01measurereport01group003" key="Task-ra-task01measurereport01group003" name="Task: Clinical Evaluation Task"/>
 <artifact id="Observation/ra-obs21pat01" key="Observation-ra-obs21pat01" name="Trypsin [Mass/volume] in Serum or Plasma from 20170617"/>
 <artifact id="Bundle/ra-bundle01" key="Bundle-ra-bundle01" name="ra-bundle01: Risk Adjustment Bundle"/>
 <artifact id="Group/ra-group01" key="Group-ra-group01" name="ra-group01: Risk Adjustment Patient Group"/>
@@ -123,6 +127,7 @@
 <artifact id="MeasureReport/ra-measurereport04" key="MeasureReport-ra-measurereport04" name="ra-measurereport04: Risk Adjustment Measure Report for HCC V21 for Patient 03"/>
 <artifact id="MeasureReport/ra-measurereport05" key="MeasureReport-ra-measurereport05" name="ra-measurereport05: Risk Adjustment Measure Report for RxHCC V5 for Patient03"/>
 <artifact id="MeasureReport/ra-measurereport06" key="MeasureReport-ra-measurereport06" name="ra-measurereport06: Risk Adjustment Measure Report for RxHCC V5 for Patient02"/>
+<artifact id="Bundle/ra-searchsetbundle01pat01" key="Bundle-ra-searchsetbundle01pat01" name="ra-searchsetbundle01pat01: SearchSet Bundle Pat1 MeasureReport01 group003"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>

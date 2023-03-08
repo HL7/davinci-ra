@@ -9,8 +9,6 @@
 
 <!-- ================================================ -->
 --- 
-
-
 - [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]  
 
 - [Condition01Pat03: Other artificial openings of gastrointestinal tract status]  
@@ -24,6 +22,7 @@
 - [Condition09Pat01: Allergic bronchopulmonary aspergillosis]
 - [Condition10Pat01: Long term (current) use of insulin]
 - [Condition11Pat01: Acute pulmonary edema]
+- [Condition12Pat01: Manic episode, unspecified (clinical evaluation evidence for Task01)]
 - [Condition15Pat03: Diabetes mellitus due to underlying condition with diabetic chronic kidney disease]
 - [Condition16Pat03: Dependence on renal dialysis]
 - [Condition17Pat01: Body mass index (BMI) 45.0-49.9, adult]
@@ -38,7 +37,6 @@
 - [Condition42Pat03: Other artificial openings of gastrointestinal tract status]
 - [Condition43pat01: Diabetes mellitus due to underlying condition with other diabetic kidney complication]
 - [Condition44Pat01: Allergic bronchopulmonary aspergillosis]
-
 
 - [Encounter01Pat03: Pat03 Encounter on 2021-07-14]
 - [Encounter02Pat01: Pat01 Encounter on 2021-01-31]
@@ -61,6 +59,7 @@
 - [Encounter43Pat01: Pat01 Encounter on 2019-02-10]
 - [Encounter44Pat01: Pat01 Encounter on 2017-01-18]
 - [Encounter45Pat01: Pat01 Encounter on 2018-07-21]
+- [Encounter46Pat01: Pat01 Encounter on 2021-10-15 (clinical evaluation evidence for Task01)]
 
 - [Group01: Risk Adjustment Patient Group, (Patient01: Eve Everywoman)]
 - [Group02: Risk Adjustment Patient Group, (Patient02: Adam Everyman, Patient03: Nelda Nuclear)]  
@@ -95,6 +94,9 @@
 - [Practitioner02: Patrick Pump]
 - [Practitioner03: Otto Osler]
 
+- [SearchSetBundle01Pat01: Pat01 MeasureReport01 group003]
+
+- [Task-ra-task01measurereport01group003: Eve Everywoman HCC59]
 
 
 {% include link-list.md %}

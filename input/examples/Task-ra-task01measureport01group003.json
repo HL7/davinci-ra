@@ -1,0 +1,58 @@
+{
+  "resourceType" : "Task",
+  "id" : "ra-task01measurereport01group003",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinical-evaluation-evidence-task"]
+  },
+  "contained" : [{
+    "resourceType" : "Bundle",
+    "id" : "ra-searchsetbundle01pat01",
+    "meta" : {
+      "profile" : ["http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-searchset-bundle"]
+    },
+    "type": "searchset",
+    "identifier": {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:8f5d56d2-8342-4c58-8e27-79ccee491172"
+    }}
+  ],
+  "identifier": [{
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:6cbc8705-d483-4c6a-87dd-3b2ab057e69a"
+  }],
+  "status" : "requested",
+  "intent" : "order",
+  "authoredOn" : "2021-10-24T16:16:06Z",
+  "lastModified" : "2022-10-24T16:16:06Z",
+  "focus": {
+    "reference": "MeasureReport/ra-measurereport01"
+  },
+  "reasonCode" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-task-reason",
+      "code" : "closure",
+      "display" : "Close coding gap"
+    }],
+    "text" : "Closure"
+  },
+  "input" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/task-label",
+        "code" : "group-id"
+      }]
+    },
+    "valueString" : "group-003"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/task-label",
+        "code" : "clinical-evaluation-evidence"
+      }]
+    },
+    "valueReference": {
+      "reference": "Bundle/ra-searchsetbundle01pat01"
+      }  
+  }]
+}
