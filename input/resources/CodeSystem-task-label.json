@@ -3,7 +3,7 @@
   "id": "task-label",
   "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/task-label",
   "name": "TaskLabel",
-  "title": "Task Input Type CodeSystem",
+  "title": "Task Label CodeSystem",
   "status": "active",
   "experimental": false,
   "publisher":"Clinical Quality Information Workgroup",

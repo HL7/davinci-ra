@@ -6,6 +6,11 @@
             "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-searchset-bundle"
         ]
     },
+    "identifier": 
+      {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:8f5d56d2-8342-4c58-8e27-79ccee491172"
+      },    
     "type": "searchset",
     "link": [
       {
