@@ -145,6 +145,7 @@
             <path value="Task.input.value[x]"/>
             <short value="Reference to the Risk Adjustment SearchSet Bundle"/>
             <type>
+                <aggregation value="contained"/>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-searchset-bundle"/>
             </type>
