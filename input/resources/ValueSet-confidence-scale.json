@@ -12,12 +12,42 @@
   "title": "Confidence Scale",
   "status": "active",
   "experimental": false,
-  "description": "The level of confidence for a risk adjustment coding gap.",
+  "description": "This describes confidence scale of a risk adjustment coding gap.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright \u00a9 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/confidence-scale"
-      }
-    ]
+        "system": "http://snomed.info/sct",
+        "concept": [
+            {
+                "code": "62482003"
+            }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+            {
+                "code": "255508009"
+            }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+            {
+                "code": "75540009"
+            }
+        ]
+      },      
+        {
+            "system": "http://snomed.info/sct",
+            "concept": [
+                {
+                    "code": "260360000"
+                }
+            ]
+        }
+      ]    
   }
 }

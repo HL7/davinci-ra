@@ -3,6 +3,7 @@
 New value sets and code systems added for STU2:
 - Coding Gap Task Status ValueSet
 - Coding Gap Request ValueSet
+- Confidence Scale ValueSet
 - Coding Gap Request CodeSystem
 - Task Label CodeSystem
 </div><!-- new-content -->

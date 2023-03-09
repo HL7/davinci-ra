@@ -10,7 +10,6 @@
 <artifact id="StructureDefinition/ra-annotation" key="StructureDefinition-ra-annotation" name="Annotation"/>
 <artifact id="ValueSet/coding-gap-annotation" key="ValueSet-coding-gap-annotation" name="Coding Gap Annotation"/>
 <artifact id="CodeSystem/coding-gap-annotation" key="CodeSystem-coding-gap-annotation" name="Coding Gap Annotation CodeSystem"/>
-<artifact id="CodeSystem/confidence-scale" key="CodeSystem-confidence-scale" name="Coding Gap Confidence Scale CodeSystem"/>
 <artifact id="CodeSystem/coding-gap-task-reason" key="CodeSystem-coding-gap-task-reason" name="Coding Gap Task Reason CodeSystem"/>
 <artifact id="ValueSet/coding-gap-task-reason" key="ValueSet-coding-gap-task-reason" name="Coding Gap Task Reason ValueSet"/>
 <artifact id="ValueSet/coding-gap-task-status" key="ValueSet-coding-gap-task-status" name="Coding Gap Task Status ValueSet"/>

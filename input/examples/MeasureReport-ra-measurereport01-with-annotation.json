@@ -567,8 +567,9 @@
                     "valueCodeableConcept": {
                         "coding": [
                             {
-                                "code": "medium",
-                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/confidence-scale"
+                                "code": "255508009",
+                                "system": "http://snomed.info/sct",
+                                "display": "Medium"
                             }
                         ]
                     }
