@@ -4,7 +4,7 @@
 The scoring system in this measure is unknown, so the measureScore values cannot be checked
 
 # MEASURE_M_NO_GROUPS: This is intended.  Currently, the support for Risk Adjustment does not include a practical way to model the groups as the number are prohibitive.  A solution is being worked on, but the Measure resource does not require a group so this should not be a blocking issue.
-Measure: A measure should contain at least one group
+A measure should contain at least one group
 
 # Terminology_TX_System_NotKnown: Valid CPT code Related to http://www.ama-assn.org/go/cpt
 Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
@@ -14,4 +14,28 @@ Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot b
 Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
 Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
 WARNING: ValueSet.where(id = 'sample-cmshcc'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/cmshcc
-WARNING: ValueSet/sample-cmshcc: ValueSet.compose[0].include[0]: Unknown System 'http://terminology.hl7.org/CodeSystem/cmshcc' specified, so Concepts and Filters can't be checked (Details: Local Error: Resolved system http://terminology.hl7.org/CodeSystem/cmshcc (v1.0.1), but the definition is not complete. Server Error: The code system 'http://terminology.hl7.org/CodeSystem/cmshcc' is not known (encountered paired with code = '22'); The code provided (http://terminology.hl7.org/CodeSystem/cmshcc#22) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
+WARNING: ValueSet/sample-cmshcc: ValueSet.compose[0].include[0]: Unknown System 'http://terminology.hl7.org/CodeSystem/cmshcc' specified, so Concepts and Filters can't be checked (Details: The code system 'http://terminology.hl7.org/CodeSystem/cmshcc' is not known (encountered paired with code = '22'); The code provided (http://terminology.hl7.org/CodeSystem/cmshcc#22) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
+
+# BUNDLE_SEARCH_SELF_NOT_UNDERSTOOD: this is intended.  The search string intentionally does not include a type.
+No types could be determined from the search string, so the types can''t be checked
+
+# input\examples\Bundle-ra-bundle01.json: these are intended.  The slicing includes definitions for Patient and MeasureReport but allows for others who's types are not known at build time.
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[14]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[15]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[16]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[17]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[18]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[19]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[20]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.0.0-ballot
