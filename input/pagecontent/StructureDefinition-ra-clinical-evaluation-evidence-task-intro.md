@@ -10,10 +10,10 @@ The following data-elements are mandatory (i.e data MUST be present).
 
 1. A `Task.status` element with a code from the [Coding Gap Task Status ValueSet](ValueSet-coding-gap-task-status.html)
 1. A `Task.intent` element with a fixed code 
-1. A `Task.focus` element that references a [Risk Adjustment Coding Gap MeasureReport]
+1. A `Task.focus` element that references a [Risk Adjustment Coding Gap Report]
 1. A `Task.authoredOn` element
 1. A `Task.reasonCode` element with a code from the [Coding Gap Task Reason ValueSet](ValueSet-coding-gap-task-reason.html)
-1. A `Task.input` element with value of `MeasureReport.group.id` from the [Risk Adjustment Coding Gap MeasureReport] referenced by `Task.focus` if `reasonCode` other than creation
+1. A `Task.input` element with value of `MeasureReport.group.id` from the [Risk Adjustment Coding Gap Report] referenced by `Task.focus` if `reasonCode` other than creation
 1. A `Task.input` element references [Risk Adjustment SearchSet Bundle]
 
 **Each {{site.data.structuredefinitions.[id].type}} *should* have ([Must Support]):**
