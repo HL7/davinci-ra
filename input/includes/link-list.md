@@ -123,7 +123,6 @@
 [Transition Strategy]: dcc-transition-strategy.html
 [Task-ra-task01measurereport01group003: Eve Everywoman HCC59]: Task-ra-task01measurereport01group003.html
 
-[Risk Adjustment Coding Gap MeasureReport]: StructureDefinition-ra-measurereport.html
 
 [$ra.evaluate-Measure]: OperationDefinition-ra.evaluate-measure.html
 [Generated]: report-generation.html#the-generated-approach

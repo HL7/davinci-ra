@@ -13,7 +13,7 @@ List of profiles that define constrains on FHIR resources for systems conforming
 |Bundle|[Risk Adjustment SearchSet Bundle]
 |Bundle|[Risk Adjustment Coding Gap Report Bundle]|
 |Group|[Patient Group]|
-|MeasureReport|[Risk Adjustment Coding Gap MeasureReport]|
+|MeasureReport|[Risk Adjustment Coding Gap Report]|
 |Measure|[Risk Adjustment Model Measure]|
 |Task|[Risk Adjustment Clinical Evaluation Evidence Task]|
 {: .grid}
