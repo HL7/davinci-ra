@@ -19,9 +19,9 @@ During the July 2022 CMS Connectathon a dCC proof-of-concept was conducted to de
 
 ###  Digital Condition Category 
 
-Similar to the definitions of digital quality measures<sup>[1](https://ecqi.healthit.gov/dqm?qt-tabs_dqm=1)</sup>, digital condition categories are condition category measures organized as self-contained measure specification and code packages, that use one or more sources of health information that is captured and can be transmitted electronically via interoperable systems. Digital condition categories use machine-readable measure logic, such as logics written in in Clinical Quality Language, an use common data model such as FHIR. 
+Similar to the definitions of digital quality measures<sup>[1](https://ecqi.healthit.gov/dqm?qt-tabs_dqm=1)</sup>, digital condition categories are condition category measures organized as self-contained measure specification and code packages, that use one or more sources of health information that is captured and can be transmitted electronically via interoperable systems. Digital condition categories use machine-readable measure logic, such as logics written in in Clinical Quality Language, and use common data model such as FHIR. 
 
-A digital condition category is structured as a proportion measure, which consists of an initial population, denominator, numerator, and an optional denominator exclusions as shown in the Venn diagram in Figure 4-1. 
+A digital condition category is structured as a proportion measure<sup>[2](http://hl7.org/fhir/us/cqfmeasures/measure-conformance.html#proportion-measures)</sup>, which consists of an initial population, denominator, numerator, and an optional denominator exclusions as shown in the Venn diagram in Figure 4-1. 
 
 {% include img-portrait.html img="dCC-venn-diagram.png" caption = "Figure 4-1: Condition Category Measure Venn Diagram" %}
 
