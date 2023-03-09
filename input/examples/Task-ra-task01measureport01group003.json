@@ -185,7 +185,7 @@
       }]
     },
     "valueReference": {
-      "reference": "Bundle/ra-searchsetbundle01pat01"
+      "reference": "#ra-searchsetbundle01pat01"
       }  
   }]
 }
