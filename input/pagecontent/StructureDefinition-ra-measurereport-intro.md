@@ -24,7 +24,6 @@ The following data-elements are mandatory (i.e data MUST be present).
 
 **Additional Profile specific implementation guidance:**
 1. `evaluatedResource` SHALL reference resources using USCore profiles where applicable
-1. All resources referenced by `evaluatedResource` SHALL be returned in the bundle by [$report](OperationDefinition-report.html) operation
 
 The Clinical Data Collection Deadline element, `ra-clinicalDataCollectionDeadline`, was added as an extension to MeasureReport. We are seeking comment from implementers if they intend to use this element when communicating risk adjustment coding gap reports from payers to providers.
 {:.stu-note}

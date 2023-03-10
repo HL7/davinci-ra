@@ -1,10 +1,10 @@
 {
     "resourceType": "CapabilityStatement",
-    "id": "ra-server",
-    "url": "http://hl7.org/fhir/us/davinci-ra/CapabilityStatement/ra-server",
+    "id": "ra-reporting-server",
+    "url": "http://hl7.org/fhir/us/davinci-ra/CapabilityStatement/ra-reporting-server",
     "version": "1.0.0",
     "name": "RAServerCapabilityStatement",
-    "title": "Risk Adjustment Server Capability Statement",
+    "title": "Risk Adjustment Reporting Server Capability Statement",
     "status": "active",
     "experimental": false,
     "publisher": "HL7 International - Clinical Quality Information Work Group",
@@ -18,7 +18,7 @@
             ]
         }
     ],
-    "description": "This profile defines the expected capabilities of a Da Vinci Risk Adjustment Server when conforming to the Da Vinci Risk Adjustment Implementation Guide for interactions between Clients and Servers. Servers are the actors receiving the request for Risk Adjustment Coding Gap Reports for patient(s) and for Risk Adjustmenet Models that are available on the Server. This CapabilityStatement resource includes the complete list of the *recommended* Da Vinci Risk Adjustment profiles and RESTful operations that a Risk Adjustment Server could support. Servers have the option of choosing from this list based on their local use cases and other contextual requirements.",
+    "description": "This profile defines the expected capabilities of a Da Vinci Risk Adjustment Reporting Server when conforming to the Da Vinci Risk Adjustment Implementation Guide for interactions between Clients and Servers. Servers are the actors receiving the request for Risk Adjustment Coding Gap Reports for patient(s) and for Risk Adjustmenet Models that are available on the Server. This CapabilityStatement resource includes the complete list of the *recommended* Da Vinci Risk Adjustment profiles and RESTful operations that a Risk Adjustment Reporting Server could support. Servers have the option of choosing from this list based on their local use cases and other contextual requirements.",
     "jurisdiction": [
         {
             "coding": [
@@ -47,7 +47,7 @@
             "security": {
                 "description": "For general security consideration refer to the [Security and Privacy Considerations](http://hl7.org/fhir/R4/secpriv-module.html)."
             },
-            "documentation": "Da Vinci Risk Adjustment Server **SHALL** support the operation and profiles specified in this implementation guide.",
+            "documentation": "Da Vinci Risk Adjustment Reporting Server **SHALL** support the operation and profiles specified in this implementation guide.",
             "interaction": [
                 {
                     "extension": [
@@ -87,6 +87,60 @@
                 }
             ],
             "resource": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "MAY"
+                        }
+                    ],
+                    "type": "Measure",
+                    "profile": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-model-measure",
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "read"
+                        }
+                    ],
+                    "operation": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/davinci-ra/OperationDefinition/ra.evaluate-measure",
+                            "name": "ra.evaluate-measure"
+                        }
+                    ]
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "MAY"
+                        }
+                    ],
+                    "type": "Group",
+                    "profile": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-patient-group",
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "read"
+                        }
+                    ]
+                },
                 {
                     "type": "MeasureReport",
                     "profile": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport",
@@ -176,7 +230,7 @@
                                 }
                             ],
                             "code": "search-type",
-                            "documentation": "Create allows maintainers of the MeasureReports to find the logical definition of a MeasureReport"
+                            "documentation": "Search allows maintainers of the MeasureReports to find the logical definition of a MeasureReport"
                         }
                     ],
                     "conditionalCreate": true,
@@ -235,8 +289,18 @@
                             "definition": "http://hl7.org/fhir/SearchParameter/MeasureReport-subject",
                             "type": "reference"
                         }
+                    ]
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "MAY"
+                        }
                     ],
-                    "operation": [
+                    "type": "Bundle",
+                    "profile": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle",
+                    "interaction": [
                         {
                             "extension": [
                                 {
@@ -244,9 +308,93 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/us/davinci-ra/OperationDefinition/report",
-                            "name": "report"
+                            "code": "read",
+                            "documentation": "Read allows maintainers of the Bundles to get the logical definitions of the Bundle"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "vread"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "update",
+                            "documentation": "Update allows maintainers of the Bundles to update the logical definitions of a Bundles by its id or create a new one if it is new"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "patch",
+                            "documentation": "Patch allows maintainers of the Bundles to update the logical definition of a Bundles by posting a set of changes to it"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "delete",
+                            "documentation": "Delete allows maintainers of the Bundles to delete the logical definition of a Bundles"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-instance"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "create",
+                            "documentation": "Create allows maintainers of the Bundles to create the logical definition of a Bundle"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "search-type",
+                            "documentation": "Search allows maintainers of the Bundles to find the logical definition of a Bundle"
                         }
+                    ],
+                    "conditionalCreate": true,
+                    "conditionalUpdate": true,
+                    "conditionalDelete": "multiple",
+                    "referencePolicy": [
+                        "literal",
+                        "logical"
                     ]
                 },
                 {

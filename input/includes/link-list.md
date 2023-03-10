@@ -99,7 +99,6 @@
 
 [Profiles]: profiles.html
 [Remediation]: remediation.html
-[$report]:OperationDefinition-report.html
 [Report Annotation]: report-annotation.html
 [Report Generation]: report-generation.html
 [Report Query]: report-query.html

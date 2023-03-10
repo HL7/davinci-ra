@@ -14,7 +14,7 @@
         <value value="http://www.hl7.org/Special/committees/cqi/index.cfm"/>
       </telecom>
     </contact>
-    <description value="The Risk Adjustment Coding Gap Report Bundle Profile describes a collection bundle returned by the [report](OperationDefinition-report.html) operation. This bundle is a collection of Risk Adjustment Coding Gap Reports."/>
+    <description value="The Risk Adjustment Coding Gap Report Bundle Profile describes a collection bundle returned by the [$ra.evaluate-measure](OperationDefinition-ra.evaluate-measure.html) operation. This bundle is a collection of Risk Adjustment Coding Gap Reports."/>
     <jurisdiction>
       <coding>
         <system value="urn:iso:std:iso:3166"/>
