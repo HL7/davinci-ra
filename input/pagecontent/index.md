@@ -1,5 +1,11 @@
-<div class="bg-info" markdown="1">
-This IG is under development to prepare for the STU2 ballot. Where possible, draft content will be highlighted with blue or green background.
+<div class="note-to-balloters" markdown="1">
+
+**The May 2023 Ballot**
+
+<div class="new-content" markdown="1">
+Where possible, new and updated content are highlighted with green text and background
+</div><!-- new-content -->
+
 </div>
 
 ###  Summary
