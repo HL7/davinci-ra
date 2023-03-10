@@ -89,7 +89,7 @@ This IG describes three approaches to generate a [Risk Adjustment Coding Gap Rep
 
 This approach requires little to no FHIR maturity in order to generate the FHIR MeasureReport.  The Payer uses their existing processes, such as SQL, SAS, and object-oriented languages, to generate a comma-separated values (CSV) file with tuples of patient and risk adjustment data. The Payer then uses a non-FHIR RESTful API to create the [Risk Adjustment Coding Gap Report] using the CSV file as input. A REST server then POST the generated MeasureReports to the FHIR server. Note that using this approach means that no evaluated resources will be created or referenced by the Risk Adjustment Coding Gap Report.
 
-The table below defines a standardized CSV header that could be used for the Assisted approach. (*TODO: table with draft content and needs more work*)
+The table below defines a standardized CSV header that could be used for the Assisted approach.
 
 |Header Element|Description|Mapping|Example Value|
 |---|---|---|
@@ -104,6 +104,8 @@ The table below defines a standardized CSV header that could be used for the Ass
 |evidenceStatusDate|coding gap evidence status date|`MeasureReport.group.evidenceStatusDate`|4/1/2021|
 |hierarchicalStatus|coding gap hierarchical status|`MeasureReport.group.hierarchicalStatus`|applied-not-superseded|
 {: .grid}
+
+{% include examplebutton.html example="get-risk-adjustment-assisted-csv-example" b_title ="Click Here To See Example Assisted CSV" %}
 
 #### The Generated Approach
 
