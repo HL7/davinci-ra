@@ -15,13 +15,13 @@
     "link": [
       {
           "relation": "self",
-          "url": "https://cloud.alphora.com/sandbox/r4/ra/fhir?_id=ra-condition12pat01,ra-encounter46pat01"
+          "url": "http://example.org/fhir?_id=ra-condition12pat01,ra-encounter46pat01"
       }
     ],    
     "timestamp": "2021-10-24T06:17:58.172+00:00",
     "entry": [
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/ra-condition12pat01",
+            "fullUrl": "http://example.org/fhir/Condition/ra-condition12pat01",
             "resource": {
               "resourceType": "Condition",
                 "id": "ra-condition12pat01",
@@ -82,7 +82,7 @@
             }
         },
         {
-          "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Encounter/ra-encounter46pat01",
+          "fullUrl": "http://example.org/fhir/Encounter/ra-encounter46pat01",
           "resource": {
             "resourceType": "Encounter",
             "id": "ra-encounter46pat01",

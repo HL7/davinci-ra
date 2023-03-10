@@ -28,7 +28,7 @@
       "timestamp": "2021-10-24T06:17:58.172+00:00",
       "entry": [
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/ra-condition12pat01",
+            "fullUrl": "http://example.org/fhir/Condition/ra-condition12pat01",
             "resource": {
               "resourceType": "Condition",
               "id": "ra-condition12pat01",
@@ -89,7 +89,7 @@
             }
         },
         {
-          "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Encounter/ra-encounter46pat01",
+          "fullUrl": "http://example.org/fhir/Encounter/ra-encounter46pat01",
           "resource": 
           {
             "resourceType": "Encounter",

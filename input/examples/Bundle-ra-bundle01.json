@@ -14,7 +14,7 @@
     "timestamp": "2021-11-16T06:17:58.172+00:00",
     "entry": [
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/MeasureReport/ra-measurereport01",
+            "fullUrl": "http://example.org/fhir/MeasureReport/ra-measurereport01",
             "resource": {
                 "resourceType": "MeasureReport",
                 "id": "ra-measurereport01",
@@ -767,7 +767,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/ra-condition33pat01",
+            "fullUrl": "http://example.org/fhir/Condition/ra-condition33pat01",
             "resource": {
                 "resourceType": "Condition",
                 "id": "ra-condition33pat01",
@@ -825,7 +825,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Patient/ra-patient01",
+            "fullUrl": "http://example.org/fhir/Patient/ra-patient01",
             "resource": {
                 "resourceType": "Patient",
                 "id": "ra-patient01",
@@ -945,7 +945,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/ra-condition10pat01",
+            "fullUrl": "http://example.org/fhir/Condition/ra-condition10pat01",
             "resource": {
                 "resourceType": "Condition",
                 "id": "ra-condition10pat01",
@@ -1003,7 +1003,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Encounter/ra-encounter03pat01",
+            "fullUrl": "http://example.org/fhir/Encounter/ra-encounter03pat01",
             "resource": {
                 "resourceType": "Encounter",
                 "id": "ra-encounter03pat01",
@@ -1081,7 +1081,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/ra-condition09pat01",
+            "fullUrl": "http://example.org/fhir/Condition/ra-condition09pat01",
             "resource": {
                 "resourceType": "Condition",
                 "id": "ra-condition09pat01",
@@ -1139,7 +1139,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/ra-condition02pat01",
+            "fullUrl": "http://example.org/fhir/Condition/ra-condition02pat01",
             "resource": {
                 "resourceType": "Condition",
                 "id": "ra-condition02pat01",
@@ -1197,7 +1197,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Encounter/ra-encounter11pat01",
+            "fullUrl": "http://example.org/fhir/Encounter/ra-encounter11pat01",
             "resource": {
                 "resourceType": "Encounter",
                 "id": "ra-encounter11pat01",
@@ -1260,7 +1260,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Observation/ra-obs21pat01",
+            "fullUrl": "http://example.org/fhir/Observation/ra-obs21pat01",
             "resource": {
                 "resourceType": "Observation",
                 "id": "ra-obs21pat01",
@@ -1341,7 +1341,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/ra-condition18pat01",
+            "fullUrl": "http://example.org/fhir/Condition/ra-condition18pat01",
             "resource": {
                 "resourceType": "Condition",
                 "id": "ra-condition18pat01",
@@ -1399,7 +1399,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Encounter/ra-encounter08pat01",
+            "fullUrl": "http://example.org/fhir/Encounter/ra-encounter08pat01",
             "resource": {
                 "resourceType": "Encounter",
                 "id": "ra-encounter08pat01",
@@ -1462,7 +1462,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/ra-condition44pat01",
+            "fullUrl": "http://example.org/fhir/Condition/ra-condition44pat01",
             "resource": {
                 "resourceType": "Condition",
                 "id": "ra-condition44pat01",
@@ -1520,7 +1520,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Encounter/ra-encounter02pat01",
+            "fullUrl": "http://example.org/fhir/Encounter/ra-encounter02pat01",
             "resource": {
                 "resourceType": "Encounter",
                 "id": "ra-encounter02pat01",
@@ -1588,7 +1588,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Encounter/ra-encounter44pat01",
+            "fullUrl": "http://example.org/fhir/Encounter/ra-encounter44pat01",
             "resource": {
                 "resourceType": "Encounter",
                 "id": "ra-encounter44pat01",
@@ -1651,7 +1651,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/ra-condition08pat01",
+            "fullUrl": "http://example.org/fhir/Condition/ra-condition08pat01",
             "resource": {
                 "resourceType": "Condition",
                 "id": "ra-condition08pat01",
@@ -1709,7 +1709,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/ra-condition43pat01",
+            "fullUrl": "http://example.org/fhir/Condition/ra-condition43pat01",
             "resource": {
                 "resourceType": "Condition",
                 "id": "ra-condition43pat01",
@@ -1767,7 +1767,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/ra-condition03pat01",
+            "fullUrl": "http://example.org/fhir/Condition/ra-condition03pat01",
             "resource": {
                 "resourceType": "Condition",
                 "id": "ra-condition03pat01",
@@ -1825,7 +1825,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/ra-condition11pat01",
+            "fullUrl": "http://example.org/fhir/Condition/ra-condition11pat01",
             "resource": {
                 "resourceType": "Condition",
                 "id": "ra-condition11pat01",
@@ -1883,7 +1883,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Encounter/ra-encounter43pat01",
+            "fullUrl": "http://example.org/fhir/Encounter/ra-encounter43pat01",
             "resource": {
                 "resourceType": "Encounter",
                 "id": "ra-encounter43pat01",
@@ -1946,7 +1946,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Encounter/ra-encounter09pat01",
+            "fullUrl": "http://example.org/fhir/Encounter/ra-encounter09pat01",
             "resource": {
                 "resourceType": "Encounter",
                 "id": "ra-encounter09pat01",
@@ -2009,7 +2009,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/ra-condition17pat01",
+            "fullUrl": "http://example.org/fhir/Condition/ra-condition17pat01",
             "resource": {
                 "resourceType": "Condition",
                 "id": "ra-condition17pat01",
