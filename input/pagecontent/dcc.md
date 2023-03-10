@@ -19,7 +19,7 @@ During the July 2022 CMS Connectathon a dCC proof-of-concept was conducted to de
 
 ###  Digital Condition Category 
 
-Similar to the definitions of digital quality measures<sup>[1](https://ecqi.healthit.gov/dqm?qt-tabs_dqm=1)</sup>, digital condition categories are condition category measures organized as self-contained measure specification and code packages, that use one or more sources of health information that is captured and can be transmitted electronically via interoperable systems. Digital condition categories use machine-readable measure logic, such as logics written in in Clinical Quality Language, and use common data model such as FHIR. 
+Similar to the definitions of digital quality measures<sup>[1](https://ecqi.healthit.gov/dqm?qt-tabs_dqm=1)</sup>, digital condition categories are condition category measures organized as self-contained measure specification and code packages, that use one or more sources of health information that is captured and can be transmitted electronically via interoperable systems. Digital condition categories use machine-readable measure logic, such as logics written in Clinical Quality Language, and use common data model such as FHIR. 
 
 A digital condition category is structured as a proportion measure<sup>[2](http://hl7.org/fhir/us/cqfmeasures/measure-conformance.html#proportion-measures)</sup>, which consists of an initial population, denominator, numerator, and an optional denominator exclusions as shown in the Venn diagram in Figure 4-1. 
 
@@ -35,21 +35,10 @@ A digital condition category is structured as a proportion measure<sup>[2](http:
 | Numerator| The numerator population includes closed historic gaps, net news, and closed suspected gaps.|
 {: .grid}
 
-- Closed gaps are patients with confirmed coding gap and have an eligible encounter diagnosis during the current clinical evaluation period.
-- historic gaps open are defined as patients with an eligible encounter diagnosis outside of the current clinical evaluation period and have coding gaps that are open. 
-- historic gaps closed are defined as patients with an eligible encounter diagnosis outside of the current clinical evaluation period and coding gaps are closed. 
-- suspected open or closed gaps are determined using payers/vendors' internal suspecting algorithms. 
-
-
-###  $ra.evaluate-measure Operation
-
-*Describe and provides details on [$ra.evaluate-measure] operation.* 
-
-{% include img-portrait.html img="evaluate-measure-payer-to-provider.png" caption = "Figure 14-1: Evaluate Measure - Payer to Provider" %}
-
-{% include img-portrait.html img="evaluate-measure-payer-server.png" caption = "Figure 14-2: Evaluate Measure - Payer Server" %}
-
-{% include img-portrait.html img="evaluate-measure-provider-server.png" caption = "Figure 14-3: Evaluate Measure - Provider Server" %}
+- **Closed gaps** are patients with confirmed coding gap and have an eligible encounter diagnosis during the current clinical evaluation period.
+- **Historic gaps open** are defined as patients with an eligible encounter diagnosis outside of the current clinical evaluation period and have coding gaps that are open. 
+- **Historic gaps closed** are defined as patients with an eligible encounter diagnosis outside of the current clinical evaluation period and coding gaps are closed. 
+- **Suspected open or closed** gaps are determined using payers/vendors' internal suspecting algorithms. 
 
 ###  Example Digital Condition Category 
 Figure 4-2 is a Venn diagram that shows the condition catetory measure population using a hiearchical condition category code, HCC189 "Amputation Status, Lower Limb/Amputation Complications" as an exmaple. 
@@ -59,13 +48,15 @@ Figure 4-2 is a Venn diagram that shows the condition catetory measure populatio
 
 {% include img-portrait.html img="hcc-189-venn-diagram.png" caption = "Figure 4-2: Condition Category Measure Venn Diagram - HCC189 Example" %}
 
+###  $ra.evaluate-measure Operation
+
+{% include img-portrait.html img="evaluate-measure-payer-to-provider.png" caption = "Figure 14-1: Evaluate Measure - Payer to Provider" %}
+
+{% include img-portrait.html img="evaluate-measure-payer-server.png" caption = "Figure 14-2: Evaluate Measure - Payer Server" %}
+
+{% include img-portrait.html img="evaluate-measure-provider-server.png" caption = "Figure 14-3: Evaluate Measure - Provider Server" %}
+
 ###  Using CQL
 
 Specifying a digital condition category should follow the using CQL requirements specified in the [Quality Measure Implementation Guide](http://hl7.org/fhir/us/cqfmeasures/using-cql.html). 
-
-This section describes additional considerations when specifying dCCs using CQL. 
-
-```cql
-TODO: example cql
-```
 
