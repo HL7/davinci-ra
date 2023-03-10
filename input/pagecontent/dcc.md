@@ -50,6 +50,12 @@ Figure 4-2 is a Venn diagram that shows the condition catetory measure populatio
 
 ###  $ra.evaluate-measure Operation
 
+[$ra.evaluate-measure](OperationDefinition-ra.evaluate-measure.html) to dCCs would be considered as equivalent to how using [$evaluate-measure](https://www.hl7.org/fhir/measure-operation-evaluate-measure.html) to calculate an eMeasure and obtain the results.  
+
+The $ra.evaluate-measure operation requires four input (IN) parameters: subject, periodStart, periodEnd, and one of the measure parameters (measureId, measureIdentifier, or measureUrl). The subject parameter references either a single patient or a group of patients (as specified in the Patient Group profile). The term clinical evaluation period refers to the time period during which the risk adjusting encounters could be conducted and documented with expectations of submissions for risk adjustment purposes. The periodStart and periodEnd parameters are the start and end dates of the clinical evaluation period. The measure parameter identifies the measure definition of a risk adjustment model that will be used to calculate dCCs.
+
+The following figures illustrate the workflow using $ra.evaluate-measure.
+
 {% include img-portrait.html img="evaluate-measure-payer-to-provider.png" caption = "Figure 14-1: Evaluate Measure - Payer to Provider" %}
 
 {% include img-portrait.html img="evaluate-measure-payer-server.png" caption = "Figure 14-2: Evaluate Measure - Payer Server" %}
@@ -58,5 +64,5 @@ Figure 4-2 is a Venn diagram that shows the condition catetory measure populatio
 
 ###  Using CQL
 
-Specifying a digital condition category should follow the using CQL requirements specified in the [Quality Measure Implementation Guide](http://hl7.org/fhir/us/cqfmeasures/using-cql.html). 
+Specifying a digital condition category should follow the using CQL requirements specified in the [Quality Measure Implementation Guide](http://hl7.org/fhir/us/cqfmeasures/using-cql.html). Future versions of this IG may specify additional requirements for specifying dCCs using CQL and provide examples.
 
