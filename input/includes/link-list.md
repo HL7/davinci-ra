@@ -123,7 +123,7 @@
 [Transition Strategy]: dcc-transition-strategy.html
 [Task-ra-task01measurereport01group003: Eve Everywoman HCC59]: Task-ra-task01measurereport01group003.html
 
-[$ra.evaluate-Measure]: OperationDefinition-ra.evaluate-measure.html
+[$ra.evaluate-measure]: OperationDefinition-ra.evaluate-measure.html
 [Generated]: report-generation.html#the-generated-approach
 [Assisted]: report-generation.html#the-assisted-approach
 [Evaluated]:report-generation.html#the-evaluated-approach
