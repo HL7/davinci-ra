@@ -41,7 +41,7 @@ A digital condition category is structured as a proportion measure<sup>[2](http:
 - **Suspected open or closed** gaps are determined using payers/vendors' internal suspecting algorithms. 
 
 ###  Example Digital Condition Category 
-Figure 4-2 is a Venn diagram that shows the condition catetory measure population using a hiearchical condition category code, HCC189 "Amputation Status, Lower Limb/Amputation Complications" as an exmaple. 
+Figure 4-2 is a Venn diagram that shows the condition catetory measure population using a hierarchical condition category code, HCC189 "Amputation Status, Lower Limb/Amputation Complications" as an exmaple. 
 - The initial population for HCC189 is defined as enrolled Medicare Advantage members. 
 - The denominator population for HCC189 includes all open and closed historic gaps, suspected gaps, and closed net-new gaps for the ICD-10 codes that map to HCC189, for example, Z89.411 Acquired absence of right great toe. 
 - The denominator exclusion for HCC189 defines criteria that will exlude patients from the denominator population, for example ICD-10 code M20 Acquired deformities of fingers and toes and M21 Other acquired deformities of limbs. 

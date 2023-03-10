@@ -83,11 +83,11 @@ Figure 2.2-4 provides a graphical view of how these resources are related to the
 
 ### Approaches for Generating Risk Adjustment Coding Gap Report
 
-This IG describes three approaches to generate [Risk Adjustment Coding Gap Report]. As mentioned above, the Payer can use one or more of these processes as fits their need or stage as they transition their processes. 
+This IG describes three approaches to generate a [Risk Adjustment Coding Gap Report].  The approaches provide an adoption strategy that allows consumers of this IG to access this IG in a way that matches their current FHIR maturity state, including generating a [Risk Adjustment Coding Gap Report] in a way that requires little to no FHIR maturity, and then transition to greater FHIR maturity approaches as the FHIR maturity state of their processes increases. As mentioned above, the Payer can use one or more of these processes as fits their need or stage as they transition their processes.
 
 #### The Assisted Approach
 
-A non-FHIR approach. The Payer uses their existing processes, such as SQL, SAS, and object-oriented languages, to generate a comma-separated values (CSV) file with tuples of patient and risk adjustment data. The Payer uses a non-FHIR RESTful API to create the [Risk Adjustment Coding Gap Report] using the CSV file as input. A REST server then POST the generated MeasureReports to the FHIR server. Note that using this approach means that no evaluated resources will be created or referenced by the Risk Adjustment Coding Gap Report.
+This approach requires little to no FHIR maturity in order to generate the FHIR MeasureReport.  The Payer uses their existing processes, such as SQL, SAS, and object-oriented languages, to generate a comma-separated values (CSV) file with tuples of patient and risk adjustment data. The Payer then uses a non-FHIR RESTful API to create the [Risk Adjustment Coding Gap Report] using the CSV file as input. A REST server then POST the generated MeasureReports to the FHIR server. Note that using this approach means that no evaluated resources will be created or referenced by the Risk Adjustment Coding Gap Report.
 
 The table below defines a standardized CSV header that could be used for the Assisted approach. (*TODO: table with draft content and needs more work*)
 
@@ -102,7 +102,7 @@ The table below defines a standardized CSV header that could be used for the Ass
 |suspectType|coding gap suspect type|`MeasureReport.group.suspectType`|historic|
 |evidenceStatus|coding gap evidence status|`MeasureReport.group.evidenceStatus`|open-gap|
 |evidenceStatusDate|coding gap evidence status date|`MeasureReport.group.evidenceStatusDate`|4/1/2021|
-|hiearchicalStatus|coding gap hiearchical status|`MeasureReport.group.hiearchicalStatus`|applied-not-superseded|
+|hierarchicalStatus|coding gap hierarchical status|`MeasureReport.group.hierarchicalStatus`|applied-not-superseded|
 {: .grid}
 
 #### The Generated Approach
