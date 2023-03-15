@@ -101,19 +101,30 @@ After careful review with the risk adjustment subject matter experts, it was det
 
 This implementation guide does not define how payers determine a coding gap and how coding gaps are produced or managed on the payer side including hierarchies. This implementation guide also does not define suspecting processes and algorithms/predictive models that are used for suspecting analytics.   
 
-### Actors
+### Actors and Roles
 
-The actors involved in exchanging risk adjustment coding gap reports are <span class="bg-success" markdown="1">Payer, Provider, and Risk Adjustment Coder. This implementation guide also uses the terms Data Consumer and Data Producer to denote actors.</span><!-- new-content -->
+<span class="bg-success" markdown="1">Different entities can play different Roles. For clarity in this IG, we will use the following Actors: Payer, Provider, and Risk Adjustment Coder (working on behalf of the Payer).</span><!-- new-content -->
 
 <div class="bg-success" markdown="1">
-- **Data Consumer**: the term Data Consumer is used to mean either Payer, Provider, or Risk Adjustment Coder when they are in the consumption and use of healthcare data.
-- **Data Producer**: the term Data Producer is used to mean either Payer, Provider, or Risk Adjustment Coder when they are involved in the de novo creation of healthcare data. 
-- **Payer**: payer system that can be either the Data Consumer or the Data Producer.
-- **Provider**: provider system that can be either the Data Consumer or the Data Producer.
-- **Risk Adjustment Coder**: Risk Adjustment Coder could be a third party system that can be either the Data Consumer or the Data Producer. 
 
-The Methodology section of this implementation guide describes these actors in more detail in the context of report generation, query, and remediation steps of risk adjustment lifecycle. 
-</div><!-- new-content -->   
+Roles:
+- **Client**: 
+    - Reporting Client: 
+        - Provider when requests Risk Adjustment Coding Gap Report
+        - Payer when requests Risk Adjustment Coding Gap Report to POST to Provider's  
+    - Remediation Client  (create the Task. Payer cannot be remediation client)
+        - Provider when create RA Clinical Evaluation Task 
+        - Provider when add annotation to Risk Adjustment Coding Gap Report
+- **Server**:
+    - Reporting Server (reporting server will always be the payer)
+        - Payer generates and stores Risk Adjustment Coding Gap Report
+    - Remediation Server (receives and processes the Task. Provider cannot be be remediation server)
+        - Payer/Risk Adjustment Coder receives and processes the Task 
+        - Payer adds annotation to the Risk Adjustment Coding Gap Report, if the payer chooses to share any or all annotations submitted by providers
+
+
+The Methodology section of this implementation guide describes these Actors in more detail in the context of report generation, query, and remediation steps of risk adjustment lifecycle and report annotation. 
+</div><!-- new-content -->     
 
 ---
 
