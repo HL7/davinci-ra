@@ -6,9 +6,9 @@ All sections on this page are new content.
 
 Once MeasureReports have been created, they can be retrieved using a simple RESTful query.  The query uses the _include parameter to also retrieve in the searchset bundle, the resources attached to the report in .evaluatedResources
 
-An example workflow of a Client queries for risk adjustment coding gap reports for a single patient is shown below in Figure 3-1.
+An example workflow of a Payer or Provider Role using the Reporting Client to query for [Risk Adjustment Coding Gap Report] for a single patient is shown below in Figure 3-1.
 
-{% include img-portrait.html img="risk-adjustment-coding-gap-report-single-patient.png" caption = "Figure 3-1 Report Operation Workflow for a Single Patient" %}
+{% include img-portrait.html img="risk-adjustment-coding-gap-report-single-patient.png" caption = "Figure 3-1 Report Query Workflow for a Single Patient" %}
 
 
 #### For a single patient
@@ -19,3 +19,6 @@ An example workflow of a Client queries for risk adjustment coding gap reports f
 `GET [base]/MeasureReport/?subject=Group/ra-group123&period=ge2021-01-01&period=le2021-12-31&_include=MeasureReport:evaluated-resource`
 
 This can also be used in an asynchronous pattern using [Bulk]
+
+
+{% include link-list.md %}

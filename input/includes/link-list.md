@@ -2,7 +2,7 @@
 
 [Annotation extension]: StructureDefinition-ra-annotation.html
 [Asynchronous Request Patterns]: https://www.hl7.org/fhir/async.html
-[Bulk]: report-generation.html#Bulk-data-request-for-Risk-Adjustment-Coding-Gap-MeasureReport
+[Bulk]: report-generation.html#bulk-data-request-for-risk-adjustment-coding-gap-measurereports
 [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]: Bundle-ra-bundle01.html
 [SearchSetBundle01Pat01: Pat01 MeasureReport01 group003]: Bundle-ra-searchsetbundle01pat01.html
 [Capability Statements]: capabilities.html
