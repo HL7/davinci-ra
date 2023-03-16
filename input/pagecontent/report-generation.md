@@ -2,7 +2,7 @@
 
 ### Introduction and Background
 
-During this phase of the lifecycle process, the Payer determines if there is grounds for suspecting that a patient may have a risk-adjustable condition that has not yet been documented during the current clinical evaluation period. Quality measures have clear rules governing when the patient is included in/excluded from the measure denominator and numerator; not so for risk adjustment. Payers often must statistically infer the likelihood that a patient might have an undocumented Condition Category (CC). This statistical process is called CC suspecting and is generally done in two ways:
+During this phase of the lifecycle process, the Payer determines if there is grounds for suspecting that a patient may have a risk-adjustable condition that has not yet been documented during the current clinical evaluation period. Quality measures have clear rules governing when the patient is included in/excluded from the measure denominator and numerator; not so for risk adjustment. Payers often must statistically infer the likelihood that a patient might have an undocumented Condition Category (CC). This statistical process is called Condition Category (CC) suspecting and is generally done in two ways:
 - Historic conditions (also known as persisting conditions) are those which were documented during some past clinical evaluation periods, but have not yet been documented in the current period; and
 - Suspected conditions, which are identified through the use of statistical modeling.
 
@@ -10,7 +10,7 @@ Alternatively, the Payer may receive a medical claim that confirms the presence 
 
 During the gap generation phase, the Payer combines all relevant data streams and determines which CC gaps exist for the patient and what their status is. An open gap is one where the Payer is soliciting information from the Provider that the patient either has the condition, or that the gap is invalid. A closed gap is one where the Payer has the necessary evidence that the gap is valid for the current clinical evaluation period. But because the CC suspecting process is probabilistic there will always be a certain percentage of invalid gaps that the Provider indicates are not clinically appropriate for the patient. 
 
-Many risk adjustment models are constructed in such a way as to differentiate between different degrees of severity in the disease process. For example, the Medicare Advantage model divides diabetes into three condition categories, which in order from least to most severe are: CC 19 (diabetes without complications); CC 18 (diabetes with chronic complications); and CC 17 (diabetes with acute complications.) During the clinical evaluation period a patient may diagnosed with diabetes several times, with individual diagnoses rolling up to different CCs. To avoid paying twice for the same underlying condition, a hierarchy is applied to the CCs so that only the most severe form is counted for risk adjustment purposes; applying these hierarchies turns a Condition Category (CC) into a Hierarchical Condition Category (HCC). In the previous example, CC 17 supersedes CCs 18 and 19, and CC 18 supersedes CC 19.
+Many risk adjustment models are constructed in such a way as to differentiate between different degrees of severity in the disease process. For example, the Medicare Advantage model divides diabetes into three condition categories, which in order from least to most severe are: CC 19 (diabetes without complications); CC 18 (diabetes with chronic complications); and CC 17 (diabetes with acute complications.) During the clinical evaluation period a patient may diagnosed with diabetes several times, with individual diagnoses rolling up to different Condition Categories (CCs). To avoid paying twice for the same underlying condition, a hierarchy is applied to the CCs so that only the most severe form is counted for risk adjustment purposes; applying these hierarchies turns a CC into a Hierarchical Condition Category (HCC). In the previous example, CC 17 supersedes CCs 18 and 19, and CC 18 supersedes CC 19.
 
 There are many potential uses for CC gap information. For example, a provider may seek to take action on open gaps, or they may want confirmation of their previous gap closure or gap invalidation actions from the payer, or they may want to calculate their gap closure performance under the terms of a value-based payment arrangement. In general, the Payer will not know in advance which of these purposes the data will be used for, so the approach that has been taken in this implementation guide (IG) is for the Payer to provide as much CC gap data as possible, with flags on the data so that the Provider may filter the CC gaps on the receiving end. This makes it possible for the IG to support as broad a range of applications as possible. Data filtering is the responsibility of the recipient.
 
@@ -28,15 +28,15 @@ Once all MeasureReports have been created, a query can be run for one or more [R
 
 ### Actors
 
-The Actors involved in coding gap report generation are defined as the Payer and the Provider
+The Actors involved in coding gap report generation are defined as the Payer and the Provider:
 - Payer acts as the Reporting Server that receives the query request for retrieving the [Risk Adjustment Coding Gap Report] resources. 
 - Either the Provider or Payer acting as the Reporting Client, can request [Risk Adjustment Coding Gap Report] using a FHIR query on the MeasureReport resource.
 
-In the example shown in Figure 2.2-1, a Payer plays the Role both as Reporting Server and Reporting Client in this scenario. The Payer (acting as the Reporting Client) queries the [Risk Adjustment Coding Gap Report] on their Reporting Server based on the search parameters provided. Then the Payer posts the searchset Bundle to the Provider.
+In the example shown in Figure 2.2-1, a Payer plays the role both as Reporting Server and Reporting Client in this scenario. The Payer (acting as the Reporting Client) queries the [Risk Adjustment Coding Gap Report] on their Reporting Server based on the search parameters provided. Then the Payer posts the searchset Bundle to the Provider.
 
 {% include img-portrait.html img="actors-post.png" caption="Figure 2.2-1 Report Generation Actors - Example 1"%}
 
-As shown in Figure 2.2-2, the Provider playing the Role of the Reporting Client queries the [Risk Adjustment Coding Gap Report] on the Payer's Reporting Server with search parameters.  The Payer's Reporting Server returns the [Risk Adjustment Coding Gap Report] and evaluated Resources to the Provider.
+As shown in Figure 2.2-2, the Provider playing the role of the Reporting Client queries the [Risk Adjustment Coding Gap Report] on the Payer's Reporting Server with search parameters.  The Payer's Reporting Server returns the [Risk Adjustment Coding Gap Report] and evaluated Resources to the Provider.
 
 {% include img-portrait.html img="actors-request.png" caption="Figure 2.2-2 Report Generation Actors - Example 2"%}
 </div><!-- new-content -->
@@ -70,7 +70,7 @@ The following resources and their profiles specified in this IG are used to supp
 |Measure|Risk Adjustment Model Measure|[Risk Adjustment Model Measure]|
 {: .grid}
 
-Figure 2.2-4 provides a graphical view of how these resources are related to the example report above. The main resource is the [Risk Adjustment Coding Gap Report] profile. This coding gap report references a [Risk Adjustment Model Measure], which indicates CMS-HCC V24 is the risk adjustment model this report is based on. The coding gap report also references the Patient ([US Core Patient](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html)) as well as the Organization ([US Core Organization](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-organization.html)) that generated the report. The graph shows three groups within a [Risk Adjustment Coding Gap Report] using three example HCCs from Figure 2.2-3 to illustrate each `group` corresponds to an HCC including its attributes. <span class="bg-success" markdown="1">Note that the Risk Adjustment Coding Gap Report Bundle in this graph is a searchset Bundle returned by FHIR query.</span><!-- new-content --> 
+Figure 2.2-4 provides a graphical view of how these resources are related to the example report above. The main resource is the [Risk Adjustment Coding Gap Report] profile. This coding gap report references a [Risk Adjustment Model Measure], which indicates CMS-HCC V24 is the risk adjustment model this report is based on. The coding gap report also references the Patient ([US Core Patient](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html)) as well as the Organization ([US Core Organization](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-organization.html)) that generated the report. The graph shows three groups within a [Risk Adjustment Coding Gap Report] using three example HCCs from Figure 2.2-3 to illustrate each `group` corresponds to an HCC including its attributes. <span class="bg-success" markdown="1">Note that the Bundle in this graph is a searchset Bundle returned by FHIR query with the Risk Adjustment Coding Gap Reports.</span><!-- new-content --> 
 
 {% include img-portrait.html img="report-risk-adjustment-resource-graph.png" caption="Figure 2.2-4 Resource Graph for Risk Adjustment Coding Gap Report"%}
 
@@ -88,16 +88,16 @@ The table below defines a standardized CSV header that could be used for the Ass
 
 |Header Element|Description|Mapping|Example Value|
 |---|---|---|
-|periodStart|start of the clinical evaluation period|`MeasureReport.period.start`|1/1/2021|
-|periodEnd|end of clinical evaluation period|`MeasureReport.period.end`|9/30/2021|
-|modelId|risk adjustment model identifier|(MeasureReport.measure) `Measure.identifier`|https://build.fhir.org/ig/HL7/davinci-ra/Measure-RAModelExample01|
-|modelVersion|risk adjustment model version|(MeasureReport.measure) `Measure.version`|24|
-|patientId|patient identifier|(MeasureReport.subject) `Patient.identifier`|ra-patient01|
+|periodStart|Start of the clinical evaluation period|`MeasureReport.period.start`|1/1/2021|
+|periodEnd|End of clinical evaluation period|`MeasureReport.period.end`|9/30/2021|
+|modelId|Risk adjustment model identifier|`Measure.identifier` (MeasureReport.measure)|https://build.fhir.org/ig/HL7/davinci-ra/Measure-RAModelExample01|
+|modelVersion|Risk adjustment model version|`Measure.version` (MeasureReport.measure)|24|
+|patientId|Patient identifier|`Patient.identifier` (MeasureReport.subject)|ra-patient01|
 |ccCode|Condition Category Code|`MeasureGroup.group.code`|18|
-|suspectType|coding gap suspect type|`MeasureReport.group.suspectType`|historic|
-|evidenceStatus|coding gap evidence status|`MeasureReport.group.evidenceStatus`|open-gap|
-|evidenceStatusDate|coding gap evidence status date|`MeasureReport.group.evidenceStatusDate`|4/1/2021|
-|hierarchicalStatus|coding gap hierarchical status|`MeasureReport.group.hierarchicalStatus`|applied-not-superseded|
+|suspectType|Coding gap suspect type|`MeasureReport.group.suspectType`|historic|
+|evidenceStatus|Coding gap evidence status|`MeasureReport.group.evidenceStatus`|open-gap|
+|evidenceStatusDate|Coding gap evidence status date|`MeasureReport.group.evidenceStatusDate`|4/1/2021|
+|hierarchicalStatus|Coding gap hierarchical status|`MeasureReport.group.hierarchicalStatus`|applied-not-superseded|
 {: .grid}
 
 {% include examplebutton.html example="get-risk-adjustment-assisted-csv-example" b_title ="Click Here To See Example Assisted CSV" %}
@@ -114,8 +114,6 @@ This de novo approach requires an implementation that includes the [$ra.evaluate
 
 ### Usage
 
-*TODO: Needs review examples in example buttons*
-
 #### Request Risk Adjustment Coding Gap MeasureReport
 
 <div class="bg-success" markdown="1">
@@ -125,7 +123,7 @@ This de novo approach requires an implementation that includes the [$ra.evaluate
 
 {% include examplebutton.html example="get-risk-adjustment-coding-gap-report-usage-example" b_title ="Click Here To See Example GET Risk Adjustment Coding Gap Report" %}
 
-#### Bulk data request for Risk Adjustment Coding Gap MeasureReports  
+#### Bulk Data Request for Risk Adjustment Coding Gap MeasureReports  
 
 If requesting [Risk Adjustment Coding Gap Report] for many patients, <span class="bg-success" markdown="1">the Reporting Client</span><!-- new-content --> may consider using the FHIR [Asynchronous Request Patterns] for the Bulk Data exchange operation.
 
