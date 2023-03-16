@@ -22,6 +22,8 @@ The Actors involved in the remediation phase are Provider, Risk Adjustment Coder
 - Payer/Risk Adjustment Coder acts as Server that receives and processes the [Risk Adjustment Clinical Evaluation Evidence Task] provided by the Provider.  
 - Risk Adjustment Coder acts as Remediation Client creates Risk Adjustment Clinical Evaluation Evidence Task for net-new Condition Category (CC). 
 
+{% include img-portrait.html img="three-stages-remediation.png" caption="Figure 2.4-1: Report Remediation Overview"%}
+
 ### Using Task
 Figure 2.4-1 provides an overview of how the Task resource, [Risk Adjustment Clinical Evaluation Evidence Task], is used to support the remediation process. The [Task State Machine](StructureDefinition-ra-clinical-evaluation-evidence-task.html#task-state-machine) includes a diagram for the state machine used by this profile. 
 
@@ -51,7 +53,7 @@ The risk adjustment lifecycle then renews. The Risk adjustment engine runs again
 
 Note that since these Task resources are stored, the Provider, the Risk Adjustment Coder, or the Payer will be able to access them and review details and updates history made throughout the lifecyle.
 
-{% include img-portrait.html img="remediation.png" caption="Figure 2.4-1: Using Task to Support Remediation"%}
+{% include img-portrait.html img="remediation.png" caption="Figure 2.4-2: Using Task to Support Remediation"%}
 
 
 {% include link-list.md %}

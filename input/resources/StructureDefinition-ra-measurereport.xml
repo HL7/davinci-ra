@@ -204,6 +204,7 @@
         <code value="Extension"/>
         <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-annotation"/>
       </type>
+      <mustSupport value="true"/>
     </element>  
     <element id="MeasureReport.group.code">
       <path value="MeasureReport.group.code"/>
