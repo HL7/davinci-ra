@@ -1,5 +1,9 @@
 {% assign id = {{include.id}} %}
 
+<div class="new-content" markdown="1">
+New Extensions: Annotation and ConfidenceScale
+</div>
+
 ### Mandatory Data Elements and Terminology
 
 The following data-elements are mandatory (i.e data MUST be present).
@@ -16,16 +20,23 @@ The following data-elements are mandatory (i.e data MUST be present).
 
 1. Zero to many `MeasureReport.group` element
 1. Each `MeasureReport.group` *should* have a `MeasureReport.group.code` element
-1. Each `MeasureReport.group` *should* have a `MeasureReport.group.ra-suspectType` element
-1. Each `MeasureReport.group` *should* have a `MeasureReport.group.ra-evidenceStatus` element
-1. Each `MeasureReport.group` *should* have a `MeasureReport.group.ra-evidenceStatusDate` element
-1. Each `MeasureReport.group` *should* have a `MeasureReport.group.ra-hierarchicalStatus` element
+1. Each `MeasureReport.group` *should* have a `MeasureReport.group.suspectType` element
+1. Each `MeasureReport.group` *should* have a `MeasureReport.group.evidenceStatus` element
+1. Each `MeasureReport.group` *should* have a `MeasureReport.group.evidenceStatusDate` element
+1. Each `MeasureReport.group` *should* have a `MeasureReport.group.hierarchicalStatus` element
 1. Each `MeasureReport.group` *should* have zero to many `MeasureReport.evalautedResource` element
+
+<div class="bg-success" markdown="1"><!-- new content -->
+
+**Each {{site.data.structuredefinitions.[id].type}} *may* have ([Must Support]):**
+1. Each `MeasureReport.group` *may* have zero to one `MeasureReport.group.confidenceScale` element
+1. Each `MeasureReport.group` *may* have zero to many `MeasureReport.group.annotation` element
+</div>
 
 **Additional Profile specific implementation guidance:**
 1. `evaluatedResource` SHALL reference resources using USCore profiles where applicable
 
-The Clinical Data Collection Deadline element, `ra-clinicalDataCollectionDeadline`, was added as an extension to MeasureReport. We are seeking comment from implementers if they intend to use this element when communicating risk adjustment coding gap reports from payers to providers.
+The Clinical Data Collection Deadline element, `clinicalDataCollectionDeadline`, was added as an extension to MeasureReport. We are seeking comment from implementers if they intend to use this element when communicating risk adjustment coding gap reports from payers to providers.
 {:.stu-note}
 
 {% include link-list.md %}

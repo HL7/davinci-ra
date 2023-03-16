@@ -1,9 +1,11 @@
 
-<div class="bg-success" markdown="1"><!-- new content -->
-
-New profiles: 
+<div class="new-content" markdown="1">
+New Profiles: 
 - [Risk Adjustment Clinical Evaluation Evidence Task]
 - [Risk Adjustment SearchSet Bundle]
+
+Profile with new Extensions:
+- [Risk Adjustment Coding Gap Report]
 </div>
 
 List of profiles that define constrains on FHIR resources for systems conforming to this implementation guide.
