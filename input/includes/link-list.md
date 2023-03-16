@@ -1,6 +1,6 @@
 [Home]: index.html "Home Page"
 
-[Annotation extension]: StructureDefinition-ra-annotation.html
+[Annotation]: StructureDefinition-ra-annotation.html
 [Asynchronous Request Patterns]: https://www.hl7.org/fhir/async.html
 [Bulk]: report-generation.html#bulk-data-request-for-risk-adjustment-coding-gap-measurereports
 [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]: Bundle-ra-bundle01.html

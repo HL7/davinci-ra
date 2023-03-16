@@ -113,6 +113,7 @@ This implementation guide does not define how payers determine a coding gap and 
     - Provider plays this role 1) when requests Risk Adjustment Coding Gap Report, or 2) when adds annotation to Risk Adjustment Coding Gap Report
 - Remediation Client  
     - Provider plays this role when creates [Risk Adjustment Clinical Evaluation Evidence Task] 
+    - Risk Adjustment Coder plays this role when creates [Risk Adjustment Clinical Evaluation Evidence Task] 
 
 **Server**:
 - Reporting Server 
