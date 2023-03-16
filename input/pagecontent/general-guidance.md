@@ -39,25 +39,25 @@ Report generation describes three different approaches to generate [Risk Adjustm
 
 #### Report Query
 
-The Client can query the [Risk Adjustment Coding Gap Report] once they are generated. For example, Payer acts as the Server can query reports based on search parameters and POST them to the Provider server. See the [Report Query] page for details and guidance. 
+The Client can query the [Risk Adjustment Coding Gap Report] once they are generated. For example, Payer acts as the Reporting Client can query reports based on search parameters and POST them to the Provider server. See the [Report Query] page for details and guidance. 
 
 #### Remediation
 
-Once the queried Risk Adjustment Coding Gap MeasureReports have been sent to the intended recipient and filtered to ensure that only germane coding gaps (e.g., HCC gaps) are made available to providers. The provider (or a software program acting on behalf of the provider) determines whether the gap is currently valid, and whether the requested encounter data evidence exists to close the gap. The provider will be able to use the functionalities specified in this IG to begin remediation process to request for a gap closure, gap invalidation, and/or addition of a net-new coding gap, and submits clinical evaluation evidence to support the request. 
+Once the queried Risk Adjustment Coding Gap MeasureReports have been sent to the intended recipient and filtered to ensure that only germane coding gaps (e.g., HCC gaps) are made available to providers. The Provider (or a software program acting on behalf of the Provider) determines whether the coding gap is currently valid, and whether the requested encounter data evidence exists to close the gap. The Provider will be able to use the functionalities specified in this IG to begin remediation process to request for a gap closure, gap invalidation, and/or addition of a net-new coding gap, and submits clinical evaluation evidence to support the request. 
 
-The remediation workflow is supported by using the Task resource. Remediation allows the Risk Adjustment Coder to validate evidence and adjudicate coding gap change requests through Task from the Provider. The updated Task is then posted to the Payer server and the records on the Payer system get updated accordingly. 
+The remediation workflow is supported by using the Task resource, [Risk Adjustment Clinical Evaluation Evidence Task]. Remediation allows the Risk Adjustment Coder to validate evidence and adjudicate coding gap change requests through Task from the Provider. The updated Task is then posted to the Payer server and the records on the Payer system get updated accordingly. 
 
 See the [Remediation] page for more details and guidance. 
 
-#### Workflow Overview
+#### Report Generation, Query, and Remediation Workflow Overview
 
-*This is a draft diagram*
 </div><!-- new-content -->
+The diagram below provides a workflow overview of the report generation, query, and remediation steps. 
 
 {% include img-portrait.html img="risk-adjustment-workflow.png" caption="Figure 2.1-2 Risk Adjustment Workflow Overview"%}
 
 #### Report Annotation
-An electronical medical record (EMR) may choose to display all or part of the Risk Adjustment Gap Report to the provider at the point of care.  At that time, if the provider wants to note the action they took in regard to a Risk Adjustment gap, they can put that comment on the Risk Adjustment Gap and return it to the payer.  This process is called [Report Annotation].
+An electronical medical record (EMR) may choose to display all or part of the [Risk Adjustment Coding Gap Report] to the Provider at the point of care.  At that time, if the Provider wants to note the action they took in regard to a Risk Adjustment coding gap, they can put that comment on the Risk Adjustment Coding Gap Report and return it to the Payer. This process is called [Report Annotation].
 
 {% include img-portrait.html img="report-annotation-overview.png" caption="Figure 2.1-3 Report Annotation Overview"%}
 ### Attribution
