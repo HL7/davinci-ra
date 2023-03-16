@@ -103,7 +103,7 @@ This implementation guide does not define how payers determine a coding gap and 
 
 ### Actors and Roles
 
-<span class="bg-success" markdown="1">Different entities can play different Roles in different scenarios. For clarity in this implementation guide, we will use Actors: Payer, Provider, and Risk Adjustment Coder (e.g., Certified Risk Adjustment Coder (CRC), working on behalf of the Payer). Their roles as Client and Server are described below. </span><!-- new-content -->
+<span class="bg-success" markdown="1">Different entities can play different Roles in different scenarios. The Actors in this implementation guide are Payer, Provider, and Risk Adjustment Coder (working on behalf of the Payer, e.g., Certified Risk Adjustment Coder (CRC)). For clarity in this IG, we may use the term Payer to refer to both the Payer and Risk Adjustment Coder. Their roles as Client and Server are described below. </span><!-- new-content -->
 
 <div class="bg-success" markdown="1">
 
@@ -112,13 +112,13 @@ This implementation guide does not define how payers determine a coding gap and 
     - Payer plays this role when requests [Risk Adjustment Coding Gap Report] to POST to Provider's FHIR Server 
     - Provider plays this role 1) when requests Risk Adjustment Coding Gap Report, or 2) when adds annotation to Risk Adjustment Coding Gap Report
 - Remediation Client  
-    - Provider plays this role when creates [Risk Adjustment Clinical Evaluation Task] 
+    - Provider plays this role when creates [Risk Adjustment Clinical Evaluation Evidence Task] 
 
 **Server**:
 - Reporting Server 
     - Payer plays this role when 1) generates and stores Risk Adjustment Coding Gap Report, or 2) when adds annotation to the Risk Adjustment Coding Gap Report, if the Payer chooses to share any or all annotations submitted by Provider
 - Remediation Server 
-    - Payer/Risk Adjustment Coder plays this role when receives and processes the Risk Adjustment Clinical Evaluation Task        
+    - Payer/Risk Adjustment Coder plays this role when receives and processes the Risk Adjustment Clinical Evaluation Evidence Task        
 
 The Methodology section of this implementation guide describes these Actors in more detail in the context of report generation, query, and remediation steps of risk adjustment lifecycle and report annotation. 
 </div><!-- new-content -->     

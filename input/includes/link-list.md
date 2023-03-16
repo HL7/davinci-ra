@@ -111,7 +111,7 @@
 [Risk Adjustment Coding Gap Report Profile]: StructureDefinition-ra-measurereport.html
 [Risk Adjustment Model Measure]: StructureDefinition-ra-model-measure.html
 [Risk Adjustment Model Measure Profile]: StructureDefinition-ra-model-measure.html
-[Risk Adjustment Clinical Evaluation Task]: StructureDefinition-ra-clinical-evaluation-task.html
+[Risk Adjustment Clinical Evaluation Evidence Task]: StructureDefinition-ra-clinical-evaluation-evidence-task.html
 
 [Risk Adjustment SearchSet Bundle]: StructureDefinition-ra-searchset-bundle.html
 
