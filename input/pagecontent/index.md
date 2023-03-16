@@ -145,7 +145,7 @@ Contributors
 - *Cody Danielshak, Epic*
 - *Josh Lamb, Optum*
 - *Lloyd McKenzie, Dogwood Health Consulting* 
-<!--- *Michael Stearns, Wolters Kluwer*-->
+- *Michael Stearns, Wolters Kluwer*
 - *Viet Nguyen, Stratametrics*
 
 ---

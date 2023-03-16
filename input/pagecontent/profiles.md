@@ -18,7 +18,7 @@ List of profiles that define constrains on FHIR resources for systems conforming
 |Bundle|[Risk Adjustment Coding Gap Report Bundle]*|
 {: .grid}
 
-*The Risk Adjustment Coding Gap Report Bundle is returned by [$ra.evaluate-measure]
+*The Risk Adjustment Coding Gap Report Bundle is a collection Bundle returned by [$ra.evaluate-measure]
 
 <br />
 
