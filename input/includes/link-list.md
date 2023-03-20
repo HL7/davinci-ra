@@ -78,7 +78,8 @@
 [MeasureReport04: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V21 (Patient03: Nelda Nuclear)]: MeasureReport-ra-measurereport04.html
 [MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Nelda Nuclear)]: MeasureReport-ra-measurereport05.html
 [MeasureReport06: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient02: Adam Everyman)]: MeasureReport-ra-measurereport06.html
-[MeasureReport]: {{site.data.fhir.path}}measurereport.html
+[MeasureReport01: Risk Adjustment Measure Report with Annotation, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]: MeasureReport-ra-measurereport01-with-annotation.html
+[MeasureReport01]: {{site.data.fhir.path}}measurereport.html
 [Methodology]: methodology.html
 [Observation01Pat03: Pat03 Creatinine on 20210728]: Observation-ra-obs01pat03.html
 [Observation02Pat03: Pat03 PHQ9 on 20190823]: Observation-ra-obs02pat03.html
@@ -119,9 +120,10 @@
 [SMART Backend Services]: https://hl7.org/fhir/uv/bulkdata/authorization/index.html
 [Specifying dCC]: dcc.html
 
+[Task01: Risk Adjustment Clinical Evaluation Evidence Task for MeasureReport01, HCC59 (group003), (Patient01: Eve Everywoman)]: Task-ra-task01measurereport01group003.html
+
 [Terminology]: terminology.html
 [Transition Strategy]: dcc-transition-strategy.html
-[Task-ra-task01measurereport01group003: Eve Everywoman HCC59]: Task-ra-task01measurereport01group003.html
 
 [$ra.evaluate-measure]: OperationDefinition-ra.evaluate-measure.html
 [Generated]: report-generation.html#the-generated-approach

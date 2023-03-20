@@ -90,7 +90,7 @@
 <artifact id="Practitioner/ra-prac01pat01" key="Practitioner-ra-prac01pat01" name="Practitioner: Harold Hippocrates"/>
 <artifact id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner: Otto Osler"/>
 <artifact id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner: Patrick Pump"/>
-<artifact id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
+<artifact deprecated="true" id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
 <artifact id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Risk Adjustment Clinical Data Collection Deadline"/>
 <artifact id="StructureDefinition/ra-clinical-evaluation-evidence-task" key="StructureDefinition-ra-clinical-evaluation-evidence-task" name="Risk Adjustment Clinical Evaluation Evidence Task"/>
@@ -107,8 +107,12 @@
 <artifact id="Measure/RAModelExample02" key="Measure-RAModelExample02" name="Risk Adjustment Model Version 21 - CMS Hierarchical Category Condition (CMS-HCC)"/>
 <artifact id="Measure/RAModelExample01" key="Measure-RAModelExample01" name="Risk Adjustment Model Version 24 - CMS Hierarchical Category Condition (CMS-HCC)"/>
 <artifact id="Measure/RAModelExample03" key="Measure-RAModelExample03" name="Risk Adjustment Model Version 5 - CMS Prescribing Drug Hierarchical Category Condition (CMS-HCC)"/>
+<artifact id="CapabilityStatement/ra-remediation-client" key="CapabilityStatement-ra-remediation-client" name="Risk Adjustment Remediation Client Capability Statement"/>
+<artifact id="CapabilityStatement/ra-remediation-server" key="CapabilityStatement-ra-remediation-server" name="Risk Adjustment Remediation Server Capability Statement"/>
+<artifact id="CapabilityStatement/ra-reporting-client" key="CapabilityStatement-ra-reporting-client" name="Risk Adjustment Reporting Client Capability Statement"/>
+<artifact id="CapabilityStatement/ra-reporting-server" key="CapabilityStatement-ra-reporting-server" name="Risk Adjustment Reporting Server Capability Statement"/>
 <artifact id="StructureDefinition/ra-searchset-bundle" key="StructureDefinition-ra-searchset-bundle" name="Risk Adjustment SearchSet Bundle"/>
-<artifact id="CapabilityStatement/ra-server" key="CapabilityStatement-ra-server" name="Risk Adjustment Server Capability Statement"/>
+<artifact deprecated="true" id="CapabilityStatement/ra-server" key="CapabilityStatement-ra-server" name="Risk Adjustment Server Capability Statement"/>
 <artifact id="StructureDefinition/ra-suspectType" key="StructureDefinition-ra-suspectType" name="Risk Adjustment Suspect Type"/>
 <artifact id="CodeSystem/suspect-type" key="CodeSystem-suspect-type" name="Risk Adjustment Suspect Type CodeSystem"/>
 <artifact id="ValueSet/suspect-type" key="ValueSet-suspect-type" name="Risk Adjustment Suspect Type ValueSet"/>

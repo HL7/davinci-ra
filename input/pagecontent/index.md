@@ -1,6 +1,18 @@
 <div class="note-to-balloters" markdown="1">
 
-**The May 2023 Ballot**
+**The May 2023 Ballot** includes the following high level changes to support new functionalities, introduce Digital Condition Category as DRAFT content for review, and address resolved trackers. 
+  - New pages: [Report Generation], [Report Query], [Remediation], and [Report Annotation]
+  - The Guidance page in STU1 is now broken into two pages, [General Guidance] and [Report Generation], with updates and new content    
+  - New profiles and extensions, see [Profiles], and [Capability statements] 
+  - New page: [Digital Condition Category(dCC)](dcc.html)
+  - New operation: [$ra.evaluate-measure]
+  - **Applied**: Add "data collection period" to Glossary ([FHIR-37672](https://jira.hl7.org/browse/FHIR-37672))
+  - **Applied**: Corrected CMS-HCC model to HHS-HCC model ([FHIR-37745](https://jira.hl7.org/browse/FHIR-37745))
+  - **Applied**: Corrected Category misspelling ([FHIR-38205](https://jira.hl7.org/browse/FHIR-38205))
+  - **Applied**: Corrected Condition misspelling in Suspect Type Value Set ([FHIR-38206](https://jira.hl7.org/browse/FHIR-38206))
+  - **Applied**: Corrected Venn Diagram misspelling in DCC cntent page ([FHIR-39300](https://jira.hl7.org/browse/FHIR-39300))
+  - **Applied**: Make "Example CMS Hierarchical Condition Category Value Set" a true sample ([FHIR-39371](https://jira.hl7.org/browse/FHIR-39371))
+  - **Applied**: Remove "Code System" and "Value Set" from names and titles of code system and value set ([FHIR-39374](https://jira.hl7.org/browse/FHIR-39374))
 
 <div class="new-content" markdown="1">
 Where possible, new and updated content are highlighted with green text and background
@@ -13,7 +25,7 @@ Where possible, new and updated content are highlighted with green text and back
 The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide (IG) describes exchanging risk adjustment coding gaps between payers and providers. Risk adjusted premium calculations are important to government managed care. To better inform providers of opportunities to address risk adjusted conditions, better enable payers to communicate risk adjustment information, and enhance government sponsors' ability to allocate funding accurately, payers and providers need a standard protocol to share and receive clinical data related to risk adjustment and a standard methodology to communicate risk based coding, documentation and submission status of chronic conditions. The <span class="bg-success" markdown="1">first Standard for Trial Use (STU) version</span><!-- new-content --> of this implementation guide focused on the standard exchange format of risk adjustment coding gaps from payers to providers, it offers potential for reducing administrative burden experienced by providers by standardizing the reporting they receive from all payers.
 
 <div class="bg-success" markdown="1">
-This version of the implementation guide focuses on the communication from providers back to payers. It adds functionalities to support the workflow that allows providers and certified risk adjustment coders to review and remediate the risk adjustment coding gap reports provided by the payer. Providers and risk adjustment coders may close gaps, invalidate gaps, or discover net-new Condition Categories (CCs) during medical record review. The added functionalities allow them to provide the updated coding gap data along with supporting clinical evaluation evidence back to payers. This version also introduces digital Condition Category (dCC) as draft content for review. It describes how to specify dCCs using Clinical Quality Language (CQL) through an example which would allow for a more automated process of generating risk adjustment coding gap reports by evaluating dCCs against clinical data. 
+This version of the implementation guide focuses on the communication from providers back to payers. It adds functionalities to support the workflow that allows providers and certified risk adjustment coders to review and remediate the risk adjustment coding gap reports provided by the payer. Providers and risk adjustment coders may close gaps, invalidate gaps, or discover net-new Condition Categories (CCs) during medical record review. The added functionalities allow them to provide the updated coding gap data along with supporting clinical evaluation evidence back to payers. This version also introduces digital Condition Category (dCC). It describes how to specify dCCs using Clinical Quality Language (CQL) through an example which would allow for a more automated process of generating risk adjustment coding gap reports by evaluating dCCs against clinical data. 
 </div><!-- new-content -->
 
 This implementation guide is supported by the Da Vinci initiative which is a private effort to accelerate the adoption of Health Level Seven International Fast Healthcare Interoperability Resources (HL7® FHIR®) as the standard to support and integrate value-based care (VBC) data exchange across communities. Like all Da Vinci Implementation Guides, it follows the [HL7 Da Vinci Guiding Principles] for exchange of patient health information. As an HL7 FHIR Implementation Guide, changes to this specification are managed by the sponsoring [Clinical Quality Information (CQI) Work Group] and are incorporated as part of the standard balloting process.
