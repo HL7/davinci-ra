@@ -59,7 +59,10 @@
 - [Encounter43Pat01: Pat01 Encounter on 2019-02-10]
 - [Encounter44Pat01: Pat01 Encounter on 2017-01-18]
 - [Encounter45Pat01: Pat01 Encounter on 2018-07-21]
+<div class="bg-success" markdown="1">
+
 - [Encounter46Pat01: Pat01 Encounter on 2021-10-15 (clinical evaluation evidence for Task01)]
+</div><!-- new-content -->
 
 - [Group01: Risk Adjustment Patient Group, (Patient01: Eve Everywoman)]
 - [Group02: Risk Adjustment Patient Group, (Patient02: Adam Everyman, Patient03: Nelda Nuclear)]  
@@ -69,16 +72,16 @@
 - [Measure03: Risk Adjustment Model CMS-RxHCC V05]  
 
 - [MeasureReport01: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]
+<div class="bg-success" markdown="1">
+
 - [MeasureReport01WithAnnotations: Risk Adjustment Coding Report with Annotations Added, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]
+</div><!-- new-content -->
+
 - [MeasureReport02: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient01: Eve Everywoman)]
 - [MeasureReport03: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient02: Adam Everyman)]
 - [MeasureReport04: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V21 (Patient03: Nelda Nuclear)]
 - [MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Nelda Nuclear)]
 - [MeasureReport06: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient02: Adam Everyman)]
-
-<div class="bg-success" markdown="1">
-- [MeasureReport01: Risk Adjustment Measure Report with Annotation, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]
-</div><!-- new-content -->
 
 - [Observation01Pat03: Pat03 Creatinine on 20210728]
 - [Observation02Pat03: Pat03 PHQ9 on 20190823]

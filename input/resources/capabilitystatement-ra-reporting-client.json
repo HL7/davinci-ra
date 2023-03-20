@@ -18,7 +18,7 @@
             ]
         }
     ],
-    "description": "This profile defines the expected capabilities of a Da Vinci Risk Adjustment Reporting Client when conforming to the Da Vinci Risk Adjustment Implementation Guide for interactions between Clients and Clients. Clients are the actors receiving the request for Risk Adjustment Coding Gap Reports for patient(s) and for Risk Adjustmenet Models that are available on the Client. This CapabilityStatement resource includes the complete list of the *recommended* Da Vinci Risk Adjustment profiles and RESTful operations that a Risk Adjustment Reporting Client could support. Clients have the option of choosing from this list based on their local use cases and other contextual requirements.",
+    "description": "This profile defines the expected capabilities of a Da Vinci Risk Adjustment Reporting Client when conforming to the Da Vinci Risk Adjustment Implementation Guide for interactions between Reporting Clients and Reporting Servers. Clients are the actors making the request for Risk Adjustment Coding Gap Reports for patient(s) and for Risk Adjustmenet Models that are available on the Server. This CapabilityStatement resource includes the complete list of the *recommended* Da Vinci Risk Adjustment profiles and RESTful operations that a Risk Adjustment Reporting Client could support. Clients have the option of choosing from this list based on their local use cases and other contextual requirements.",
     "jurisdiction": [
         {
             "coding": [
