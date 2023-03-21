@@ -15,7 +15,7 @@
     <resource value="Measure"/>
     <system value="false"/>
     <type value="true"/>
-    <instance value="false"/>
+    <instance value="true"/>
     <parameter>
         <name value="periodStart"/>
         <use value="in"/>

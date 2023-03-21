@@ -15,7 +15,6 @@
   The Data Collection period refers to the first day of the clinical evaluation period through the date that data from the clinical evaluation period can be submitted to the risk adjustment organization.
 </div><!-- new-content -->     
 
-
 - <b>Digital Condition Categories (dCCs)</b> are condition category measures organized as self-contained measure specification and code packages, that use one or more sources of health information that is captured and can be transmitted electronically via interoperable systems. Digital condition categories use machine-readable measure logic, such as logics written in in Clinical Quality Language, and use common data model such as FHIR.
 
 - <b>Hierarchical Condition Category</b>
