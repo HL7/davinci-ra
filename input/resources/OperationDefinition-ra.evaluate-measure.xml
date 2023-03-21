@@ -5,7 +5,7 @@
     <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/ra.evaluate-measure"/>
     <name value="RAEvaluateMeasure"/>
     <title value="Evaluate Measure"/>
-    <status value="active"/>
+    <status value="draft"/>
     <kind value="operation"/>
     <publisher value="Da Vinci Project"/>
     <description value="The ra.evaluate-measure operation is used to evaluate Digital Condition Category and obtain the results."/>
