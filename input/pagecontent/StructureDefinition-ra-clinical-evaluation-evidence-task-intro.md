@@ -4,22 +4,22 @@
 
 ### Mandatory Data Elements and Terminology
 
-The following data-elements are mandatory (i.e data MUST be present).
+The following data-elements must always be present (Mandatory) or must be supported [(Must Support)](general-guidance.html#must-support). The [Formal Views](StructureDefinition-ra-clinical-evaluation-evidence-task.html#profile) below provides the formal summary, definitions, and terminology requirements.
 
 **Each {{site.data.structuredefinitions.[id].type}} must have:**
 
 1. A `Task.status` element with a code from the [Coding Gap Task Status ValueSet](ValueSet-coding-gap-task-status.html)
-1. A `Task.intent` element with a fixed code 
+1. An `Task.intent` element with a fixed code "order"
 1. A `Task.focus` element that references a [Risk Adjustment Coding Gap Report]
-1. A `Task.authoredOn` element
+1. An `Task.authoredOn` element
 1. A `Task.reasonCode` element with a code from the [Coding Gap Task Reason ValueSet](ValueSet-coding-gap-task-reason.html)
-1. A `Task.input` element with value of `MeasureReport.group.id` from the [Risk Adjustment Coding Gap Report] referenced by `Task.focus` if `reasonCode` other than creation
-1. A `Task.input` element references [Risk Adjustment SearchSet Bundle]
+1. An `Task.input` element, its value being a `MeasureReport.group.id` from the [Risk Adjustment Coding Gap Report] referenced by `Task.focus` if reasonCode other than creation
+1. An `Task.input` element, its value references [Risk Adjustment SearchSet Bundle]
 
 **Each {{site.data.structuredefinitions.[id].type}} *should* have ([Must Support]):**
 
-1. A `Task.contained` references [Risk Adjustment SearchSet Bundle]
-1. A `Task.lastModified`
+1. A `Task.contained` element (that contains the [Risk Adjustment SearchSet Bundle] resource)
+1. A `Task.lastModified` element
 
 
 **Additional Profile specific implementation guidance:**

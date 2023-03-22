@@ -14,7 +14,7 @@
         <value value="http://www.hl7.org/Special/committees/cqi/index.cfm"/>
       </telecom>
     </contact>
-    <description value="A SearchSet Bundle with entries that include fullUrl of resources for risk adjustment coding gap clinical evaluation evidence."/>
+    <description value="A SearchSet Bundle with entries that include resources for risk adjustment coding gap clinical evaluation evidence and the fullUrl of the resource."/>
     <jurisdiction>
       <coding>
         <system value="urn:iso:std:iso:3166"/>

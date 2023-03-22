@@ -2,7 +2,9 @@
 
 ### Mandatory Data Elements and Terminology
 
-The following data-elements are mandatory (i.e data MUST be present).
+<div class="bg-success" markdown="1"><!-- new content -->
+The following data-elements must always be present (Mandatory) or must be supported [(Must Support)](general-guidance.html#must-support). The [Formal Views](StructureDefinition-ra-model-measure.html#profile) below provides the formal summary, definitions, and terminology requirements.
+</div>
 
 **Each {{site.data.structuredefinitions.[id].type}} must have:**
 
@@ -13,5 +15,5 @@ The following data-elements are mandatory (i.e data MUST be present).
 
 **Each {{site.data.structuredefinitions.[id].type}} *should* have ([Must Support]):**
 
-1. A `name` element
-1. A `title` element
+1. A `Measure.name` element
+1. A `Measure.title` element

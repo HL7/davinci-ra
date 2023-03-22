@@ -1,8 +1,8 @@
 <div class="note-to-balloters" markdown="1">
 
 **The May 2023 Ballot** includes the following high level changes to support new functionalities, introduce Digital Condition Category as DRAFT content for review, and address resolved trackers. 
-  - New pages: [Report Generation], [Report Query], [Remediation], and [Report Annotation]
   - The Guidance page in STU1 is now broken into two pages, [General Guidance] and [Report Generation], with updates and new content    
+  - New pages: [Report Generation], [Report Query], [Remediation], and [Report Annotation]
   - New profiles and extensions, see [Profiles], and [Capability statements] 
   - New page: [Digital Condition Category(dCC)](dcc.html)
   - New operation: [$ra.evaluate-measure]
