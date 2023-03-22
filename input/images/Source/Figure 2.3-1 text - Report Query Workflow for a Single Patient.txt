@@ -1,0 +1,10 @@
+actor Provider
+participant Provider System
+participant Payer System
+participant Risk Adjustment System
+Provider->Provider System: Request Risk Adjustment Coding Gap Report for a patient I am seeing
+Provider System->Payer System: RESTful Query Risk Adjustment Coding Gap Report\n(Patient)
+Payer System->Risk Adjustment System: Determine applicable Risk Adjustment Models\n and Condition Categories (CCs)
+Risk Adjustment System->Payer System: Construct Risk Adjustment Coding Gap Reports
+Payer System->Provider System: Bundle \n(A searchset bundle containing Risk Adjustment Coding Gap Report(s)\nand evaluated resources)
+Provider System->Provider: Display Risk Adjustment Coding Gap Report

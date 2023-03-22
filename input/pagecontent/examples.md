@@ -59,7 +59,10 @@
 - [Encounter43Pat01: Pat01 Encounter on 2019-02-10]
 - [Encounter44Pat01: Pat01 Encounter on 2017-01-18]
 - [Encounter45Pat01: Pat01 Encounter on 2018-07-21]
+<div class="bg-success" markdown="1">
+
 - [Encounter46Pat01: Pat01 Encounter on 2021-10-15 (clinical evaluation evidence for Task01)]
+</div><!-- new-content -->
 
 - [Group01: Risk Adjustment Patient Group, (Patient01: Eve Everywoman)]
 - [Group02: Risk Adjustment Patient Group, (Patient02: Adam Everyman, Patient03: Nelda Nuclear)]  
@@ -69,7 +72,11 @@
 - [Measure03: Risk Adjustment Model CMS-RxHCC V05]  
 
 - [MeasureReport01: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]
+<div class="bg-success" markdown="1">
+
 - [MeasureReport01WithAnnotations: Risk Adjustment Coding Report with Annotations Added, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]
+</div><!-- new-content -->
+
 - [MeasureReport02: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient01: Eve Everywoman)]
 - [MeasureReport03: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient02: Adam Everyman)]
 - [MeasureReport04: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V21 (Patient03: Nelda Nuclear)]
@@ -94,9 +101,12 @@
 - [Practitioner02: Patrick Pump]
 - [Practitioner03: Otto Osler]
 
+<div class="bg-success" markdown="1">
+
 - [SearchSetBundle01Pat01: Pat01 MeasureReport01 group003]
 
-- [Task-ra-task01measurereport01group003: Eve Everywoman HCC59]
+- [Task01: Risk Adjustment Clinical Evaluation Evidence Task for MeasureReport01, HCC59 (group003), (Patient01: Eve Everywoman)]
+</div><!-- new-content -->
 
 
 {% include link-list.md %}

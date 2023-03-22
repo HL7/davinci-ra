@@ -5,9 +5,9 @@
     <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinical-evaluation-evidence-task"/>
     <name value="RiskAdjustmentClinicalEvaluationEvidenceTask"/>
     <title value="Risk Adjustment Clinical Evaluation Evidence Task"/>
-    <status value="draft"/>
+    <status value="active"/>
     <publisher value="Da Vinci Project"/>
-    <description value="This profile is under development. This Task profile is used to support the risk adjustment coding gap remediation process."/>
+    <description value="This Task profile is used to support the risk adjustment coding gap remediation process."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

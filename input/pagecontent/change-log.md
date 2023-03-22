@@ -2,6 +2,15 @@
 The Risk Adjustment Implementation Guide was developed under the  [Davinci Project](#)
 
 ### Version 2.0.0-ballot
+
+- The 2.0.0-ballot includes the following changes to support new functionalities: 
+    - New pages: [Report Generation], [Report Query], [Remediation], and [Report Annotation]
+    - The Guidance page in STU1 is now broken into two pages, [General Guidance] and [Report Generation], with new content    
+    - New profiles and extensions, see [Profiles] 
+- It also introduces Digital Condition Category as DRAFT content for review:
+    - New page: [Digital Condition Category(dCC)](dcc.html)
+    - New operation: [$ra.evaluate-measure]
+
 **Trackers Applied for 2.0.0-ballot**
 1. **Applied**: Add "data collection period" to Glossary ([FHIR-37672](https://jira.hl7.org/browse/FHIR-37672))
 1. **Applied**: Corrected CMS-HCC model to HHS-HCC model ([FHIR-37745](https://jira.hl7.org/browse/FHIR-37745))

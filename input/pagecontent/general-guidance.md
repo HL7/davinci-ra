@@ -1,21 +1,20 @@
 
 ### Introduction
 
-The Da Vinci Project member organizations have identified the need of standardizing how risk adjustment coding gaps are communicated between payers and providers. This implementation guide specifies standardized risk adjustment coding gap reports and <span class="bg-success" markdown="1">provides guidance</span><!-- new-content --> for <span class="bg-success" markdown="1">[Data Consumer](index.html#actors)</span><!-- new-content --> to query the coding gap reports from <span class="bg-success" markdown="1">payer</span><!-- new-content --> for one or more patients. Standardizing the reporting structure helps lessen the burden on the providers in processing the reports so they can more easily address the patients’ care needs. This standardized structure also supports the payer sharing information that they have but the providers may not, such as data from other providers’ claims, lab results, filled prescriptions, etc. 
+The Da Vinci Project member organizations have identified the need of standardizing how risk adjustment coding gaps are communicated between payers and providers. This implementation guide (IG) specifies standardized risk adjustment coding gap reports and <span class="bg-success" markdown="1">provides guidance</span><!-- new-content --> to query the coding gap reports from <span class="bg-success" markdown="1">Payer</span><!-- new-content --> for one or more patients. Standardizing the reporting structure helps lessen the burden on the providers in processing the reports so they can more easily address the patients’ care needs. This standardized structure also supports the Payer sharing information that they have but the providers may not, such as data from other providers’ claims, lab results, filled prescriptions, etc. 
 
 
-<span class="bg-success" markdown="1">This IG also specifies a Task profile to support the workflow that enables the feedback loop from Provider and Risk Adjustment Coder back to the Payer after receiving the risk adjustment coding gap reports and conducting medical record review. This feedback loop is important for ahieving the goal of improving the accuracy and completeness of risk adjustment.</span><!-- new-content -->
-
-<span class="bg-success" markdown="1">Lastly, we there is now a way a provider can annotate on the Risk Adjustment Gaps report that they took some action in regard to a specific gap on the report.</span><!-- new-content -->
+<span class="bg-success" markdown="1">This IG also provides mechanisms enabling the feedback loop from Provider to Payer. Provider may add annotation on the Risk Adjustment Coding Gap Report that they took some action(s) for a specific coding gap on the report and communicates that back to the Payer. However, if Provider identifies a coding gap that is on the report needs to be closed or invalidated based on medical record review, this feedback process is done through the Task profile, Risk Adjustment Clinical Evaluation Evidence Task, which allows the Provider to send the supporting clinical evaluation evidence to the Payer. This feedback loop is important for achieving the goal of improving the accuracy and completeness of risk adjustment.
+</span><!-- new-content -->
 
 ### Preconditions and Assumptions
 
-- A contract for medical services exists between <span class="bg-success" markdown="1">the [Data Producer](index.html#actors) and the Data Consumer</span><!-- new-content --> requesting the risk adjustment coding gap reports.
-- Risk adjustment coding gap reports are pre-generated on the <span class="bg-success" markdown="1">Payer</span><!-- new-content --> by a backend system such as a risk adjustment engine for risk adjustment model(s).
-- It is the responsibility of the <span class="bg-success" markdown="1">Data Producer</span><!-- new-content --> to ensure that the data used in the report is present in a structured and retrievable form.
-- <span class="bg-success" markdown="1">The Data Producer and the Data Consumer</span><!-- new-content --> have agreed upon a process to identify specific patient(s) and exchange the Patient resource's logical id or the Patient Group resource's logical id.
+- A contract for medical services exists between Server and the Client requesting the risk adjustment coding gap reports.
+- Risk adjustment coding gap reports are pre-generated on the Server by a backend system such as a risk adjustment engine for risk adjustment model(s).
+- It is the responsibility of the Server to ensure that the data used in the report is present in a structured and retrievable form.
+- The Server and the Client have agreed upon a process to identify specific patient(s) and exchange the Patient resource's logical id or the Patient Group resource's logical id.
 - Although the exact mechanisms for securing these exchanges are not specified as part of this IG:
-    - Exchanges are limited to mutually agreed upon (i.e., between <span class="bg-success" markdown="1">the Data Producer and the Data Consumer</span><!-- new-content -->) patient lists or population.
+    - Exchanges are limited to mutually agreed upon (i.e., between the Server and the Client) patient lists or population.
     - Security and privacy should follow [Security and Privacy](https://hl7.org/fhir/us/davinci-hrex/security.html#security-and-privacy) guidance specified in the Da Vinci Health Record Exchange (HRex) IG.   
     - Systems should use standard authentication and authorization approaches. The [SMART App Launch] and [SMART backend services] authentication/authorization approach are recommended models.
 
@@ -40,25 +39,25 @@ Report generation describes three different approaches to generate [Risk Adjustm
 
 #### Report Query
 
-Data Consumer can query the [Risk Adjustment Coding Gap Report] once they are generated. For example, Payer acts as Data Consumer can query reports based on search parameters and POST them to the Provider server. See the [Report Query] page for details and guidance. 
+The Client can query the [Risk Adjustment Coding Gap Report] once they are generated. For example, Payer acts as the Reporting Client can query reports based on search parameters and POST them to the Provider server. See the [Report Query] page for details and guidance. 
 
 #### Remediation
 
-Once the queried Risk Adjustment Coding Gap MeasureReports have been sent to the intended recipient and filtered to ensure that only germane coding gaps (e.g., HCC gaps) are made available to providers. The provider (or a software program acting on behalf of the provider) determines whether the gap is currently valid, and whether the requested encounter data evidence exists to close the gap. The provider will be able to use the functionalities specified in this IG to begin remediation process to request for a gap closure, gap invalidation, and/or addition of a net-new coding gap, and submits clinical evaluation evidence to support the request. 
+Once the queried Risk Adjustment Coding Gap MeasureReports have been sent to the intended recipient and filtered to ensure that only germane coding gaps (e.g., HCC gaps) are made available to providers. The Provider (or a software program acting on behalf of the Provider) determines whether the coding gap is currently valid, and whether the requested encounter data evidence exists to close the gap. The Provider will be able to use the functionalities specified in this IG to begin remediation process to request for a gap closure, gap invalidation, and/or addition of a net-new coding gap, and submits clinical evaluation evidence to support the request. 
 
-The remediation workflow is supported by using the Task resource. Remediation allows the Risk Adjustment Coder to validate evidence and adjudicate coding gap change requests through Task from the Provider，and POST the updated Task to the Payer server and updates the records on the Payer system. 
+The remediation workflow is supported by using the Task resource, [Risk Adjustment Clinical Evaluation Evidence Task]. Remediation allows the Risk Adjustment Coder to validate evidence and adjudicate coding gap change requests through Task from the Provider. The updated Task is then posted to the Payer server and the records on the Payer system get updated accordingly. 
 
 See the [Remediation] page for more details and guidance. 
 
-#### Workflow Overview
+#### Report Generation, Query, and Remediation Workflow Overview
 
-*This is a draft diagram*
 </div><!-- new-content -->
+The diagram below provides a workflow overview of the report generation, query, and remediation steps. 
 
 {% include img-portrait.html img="risk-adjustment-workflow.png" caption="Figure 2.1-2 Risk Adjustment Workflow Overview"%}
 
 #### Report Annotation
-An electronical medical record (EMR) may choose to display all or part of the Risk Adjustment Gap Report to the provider at the point of care.  At that time, if the provider wants to note the action they took in regard to a Risk Adjustment gap, they can put that comment on the Risk Adjustment Gap and return it to the payer.  This process is called [Report Annotation].
+An electronical medical record (EMR) may choose to display all or part of the [Risk Adjustment Coding Gap Report] to the Provider at the point of care.  At that time, if the Provider wants to note the action they took in regard to a Risk Adjustment coding gap, they can put that comment on the Risk Adjustment Coding Gap Report and return it to the Payer. This process is called [Report Annotation].
 
 {% include img-portrait.html img="report-annotation-overview.png" caption="Figure 2.1-3 Report Annotation Overview"%}
 ### Attribution

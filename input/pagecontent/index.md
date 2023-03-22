@@ -1,6 +1,18 @@
 <div class="note-to-balloters" markdown="1">
 
-**The May 2023 Ballot**
+**The May 2023 Ballot** includes the following high level changes to support new functionalities, introduce Digital Condition Category as DRAFT content for review, and address resolved trackers. 
+  - New pages: [Report Generation], [Report Query], [Remediation], and [Report Annotation]
+  - The Guidance page in STU1 is now broken into two pages, [General Guidance] and [Report Generation], with updates and new content    
+  - New profiles and extensions, see [Profiles], and [Capability statements] 
+  - New page: [Digital Condition Category(dCC)](dcc.html)
+  - New operation: [$ra.evaluate-measure]
+  - **Applied**: Add "data collection period" to Glossary ([FHIR-37672](https://jira.hl7.org/browse/FHIR-37672))
+  - **Applied**: Corrected CMS-HCC model to HHS-HCC model ([FHIR-37745](https://jira.hl7.org/browse/FHIR-37745))
+  - **Applied**: Corrected Category misspelling ([FHIR-38205](https://jira.hl7.org/browse/FHIR-38205))
+  - **Applied**: Corrected Condition misspelling in Suspect Type Value Set ([FHIR-38206](https://jira.hl7.org/browse/FHIR-38206))
+  - **Applied**: Corrected Venn Diagram misspelling in DCC cntent page ([FHIR-39300](https://jira.hl7.org/browse/FHIR-39300))
+  - **Applied**: Make "Example CMS Hierarchical Condition Category Value Set" a true sample ([FHIR-39371](https://jira.hl7.org/browse/FHIR-39371))
+  - **Applied**: Remove "Code System" and "Value Set" from names and titles of code system and value set ([FHIR-39374](https://jira.hl7.org/browse/FHIR-39374))
 
 <div class="new-content" markdown="1">
 Where possible, new and updated content are highlighted with green text and background
@@ -13,7 +25,7 @@ Where possible, new and updated content are highlighted with green text and back
 The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide (IG) describes exchanging risk adjustment coding gaps between payers and providers. Risk adjusted premium calculations are important to government managed care. To better inform providers of opportunities to address risk adjusted conditions, better enable payers to communicate risk adjustment information, and enhance government sponsors' ability to allocate funding accurately, payers and providers need a standard protocol to share and receive clinical data related to risk adjustment and a standard methodology to communicate risk based coding, documentation and submission status of chronic conditions. The <span class="bg-success" markdown="1">first Standard for Trial Use (STU) version</span><!-- new-content --> of this implementation guide focused on the standard exchange format of risk adjustment coding gaps from payers to providers, it offers potential for reducing administrative burden experienced by providers by standardizing the reporting they receive from all payers.
 
 <div class="bg-success" markdown="1">
-This version of the implementation guide focuses on the communication from providers back to payers. It adds functionalities to support the workflow that allows providers and certified risk adjustment coders to review and remediate the risk adjustment coding gap reports provided by the payer. Providers and risk adjustment coders may close gaps, invalidate gaps, or discover net-new condition category during medical record review. The added functionalities allow them to provide the updated coding gap data along with supporting clinical evaluation evidence back to payers. This version also introduces digital Condition Category (dCC) as draft content for review. It describes how to specify dCCs using Clinical Quality Language (CQL) through an example which would allow for a more automated process of generating risk adjustment coding gap reports by evaluating dCCs against clinical data. 
+This version of the implementation guide focuses on the communication from providers back to payers. It adds functionalities to support the workflow that allows providers and certified risk adjustment coders to review and remediate the risk adjustment coding gap reports provided by the payer. Providers and risk adjustment coders may close gaps, invalidate gaps, or discover net-new Condition Categories (CCs) during medical record review. The added functionalities allow them to provide the updated coding gap data along with supporting clinical evaluation evidence back to payers. This version also introduces digital Condition Category (dCC). It describes how to specify dCCs using Clinical Quality Language (CQL) through an example which would allow for a more automated process of generating risk adjustment coding gap reports by evaluating dCCs against clinical data. 
 </div><!-- new-content -->
 
 This implementation guide is supported by the Da Vinci initiative which is a private effort to accelerate the adoption of Health Level Seven International Fast Healthcare Interoperability Resources (HL7® FHIR®) as the standard to support and integrate value-based care (VBC) data exchange across communities. Like all Da Vinci Implementation Guides, it follows the [HL7 Da Vinci Guiding Principles] for exchange of patient health information. As an HL7 FHIR Implementation Guide, changes to this specification are managed by the sponsoring [Clinical Quality Information (CQI) Work Group] and are incorporated as part of the standard balloting process.
@@ -30,7 +42,7 @@ This implementation guide is divided into several pages which are listed at the 
     - [Report Generation]\: This page describes how generating Risk Adjustment Coding Gap Report is accomplished.
     - [Report Query]\: This page provides guidance on using query to return Risk Adjustment Coding Gap Report(s) and their evaluated resources.
     - [Remediation]\: This page documents how to use Task to request gap closure, gap invalidation, or add a net-new to coding gaps reported in a Risk Adjustment Coding Gap Report and provide clinical evaluation evidence.
-    - [Report Annotation]\: This page describes how a provider can add a comment/annotation to the Risk Adjustment Coding Gap Report to indicate that he took an action while seeing the patient
+    - [Report Annotation]\: This page describes how providers can add comment/annotation(s) to the Risk Adjustment Coding Gap Report to indicate that they took an action while seeing the patient
 - [Digital Condition Category (dCC)]\: This page describes how a Condition Category can be structured as a proportion measure and be specified using CQL as a digital Condition Category in a similar fashion to electronic quality measures through an example. 
 </div><!-- new-content -->   
 - FHIR Artifacts: These pages lists FHIR artifacts specified in this implementation guide. 
@@ -95,39 +107,58 @@ What’s going on with these three different model versions? There are three ans
 
 ### Scope
 
-After careful review with the risk adjustment subject matter experts, it was determined that the most challenging aspect of the current risk adjustment process was the inconsistent manner in which reports on risk adjustment coding gaps were communicated between a provider (or system operating on their behalf) and a payer (or system operating on the payer’s behalf). Figure 1-2 shows a high-level example of the risk adjustment workflow in CMS Medicare advantage program. <span class="bg-success" markdown="1">This</span><!-- new-content --> implementation guide focuses on specifying a standard exchange format, the Risk Adjustment Coding Gap Report, <span class="bg-success" markdown="1">between </span><!-- new-content -->payers <span class="bg-success" markdown="1">and </span><!-- new-content -->providers. This diagram does not depict preceding steps such as the payer receiving clinical or claims data from providers or other sources, nor does it attempt to define contractual relationships.
+After careful review with the risk adjustment subject matter experts, it was determined that the most challenging aspect of the current risk adjustment process was the inconsistent manner in which reports on risk adjustment coding gaps were communicated between a provider (or system operating on their behalf) and a payer (or system operating on the payer’s behalf). Figure 1-2 shows a high-level example of the risk adjustment workflow in CMS Medicare Advantage program. <span class="bg-success" markdown="1">This</span><!-- new-content --> implementation guide focuses on specifying a standard exchange format, the Risk Adjustment Coding Gap Report, <span class="bg-success" markdown="1">between </span><!-- new-content -->payers <span class="bg-success" markdown="1">and </span><!-- new-content -->providers. This diagram does not depict preceding steps such as the payer receiving clinical or claims data from providers or other sources, nor does it attempt to define contractual relationships.
 
 {% include img-portrait.html img="workflow-medicare-advantage.png" caption = "Figure 1-2 Workflow for Medicare Advantage Population" %}
 
 This implementation guide does not define how payers determine a coding gap and how coding gaps are produced or managed on the payer side including hierarchies. This implementation guide also does not define suspecting processes and algorithms/predictive models that are used for suspecting analytics.   
 
-### Actors
+### Actors and Roles
 
-The actors involved in exchanging risk adjustment coding gap reports are <span class="bg-success" markdown="1">Payer, Provider, and Risk Adjustment Coder. This implementation guide also uses the terms Data Consumer and Data Producer to denote actors.</span><!-- new-content -->
+<span class="bg-success" markdown="1">Different entities can play different Roles in different scenarios. The Actors in this implementation guide are Payer, Provider, and Risk Adjustment Coder (working on behalf of the Payer, e.g., Certified Risk Adjustment Coder (CRC)). For clarity in this IG, we may use the term Payer to refer to both the Payer and Risk Adjustment Coder. Their roles as Client and Server are described below. </span><!-- new-content -->
 
 <div class="bg-success" markdown="1">
-- **Data Consumer**: the term Data Consumer is used to mean either Payer, Provider, or Risk Adjustment Coder when they are in the consumption and use of healthcare data.
-- **Data Producer**: the term Data Producer is used to mean either Payer, Provider, or Risk Adjustment Coder when they are involved in the de novo creation of healthcare data. 
-- **Payer**: payer system that can be either the Data Consumer or the Data Producer.
-- **Provider**: provider system that can be either the Data Consumer or the Data Producer.
-- **Risk Adjustment Coder**: Risk Adjustment Coder could be a third party system that can be either the Data Consumer or the Data Producer. 
 
-The Methodology section of this implementation guide describes these actors in more detail in the context of report generation, query, and remediation steps of risk adjustment lifecycle. 
-</div><!-- new-content -->   
+**Client**: 
+- Reporting Client: 
+    - Payer plays this role when requests [Risk Adjustment Coding Gap Report] to POST to Provider's FHIR Server 
+    - Provider plays this role 1) when requests Risk Adjustment Coding Gap Report, or 2) when adds annotation to Risk Adjustment Coding Gap Report
+- Remediation Client  
+    - Provider plays this role when creates [Risk Adjustment Clinical Evaluation Evidence Task] 
+
+**Server**:
+- Reporting Server 
+    - Payer plays this role when 1) generates and stores Risk Adjustment Coding Gap Report, or 2) when adds annotation to the Risk Adjustment Coding Gap Report, if the Payer chooses to share any or all annotations submitted by Provider
+- Remediation Server 
+    - Payer/Risk Adjustment Coder plays this role when receives and processes the Risk Adjustment Clinical Evaluation Evidence Task        
+    - Provider plays this role when POST Risk Adjustment Coding Gap Report with annotation
+
+The Methodology section of this implementation guide describes these Actors in more detail in the context of report generation, query, and remediation steps of risk adjustment lifecycle and report annotation. 
+</div><!-- new-content -->     
 
 ---
+
+### Credits
 
 This implementation guide was made possible by the thoughtful contributions of the following people and organizations:
 
 - *The [Da Vinci Project](http://www.hl7.org/about/davinci/index.cfm?ref=common) member organizations.*
-- *Amy Neftzger, United Healthcare*
+
+Primary Authors
 - *Brent Zenobia, Novillus*
-- *Brian J Murtha, Centene*
-- *Bryn Rhodes, Smile Digital Health*
 - *Linda Michaelsen, Optum*
 - *Rob Reynolds, Smile Digital Health*
-- *Viet Nguyen, Stratametrics*
 - *Yan Heras, Optimum eHealth*
+
+Contributors
+- *Amy Neftzger, United Healthcare*
+- *Brian J Murtha, Centene*
+- *Bryn Rhodes, Smile Digital Health*
+- *Cody Danielshak, Epic*
+- *Josh Lamb, Optum*
+- *Lloyd McKenzie, Dogwood Health Consulting* 
+- *Michael Stearns, Wolters Kluwer*
+- *Viet Nguyen, Stratametrics*
 
 ---
 

@@ -5,7 +5,7 @@
 
 **Scenario:**
 
-The Payer has used their existing processes to collect risk adjustment data and would to use the Assisted Approach to generate a risk adjustment coding gap report.
+The Payer has used their existing processes to collect risk adjustment data and would to use the Assisted Approach to generate a Risk Adjustment Coding Gap Report.
 
 **POST risk adjustment CSV data to REST endpoint**
 
