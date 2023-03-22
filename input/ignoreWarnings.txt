@@ -14,7 +14,7 @@ Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot b
 Code System URI 'http://terminology.hl7.org/CodeSystem/cmshcc' is unknown so the code cannot be validated
 Code System URI 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' is unknown so the code cannot be validated
 WARNING: ValueSet.where(id = 'sample-cmshcc'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/cmshcc
-WARNING: ValueSet/sample-cmshcc: ValueSet.compose[0].include[0]: Unknown System 'http://terminology.hl7.org/CodeSystem/cmshcc' specified, so Concepts and Filters can't be checked (Details: The code system 'http://terminology.hl7.org/CodeSystem/cmshcc' is not known (encountered paired with code = '22'); The code provided (http://terminology.hl7.org/CodeSystem/cmshcc#22) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
+WARNING: ValueSet/sample-cmshcc: ValueSet.compose[0].include[0]: Unknown System 'http://terminology.hl7.org/CodeSystem/cmshcc' specified, so Concepts and Filters can't be checked (Details: Local Error: Resolved system http://terminology.hl7.org/CodeSystem/cmshcc (v1.0.1), but the definition is not complete. Server Error: The code system 'http://terminology.hl7.org/CodeSystem/cmshcc' is not known (encountered paired with code = '22'); The code provided (http://terminology.hl7.org/CodeSystem/cmshcc#22) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
 
 # BUNDLE_SEARCH_SELF_NOT_UNDERSTOOD: this is intended.  The search string intentionally does not include a type.
 No types could be determined from the search string, so the types can''t be checked
