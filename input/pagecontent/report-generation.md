@@ -118,7 +118,7 @@ This de novo approach requires an implementation that includes the [$ra.evaluate
 
 <div class="bg-success" markdown="1">
 
-`GET [base]/MeasureReport/?subject=Patient/ra-patient02&period=ge2021-01-01&period=le2021-12-31&_include=MeasureReport:evaluated-resource`
+`GET [base]/MeasureReport/?subject=Patient/ra-patient02&period=ge2021-01-01&period=le2021-12-31&_profile=http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport&_include=MeasureReport:evaluated-resource`
 </div><!-- new-content -->
 
 {% include examplebutton.html example="get-risk-adjustment-coding-gap-report-usage-example" b_title ="Click Here To See Example GET Risk Adjustment Coding Gap Report" %}
@@ -129,7 +129,7 @@ If requesting [Risk Adjustment Coding Gap Report] for many patients, <span class
 
 <div class="bg-success" markdown="1">
 
-`GET [base]/MeasureReport/?subject=Group/ra-group123&period=ge2021-01-01&period=le2021-12-31&_include=MeasureReport:evaluated-resource`
+`GET [base]/MeasureReport/?subject=Group/ra-group123&period=ge2021-01-01&period=le2021-12-31&_profile=http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport&_include=MeasureReport:evaluated-resource`
 </div><!-- new-content -->
 
 {% include examplebutton.html example="get-risk-adjustment-coding-gaps-report-usage-bulk-example" b_title = "Click Here To See Example GET Risk Adjustment Coding Gap Report Using Bulk Data" %}

@@ -10,7 +10,7 @@ A provider requested a risk adjustment coding gap report for patient, *ra-patien
 
 
 ```
-GET [base]/MeasureReport/?subject=Patient/ra-patient01&period=ge2021-01-01&period=le2021-09-30&_include=MeasureReport:evaluated-resource
+GET [base]/MeasureReport/?subject=Patient/ra-patient01&period=ge2021-01-01&period=le2021-09-30&_profile=http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport&_include=MeasureReport:evaluated-resource
 ```
 
 **Request body**

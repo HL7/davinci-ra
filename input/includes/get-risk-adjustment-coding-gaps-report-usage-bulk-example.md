@@ -12,7 +12,7 @@ The request below asks for Group id of ra-group123 to be run asynchronously with
 
 Run $report operation in an asynchronous mode:
 ```
-GET [base]/MeasureReport/?subject=Group/ra-group123&period=ge2021-01-01&period=le2021-12-31_include=MeasureReport:evaluated-resource
+GET [base]/MeasureReport/?subject=Group/ra-group123&period=ge2021-01-01&period=le2021-12-31&_profile=http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport&_include=MeasureReport:evaluated-resource
 
 ```
 {% include link-list.md %}
