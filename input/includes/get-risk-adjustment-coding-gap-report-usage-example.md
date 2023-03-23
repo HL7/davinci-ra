@@ -10,7 +10,7 @@ A provider requested a risk adjustment coding gap report for patient, *ra-patien
 
 
 ```
-GET [base]/MeasureReport/$report?subject=Patient/ra-patient01&periodStart=2021-01-01&periodEnd=2021-09-30
+GET [base]/MeasureReport/?subject=Patient/ra-patient01&period=ge2021-01-01&period=le2021-09-30&_include=MeasureReport:evaluated-resource
 ```
 
 **Request body**
@@ -28,17 +28,15 @@ Content-Type: application/fhir+json;charset=UTF-8
 
 {
   "resourceType" : "Bundle",
-  "id" : "ra-bundle01",
-  "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle"
-    ]
+  "id" : "ra-bundle02",
+  "meta": {
+       "lastUpdated": "2021-11-16T01:02:06"
   },
   "identifier" : {
     "system" : "urn:ietf:rfc:3986",
-    "value" : "urn:uuid:8d3e72d9-9d74-4cbb-b797-a1cab0d13492"
+    "value" : "urn:uuid:af2e880f-3992-4cae-8f0d-aaf3a5c49c9e"
   },
-  "type" : "collection",
+  "type" : "searchset",
   "entry" : [
     {
       "fullUrl" : "https://cloud.alphora.com/sandbox/r4/ra/fhir/MeasureReport/ra-measurereport01",

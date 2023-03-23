@@ -12,7 +12,7 @@ The request below asks for Group id of ra-group123 to be run asynchronously with
 
 Run $report operation in an asynchronous mode:
 ```
-GET [base]/MeasureReport/$report?subject=Group/ra-group123&periodStart=2021-01-01&periodEnd=2021-12-31
+GET [base]/MeasureReport/?subject=Group/ra-group123&period=ge2021-01-01&period=le2021-12-31_include=MeasureReport:evaluated-resource
 
 ```
 {% include link-list.md %}
