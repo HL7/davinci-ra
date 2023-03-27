@@ -86,7 +86,7 @@
                     "code": "history-system"
                 }
             ],
-            "resource": [
+            "resource": [              
                 {
                     "type": "MeasureReport",
                     "profile": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport",
@@ -128,6 +128,26 @@
                             ],
                             "code": "search-type",
                             "documentation": "Search allows maintainers of the MeasureReports to find the logical definition of a MeasureReport"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "update",
+                            "documentation": "Update allows maintainers of the MeasureReports to update the logical definitions of a MeasureReport by its id or create a new one if it is new"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "patch",
+                            "documentation": "Patch allows maintainers of the MeasureReports to update the logical definition of a MeasureReport by posting a set of changes to it"
                         }
                     ],
                     "referencePolicy": [
