@@ -12,6 +12,14 @@
         "value": "https://cloud.alphora.com/sandbox/r4/ra/fhir/"
       },
       {
+        "name": "ProviderSystem",
+        "value": "https://cloud.alphora.com/sandbox/r4/ra/fhir/"
+      },
+      {
+        "name": "PayerSystem",
+        "value": "https://cloud.alphora.com/sandbox/r4/ra/fhir/"
+      },
+      {
         "name": "Public Endpoint",
         "value": "https://cloud.alphora.com/sandbox/r4/ra/fhir/"
       },
