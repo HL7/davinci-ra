@@ -2,11 +2,11 @@
 
 -  [Risk Adjustment Reporting Client Capability Statement](CapabilityStatement-ra-reporting-client.html)
 
-This profile defines the expected capabilities of a Da Vinci Risk Adjustment Reporting Client when conforming to the Da Vinci Risk Adjustment Implementation Guide for interactions between Reporting Clients and Reporting Servers. Clients are the actors making the request for Risk Adjustment Coding Gap Reports for patient(s) and for Risk Adjustmenet Models that are available on the Server.
+This profile defines the expected capabilities of a Da Vinci Risk Adjustment Reporting Client when conforming to the Da Vinci Risk Adjustment Implementation Guide for interactions between Reporting Clients and Reporting Servers. Clients are the actors making the request for Risk Adjustment Coding Gap Reports for patient(s) and for Risk Adjustment Models that are available on the Server.
 
 - [Risk Adjustment Reporting Server Capability Statement](CapabilityStatement-ra-reporting-server.html)
 
-This profile defines the expected capabilities of a Da Vinci Risk Adjustment Reporting Server when conforming to the Da Vinci Risk Adjustment Implementation Guide for interactions between Reporting Clients and Reporting Servers. Servers are the actors receiving the request for Risk Adjustment Coding Gap Reports for patient(s) and for Risk Adjustmenet Models that are available on the Server.
+This profile defines the expected capabilities of a Da Vinci Risk Adjustment Reporting Server when conforming to the Da Vinci Risk Adjustment Implementation Guide for interactions between Reporting Clients and Reporting Servers. Servers are the actors receiving the request for Risk Adjustment Coding Gap Reports for patient(s) and for Risk Adjustment Models that are available on the Server.
 
 - [Risk Adjustment Remediation Client Capability Statement](CapabilityStatement-ra-remediation-client.html)
 
