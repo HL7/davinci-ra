@@ -8,7 +8,9 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 - **Applied**: Fix Group.Type to person ([FHIR-40995](https://jira.hl7.org/browse/FHIR-40995))
 - **Applied**: Make Group.actual fixed to true ([FHIR-40996](https://jira.hl7.org/browse/FHIR-40996))
 - **Applied**: Remove or better define reason for meta.profile requirement ([FHIR-40997](https://jira.hl7.org/browse/FHIR-40997))
-
+- **Applied**: Need to remove mandatory requirement in meta.profile ([FHIR-40935](https://jira.hl7.org/browse/FHIR-40935))
+- **Applied**: Improve wording in remediation guidance ([FHIR-40989](https://jira.hl7.org/browse/FHIR-40989))
+- **Applied**: Large number of technical corrections ([FHIR-41140](https://jira.hl7.org/browse/FHIR-41140))
 </div>
 
 ### Version 2.0.0-ballot
@@ -26,7 +28,7 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 1. **Applied**: Corrected CMS-HCC model to HHS-HCC model ([FHIR-37745](https://jira.hl7.org/browse/FHIR-37745))
 1. **Applied**: Corrected Category misspelling ([FHIR-38205](https://jira.hl7.org/browse/FHIR-38205))
 1. **Applied**: Corrected Condition misspelling in Suspect Type Value Set ([FHIR-38206](https://jira.hl7.org/browse/FHIR-38206))
-1. **Applied**: Corrected Venn Diagram misspelling in DCC cntent page ([FHIR-39300](https://jira.hl7.org/browse/FHIR-39300))
+1. **Applied**: Corrected Venn Diagram misspelling in DCC content page ([FHIR-39300](https://jira.hl7.org/browse/FHIR-39300))
 1. **Applied**: Make "Example CMS Hierarchical Condition Category Value Set" a true sample ([FHIR-39371](https://jira.hl7.org/browse/FHIR-39371))
 1. **Applied**: Remove "Code System" and "Value Set" from names and titles of code system and value set ([FHIR-39374](https://jira.hl7.org/browse/FHIR-39374))
 
@@ -40,7 +42,7 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 1. **Applied**: Group usage in bundles missing from guidance ([FHIR-34710](https://jira.hl7.org/browse/FHIR-34710))
 1. **Applied**: Over-specific precondition for patient resource logical id ([FHIR-34708](https://jira.hl7.org/browse/FHIR-34708))
 1. **Applied**: Cardinality confusion for MeasureReport.group.code ([FHIR-34711](https://jira.hl7.org/browse/FHIR-34711))
-1. **Applied**: extracted diagnosis data element missing background ([FHIR-34696](https://jira.hl7.org/browse/FHIR-34696))
+1. **Applied**: Extracted diagnosis data element missing background ([FHIR-34696](https://jira.hl7.org/browse/FHIR-34696))
 1. **Applied**: Figure 1-2 Workflow for Medicare Advantage Population, Phase One misses the preceding step where provider sends initial diagnostic/condition codes before risk coding report is generated. ([FHIR-34778](https://jira.hl7.org/browse/FHIR-34778))
 1. **Applied**: plural possessive ([FHIR-34695](https://jira.hl7.org/browse/FHIR-34695))
 1. **Applied**: actor names ([FHIR-34698](https://jira.hl7.org/browse/FHIR-34698))

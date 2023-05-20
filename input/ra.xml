@@ -184,7 +184,7 @@
         <reference value="Condition/ra-condition08pat01"/>
       </reference>
       <name value="Condition08pat01: Bipolar disorder, current episode mixed, mild"/>
-      <description value="Other persistent atrial fibrillation"/>
+      <description value="Bipolar disorder, current episode mixed, mild"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -375,7 +375,7 @@
       <reference>
         <reference value="Encounter/ra-encounter04pat03"/>
       </reference>
-      <name value="Encounter on 20211218"/>
+      <name value="Encounter on 20201218"/>
       <description value="Encounter on 2020-12-18"/>
       <exampleBoolean value="true"/>
     </resource>

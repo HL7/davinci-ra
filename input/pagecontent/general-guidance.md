@@ -1,16 +1,16 @@
 
 ### Introduction
 
-The Da Vinci Project member organizations have identified the need of standardizing how risk adjustment coding gaps are communicated between payers and providers. This implementation guide (IG) specifies standardized risk adjustment coding gap reports and <span class="bg-success" markdown="1">provides guidance</span><!-- new-content --> to query the coding gap reports from <span class="bg-success" markdown="1">Payer</span><!-- new-content --> for one or more patients. Standardizing the reporting structure helps lessen the burden on the providers in processing the reports so they can more easily address the patients’ care needs. This standardized structure also supports the Payer sharing information that they have but the providers may not, such as data from other providers’ claims, lab results, filled prescriptions, etc. 
+The Da Vinci Project member organizations have identified the need of standardizing how risk adjustment coding gaps are communicated between payers and providers. This implementation guide (IG) specifies standardized risk adjustment coding gap reports and <span class="bg-success" markdown="1">provides guidance</span><!-- new-content --> to query the coding gap reports from a <span class="bg-success" markdown="1">Payer</span><!-- new-content --> for one or more patients. Standardizing the reporting structure helps lessen the burden on the providers in processing the reports so they can more easily address the patients’ care needs. This standardized structure also supports the Payer sharing information that they have but the providers may not, such as data from other providers’ claims, lab results, filled prescriptions, etc. 
 
 
-<span class="bg-success" markdown="1">This IG also provides mechanisms enabling the feedback loop from Provider to Payer. Provider may add annotation on the Risk Adjustment Coding Gap Report that they took some action(s) for a specific coding gap on the report and communicates that back to the Payer. However, if Provider identifies a coding gap that is on the report needs to be closed or invalidated based on medical record review, this feedback process is done through the Task profile, Risk Adjustment Clinical Evaluation Evidence Task, which allows the Provider to send the supporting clinical evaluation evidence to the Payer. This feedback loop is important for achieving the goal of improving the accuracy and completeness of risk adjustment.
+<span class="bg-success" markdown="1">This IG also provides mechanisms enabling the feedback loop from Provider to Payer. Providers may add annotation on the Risk Adjustment Coding Gap Report that they took some action(s) for a specific coding gap on the report and communicates that back to the Payer. However, if the Provider identifies a coding gap that is on the report needs to be closed or invalidated based on medical record review, this feedback process is done through the Task profile, Risk Adjustment Clinical Evaluation Evidence Task, which allows the Provider to send the supporting clinical evaluation evidence to the Payer. This feedback loop is important for achieving the goal of improving the accuracy and completeness of risk adjustment.
 </span><!-- new-content -->
 
 ### Preconditions and Assumptions
 
-- A contract for medical services exists between Server and the Client requesting the risk adjustment coding gap reports.
-- Risk adjustment coding gap reports are pre-generated on the Server by a backend system such as a risk adjustment engine for risk adjustment model(s).
+- A contract for medical services exists between the Server and the Client requesting the Risk Adjustment Coding Gap Reports.
+- Risk Adjustment Coding Gap Reports are pre-generated on the Server by a backend system such as a risk adjustment engine for risk adjustment model(s).
 - It is the responsibility of the Server to ensure that the data used in the report is present in a structured and retrievable form.
 - The Server and the Client have agreed upon a process to identify specific patient(s) and exchange the Patient resource's logical id or the Patient Group resource's logical id.
 - Although the exact mechanisms for securing these exchanges are not specified as part of this IG:
@@ -22,7 +22,7 @@ The Da Vinci Project member organizations have identified the need of standardiz
 
 ### Risk Adjustment Lifecycle and Workflow Overview
 
-Figure 2.1-1 shows a high level overview of the risk adjustment workflow, which consists of three main phases: [Report Generation], [Report Query], and [Remediation]. Detailed guidance for each phase is provided on a seperate page under the Methodolody section. 
+Figure 2.1-1 shows a high level overview of the risk adjustment workflow, which consists of three main phases: [Report Generation], [Report Query], and [Remediation]. Detailed guidance for each phase is provided on a separate page under the Methodology section. 
 </div><!-- new-content -->
 
 {% include img-portrait.html img="lifecycle-phases.png" caption="Figure 2.1-1 Risk Adjustment Lifecycle Phases"%}
@@ -31,19 +31,19 @@ Figure 2.1-1 shows a high level overview of the risk adjustment workflow, which 
 
 #### Report Generation
 
-Report generation describes three different approaches to generate [Risk Adjustment Coding Gap Report], which are referred to as Assisted, Generated, and Evaluated in this IG. 
+Report generation describes three different approaches to generate a [Risk Adjustment Coding Gap Report], which are referred to as Assisted, Generated, and Evaluated in this IG. 
 
-- [Assisted](report-generation.html#the-assisted-approach): A non-FHIR approach. The Payer uses their existing processes, such as SQL, SAS, and object-oriented languages, to generate a comma-separated values (CSV) file with tuples of patient and risk adjustment data. The Payer uses a non-FHIR RESTful API to populate [Risk Adjustment Coding Gap Report] based on data in the CSV file. A REST server then POST the generated MeasureReports to the FHIR server. A standardized CSV header that could be used by this approach is defined in this IG. This approach will not contain evaluatedResources in a MeasureReport. 
-- [Generated](report-generation.html#the-generated-approach): Mostly a non-FHIR approach. The Payer generates FHIR [Risk Adjustment Coding Gap Report] and evaluated resources based on data from *traditional* risk adjustment coding gap reports. These *traditional* reports are generated by their existing processes using patient data and risk adjustment data produced by risk adjustment engines. A REST server then POST generated MeasureReports to the FHIR server. 
-- [Evaluated](report-generation.html#the-evaluated-approach): An FHIR approach. This approach uses the [$ra.evaluate-measure] operation and requires [digital Condition Categories (dCCs)](dcc.html). The FHIR server is pre-populated with patient data and dCCs. Payer runs the [$ra.evaluate-measure] operation against their FHIR server, CQL is executed against the patient and risk adjustment data to produce [Risk Adjustment Coding Gap Report] which references the evaluated resources used by CQL logics evaluation.
+- [Assisted](report-generation.html#the-assisted-approach): A non-FHIR approach. The Payer uses their existing processes, such as SQL, SAS, and object-oriented languages, to generate a comma-separated values (CSV) file with tuples of patient and risk adjustment data. The Payer uses a non-FHIR RESTful API to populate a [Risk Adjustment Coding Gap Report] based on data in the CSV file. A REST server then POSTs the generated MeasureReports to the FHIR server. A standardized CSV header that could be used by this approach is defined in this IG. This approach will not contain evaluatedResources in a MeasureReport. 
+- [Generated](report-generation.html#the-generated-approach): Mostly a non-FHIR approach. The Payer generates a FHIR [Risk Adjustment Coding Gap Report] and evaluates resources based on data from *traditional* risk adjustment coding gap reports. These *traditional* reports are generated by their existing processes using patient data and risk adjustment data produced by risk adjustment engines. A REST server then POST the generated MeasureReports to the FHIR server. 
+- [Evaluated](report-generation.html#the-evaluated-approach): A FHIR approach. This approach uses the [$ra.evaluate-measure] operation and requires [digital Condition Categories (dCCs)](dcc.html). The FHIR server is pre-populated with patient data and dCCs. The Payer runs the [$ra.evaluate-measure] operation against their FHIR server, CQL is executed against the patient and risk adjustment data to produce a [Risk Adjustment Coding Gap Report] which references the evaluated resources used by CQL logics evaluation.
 
 #### Report Query
 
-The Client can query the [Risk Adjustment Coding Gap Report] once they are generated. For example, Payer acts as the Reporting Client can query reports based on search parameters and POST them to the Provider server. See the [Report Query] page for details and guidance. 
+The Client can query the [Risk Adjustment Coding Gap Report] once they are generated. For example, the Payer acting as the Reporting Client can query reports based on search parameters and POST them to the Provider server. See the [Report Query] page for details and guidance. 
 
 #### Remediation
 
-Once the queried Risk Adjustment Coding Gap MeasureReports have been sent to the intended recipient and filtered to ensure that only germane coding gaps (e.g., HCC gaps) are made available to providers. The Provider (or a software program acting on behalf of the Provider) determines whether the coding gap is currently valid, and whether the requested encounter data evidence exists to close the gap. The Provider will be able to use the functionalities specified in this IG to begin remediation process to request for a gap closure, gap invalidation, and/or addition of a net-new coding gap, and submits clinical evaluation evidence to support the request. 
+Once the queried Risk Adjustment Coding Gap MeasureReports have been sent to the intended recipient and filtered to ensure that only germane coding gaps (e.g., HCC gaps) are made available to providers, the Provider (or a software program acting on behalf of the Provider) determines whether the coding gap is currently valid, and whether the requested encounter data evidence exists to close the gap. The Provider will be able to use the functionalities specified in this IG to begin the remediation process to request for a gap closure, gap invalidation, and/or addition of a net-new coding gap, and submit clinical evaluation evidence to support the request. 
 
 The remediation workflow is supported by using the Task resource, [Risk Adjustment Clinical Evaluation Evidence Task]. Remediation allows the Risk Adjustment Coder to validate evidence and adjudicate coding gap change requests through Task from the Provider. The updated Task is then posted to the Payer server and the records on the Payer system get updated accordingly. 
 
@@ -57,12 +57,12 @@ The diagram below provides a workflow overview of the report generation, query, 
 {% include img-portrait.html img="risk-adjustment-workflow.png" caption="Figure 2.1-2 Risk Adjustment Workflow Overview"%}
 
 #### Report Annotation
-An electronical medical record (EMR) may choose to display all or part of the [Risk Adjustment Coding Gap Report] to the Provider at the point of care.  At that time, if the Provider wants to note the action they took in regard to a Risk Adjustment coding gap, they can put that comment on the Risk Adjustment Coding Gap Report and return it to the Payer. This process is called [Report Annotation].
+An electronic medical record (EMR) may choose to display all or part of the [Risk Adjustment Coding Gap Report] to the Provider at the point of care.  At that time, if the Provider wants to note the action they took in regard to a Risk Adjustment coding gap, they can put that comment on the Risk Adjustment Coding Gap Report and return it to the Payer. This process is called [Report Annotation].
 
 {% include img-portrait.html img="report-annotation-overview.png" caption="Figure 2.1-3 Report Annotation Overview"%}
 ### Attribution
 
-Member attribution establishes associations between providers and payers. The process of establishing and exchanging patient lists for risk adjustment coding gap report is not in the scope of this implementation guide. One possible way of exchanging Member Attribution Lists between providers and payers is described in the [Da Vinci - Member Attribution (ATR) List] implementation guide.
+Member attribution establishes associations between providers and payers. The process of establishing and exchanging patient lists for risk adjustment coding gap reports is not in the scope of this implementation guide. One possible way of exchanging Member Attribution Lists between providers and payers is described in the [Da Vinci - Member Attribution (ATR) List] implementation guide.
 
 ### Must Support
 Certain elements in the profiles defined in this implementation guide are marked as Must Support. This flag is used to indicate that the element plays a critical role in defining and sharing risk adjustment coding gaps, and implementations SHALL understand and process the element.

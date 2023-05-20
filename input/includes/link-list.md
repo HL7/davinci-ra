@@ -87,7 +87,7 @@
 [Organization01: Payer Organization ABC Payer]: Organization-ra-payer01.html
 [Organization01Pat01: Community Urgent Care]: Organization-ra-org01pat01.html
 [Organization02Pat02: GHH Outpatient Clinic]: Organization-ra-org02pat02.html
-[Organization01pat03: Community HealthCenter]: Organization-ra-org03pat03.html
+[Organization01Pat03: Community HealthCenter]: Organization-ra-org03pat03.html
 [Patient Group]: StructureDefinition-ra-patient-group.html
 [Patient Group Profile]: StructureDefinition-ra-patient-group.html
 [Patient01: Eve Everywoman]: Patient-ra-patient01.html

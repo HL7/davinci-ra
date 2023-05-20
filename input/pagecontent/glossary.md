@@ -8,32 +8,32 @@
   The time period during which the risk adjusting encounters could be conducted and documented with expectations of submissions for risk adjustment purposes.
 
 - {: #Condition Category}<b>Condition Category</b>
-  A Condition Category (CC) is a clinically or financially related grouping of medical conditions. Condition Categories (CCs) describe a broader set of similar diseases. Diseases within a Condition Category (CC) are related clinically and with respect to cost. Condition Categories (CCs) are categories before imposing hierarchies. ICD-9-CM or ICD-10-CM codes are mapped to diagnostic groups (DXGs), which represents a well-specified medical condition. DXGs are further aggregated into Condition Categories (CCs). An example is Condtiona Category (CC) 96 *Ischemic or Unspecified Stroke*, which includes DXG 96.01 *precerebral or cerebral arterial occlusion with infarction* and DXG 96.02 *acute but ill-defined cerebrovascular disease*.
+  A Condition Category (CC) is a clinically or financially related grouping of medical conditions. Condition Categories (CCs) describe a broader set of similar diseases. Diseases within a Condition Category (CC) are related clinically and with respect to cost. Condition Categories (CCs) are categories before imposing hierarchies. ICD-9-CM or ICD-10-CM codes are mapped to diagnostic groups (DXGs), which represents a well-specified medical condition. DXGs are further aggregated into Condition Categories (CCs). An example is Condition Category (CC) 96 *Ischemic or Unspecified Stroke*, which includes DXG 96.01 *precerebral or cerebral arterial occlusion with infarction* and DXG 96.02 *acute but ill-defined cerebrovascular disease*.
 
 <div class="bg-success" markdown="1">
 - {:Data Collection Period}<b>Data Collection Period</b>
   The Data Collection period refers to the first day of the clinical evaluation period through the date that data from the clinical evaluation period can be submitted to the risk adjustment organization.
 </div><!-- new-content -->     
 
-- <b>Digital Condition Categories (dCCs)</b> are condition category measures organized as self-contained measure specification and code packages, that use one or more sources of health information that is captured and can be transmitted electronically via interoperable systems. Digital condition categories use machine-readable measure logic, such as logics written in in Clinical Quality Language, and use common data model such as FHIR.
+- <b>Digital Condition Categories (dCCs)</b> are condition category measures organized as self-contained measure specification and code packages, that use one or more sources of health information that is captured and can be transmitted electronically via interoperable systems. Digital condition categories use machine-readable measure logic, such as logics written in in Clinical Quality Language, and use common data models such as FHIR.
 
 - <b>Hierarchical Condition Category</b>
   Condition Categories (CCs) become Hierarchical Condition Categories (HCCs) after imposing hierarchies. Hierarchies are imposed among related Condition Categories (CCs), so that a person is coded for only the most severe manifestation among related diseases. If a person is coded with more than one CC in a hierarchy, only the highest (most severe) CC in the hierarchy will be coded as the HCC. For example, if a beneficiary has an ICD-9-CM code that groups into HCC 86, having CC 86 precludes HCCs 87 or 88 from being assigned, even if ICD-9-CM codes that group into those categories were also present. Similarly, a person with ICD-9-CM codes that group into both CC 87 *Unstable Angina* and Other Acute Ischemic Heart Disease and CC 88 *Angina Pectoris/Old Myocardial Infarction* is coded for HCC 87, but not HCC 88.
 
 - <b>Historic Condition</b>
-  Condition that has been seen in the past (that was documented on a claim from a previous year or documented from other data source, e.g., Model Output report (MOR), or chart from a prior year) but not yet confirmed in the current year. Historic condition may also be referred to as Certified Condition by some Payers. This may also called Persistent Condition. Many historic conditions are persistent.
+  Condition that has been seen in the past (that was documented on a claim from a previous year or documented from another data source, e.g., Model Output report (MOR), or chart from a prior year) but not yet confirmed in the current year. Historic conditions may also be referred to as Certified Condition by some Payers. This may also be called Persistent Condition. Many historic conditions are persistent.
 
 - <b>Risk Adjustment</b>
-  Risk adjustment is a method of adjusting capitation payments to health plans, to account for the differences in expected health cost of individuals enrolled in the plan. Risk adjustment is intended to be accurate at the group level. At the individual level, predicted medical costs can be lower or higher than actual medical costs, but at the group level, below-average predicated costs balance out above-average predicated costs.
+  Risk adjustment is a method of adjusting capitation payments to health plans, to account for the differences in expected health cost of individuals enrolled in the plan. Risk adjustment is intended to be accurate at the group level. At the individual level, predicted medical costs can be lower or higher than actual medical costs, but at the group level, below-average predicted costs balance out above-average predicted costs.
 
 - <b>Risk Adjustment Model</b>
-  Risk adjustment models are used to compare and normalize health risks across groups or populations. Risk adjustment model means an actuarial tool used to predict health care costs based on the relative actuarial risk of enrollees in risk adjustment covered plans (45 CFR 153.20). There are a number of risk adjustment models. For example, the CMS-HCC risk adjustment model is used for Medicare Advantage Program. The HHS-HCC risk adjustment model is used for commercial payer populations and covers all age. Medicaid has more flexibility, they may use any model, such as Chronic Illness & Disability Payment system (CDPS), 3M model.
+  Risk adjustment models are used to compare and normalize health risks across groups or populations. Risk adjustment model means an actuarial tool used to predict health care costs based on the relative actuarial risk of enrollees in risk adjustment covered plans (45 CFR 153.20). There are a number of risk adjustment models. For example, the CMS-HCC risk adjustment model is used for the Medicare Advantage Program. The HHS-HCC risk adjustment model is used for commercial payer populations and covers all ages. Medicaid has more flexibility, they may use any model, such as Chronic Illness & Disability Payment system (CDPS), 3M model.
 
 - <b>Suspected Condition</b>
-  Condition that is not diagnosed or documented in the current year, but are suspected by the Payer based through the suspecting process, such as through AI algorithms using data such as lab results and procedures. Suspected Condition may also be referred to as Potential Condition by some Payers.
+  Condition that is not diagnosed or documented in the current year, but is suspected by the Payer via suspecting processes. For example through AI algorithms using data such as lab results and procedures. Suspected Condition may also be referred to as Potential Condition by some Payers.
 
 - <b>Suspecting</b>
-  Suspecting is the process of determining who is likely to have which risk-adjustable medical conditions. HCC suspect analytics are generated by health plans or third party vendors.
+  Suspecting is the process of determining who is likely to have which risk-adjustable medical conditions. HCCs suspect analytics are generated by health plans or third party vendors.
 
 
 ### Acronyms
@@ -48,7 +48,7 @@
 |CQL|Clinical Quality Language|
 |dCC|Digital Condition Category|
 |DCG|Diagnostic Cost Group|
-|DxCG|DxCG is an American company located in Boston, MA, that develops predictive modeling software solutions used by the healthcare industry.|
+|DxCG|DxCG is an American company located in Boston, MA, that develops predictive modeling software solutions used by the healthcare industry|
 |DXG|Diagnostic Group|
 |EDPS|Encounter Data Processing System|
 |ESRD|End Stage Renal Disease|

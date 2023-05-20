@@ -25,7 +25,7 @@ Once an [Annotation] is added to a [Risk Adjustment Coding Gap Report], it can b
 ### Payer Handling of the Annotations
 This implementation guide does not direct any action be taken by the Payer upon receipt of an annotated [Risk Adjustment Coding Gap Report].
 
-After a payer generates a subsequent [Risk Adjustment Coding Gap Report], in their role as a Remediation Server can choose to include the annotations as they see fit. This might include adding the annotations only if received from the same Provider up to including all annotations they have received. The Payer is not required to include any annotations on subsequently generated [Risk Adjustment Coding Gap Report].
+After a Payer generates a subsequent [Risk Adjustment Coding Gap Report], in their role as a Remediation Server they can choose to include the annotations as they see fit. This might include adding the annotations only if received from the same Provider all the way up to including all annotations they have received. The Payer is not required to include any annotations on subsequently generated [Risk Adjustment Coding Gap Report].
 
 {% include link-list.md %}
 

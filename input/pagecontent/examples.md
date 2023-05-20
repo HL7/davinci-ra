@@ -91,7 +91,7 @@
 
 - [Organization01Pat01: Community Urgent Care]
 - [Organization02Pat02: GHH Outpatient Clinic]
-- [Organization01pat03: Community HealthCenter]
+- [Organization01Pat03: Community HealthCenter]
 
 - [Patient01: Eve Everywoman]
 - [Patient02: Adam Everyman]
