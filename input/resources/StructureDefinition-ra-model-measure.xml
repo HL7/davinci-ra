@@ -23,11 +23,6 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Measure.meta.profile">
-            <path value="Measure.meta.profile"/>
-            <min value="1"/>
-            <mustSupport value="true"/>
-        </element>
         <element id="Measure.identifier">
             <path value="Measure.identifier"/>
             <short value="Risk Adjustment Model ID, e.g., CMS-HCC"/>

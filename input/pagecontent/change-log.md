@@ -1,6 +1,16 @@
 
 The Risk Adjustment Implementation Guide was developed under the  [Davinci Project](#)
 
+<div markdown="1" class="bg-info">
+
+### Version 2.0.0
+
+- **Applied**: Fix Group.Type to person ([FHIR-40995](https://jira.hl7.org/browse/FHIR-40995))
+- **Applied**: Make Group.actual fixed to true ([FHIR-40996](https://jira.hl7.org/browse/FHIR-40996))
+- **Applied**: Remove or better define reason for meta.profile requirement ([FHIR-40997](https://jira.hl7.org/browse/FHIR-40997))
+
+</div>
+
 ### Version 2.0.0-ballot
 
 - The 2.0.0-ballot includes the following changes to support new functionalities: 
@@ -20,7 +30,7 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 1. **Applied**: Make "Example CMS Hierarchical Condition Category Value Set" a true sample ([FHIR-39371](https://jira.hl7.org/browse/FHIR-39371))
 1. **Applied**: Remove "Code System" and "Value Set" from names and titles of code system and value set ([FHIR-39374](https://jira.hl7.org/browse/FHIR-39374))
 
-### version 1.0.0
+### Version 1.0.0
 **Ballot Comments Applied**: **Summary** (**Jira Issue**)
 1. **Applied**: Bind example value sets where ever possible instead of creating complicated element definitions ([FHIR-34774](https://jira.hl7.org/browse/FHIR-34774))
 1. **Applied**: Missing Must Support, $report comment, & extension comment ([FHIR-35139](https://jira.hl7.org/browse/FHIR-35139))
