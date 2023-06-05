@@ -145,19 +145,47 @@
       </binding>      
     </element>  
 
-    <element id="Extension.extension:relatedData">
+    <element id="Extension.extension:relatedDataIdentifier">
       <path value="Extension.extension"/>
-      <sliceName value="relatedData"/>
-      <short value="Related data"/>
+      <sliceName value="relatedDataIdentifier"/>
+      <short value="Related data identifier"/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
       <type>
         <code value="Extension"/>
       </type>
     </element>
     <element id="Extension.extension:relatedData.url">
       <path value="Extension.extension.url"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="relatedDataIdentifier"/>
+    </element>   
+    <element id="Extension.extension:text.value[x]">
+      <path value="Extension.extension.value[x]"/>
       <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>      
+    </element>  
+
+        <element id="Extension.extension:relatedData">
+      <path value="Extension.extension"/>
+      <sliceName value="relatedData"/>
+      <short value="Related data resource"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:relatedData.url">
+      <path value="Extension.extension.url"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="uri"/>
@@ -169,9 +197,11 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="Identifier"/>
-      </type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>        
+      </type>      
     </element>  
+
 
     <element id="Extension.url">
       <path value="Extension.url"/>
