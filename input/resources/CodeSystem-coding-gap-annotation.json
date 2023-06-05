@@ -14,25 +14,30 @@
   "content": "complete",
   "concept": [
     {
-      "code": "acknowledged",
-      "display": "Acknowledged",
-      "definition": "Acknowleged"
+      "code": "assessed-present",
+      "display": "Assessed and present",
+      "definition": "Assessed the gap and acknowledged it is still present."
     },
     {
       "code": "assessed-not-present",
       "display": "Assessed and not present",
-      "definition": "Assessed the gap and acknowledged it is not present"
+      "definition": "Assessed the gap and acknowledged it is not present."
     },
     {
-      "code": "assessed-present",
-      "display": "Assessed and present",
-      "definition": "Assessed the gap and acknowledged it is still present"
+      "code": "in-progress",
+      "display": "In progress",
+      "definition": "Assessed the gap and actions are taking to address the gap."
     },
     {
       "code": "deferred",
       "display": "Deferred",
-      "definition": "Deferred"
-    }
+      "definition": "Assessed the gap and actions will be taken in the future to address the gap."
+    },
+    {
+      "code": "not-assessed",
+      "display": "Deferred",
+      "definition": "Gap was shown to the provider but no action was taken to assess the gap."
+    }  
   ],
-  "count": 4
+  "count": 5
 }
