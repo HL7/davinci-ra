@@ -16,7 +16,7 @@
     {
       "code": "closure",
       "display": "Close coding gap",
-      "definition": "Task reason is to provide clinical evalaution evidence to close a risk adjustment coding gap."
+      "definition": "Task reason is to provide clinical evaluation evidence to close a risk adjustment coding gap."
     },
     {
       "code": "Invalidation-condition-not-diagnosed",
@@ -26,7 +26,7 @@
     {
       "code": "invalidation-inactive-condition",
       "display": "Invalidate coding gap, condition no longer active",
-      "definition": "Task reason is to provide clinical evalaution evidence to invalidate the coding gap because the patient was correctly diagnosed but the condition is no longer active."
+      "definition": "Task reason is to provide clinical evaluation evidence to invalidate the coding gap because the patient was correctly diagnosed but the condition is no longer active."
     },
     {
       "code": "creation",
