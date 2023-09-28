@@ -35,7 +35,7 @@
     },
     {
       "code": "not-assessed",
-      "display": "Deferred",
+      "display": "Not assessed",
       "definition": "Gap was shown to the provider but no action was taken to assess the gap."
     }  
   ],

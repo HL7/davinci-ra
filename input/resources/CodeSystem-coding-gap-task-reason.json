@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "name": "CodingGapTaskReason",
   "title": "Coding Gap Task Reason CodeSystem",
-  "status": "draft",
+  "status": "active",
   "experimental": false,
   "publisher": "Clinical Quality Information Workgroup",
   "description": "Risk adjustment clinical evaluation evidence task reason",
@@ -19,9 +19,9 @@
       "definition": "Task reason is to provide clinical evalaution evidence to close a risk adjustment coding gap."
     },
     {
-      "code": "invalidation-never-had-condition",
+      "code": "Invalidation-condition-not-diagnosed",
       "display": "Invalidate coding gap, patient never had the condition",
-      "definition": "Task reason is to provide clinical evalaution evidence to invalidate the coding gap that was inaccurate because the patient has never had this condition."
+      "definition": "Task reason is to provide clinical evaluation evidence to invalidate the coding gap that was inaccurate because the patient has never had this condition or is not currently diagnosed with this condition."
     },
     {
       "code": "invalidation-inactive-condition",
@@ -29,15 +29,10 @@
       "definition": "Task reason is to provide clinical evalaution evidence to invalidate the coding gap because the patient was correctly diagnosed but the condition is no longer active."
     },
     {
-      "code": "invalidation-inaccurate-gap",
-      "display": "Invalidate coding gap, inaccurate gap",
-      "definition": "Task reason is to provide clinical evalaution evidence to invalidate the coding gap because the patient has an active condition but the gap does not accurately describe it."
-    },
-    {
       "code": "creation",
       "display": "Create coding gap",
       "definition": "Task reason is provide clinical evaluation evidence to create and close a net-new risk adjustment coding gap discovered during medical review."
     }   
   ],
-  "count": 5
+  "count": 4
 }

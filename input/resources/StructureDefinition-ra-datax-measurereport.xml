@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  <id value="ra-datax-measurereport"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-datax-measurereport"/>
+  <name value="RiskAdjustmentDataExchangeMeasureReport"/>
+  <title value="Risk Adjustment Data Exchange MeasureReport"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="Da Vinci Project"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/cqi/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="This profile is based on the [MeasureReport](http://hl7.org/fhir/R4/measurereport.html). It is used for Provider to submit data such as clinical evaluation evidence to Payer."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="MeasureReport"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MeasureReport"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="MeasureReport">
+      <path value="MeasureReport"/>
+      <short value="This is a risk adjustment data exchange MeasureReport."/>
+      <definition value="This is a MeasureReport used to exchange clinical evaluation evidence from Provider to Payer for a patient/member's coding gaps for a particular Risk Adjustment model."/>
+    </element>
+    <element id="MeasureReport.status">
+      <path value="MeasureReport.status"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.type">
+      <path value="MeasureReport.type"/>
+      <short value="The type code is fixed to 'individual' for a risk adjustment coding gap report"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <fixedCode value="data-collection"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.measure">
+      <path value="MeasureReport.measure"/>
+      <short value="This references a measure that represents a risk adjustment model, such as CMS-HCC V24."/>
+      <type>
+        <code value="canonical"/>
+        <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-model-measure"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.subject">
+      <path value="MeasureReport.subject"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.date">
+      <path value="MeasureReport.date"/>
+      <short value="When the report was generated"/>
+      <definition value="This is the date when the data exchange MeasureReport for risk adjustment was generated."/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.reporter">
+      <path value="MeasureReport.reporter"/>
+      <short value="Organization that generated the MeasureReport"/>
+      <definition value="Organization that generated the MeasureReport"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.period">
+      <path value="MeasureReport.period"/>
+      <short value="Clinical evaluation period during which risk adjusting encounters could be conducted and documented with expectations of submission for risk adjustment purposes."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Period"/>
+      </type>
+      <condition value="ra-1"/>
+      <constraint>
+        <key value="ra-1"/>
+        <severity value="error"/>
+        <human value="Date precision SHALL be at least to day ( YYYY-MM-DD )"/>
+        <expression value="start.value.matches(&#39;^([0-9]{4})(-)(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]).*&#39;) and end.value.matches(&#39;^([0-9]{4})(-)(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]).*&#39;)"/>
+      </constraint>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.period.start">
+      <path value="MeasureReport.period.start"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.period.end">
+      <path value="MeasureReport.period.end"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.group">
+      <path value="MeasureReport.group"/>
+      <short value="Condition Category"/>
+      <definition value="A group contains information for a Condition Category. For multiple Condition Categories, there will be multiple group(s) and each group represents a Condition Category."/>
+      <min value="0"/>
+      <max value="*"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.group.id">
+      <path value="MeasureReport.group.id"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.group.extension:annotation">
+      <path value="MeasureReport.group.extension"/>
+      <sliceName value="annotation"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-annotation"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>  
+    <element id="MeasureReport.group.code">
+      <path value="MeasureReport.group.code"/>
+      <short value="Condition Category (CC) code for a Risk Adjustment Model"/>
+      <definition value="Condition Category (CC) code for a Risk Adjustment Model."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/sample-cmshcc"/>
+      </binding>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.evaluatedResource">
+      <path value="MeasureReport.evaluatedResource"/>
+      <short value="An evaluated resource in a risk adjusstment data exchange MeasureReport is any data Provider submits to Payer as clinical evaluation evidence, such as a Consolidated Clinical Document Architecture (C-CDA) document, enounters, and diagnoses."/>
+      <definition value="An evaluated resource in the risk adjusstment data exchange MeasureReport is any data Provider submits to Payer as clinical evaluation evidence. The clinical evaluation evidence helps drive more accurate documentation of diagnosis and other clinical data for a patient and lead to more accurate Condition Category coding."/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.evaluatedResource.extension:groupReference">
+      <path value="MeasureReport.evaluatedResource.extension"/>
+      <sliceName value="groupReference"/>
+      <definition value="This id references the `MeasureReport.group.id`, which allows linking a supporting resource to a specific Condition Categories coding gap."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>

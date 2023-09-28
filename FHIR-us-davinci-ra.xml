@@ -96,6 +96,7 @@
 <artifact id="StructureDefinition/ra-clinical-evaluation-evidence-task" key="StructureDefinition-ra-clinical-evaluation-evidence-task" name="Risk Adjustment Clinical Evaluation Evidence Task"/>
 <artifact id="StructureDefinition/ra-measurereport" key="StructureDefinition-ra-measurereport" name="Risk Adjustment Coding Gap MeasureReport"/>
 <artifact id="StructureDefinition/ra-measurereport-bundle" key="StructureDefinition-ra-measurereport-bundle" name="Risk Adjustment Coding Gap Report Bundle"/>
+<artifact id="StructureDefinition/ra-datax-measurereport" key="StructureDefinition-ra-datax-measurereport" name="Risk Adjustment Data Exchange MeasureReport"/>
 <artifact id="CodeSystem/evidence-status" key="CodeSystem-evidence-status" name="Risk Adjustment Evidence Status CodeSystem"/>
 <artifact id="StructureDefinition/ra-evidenceStatusDate" key="StructureDefinition-ra-evidenceStatusDate" name="Risk Adjustment Evidence Status Date"/>
 <artifact id="ValueSet/evidence-status" key="ValueSet-evidence-status" name="Risk Adjustment Evidence Status ValueSet"/>

@@ -113,6 +113,8 @@
 [Risk Adjustment Model Measure Profile]: StructureDefinition-ra-model-measure.html
 [Risk Adjustment Clinical Evaluation Evidence Task]: StructureDefinition-ra-clinical-evaluation-evidence-task.html
 
+[Risk Adjustment Data Exchange MeasureReport]: StructureDefinition-ra-datax-measurereport.html
+
 [Risk Adjustment SearchSet Bundle]: StructureDefinition-ra-searchset-bundle.html
 
 [SMART App Launch]: http://hl7.org/fhir/smart-app-launch/history.html

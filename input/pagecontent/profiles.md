@@ -1,5 +1,8 @@
 
 <div class="new-content" markdown="1">
+DRAFT for Review:
+- [Risk Adjustment Data Exchange MeasureReport]
+
 New Profiles: 
 - [Risk Adjustment Clinical Evaluation Evidence Task]
 - [Risk Adjustment SearchSet Bundle]
