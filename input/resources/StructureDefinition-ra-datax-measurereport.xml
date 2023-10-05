@@ -33,6 +33,54 @@
       <short value="This is a risk adjustment data exchange MeasureReport."/>
       <definition value="This is a MeasureReport used to exchange clinical evaluation evidence from Provider to Payer for a patient/member's coding gaps for a particular Risk Adjustment model."/>
     </element>
+
+    <element id="MeasureReport.extension:updatetype">
+      <path value="MeasureReport.extension"/>
+      <sliceName value="updatetype"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-submitDataUpdateType"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="MeasureReport.extension:software">
+      <path value="MeasureReport.extension"/>
+      <sliceName value="software"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+
+    <element id="MeasureReport.extension:vendor">
+      <path value="MeasureReport.extension"/>
+      <sliceName value="vendor"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+<!--
+    <element id="MeasureReport.extension:location">
+      <path value="MeasureReport.extension"/>
+      <sliceName value="location"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-dataLocation"/>
+      </type>
+    </element>
+-->
     <element id="MeasureReport.status">
       <path value="MeasureReport.status"/>
       <mustSupport value="true"/>
@@ -154,10 +202,12 @@
       </binding>
       <mustSupport value="true"/>
     </element>
+
     <element id="MeasureReport.evaluatedResource">
       <path value="MeasureReport.evaluatedResource"/>
       <short value="An evaluated resource in a risk adjusstment data exchange MeasureReport is any data Provider submits to Payer as clinical evaluation evidence, such as a Consolidated Clinical Document Architecture (C-CDA) document, enounters, and diagnoses."/>
       <definition value="An evaluated resource in the risk adjusstment data exchange MeasureReport is any data Provider submits to Payer as clinical evaluation evidence. The clinical evaluation evidence helps drive more accurate documentation of diagnosis and other clinical data for a patient and lead to more accurate Condition Category coding."/>
+      <min value="1"/>
       <mustSupport value="true"/>
     </element>
     <element id="MeasureReport.evaluatedResource.extension:groupReference">
