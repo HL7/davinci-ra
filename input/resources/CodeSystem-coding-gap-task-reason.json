@@ -19,7 +19,7 @@
       "definition": "Task reason is to provide clinical evaluation evidence to close a risk adjustment coding gap."
     },
     {
-      "code": "Invalidation-condition-not-diagnosed",
+      "code": "invalidation-condition-not-diagnosed",
       "display": "Invalidate coding gap, patient never had the condition",
       "definition": "Task reason is to provide clinical evaluation evidence to invalidate the coding gap that was inaccurate because the patient has never had this condition or is not currently diagnosed with this condition."
     },
