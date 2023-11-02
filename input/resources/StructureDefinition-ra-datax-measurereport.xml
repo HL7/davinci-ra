@@ -176,17 +176,6 @@
       <max value="1"/>
       <mustSupport value="true"/>
     </element>
-    <element id="MeasureReport.group.extension:annotation">
-      <path value="MeasureReport.group.extension"/>
-      <sliceName value="annotation"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-annotation"/>
-      </type>
-      <mustSupport value="true"/>
-    </element>  
     <element id="MeasureReport.group.code">
       <path value="MeasureReport.group.code"/>
       <short value="Condition Category (CC) code for a Risk Adjustment Model"/>
@@ -207,7 +196,6 @@
       <path value="MeasureReport.evaluatedResource"/>
       <short value="An evaluated resource in a risk adjusstment data exchange MeasureReport is any data Provider submits to Payer as clinical evaluation evidence, such as a Consolidated Clinical Document Architecture (C-CDA) document, enounters, and diagnoses."/>
       <definition value="An evaluated resource in the risk adjusstment data exchange MeasureReport is any data Provider submits to Payer as clinical evaluation evidence. The clinical evaluation evidence helps drive more accurate documentation of diagnosis and other clinical data for a patient and lead to more accurate Condition Category coding."/>
-      <min value="1"/>
       <mustSupport value="true"/>
     </element>
     <element id="MeasureReport.evaluatedResource.extension:groupReference">

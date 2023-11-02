@@ -132,7 +132,7 @@
       </type>
       <fixedUri value="code"/>
     </element>   
-    <element id="Extension.extension:codedAnnotation.valueCodableConcept">
+    <element id="Extension.extension:code.valueCodableConcept">
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <max value="1"/>
@@ -155,7 +155,7 @@
         <code value="Extension"/>
       </type>
     </element>
-    <element id="Extension.extension:relatedData.url">
+    <element id="Extension.extension:relatedDataIdentifier.url">
       <path value="Extension.extension.url"/>
       <min value="0"/>
       <max value="1"/>
@@ -164,7 +164,7 @@
       </type>
       <fixedUri value="relatedDataIdentifier"/>
     </element>   
-    <element id="Extension.extension:text.value[x]">
+    <element id="Extension.extension:relatedDataIdentifier.value[x]">
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <max value="1"/>
@@ -172,36 +172,6 @@
         <code value="Identifier"/>
       </type>      
     </element>  
-
-        <element id="Extension.extension:relatedData">
-      <path value="Extension.extension"/>
-      <sliceName value="relatedData"/>
-      <short value="Related data resource"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="Extension"/>
-      </type>
-    </element>
-    <element id="Extension.extension:relatedData.url">
-      <path value="Extension.extension.url"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="uri"/>
-      </type>
-      <fixedUri value="relatedData"/>
-    </element>   
-    <element id="Extension.extension:text.value[x]">
-      <path value="Extension.extension.value[x]"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>        
-      </type>      
-    </element>  
-
 
     <element id="Extension.url">
       <path value="Extension.url"/>

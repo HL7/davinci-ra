@@ -131,3 +131,5 @@
 [Assisted]: report-generation.html#the-assisted-approach
 [Evaluated]:report-generation.html#the-evaluated-approach
 [Digital Condition Category (dCC)]: dcc.html
+
+[$ra.submit-data]: OperationDefinition-ra.submit-data.html

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OperationDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="ra.submit-data"/>
+    <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/ra.submit-data"/>
+    <name value="RASubmitData"/>
+    <title value="Risk Adjustment Submit Data"/>
+    <status value="draft"/>
+    <kind value="operation"/>
+    <publisher value="Da Vinci Project"/>
+    <description value="The ra.submit-data operation is used by providers to submit clinical evaluation evidence to payers for risk adjustment purpose."/>
+    <code value="ra.submit-data"/>
+    <comment value="The effect of invoking this operation is that the submitted data is posted to the receiving system and can be used for subsequent evaluation of coding gaps. The clinical evaluation evidence may be a patient's C-CDA document."/>
+    <base value="http://hl7.org/fhir/OperationDefinition/Measure-submit-data"/>
+    <resource value="Measure"/>
+    <system value="false"/>
+    <type value="true"/>
+    <instance value="true"/>
+    <parameter>
+        <name value="measureReport"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="The relevant [Risk Adjustment Coding Gap MeasureReport](StructureDefinition-ra-measurereport.html) received from the Payer that the clinical evaluation evidence is being submitted for by the Provider."/>
+        <type value="MeasureReport"/>
+    </parameter>
+    <parameter>
+        <name value="resource"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="*"/>
+        <documentation value="The clinical evaluation evidence being submitted."/>
+        <type value="Resource"/>
+    </parameter>
+</OperationDefinition>
