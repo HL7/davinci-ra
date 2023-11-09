@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ra-ccRemark"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark"/>
+  <name value="ConditionCategoryRemark"/>
+  <title value="Condition Category Remark"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="Da Vinci Project"/>
+  <description value="Remark about a Condition Category."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="MeasureReport.group"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Condition Category remark"/>
+      <definition value="Remark about a Condition Category"/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension:annotator">
+      <path value="Extension.extension"/>
+      <sliceName value="annotator"/>
+      <short value="Who added the remark"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:annotator.url">
+      <path value="Extension.extension.url"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="annotator"/>
+    </element>   
+    <element id="Extension.extension:annotator.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+      </type>
+    </element>      
+
+    <element id="Extension.extension:annotated">
+      <path value="Extension.extension"/>
+      <sliceName value="annotated"/>
+      <short value="When the remark was added"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:annotated.url">
+      <path value="Extension.extension.url"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="annotated"/>
+    </element>   
+    <element id="Extension.extension:annotated.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>  
+
+    <element id="Extension.extension:text">
+      <path value="Extension.extension"/>
+      <sliceName value="text"/>
+      <short value="Free text remark"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:text.url">
+      <path value="Extension.extension.url"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="text"/>
+    </element>   
+    <element id="Extension.extension:text.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>  
+
+    <element id="Extension.extension:code">
+      <path value="Extension.extension"/>
+      <sliceName value="code"/>
+      <short value="Coded remark"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:code.url">
+      <path value="Extension.extension.url"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="code"/>
+    </element>   
+    <element id="Extension.extension:code.valueCodableConcept">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-annotation"/>
+      </binding>      
+    </element>  
+
+    <element id="Extension.extension:relatedDataIdentifier">
+      <path value="Extension.extension"/>
+      <sliceName value="relatedDataIdentifier"/>
+      <short value="Related data identifier"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:relatedDataIdentifier.url">
+      <path value="Extension.extension.url"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="relatedDataIdentifier"/>
+    </element>   
+    <element id="Extension.extension:relatedDataIdentifier.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>      
+    </element>  
+
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element> 
+
+  </differential>
+</StructureDefinition>

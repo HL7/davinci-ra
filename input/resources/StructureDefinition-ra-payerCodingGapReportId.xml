@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ra-payerCodingGapReportId"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-payerCodingGapReportId"/>
+  <name value="PayerCodingGapReportId"/>
+  <title value="Payer Coding Gap Report Id"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="Da Vinci Project"/>
+  <description value="Unique id of the original payer generated coding gap report. This is the MeasureReport.id from the Risk Adjustment Codiing Gap Report profile."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="MeasureReport"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Payer generated coding gap report id"/>
+      <definition value="Payer generated coding gap report id."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-payerCodingGapReportId"/>
+    </element>
+    <element id="Extension.valueId">
+      <path value="Extension.valueId"/>
+      <type>
+        <code value="id"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

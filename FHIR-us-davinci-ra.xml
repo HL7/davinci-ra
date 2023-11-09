@@ -13,6 +13,7 @@
 <artifact id="CodeSystem/coding-gap-task-reason" key="CodeSystem-coding-gap-task-reason" name="Coding Gap Task Reason CodeSystem"/>
 <artifact id="ValueSet/coding-gap-task-reason" key="ValueSet-coding-gap-task-reason" name="Coding Gap Task Reason ValueSet"/>
 <artifact id="ValueSet/coding-gap-task-status" key="ValueSet-coding-gap-task-status" name="Coding Gap Task Status ValueSet"/>
+<artifact id="StructureDefinition/ra-ccRemark" key="StructureDefinition-ra-ccRemark" name="Condition Category Remark"/>
 <artifact deprecated="true" id="Condition/ra-condition01" key="Condition-ra-condition01" name="Condition01: Type 2 diabetes with unspecified manisfestations"/>
 <artifact id="Condition/ra-condition01pat03" key="Condition-ra-condition01pat03" name="Condition01pat03: Other artificial openings of gastrointestinal tract status"/>
 <artifact deprecated="true" id="Condition/ra-condition02" key="Condition-ra-condition02" name="Condition02: Major Depressive Disorder, Single episode"/>
@@ -44,6 +45,7 @@
 <artifact id="Condition/ra-conditionR01pat01" key="Condition-ra-conditionR01pat01" name="ConditionR01pat01: Cystic fibrosis with other intestinal manifestations"/>
 <artifact id="StructureDefinition/ra-confidenceScale" key="StructureDefinition-ra-confidenceScale" name="Confidence Scale"/>
 <artifact id="ValueSet/confidence-scale" key="ValueSet-confidence-scale" name="Confidence Scale Value Set"/>
+<artifact id="StructureDefinition/ra-dateOfService" key="StructureDefinition-ra-dateOfService" name="Date of Service"/>
 <artifact id="DocumentReference/ra-documentreference01pat01" key="DocumentReference-ra-documentreference01pat01" name="Documentreference01pat01: Outpatient Note"/>
 <artifact id="Encounter/ra-encounter44pat01" key="Encounter-ra-encounter44pat01" name="Encounter on 20170118"/>
 <artifact id="Encounter/ra-encounter08pat01" key="Encounter-ra-encounter08pat01" name="Encounter on 20170203"/>
@@ -87,6 +89,7 @@
 <artifact id="Patient/ra-patient02" key="Patient-ra-patient02" name="Patient02: Adam Everyman"/>
 <artifact id="Patient/ra-patient03" key="Patient-ra-patient03" name="Patient03: Nelda Nuclear"/>
 <artifact deprecated="true" id="Patient/ra-patient04" key="Patient-ra-patient04" name="Patient04: Jane Doh"/>
+<artifact id="StructureDefinition/ra-payerCodingGapReportId" key="StructureDefinition-ra-payerCodingGapReportId" name="Payer Coding Gap Report Id"/>
 <artifact id="Practitioner/ra-prac01pat01" key="Practitioner-ra-prac01pat01" name="Practitioner: Harold Hippocrates"/>
 <artifact id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner: Otto Osler"/>
 <artifact id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner: Patrick Pump"/>

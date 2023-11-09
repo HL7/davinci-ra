@@ -5,7 +5,7 @@
     <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/ra.submit-data"/>
     <name value="RASubmitData"/>
     <title value="Risk Adjustment Submit Data"/>
-    <status value="draft"/>
+    <status value="active"/>
     <kind value="operation"/>
     <publisher value="Da Vinci Project"/>
     <description value="The ra.submit-data operation is used by providers to submit clinical evaluation evidence to payers for risk adjustment purpose."/>
@@ -27,7 +27,7 @@
     <parameter>
         <name value="resource"/>
         <use value="in"/>
-        <min value="1"/>
+        <min value="0"/>
         <max value="*"/>
         <documentation value="The clinical evaluation evidence being submitted."/>
         <type value="Resource"/>
