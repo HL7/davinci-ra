@@ -8,7 +8,7 @@
     <status value="active"/>
     <kind value="operation"/>
     <publisher value="Da Vinci Project"/>
-    <description value="The ra.submit-data operation is used by providers to submit clinical evaluation evidence to payers for risk adjustment purpose."/>
+    <description value="The ra.submit-data operation is used by providers to submit clinical evaluation evidence to payers for risk adjustment purpose. A [Risk Adjustment Data Exchange MeasureReport](StructureDefinition-ra-datax-measurereport.html) is used for this exchange."/>
     <code value="ra.submit-data"/>
     <comment value="The effect of invoking this operation is that the submitted data is posted to the receiving system and can be used for subsequent evaluation of coding gaps. The clinical evaluation evidence may be a patient's C-CDA document."/>
     <base value="http://hl7.org/fhir/OperationDefinition/Measure-submit-data"/>
@@ -21,7 +21,7 @@
         <use value="in"/>
         <min value="1"/>
         <max value="1"/>
-        <documentation value="The relevant [Risk Adjustment Coding Gap MeasureReport](StructureDefinition-ra-measurereport.html) received from the Payer that the clinical evaluation evidence is being submitted for by the Provider."/>
+        <documentation value="The relevant [Risk Adjustment Data Exchange MeasureReport](StructureDefinition-ra-datax-measurereport.html) is being submitted."/>
         <type value="MeasureReport"/>
     </parameter>
     <parameter>
