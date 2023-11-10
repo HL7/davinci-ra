@@ -1,6 +1,3 @@
-<div class="new-content" markdown="1">
-All sections on this page are new content.
-</div><!-- new-content -->
 
 This section describes querying for MeasureReports and their evaluated resources. Once MeasureReports have been created, they can be retrieved using a simple RESTful query. The query uses the **_include** parameter to also retrieve in the searchset Bundle, the resources attached to the report in `MeasureReport.evaluatedResource`.
 
