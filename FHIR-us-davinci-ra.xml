@@ -8,8 +8,10 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/ra-annotation" key="StructureDefinition-ra-annotation" name="Annotation"/>
-<artifact id="ValueSet/coding-gap-annotation" key="ValueSet-coding-gap-annotation" name="Coding Gap Annotation"/>
-<artifact id="CodeSystem/coding-gap-annotation" key="CodeSystem-coding-gap-annotation" name="Coding Gap Annotation CodeSystem"/>
+<artifact deprecated="true" id="ValueSet/coding-gap-annotation" key="ValueSet-coding-gap-annotation" name="Coding Gap Annotation"/>
+<artifact deprecated="true" id="CodeSystem/coding-gap-annotation" key="CodeSystem-coding-gap-annotation" name="Coding Gap Annotation CodeSystem"/>
+<artifact id="ValueSet/coding-gap-remark" key="ValueSet-coding-gap-remark" name="Coding Gap Remark"/>
+<artifact id="CodeSystem/coding-gap-remark" key="CodeSystem-coding-gap-remark" name="Coding Gap Remark CodeSystem"/>
 <artifact id="CodeSystem/coding-gap-task-reason" key="CodeSystem-coding-gap-task-reason" name="Coding Gap Task Reason CodeSystem"/>
 <artifact id="ValueSet/coding-gap-task-reason" key="ValueSet-coding-gap-task-reason" name="Coding Gap Task Reason ValueSet"/>
 <artifact id="ValueSet/coding-gap-task-status" key="ValueSet-coding-gap-task-status" name="Coding Gap Task Status ValueSet"/>
@@ -138,6 +140,7 @@
 <artifact id="Bundle/ra-searchsetbundle01pat01" key="Bundle-ra-searchsetbundle01pat01" name="ra-searchsetbundle01pat01: SearchSet Bundle Pat1 MeasureReport01 group003"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
+<page key="cc-remark" name="Add Remark to Condition Category"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="capabilities" name="Capability Statement"/>
 <page deprecated="true" key="changes" name="Change History"/>
@@ -153,10 +156,11 @@
 <page key="methodology" name="Methodology"/>
 <page key="operations" name="Operation"/>
 <page key="profiles" name="Profiles"/>
-<page key="remediation" name="Remediation"/>
-<page key="report-annotation" name="Report Annotation"/>
+<page deprecated="true" key="remediation" name="Remediation"/>
+<page deprecated="true" key="report-annotation" name="Report Annotation"/>
 <page key="report-generation" name="Report Generation"/>
 <page key="report-query" name="Report Query"/>
+<page key="submit-data-to-payer" name="Submit Data To Payer"/>
 <page key="toc" name="Table of Contents"/>
 <page key="terminology" name="Terminology"/>
 </specification>

@@ -10,15 +10,8 @@ List of profiles that define constrains on FHIR resources for systems conforming
 |Bundle|[Risk Adjustment Coding Gap Report Bundle]*|
 {: .grid}
 
-*The Risk Adjustment Coding Gap Report Bundle is a collection Bundle returned by [$ra.evaluate-measure]
+*The Risk Adjustment Coding Gap Report Bundle is a collection Bundle returned by [$ra.evaluate-measure] and included in this version of the IG as DRAFT.
 
-
-TODO: The following profiles will be removed as part of the ballot reconciliations:
-
-|Resource Type|Profile|
-|---|---|---|
-|Task|[Risk Adjustment Clinical Evaluation Evidence Task]|
-|Bundle|[Risk Adjustment SearchSet Bundle]
 
 <br />
 

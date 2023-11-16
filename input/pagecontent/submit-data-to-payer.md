@@ -1,7 +1,7 @@
 
-<div class="new-content" markdown="1">
-All sections on this page are new content.
-</div><!-- new-content -->
+<div class="bg-success" markdown="1">
+This page has been updated from Report Remediation to Submit Data to Payer based on ballot reconciliations. 
+</div>
 
 ### Introduction and Background
 

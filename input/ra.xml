@@ -694,13 +694,13 @@
           <generation value="markdown"/>
         </page>
         <page>
-          <nameUrl value="remediation.html"/>
-          <title value="Remediation"/>
+          <nameUrl value="submit-data-to-payer.html"/>
+          <title value="Submit Data To Payer"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <nameUrl value="report-annotation.html"/>
-          <title value="Report Annotation"/>
+          <nameUrl value="cc-remark.html"/>
+          <title value="Add Remark to Condition Category"/>
           <generation value="markdown"/>
         </page>
       </page>

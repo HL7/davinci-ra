@@ -7,7 +7,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="Da Vinci Project"/>
-  <description value="Remark about a Condition Category."/>
+  <description value="Remark added for a Condition Category."/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -141,7 +141,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-annotation"/>
+        <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-remark"/>
       </binding>      
     </element>  
 

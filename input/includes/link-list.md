@@ -133,3 +133,5 @@
 [Digital Condition Category (dCC)]: dcc.html
 
 [$ra.submit-data]: OperationDefinition-ra.submit-data.html
+[Condition Category Remark]: StructureDefinition-ra-ccRemark.html
+

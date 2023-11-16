@@ -1,6 +1,9 @@
-<div class="new-content" markdown="1">
-All sections on this page are new content.
-</div><!-- new-content -->
+<div class="bg-success" markdown="1">
+This page is being updated based on ballot reconciliations. 
+
+Note that Annotation is being renamed to Condition Category Remark. The Annotation extension has been updated to the [Condition Category Remark] extension. 
+</div>
+
 
 Systems may choose to display the [Risk Adjustment Coding Gap Report] to a Provider at the time of a patient's care. When this happens, a Provider (using the Remediation Client role) may choose to annotate the report to let the Payer know they took some actions in regard to the coding gap(s) when they saw the patient.  
 

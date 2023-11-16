@@ -6,8 +6,8 @@
       <li><a href="general-guidance.html">General Guidance</a></li>
       <li><a href="report-generation.html">Report Generation</a></li>
       <li><a href="report-query.html">Report Query</a></li>
-      <li><a href="remediation.html">Remediation</a></li>
-      <li><a href="report-annotation.html">Report Annotation</a></li>
+      <li><a href="submit-data-to-payer.html">Submit Data to Payer</a></li>
+      <li><a href="cc-remark.html">Add Remark to Condition Category</a></li>
     </ul>
   </li>
   <li><a href="dcc.html">Digital Condition Category (dCC)</a></li>
