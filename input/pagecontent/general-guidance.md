@@ -1,4 +1,8 @@
 
+<div class="bg-success" markdown="1">
+This page is being updated to reflect changes based on ballot reconciliations. The main changes will include updating Annotation and Remediation. The Annotation will be renamed to Condition Category Remark. Remediation will be updated to Submit Data to Payer through using the [$ra.submit-data] operation and the [Risk Adjustment Data Exchange MeasureReport]. 
+</div>
+
 ### Introduction
 
 The Da Vinci Project member organizations have identified the need of standardizing how risk adjustment coding gaps are communicated between payers and providers. This implementation guide (IG) specifies standardized risk adjustment coding gap reports and <span class="bg-success" markdown="1">provides guidance</span><!-- new-content --> to query the coding gap reports from a <span class="bg-success" markdown="1">Payer</span><!-- new-content --> for one or more patients. Standardizing the reporting structure helps lessen the burden on the providers in processing the reports so they can more easily address the patients’ care needs. This standardized structure also supports the Payer sharing information that they have but the providers may not, such as data from other providers’ claims, lab results, filled prescriptions, etc. 
@@ -52,9 +56,7 @@ See the [Remediation] page for more details and guidance.
 #### Report Generation, Query, and Remediation Workflow Overview
 
 </div><!-- new-content -->
-The diagram below provides a workflow overview of the report generation, query, and remediation steps. 
 
-{% include img-portrait.html img="risk-adjustment-workflow.png" caption="Figure 2.1-2 Risk Adjustment Workflow Overview"%}
 
 #### Report Annotation
 An electronic medical record (EMR) may choose to display all or part of the [Risk Adjustment Coding Gap Report] to the Provider at the point of care.  At that time, if the Provider wants to note the action they took in regard to a Risk Adjustment coding gap, they can put that comment on the Risk Adjustment Coding Gap Report and return it to the Payer. This process is called [Report Annotation].

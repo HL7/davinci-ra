@@ -24,36 +24,6 @@ The Actors involved in the remediation phase are Provider, Risk Adjustment Coder
 
 {% include img-portrait.html img="three-stages-remediation.png" caption="Figure 2.4-1: Report Remediation Overview"%}
 
-### Using Task
-Figure 2.4-1 provides an overview of how the Task resource, [Risk Adjustment Clinical Evaluation Evidence Task], is used to support the remediation process. The [Task State Machine](StructureDefinition-ra-clinical-evaluation-evidence-task.html#task-state-machine) includes a diagram for the state machine used by this profile. 
-
-After the [Report Query] step, the Provider reviews the coding gaps and determines whether they need to initiate the gap closure/invalidation process based on the clinical evaluation evidence after the review. 
-- If no changes are needed, the process stops, no action is taken. 
-- If clinical evaluation evidence reveals that changes are needed, for each coding gap that needs a change request, the Provider creates a [Risk Adjustment Clinical Evaluation Evidence Task] with proposed changes along with supporting clinical evaluation evidence. For example, if a patient has five HCCs, after the review, the Provider may determine that two of the five HCCs need to be updated based on the clinical evaluation evidence, the Provider will then need to create two separate Task resources in this scenario. The list below highlights the steps for creating a Risk Adjustment Clinical Evaluation Evidence Task:
-    - Set the `Task.status` to `requested`
-    - Set the `Task.focus` to reference the [Risk Adjustment Coding Gap Report] resource that contains the Condition Category code (a.k.a, HCC) for this Task
-    - Set the `Task.reasonCode` using an appropriate code, such as closure-request or invalidation-request-never-had-condition, from the [Coding Gap Task Reason ValueSet](ValueSet-coding-gap-task-reason.html). Use the code creation-request for net-new. This is the reason for providing clinical evaluation evidence.      
-    - Set a `Task.input` with `MeasureReport.group.id` as value
-        - If the `Task.reasonCode` is other than `creation`, then a Task must have an `input` with `MeasureReport.group.id` as value. For example, the `input.value` is the `group.id` for HCC189 from the MeasureReport. `MeasureReport.group.id` uniquely identifies a Condition Category code that is included in a MeasureReport, this is how to indicate in a Task which coding gap (a.k.a, HCC) the Task is for. 
-    - Set another `Task.input` to reference a [Risk Adjustment SearchSet Bundle]
-        - To provide clinical evaluation evidence, this is done by having a `Task.input` reference a searchset Bundle, the [Risk Adjustment SearchSet Bundle], which is a contained resource of this Task. 
-    - `Task.contained` contains the searchSet Bundle resource
-        - Note that the searchSet Bundle resource itself is contained using `Task.contained`. The searchSet Bundle includes entries for resources of clinical evaluation evidence and the absolute url of these resources which are provided in `Bundle.entry.fullUrl`. For example, if the Provider provides an Encounter and a Condition resource as clinical evaluation evidence, the Task will have a `Task.input` reference a searchset Bundle with two entries, one entry with the Encounter resource with its fullUrl and the other entry with the Condition resource with its fullUrl.  
-
-Provider posts (POST) the Task resource (in a `requested` status) to the Payer or a 3rd Party Server for review by the Risk Adjustment Coder. The Risk Adjustment Coder reviews the Task and the contained clinical evaluation evidence and conducts medical record review. 
-
-The Risk Adjustment Coder has the option to either reject or complete a Task.
-- In a rejected scenario, for example, if evidence is missing, the Risk Adjustment Coder updates the Task with the following changes. The process then stops and no further action is taken (no patient records will be updated on the Payer system). 
-    - Changes the `Task.status` from `requested` to `rejected`
-    - Provides narrative reason for rejection in `statusReason.text`
-    - Updates the `Task.lastModified` timestamp
-- The completed scenario is when the Risk Adjustment Coder approves the new evidence submitted after medical record review, formally updates the patient records in the Payer's database, and then completes the Task. The Task status is updated from `requested` to `completed` and the `lastModified` is also updated. 
-
-The risk adjustment lifecycle renews. The risk adjustment engine runs against the patient records with the updated information. The generated Risk Adjustment Coding Gap MeasureReports would then reflect more accurate and up-to-date coding gap information. Note that the Provider sending a Task for a change request, for example a closure request, would not guarantee a gap closure on the Payer end. 
-
-These Task resources should be stored, so the Provider, the Risk Adjustment Coder, or the Payer can access them and be able to review the Tasks details and their lifecyle updates history.
-
-{% include img-portrait.html img="remediation.png" caption="Figure 2.4-2: Using Task to Support Remediation"%}
 
 
 {% include link-list.md %}
