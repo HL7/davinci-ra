@@ -1,6 +1,6 @@
 
 <div class="bg-success" markdown="1">
-This page has been updated from Report Remediation to Submit Data to Payer based on ballot reconciliations. 
+This page is being updated from Report Remediation to Submit Data to Payer based on ballot reconciliations. The main changes will include removing the Risk Adjustment Clinical Evaluation Evidence Task and using the [$ra.submit-data] operation and the [Risk Adjustment Data Exchange MeasureReport] for submitting clinical evaluation evidence to Payer.  
 </div>
 
 ### Introduction and Background
