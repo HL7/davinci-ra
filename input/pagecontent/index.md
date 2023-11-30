@@ -1,24 +1,7 @@
-<div class="note-to-balloters" markdown="1">
-
-**The May 2023 Ballot** includes the following high level changes to support new functionalities, introduce Digital Condition Category as DRAFT content for review, and address resolved trackers. 
-  - The Guidance page in STU1 is now broken into two pages, [General Guidance] and [Report Generation], with updates and new content    
-  - New pages: [Report Generation], [Report Query], [Remediation], and [Report Annotation]
-  - New profiles and extensions, see [Profiles], and [Capability statements] 
-  - New page: [Digital Condition Category(dCC)](dcc.html)
-  - New operation: [$ra.evaluate-measure]
-  - **Applied**: Add "data collection period" to Glossary ([FHIR-37672](https://jira.hl7.org/browse/FHIR-37672))
-  - **Applied**: Corrected CMS-HCC model to HHS-HCC model ([FHIR-37745](https://jira.hl7.org/browse/FHIR-37745))
-  - **Applied**: Corrected Category misspelling ([FHIR-38205](https://jira.hl7.org/browse/FHIR-38205))
-  - **Applied**: Corrected Condition misspelling in Suspect Type Value Set ([FHIR-38206](https://jira.hl7.org/browse/FHIR-38206))
-  - **Applied**: Corrected Venn Diagram misspelling in DCC content page ([FHIR-39300](https://jira.hl7.org/browse/FHIR-39300))
-  - **Applied**: Make "Example CMS Hierarchical Condition Category Value Set" a true sample ([FHIR-39371](https://jira.hl7.org/browse/FHIR-39371))
-  - **Applied**: Remove "Code System" and "Value Set" from names and titles of code system and value set ([FHIR-39374](https://jira.hl7.org/browse/FHIR-39374))
 
 <div class="new-content" markdown="1">
 Where possible, new and updated content are highlighted with green text and background
 </div><!-- new-content -->
-
-</div>
 
 ###  Summary
 
@@ -41,8 +24,8 @@ This implementation guide is divided into several pages which are listed at the 
     - [General Guidance]\: This page provides guidance that applies to all functionalities in this implementation guide.
     - [Report Generation]\: This page describes how generating a Risk Adjustment Coding Gap Report is accomplished.
     - [Report Query]\: This page provides guidance on using query to return a Risk Adjustment Coding Gap Report(s) and their evaluated resources.
-    - [Remediation]\: This page documents how to use Task to request a gap closure, gap invalidation, or add a net-new to coding gaps reported in a Risk Adjustment Coding Gap Report and provide clinical evaluation evidence.
-    - [Report Annotation]\: This page describes how providers can add a comment/annotation(s) to the Risk Adjustment Coding Gap Report to indicate that they took an action while seeing the patient
+    - [Submit Data to Payer]\: This page provides guidance on submitting clinical evaluation evidence to Payer using [$submit-data](https://www.hl7.org/fhir/measure-operation-submit-data.html) and [Risk Adjustment Data Exchange MeasureReport].
+    - [Add Remark to Condition Category]\: This page describes how providers can add remarks to Condition Categories on the Risk Adjustment Coding Gap Report to note that they took actions while seeing the patient.
 - [Digital Condition Category (dCC)]\: This page describes how a Condition Category can be structured as a proportion measure and be specified using CQL as a digital Condition Category in a similar fashion to electronic quality measures through an example. 
 </div><!-- new-content -->   
 - FHIR Artifacts: These pages list FHIR artifacts specified in this implementation guide. 

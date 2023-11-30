@@ -125,4 +125,6 @@
 [Digital Condition Category (dCC)]: dcc.html
 
 [Condition Category Remark]: StructureDefinition-ra-ccRemark.html
+[Add Remark to Condition Category]: cc-remark.html
+[Submit Data to Payer]: submit-data-to-payer.html
 
