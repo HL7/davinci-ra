@@ -59,10 +59,6 @@
 - [Encounter43Pat01: Pat01 Encounter on 2019-02-10]
 - [Encounter44Pat01: Pat01 Encounter on 2017-01-18]
 - [Encounter45Pat01: Pat01 Encounter on 2018-07-21]
-<div class="bg-success" markdown="1">
-
-- [Encounter46Pat01: Pat01 Encounter on 2021-10-15 (clinical evaluation evidence for Task01)]
-</div><!-- new-content -->
 
 - [Group01: Risk Adjustment Patient Group, (Patient01: Eve Everywoman)]
 - [Group02: Risk Adjustment Patient Group, (Patient02: Adam Everyman, Patient03: Nelda Nuclear)]  
@@ -100,13 +96,6 @@
 - [Practitioner01: Harold Hippocrates]
 - [Practitioner02: Patrick Pump]
 - [Practitioner03: Otto Osler]
-
-<div class="bg-success" markdown="1">
-
-- [SearchSetBundle01Pat01: Pat01 MeasureReport01 group003]
-
-- [Task01: Risk Adjustment Clinical Evaluation Evidence Task for MeasureReport01, HCC59 (group003), (Patient01: Eve Everywoman)]
-</div><!-- new-content -->
 
 
 {% include link-list.md %}

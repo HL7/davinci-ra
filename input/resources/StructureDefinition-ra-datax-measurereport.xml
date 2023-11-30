@@ -99,7 +99,7 @@
     </element>
     <element id="MeasureReport.type">
       <path value="MeasureReport.type"/>
-      <short value="The type code is fixed to 'individual' for a risk adjustment coding gap report"/>
+      <short value="The type code is fixed to 'data-collection' for a risk adjustment data exchange measure report"/>
       <type>
         <code value="code"/>
       </type>

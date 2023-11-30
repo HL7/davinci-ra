@@ -1,10 +1,8 @@
 [Home]: index.html "Home Page"
 
-[Annotation]: StructureDefinition-ra-annotation.html
 [Asynchronous Request Patterns]: https://www.hl7.org/fhir/async.html
 [Bulk]: report-generation.html#bulk-data-request-for-risk-adjustment-coding-gap-measurereports
 [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]: Bundle-ra-bundle01.html
-[SearchSetBundle01Pat01: Pat01 MeasureReport01 group003]: Bundle-ra-searchsetbundle01pat01.html
 [Capability Statements]: capabilities.html
 [Clinical Evaluation Period]:glossary.html#glossary
 [Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm
@@ -102,7 +100,6 @@
 [Report Annotation]: report-annotation.html
 [Report Generation]: report-generation.html
 [Report Query]: report-query.html
-[Risk Adjustment Clinical Evaluation Evidence Task]: StructureDefinition-ra-clinical-evaluation-evidence-task.html
 [Risk Adjustment Coding Gap Remediation]: guidance-ra-coding-gap-remediation.html
 [Risk Adjustment Coding Gap Resolution]: guidance-ra-coding-gap-resolution.html
 [Risk Adjustment Coding Gap Report Bundle]: StructureDefinition-ra-measurereport-bundle.html
@@ -111,17 +108,12 @@
 [Risk Adjustment Coding Gap Report Profile]: StructureDefinition-ra-measurereport.html
 [Risk Adjustment Model Measure]: StructureDefinition-ra-model-measure.html
 [Risk Adjustment Model Measure Profile]: StructureDefinition-ra-model-measure.html
-[Risk Adjustment Clinical Evaluation Evidence Task]: StructureDefinition-ra-clinical-evaluation-evidence-task.html
 
 [Risk Adjustment Data Exchange MeasureReport]: StructureDefinition-ra-datax-measurereport.html
-
-[Risk Adjustment SearchSet Bundle]: StructureDefinition-ra-searchset-bundle.html
 
 [SMART App Launch]: http://hl7.org/fhir/smart-app-launch/history.html
 [SMART Backend Services]: https://hl7.org/fhir/uv/bulkdata/authorization/index.html
 [Specifying dCC]: dcc.html
-
-[Task01: Risk Adjustment Clinical Evaluation Evidence Task for MeasureReport01, HCC59 (group003), (Patient01: Eve Everywoman)]: Task-ra-task01measurereport01group003.html
 
 [Terminology]: terminology.html
 [Transition Strategy]: dcc-transition-strategy.html
@@ -132,6 +124,5 @@
 [Evaluated]:report-generation.html#the-evaluated-approach
 [Digital Condition Category (dCC)]: dcc.html
 
-[$ra.submit-data]: OperationDefinition-ra.submit-data.html
 [Condition Category Remark]: StructureDefinition-ra-ccRemark.html
 

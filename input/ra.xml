@@ -57,15 +57,7 @@
       <name value="ra-bundle01: Risk Adjustment Bundle"/>
       <description value="Example Risk Adjustment Bundle"/>
       <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/ra-searchsetbundle01pat01"/>
-      </reference>
-      <name value="ra-searchsetbundle01pat01: SearchSet Bundle Pat1 MeasureReport01 group003"/>
-      <description value="Example Risk Adjustment SearchSet Bundle with clinical evaluation evidence for Patient01 Eve Everywoman MeasureReport01 group003 HCC 59: Major Depressive, Bipolar, and Paranoid Disorders"/>
-      <exampleBoolean value="true"/>
-    </resource>    
+    </resource>   
     <resource>
       <reference>
         <reference value="Group/ra-group01"/>
@@ -656,14 +648,6 @@
       </reference>
       <name value="Practitioner: Otto Osler"/>
       <description value="Otto Osler"/>
-      <exampleBoolean value="true"/>
-    </resource>  
-    <resource>
-      <reference>
-        <reference value="Task/ra-task01measurereport01group003"/>
-      </reference>
-      <name value="Task: Clinical Evaluation Task"/>
-      <description value="Task for Patient01 Eve Everywoman MeasureReport01 group003 HCC 59: Major Depressive, Bipolar, and Paranoid Disorders"/>
       <exampleBoolean value="true"/>
     </resource>   
     <page>
