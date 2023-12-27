@@ -1,5 +1,3 @@
-<div class="bg-success" markdown="1">
-
 ### Introduction and Background
 
 During this phase of the lifecycle process, the Payer determines if there is grounds for suspecting that a patient may have a risk-adjustable condition that has not yet been documented during the current clinical evaluation period. Quality measures have clear rules governing when the patient is included in/excluded from the measure denominator and numerator; not so for risk adjustment. Payers often must statistically infer the likelihood that a patient might have an undocumented Condition Category (CC). This statistical process is called Condition Category (CC) suspecting and is generally done in two ways:
@@ -39,7 +37,7 @@ In the example shown in Figure 2.2-1, a Payer plays the role both as Reporting S
 As shown in Figure 2.2-2, the Provider playing the role of the Reporting Client queries the [Risk Adjustment Coding Gap Report] on the Payer's Reporting Server with search parameters.  The Payer's Reporting Server returns the [Risk Adjustment Coding Gap Report] and the evaluated Resources to the Provider.
 
 {% include img-portrait.html img="actors-request.png" caption="Figure 2.2-2 Report Generation Actors - Example 2"%}
-</div><!-- new-content -->
+
 
 ### Risk Adjustment Coding Gap MeasureReport
 
@@ -74,7 +72,7 @@ Figure 2.2-4 provides a graphical view of how these resources are related to the
 
 {% include img-portrait.html img="report-risk-adjustment-resource-graph.png" caption="Figure 2.2-4 Resource Graph for Risk Adjustment Coding Gap Report"%}
 
-<div class="bg-success" markdown="1">
+
 
 ### Approaches for Generating Risk Adjustment Coding Gap Report
 
@@ -110,16 +108,13 @@ This approach requires an implementation that adheres to the requirements of thi
 
 This de novo approach requires an implementation that includes the [$ra.evaluate-measure] operation and requires [digital Condition Categories (dCCs)](dcc.html). The FHIR server is pre-populated with patient data and dCCs. The Payer then runs the [$ra.evaluate-measure] operation to produce a [Risk Adjustment Coding Gap Report].  During the [$ra.evaluate-measure] operation, CQL is executed against the patient and risk adjustment data.  The resources used by CQL logic evaluation are tracked and included in the final [Risk Adjustment Coding Gap Report].
 
-</div><!-- new-content -->
-
 ### Usage
 
 #### Request Risk Adjustment Coding Gap MeasureReport
 
-<div class="bg-success" markdown="1">
 
 `GET [base]/MeasureReport/?subject=Patient/ra-patient02&period=ge2021-01-01&period=le2021-12-31&_profile=http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport&_include=MeasureReport:evaluated-resource`
-</div><!-- new-content -->
+
 
 {% include examplebutton.html example="get-risk-adjustment-coding-gap-report-usage-example" b_title ="Click Here To See Example GET Risk Adjustment Coding Gap Report" %}
 
@@ -127,10 +122,8 @@ This de novo approach requires an implementation that includes the [$ra.evaluate
 
 If requesting [Risk Adjustment Coding Gap Report] for many patients, <span class="bg-success" markdown="1">the Reporting Client</span><!-- new-content --> may consider using the FHIR [Asynchronous Request Patterns] for the Bulk Data exchange operation.
 
-<div class="bg-success" markdown="1">
 
 `GET [base]/MeasureReport/?subject=Group/ra-group123&period=ge2021-01-01&period=le2021-12-31&_profile=http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport&_include=MeasureReport:evaluated-resource`
-</div><!-- new-content -->
 
 {% include examplebutton.html example="get-risk-adjustment-coding-gaps-report-usage-bulk-example" b_title = "Click Here To See Example GET Risk Adjustment Coding Gap Report Using Bulk Data" %}
 
