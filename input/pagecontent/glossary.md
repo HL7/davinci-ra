@@ -10,10 +10,8 @@
 - {: #Condition Category}<b>Condition Category</b>
   A Condition Category (CC) is a clinically or financially related grouping of medical conditions. Condition Categories (CCs) describe a broader set of similar diseases. Diseases within a Condition Category (CC) are related clinically and with respect to cost. Condition Categories (CCs) are categories before imposing hierarchies. ICD-9-CM or ICD-10-CM codes are mapped to diagnostic groups (DXGs), which represents a well-specified medical condition. DXGs are further aggregated into Condition Categories (CCs). An example is Condition Category (CC) 96 *Ischemic or Unspecified Stroke*, which includes DXG 96.01 *precerebral or cerebral arterial occlusion with infarction* and DXG 96.02 *acute but ill-defined cerebrovascular disease*.
 
-<div class="bg-success" markdown="1">
 - {:Data Collection Period}<b>Data Collection Period</b>
-  The Data Collection period refers to the first day of the clinical evaluation period through the date that data from the clinical evaluation period can be submitted to the risk adjustment organization.
-</div><!-- new-content -->     
+  The Data Collection period refers to the first day of the clinical evaluation period through the date that data from the clinical evaluation period can be submitted to the risk adjustment organization. 
 
 - <b>Digital Condition Categories (dCCs)</b> are condition category measures organized as self-contained measure specification and code packages, that use one or more sources of health information that is captured and can be transmitted electronically via interoperable systems. Digital condition categories use machine-readable measure logic, such as logics written in in Clinical Quality Language, and use common data models such as FHIR.
 

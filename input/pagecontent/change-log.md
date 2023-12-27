@@ -5,6 +5,7 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 
 ### Version 2.0.0
 
+- **Applied**: Added references to report generation overview and methods ([FHIR-40988](https://jira.hl7.org/browse/FHIR-40988))
 - **Applied**: Fix Group.Type to person ([FHIR-40995](https://jira.hl7.org/browse/FHIR-40995))
 - **Applied**: Make Group.actual fixed to true ([FHIR-40996](https://jira.hl7.org/browse/FHIR-40996))
 - **Applied**: Remove or better define reason for meta.profile requirement ([FHIR-40997](https://jira.hl7.org/browse/FHIR-40997))

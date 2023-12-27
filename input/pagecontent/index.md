@@ -105,18 +105,18 @@ This implementation guide does not define how payers determine a coding gap and 
 **Client**: 
 - Reporting Client: 
     - Payer plays this role when they request a [Risk Adjustment Coding Gap Report] to POST to Provider's FHIR Server 
-    - Provider plays this role 1) when they request a Risk Adjustment Coding Gap Report, or 2) when they add annotation to a Risk Adjustment Coding Gap Report
+    - Provider plays this role 1) when they request a Risk Adjustment Coding Gap Report, or 2) when they add a Condition Category Remark to a Risk Adjustment Coding Gap Report
 - Remediation Client  
     - Provider plays this role when they create a [Risk Adjustment Clinical Evaluation Evidence Task] 
 
 **Server**:
 - Reporting Server 
-    - The Payer plays this role when they 1) generate and store a Risk Adjustment Coding Gap Report, or 2) when they add annotation to the Risk Adjustment Coding Gap Report, if the Payer chooses to share any or all annotations submitted by the Provider
+    - The Payer plays this role when they 1) generate and store a Risk Adjustment Coding Gap Report, or 2) when they add Condition Category Remark to the Risk Adjustment Coding Gap Report, if the Payer chooses to share any or all Condition Category Remarks submitted by the Provider
 - Remediation Server 
     - The Payer/Risk Adjustment Coder plays this role when they receive and process the Risk Adjustment Clinical Evaluation Evidence Task        
-    - The Provider plays this role when they POST Risk Adjustment Coding Gap Report with annotation
+    - The Provider plays this role when they POST Risk Adjustment Coding Gap Report with Condition Category Remark(s)
 
-The Methodology section of this implementation guide describes these Actors in more detail in the context of report generation, query, and remediation steps of risk adjustment lifecycle and report annotation. 
+The Methodology section of this implementation guide describes these Actors in more detail in the context of report generation, query, and remediation steps of risk adjustment lifecycle and adding of Condition Category Remarks to the Risk Adjustment Coding Gap report. 
 </div><!-- new-content -->     
 
 ---
