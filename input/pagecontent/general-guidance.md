@@ -1,15 +1,12 @@
 
-<div class="bg-success" markdown="1">
 This page is being updated to reflect changes based on ballot reconciliations. The main changes will include updating Annotation and Remediation. The Annotation will be renamed to Condition Category Remark. Remediation will be updated to Submit Data to Payer through using the [$ra.submit-data] operation and the [Risk Adjustment Data Exchange MeasureReport]. 
-</div>
 
 ### Introduction
 
-The Da Vinci Project member organizations have identified the need of standardizing how risk adjustment coding gaps are communicated between payers and providers. This implementation guide (IG) specifies standardized risk adjustment coding gap reports and <span class="bg-success" markdown="1">provides guidance</span><!-- new-content --> to query the coding gap reports from a <span class="bg-success" markdown="1">Payer</span><!-- new-content --> for one or more patients. Standardizing the reporting structure helps lessen the burden on the providers in processing the reports so they can more easily address the patients’ care needs. This standardized structure also supports the Payer sharing information that they have but the providers may not, such as data from other providers’ claims, lab results, filled prescriptions, etc. 
+The Da Vinci Project member organizations have identified the need of standardizing how risk adjustment coding gaps are communicated between payers and providers. This implementation guide (IG) specifies standardized risk adjustment coding gap reports and provides guidance to query the coding gap reports from a Payer for one or more patients. Standardizing the reporting structure helps lessen the burden on the providers in processing the reports so they can more easily address the patients’ care needs. This standardized structure also supports the Payer sharing information that they have but the providers may not, such as data from other providers’ claims, lab results, filled prescriptions, etc. 
 
 
-<span class="bg-success" markdown="1">This IG also provides mechanisms enabling the feedback loop from Provider to Payer. Providers may add annotation on the Risk Adjustment Coding Gap Report that they took some action(s) for a specific coding gap on the report and communicates that back to the Payer. However, if the Provider identifies a coding gap that is on the report needs to be closed or invalidated based on medical record review, this feedback process is done through the Task profile, Risk Adjustment Clinical Evaluation Evidence Task, which allows the Provider to send the supporting clinical evaluation evidence to the Payer. This feedback loop is important for achieving the goal of improving the accuracy and completeness of risk adjustment.
-</span><!-- new-content -->
+This IG also provides mechanisms enabling the feedback loop from Provider to Payer. Providers may add a Condition Category Remark(s) to the Risk Adjustment Coding Gap Report to indicate that they took some action(s) for a specific coding gap on the report and communicates that back to the Payer. However, if the Provider identifies a coding gap that is on the report needs to be closed or invalidated based on medical record review, this feedback process is done using the [Risk Adjustment Data Exchange MeasureReport]  which allows the Provider to send the supporting clinical evaluation evidence to the Payer. This feedback loop is important for achieving the goal of improving the accuracy and completeness of risk adjustment.
 
 ### Preconditions and Assumptions
 
@@ -22,25 +19,23 @@ The Da Vinci Project member organizations have identified the need of standardiz
     - Security and privacy should follow [Security and Privacy](https://hl7.org/fhir/us/davinci-hrex/security.html#security-and-privacy) guidance specified in the Da Vinci Health Record Exchange (HRex) IG.   
     - Systems should use standard authentication and authorization approaches. The [SMART App Launch] and [SMART backend services] authentication/authorization approach are recommended models.
 
-<div class="bg-success" markdown="1">
 
 ### Risk Adjustment Lifecycle and Workflow Overview
 
 Figure 2.1-1 shows a high level overview of the risk adjustment workflow, which consists of three main phases: [Report Generation], [Report Query], and [Remediation]. Detailed guidance for each phase is provided on a separate page under the Methodology section. 
-</div><!-- new-content -->
 
 {% include img-portrait.html img="lifecycle-phases.png" caption="Figure 2.1-1 Risk Adjustment Lifecycle Phases"%}
 
-<div class="bg-success" markdown="1">
 
 #### Report Generation
 
-Report generation describes three different approaches to generate a [Risk Adjustment Coding Gap Report], which are referred to as Assisted, Generated, and Evaluated in this IG. 
+For a complete introduction and background to Report Generation, please visit [Report Generation Introduction].  Report generation describes three different approaches to generate a [Risk Adjustment Coding Gap Report], which are referred to as Assisted, Generated, and Evaluated in this IG. 
 
 - [Assisted](report-generation.html#the-assisted-approach): A non-FHIR approach. The Payer uses their existing processes, such as SQL, SAS, and object-oriented languages, to generate a comma-separated values (CSV) file with tuples of patient and risk adjustment data. The Payer uses a non-FHIR RESTful API to populate a [Risk Adjustment Coding Gap Report] based on data in the CSV file. A REST server then POSTs the generated MeasureReports to the FHIR server. A standardized CSV header that could be used by this approach is defined in this IG. This approach will not contain evaluatedResources in a MeasureReport. 
 - [Generated](report-generation.html#the-generated-approach): Mostly a non-FHIR approach. The Payer generates a FHIR [Risk Adjustment Coding Gap Report] and evaluates resources based on data from *traditional* risk adjustment coding gap reports. These *traditional* reports are generated by their existing processes using patient data and risk adjustment data produced by risk adjustment engines. A REST server then POST the generated MeasureReports to the FHIR server. 
 - [Evaluated](report-generation.html#the-evaluated-approach): A FHIR approach. This approach uses the [$ra.evaluate-measure] operation and requires [digital Condition Categories (dCCs)](dcc.html). The FHIR server is pre-populated with patient data and dCCs. The Payer runs the [$ra.evaluate-measure] operation against their FHIR server, CQL is executed against the patient and risk adjustment data to produce a [Risk Adjustment Coding Gap Report] which references the evaluated resources used by CQL logics evaluation.
 
+You will find more details on the three approaches at [Report Generation Approaches]
 #### Report Query
 
 The Client can query the [Risk Adjustment Coding Gap Report] once they are generated. For example, the Payer acting as the Reporting Client can query reports based on search parameters and POST them to the Provider server. See the [Report Query] page for details and guidance. 
@@ -55,13 +50,12 @@ See the [Remediation] page for more details and guidance.
 
 #### Report Generation, Query, and Remediation Workflow Overview
 
-</div><!-- new-content -->
 
 
-#### Report Annotation
-An electronic medical record (EMR) may choose to display all or part of the [Risk Adjustment Coding Gap Report] to the Provider at the point of care.  At that time, if the Provider wants to note the action they took in regard to a Risk Adjustment coding gap, they can put that comment on the Risk Adjustment Coding Gap Report and return it to the Payer. This process is called [Report Annotation].
+#### Report Condition Category Remark
+An electronic medical record (EMR) may choose to display all or part of the [Risk Adjustment Coding Gap Report] to the Provider at the point of care.  At that time, if the Provider wants to note the action they took in regard to a Risk Adjustment coding gap, they can put that comment on the Risk Adjustment Coding Gap Report and return it to the Payer. This process is called [Condition Category Remark].
 
-{% include img-portrait.html img="report-annotation-overview.png" caption="Figure 2.1-3 Report Annotation Overview"%}
+{% include img-portrait.html img="report-annotation-overview.png" caption="Figure 2.1-3 Report Condition Category Remark Overview"%}
 ### Attribution
 
 Member attribution establishes associations between providers and payers. The process of establishing and exchanging patient lists for risk adjustment coding gap reports is not in the scope of this implementation guide. One possible way of exchanging Member Attribution Lists between providers and payers is described in the [Da Vinci - Member Attribution (ATR) List] implementation guide.
