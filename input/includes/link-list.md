@@ -130,3 +130,4 @@
 [Add Remark to Condition Category]: cc-remark.html
 [Submit Data to Payer]: submit-data-to-payer.html
 
+[$submit-data]: https://hl7.org/fhir/R4/measure-operation-submit-data.html
