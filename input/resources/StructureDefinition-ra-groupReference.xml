@@ -6,7 +6,6 @@
   <title value="Group Reference"/>
   <status value="active"/>
   <experimental value="false"/>
-  <publisher value="Da Vinci Project"/>
   <description value="This extension identifies which Condition Category (CC) gap the supporting evidence (represented by `MeasureReport.group.evaluatedResource`) is for."/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>

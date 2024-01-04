@@ -6,13 +6,6 @@
   <title value="Risk Adjustment Coding Gap MeasureReport"/>
   <status value="active"/>
   <experimental value="false"/>
-  <publisher value="Da Vinci Project"/>
-  <contact>
-    <telecom>
-      <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/cqi/index.cfm"/>
-    </telecom>
-  </contact>
   <description value="This profile is based on the [MeasureReport](http://hl7.org/fhir/R4/measurereport.html) to represent a risk adjustment coding gap report."/>
   <jurisdiction>
     <coding>

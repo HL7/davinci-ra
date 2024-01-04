@@ -7,13 +7,6 @@
     <title value="Risk Adjustment Coding Gap Report Bundle"/>
     <status value="active"/>
     <experimental value="false"/>
-    <publisher value="Da Vinci Project"/>
-    <contact>
-      <telecom>
-        <system value="url"/>
-        <value value="http://www.hl7.org/Special/committees/cqi/index.cfm"/>
-      </telecom>
-    </contact>
     <description value="The Risk Adjustment Coding Gap Report Bundle Profile describes a collection bundle returned by the [$ra.evaluate-measure](OperationDefinition-ra.evaluate-measure.html) operation. This bundle is a collection of Risk Adjustment Coding Gap Reports."/>
     <jurisdiction>
       <coding>

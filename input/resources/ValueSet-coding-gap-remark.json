@@ -7,7 +7,6 @@
     ]
   },
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-remark",
-  "version": "1.0.0",
   "name": "CodingGapRemark",
   "title": "Coding Gap Remark",
   "status": "active",

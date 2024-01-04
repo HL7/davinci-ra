@@ -6,7 +6,6 @@
   <title value="Confidence Scale"/>
   <status value="active"/>
   <experimental value="false"/>
-  <publisher value="Da Vinci Project"/>
   <description value="Confidence scale for a Condition Category (CC) coding gap."/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>

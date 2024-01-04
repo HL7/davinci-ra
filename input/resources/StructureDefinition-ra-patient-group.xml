@@ -5,7 +5,6 @@
     <name value="PatientGroup"/>
     <title value="Patient Group"/>
     <status value="active"/>
-    <publisher value="Da Vinci Project"/>
     <description value="The Patient Group Profile describes a group consisting of one or more patients."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>

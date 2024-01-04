@@ -6,7 +6,6 @@
   <title value="Risk Adjustment Clinical Data Collection Deadline"/>
   <status value="active"/>
   <experimental value="false"/>
-  <publisher value="Da Vinci Project"/>
   <description value="Risk Adjustment Clinical Data Collection Deadline"/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>

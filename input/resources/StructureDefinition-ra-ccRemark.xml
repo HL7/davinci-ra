@@ -6,7 +6,6 @@
   <title value="Condition Category Remark"/>
   <status value="active"/>
   <experimental value="false"/>
-  <publisher value="Da Vinci Project"/>
   <description value="Remark added for a Condition Category."/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>

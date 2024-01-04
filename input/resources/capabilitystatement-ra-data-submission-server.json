@@ -1,24 +1,12 @@
 {
     "resourceType": "CapabilityStatement",
-    "id": "ra-remediation-client",
-    "url": "http://hl7.org/fhir/us/davinci-ra/CapabilityStatement/ra-remediation-client",
-    "version": "1.0.0",
-    "name": "RARemediationClientCapabilityStatement",
-    "title": "Risk Adjustment Remediation Client Capability Statement",
+    "id": "ra-data-submission-server",
+    "url": "http://hl7.org/fhir/us/davinci-ra/CapabilityStatement/ra-data-submission-server",
+    "name": "RADataSubmissionServerCapabilityStatement",
+    "title": "Risk Adjustment Data Submission Server Capability Statement",
     "status": "active",
     "experimental": false,
-    "publisher": "HL7 International - Clinical Quality Information Work Group",
-    "contact": [
-        {
-            "telecom": [
-                {
-                    "system": "url",
-                    "value": "http://www.hl7.org/Special/committees/cqi/index.cfm"
-                }
-            ]
-        }
-    ],
-    "description": "This profile defines the expected capabilities of a Da Vinci Risk Adjustment Remediation Client when conforming to the Da Vinci Risk Adjustment Implementation Guide for interactions between Remediation Clients and Remediation Servers. Clients are the actors making the request for remediating Risk Adjustment coding gaps for Risk Adjustment Coding Gap Reports of patient(s) that are available on the Server.",
+    "description": "This profile defines the expected capabilities of a Da Vinci Risk Adjustment Data Submission Server when conforming to the Da Vinci Risk Adjustment Implementation Guide for interactions between Clients and Servers. Servers are the actors receiving and processing the Risk Adjustment Data Exchange MeasureReports submitted by the Client.",
     "jurisdiction": [
         {
             "coding": [
@@ -43,11 +31,11 @@
     ],
     "rest": [
         {
-            "mode": "client",
+            "mode": "server",
             "security": {
                 "description": "For general security consideration refer to the [Security and Privacy Considerations](http://hl7.org/fhir/R4/secpriv-module.html)."
             },
-            "documentation": "Da Vinci Risk Adjustment Remediation Client **SHALL** support the Remediation transactions and profiles specified in the Methodology Section of this implementation guide, as specified in this capability statement.",
+            "documentation": "Da Vinci Risk Adjustment Data Submission Server **SHALL** support the risk adjustment data submission transaction and profiles specified in the Methodology Section of this implementation guide and the base FHIR $submit-data operation., as specified in this capability statement",
             "interaction": [
                 {
                     "extension": [
@@ -88,8 +76,8 @@
             ],
             "resource": [
                 {
-                    "type": "Task",
-                    "profile": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinical-evaluation-evidence-task",
+                    "type": "MeasureReport",
+                    "profile": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-datax-measurereport",
                     "interaction": [
                         {
                             "extension": [
@@ -98,16 +86,46 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "code": "create",
-                            "documentation": "Create allows maintainers of the Tasks to create the logical definition of a Task"
+                            "code": "read",
+                            "documentation": "Read allows maintainers of the Risk Adjustment Data Exchange MeasureReports to read the logical definition of a Risk Adjustment Data Exchange MeasureReport."
+                        },                
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "update",
+                            "documentation": "Update allows maintainers of the Risk Adjustment Data Exchange MeasureReports to update the logical definitions of a MeasureReport by its id"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "patch",
+                            "documentation": "Patch allows maintainers of the Risk Adjustment Data Exchange MeasureReports to update the logical definition of a MeasureReport by posting a set of changes to it"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "search-type",
+                            "documentation": "Search allows maintainers of the Risk Adjustment Data Exchange MeasureReports to find the logical definition of a MeasureReport"
                         }
-                    ],    
-                    "conditionalCreate": true,      
+                    ],      
+                    "conditionalUpdate": true,     
                     "referencePolicy": [
                         "literal",
                         "logical"
                     ]
-                },
+                },                
                 {
                     "type": "ImplementationGuide",
                     "profile": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide",
@@ -418,7 +436,7 @@
                             "name": "mode",
                             "definition": "http://hl7.org/fhir/SearchParameter/CapabilityStatement-mode",
                             "type": "token",
-                            "documentation": "Mode - restful (server/client) or messaging (sender/receiver)"
+                            "documentation": "Mode - restful (server/server) or messaging (sender/receiver)"
                         },
                         {
                             "name": "context-quantity",

@@ -2,12 +2,10 @@
     "resourceType": "CapabilityStatement",
     "id": "ra-reporting-client",
     "url": "http://hl7.org/fhir/us/davinci-ra/CapabilityStatement/ra-reporting-client",
-    "version": "1.0.0",
     "name": "RAClientCapabilityStatement",
     "title": "Risk Adjustment Reporting Client Capability Statement",
     "status": "active",
     "experimental": false,
-    "publisher": "HL7 International - Clinical Quality Information Work Group",
     "contact": [
         {
             "telecom": [

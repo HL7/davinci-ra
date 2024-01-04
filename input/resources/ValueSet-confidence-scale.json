@@ -7,7 +7,6 @@
     ]
   },
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/confidence-scale",
-  "version": "1.0.0",
   "name": "ConfidenceScale",
   "title": "Confidence Scale Value Set",
   "status": "active",

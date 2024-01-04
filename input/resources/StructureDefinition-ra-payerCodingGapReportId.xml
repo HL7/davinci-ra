@@ -6,7 +6,6 @@
   <title value="Payer Coding Gap Report Id"/>
   <status value="active"/>
   <experimental value="false"/>
-  <publisher value="Da Vinci Project"/>
   <description value="Unique id of the original payer generated coding gap report. This is the MeasureReport.id from the Risk Adjustment Coding Gap Report profile."/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>

@@ -7,7 +7,6 @@
     ]
   },
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/suspect-type",
-  "version": "1.0.0",
   "name": "RiskAdjustmentSuspectType",
   "title": "Risk Adjustment Suspect Type ValueSet",
   "status": "active",
