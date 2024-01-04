@@ -53,13 +53,13 @@ In addition, the [Risk Adjustment Coding Gap Report] provides the capability of 
 
 ### Example Coding Gap Report
 
-Figure 2-2 is an example [Risk Adjustment Coding Gap Report]. The <span class="bg-success" markdown="1">Provider</span><!-- new-content --> queries for the [Risk Adjustment Coding Gap Report]s for patient Eve Everywoman (`subject`) and for a clinical evaluation period from January 1, 2021 to December 31, 2021 (`periodStart` and `periodEnd`). The <span class="bg-success" markdown="1">Payer</span><!-- new-content --> receives the request and finds a matching risk adjustment coding gap report for Eve Everywoman that has a clinical evaluation period of January 1, 2021 to September 30, 2021, which overlaps the `periodStart` and `periodEnd` dates provided in the <span class="bg-success" markdown="1">query - see [Report Query]</span><!-- new-content -->. This report was <span class="bg-success" markdown="1">generated</span><!-- new-content --> on October 18th, 2021 using the risk adjustment model CMS-HCC V24. As shown in this example report, Eve Everywoman has five Hierarchical Condition Categories (HCCs). Three of the HCCs are historic diagnoses and two are suspected diagnoses. For example, one of the historic diagnoses is HCC 18 (Diabetes with no Complications). The status of this coding gap is shown as closed and the evidence status date is April 1, 2021. The supporting evidence field shows the clinical data that was used to close the coding gap HCC 18.
+Figure 2-2 is an example [Risk Adjustment Coding Gap Report]. The Provider queries for the [Risk Adjustment Coding Gap Report]s for patient Eve Everywoman (`subject`) and for a clinical evaluation period from January 1, 2021 to December 31, 2021 (`periodStart` and `periodEnd`). The Payer receives the request and finds a matching risk adjustment coding gap report for Eve Everywoman that has a clinical evaluation period of January 1, 2021 to September 30, 2021, which overlaps the `periodStart` and `periodEnd` dates provided in the query - see [Report Query]. This report was generated on October 18th, 2021 using the risk adjustment model CMS-HCC V24. As shown in this example report, Eve Everywoman has five Hierarchical Condition Categories (HCCs). Three of the HCCs are historic diagnoses and two are suspected diagnoses. For example, one of the historic diagnoses is HCC 18 (Diabetes with no Complications). The status of this coding gap is shown as closed and the evidence status date is April 1, 2021. The supporting evidence field shows the clinical data that was used to close the coding gap HCC 18.
 
 {% include img-portrait.html img="report-risk-adjustment.png" caption="Figure 2.2-3 Example Risk Adjustment Coding Gap Report" %}
 
 ### Resources and Profiles
 
-The following resources and their profiles specified in this IG are used to support sharing <span class="bg-success" markdown="1">[Risk Adjustment Coding Gap Report]s between the Payer and the Provider</span><!-- new-content -->:
+The following resources and their profiles specified in this IG are used to support sharing [Risk Adjustment Coding Gap Report]s between the Payer and the Provider:
 
 |Resource Type|Profile Name|Link to Profile|
 |---|---|---|
@@ -68,7 +68,7 @@ The following resources and their profiles specified in this IG are used to supp
 |Measure|Risk Adjustment Model Measure|[Risk Adjustment Model Measure]|
 {: .grid}
 
-Figure 2.2-4 provides a graphical view of how these resources are related to the example report above. The main resource is the [Risk Adjustment Coding Gap Report] profile. This coding gap report references a [Risk Adjustment Model Measure], which indicates CMS-HCC V24 is the risk adjustment model this report is based on. The coding gap report also references the Patient ([US Core Patient](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html)) as well as the Organization ([US Core Organization](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-organization.html)) that generated the report. The graph shows three groups within a [Risk Adjustment Coding Gap Report] using three example HCCs from Figure 2.2-3 to illustrate how each `group` corresponds to an HCC including its attributes. <span class="bg-success" markdown="1">Note that the Bundle in this graph is a searchset Bundle returned by FHIR query with the Risk Adjustment Coding Gap Reports.</span><!-- new-content --> 
+Figure 2.2-4 provides a graphical view of how these resources are related to the example report above. The main resource is the [Risk Adjustment Coding Gap Report] profile. This coding gap report references a [Risk Adjustment Model Measure], which indicates CMS-HCC V24 is the risk adjustment model this report is based on. The coding gap report also references the Patient ([US Core Patient](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html)) as well as the Organization ([US Core Organization](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-organization.html)) that generated the report. The graph shows three groups within a [Risk Adjustment Coding Gap Report] using three example HCCs from Figure 2.2-3 to illustrate how each `group` corresponds to an HCC including its attributes. Note that the Bundle in this graph is a searchset Bundle returned by FHIR query with the Risk Adjustment Coding Gap Reports. 
 
 {% include img-portrait.html img="report-risk-adjustment-resource-graph.png" caption="Figure 2.2-4 Resource Graph for Risk Adjustment Coding Gap Report"%}
 
@@ -120,7 +120,7 @@ This de novo approach requires an implementation that includes the [$ra.evaluate
 
 #### Bulk Data Request for Risk Adjustment Coding Gap MeasureReports  
 
-If requesting [Risk Adjustment Coding Gap Report] for many patients, <span class="bg-success" markdown="1">the Reporting Client</span><!-- new-content --> may consider using the FHIR [Asynchronous Request Patterns] for the Bulk Data exchange operation.
+If requesting [Risk Adjustment Coding Gap Report] for many patients, the Reporting Client may consider using the FHIR [Asynchronous Request Patterns] for the Bulk Data exchange operation.
 
 
 `GET [base]/MeasureReport/?subject=Group/ra-group123&period=ge2021-01-01&period=le2021-12-31&_profile=http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport&_include=MeasureReport:evaluated-resource`

@@ -7,7 +7,7 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact deprecated="true" id="StructureDefinition/ra-annotation" key="StructureDefinition-ra-annotation" name="Annotation"/>
+<artifact id="Parameters/ra-measurereport01-patch" key="StructureDefinition-ra-annotation" name=""/>
 <artifact deprecated="true" id="ValueSet/coding-gap-annotation" key="ValueSet-coding-gap-annotation" name="Coding Gap Annotation"/>
 <artifact deprecated="true" id="CodeSystem/coding-gap-annotation" key="CodeSystem-coding-gap-annotation" name="Coding Gap Annotation CodeSystem"/>
 <artifact id="ValueSet/coding-gap-remark" key="ValueSet-coding-gap-remark" name="Coding Gap Remark"/>

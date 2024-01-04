@@ -7,7 +7,7 @@
     <valueCode value="cqi"/>
   </extension>  
   <url value="http://hl7.org/fhir/us/davinci-ra/ImplementationGuide/fhir.us.davinci-ra"/>
-  <version value="2.0.0-ballot"/>
+  <version value="2.0.0"/>
   <name value="RiskAdjustment"/>
   <title value="Da Vinci Risk Adjustment Implementation Guide"/>
   <status value="active"/>
@@ -752,7 +752,7 @@
     <!-- releaselabel should be the ballot status for HL7-published IGs. -->
     <parameter>
       <code value="releaselabel"/>
-      <value value="STU2 Ballot"/>
+      <value value="STU2"/>
     </parameter>
     <parameter>
       <code value="find-other-resources"/>

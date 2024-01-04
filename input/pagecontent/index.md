@@ -5,11 +5,9 @@ Where possible, new and updated content are highlighted with green text and back
 
 ###  Summary
 
-The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide (IG) describes exchanging risk adjustment coding gaps between payers and providers. Risk adjusted premium calculations are important to government managed care. To better inform providers of opportunities to address risk adjusted conditions, better enable payers to communicate risk adjustment information, and enhance government sponsors' ability to allocate funding accurately, payers and providers need a standard protocol to share and receive clinical data related to risk adjustment and a standard methodology to communicate risk based coding, documentation and submission status of chronic conditions. The <span class="bg-success" markdown="1">first Standard for Trial Use (STU) version</span><!-- new-content --> of this implementation guide focused on the standard exchange format of risk adjustment coding gaps from payers to providers, it offers potential for reducing the administrative burden experienced by providers by standardizing the reporting they receive from all payers.
+The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide (IG) describes exchanging risk adjustment coding gaps between payers and providers. Risk adjusted premium calculations are important to government managed care. To better inform providers of opportunities to address risk adjusted conditions, better enable payers to communicate risk adjustment information, and enhance government sponsors' ability to allocate funding accurately, payers and providers need a standard protocol to share and receive clinical data related to risk adjustment and a standard methodology to communicate risk based coding, documentation and submission status of chronic conditions. The first Standard for Trial Use (STU) version of this implementation guide focused on the standard exchange format of risk adjustment coding gaps from payers to providers, it offers potential for reducing the administrative burden experienced by providers by standardizing the reporting they receive from all payers.
 
-<div class="bg-success" markdown="1">
 This version of the implementation guide focuses on the communication from providers back to payers. It adds functionalities to support the workflow that allows providers and certified risk adjustment coders to review and remediate the risk adjustment coding gap reports provided by the payer. Providers and risk adjustment coders may close gaps, invalidate gaps, or discover net-new Condition Categories (CCs) during medical record review. The added functionalities allow them to provide the updated coding gap data along with supporting clinical evaluation evidence back to payers. This version also introduces the digital Condition Category (dCC). It describes how to specify dCCs, using Clinical Quality Language (CQL), through an example which would allow for a more automated process of generating risk adjustment coding gap reports by evaluating dCCs against clinical data. 
-</div><!-- new-content -->
 
 This implementation guide is supported by the Da Vinci initiative which is a private effort to accelerate the adoption of Health Level Seven International Fast Healthcare Interoperability Resources (HL7® FHIR®) as the standard to support and integrate value-based care (VBC) data exchange across communities. Like all Da Vinci Implementation Guides, it follows the [HL7 Da Vinci Guiding Principles] for the exchange of patient health information. As an HL7 FHIR Implementation Guide, changes to this specification are managed by the sponsoring [Clinical Quality Information (CQI) Work Group] and are incorporated as part of the standard balloting process.
 
@@ -19,15 +17,14 @@ This implementation guide is divided into several pages which are listed at the 
 
 - [Home]\: The home page provides the summary, background information, scope, and actors for this implementation guide.
 
-<div class="bg-success" markdown="1">
 - [Methodology]\: These pages provide guidance on the resource profiles and operation defined in this implementation guide.
     - [General Guidance]\: This page provides guidance that applies to all functionalities in this implementation guide.
     - [Report Generation]\: This page describes how generating a Risk Adjustment Coding Gap Report is accomplished.
     - [Report Query]\: This page provides guidance on using query to return a Risk Adjustment Coding Gap Report(s) and their evaluated resources.
-    - [Submit Data to Payer]\: This page provides guidance on submitting clinical evaluation evidence to Payer using [$submit-data](https://www.hl7.org/fhir/measure-operation-submit-data.html) and [Risk Adjustment Data Exchange MeasureReport].
+    - [Submit Data to Payer]\: This page provides guidance on submitting clinical evaluation evidence to Payer for the purpose of evaluating risk adjustment coding gaps using [$submit-data](https://www.hl7.org/fhir/measure-operation-submit-data.html) and [Risk Adjustment Data Exchange MeasureReport].
     - [Add Remark to Condition Category]\: This page describes how providers can add remarks to Condition Categories on the Risk Adjustment Coding Gap Report to note that they took actions while seeing the patient.
-- [Digital Condition Category (dCC)]\: This page describes how a Condition Category can be structured as a proportion measure and be specified using CQL as a digital Condition Category in a similar fashion to electronic quality measures through an example. 
-</div><!-- new-content -->   
+    - [Digital Condition Category (dCC)]\: This page describes how a Condition Category can be structured as a proportion measure and be specified using CQL as a digital Condition Category in a similar fashion to electronic quality measures through an example. 
+
 - FHIR Artifacts: These pages list FHIR artifacts specified in this implementation guide. 
     - [Profiles]\: This page lists the set of Profiles that are defined in this implementation guide to exchange risk adjustment coding gaps.
     - [Extensions]\: This page lists the set of Extensions that are defined in this implementation guide to exchange risk adjustment coding gaps.
@@ -90,7 +87,7 @@ What’s going on with these three different model versions? There are three ans
 
 ### Scope
 
-After careful review with the risk adjustment subject matter experts, it was determined that the most challenging aspect of the current risk adjustment process was the inconsistent manner in which reports on risk adjustment coding gaps were communicated between a provider (or system operating on their behalf) and a payer (or system operating on the payer’s behalf). Figure 1-2 shows a high-level example of the risk adjustment workflow in a CMS Medicare Advantage program. <span class="bg-success" markdown="1">This</span><!-- new-content --> implementation guide focuses on specifying a standard exchange format, the Risk Adjustment Coding Gap Report, <span class="bg-success" markdown="1">between </span><!-- new-content -->payers <span class="bg-success" markdown="1">and </span><!-- new-content -->providers. This diagram does not depict preceding steps such as the payer receiving clinical or claims data from providers or other sources, nor does it attempt to define contractual relationships.
+After careful review with the risk adjustment subject matter experts, it was determined that the most challenging aspect of the current risk adjustment process was the inconsistent manner in which reports on risk adjustment coding gaps were communicated between a provider (or system operating on their behalf) and a payer (or system operating on the payer’s behalf). Figure 1-2 shows a high-level example of the risk adjustment workflow in a CMS Medicare Advantage program. This implementation guide focuses on specifying a standard exchange format, the Risk Adjustment Coding Gap Report, between payers and providers. This diagram does not depict preceding steps such as the payer receiving clinical or claims data from providers or other sources, nor does it attempt to define contractual relationships.
 
 {% include img-portrait.html img="workflow-medicare-advantage.png" caption = "Figure 1-2 Workflow for Medicare Advantage Population" %}
 
@@ -98,25 +95,24 @@ This implementation guide does not define how payers determine a coding gap and 
 
 ### Actors and Roles
 
-<span class="bg-success" markdown="1">Different entities can play different Roles in different scenarios. The Actors in this implementation guide are Payer, Provider, and Risk Adjustment Coder (working on behalf of the Payer, e.g., Certified Risk Adjustment Coder (CRC)). For clarity in this IG, we may use the term Payer to refer to both the Payer and Risk Adjustment Coder. Their roles as Client and Server are described below. </span><!-- new-content -->
+Different entities can play different Roles in different scenarios. The Actors in this implementation guide are Payer and Provider. Their roles as Client and Server are described below. 
 
 <div class="bg-success" markdown="1">
-
 **Client**: 
-- Reporting Client: 
+- Reporting Client
     - Payer plays this role when they request a [Risk Adjustment Coding Gap Report] to POST to Provider's FHIR Server 
     - Provider plays this role 1) when they request a Risk Adjustment Coding Gap Report, or 2) when they add a Condition Category Remark to a Risk Adjustment Coding Gap Report
-- Remediation Client  
-    - Provider plays this role when they create a [Risk Adjustment Clinical Evaluation Evidence Task] 
+- Data Submission Client
+    - Provider plays this role when they create a [Risk Adjustment Data Exchange MeasureReport] and submit to Payer
 
 **Server**:
-- Reporting Server 
-    - The Payer plays this role when they 1) generate and store a Risk Adjustment Coding Gap Report, or 2) when they add Condition Category Remark to the Risk Adjustment Coding Gap Report, if the Payer chooses to share any or all Condition Category Remarks submitted by the Provider
-- Remediation Server 
-    - The Payer/Risk Adjustment Coder plays this role when they receive and process the Risk Adjustment Clinical Evaluation Evidence Task        
+- Reporting Server
+    - The Payer plays this role when they 1) generate and store a Risk Adjustment Coding Gap Report, or 2) when they add Condition Category remark to the Risk Adjustment Coding Gap Report, if the Payer chooses to share any or all Condition Category remarks submitted by the Provider
+    - The Payer plays this role when they receive and process the Risk Adjustment Data Exchange MeasureReport       
+- Data Submission Server
     - The Provider plays this role when they POST Risk Adjustment Coding Gap Report with Condition Category Remark(s)
 
-The Methodology section of this implementation guide describes these Actors in more detail in the context of report generation, query, and remediation steps of risk adjustment lifecycle and adding of Condition Category Remarks to the Risk Adjustment Coding Gap report. 
+The Methodology section of this implementation guide describes these Actors in more detail in the context of report generation, report query, and data submission steps of risk adjustment lifecycle and adding of Condition Category remarks to the Risk Adjustment Coding Gap report. 
 </div><!-- new-content -->     
 
 ---
@@ -141,6 +137,8 @@ Contributors
 - *Josh Lamb, Optum*
 - *Lloyd McKenzie, Dogwood Health Consulting* 
 - *Michael Stearns, Wolters Kluwer*
+- *Nidhi Pengoria, AthenaHealth*
+- *Swati Mukherjee, Optum*
 - *Viet Nguyen, Stratametrics*
 
 ---

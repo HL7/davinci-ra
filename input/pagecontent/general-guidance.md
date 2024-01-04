@@ -37,6 +37,7 @@ You will find more details on the three approaches at [Report Generation Approac
 
 The Client can query the [Risk Adjustment Coding Gap Report] once they are generated. For example, the Payer acting as the Reporting Client can query reports based on search parameters and POST them to the Provider server. See the [Report Query] page for details and guidance. 
 
+<div class="bg-success" markdown="1">
 #### Submit Data to Payer
 
 Once the queried Risk Adjustment Coding Gap MeasureReports have been sent to the intended recipient and filtered to ensure that only germane coding gaps (e.g., HCC gaps) are made available to providers, the Provider (or a software program acting on behalf of the Provider) determines whether the coding gap is currently valid, and whether the requested encounter data evidence exists to close the gap. The Provider will use the [Risk Adjustment Data Exchange MeasureReport] and the [$submit-data] operation to submit data to Payer. The Payer will then be able to use the provided patient data to update the data in their system for the next coding gap report generation.
@@ -46,7 +47,8 @@ See the [Submit Data to Payer] page for more details and guidance.
 #### Report Condition Category Remark
 An electronic medical record (EMR) may choose to display all or part of the [Risk Adjustment Coding Gap Report] to the Provider at the point of care.  At that time, if the Provider wants to note the action they took in regard to a Risk Adjustment coding gap, they can put that comment on the Risk Adjustment Coding Gap Report and return it to the Payer. This process is called [Condition Category Remark].
 
-{% include img-portrait.html img="report-annotation-overview.png" caption="Figure 2.1-3 Report Condition Category Remark Overview"%}
+{% include img-portrait.html img="report-cc-remark-overview.png" caption="Figure 2.1-3 Report Condition Category Remark Overview"%}
+</div>
 
 ### Attribution
 
