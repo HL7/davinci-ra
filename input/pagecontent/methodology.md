@@ -2,7 +2,8 @@
 - [General Guidance]
 - [Report Generation]
 - [Report Query]
-- [Remediation]
+- [Submit Data to Payer]
+- [Add Remark to Condition Category]
 
 <br />
 

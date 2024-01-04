@@ -1,6 +1,6 @@
 {
     "resourceType": "MeasureReport",
-    "id": "ra-measurereport01-with-annotation",
+    "id": "ra-measurereport01-with-remark",
     "meta": {
         "profile": [
             "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
@@ -185,14 +185,14 @@
                     }
                 },
                 {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-annotation",
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark",
                     "extension": [
                         {"url": "annotator",
                         "valueReference": {
                             "reference": "Practitioner/ra-prac01pat01"
                             }
                         },
-                        {"url": "annotated",
+                        {"url": "annotatedDatetime",
                         "valueDateTime": "2021-11-01"
                         },
                         {"url": "text",
@@ -202,14 +202,14 @@
                             "valueCodeableConcept" : {
                                 "coding": [
                                     {
-                                    "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-annotation",
+                                    "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark",
                                     "code": "assessed-present",
                                     "display": "Assessed and present"
                                     }
                                 ]
                             }
                         },
-                        {"url": "relatedData",
+                        {"url": "relatedDataIdentifier",
                             "valueIdentifier":  {
                                 "system": "http://example.org/fhir/myclaimno",
                                 "value": "CLM23333"}
@@ -376,14 +376,14 @@
                     }
                 },
                 {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-annotation",
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark",
                     "extension": [
                         {"url": "annotator",
                         "valueReference": {
                             "reference": "Practitioner/ra-prac01pat01"
                             }
                         },
-                        {"url": "annotated",
+                        {"url": "annotatedDatetime",
                         "valueDateTime": "2021-11-01"
                         },
                         {"url": "text",
@@ -393,7 +393,7 @@
                             "valueCodeableConcept" : {
                                 "coding": [
                                     {
-                                    "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-annotation",
+                                    "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark",
                                     "code": "deferred",
                                     "display": "Deferred"
                                     }
@@ -575,14 +575,14 @@
                     }
                 },
                 {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-annotation",
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark",
                     "extension": [
                         {"url": "annotator",
                         "valueReference": {
                             "reference": "Practitioner/ra-prac01pat01"
                             }
                         },
-                        {"url": "annotated",
+                        {"url": "annotatedDatetime",
                         "valueDateTime": "2021-11-01"
                         },
                         {"url": "text",
@@ -592,14 +592,14 @@
                             "valueCodeableConcept" : {
                                 "coding": [
                                     {
-                                    "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-annotation",
+                                    "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark",
                                     "code": "assessed-not-present"
                                     
                                     }
                                 ]
                             }
                         },
-                        {"url": "relatedData",
+                        {"url": "relatedDataIdentifier",
                             "valueIdentifier":  {
                                 "system": "http://example.org/fhir/mychart",
                                 "value": "432203939"}

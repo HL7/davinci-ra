@@ -70,7 +70,7 @@
 - [MeasureReport01: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]
 <div class="bg-success" markdown="1">
 
-- [MeasureReport01WithAnnotations: Risk Adjustment Coding Report with Annotations Added, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]
+- [MeasureReport01WithRemarks: Risk Adjustment Coding Report with Condition Category Remarks Added, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]
 </div><!-- new-content -->
 
 - [MeasureReport02: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient01: Eve Everywoman)]

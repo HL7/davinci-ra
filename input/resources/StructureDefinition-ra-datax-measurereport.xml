@@ -158,7 +158,7 @@
         <key value="ra-1"/>
         <severity value="error"/>
         <human value="Date precision SHALL be at least to day ( YYYY-MM-DD )"/>
-        <expression value="start.value.matches(&#39;^([0-9]{4})(-)(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]).*&#39;) and end.value.matches(&#39;^([0-9]{4})(-)(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9]).*&#39;)"/>
+        <expression value="start.toString().length()>9 and end.toString().length()>9"/>
       </constraint>
       <mustSupport value="true"/>
     </element>

@@ -157,7 +157,7 @@
     </element>
     <element id="Extension.extension:relatedDataIdentifier.url">
       <path value="Extension.extension.url"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type>
         <code value="uri"/>

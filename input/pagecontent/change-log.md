@@ -17,8 +17,8 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 ### Version 2.0.0-ballot
 
 - The 2.0.0-ballot includes the following changes to support new functionalities: 
-    - The Guidance page in STU1 is now broken into two pages, [General Guidance] and [Report Generation], with new content   
-    - New pages: [Report Generation], [Report Query], [Remediation], and [Report Annotation] 
+    - The Guidance page in STU1 is now broken into two pages, General Guidance and Report Generation, with new content   
+    - New pages: Report Generation, Report Query, Remediation, and Report Annotation 
     - New profiles and extensions, see [Profiles] 
 - It also introduces Digital Condition Category as DRAFT content for review:
     - New page: [Digital Condition Category(dCC)](dcc.html)

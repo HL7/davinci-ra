@@ -13,9 +13,8 @@
   <status value="active"/>
   <copyright value="Used by permission of HL7 International - Clinical Quality Information Work Group, all rights reserved Creative Commons License"/>
   <experimental value="false"/>
-  <publisher value="HL7 Clinical Quality Information Work Group"/>
+  <publisher value="HL7 International / Clinical Quality Information"/>
   <contact>
-    <name value="HL7 Clinical Quality Information Work Group"/>
     <telecom>
       <system value="url"/>
       <value value="http://www.hl7.org/Special/committees/cqi"/>
@@ -84,10 +83,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="MeasureReport/ra-measurereport01-with-annotation"/>
+        <reference value="MeasureReport/ra-measurereport01-with-remark"/>
       </reference>
-      <name value="ra-measurereport01-with-annotation: Risk Adjustment Measure Report with Annotation"/>
-      <description value="Example Risk Adjustment Measure Report with Annotations"/>
+      <name value="ra-measurereport01-with-remark: Risk Adjustment Measure Report with Condition Category Remark"/>
+      <description value="Example Risk Adjustment Measure Report with Condition Catetory Remark"/>
       <exampleBoolean value="true"/>
     </resource>  
     <resource>
