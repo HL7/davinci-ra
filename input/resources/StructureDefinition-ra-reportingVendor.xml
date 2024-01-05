@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ra-reportingVendor"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-reportingVendor"/>
+  <name value="ReportingVendor"/>
+  <title value="Reporting Vendor Extension"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <description value="A reference to the vendor who generated the report. The 'reporting vendor' is intended to represent the submitting entity when it is not the same as the reporting entity. This extension is used when the Receiver is interested in getting vendor information in the report."/>
+  <purpose value="The receiver may be interested in getting vendor information in the report as well."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="MeasureReport"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Vendor information"/>
+      <definition value="A reference to the vendor who generated the report."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-reportingVendor"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>          
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

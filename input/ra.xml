@@ -37,12 +37,6 @@
     <version value="3.1.1"/>
   </dependsOn>
   <!-- Note this dependency is only included to support references to the extensions used by the risk adjustment data exchange MeasureReport profile in this IG -->
-  <dependsOn id="deqm">
-    <uri value="http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm"/>
-    <packageId value="hl7.fhir.us.davinci-deqm"/>
-    <version value="3.1.0"/>
-  </dependsOn>
-  <!-- Note this dependency is only included to support references to the extensions used by the risk adjustment data exchange MeasureReport profile in this IG -->
   <dependsOn id="cqfmeasures">
     <uri value="http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures"/>
     <packageId value="hl7.fhir.us.cqfmeasures"/>

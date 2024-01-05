@@ -7,7 +7,7 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="Parameters/ra-measurereport01-patch" key="StructureDefinition-ra-annotation" name=""/>
+<artifact deprecated="true" id="StructureDefinition/ra-annotation" key="StructureDefinition-ra-annotation" name="Annotation"/>
 <artifact deprecated="true" id="ValueSet/coding-gap-annotation" key="ValueSet-coding-gap-annotation" name="Coding Gap Annotation"/>
 <artifact deprecated="true" id="CodeSystem/coding-gap-annotation" key="CodeSystem-coding-gap-annotation" name="Coding Gap Annotation CodeSystem"/>
 <artifact id="ValueSet/coding-gap-remark" key="ValueSet-coding-gap-remark" name="Coding Gap Remark"/>
@@ -95,6 +95,8 @@
 <artifact id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner: Otto Osler"/>
 <artifact id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner: Patrick Pump"/>
 <artifact deprecated="true" id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
+<artifact id="StructureDefinition/ra-reportingVendor" key="StructureDefinition-ra-reportingVendor" name="Reporting Vendor Extension"/>
+<artifact id="Parameters/ra-measurereport01-patch" key="Parameters-ra-measurereport01-patch" name="Risk Adjustement Measure Report Patch"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
 <artifact id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Risk Adjustment Clinical Data Collection Deadline"/>
 <artifact deprecated="true" id="StructureDefinition/ra-clinical-evaluation-evidence-task" key="StructureDefinition-ra-clinical-evaluation-evidence-task" name="Risk Adjustment Clinical Evaluation Evidence Task"/>
