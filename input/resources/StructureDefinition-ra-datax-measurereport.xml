@@ -39,18 +39,6 @@
       <mustSupport value="true"/>
     </element>
 
-    <element id="MeasureReport.extension:updatetype">
-      <path value="MeasureReport.extension"/>
-      <sliceName value="updatetype"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-submitDataUpdateType"/>
-      </type>
-      <mustSupport value="true"/>
-    </element>
-
     <element id="MeasureReport.extension:software">
       <path value="MeasureReport.extension"/>
       <sliceName value="software"/>
@@ -70,22 +58,11 @@
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-reportingVendor"/>
+        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-reportingVendor"/>
       </type>
       <mustSupport value="true"/>
     </element>
-<!--
-    <element id="MeasureReport.extension:location">
-      <path value="MeasureReport.extension"/>
-      <sliceName value="location"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-dataLocation"/>
-      </type>
-    </element>
--->
+
     <element id="MeasureReport.status">
       <path value="MeasureReport.status"/>
       <mustSupport value="true"/>
