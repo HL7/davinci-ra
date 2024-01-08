@@ -609,6 +609,14 @@
       <description value="Patch of a Risk Adjustement Measure Report"/>
       <exampleBoolean value="true"/>
     </resource>
+     <resource>
+      <reference>
+        <reference value="Parameters/ra-measurereport01-patch-mult"/>
+      </reference>
+      <name value="Risk Adjustement Measure Report Patch With Multiple Values"/>
+      <description value="Patch of multiple values for a Risk Adjustement Measure Report"/>
+      <exampleBoolean value="true"/>
+    </resource>
     <resource>
       <reference>
         <reference value="Patient/ra-patient01"/>
