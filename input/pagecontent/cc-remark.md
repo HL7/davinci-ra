@@ -6,10 +6,10 @@ Note: The [Condition Category Remark] extension is not intended to change the st
 
 ### The Condition Category Remark Extension
 For adding a remark, there is an extension, called [Condition Category Remark]. This extension is added to the [Risk Adjustment Coding Gap Report] within the `MeasureReport.group` element. This allows for a remark to specifically reference a Condition Category code. Also note the remark is a Complex extension and can repeat. Within the [Condition Category Remark] extension are several fields, all of which are optional:
-- `annotator` indicates who provided the annotation. It can link to a US Core Organization, a US Core Practitioner or a US Core PractitionerRole which allows you to reference both a Practitioner and an Organization
-- `annotatedDatetime` when the annotation was made
-- `text` a free text annotation
-- `code` a coded annotation to indicate the specific action taken. The code list which is extensible includes acknowledged, assessed and not present, assessed and present, and deferred
+- `author` indicates who provided the remark. It can link to a US Core Organization, a US Core Practitioner or a US Core PractitionerRole which allows you to reference both a Practitioner and an Organization
+- `authorDatetime` when the remark was made
+- `text` a free text remark
+- `code` a coded remark to indicate the specific action taken. The code list which is extensible includes acknowledged, assessed and not present, assessed and present, and deferred
 - relatedData that could be either an identifier to a reference to a Resource
     - the `relatedDataIentifier` can be used to link to a claim or document that the provider is sending via another method or transaction
 
