@@ -25,9 +25,9 @@
       <min value="0"/>
       <max value="*"/>
     </element>
-    <element id="Extension.extension:annotator">
+    <element id="Extension.extension:author">
       <path value="Extension.extension"/>
-      <sliceName value="annotator"/>
+      <sliceName value="author"/>
       <short value="Who added the remark"/>
       <min value="0"/>
       <max value="1"/>
@@ -35,16 +35,16 @@
         <code value="Extension"/>
       </type>
     </element>
-    <element id="Extension.extension:annotator.url">
+    <element id="Extension.extension:author.url">
       <path value="Extension.extension.url"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="annotator"/>
+      <fixedUri value="author"/>
     </element>   
-    <element id="Extension.extension:annotator.value[x]">
+    <element id="Extension.extension:author.value[x]">
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <max value="1"/>
@@ -56,9 +56,9 @@
       </type>
     </element>      
 
-    <element id="Extension.extension:annotatedDatetime">
+    <element id="Extension.extension:authorDatetime">
       <path value="Extension.extension"/>
-      <sliceName value="annotatedDatetime"/>
+      <sliceName value="authorDatetime"/>
       <short value="When the remark was added"/>
       <min value="0"/>
       <max value="1"/>
@@ -66,16 +66,16 @@
         <code value="Extension"/>
       </type>
     </element>
-    <element id="Extension.extension:annotatedDatetime.url">
+    <element id="Extension.extension:authorDatetime.url">
       <path value="Extension.extension.url"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="annotatedDatetime"/>
+      <fixedUri value="authorDatetime"/>
     </element>   
-    <element id="Extension.extension:annotatedDatetime.value[x]">
+    <element id="Extension.extension:authorDatetime.value[x]">
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <max value="1"/>

@@ -187,12 +187,12 @@
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark",
                     "extension": [
-                        {"url": "annotator",
+                        {"url": "author",
                         "valueReference": {
                             "reference": "Practitioner/ra-prac01pat01"
                             }
                         },
-                        {"url": "annotatedDatetime",
+                        {"url": "authorDatetime",
                         "valueDateTime": "2021-11-01"
                         },
                         {"url": "text",
@@ -378,12 +378,12 @@
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark",
                     "extension": [
-                        {"url": "annotator",
+                        {"url": "author",
                         "valueReference": {
                             "reference": "Practitioner/ra-prac01pat01"
                             }
                         },
-                        {"url": "annotatedDatetime",
+                        {"url": "authorDatetime",
                         "valueDateTime": "2021-11-01"
                         },
                         {"url": "text",
@@ -577,12 +577,12 @@
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark",
                     "extension": [
-                        {"url": "annotator",
+                        {"url": "author",
                         "valueReference": {
                             "reference": "Practitioner/ra-prac01pat01"
                             }
                         },
-                        {"url": "annotatedDatetime",
+                        {"url": "authorDatetime",
                         "valueDateTime": "2021-11-01"
                         },
                         {"url": "text",
