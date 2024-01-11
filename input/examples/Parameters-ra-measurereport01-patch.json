@@ -29,7 +29,7 @@
                             "part": [
                                 {
                                     "name": "url",
-                                    "valueUri": "annotatedDatetime"
+                                    "valueUri": "authorDatetime"
                                 },
                                 {
                                     "name": "value",

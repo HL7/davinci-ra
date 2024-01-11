@@ -29,7 +29,7 @@
                             "part": [
                                 {
                                     "name": "url",
-                                    "valueUri": "annotatedDatetime"
+                                    "valueUri": "authorDatetime"
                                 },
                                 {
                                     "name": "value",
@@ -72,7 +72,7 @@
                                 },
                                 {
                                     "name": "value",
-                                    "valueString": "Example annotation text for a condition category."
+                                    "valueString": "Example author text for a condition category."
                                 }
                             ]
                         }
@@ -107,7 +107,7 @@
                             "part": [
                                 {
                                     "name": "url",
-                                    "valueUri": "annotatedDatetime"
+                                    "valueUri": "authorDatetime"
                                 },
                                 {
                                     "name": "value",
