@@ -70,7 +70,7 @@
 [Measure02: Risk Adjustment Model CMS-HCC V21]: Measure-RAModelExample02.html
 [Measure03: Risk Adjustment Model CMS-RxHCC V05]: Measure-RAModelExample03.html
 [MeasureReport01: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]: MeasureReport-ra-measurereport01.html
-[MeasureReport01WithAnnotations: Risk Adjustment Coding Report with Annotations Added, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]: MeasureReport-ra-measurereport01-with-annotation.html
+[MeasureReport01WithAnnotations: Risk Adjustment Coding Report with Remark Added, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]: MeasureReport-ra-measurereport01-with-remark.html
 [MeasureReport02: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient01: Eve Everywoman)]: MeasureReport-ra-measurereport02.html
 [MeasureReport03: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient02: Adam Everyman)]: MeasureReport-ra-measurereport03.html
 [MeasureReport04: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V21 (Patient03: Nelda Nuclear)]: MeasureReport-ra-measurereport04.html
@@ -94,6 +94,9 @@
 [Practitioner01: Harold Hippocrates]: Practitioner-ra-prac01pat01.html
 [Practitioner02: Patrick Pump]: Practitioner-ra-prac02pat02.html
 [Practitioner03: Otto Osler]: Practitioner-ra-prac03pat03.html
+[DocumentReference: Outpatient Note (Patient01: Eve Everywoman)]: DocumentReference-ra-documentreference01pat01.html
+[Parameters: PATCH example for sending Condition Category Remark]: Parameters-ra-measurereport01-patch.json.html
+[Parameters: PATCH example for sending Condition Category Remark with multiple value]: Parameters-ra-measurereport01-patch-mult.html
 
 [Profiles]: profiles.html
 [Remediation]: remediation.html

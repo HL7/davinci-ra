@@ -68,10 +68,7 @@
 - [Measure03: Risk Adjustment Model CMS-RxHCC V05]  
 
 - [MeasureReport01: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]
-<div class="bg-success" markdown="1">
-
 - [MeasureReport01WithRemarks: Risk Adjustment Coding Report with Condition Category Remarks Added, RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]
-</div><!-- new-content -->
 
 - [MeasureReport02: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient01: Eve Everywoman)]
 - [MeasureReport03: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V24 (Patient02: Adam Everyman)]
@@ -97,5 +94,9 @@
 - [Practitioner02: Patrick Pump]
 - [Practitioner03: Otto Osler]
 
+- [DocumentReference: Outpatient Note (Patient01: Eve Everywoman)]
+
+- [Parameters: PATCH example for sending Condition Category Remark]
+- [Parameters: PATCH example for sending Condition Category Remark with multiple value]
 
 {% include link-list.md %}
