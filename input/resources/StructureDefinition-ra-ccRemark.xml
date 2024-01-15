@@ -30,7 +30,7 @@
       <sliceName value="author"/>
       <short value="Who added the remark"/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
       <type>
         <code value="Extension"/>
       </type>
@@ -44,17 +44,14 @@
       </type>
       <fixedUri value="author"/>
     </element>   
-    <element id="Extension.extension:author.value[x]">
-      <path value="Extension.extension.value[x]"/>
+    <element id="Extension.extension:author.valueIdentifier">
+      <path value="Extension.extension.valueIdentifier"/>
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+        <code value="Identifier"/>
       </type>
-    </element>      
+    </element>   
 
     <element id="Extension.extension:authorDatetime">
       <path value="Extension.extension"/>

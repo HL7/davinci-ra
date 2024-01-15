@@ -188,8 +188,9 @@
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark",
                     "extension": [
                         {"url": "author",
-                        "valueReference": {
-                            "reference": "Practitioner/ra-prac01pat01"
+                        "valueIdentifier": {
+                            "system": "http://hl7.org/fhir/sid/us-npi",
+                            "value": "1234567890"
                             }
                         },
                         {"url": "authorDatetime",
@@ -379,8 +380,9 @@
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark",
                     "extension": [
                         {"url": "author",
-                        "valueReference": {
-                            "reference": "Practitioner/ra-prac01pat01"
+                            "valueIdentifier": {
+                            "system": "http://hl7.org/fhir/sid/us-npi",
+                            "value": "1234567890"
                             }
                         },
                         {"url": "authorDatetime",
@@ -578,8 +580,9 @@
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark",
                     "extension": [
                         {"url": "author",
-                        "valueReference": {
-                            "reference": "Practitioner/ra-prac01pat01"
+                        "valueIdentifier": {
+                            "system": "http://hl7.org/fhir/sid/us-npi",
+                            "value": "1234567890"
                             }
                         },
                         {"url": "authorDatetime",
