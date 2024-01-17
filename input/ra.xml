@@ -678,6 +678,14 @@
       <exampleBoolean value="true"/>
       <exampleCanonical value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-datax-measurereport"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/ra-submit-data"/>
+      </reference>
+      <name value="Submit Data for Risk Adjustement Data Exchange MeasureReport"/>
+      <description value="Example Parameters Resource for using submit-data operation to submit Risk Adjustment Data Exchange MeasureReport"/>
+      <exampleBoolean value="true"/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
