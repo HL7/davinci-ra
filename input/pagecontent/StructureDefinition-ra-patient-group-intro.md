@@ -2,9 +2,7 @@
 
 ### Mandatory Data Elements and Terminology
 
-<div class="bg-success" markdown="1"><!-- new content -->
 The following data-elements must always be present (Mandatory) or must be supported [(Must Support)](general-guidance.html#must-support). The [Formal Views](StructureDefinition-ra-patient-group.html#profile) below provides the formal summary, definitions, and terminology requirements.
-</div>
 
 **Each {{site.data.structuredefinitions.[id].type}} must have:**
 

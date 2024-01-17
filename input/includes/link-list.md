@@ -76,6 +76,7 @@
 [MeasureReport04: Risk Adjustment Coding Gap Report, RA Model CMS-HCC V21 (Patient03: Nelda Nuclear)]: MeasureReport-ra-measurereport04.html
 [MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Nelda Nuclear)]: MeasureReport-ra-measurereport05.html
 [MeasureReport06: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient02: Adam Everyman)]: MeasureReport-ra-measurereport06.html
+
 [MeasureReport01]: {{site.data.fhir.path}}measurereport.html
 [Methodology]: methodology.html
 [Observation01Pat03: Pat03 Creatinine on 20210728]: Observation-ra-obs01pat03.html
@@ -134,3 +135,6 @@
 [Submit Data to Payer]: submit-data-to-payer.html
 
 [$submit-data]: https://hl7.org/fhir/R4/measure-operation-submit-data.html
+
+[Data Exchange MeasureReport01: RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]: MeasureReport-ra-datax-measurereport01.html
+

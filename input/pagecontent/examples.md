@@ -76,6 +76,10 @@
 - [MeasureReport05: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient03: Nelda Nuclear)]
 - [MeasureReport06: Risk Adjustment Coding Gap Report, RA Model CMS-RxHCC V5 (Patient02: Adam Everyman)]
 
+- [Data Exchange MeasureReport01: RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]
+
+- [DocumentReference: Outpatient Note (Patient01: Eve Everywoman)]
+
 - [Observation01Pat03: Pat03 Creatinine on 20210728]
 - [Observation02Pat03: Pat03 PHQ9 on 20190823]
 - [Observation21Pat01: Pat01 Trypsin (Mass/volume) in Serum or Plasma from 20170617]
@@ -94,9 +98,8 @@
 - [Practitioner02: Patrick Pump]
 - [Practitioner03: Otto Osler]
 
-- [DocumentReference: Outpatient Note (Patient01: Eve Everywoman)]
-
 - [Parameters: PATCH example for sending Condition Category Remark]
 - [Parameters: PATCH example for sending Condition Category Remark with multiple value]
+
 
 {% include link-list.md %}
