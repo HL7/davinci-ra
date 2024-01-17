@@ -1,0 +1,234 @@
+{
+    "resourceType": "Parameters",
+    "id": "ra-submit-data",
+    "parameter": [
+        {
+            "name": "MeasureReport",
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "ra-datax-measurereport01",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-datax-measurereport"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-payerCodingGapReportId",
+                        "valueId": "ra-measurereport01"
+                    }
+                ],
+                "status": "complete",
+                "type": "data-collection",
+                "measure": "https://build.fhir.org/ig/HL7/davinci-ra/Measure-RAModelExample01",
+                "subject": {
+                    "reference": "Patient/ra-patient01"
+                },
+                "date": "2021-11-10",
+                "reporter": {
+                    "reference": "Organization/ra-org02pat02"
+                },
+                "period": {
+                    "start": "2021-01-01",
+                    "end": "2021-09-30"
+                },    
+                "evaluatedResource": [
+                    {"reference": "DocumentReference/ra-documentreference01pat01"}
+            
+                ]
+            }
+        },         
+        {
+            "name": "resource",
+            "resource": {
+                    "resourceType" : "DocumentReference",
+                    "id" : "ra-documentreference01pat01",
+                    "meta" : {
+                      "extension" : [
+                        {
+                          "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+                          "valueString" : "Episode Summary Example"
+                        },
+                        {
+                          "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+                          "valueMarkdown" : "This is a episode summary example for the *US Core DocumentReference Profile*."
+                        }
+                      ],
+                      "profile" : [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
+                      ]
+                    },
+                    "text" : {
+                      "status" : "generated"
+                    },
+                    "identifier" : [
+                      {
+                        "system" : "urn:ietf:rfc:3986",
+                        "value" : "urn:oid:2.16.840.1.113883.19.5.99999.1"
+                      }
+                    ],
+                    "status" : "current",
+                    "type" : {
+                      "coding" : [
+                        {
+                          "system" : "http://loinc.org",
+                          "code" : "34108-1",
+                          "display" : "Outpatient Note"
+                        }
+                      ],
+                      "text" : "CCD Document"
+                    },
+                    "category" : [
+                      {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                            "code" : "clinical-note",
+                            "display" : "Clinical Note"
+                          }
+                        ],
+                        "text" : "Clinical Note"
+                      }
+                    ],
+                    "subject" : {
+                      "reference" : "Patient/ra-patient01",
+                      "display" : "Eve Everywoman"
+                    },
+                    "date" : "2021-03-27T15:29:46Z",
+                    "author" : [
+                      {
+                        "reference" : "Practitioner/ra-prac01pat01",
+                        "display" : "Harold Hippocrates, MD"
+                      }
+                    ],
+                    "description" : "Clinical Note",
+                    "content" : [
+                      {
+                        "attachment" : {
+                          "contentType" : "text/plain",
+                          "data" : "DQpQYXRpZW50OiBFdmUgRXZlcnl3b21lbg0KRE9COiAgMS8xNi8xOTc1DQpNUiM6ICAxMjM0NQ0KDQpEYXRlIG9mIFZpc2l0OiAzLzI3LzIwMjENClBhdGllbnQgcmVwb3J0cyB0aGUgaW5hYmlsaXR5IHRvIGRpZ2VzdCBmb29kIHByb3Blcmx5IGR1ZSB0byBhbiBpbnN1ZmZpY2llbmN5IGluIGV4b2NyaW5lIHBhbmNyZWF0aWMgZGlnZXN0aXZlIGVuenltZXMuIFBhdGllbnQgZXhwZXJpZW5jaW5nIGFiZG9taW5hbCBwYWluLCBkaWFycmhlYSwgZ2FzLCBhbmQgd2VpZ2h0IGxvc3MuIE9yZGVyZWQgUEVSVCB0cmVhdG1lbnQuDQoNCg0KDQpIYXJvbGQgSGlwcG9jcmF0ZXMsIE1EDQo="
+                        }
+                      }
+                    ]
+                  }                 
+
+        },
+        {
+            "name": "resource",
+            "resource": 
+            {
+                "resourceType": "Patient",
+                "id": "ra-patient01",
+                "meta": {
+                  "profile": [
+                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+                  ]
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+                        "valueCode": "F"
+                    },
+                    {
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+                        "extension": [
+                            {
+                                "url": "ombCategory",
+                                "valueCoding": {
+                                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                                    "code": "2106-3",
+                                    "display": "White"
+                                }
+                            },
+                            {
+                                "url": "text",
+                                "valueString": "White"
+                            }
+                        ]
+                    },
+                    {
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+                        "extension": [
+                            {
+                                "url": "ombCategory",
+                                "valueCoding": {
+                                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                                    "code": "2186-5",
+                                    "display": "Not Hispanic or Latino"
+                                }
+                            },
+                            {
+                                "url": "text",
+                                "valueString": "Not Hispanic or Latino"
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "MR",
+                                    "display": "Medical record number"
+                                }
+                            ]
+                        },
+                        "system": "http://hospital.davinci.org",
+                        "value": "12345"
+                    }
+                ],
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Everywoman",
+                        "given": [
+                            "Eve"
+                        ]
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1975-01-16",
+                "deceasedBoolean": false,
+                "address": [
+                  {
+                      "use": "home",
+                      "line": [
+                          "2222 Home Street"
+                      ],
+                      "city": "Ann Arbor",
+                      "state": "MI",
+                      "postalCode": "99999",
+                      "country": "USA"
+                  }
+                ],
+                "maritalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                            "code": "M",
+                            "display": "Married"
+                        }
+                    ]
+                },
+                "communication": [
+                    {
+                        "language": {
+                            "coding": [
+                                {
+                                    "system": "urn:ietf:bcp:47",
+                                    "code": "en-US",
+                                    "display": "English (United States)"
+                                }
+                            ]
+                        },
+                        "preferred": true
+                    }
+                ]
+            }                 
+        }    
+    ]
+}
