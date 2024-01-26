@@ -28,7 +28,7 @@
     <element id="Extension.extension:author">
       <path value="Extension.extension"/>
       <sliceName value="author"/>
-      <short value="Who added the remark"/>
+      <short value="Identifier of the person who added the remark such as NPI"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -52,6 +52,62 @@
         <code value="Identifier"/>
       </type>
     </element>   
+
+    <element id="Extension.extension:authorOrganization">
+      <path value="Extension.extension"/>
+      <sliceName value="authorOrganization"/>
+      <short value="Identifier of the organization that added the remark such as TIN, NPI"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:authorOrganization.url">
+      <path value="Extension.extension.url"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="authorOrganization"/>
+    </element>   
+    <element id="Extension.extension:authorOrganization.valueIdentifier">
+      <path value="Extension.extension.valueIdentifier"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>   
+
+    <element id="Extension.extension:authorSoftware">
+      <path value="Extension.extension"/>
+      <sliceName value="authorSoftware"/>
+      <short value="Identifier of the software that added the remark"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:authorSoftware.url">
+      <path value="Extension.extension.url"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="authorSoftware"/>
+    </element>   
+    <element id="Extension.extension:authorSoftware.valueIdentifier">
+      <path value="Extension.extension.valueIdentifier"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>           
 
     <element id="Extension.extension:authorDatetime">
       <path value="Extension.extension"/>

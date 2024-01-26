@@ -24,7 +24,7 @@
     {
       "code": "in-progress",
       "display": "In progress",
-      "definition": "Assessed the gap and actions are taking to address the gap."
+      "definition": "Assessed the gap and actions are taken to address the gap."
     },
     {
       "code": "deferred",
@@ -35,7 +35,12 @@
       "code": "not-assessed",
       "display": "Not assessed",
       "definition": "Gap was shown to the provider but no action was taken to assess the gap."
-    }  
+    },
+    {
+      "code": "not-presented",
+      "display": "Not presented",
+      "definition": "System did not present the gap to the end user."
+    }        
   ],
   "count": 5
 }
