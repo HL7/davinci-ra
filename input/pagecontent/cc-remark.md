@@ -28,6 +28,17 @@ This implementation guide does not direct any action be taken by the Payer upon 
 
 After a Payer generates a subsequent [Risk Adjustment Coding Gap Report], in their role as Reporting Server they can choose to include the Condition Category remarks as they see fit. This might include adding the remarks only if received from the same Provider and can include any remarks all the way up to including all Condition Category remarks received from any provider. The Payer is not required to include any Condition Category remorks on subsequently generated [Risk Adjustment Coding Gap Report].
 
+### Usage
+
+#### Sending the full MeasureReport with added Remarks to Payer
+`PUT [base]/Measure/MeasureReport`
+
+{% include examplebutton.html example="put-risk-adjustment-coding-gap-report-with-remark-example" b_title = "Click Here To See Example POST Risk Adjustment Coding Gap Report with Remark Added" %}
+
+#### Using Patch to update the Payer's MeasureReport with Remarks
+`PATCH [base]/Measure/MeasureReport`
+
+{% include examplebutton.html example="patch-risk-adjustment-coding-gap-report-with-remark-example" b_title = "Click Here To See Example PATCH Risk Adjustment Coding Gap Report with Remarks" %}
 
 
 {% include link-list.md %}
