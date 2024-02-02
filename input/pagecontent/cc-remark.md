@@ -33,7 +33,7 @@ After a Payer generates a subsequent [Risk Adjustment Coding Gap Report], in the
 #### Sending the full MeasureReport with added Remarks to Payer
 `PUT [base]/Measure/MeasureReport`
 
-{% include examplebutton.html example="put-risk-adjustment-coding-gap-report-with-remark-example" b_title = "Click Here To See Example POST Risk Adjustment Coding Gap Report with Remark Added" %}
+{% include examplebutton.html example="put-risk-adjustment-coding-gap-report-with-remark-example" b_title = "Click Here To See Example POST Risk Adjustment Coding Gap Report with Remarks Added" %}
 
 #### Using Patch to update the Payer's MeasureReport with Remarks
 `PATCH [base]/Measure/MeasureReport`
