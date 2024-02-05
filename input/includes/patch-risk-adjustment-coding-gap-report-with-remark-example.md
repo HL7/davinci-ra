@@ -3,12 +3,12 @@
 
 **Scenario:**
 
-A Provider receives a Risk Adjustement Gaps Report from a Payer.  The Provider uses PATCH to update the Report at the Payer with just the Remark information they add at time of visit.
+A Provider receives a Risk Adjustment Gaps Report from a Payer.  The Provider uses PATCH to update the Report at the Payer with just the Remark information they add at time of visit.
 
 **PATCH Risk Adjustment Coding Gaps Report with Remarks**
 
 ```
-PATCH [base]/measure/ra-measurereport01
+PATCH [base]/MeasureReport/ra-measurereport01
 ```
 
 **Request body**

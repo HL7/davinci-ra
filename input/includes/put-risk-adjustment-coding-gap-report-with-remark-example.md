@@ -3,13 +3,13 @@
 
 **Scenario:**
 
-A Provider receives a Risk Adjustement Gaps Report from a Payer.  After seeing the patient, Remarks are added to the full reportand it is updated at the Payer
+A Provider receives a Risk Adjustment Gaps Report from a Payer.  After seeing the patient, Remarks are added to the full report and it is updated at the Payer.
 
 **PUT Risk Adjustment Coding Gaps Report with Remarks**
 
 
 ```
-PUT [base]/measure/ra-measurereport01
+PUT [base]/MeasureReport/ra-measurereport01
 ```
 
 **Request body**
