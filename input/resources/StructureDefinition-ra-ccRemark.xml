@@ -6,7 +6,7 @@
   <title value="Condition Category Remark"/>
   <status value="active"/>
   <experimental value="false"/>
-  <description value="Remark added for a Condition Category."/>
+  <description value="The Condition Category Remark extension allows a coded and/or narrative remark be added to a Condition Category (CC) coding gap that is on a Payer generated risk adjustment coding gap report by a provider, an organization, or a software."/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>

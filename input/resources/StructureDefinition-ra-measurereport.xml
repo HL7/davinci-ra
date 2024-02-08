@@ -6,7 +6,7 @@
   <title value="Risk Adjustment Coding Gap MeasureReport"/>
   <status value="active"/>
   <experimental value="false"/>
-  <description value="This profile is based on the [MeasureReport](http://hl7.org/fhir/R4/measurereport.html) to represent a risk adjustment coding gap report."/>
+  <description value="This profile is based on the [MeasureReport](http://hl7.org/fhir/R4/measurereport.html) to represent a risk adjustment coding gap report. Payer runs risk adjustment engine and uses this profile to represent the risk adjustment Condition Category (CC) coding gaps and their detailed information for a patient."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

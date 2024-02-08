@@ -6,7 +6,7 @@
   <title value="Risk Adjustment Clinical Data Collection Deadline"/>
   <status value="active"/>
   <experimental value="false"/>
-  <description value="Risk Adjustment Clinical Data Collection Deadline"/>
+  <description value="RIndicates the deadline for collecting data to close Condition Category (CC) coding gaps for a risk adjustment model."/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>

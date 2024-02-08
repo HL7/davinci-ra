@@ -6,7 +6,7 @@
   <title value="Risk Adjustment Suspect Type"/>
   <status value="active"/>
   <experimental value="false"/>
-  <description value="Risk adjustment suspect type"/>
+  <description value="Indicates whether the Condition Category (CC) gap is historic, suspected, or net new."/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>

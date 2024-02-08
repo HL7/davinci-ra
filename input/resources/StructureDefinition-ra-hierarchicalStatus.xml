@@ -6,7 +6,7 @@
   <title value="Hierarchical Status"/>
   <status value="active"/>
   <experimental value="false"/>
-  <description value="This extension is to indicate if hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded."/>
+  <description value="Indicates if hiearchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded."/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>

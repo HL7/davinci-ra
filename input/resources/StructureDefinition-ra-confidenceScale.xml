@@ -6,7 +6,7 @@
   <title value="Confidence Scale"/>
   <status value="active"/>
   <experimental value="false"/>
-  <description value="Confidence scale for a Condition Category (CC) coding gap."/>
+  <description value="A coded confidence scale, the degree of certainty, for a Condition Category (CC) coding gap and its information presented in the Payer generated risk adjustment coding gap report."/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
