@@ -11,7 +11,7 @@
   "title": "Risk Adjustment Hierarchical Status ValueSet",
   "status": "active",
   "experimental": false,
-  "description": "Risk adjustment hierarchical status",
+  "description": "Codes that indicate how hiearchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded.",
   "compose": {
     "include": [
       {

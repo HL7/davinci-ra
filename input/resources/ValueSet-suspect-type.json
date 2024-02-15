@@ -11,7 +11,7 @@
   "title": "Risk Adjustment Suspect Type ValueSet",
   "status": "active",
   "experimental": false,
-  "description": "Risk adjustment suspect type",
+  "description": "Codes that indicate whether the Condition Category (CC) gap is historic, suspected, or net-new.",
   "compose": {
     "include": [
       {

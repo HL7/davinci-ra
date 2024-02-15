@@ -11,7 +11,7 @@
   "title": "Risk Adjustment Evidence Status ValueSet",
   "status": "active",
   "experimental": false,
-  "description": "Concepts for risk adjustment evidence status",
+  "description": "Codes that indicate whether a coding gap is an open-gap, invalid-gap, closed-gap, or pending.",
   "publisher": "Clinical Quality Information Workgroup",
   "compose": {
     "include": [

@@ -6,7 +6,7 @@
   "title": "Risk Adjustment Hierarchical Status CodeSystem",
   "status": "active",
   "experimental": false,
-  "description": "Indicate whether hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded.",
+  "description": "Code system that indicates how hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded.",
   "caseSensitive": true,
   "valueSet": "http://hl7.org/fhir/us/davinci-ra/ValueSet/hierarchical-status",
   "content": "complete",

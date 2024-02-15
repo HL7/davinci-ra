@@ -6,7 +6,7 @@
   "title": "Risk Adjustment Evidence Status CodeSystem",
   "status": "active",
   "experimental": false,
-  "description": "Indicates whether a coding gap is an open-gap, invalid-gap, closed-gap, or pending.",
+  "description": "Code system that indicates whether a coding gap is an open-gap, invalid-gap, closed-gap, or pending.",
   "caseSensitive": true,
   "valueSet": "http://hl7.org/fhir/us/davinci-ra/ValueSet/evidence-status",
   "content": "complete",

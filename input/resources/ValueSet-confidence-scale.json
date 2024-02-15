@@ -11,7 +11,7 @@
   "title": "Confidence Scale Value Set",
   "status": "active",
   "experimental": false,
-  "description": "This describes the confidence scale of a risk adjustment coding gap.",
+  "description": "Codes that describe the confidence scale of a risk adjustment Condition Category (CC).",
   "copyright": "This value set includes content from SNOMED CT, which is copyright \u00a9 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
   "compose": {
     "include": [

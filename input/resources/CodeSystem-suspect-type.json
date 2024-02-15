@@ -6,7 +6,7 @@
   "title": "Risk Adjustment Suspect Type CodeSystem",
   "status": "active",
   "experimental": false,
-  "description": "Risk Adjustment suspect type indicates whether it is a suspected Condition Category (CC) gap, a historic Condition Category (CC) gap, or an unsuspected Condition Category (CC). Historic, suspected, and net-new are mutually exclusive.",
+  "description": "Code sytstem that indicates whether it is a suspected Condition Category (CC) gap, a historic Condition Category (CC) gap, or a net-new Condition Category (CC). Historic, suspected, and net-new are mutually exclusive.",
   "caseSensitive": true,
   "valueSet": "http://hl7.org/fhir/us/davinci-ra/ValueSet/suspect-type",
   "content": "complete",

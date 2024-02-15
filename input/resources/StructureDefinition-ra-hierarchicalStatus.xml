@@ -6,7 +6,7 @@
   <title value="Hierarchical Status"/>
   <status value="active"/>
   <experimental value="false"/>
-  <description value="Indicates if hiearchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded."/>
+  <description value="Indicates how hiearchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded."/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -20,7 +20,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="This is to indicate whether hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded: applied-superseded|applied-not-superseded|not-applied|not-applicable"/>
+      <short value="How hiearchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded: applied-superseded|applied-not-superseded|not-applied|not-applicable"/>
       <definition value="Hierarchies applied to a Condition Category (CC) status"/>
       <comment value="This extension hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded."/>
       <min value="0"/>
