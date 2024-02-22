@@ -119,27 +119,6 @@
                     ]
                 },
                 {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                            "valueCode": "MAY"
-                        }
-                    ],
-                    "type": "Group",
-                    "profile": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-patient-group",
-                    "interaction": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "code": "read"
-                        }
-                    ]
-                },
-                {
                     "type": "MeasureReport",
                     "profile": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport",
                     "interaction": [
@@ -243,46 +222,100 @@
                     ],
                     "searchParam": [
                         {
+                            "extension" : [
+                                {
+                                  "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                  "valueCode" : "SHALL"
+                                }
+                              ],
                             "name": "date",
                             "definition": "http://hl7.org/fhir/SearchParameter/MeasureReport-date",
                             "type": "date"
                         },
                         {
+                            "extension" : [
+                                {
+                                  "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                  "valueCode" : "SHOULD"
+                                }
+                              ],
                             "name": "evaluatedResource",
                             "definition": "http://hl7.org/fhir/SearchParameter/MeasureReport-evaluated-resource",
                             "type": "reference"
                         },
                         {
+                            "extension" : [
+                                {
+                                  "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                  "valueCode" : "MAY"
+                                }
+                              ],
                             "name": "identifier",
                             "definition": "http://hl7.org/fhir/SearchParameter/MeasureReport-identifier",
                             "type": "token"
                         },
                         {
+                            "extension" : [
+                                {
+                                  "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                  "valueCode" : "SHALL"
+                                }
+                              ],
                             "name": "measure",
                             "definition": "http://hl7.org/fhir/SearchParameter/MeasureReport-measure",
                             "type": "reference"
                         },
                         {
+                            "extension" : [
+                                {
+                                  "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                  "valueCode" : "SHALL"
+                                }
+                              ],
                             "name": "patient",
                             "definition": "http://hl7.org/fhir/SearchParameter/MeasureReport-patient",
                             "type": "reference"
                         },
                         {
+                            "extension" : [
+                                {
+                                  "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                  "valueCode" : "SHALL"
+                                }
+                              ],
                             "name": "period",
                             "definition": "http://hl7.org/fhir/SearchParameter/MeasureReport-period",
                             "type": "date"
                         },
                         {
+                            "extension" : [
+                                {
+                                  "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                  "valueCode" : "MAY"
+                                }
+                              ],
                             "name": "reporter",
                             "definition": "http://hl7.org/fhir/SearchParameter/MeasureReport-reporter",
                             "type": "reference"
                         },
                         {
+                            "extension" : [
+                                {
+                                  "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                  "valueCode" : "SHALL"
+                                }
+                              ],
                             "name": "status",
                             "definition": "http://hl7.org/fhir/SearchParameter/MeasureReport-status",
                             "type": "token"
                         },
                         {
+                            "extension" : [
+                                {
+                                  "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                  "valueCode" : "SHALL"
+                                }
+                              ],
                             "name": "subject",
                             "definition": "http://hl7.org/fhir/SearchParameter/MeasureReport-subject",
                             "type": "reference"
