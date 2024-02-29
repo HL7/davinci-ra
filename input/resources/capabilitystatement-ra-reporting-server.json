@@ -93,7 +93,9 @@
                         }
                     ],
                     "type": "Measure",
-                    "profile": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-model-measure",
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-model-measure"
+                    ],
                     "interaction": [
                         {
                             "extension": [
@@ -120,7 +122,9 @@
                 },
                 {
                     "type": "MeasureReport",
-                    "profile": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport",
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
+                    ],
                     "interaction": [
                         {
                             "extension": [
@@ -330,7 +334,9 @@
                         }
                     ],
                     "type": "Bundle",
-                    "profile": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle",
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle"
+                    ],
                     "interaction": [
                         {
                             "extension": [

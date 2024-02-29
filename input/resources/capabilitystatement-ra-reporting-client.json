@@ -87,7 +87,9 @@
             "resource": [              
                 {                 
                     "type": "MeasureReport",
-                    "profile": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport",
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
+                    ],
                     "interaction": [
                         {
                             "extension": [
@@ -265,7 +267,9 @@
                         }
                     ],
                     "type": "Bundle",
-                    "profile": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle",
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle"
+                    ],
                     "interaction": [
                         {
                             "extension": [

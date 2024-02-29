@@ -12,6 +12,11 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 - **Applied**: Need to remove mandatory requirement in meta.profile ([FHIR-40935](https://jira.hl7.org/browse/FHIR-40935))
 - **Applied**: Improve wording in remediation guidance ([FHIR-40989](https://jira.hl7.org/browse/FHIR-40989))
 - **Applied**: Large number of technical corrections ([FHIR-41140](https://jira.hl7.org/browse/FHIR-41140))
+- **Applied**: Add capabilitystatement-expectation extensions ([FHIR-40993](https://jira.hl7.org/browse/FHIR-40993))
+- **Applied**: Add more guidance on what is expected in annotations ([FHIR-40991](https://jira.hl7.org/browse/FHIR-40991))
+- **Applied**: Provide more guidance on the expectations on Task termination ([FHIR-40990](https://jira.hl7.org/browse/FHIR-40990))
+- **Applied**: Add better description of scope/use/limitations/workflows to all Structure Definitions ([FHIR-40998](https://jira.hl7.org/browse/FHIR-40998))
+
 </div>
 
 ### Version 2.0.0-ballot
