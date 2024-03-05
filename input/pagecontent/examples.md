@@ -100,6 +100,6 @@
 
 - [Parameters: PATCH example for sending Condition Category Remark]
 - [Parameters: PATCH example for sending Condition Category Remark with multiple value]
-
+- [Parameters: Submit Data example for sending a C-CDA document]
 
 {% include link-list.md %}

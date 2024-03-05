@@ -138,4 +138,4 @@
 
 [Data Exchange MeasureReport01: RA Model CMS-HCC V24 (Patient01: Eve Everywoman)]: MeasureReport-ra-datax-measurereport01.html
 
-
+[Parameters: Submit Data example for sending a C-CDA document]: Parameters-ra-submit-data.html
