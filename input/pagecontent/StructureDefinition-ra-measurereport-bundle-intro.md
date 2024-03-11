@@ -5,9 +5,9 @@ This profile builds on [Bundle](https://www.hl7.org/fhir/bundle.html).
 
 ### Mandatory Data Elements and Terminology
 
-<div class="bg-success" markdown="1"><!-- new content -->
+
 The following data-elements must always be present (Mandatory) or must be supported [(Must Support)](general-guidance.html#must-support). The [Formal Views](StructureDefinition-ra-measurereport-bundle.html#profile) below provides the formal summary, definitions, and terminology requirements.
-</div>
+
 
 **Each Bundle {{site.data.structuredefinitions.[id].type}} must have:**
 

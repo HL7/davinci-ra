@@ -1,7 +1,4 @@
 
-<div class="new-content" markdown="1">
-Where possible, new and updated content are highlighted with green text and background
-</div><!-- new-content -->
 
 ###  Summary
 
@@ -97,7 +94,7 @@ This implementation guide does not define how payers determine a coding gap and 
 
 Different entities can play different Roles in different scenarios. The Actors in this implementation guide are Payer and Provider. Their roles as Client and Server are described below. 
 
-<div class="bg-success" markdown="1">
+
 **Client**: 
 - Reporting Client
     - Payer plays this role when they request a [Risk Adjustment Coding Gap Report] to POST to Provider's FHIR Server 
@@ -113,7 +110,7 @@ Different entities can play different Roles in different scenarios. The Actors i
     - The Provider plays this role when they POST Risk Adjustment Coding Gap Report with Condition Category Remark(s)
 
 The Methodology section of this implementation guide describes these Actors in more detail in the context of report generation, report query, and data submission steps of risk adjustment lifecycle and adding of Condition Category remarks to the Risk Adjustment Coding Gap report. 
-</div><!-- new-content -->     
+   
 
 ---
 

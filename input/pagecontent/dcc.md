@@ -1,12 +1,5 @@
 
-<div class="new-content" markdown="1">
-All sections on this page are new content.
-</div><!-- new-content -->
-<div class="note-to-balloters" markdown="1">
-
-**The Digital Condition Category sections are DRAFT and open for review.**
-
-</div>
+**<span style="color: red;">"The Digital Condition Category sections are DRAFT"</span>**
 
 This page describes Digital Condition Categories (dCCs), a new concept introduced in this implementation guide. 
 
