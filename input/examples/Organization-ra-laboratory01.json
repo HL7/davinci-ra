@@ -1,0 +1,53 @@
+{
+  "resourceType" : "Organization",
+  "id" : "ra-laboratory01",
+  "meta" : {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Laboratory"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "Laboratory that created lab observations"
+      }
+    ],
+    "profile" : [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+    ]
+  },
+  "active" : true,
+  "type" : [
+    {
+      "coding" : [
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code" : "prov",
+          "display" : "healthcare provider"
+        }
+      ]
+    }
+  ],
+  "name" : "XYZ Laboratory",
+  "telecom" : [
+    {
+      "system" : "phone",
+      "value" : "(+1) 111-222-3333"
+    },
+    {
+      "system" : "email",
+      "value" : "customer-service@XYZlaboratory.com"
+    }
+  ],
+  "address" : [
+    {
+      "line" : [
+        "100 Laboratory Lane, Suite 100"
+      ],
+      "city" : "Amherst",
+      "state" : "MA",
+      "postalCode" : "01002",
+      "country" : "USA"
+    }
+  ]
+}

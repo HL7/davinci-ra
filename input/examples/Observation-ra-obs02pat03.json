@@ -41,5 +41,11 @@
     "display" : "Nelda Nuclear"
   },
   "effectiveDateTime" : "2019-08-23",
+  "performer": [
+    {
+      "reference": "Organization/ra-laboratory01",
+      "display": "XYZ Laboratory"
+    }
+  ],
   "valueInteger" : 16
 }

@@ -44,6 +44,12 @@
     "display": "Adam Everyman"
   },
   "effectiveDateTime": "2019-06-17",
+  "performer": [
+    {
+      "reference": "Organization/ra-laboratory01",
+      "display": "XYZ Laboratory"
+    }
+  ],
   "valueQuantity": {
     "value": 770,
     "unit": "ng/mL",

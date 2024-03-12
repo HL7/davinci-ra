@@ -44,6 +44,12 @@
     "display" : "Nelda Nuclear"
   },
   "effectiveDateTime" : "2021-07-28",
+  "performer": [
+    {
+      "reference": "Organization/ra-laboratory01",
+      "display": "XYZ Laboratory"
+    }
+  ],
   "valueQuantity" : {
     "value" : 10.9,
     "unit" : "mg/dL",

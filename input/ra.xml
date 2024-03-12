@@ -565,6 +565,14 @@
       <description value="Trypsin [Mass/volume] in Serum or Plasma from 2017-06-17"/>
       <exampleBoolean value="true"/>
     </resource>
+        <resource>
+      <reference>
+        <reference value="Organization/ra-laboratory01"/>
+      </reference>
+      <name value="Laboratory01: XYZ Laboratory"/>
+      <description value="XYZ Laboratory"/>
+      <exampleBoolean value="true"/>
+    </resource>
     <resource>
       <reference>
         <reference value="Organization/ra-payer01"/>

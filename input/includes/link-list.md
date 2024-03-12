@@ -83,6 +83,7 @@
 [Observation02Pat03: Pat03 PHQ9 on 20190823]: Observation-ra-obs02pat03.html
 [Observation21Pat01: Pat01 Trypsin (Mass/volume) in Serum or Plasma from 20170617]: Observation-ra-obs21pat01.html
 [Operations]: operations.html
+[Organization01Lab01: Laboratory Organization XYZ Laboratory]: Organization-ra-laboratory01.html
 [Organization01: Payer Organization ABC Payer]: Organization-ra-payer01.html
 [Organization01Pat01: Community Urgent Care]: Organization-ra-org01pat01.html
 [Organization02Pat02: GHH Outpatient Clinic]: Organization-ra-org02pat02.html
