@@ -6,11 +6,26 @@
             "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-datax-measurereport"
         ]
     },
-    "extension": [
+    "extension" : [
         {
-            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-payerCodingGapReportId",
-            "valueId": "ra-measurereport01"
+        
+        
+            
+                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-payerCodingGapReportId",
+                "valueId": "ra-measurereport01"
+           
+       
+        },
+        {
+       
+           
+                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-reportingVendor",
+                "valueReference": {
+                    "reference": "Organization/ra-vendor01"
         }
+      
+        }
+
     ],
     "status": "complete",
     "type": "data-collection",

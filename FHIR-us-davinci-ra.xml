@@ -76,6 +76,7 @@
 <artifact id="StructureDefinition/ra-groupReference" key="StructureDefinition-ra-groupReference" name="Group Reference"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hiearchicalStatus" key="StructureDefinition-ra-hiearchicalStatus" name="Hiearchical Status Extension"/>
 <artifact id="StructureDefinition/ra-hierarchicalStatus" key="StructureDefinition-ra-hierarchicalStatus" name="Hierarchical Status"/>
+<artifact id="Organization/ra-laboratory01" key="Organization-ra-laboratory01" name="Laboratory01: XYZ Laboratory"/>
 <artifact id="Observation/ra-obs01pat03" key="Observation-ra-obs01pat03" name="Observation: Creatinine Result from 20210728"/>
 <artifact id="Observation/ra-obs02pat03" key="Observation-ra-obs02pat03" name="Observation: PHQ9 from 20190823"/>
 <artifact id="Observation/ra-obs01pat02" key="Observation-ra-obs01pat02" name="Observation: Trypsin [Mass/volume] in Serum or Plasma result from 20190617"/>
@@ -131,6 +132,7 @@
 <artifact deprecated="true" id="CodeSystem/task-label" key="CodeSystem-task-label" name="Task Label CodeSystem"/>
 <artifact deprecated="true" id="Task/ra-task01measurereport01group003" key="Task-ra-task01measurereport01group003" name="Task: Clinical Evaluation Task"/>
 <artifact id="Observation/ra-obs21pat01" key="Observation-ra-obs21pat01" name="Trypsin [Mass/volume] in Serum or Plasma from 20170617"/>
+<artifact id="Organization/ra-vendor01" key="Organization-ra-vendor01" name="Vendor01: Best RA Vendor"/>
 <artifact id="Bundle/ra-bundle01" key="Bundle-ra-bundle01" name="ra-bundle01: Risk Adjustment Bundle"/>
 <artifact id="MeasureReport/ra-datax-measurereport01" key="MeasureReport-ra-datax-measurereport01" name="ra-datax-measurereport01: Risk Adjustment Data Exchange Measure Report"/>
 <artifact id="Group/ra-group01" key="Group-ra-group01" name="ra-group01: Risk Adjustment Patient Group"/>

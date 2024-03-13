@@ -65,4 +65,6 @@ INFORMATION: Organization/ra-org02pat02: Organization.type[0]: Reference to draf
 INFORMATION: Organization/ra-org03pat03: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|0.1.0
 INFORMATION: Organization/ra-payer01: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|0.1.0
 INFORMATION: Organization/ra-laboratory01: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|0.1.0
+INFORMATION: Organization/ra-vendor01: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|0.1.0
+
 
