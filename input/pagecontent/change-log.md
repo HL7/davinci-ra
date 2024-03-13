@@ -16,6 +16,8 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 - **Applied**: Add more guidance on what is expected in annotations ([FHIR-40991](https://jira.hl7.org/browse/FHIR-40991))
 - **Applied**: Provide more guidance on the expectations on Task termination ([FHIR-40990](https://jira.hl7.org/browse/FHIR-40990))
 - **Applied**: Add better description of scope/use/limitations/workflows to all Structure Definitions ([FHIR-40998](https://jira.hl7.org/browse/FHIR-40998))
+- **Applied**: Added examples tab to all Profiles under FHIR Artifacts ([FHIR-40992] https://jira.hl7.org/browse/FHIR-40992)
+- **Applied**: Group annotation extension was renamed to Condition Category Remark (ccRemark).  Also added section to describe how Patch could be used instead of sending back the full report (examples included) ([FHIR-41332] https://jira.hl7.org/browse/FHIR-41332)
 
 </div>
 
