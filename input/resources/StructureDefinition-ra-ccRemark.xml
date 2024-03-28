@@ -197,6 +197,38 @@
       </binding>      
     </element>  
 
+    <element id="Extension.extension:reasonCode">
+      <path value="Extension.extension"/>
+      <sliceName value="reasonCode"/>
+      <short value="Remark reason"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:reasonCode.url">
+      <path value="Extension.extension.url"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="reasonCode"/>
+    </element>   
+    <element id="Extension.extension:code.valueCodableConcept">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/remark-reason"/>
+      </binding>      
+    </element>  
+
     <element id="Extension.extension:relatedDataIdentifier">
       <path value="Extension.extension"/>
       <sliceName value="relatedDataIdentifier"/>
@@ -222,6 +254,35 @@
       <max value="1"/>
       <type>
         <code value="Identifier"/>
+      </type>      
+    </element>  
+
+    <element id="Extension.extension:supportingData">
+      <path value="Extension.extension"/>
+      <sliceName value="supportingData"/>
+      <short value="Supporting data"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:supportingData.url">
+      <path value="Extension.extension.url"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="supportingData"/>
+    </element>   
+    <element id="Extension.extension:supportingData.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
       </type>      
     </element>  
 
