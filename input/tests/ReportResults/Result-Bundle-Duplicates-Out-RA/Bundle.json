@@ -14,7 +14,7 @@
     "timestamp": "2021-11-16T06:17:58.172+00:00",
     "entry": [
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/MeasureReport/result-evaluatedresources-duplicates-out-ra",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/MeasureReport/result-evaluatedresources-duplicates-out-ra",
             "resource": {
                 "resourceType": "MeasureReport",
                 "id": "result-evaluatedresources-duplicates-out-ra",
@@ -767,7 +767,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/result-evaluatedresources-duplicates-out-ra-09",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Condition/result-evaluatedresources-duplicates-out-ra-09",
             "resource": {
                 "resourceType": "Condition",
                 "id": "result-evaluatedresources-duplicates-out-ra-09",
@@ -825,7 +825,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Patient/result-evaluatedresources-duplicates-out-ra",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Patient/result-evaluatedresources-duplicates-out-ra",
             "resource": {
                 "resourceType": "Patient",
                 "id": "result-evaluatedresources-duplicates-out-ra",
@@ -945,7 +945,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/result-evaluatedresources-duplicates-out-ra-05",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Condition/result-evaluatedresources-duplicates-out-ra-05",
             "resource": {
                 "resourceType": "Condition",
                 "id": "result-evaluatedresources-duplicates-out-ra-05",
@@ -1003,7 +1003,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Encounter/result-evaluatedresources-duplicates-out-ra-02",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Encounter/result-evaluatedresources-duplicates-out-ra-02",
             "resource": {
                 "resourceType": "Encounter",
                 "id": "result-evaluatedresources-duplicates-out-ra-02",
@@ -1081,7 +1081,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/result-evaluatedresources-duplicates-out-ra-04",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Condition/result-evaluatedresources-duplicates-out-ra-04",
             "resource": {
                 "resourceType": "Condition",
                 "id": "result-evaluatedresources-duplicates-out-ra-04",
@@ -1139,7 +1139,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/result-evaluatedresources-duplicates-out-ra-01",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Condition/result-evaluatedresources-duplicates-out-ra-01",
             "resource": {
                 "resourceType": "Condition",
                 "id": "result-evaluatedresources-duplicates-out-ra-01",
@@ -1197,7 +1197,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Encounter/result-evaluatedresources-duplicates-out-ra-02",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Encounter/result-evaluatedresources-duplicates-out-ra-02",
             "resource": {
                 "resourceType": "Encounter",
                 "id": "result-evaluatedresources-duplicates-out-ra-02",
@@ -1275,7 +1275,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Encounter/result-evaluatedresources-duplicates-out-ra-05",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Encounter/result-evaluatedresources-duplicates-out-ra-05",
             "resource": {
                 "resourceType": "Encounter",
                 "id": "result-evaluatedresources-duplicates-out-ra-05",
@@ -1338,7 +1338,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Observation/result-evaluatedresources-duplicates-out-ra",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Observation/result-evaluatedresources-duplicates-out-ra",
             "resource": {
                 "resourceType": "Observation",
                 "id": "result-evaluatedresources-duplicates-out-ra",
@@ -1419,7 +1419,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/result-evaluatedresources-duplicates-out-ra-08",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Condition/result-evaluatedresources-duplicates-out-ra-08",
             "resource": {
                 "resourceType": "Condition",
                 "id": "result-evaluatedresources-duplicates-out-ra-08",
@@ -1477,7 +1477,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Encounter/result-evaluatedresources-duplicates-out-ra-03",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Encounter/result-evaluatedresources-duplicates-out-ra-03",
             "resource": {
                 "resourceType": "Encounter",
                 "id": "result-evaluatedresources-duplicates-out-ra-03",
@@ -1540,7 +1540,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/result-evaluatedresources-duplicates-out-ra-11",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Condition/result-evaluatedresources-duplicates-out-ra-11",
             "resource": {
                 "resourceType": "Condition",
                 "id": "result-evaluatedresources-duplicates-out-ra-11",
@@ -1598,7 +1598,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Encounter/result-evaluatedresources-duplicates-out-ra-01",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Encounter/result-evaluatedresources-duplicates-out-ra-01",
             "resource": {
                 "resourceType": "Encounter",
                 "id": "result-evaluatedresources-duplicates-out-ra-01",
@@ -1666,7 +1666,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Encounter/result-evaluatedresources-duplicates-out-ra-07",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Encounter/result-evaluatedresources-duplicates-out-ra-07",
             "resource": {
                 "resourceType": "Encounter",
                 "id": "result-evaluatedresources-duplicates-out-ra-07",
@@ -1729,7 +1729,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/result-evaluatedresources-duplicates-out-ra-03",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Condition/result-evaluatedresources-duplicates-out-ra-03",
             "resource": {
                 "resourceType": "Condition",
                 "id": "result-evaluatedresources-duplicates-out-ra-03",
@@ -1787,7 +1787,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/result-evaluatedresources-duplicates-out-ra-10",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Condition/result-evaluatedresources-duplicates-out-ra-10",
             "resource": {
                 "resourceType": "Condition",
                 "id": "result-evaluatedresources-duplicates-out-ra-10",
@@ -1845,7 +1845,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/result-evaluatedresources-duplicates-out-ra-02",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Condition/result-evaluatedresources-duplicates-out-ra-02",
             "resource": {
                 "resourceType": "Condition",
                 "id": "result-evaluatedresources-duplicates-out-ra-02",
@@ -1903,7 +1903,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/result-evaluatedresources-duplicates-out-ra-06",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Condition/result-evaluatedresources-duplicates-out-ra-06",
             "resource": {
                 "resourceType": "Condition",
                 "id": "result-evaluatedresources-duplicates-out-ra-06",
@@ -1961,7 +1961,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Encounter/result-evaluatedresources-duplicates-out-ra-06",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Encounter/result-evaluatedresources-duplicates-out-ra-06",
             "resource": {
                 "resourceType": "Encounter",
                 "id": "result-evaluatedresources-duplicates-out-ra-06",
@@ -2024,7 +2024,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Encounter/result-evaluatedresources-duplicates-out-ra-04",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Encounter/result-evaluatedresources-duplicates-out-ra-04",
             "resource": {
                 "resourceType": "Encounter",
                 "id": "result-evaluatedresources-duplicates-out-ra-04",
@@ -2087,7 +2087,7 @@
             }
         },
         {
-            "fullUrl": "https://cloud.alphora.com/sandbox/r4/ra/fhir/Condition/result-evaluatedresources-duplicates-out-ra-07",
+            "fullUrl": "https://ra.davinci.hl7.org/fhir/Condition/result-evaluatedresources-duplicates-out-ra-07",
             "resource": {
                 "resourceType": "Condition",
                 "id": "result-evaluatedresources-duplicates-out-ra-07",

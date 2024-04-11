@@ -16,7 +16,15 @@ Da Vinci Risk Adjustment
 
 ### Reference Implementation Endpoint
 
-<https://cloud.alphora.com/sandbox/r4/ra/fhir/>
+<https://ra.davinci.hl7.org/fhir/>
+
+## Bundles
+
+The `_refresh` operation misses a number of resources in its bundling.  Use the following to bundle everything:
+
+``` bat
+JAVA -jar "input-cache\tooling-cli-2.4.0.jar" -BundleResources -v=r4 -e=json -op=bundles -ptd=input\examples -bid=ra-examples
+```
 
 ### Tooling
 

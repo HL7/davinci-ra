@@ -39,7 +39,7 @@ Content-Type: application/fhir+json;charset=UTF-8
   "type" : "searchset",
   "entry" : [
     {
-      "fullUrl" : "https://cloud.alphora.com/sandbox/r4/ra/fhir/MeasureReport/ra-measurereport01",
+      "fullUrl" : "https://ra.davinci.hl7.org/fhir/MeasureReport/ra-measurereport01",
       "resource" : {
         "resourceType" : "MeasureReport",
         "id" : "ra-measurereport01",

@@ -1,490 +1,649 @@
 {
-  "resourceType": "Bundle",
-  "id": "tests-hist-closed-HCC189-bundle",
-  "type": "transaction",
-  "entry": [ {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "hist-closed-HCC189",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition" ]
-      },
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active",
-          "display": "Active"
-        } ],
-        "text": "Active"
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed",
-          "display": "Confirmed"
-        } ],
-        "text": "Confirmed"
-      },
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-          "code": "encounter-diagnosis",
-          "display": "Encounter Diagnosis"
-        } ],
-        "text": "Encounter Diagnosis"
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://hl7.org/fhir/sid/icd-10-cm",
-          "code": "Z89.411",
-          "display": "Acquired absence of right great toe"
-        } ],
-        "text": "Z89.411: Acquired absence of right great toe"
-      },
-      "subject": {
-        "reference": "Patient/hist-closed-HCC189"
-      },
-      "onsetDateTime": "2022-01-31"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/hist-closed-HCC189"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "hist-closed2-HCC189",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition" ]
-      },
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active",
-          "display": "Active"
-        } ],
-        "text": "Active"
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed",
-          "display": "Confirmed"
-        } ],
-        "text": "Confirmed"
-      },
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-          "code": "encounter-diagnosis",
-          "display": "Encounter Diagnosis"
-        } ],
-        "text": "Encounter Diagnosis"
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://hl7.org/fhir/sid/icd-10-cm",
-          "code": "Z89.411",
-          "display": "Acquired absence of right great toe"
-        } ],
-        "text": "Z89.411: Acquired absence of right great toe"
-      },
-      "subject": {
-        "reference": "Patient/hist-closed-HCC189"
-      },
-      "onsetDateTime": "2020-01-31"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/hist-closed2-HCC189"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "hist-closed-HCC189",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter" ]
-      },
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB",
-        "display": "ambulatory"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://www.ama-assn.org/go/cpt",
-          "code": "99202"
-        } ],
-        "text": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using time for code selection, 15-29 minutes of total time is spent on the date of the encounter."
-      } ],
-      "subject": {
-        "reference": "Patient/hist-closed-HCC189"
-      },
-      "period": {
-        "start": "2022-01-31",
-        "end": "2022-01-31"
-      },
-      "diagnosis": [ {
-        "condition": {
-          "reference": "Condition/hist-closed-HCC189"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/hist-closed-HCC189"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "hist-closed2-HCC189",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter" ]
-      },
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB",
-        "display": "ambulatory"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://www.ama-assn.org/go/cpt",
-          "code": "99202"
-        } ],
-        "text": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using time for code selection, 15-29 minutes of total time is spent on the date of the encounter."
-      } ],
-      "subject": {
-        "reference": "Patient/hist-closed-HCC189"
-      },
-      "period": {
-        "start": "2020-01-31",
-        "end": "2020-01-31"
-      },
-      "diagnosis": [ {
-        "condition": {
-          "reference": "Condition/hist-closed2-HCC189"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/hist-closed2-HCC189"
-    }
-  }, {
-    "resource": {
-      "resourceType": "MeasureReport",
-      "id": "measurereport-hist-closed-HCC189",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport" ]
-      },
-      "language": "en",
-      "contained": [ {
-        "resourceType": "Observation",
-        "id": "sde-observation-ef8da0b3-9080-41e2-b9b3-d68855edb4bf-org.hl7.fhir.r4.model.encounter@64544a77",
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/cqf-measureInfo",
-          "extension": [ {
-            "url": "measure",
-            "valueCanonical": "https://build.fhir.org/ig/HL7/davinci-ra/ConditionCategoryPOC"
-          }, {
-            "url": "populationId",
-            "valueString": "historic-encounter"
-          } ]
-        } ],
-        "status": "final",
-        "code": {
-          "text": "historic-encounter"
+    "resourceType": "Bundle",
+    "id": "tests-hist-closed-HCC189-bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "hist-closed-HCC189",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                    ]
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "encounter-diagnosis",
+                                "display": "Encounter Diagnosis"
+                            }
+                        ],
+                        "text": "Encounter Diagnosis"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "Z89.411",
+                            "display": "Acquired absence of right great toe"
+                        }
+                    ],
+                    "text": "Z89.411: Acquired absence of right great toe"
+                },
+                "subject": {
+                    "reference": "Patient/hist-closed-HCC189"
+                },
+                "onsetDateTime": "2022-01-31"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/hist-closed-HCC189"
+            }
         },
-        "valueCodeableConcept": {
-          "coding": [ {
-            "code": "org.hl7.fhir.r4.model.Encounter@64544a77"
-          } ]
-        }
-      }, {
-        "resourceType": "Observation",
-        "id": "sde-observation-ccd99867-c5a5-4ebd-af25-56fa51b20a14-org.hl7.fhir.r4.model.condition@4952cbfa",
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/cqf-measureInfo",
-          "extension": [ {
-            "url": "measure",
-            "valueCanonical": "https://build.fhir.org/ig/HL7/davinci-ra/ConditionCategoryPOC"
-          }, {
-            "url": "populationId",
-            "valueString": "historic-diagnosis"
-          } ]
-        } ],
-        "status": "final",
-        "code": {
-          "text": "historic-diagnosis"
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "hist-closed2-HCC189",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                    ]
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "encounter-diagnosis",
+                                "display": "Encounter Diagnosis"
+                            }
+                        ],
+                        "text": "Encounter Diagnosis"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "Z89.411",
+                            "display": "Acquired absence of right great toe"
+                        }
+                    ],
+                    "text": "Z89.411: Acquired absence of right great toe"
+                },
+                "subject": {
+                    "reference": "Patient/hist-closed-HCC189"
+                },
+                "onsetDateTime": "2020-01-31"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/hist-closed2-HCC189"
+            }
         },
-        "valueCodeableConcept": {
-          "coding": [ {
-            "code": "org.hl7.fhir.r4.model.Condition@4952cbfa"
-          } ]
-        }
-      }, {
-        "resourceType": "Observation",
-        "id": "sde-observation-2b28ca39-d3c2-41da-8901-2985e6c96841-org.hl7.fhir.r4.model.encounter@c41e0e7",
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/cqf-measureInfo",
-          "extension": [ {
-            "url": "measure",
-            "valueCanonical": "https://build.fhir.org/ig/HL7/davinci-ra/ConditionCategoryPOC"
-          }, {
-            "url": "populationId",
-            "valueString": "evidence-status-encounter"
-          } ]
-        } ],
-        "status": "final",
-        "code": {
-          "text": "evidence-status-encounter"
+        {
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "hist-closed-HCC189",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+                    ]
+                },
+                "status": "finished",
+                "class": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                    "code": "AMB",
+                    "display": "ambulatory"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://www.ama-assn.org/go/cpt",
+                                "code": "99202"
+                            }
+                        ],
+                        "text": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using time for code selection, 15-29 minutes of total time is spent on the date of the encounter."
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/hist-closed-HCC189"
+                },
+                "period": {
+                    "start": "2022-01-31",
+                    "end": "2022-01-31"
+                },
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition/hist-closed-HCC189"
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/hist-closed-HCC189"
+            }
         },
-        "valueCodeableConcept": {
-          "coding": [ {
-            "code": "org.hl7.fhir.r4.model.Encounter@c41e0e7"
-          } ]
-        }
-      }, {
-        "resourceType": "Observation",
-        "id": "sde-observation-e3fe294f-3396-4ada-a9fc-399f88a62605-org.hl7.fhir.r4.model.condition@4a0014ea",
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/cqf-measureInfo",
-          "extension": [ {
-            "url": "measure",
-            "valueCanonical": "https://build.fhir.org/ig/HL7/davinci-ra/ConditionCategoryPOC"
-          }, {
-            "url": "populationId",
-            "valueString": "evidence-status-diagnosis"
-          } ]
-        } ],
-        "status": "final",
-        "code": {
-          "text": "evidence-status-diagnosis"
+        {
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "hist-closed2-HCC189",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+                    ]
+                },
+                "status": "finished",
+                "class": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                    "code": "AMB",
+                    "display": "ambulatory"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://www.ama-assn.org/go/cpt",
+                                "code": "99202"
+                            }
+                        ],
+                        "text": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using time for code selection, 15-29 minutes of total time is spent on the date of the encounter."
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/hist-closed-HCC189"
+                },
+                "period": {
+                    "start": "2020-01-31",
+                    "end": "2020-01-31"
+                },
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition/hist-closed2-HCC189"
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/hist-closed2-HCC189"
+            }
         },
-        "valueCodeableConcept": {
-          "coding": [ {
-            "code": "org.hl7.fhir.r4.model.Condition@4a0014ea"
-          } ]
-        }
-      }, {
-        "resourceType": "Observation",
-        "id": "sde-observation-91d7fbe5-4c2e-40fd-bbd3-d5594164b6e1-primitive-2022-01-31",
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/cqf-measureInfo",
-          "extension": [ {
-            "url": "measure",
-            "valueCanonical": "https://build.fhir.org/ig/HL7/davinci-ra/ConditionCategoryPOC"
-          }, {
-            "url": "populationId",
-            "valueString": "evidence-status-date"
-          } ]
-        } ],
-        "status": "final",
-        "code": {
-          "text": "evidence-status-date"
+        {
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "measurereport-hist-closed-HCC189",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
+                    ]
+                },
+                "language": "en",
+                "contained": [
+                    {
+                        "resourceType": "Observation",
+                        "id": "sde-observation-ef8da0b3-9080-41e2-b9b3-d68855edb4bf-org.hl7.fhir.r4.model.encounter@64544a77",
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/cqf-measureInfo",
+                                "extension": [
+                                    {
+                                        "url": "measure",
+                                        "valueCanonical": "https://build.fhir.org/ig/HL7/davinci-ra/ConditionCategoryPOC"
+                                    },
+                                    {
+                                        "url": "populationId",
+                                        "valueString": "historic-encounter"
+                                    }
+                                ]
+                            }
+                        ],
+                        "status": "final",
+                        "code": {
+                            "text": "historic-encounter"
+                        },
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "org.hl7.fhir.r4.model.Encounter@64544a77"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resourceType": "Observation",
+                        "id": "sde-observation-ccd99867-c5a5-4ebd-af25-56fa51b20a14-org.hl7.fhir.r4.model.condition@4952cbfa",
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/cqf-measureInfo",
+                                "extension": [
+                                    {
+                                        "url": "measure",
+                                        "valueCanonical": "https://build.fhir.org/ig/HL7/davinci-ra/ConditionCategoryPOC"
+                                    },
+                                    {
+                                        "url": "populationId",
+                                        "valueString": "historic-diagnosis"
+                                    }
+                                ]
+                            }
+                        ],
+                        "status": "final",
+                        "code": {
+                            "text": "historic-diagnosis"
+                        },
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "org.hl7.fhir.r4.model.Condition@4952cbfa"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resourceType": "Observation",
+                        "id": "sde-observation-2b28ca39-d3c2-41da-8901-2985e6c96841-org.hl7.fhir.r4.model.encounter@c41e0e7",
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/cqf-measureInfo",
+                                "extension": [
+                                    {
+                                        "url": "measure",
+                                        "valueCanonical": "https://build.fhir.org/ig/HL7/davinci-ra/ConditionCategoryPOC"
+                                    },
+                                    {
+                                        "url": "populationId",
+                                        "valueString": "evidence-status-encounter"
+                                    }
+                                ]
+                            }
+                        ],
+                        "status": "final",
+                        "code": {
+                            "text": "evidence-status-encounter"
+                        },
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "org.hl7.fhir.r4.model.Encounter@c41e0e7"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resourceType": "Observation",
+                        "id": "sde-observation-e3fe294f-3396-4ada-a9fc-399f88a62605-org.hl7.fhir.r4.model.condition@4a0014ea",
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/cqf-measureInfo",
+                                "extension": [
+                                    {
+                                        "url": "measure",
+                                        "valueCanonical": "https://build.fhir.org/ig/HL7/davinci-ra/ConditionCategoryPOC"
+                                    },
+                                    {
+                                        "url": "populationId",
+                                        "valueString": "evidence-status-diagnosis"
+                                    }
+                                ]
+                            }
+                        ],
+                        "status": "final",
+                        "code": {
+                            "text": "evidence-status-diagnosis"
+                        },
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "org.hl7.fhir.r4.model.Condition@4a0014ea"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resourceType": "Observation",
+                        "id": "sde-observation-91d7fbe5-4c2e-40fd-bbd3-d5594164b6e1-primitive-2022-01-31",
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/cqf-measureInfo",
+                                "extension": [
+                                    {
+                                        "url": "measure",
+                                        "valueCanonical": "https://build.fhir.org/ig/HL7/davinci-ra/ConditionCategoryPOC"
+                                    },
+                                    {
+                                        "url": "populationId",
+                                        "valueString": "evidence-status-date"
+                                    }
+                                ]
+                            }
+                        ],
+                        "status": "final",
+                        "code": {
+                            "text": "evidence-status-date"
+                        },
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "2022-01-31"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.population.description",
+                        "valueString": "A proof of concept for using CQL to evaluate CMS-HCC Models"
+                    },
+                    {
+                        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-supplementalData",
+                        "valueString": "Encounter/hist-closed2-HCC189"
+                    },
+                    {
+                        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-supplementalData",
+                        "valueString": "Condition/hist-closed2-HCC189"
+                    },
+                    {
+                        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-supplementalData",
+                        "valueString": "Encounter/hist-closed-HCC189"
+                    },
+                    {
+                        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-supplementalData",
+                        "valueString": "Condition/hist-closed-HCC189"
+                    }
+                ],
+                "status": "complete",
+                "type": "individual",
+                "measure": "https://build.fhir.org/ig/HL7/davinci-ra/ConditionCategoryPOC",
+                "subject": {
+                    "reference": "Patient/hist-closed-HCC189"
+                },
+                "date": "2022-02-05T17:51:45+00:00",
+                "period": {
+                    "start": "2022-01-01T00:00:00+00:00",
+                    "end": "2022-12-31T23:59:59+00:00"
+                },
+                "improvementNotation": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+                            "code": "increase",
+                            "display": "A higher rate indicates better performance"
+                        }
+                    ]
+                },
+                "group": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                                            "code": "historic"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+                                            "code": "open-gap"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+                                            "code": "2022-02-05"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                                    "code": "189",
+                                    "display": "Amputation Status, Lower Limb/Amputation Complications"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "evaluatedResource": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
+                                "valueString": "initial-population"
+                            }
+                        ],
+                        "reference": "Encounter/hist-closed-HCC189"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
+                                "valueString": "initial-population"
+                            }
+                        ],
+                        "reference": "Encounter/hist-closed2-HCC189"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
+                                "valueString": "initial-population"
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
+                                "valueString": "denominator"
+                            }
+                        ],
+                        "reference": "Patient/hist-closed-HCC189"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
+                                "valueString": "initial-population"
+                            }
+                        ],
+                        "reference": "Condition/hist-closed2-HCC189"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
+                                "valueString": "initial-population"
+                            }
+                        ],
+                        "reference": "Condition/hist-closed-HCC189"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MeasureReport/measurereport-hist-closed-HCC189"
+            }
         },
-        "valueCodeableConcept": {
-          "coding": [ {
-            "code": "2022-01-31"
-          } ]
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "hist-closed-HCC189",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+                        "valueCode": "F"
+                    },
+                    {
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+                        "extension": [
+                            {
+                                "url": "ombCategory",
+                                "valueCoding": {
+                                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                                    "code": "2106-3",
+                                    "display": "White"
+                                }
+                            },
+                            {
+                                "url": "text",
+                                "valueString": "White"
+                            }
+                        ]
+                    },
+                    {
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+                        "extension": [
+                            {
+                                "url": "ombCategory",
+                                "valueCoding": {
+                                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                                    "code": "2186-5",
+                                    "display": "Not Hispanic or Latino"
+                                }
+                            },
+                            {
+                                "url": "text",
+                                "valueString": "Not Hispanic or Latino"
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "MR",
+                                    "display": "Medical record number"
+                                }
+                            ]
+                        },
+                        "system": "http://hospital.davinci.org",
+                        "value": "12345"
+                    }
+                ],
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Everywoman",
+                        "given": [
+                            "Eve"
+                        ]
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1955-01-16",
+                "deceasedBoolean": false,
+                "address": [
+                    {
+                        "use": "home",
+                        "line": [
+                            "2222 Home Street"
+                        ],
+                        "city": "Ann Arbor",
+                        "state": "MI",
+                        "postalCode": "99999",
+                        "country": "USA"
+                    }
+                ],
+                "maritalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                            "code": "M",
+                            "display": "Married"
+                        }
+                    ]
+                },
+                "communication": [
+                    {
+                        "language": {
+                            "coding": [
+                                {
+                                    "system": "urn:ietf:bcp:47",
+                                    "code": "en-US",
+                                    "display": "English (Region=United States)"
+                                }
+                            ]
+                        },
+                        "preferred": true
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/hist-closed-HCC189"
+            }
         }
-      } ],
-      "extension": [ {
-        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.population.description",
-        "valueString": "A proof of concept for using CQL to evaluate CMS-HCC Models"
-      }, {
-        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-supplementalData",
-        "valueString": "Encounter/hist-closed2-HCC189"
-      }, {
-        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-supplementalData",
-        "valueString": "Condition/hist-closed2-HCC189"
-      }, {
-        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-supplementalData",
-        "valueString": "Encounter/hist-closed-HCC189"
-      }, {
-        "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-supplementalData",
-        "valueString": "Condition/hist-closed-HCC189"
-      } ],
-      "status": "complete",
-      "type": "individual",
-      "measure": "https://build.fhir.org/ig/HL7/davinci-ra/ConditionCategoryPOC",
-      "subject": {
-        "reference": "Patient/hist-closed-HCC189"
-      },
-      "date": "2022-02-05T17:51:45+00:00",
-      "period": {
-        "start": "2022-01-01T00:00:00+00:00",
-        "end": "2022-12-31T23:59:59+00:00"
-      },
-      "improvementNotation": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
-          "code": "increase",
-          "display": "A higher rate indicates better performance"
-        } ]
-      },
-      "group": [ {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
-          "valueCodeableConcept": {
-            "coding": [ {
-              "system": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
-              "code": "historic"
-            } ]
-          }
-        }, {
-          "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-          "valueCodeableConcept": {
-            "coding": [ {
-              "system": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
-              "code": "open-gap"
-            } ]
-          }
-        }, {
-          "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
-          "valueCodeableConcept": {
-            "coding": [ {
-              "system": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
-              "code": "2022-02-05"
-            } ]
-          }
-        } ],
-        "code": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
-            "code": "189",
-            "display": "Amputation Status, Lower Limb/Amputation Complications"
-          } ]
-        }
-      } ],
-      "evaluatedResource": [ {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
-          "valueString": "initial-population"
-        } ],
-        "reference": "Encounter/hist-closed-HCC189"
-      }, {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
-          "valueString": "initial-population"
-        } ],
-        "reference": "Encounter/hist-closed2-HCC189"
-      }, {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
-          "valueString": "initial-population"
-        }, {
-          "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
-          "valueString": "denominator"
-        } ],
-        "reference": "Patient/hist-closed-HCC189"
-      }, {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
-          "valueString": "initial-population"
-        } ],
-        "reference": "Condition/hist-closed2-HCC189"
-      }, {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
-          "valueString": "initial-population"
-        } ],
-        "reference": "Condition/hist-closed-HCC189"
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "MeasureReport/measurereport-hist-closed-HCC189"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Patient",
-      "id": "hist-closed-HCC189",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" ]
-      },
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
-        "valueCode": "F"
-      }, {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
-        "extension": [ {
-          "url": "ombCategory",
-          "valueCoding": {
-            "system": "urn:oid:2.16.840.1.113883.6.238",
-            "code": "2106-3",
-            "display": "White"
-          }
-        }, {
-          "url": "text",
-          "valueString": "White"
-        } ]
-      }, {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
-        "extension": [ {
-          "url": "ombCategory",
-          "valueCoding": {
-            "system": "urn:oid:2.16.840.1.113883.6.238",
-            "code": "2186-5",
-            "display": "Not Hispanic or Latino"
-          }
-        }, {
-          "url": "text",
-          "valueString": "Not Hispanic or Latino"
-        } ]
-      } ],
-      "identifier": [ {
-        "use": "usual",
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MR",
-            "display": "Medical record number"
-          } ]
-        },
-        "system": "http://hospital.davinci.org",
-        "value": "12345"
-      } ],
-      "active": true,
-      "name": [ {
-        "use": "official",
-        "family": "Everywoman",
-        "given": [ "Eve" ]
-      } ],
-      "gender": "female",
-      "birthDate": "1955-01-16",
-      "deceasedBoolean": false,
-      "address": [ {
-        "use": "home",
-        "line": [ "2222 Home Street" ],
-        "city": "Ann Arbor",
-        "state": "MI",
-        "postalCode": "99999",
-        "country": "USA"
-      } ],
-      "maritalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-          "code": "M",
-          "display": "Married"
-        } ]
-      },
-      "communication": [ {
-        "language": {
-          "coding": [ {
-            "system": "urn:ietf:bcp:47",
-            "code": "en-US",
-            "display": "English (Region=United States)"
-          } ]
-        },
-        "preferred": true
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/hist-closed-HCC189"
-    }
-  } ]
+    ]
 }

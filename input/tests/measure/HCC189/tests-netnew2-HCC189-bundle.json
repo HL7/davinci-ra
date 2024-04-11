@@ -1,187 +1,245 @@
 {
-  "resourceType": "Bundle",
-  "id": "tests-netnew2-HCC189-bundle",
-  "type": "transaction",
-  "entry": [ {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "ra-conditionnetnew02pat01",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition" ]
-      },
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active",
-          "display": "Active"
-        } ],
-        "text": "Active"
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed",
-          "display": "Confirmed"
-        } ],
-        "text": "Confirmed"
-      },
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-          "code": "encounter-diagnosis",
-          "display": "Encounter Diagnosis"
-        } ],
-        "text": "Encounter Diagnosis"
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://hl7.org/fhir/sid/icd-10-cm",
-          "code": "Z89.411",
-          "display": "Acquired absence of right great toe"
-        } ],
-        "text": "Z89.411: Acquired absence of right great toe"
-      },
-      "subject": {
-        "reference": "Patient/netnew2-HCC189"
-      },
-      "onsetDateTime": "2022-02-10"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/ra-conditionnetnew02pat01"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "ra-encounter02pat01",
-      "meta": {
-        "extension": [ {
-          "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
-          "valueString": "Encounter with Dr Howell on 20210714 for Patient 03"
-        }, {
-          "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
-          "valueMarkdown": "This is Encounter with Dr Howell on 20210714 for Patient 03."
-        } ],
-        "lastUpdated": "2021-07-14T11:56:57.250-04:00",
-        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter" ]
-      },
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB",
-        "display": "ambulatory"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://www.ama-assn.org/go/cpt",
-          "code": "99215"
-        } ],
-        "text": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using time for code selection, 40-54 minutes of total time is spent on the date of the encounter."
-      } ],
-      "subject": {
-        "reference": "Patient/netnew2-HCC189"
-      },
-      "period": {
-        "start": "2022-02-10",
-        "end": "2022-02-10"
-      },
-      "diagnosis": [ {
-        "condition": {
-          "reference": "Condition/ra-conditionnetnew02pat01"
+    "resourceType": "Bundle",
+    "id": "tests-netnew2-HCC189-bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "ra-conditionnetnew02pat01",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                    ]
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "encounter-diagnosis",
+                                "display": "Encounter Diagnosis"
+                            }
+                        ],
+                        "text": "Encounter Diagnosis"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "Z89.411",
+                            "display": "Acquired absence of right great toe"
+                        }
+                    ],
+                    "text": "Z89.411: Acquired absence of right great toe"
+                },
+                "subject": {
+                    "reference": "Patient/netnew2-HCC189"
+                },
+                "onsetDateTime": "2022-02-10"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/ra-conditionnetnew02pat01"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "ra-encounter02pat01",
+                "meta": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+                            "valueString": "Encounter with Dr Howell on 20210714 for Patient 03"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+                            "valueMarkdown": "This is Encounter with Dr Howell on 20210714 for Patient 03."
+                        }
+                    ],
+                    "lastUpdated": "2021-07-14T11:56:57.250-04:00",
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+                    ]
+                },
+                "status": "finished",
+                "class": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                    "code": "AMB",
+                    "display": "ambulatory"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://www.ama-assn.org/go/cpt",
+                                "code": "99215"
+                            }
+                        ],
+                        "text": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using time for code selection, 40-54 minutes of total time is spent on the date of the encounter."
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/netnew2-HCC189"
+                },
+                "period": {
+                    "start": "2022-02-10",
+                    "end": "2022-02-10"
+                },
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition/ra-conditionnetnew02pat01"
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/ra-encounter02pat01"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "netnew2-HCC189",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+                        "valueCode": "F"
+                    },
+                    {
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+                        "extension": [
+                            {
+                                "url": "ombCategory",
+                                "valueCoding": {
+                                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                                    "code": "2106-3",
+                                    "display": "White"
+                                }
+                            },
+                            {
+                                "url": "text",
+                                "valueString": "White"
+                            }
+                        ]
+                    },
+                    {
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+                        "extension": [
+                            {
+                                "url": "ombCategory",
+                                "valueCoding": {
+                                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                                    "code": "2186-5",
+                                    "display": "Not Hispanic or Latino"
+                                }
+                            },
+                            {
+                                "url": "text",
+                                "valueString": "Not Hispanic or Latino"
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "MR",
+                                    "display": "Medical record number"
+                                }
+                            ]
+                        },
+                        "system": "http://hospital.davinci.org",
+                        "value": "12345"
+                    }
+                ],
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Everywoman",
+                        "given": [
+                            "Eve",
+                            "NetNew"
+                        ]
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1955-02-17",
+                "deceasedBoolean": false,
+                "address": [
+                    {
+                        "use": "home",
+                        "line": [
+                            "2222 Home Street"
+                        ],
+                        "city": "Ann Arbor",
+                        "state": "MI",
+                        "postalCode": "99999",
+                        "country": "USA"
+                    }
+                ],
+                "maritalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                            "code": "M",
+                            "display": "Married"
+                        }
+                    ]
+                },
+                "communication": [
+                    {
+                        "language": {
+                            "coding": [
+                                {
+                                    "system": "urn:ietf:bcp:47",
+                                    "code": "en-US",
+                                    "display": "English (Region=United States)"
+                                }
+                            ]
+                        },
+                        "preferred": true
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/netnew2-HCC189"
+            }
         }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/ra-encounter02pat01"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Patient",
-      "id": "netnew2-HCC189",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" ]
-      },
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
-        "valueCode": "F"
-      }, {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
-        "extension": [ {
-          "url": "ombCategory",
-          "valueCoding": {
-            "system": "urn:oid:2.16.840.1.113883.6.238",
-            "code": "2106-3",
-            "display": "White"
-          }
-        }, {
-          "url": "text",
-          "valueString": "White"
-        } ]
-      }, {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
-        "extension": [ {
-          "url": "ombCategory",
-          "valueCoding": {
-            "system": "urn:oid:2.16.840.1.113883.6.238",
-            "code": "2186-5",
-            "display": "Not Hispanic or Latino"
-          }
-        }, {
-          "url": "text",
-          "valueString": "Not Hispanic or Latino"
-        } ]
-      } ],
-      "identifier": [ {
-        "use": "usual",
-        "type": {
-          "coding": [ {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MR",
-            "display": "Medical record number"
-          } ]
-        },
-        "system": "http://hospital.davinci.org",
-        "value": "12345"
-      } ],
-      "active": true,
-      "name": [ {
-        "use": "official",
-        "family": "Everywoman",
-        "given": [ "Eve", "NetNew" ]
-      } ],
-      "gender": "female",
-      "birthDate": "1955-02-17",
-      "deceasedBoolean": false,
-      "address": [ {
-        "use": "home",
-        "line": [ "2222 Home Street" ],
-        "city": "Ann Arbor",
-        "state": "MI",
-        "postalCode": "99999",
-        "country": "USA"
-      } ],
-      "maritalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-          "code": "M",
-          "display": "Married"
-        } ]
-      },
-      "communication": [ {
-        "language": {
-          "coding": [ {
-            "system": "urn:ietf:bcp:47",
-            "code": "en-US",
-            "display": "English (Region=United States)"
-          } ]
-        },
-        "preferred": true
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/netnew2-HCC189"
-    }
-  } ]
+    ]
 }
