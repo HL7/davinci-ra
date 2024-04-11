@@ -26,6 +26,7 @@
       <short value="This is a risk adjustment coding gap report."/>
       <definition value="This is a risk adjustment coding gap report of a patient/member using a specific version of a particular Risk Adjustment model."/>
     </element>
+
     <element id="MeasureReport.extension:clinicalDataCollectionDeadline">
       <path value="MeasureReport.extension"/>
       <sliceName value="clinicalDataCollectionDeadline"/>
@@ -36,6 +37,7 @@
         <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline"/>
       </type>
       <mustSupport value="true"/>
+
     </element>
     <element id="MeasureReport.status">
       <path value="MeasureReport.status"/>

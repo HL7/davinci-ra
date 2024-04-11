@@ -46,7 +46,8 @@
       <max value="*"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem"/>
+        <!--<profile value="http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem"/> -->
+        <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem"/>
       </type>
       <mustSupport value="true"/>
     </element>

@@ -257,34 +257,37 @@
       </type>      
     </element>  
 
-    <element id="Extension.extension:supportingData">
+    <element id="Extension.extension:reasonDiagnosis">
       <path value="Extension.extension"/>
-      <sliceName value="supportingData"/>
-      <short value="Supporting data"/>
+      <sliceName value="reasonDiagnosis"/>
+      <short value="Dignosis from the provider sent as part of the remark"/>
       <min value="0"/>
       <max value="*"/>
       <type>
         <code value="Extension"/>
       </type>
     </element>
-    <element id="Extension.extension:supportingData.url">
+    <element id="Extension.extension:reasonDiagnosis.url">
       <path value="Extension.extension.url"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="supportingData"/>
+      <fixedUri value="reasonDiagnosis"/>
     </element>   
-    <element id="Extension.extension:supportingData.value[x]">
+    <element id="Extension.extension:code.valueCodableConcept">
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
-      </type>      
-    </element>  
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code"/>   
+      </binding>      
+    </element>       
 
     <element id="Extension.url">
       <path value="Extension.url"/>
