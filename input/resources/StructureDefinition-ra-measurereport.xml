@@ -189,7 +189,18 @@
         <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-confidenceScale"/>
       </type>
       <mustSupport value="true"/>
-    </element> 
+    </element>
+    <element id="MeasureReport.group.extension:suggestedCondition">
+      <path value="MeasureReport.group.extension"/>
+      <sliceName value="suggestedCondition"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suggestedCondition"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>      
     <element id="MeasureReport.group.extension:ccRemark">
       <path value="MeasureReport.group.extension"/>
       <sliceName value="ccRemark"/>

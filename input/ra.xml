@@ -7,7 +7,7 @@
     <valueCode value="cqi"/>
   </extension>
   <url value="http://hl7.org/fhir/us/davinci-ra/ImplementationGuide/fhir.us.davinci-ra"/>
-  <version value="2.0.0"/>
+  <version value="2.0.0-preview"/>
   <name value="RiskAdjustment"/>
   <title value="Da Vinci Risk Adjustment Implementation Guide"/>
   <status value="active"/>
