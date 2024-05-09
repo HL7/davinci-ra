@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ra-suggestedCondition"/>
-  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suggestedCondition"/>
-  <name value="SuggestedCondition"/>
-  <title value="Suggested Condition"/>
+  <id value="ra-dxCode"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-dxCode"/>
+  <name value="DxCode"/>
+  <title value="Diagnosis Code"/>
   <status value="active"/>
   <experimental value="false"/>
-  <description value="Suggested conditions by suspecting."/>
+  <description value="Diganosis code(s) of the condition, such as ICD-10 codes."/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -20,9 +20,9 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Suspected/inferred conditions"/>
-      <definition value="Suggested conditions that were by suspecting."/>
-      <comment value="Suggested conditions, e.g., through suspecting engines, included in the report that are attributed to the Condition Category."/>
+      <short value="Diagnosis code"/>
+      <definition value="Diagnosis code"/>
+      <comment value="Diagnosis codes such as ICD-10 for the diagnosis/condition that attributed to the Condition Category."/>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -31,7 +31,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suggestedCondition"/>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-dxcode"/>
       <min value="1"/>
       <max value="1"/>
     </element>

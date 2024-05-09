@@ -47,6 +47,7 @@
 <artifact id="Condition/ra-conditionR01pat01" key="Condition-ra-conditionR01pat01" name="ConditionR01pat01: Cystic fibrosis with other intestinal manifestations"/>
 <artifact id="StructureDefinition/ra-confidenceScale" key="StructureDefinition-ra-confidenceScale" name="Confidence Scale"/>
 <artifact id="ValueSet/confidence-scale" key="ValueSet-confidence-scale" name="Confidence Scale Value Set"/>
+<artifact id="StructureDefinition/ra-dxCode" key="StructureDefinition-ra-dxCode" name="Diagnosis Code"/>
 <artifact id="DocumentReference/ra-documentreference01pat01" key="DocumentReference-ra-documentreference01pat01" name="Documentreference01pat01: Outpatient Note"/>
 <artifact id="Encounter/ra-encounter44pat01" key="Encounter-ra-encounter44pat01" name="Encounter on 20170118"/>
 <artifact id="Encounter/ra-encounter08pat01" key="Encounter-ra-encounter08pat01" name="Encounter on 20170203"/>
@@ -106,6 +107,9 @@
 <artifact deprecated="true" id="StructureDefinition/ra-clinical-evaluation-evidence-task" key="StructureDefinition-ra-clinical-evaluation-evidence-task" name="Risk Adjustment Clinical Evaluation Evidence Task"/>
 <artifact id="StructureDefinition/ra-measurereport" key="StructureDefinition-ra-measurereport" name="Risk Adjustment Coding Gap MeasureReport"/>
 <artifact id="StructureDefinition/ra-measurereport-bundle" key="StructureDefinition-ra-measurereport-bundle" name="Risk Adjustment Coding Gap Report Bundle"/>
+<artifact id="ValueSet/cc-type" key="ValueSet-cc-type" name="Risk Adjustment Conditioin Category Type ValueSet"/>
+<artifact id="StructureDefinition/ra-ccType" key="StructureDefinition-ra-ccType" name="Risk Adjustment Condition Category Type"/>
+<artifact id="CodeSystem/cc-type" key="CodeSystem-cc-type" name="Risk Adjustment Condition Categoryy Type CodeSystem"/>
 <artifact id="StructureDefinition/ra-datax-measurereport" key="StructureDefinition-ra-datax-measurereport" name="Risk Adjustment Data Exchange MeasureReport"/>
 <artifact id="CapabilityStatement/ra-data-submission-client" key="CapabilityStatement-ra-data-submission-client" name="Risk Adjustment Data Submission Client Capability Statement"/>
 <artifact id="CapabilityStatement/ra-data-submission-server" key="CapabilityStatement-ra-data-submission-server" name="Risk Adjustment Data Submission Server Capability Statement"/>
@@ -126,12 +130,11 @@
 <artifact id="CapabilityStatement/ra-reporting-server" key="CapabilityStatement-ra-reporting-server" name="Risk Adjustment Reporting Server Capability Statement"/>
 <artifact deprecated="true" id="StructureDefinition/ra-searchset-bundle" key="StructureDefinition-ra-searchset-bundle" name="Risk Adjustment SearchSet Bundle"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-server" key="CapabilityStatement-ra-server" name="Risk Adjustment Server Capability Statement"/>
-<artifact id="StructureDefinition/ra-suspectType" key="StructureDefinition-ra-suspectType" name="Risk Adjustment Suspect Type"/>
-<artifact id="CodeSystem/suspect-type" key="CodeSystem-suspect-type" name="Risk Adjustment Suspect Type CodeSystem"/>
-<artifact id="ValueSet/suspect-type" key="ValueSet-suspect-type" name="Risk Adjustment Suspect Type ValueSet"/>
+<artifact deprecated="true" id="StructureDefinition/ra-suspectType" key="StructureDefinition-ra-suspectType" name="Risk Adjustment Suspect Type"/>
+<artifact deprecated="true" id="CodeSystem/suspect-type" key="CodeSystem-suspect-type" name="Risk Adjustment Suspect Type CodeSystem"/>
+<artifact deprecated="true" id="ValueSet/suspect-type" key="ValueSet-suspect-type" name="Risk Adjustment Suspect Type ValueSet"/>
 <artifact id="ValueSet/sample-cmshcc" key="ValueSet-sample-cmshcc" name="Sample CMS Hierarchical Condition Category"/>
 <artifact id="Parameters/ra-submit-data" key="Parameters-ra-submit-data" name="Submit Data for Risk Adjustement Data Exchange MeasureReport"/>
-<artifact id="StructureDefinition/ra-suggestedCondition" key="StructureDefinition-ra-suggestedCondition" name="Suggested Condition"/>
 <artifact deprecated="true" id="CodeSystem/task-label" key="CodeSystem-task-label" name="Task Label CodeSystem"/>
 <artifact deprecated="true" id="Task/ra-task01measurereport01group003" key="Task-ra-task01measurereport01group003" name="Task: Clinical Evaluation Task"/>
 <artifact id="Observation/ra-obs21pat01" key="Observation-ra-obs21pat01" name="Trypsin [Mass/volume] in Serum or Plasma from 20170617"/>

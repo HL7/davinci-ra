@@ -1,0 +1,31 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cc-type",
+  "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type",
+  "name": "RiskAdjustmentConditionCategoryType",
+  "title": "Risk Adjustment Condition Categoryy Type CodeSystem",
+  "status": "active",
+  "experimental": false,
+  "description": "Code sytstem that indicates whether it is a suspected Condition Category (CC) gap, a historic Condition Category (CC) gap, or a net-new Condition Category (CC). Historic, suspected, and net-new are mutually exclusive.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/us/davinci-ra/ValueSet/cc-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "historic",
+      "display": "Historic Condition Category Gap",
+      "definition": "Historic Condition Category (CC) Gap. Historic Condition Category (CC) is based on verified data from any clinical evaluation period."
+    },
+    {
+      "code": "suspected",
+      "display": "Suspected Condition Category Gap",
+      "definition": "Suspected Condition Category (CC) Gap. A member has never had this as a verified Condition Category (CC), but when a Server runs a suspecting algorithm, suspected Condition Categories (CCs) are identified."
+    },
+    {
+      "code": "net-new",
+      "display": "Net-New Condition Category",
+      "definition": "Net-New Condition Category (CC). New Condition Category (CC), not from suspected process or historic. A Net-New Condition Category (CC) is documented for the first time during the clinical evaluation period for the risk adjustment model. Any Condition Categories (CCs) that are net new must be either closed-gap or pending and cannot be open-gap."
+    }
+  ],
+  "count": 3
+}

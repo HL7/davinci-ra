@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ra-suspectType"/>
-  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType"/>
-  <name value="RASuspectType"/>
-  <title value="Risk Adjustment Suspect Type"/>
+  <id value="ra-ccType"/>
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType"/>
+  <name value="CCType"/>
+  <title value="Risk Adjustment Condition Category Type"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="Indicates whether the Condition Category (CC) gap is historic or suspected. This extension is also used to indicate if a Condition Category (CC) is net-new."/>
@@ -20,28 +20,26 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="historic|suspected|net-new"/>
-      <definition value="Risk adjustment suspect type, whether the Condition Category (CC) gap is historic, suspected, or net new"/>
-      <comment value="This extension is to represent risk adjustment suspect type"/>
-      <min value="0"/>
-      <max value="1"/>
+      <short value="Condition Category type: historic|suspected|net-new"/>
+      <definition value="Condition Category type, whether the CC gap is historic, suspected, or net-new"/>
+      <comment value="This extension is to represent risk adjustment Condition Category (CC) type"/>
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType"/>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType"/>
     </element>
     <element id="Extension.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
-      <short value="Indicate whether HCC gap is historic, suspected, or net-new"/>
+      <short value="Indicate whether CC gap is historic, suspected, or net-new"/>
       <type>
         <code value="CodeableConcept"/>
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/suspect-type"/>
+        <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/cc-type"/>
       </binding>
     </element>
   </differential>

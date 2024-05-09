@@ -42,12 +42,12 @@
             },
             "extension": [
                 {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType",
                     "valueCodeableConcept": {
                         "coding": [
                             {
                                 "code": "historic",
-                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"
                             }
                         ]
                     }
@@ -95,12 +95,12 @@
             },
             "extension": [
                 {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType",
                     "valueCodeableConcept": {
                         "coding": [
                             {
                                 "code": "historic",
-                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"
                             }
                         ]
                     }
@@ -148,12 +148,12 @@
             },
             "extension": [
                 {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType",
                     "valueCodeableConcept": {
                         "coding": [
                             {
                                 "code": "suspected",
-                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"
                             }
                         ]
                     }
@@ -201,12 +201,12 @@
             },
             "extension": [
                 {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType",
                     "valueCodeableConcept": {
                         "coding": [
                             {
                                 "code": "suspected",
-                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"
                             }
                         ]
                     }
@@ -254,12 +254,12 @@
             },
             "extension": [
                 {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType",
                     "valueCodeableConcept": {
                         "coding": [
                             {
                                 "code": "suspected",
-                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"
                             }
                         ]
                     }
@@ -307,12 +307,12 @@
             },
             "extension": [
                 {
-                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-suspectType",
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType",
                     "valueCodeableConcept": {
                         "coding": [
                             {
                                 "code": "net-new",
-                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/suspect-type"
+                                "system": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"
                             }
                         ]
                     }
