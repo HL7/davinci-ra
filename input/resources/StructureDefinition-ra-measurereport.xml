@@ -146,6 +146,17 @@
       </type>
       <mustSupport value="true"/>
     </element>
+    <element id="MeasureReport.group.extension:dxCode">
+      <path value="MeasureReport.group.extension"/>
+      <sliceName value="dxCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-dxCode"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>         
     <element id="MeasureReport.group.extension:evidenceStatus">
       <path value="MeasureReport.group.extension"/>
       <sliceName value="evidenceStatus"/>
@@ -189,18 +200,7 @@
         <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-confidenceScale"/>
       </type>
       <mustSupport value="true"/>
-    </element>
-    <element id="MeasureReport.group.extension:dxCode">
-      <path value="MeasureReport.group.extension"/>
-      <sliceName value="dxCode"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-dxCode"/>
-      </type>
-      <mustSupport value="true"/>
-    </element>      
+    </element> 
     <element id="MeasureReport.group.extension:ccRemark">
       <path value="MeasureReport.group.extension"/>
       <sliceName value="ccRemark"/>
