@@ -257,24 +257,25 @@
       </type>      
     </element>  
 
-    <element id="Extension.extension:reasonDiagnosis">
+    <element id="Extension.extension:qualifyingDxCode">
       <path value="Extension.extension"/>
-      <sliceName value="reasonDiagnosis"/>
-      <short value="Dignosis from the provider sent as part of the remark"/>
+      <sliceName value="qualifyingDxCode"/>
+      <short value="Diagnosis codes classified under a Condition Category as defined by the risk adjustment model"/>
+      <definition value="Diagnosis codes (e.g., ICD-10) for conditions that are classified under a Condition Category as defined by the risk adjustment model. This usually comes into play in the Medicaid scenario where proprietary risk models are used and the mappings of ICD-10 codes to Condition Categories are not readily available."/>
       <min value="0"/>
       <max value="*"/>
       <type>
         <code value="Extension"/>
       </type>
     </element>
-    <element id="Extension.extension:reasonDiagnosis.url">
+    <element id="Extension.extension:qualifyingDxCode.url">
       <path value="Extension.extension.url"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="reasonDiagnosis"/>
+      <fixedUri value="qualifyingDxCode"/>
     </element>   
     <element id="Extension.extension:code.valueCodableConcept">
       <path value="Extension.extension.value[x]"/>
