@@ -22,7 +22,7 @@
       <path value="Extension"/>
       <short value="Diagnosis code"/>
       <definition value="Diagnosis code"/>
-      <comment value="Diagnosis codes such as ICD-10 for the diagnosis/condition that attributed to the Condition Category."/>
+      <comment value="Diagnosis codes such as ICD-10 for the diagnosis/condition that attributed to the Condition Category. If ccType is either historic or net-new, the dxCode(s) provided are documented conditions. If ccType is suspected, then the dxCode(s) provided in the report are inferred/suspected conditions."/>
       <min value="0"/>
       <max value="*"/>
     </element>

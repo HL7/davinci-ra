@@ -30,7 +30,7 @@
       <sliceName value="author"/>
       <short value="Identifier of the person who added the remark such as NPI"/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
       <type>
         <code value="Extension"/>
       </type>
@@ -44,21 +44,23 @@
       </type>
       <fixedUri value="author"/>
     </element>   
-    <element id="Extension.extension:author.valueIdentifier">
-      <path value="Extension.extension.valueIdentifier"/>
+    <element id="Extension.extension:author.value[x]">
+      <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="Identifier"/>
       </type>
-    </element>   
-
+      <type>
+        <code value="string"/>
+      </type>      
+    </element>       
     <element id="Extension.extension:authorOrganization">
       <path value="Extension.extension"/>
       <sliceName value="authorOrganization"/>
       <short value="Identifier of the organization that added the remark such as TIN, NPI"/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
       <type>
         <code value="Extension"/>
       </type>
@@ -72,21 +74,23 @@
       </type>
       <fixedUri value="authorOrganization"/>
     </element>   
-    <element id="Extension.extension:authorOrganization.valueIdentifier">
-      <path value="Extension.extension.valueIdentifier"/>
+    <element id="Extension.extension:authorOrganization.value[x]">
+      <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="Identifier"/>
       </type>
+      <type>
+        <code value="string"/>
+      </type>      
     </element>   
-
     <element id="Extension.extension:authorSoftware">
       <path value="Extension.extension"/>
       <sliceName value="authorSoftware"/>
       <short value="Identifier of the software that added the remark"/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
       <type>
         <code value="Extension"/>
       </type>
@@ -100,13 +104,16 @@
       </type>
       <fixedUri value="authorSoftware"/>
     </element>   
-    <element id="Extension.extension:authorSoftware.valueIdentifier">
-      <path value="Extension.extension.valueIdentifier"/>
+    <element id="Extension.extension:authorSoftware.value[x]">
+      <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="Identifier"/>
       </type>
+      <type>
+        <code value="string"/>
+      </type>      
     </element>           
 
     <element id="Extension.extension:authorDatetime">
@@ -142,7 +149,7 @@
       <sliceName value="text"/>
       <short value="Free text remark"/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
       <type>
         <code value="Extension"/>
       </type>
@@ -261,7 +268,7 @@
       <path value="Extension.extension"/>
       <sliceName value="qualifyingDxCode"/>
       <short value="Diagnosis codes classified under a Condition Category as defined by the risk adjustment model"/>
-      <definition value="Diagnosis codes (e.g., ICD-10) for conditions that are classified under a Condition Category as defined by the risk adjustment model. This usually comes into play in the Medicaid scenario where proprietary risk models are used and the mappings of ICD-10 codes to Condition Categories are not readily available."/>
+      <definition value="Diagnosis codes (e.g., ICD-10) for conditions that are classified under a Condition Category as defined by the risk adjustment model. This usually comes into play in the scenario where proprietary risk models are used and the mappings of ICD-10 codes to Condition Categories are not readily available."/>
       <min value="0"/>
       <max value="*"/>
       <type>

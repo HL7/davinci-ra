@@ -149,6 +149,8 @@
     <element id="MeasureReport.group.extension:dxCode">
       <path value="MeasureReport.group.extension"/>
       <sliceName value="dxCode"/>
+      <short value="diagnosis code: if ccType historic or net-new, this is documented condition; if ccType is suspected, this is inferred/suspected condition."/>
+      <definition value="If ccType is either historic or net-new, the dxCode(s) provided are documented conditions. If ccType is suspected, then the dxCode(s) provided in the report are inferred/suspected conditions."/>
       <min value="0"/>
       <max value="*"/>
       <type>
