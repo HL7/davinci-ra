@@ -268,7 +268,7 @@
       <path value="Extension.extension"/>
       <sliceName value="qualifyingDxCode"/>
       <short value="Diagnosis codes classified under a Condition Category as defined by the risk adjustment model"/>
-      <definition value="Diagnosis codes (e.g., ICD-10) for conditions that are classified under a Condition Category as defined by the risk adjustment model. This usually comes into play in the scenario where proprietary risk models are used and the mappings of ICD-10 codes to Condition Categories are not readily available."/>
+      <definition value="Diagnosis codes (e.g., ICD-10) for conditions that are classified under a Condition Category as defined by the risk adjustment model. This usually comes into play in the scenario where proprietary risk models are used and the mappings of ICD-10 codes to Condition Categories are not readily available. A string data type is supported in addition to CodeableConcept because there may be situations a range of codes are provided instead of a single code."/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -294,9 +294,11 @@
       <binding>
         <strength value="preferred"/>
         <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code"/>   
-      </binding>      
+      </binding>  
+      <type>
+        <code value="string"/>
+      </type>            
     </element>       
-
     <element id="Extension.url">
       <path value="Extension.url"/>
       <type>
