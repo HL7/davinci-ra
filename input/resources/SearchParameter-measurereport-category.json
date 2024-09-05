@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "measurereport-category",
+  "url": "http://hl7.org/fhir/us/davinci-ra/SearchParameter/measurereport-category",
+  "name": "MeasureReportCategory",
+  "status": "active",
+  "code": "category",
+  "base": [
+    "MeasureReport"
+  ],
+  "type": "string",
+  "description": "Search based on the measurereport-category extension",
+  "expression": "MeasureReport.extension('http://hl7.org/fhir/StructureDefinition/measurereport-category').value",
+  "xpath": "f:MeasureReport/f:extension[@url='http://hl7.org/fhir/StructureDefinition/measurereport-category'].value",
+  "xpathUsage": "normal"
+}

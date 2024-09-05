@@ -1,4 +1,6 @@
 
+### Profiles
+
 List of profiles that define constrains on FHIR resources for systems conforming to this implementation guide.
 
 |Resource Type|Profile|
@@ -12,6 +14,9 @@ List of profiles that define constrains on FHIR resources for systems conforming
 
 *The Risk Adjustment Coding Gap Report Bundle is a collection Bundle returned by [$ra.evaluate-measure] and included in this version of the IG as DRAFT.
 
+### Search Parameter
+
+[MeasureReport-Category Search Parameter]
 
 <br />
 
