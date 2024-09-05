@@ -27,6 +27,29 @@
       <definition value="This is a MeasureReport used to exchange clinical evaluation evidence from Provider to Payer for a patient/member's coding gaps for a particular Risk Adjustment model."/>
     </element>
 
+    <element id="MeasureReport.extension:measurereport-category">
+      <path value="MeasureReport.extension"/>
+      <sliceName value="measurereport-category"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/measurereport-category"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MeasureReport.extension:measurereport-category.value[x].coding">
+      <path value="MeasureReport.extension.value[x].coding"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="MeasureReport.extension:measurereport-category.value[x].coding.code">
+      <path value="MeasureReport.extension.value[x].coding.code"/>
+      <min value="1"/>
+      <max value="1"/>
+      <fixedCode value="ra"/>
+    </element>
+
     <element id="MeasureReport.extension:payerCodingGapReportId">
       <path value="MeasureReport.extension"/>
       <sliceName value="payerCodingGapReportId"/>
