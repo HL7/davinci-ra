@@ -6,8 +6,9 @@ The following data-elements must always be present (Mandatory) or must be suppor
 
 **Each {{site.data.structuredefinitions.[id].type}} must have:**
 
+1. A `measurereporot-category` extension with a fixed code "ra"
 1. A `MeasureReport.status` element
-1. A `MeasureReport.type` element hard coded to "individual"
+1. A `MeasureReport.type` element with a fixed code "individual"
 1. A `MeasureReport.measure` element references a [Risk Adjustment Model Measure]
 1. A `MeasureReport.subject` element references a [US Core Patient](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html) profile
 1. A `MeasureReport.period` element for the clinical evaluation period for which the risk adjustment coding gap report was generated.
@@ -20,6 +21,7 @@ The following data-elements must always be present (Mandatory) or must be suppor
 1. Each `MeasureReport.group` *should* have a `MeasureReport.group.evidenceStatus` element
 1. Each `MeasureReport.group` *should* have a `MeasureReport.group.evidenceStatusDate` element
 1. Each `MeasureReport.group` *should* have a `MeasureReport.group.hierarchicalStatus` element
+1. Each `MeasureReport.group` *should* have zeor too many `MeasureReport.group.dxCode` element
 1. Each `MeasureReport.group` *should* have zero to many `MeasureReport.evalautedResource` element
 
 **Each {{site.data.structuredefinitions.[id].type}} *may* have ([Must Support]):**
@@ -27,7 +29,7 @@ The following data-elements must always be present (Mandatory) or must be suppor
 1. Each `MeasureReport.group` *may* have zero to many `MeasureReport.group.ccRemark` element
 
 **Additional Profile specific implementation guidance:**
-1. `evaluatedResource` SHALL reference resources using USCore profiles where applicable
+1. `evaluatedResource` **SHALL** reference resources using USCore profiles where applicable
 
 The Clinical Data Collection Deadline element, `clinicalDataCollectionDeadline`, was added as an extension to MeasureReport. We are seeking comment from implementers if they intend to use this element when communicating risk adjustment coding gap reports from payers to providers.
 {:.stu-note}

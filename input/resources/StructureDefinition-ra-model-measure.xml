@@ -6,7 +6,7 @@
     <title value="Risk Adjustment Model Measure"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This risk adjustment model measure profile is based on the [Measure](http://hl7.org/fhir/R4/measure.html) resource to represent a risk adjustment model and its version, such as CMS-HCC version 24."/>
+    <description value="This risk adjustment model measure profile is based on the [Measure](http://hl7.org/fhir/R4/measure.html) resource to represent a risk adjustment model and its version, such as CMS-HCC version 24, CMS-HCC version 28."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -31,13 +31,13 @@
         </element>
         <element id="Measure.version">
             <path value="Measure.version"/>
-            <short value="Risk Adjustment Model version, e.g., 24"/>
+            <short value="Risk Adjustment Model version, e.g., 24, 28"/>
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Measure.name">
             <path value="Measure.name"/>
-            <short value="e.g., CMS-HCCv24"/>
+            <short value="e.g., CMS-HCCv24, CMS-HCCv28"/>
             <min value="0"/>
             <mustSupport value="true"/>
         </element>
