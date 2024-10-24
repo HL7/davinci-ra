@@ -8,6 +8,17 @@
     },
     "extension" : [
         {
+            "url" : "http://hl7.org/fhir/StructureDefinition/measurereport-category",
+            "valueCodeableConcept" : {
+              "coding" : [
+                {
+                  "system" : "http://hl7.org/fhir/CodeSystem/measurereport-category",
+                  "code" : "ra"
+                }
+              ]
+            }
+        },   
+        {
         
         
             

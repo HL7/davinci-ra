@@ -8,6 +8,17 @@
     },
     "extension": [
         {
+            "url" : "http://hl7.org/fhir/StructureDefinition/measurereport-category",
+            "valueCodeableConcept" : {
+              "coding" : [
+                {
+                  "system" : "http://hl7.org/fhir/CodeSystem/measurereport-category",
+                  "code" : "ra"
+                }
+              ]
+            }
+        },        
+        {
             "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline",
             "valueDate": "2022-03-31"
         }
@@ -187,19 +198,19 @@
                 {
                     "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark",
                     "extension": [
-                        {"url": "author",
-                        "valueIdentifier": {
-                            "system": "http://hl7.org/fhir/sid/us-npi",
-                            "value": "1234567890"
+                        {
+                            "url" : "author",
+                            "valueIdentifier" : {
+                              "system" : "http://hl7.org/fhir/sid/us-npi",
+                              "value" : "1234567890"
                             }
                         },
-                        {"url": "authorDatetime",
-                        "valueDateTime": "2021-11-01"
+                        {
+                            "url": "text",
+                            "valueString": "Diagnosis added"
                         },
-                        {"url": "text",
-                        "valueString": "Diagnosis added"
-                        },
-                        {"url": "code",
+                        {
+                            "url": "code",
                             "valueCodeableConcept" : {
                                 "coding": [
                                     {
@@ -210,7 +221,8 @@
                                 ]
                             }
                         },
-                        {"url": "relatedDataIdentifier",
+                        {
+                            "url": "relatedDataIdentifier",
                             "valueIdentifier":  {
                                 "system": "http://example.org/fhir/myclaimno",
                                 "value": "CLM23333"}

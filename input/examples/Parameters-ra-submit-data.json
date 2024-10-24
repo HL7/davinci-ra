@@ -17,6 +17,17 @@
                   "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MeasureReport</b><a name=\"ra-datax-measurereport01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MeasureReport &quot;ra-datax-measurereport01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ra-datax-measurereport.html\">Risk Adjustment Data Exchange MeasureReport</a></p></div><p><b>Payer Coding Gap Report Id</b>: ra-measurereport01</p><p><b>status</b>: complete</p><p><b>type</b>: data-collection</p><p><b>measure</b>: <a href=\"Measure-RAModelExample01.html\">Risk Adjustment Model Version 24 - CMS Hierarchical Category Condition (CMS-HCC)</a></p><p><b>subject</b>: <a href=\"Patient-ra-patient01.html\">Patient/ra-patient01</a> &quot; EVERYWOMAN&quot;</p><p><b>date</b>: 2021-11-10</p><p><b>reporter</b>: <a href=\"Organization-ra-org02pat02.html\">Organization/ra-org02pat02</a> &quot;GHH Outpatient Clinic&quot;</p><p><b>period</b>: 2021-01-01 --&gt; 2021-09-30</p><p><b>evaluatedResource</b>: <a href=\"DocumentReference-ra-documentreference01pat01.html\">DocumentReference/ra-documentreference01pat01</a></p></div>"
                 },
                 "extension": [
+                  {
+                    "url" : "http://hl7.org/fhir/StructureDefinition/measurereport-category",
+                    "valueCodeableConcept" : {
+                      "coding" : [
+                        {
+                          "system" : "http://hl7.org/fhir/CodeSystem/measurereport-category",
+                          "code" : "ra"
+                        }
+                      ]
+                    }
+                  },   
                     {
                         "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-payerCodingGapReportId",
                         "valueId": "ra-measurereport01"

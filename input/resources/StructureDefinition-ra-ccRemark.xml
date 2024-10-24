@@ -20,6 +20,15 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
+      <condition value="ra-2"/>
+
+      <constraint>
+          <key value="ra-2"/>
+          <severity value="error"/>
+          <human value="A remark shall include an author, an authorOrganization, or an authorSoftware"/>
+          <expression value="extension.where(url = 'author').exists() or extension.where(url = 'authorOrganization').exists() or extension.where(url = 'authorSoftware').exists()"/>
+      </constraint>
+
       <short value="Condition Category remark"/>
       <definition value="Remark about a Condition Category"/>
       <min value="0"/>
@@ -27,6 +36,7 @@
     </element>
     <element id="Extension.extension:author">
       <path value="Extension.extension"/>
+      
       <sliceName value="author"/>
       <short value="Identifier of the person who added the remark such as NPI"/>
       <min value="0"/>
@@ -57,6 +67,7 @@
     </element>       
     <element id="Extension.extension:authorOrganization">
       <path value="Extension.extension"/>
+
       <sliceName value="authorOrganization"/>
       <short value="Identifier of the organization that added the remark such as TIN, NPI"/>
       <min value="0"/>
@@ -87,6 +98,7 @@
     </element>   
     <element id="Extension.extension:authorSoftware">
       <path value="Extension.extension"/>
+
       <sliceName value="authorSoftware"/>
       <short value="Identifier of the software that added the remark"/>
       <min value="0"/>

@@ -25,6 +25,17 @@
                 },
                 "extension": [
                     {
+                        "url" : "http://hl7.org/fhir/StructureDefinition/measurereport-category",
+                        "valueCodeableConcept" : {
+                          "coding" : [
+                            {
+                              "system" : "http://hl7.org/fhir/CodeSystem/measurereport-category",
+                              "code" : "ra"
+                            }
+                          ]
+                        }
+                    },   
+                    {
                         "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline",
                         "valueDate": "2022-03-31"
                     }
