@@ -1,6 +1,6 @@
 ### Introduction and Background
 
-During this phase of the lifecycle process, the Payer determines if there is grounds for suspecting that a patient may have a risk-adjustable condition that has not yet been documented during the current clinical evaluation period. Quality measures have clear rules governing when the patient is included in/excluded from the measure denominator and numerator; not so for risk adjustment. Payers often must statistically infer the likelihood that a patient might have an undocumented Condition Category (CC). This statistical process is called Condition Category (CC) suspecting and is generally done in two ways:
+During this phase of the lifecycle process, the Payer determines if there is grounds for thinking that a patient may have a risk-adjustable condition that has not yet been documented during the current clinical evaluation period. Quality measures have clear rules governing when the patient is included in/excluded from the measure denominator and numerator; not so for risk adjustment. Payers often must statistically infer the likelihood that a patient might have an undocumented Condition Category (CC). This statistical process is called Condition Category (CC) suspecting and is generally done in two ways:
 - Historic conditions (also known as persisting conditions) are those which were documented during some past clinical evaluation periods, but have not yet been documented in the current period; and
 - Suspected conditions, which are identified through the use of statistical modeling.
 
@@ -14,13 +14,13 @@ There are many potential uses for CC gap information. For example, a provider ma
 
 To summarize: the suspectType of a CC gap may be historic, suspected, or net-new; its evidenceStatus may be open-gap, closed-gap, pending, or invalid; and its hierarchicalStatus may be applied-superseded, applied-not-superseded, not-applied, or not-applicable (e.g., if the model is non-hierarchical.) These three flags are used to facilitate data filtering by the requester.
 
-Once the CC gaps have been identified and their filtering flags are set, the next task is to put them into a FHIR MeasureReport. This IG provides three approaches to do this.
+Once the CC gaps have been identified and their filtering flags are set, the next task is to put them into a FHIR MeasureReport. This IG provides two approaches to do this.
 
 - The [Assisted] approach is intended for situations in which the Payer wants to cause minimal impact on existing risk adjustment operations. For many Payers, lists of CC gaps are produced by manual processes and/or SAS datasets. This approach provides a means for ingesting preexisting gap lists and mapping them to FHIR resource elements.
 - In the [Generated] approach FHIR resource inputs are consumed directly and used to generate a risk adjustment MeasureReport.
-- The [Evaluated] approach anticipates the use of Digital Condition Categories (dCCs.) In this approach, a dCC evaluates whether a CC gap is open or closed per the ICD-10-CM coding guidelines, with the output of the dCC providing the input to the MeasureReport.
 
-To support a transition strategy for dCC and to simplify adoption of this IG, all three of these approaches may be used in parallel. For example, a payer organization might use dCCs for evaluating diabetes, heart disease, heart failure, and COPD, with all the other CCs evaluated through Risk Adjustment Coder (e.g., Certified Risk Adjustment Coder (CRC)). This means that some means must be provided for generating a single combined MeasureReport containing CC gaps from different input streams: the diabetes CC gaps might come from dCCs, while other CC gaps might come from SAS datasets or the like. In future state as dCCs become available, a MeasureReport may result from the merger of the Assisted, Generated, and Evaluated data streams. In this way a MeasureReport will contain a holistic view of a patient’s CC gaps, no matter where those gaps originated.
+
+This IG includes a section describing Digital Condition Categories (dCC).  As work continues on dCC's, the approach for generating reports used there may be used in parallel. For example, a payer organization might use dCCs for evaluating diabetes, heart disease, heart failure, and COPD, with all the other CCs evaluated through Risk Adjustment Coder (e.g., Certified Risk Adjustment Coder (CRC)). This means that some means must be provided for generating a single combined MeasureReport containing CC gaps from different input streams: the diabetes CC gaps might come from dCCs, while other CC gaps might come from SAS datasets or the like. In future state as dCCs become available, a MeasureReport may result from the merger of the Assisted and Generated, as well as the Evaluated data stream method used in dCC. In this way a MeasureReport will contain a holistic view of a patient’s CC gaps, no matter where those gaps originated.
 
 Once all MeasureReports have been created, a query can be run for one or more [Risk Adjustment Coding Gap Report]s for a single patient or group of patients. This query can be run by either the Provider to pull the report to their system, or it can be run by the Payer and pushed/posted to the Provider’s system.  
 
@@ -76,7 +76,7 @@ Figure 2.2-4 provides a graphical view of how these resources are related to the
 
 ### Approaches for Generating Risk Adjustment Coding Gap Report
 
-This IG describes three approaches to generate a [Risk Adjustment Coding Gap Report].  The approaches provide an adoption strategy that allows consumers of this IG to choose an implementation that matches their current state of FHIR maturity, including an option for generating a [Risk Adjustment Coding Gap Report] that requires little to no FHIR maturity and then transition to more mature approaches as their FHIR maturity grows. As mentioned above, the Payer can use one or more of these processes as fits their need or stage as they transition their processes.
+This IG describes two approaches to generate a [Risk Adjustment Coding Gap Report].  The approaches provide an adoption strategy that allows consumers of this IG to choose an implementation that matches their current state of FHIR maturity, including an option for generating a [Risk Adjustment Coding Gap Report] that requires little to no FHIR maturity and then transition to more mature approaches as their FHIR maturity grows. As mentioned above, the Payer can use one or more of these processes as fits their need or stage as they transition their processes.
 
 #### The Assisted Approach
 
@@ -103,10 +103,6 @@ The table below defines a standardized CSV header that could be used for the Ass
 #### The Generated Approach
 
 This approach requires an implementation that adheres to the requirements of this IG to generate the [Risk Adjustment Coding Gap Report]. The Payer constructs the FHIR [Risk Adjustment Coding Gap Report] and the evaluated resources based on data from *traditional* risk adjustment coding gap reports. These *traditional* reports are created by their existing processes using patient and risk adjustment data produced by risk adjustment engines.
-
-#### The Evaluated Approach
-
-This de novo approach requires an implementation that includes the [$ra.evaluate-measure] operation and requires [digital Condition Categories (dCCs)](dcc.html). The FHIR server is pre-populated with patient data and dCCs. The Payer then runs the [$ra.evaluate-measure] operation to produce a [Risk Adjustment Coding Gap Report].  During the [$ra.evaluate-measure] operation, CQL is executed against the patient and risk adjustment data.  The resources used by CQL logic evaluation are tracked and included in the final [Risk Adjustment Coding Gap Report].
 
 ### Usage
 

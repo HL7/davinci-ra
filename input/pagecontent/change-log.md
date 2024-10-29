@@ -20,6 +20,7 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 - **Applied**: Group annotation extension was renamed to Condition Category Remark (ccRemark).  Also added section to describe how Patch could be used instead of sending back the full report (examples included) ([FHIR-41332](https://jira.hl7.org/browse/FHIR-41332))
 - **Applied**: Update to use CMS-HCC v28 as example ([FHIR-48619](https://jira.hl7.org/browse/FHIR-48619))
 - **Applied**: Changes to RA Coding Gap MeasureReport based on implementer feedback ([FHIR-48698](https://jira.hl7.org/browse/FHIR-48698))
+- **Applied**: Moved Report Generation section on Evaluated-Approach to the dCC page.  Updated related text.  Added description of where Group profile is used to Group Profile page ([FHIR-47810](https://jira.hl7.org/browse/FHIR-47810))
 
 </div>
 

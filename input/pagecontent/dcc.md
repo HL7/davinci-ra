@@ -43,7 +43,9 @@ Figure 3-2 is a Venn diagram that shows the condition catetory measure populatio
 
 {% include img-portrait.html img="hcc-189-venn-diagram.png" caption = "Figure 3-2: Condition Category Measure Venn Diagram - HCC189 Example" %}
 
-###  $ra.evaluate-measure Operation
+###  Generating the Risk Adjustment Coding Gap Report Using the $ra.evaluate-measure Operation
+
+The FHIR server is pre-populated with patient data and dCCs. The Payer then runs the [$ra.evaluate-measure] operation to produce a [Risk Adjustment Coding Gap Report].  During the [$ra.evaluate-measure] operation, CQL is executed against the patient and risk adjustment data.  The resources used by CQL logic evaluation are tracked and included in the final [Risk Adjustment Coding Gap Report].
 
 [$ra.evaluate-measure] to dCCs would be considered as equivalent to using [$evaluate-measure](https://www.hl7.org/fhir/measure-operation-evaluate-measure.html) to calculate an eMeasure and obtain the results.  
 
