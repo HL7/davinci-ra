@@ -1,4 +1,8 @@
-Systems may choose to display the [Risk Adjustment Coding Gap Report] to a Provider at the time of a patient's care. When this happens, a Provider (using the Reporting Client role) may choose to add a remark to the report letting the Payer know they took some actions in regard to the coding gap(s) when they saw the patient.  
+Once a MeasureReport is generated, a ConditionCategoryRemark can be added to the MeasureReport.  Here are some ways this remark may be used:
+ - added by the payer or an entity working on behalf of the payer with additional information about the Condition Category.  An example might be adding the qualifyingDxCode when the model has been created by the payer and not well known to the provider.
+ - added by a Risk Adjustment Coder who reviews the chart prior to the provider seeing the patient.  This coder might be working on behalf of the payer or the provider or both.
+ - added by the provider's system if a gap is not appropriate to show the type of provider seeing the patient
+ - added by the provider at the time the patient is seen to indicate to the payer that an action was akent.
 
 Note: The [Condition Category Remark] extension is not intended to change the status of a Condition Category gap. To change the status, follow the [Submit Data to Payer] section of this guidance.  Note that both a Condition Category remark and [Submit Data to Payer] can be generated at the time the Provider sees the patient if that is appropriate.
 
@@ -6,16 +10,25 @@ Note: The [Condition Category Remark] extension is not intended to change the st
 
 ### The Condition Category Remark Extension
 For adding a remark, there is an extension, called [Condition Category Remark]. This extension is added to the [Risk Adjustment Coding Gap Report] within the `MeasureReport.group` element. This allows for a remark to specifically reference a Condition Category code. Also note the remark is a Complex extension and can repeat. Within the [Condition Category Remark] extension are several fields, all of which are optional:
-- `author` indicates who provided the remark. It can link to a US Core Organization, a US Core Practitioner or a US Core PractitionerRole which allows you to reference both a Practitioner and an Organization
+- `author` indicates the person who provided the remark. It can be an identifier such as an NPI or a person's name.
+- `authorOrganization` which can be an identifier such as a TIN or NPI for the organization or can be a text name of the Organization.
+- `authorSoftware' is the software system that generated the remark either an identifier for the system or a system name.
 - `authorDatetime` when the remark was made
 - `text` a free text remark
-- `code` a coded remark to indicate the specific action taken. The code list which is extensible includes acknowledged, assessed and not present, assessed and present, and deferred
-- relatedData that could be either an identifier to a reference to a Resource
-    - the `relatedDataIentifier` can be used to link to a claim or document that the provider is sending via another method or transaction
+- `code` a remark indicating what happened at the time of the remark, such as when a provider sees the patient and decides a condition is present; the code would be "assessed-present".  The code list which is extensible includes assessed-present, assessed-not-present, in-progress, not-assessed, not-presented, and deferred.
+- 'reasonCode' Gives a reason for the code sent above when needed.  The valueSet which is extensible includes never-had-condition, inactive-condition, and inapplicable.
+- the `relatedDataIentifier` can be used to link to a claim or document such as a Continuity of Care Document (CCD) that the provider is sending via another method or transaction.
+- 'qualifyingDxCode' diagnoses that would be classified under this Condition Category as defined by the risk adjustment model. This would be added by the payer or an entity working on behalf of the payer.
 
-The Provider's system SHALL NOT change any other part of the original Risk Adjustment Coding Gap Report and can only add the [Condition Category Remark] to the appropriate `MeasureReport.group`(s).  If a provider wants to share data with the Payer in order to change a gap status, they should use the [Submit Data to Payer] process.  
+The system being used SHALL NOT change any other part of the original Risk Adjustment Coding Gap Report and can only add the [Condition Category Remark] to the appropriate `MeasureReport.group`(s).  If a provider wants to share data with the Payer in order to change a gap status, they should use the [Submit Data to Payer] process.  
 
-Once a [Condition Category Remark] is added to a [Risk Adjustment Coding Gap Report], it can be posted to the Payer's Reporting Server.
+If a payer is adding a remark to the report, they would update the report on their server.
+
+If a risk adjustment coder is adding a remark to the report, they would either post the report to the Payer's server or Patch the report with just the remark they added.  See below for more details on the Patch Process
+
+If a provider has the MeasureReport and a Risk Adjustment Coder working on his behalf adds a Remark to the Risk Adjustment Coding Gap Report, the ccRemark can be added to the Report with the Patch process or the entire MeasureReport with the added ccRemark posted to the Provider's system.
+
+Once a [Condition Category Remark] is added to a [Risk Adjustment Coding Gap Report] by a provider, it can be posted to the Payer's Reporting Server.  Or use the Patch process described below.
 
 {% include img-portrait.html img="report-cc-remark-workflow.png" caption="Figure 2.5-2 Report Condition Category Remark Workflow"%}
 
