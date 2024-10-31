@@ -706,6 +706,13 @@
       <description value="Example Parameters Resource for using submit-data operation to submit Risk Adjustment Data Exchange MeasureReport"/>
       <exampleBoolean value="true"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/measurereport-category"/>
+      </reference>
+      <name value="measurereport-category"/>
+      <exampleBoolean value="false"/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
