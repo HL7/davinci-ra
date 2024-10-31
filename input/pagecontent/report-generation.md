@@ -109,7 +109,7 @@ This approach requires an implementation that adheres to the requirements of thi
 #### Request Risk Adjustment Coding Gap MeasureReport
 
 
-`GET [base]/MeasureReport/?subject=Patient/ra-patient02&period=ge2021-01-01&period=le2021-12-31&_profile=http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport&_include=MeasureReport:evaluated-resource`
+`GET [base]/MeasureReport/?subject=Patient/ra-patient02&period=ge2021-01-01&period=le2021-12-31&measurereport-category="ra"&_include=MeasureReport:evaluated-resource`
 
 
 {% include examplebutton.html example="get-risk-adjustment-coding-gap-report-usage-example" b_title ="Click Here To See Example GET Risk Adjustment Coding Gap Report" %}
@@ -119,7 +119,7 @@ This approach requires an implementation that adheres to the requirements of thi
 If requesting [Risk Adjustment Coding Gap Report] for many patients, the Reporting Client may consider using the FHIR [Asynchronous Request Patterns] for the Bulk Data exchange operation.
 
 
-`GET [base]/MeasureReport/?subject=Group/ra-group123&period=ge2021-01-01&period=le2021-12-31&_profile=http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport&_include=MeasureReport:evaluated-resource`
+`GET [base]/MeasureReport/?subject=Group/ra-group123&period=ge2021-01-01&period=le2021-12-31&measurereport-category="ra"&_include=MeasureReport:evaluated-resource`
 
 {% include examplebutton.html example="get-risk-adjustment-coding-gaps-report-usage-bulk-example" b_title = "Click Here To See Example GET Risk Adjustment Coding Gap Report Using Bulk Data" %}
 

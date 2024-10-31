@@ -1,5 +1,5 @@
 
-**<span style="color: red;">"The Digital Condition Category sections are DRAFT"</span>**
+**<span style="color: red;">"The Digital Condition Category section content is included as DRAFT"</span>**
 
 This page describes Digital Condition Categories (dCCs), a new concept introduced in this implementation guide. 
 
