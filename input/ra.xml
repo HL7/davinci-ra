@@ -38,7 +38,7 @@
   </dependsOn>
   <dependsOn id="extensions">
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
-     <packageId value="hl7.fhir.uv.extensions"/>
+     <packageId value="hl7.fhir.uv.extensions.r4"/>
      <version value="5.1.0"/>
   </dependsOn>
   <dependsOn id="crmi">
@@ -705,6 +705,13 @@
       <name value="Submit Data for Risk Adjustement Data Exchange MeasureReport"/>
       <description value="Example Parameters Resource for using submit-data operation to submit Risk Adjustment Data Exchange MeasureReport"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/measurereport-category"/>
+      </reference>
+      <name value="measurereport-category"/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->

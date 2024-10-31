@@ -31,7 +31,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-dxcode"/>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-dxCode"/>
       <min value="1"/>
       <max value="1"/>
     </element>

@@ -139,6 +139,7 @@
 <artifact deprecated="true" id="Task/ra-task01measurereport01group003" key="Task-ra-task01measurereport01group003" name="Task: Clinical Evaluation Task"/>
 <artifact id="Observation/ra-obs21pat01" key="Observation-ra-obs21pat01" name="Trypsin [Mass/volume] in Serum or Plasma from 20170617"/>
 <artifact id="Organization/ra-vendor01" key="Organization-ra-vendor01" name="Vendor01: Best RA Vendor"/>
+<artifact id="SearchParameter/measurereport-category" key="SearchParameter-measurereport-category" name="measurereport-category"/>
 <artifact id="Bundle/ra-bundle01" key="Bundle-ra-bundle01" name="ra-bundle01: Risk Adjustment Bundle"/>
 <artifact id="MeasureReport/ra-datax-measurereport01" key="MeasureReport-ra-datax-measurereport01" name="ra-datax-measurereport01: Risk Adjustment Data Exchange Measure Report"/>
 <artifact id="Group/ra-group01" key="Group-ra-group01" name="ra-group01: Risk Adjustment Patient Group"/>

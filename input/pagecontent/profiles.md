@@ -4,7 +4,7 @@
 List of profiles that define constrains on FHIR resources for systems conforming to this implementation guide.
 
 |Resource Type|Profile|
-|---|---|---|
+|---|---|
 |MeasureReport|[Risk Adjustment Coding Gap Report]|
 |MeasureReport|[Risk Adjustment Data Exchange MeasureReport]
 |Measure|[Risk Adjustment Model Measure]|
@@ -16,7 +16,10 @@ List of profiles that define constrains on FHIR resources for systems conforming
 
 ### Search Parameter
 
-[MeasureReport-Category Search Parameter]
+|Resource Type|Profile|
+|---|---|
+|Search Parameter|[MeasureReport-Category Search Parameter]
+{: .grid}
 
 <br />
 
