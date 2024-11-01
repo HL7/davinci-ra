@@ -1,7 +1,7 @@
 Once a MeasureReport is generated, a ConditionCategoryRemark can be added to the MeasureReport.  Here are some ways this remark may be used:
  - added by the payer or an entity working on behalf of the payer with additional information about the Condition Category.  An example might be adding the qualifyingDxCode when the model has been created by the payer and not well known to the provider.
  - added by a Risk Adjustment Coder who reviews the chart prior to the provider seeing the patient.  This coder might be working on behalf of the payer or the provider or both.
- - added by the provider's system if a gap is not appropriate to show the type of provider seeing the patient
+ - added by the provider's Electronic Medical Record (EMR) if a gap is not appropriate to show the type of provider seeing the patient or if the EMR cannot process the MeasureReport.
  - added by the provider at the time the patient is seen to indicate to the payer that an action was taken.
 
 Note: The [Condition Category Remark] extension is not intended to change the status of a Condition Category gap. To change the status, follow the [Submit Data to Payer] section of this guidance.  Note that both a Condition Category remark and [Submit Data to Payer] can be generated at the time the Provider sees the patient if that is appropriate.
