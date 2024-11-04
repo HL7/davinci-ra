@@ -8,7 +8,7 @@
   },
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/cc-type",
   "name": "RiskAdjustmentConditionCategoryType",
-  "title": "Risk Adjustment Conditioin Category Type ValueSet",
+  "title": "Risk Adjustment Condition Category Type ValueSet",
   "status": "active",
   "experimental": false,
   "description": "Codes that indicate whether the Condition Category (CC) gap is historic, suspected, or net-new.",

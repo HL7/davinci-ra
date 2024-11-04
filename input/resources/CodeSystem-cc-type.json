@@ -3,7 +3,7 @@
   "id": "cc-type",
   "url": "http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type",
   "name": "RiskAdjustmentConditionCategoryType",
-  "title": "Risk Adjustment Condition Categoryy Type CodeSystem",
+  "title": "Risk Adjustment Condition Category Type CodeSystem",
   "status": "active",
   "experimental": false,
   "description": "Code sytstem that indicates whether it is a suspected Condition Category (CC) gap, a historic Condition Category (CC) gap, or a net-new Condition Category (CC). Historic, suspected, and net-new are mutually exclusive.",

@@ -141,6 +141,18 @@
                             }
                         ]
                     }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-dxCode",
+                    "valueCodeableConcept" : {
+                        "coding": [
+                            {
+                            "system": "http://snomed.info/sct",
+                            "code": "832007",
+                            "display": "Moderate major depression"
+                            }
+                        ]
+                    }
                 }
             ]
         },

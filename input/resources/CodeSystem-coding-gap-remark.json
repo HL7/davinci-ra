@@ -40,7 +40,12 @@
       "code": "not-presented",
       "display": "Not presented",
       "definition": "System did not present the gap to the end user."
-    }        
+    },
+    {
+      "code": "not-ingested",
+      "display": "Not ingested",
+      "definition": "System cannot process the gap that was received."
+    } 
   ],
-  "count": 6
+  "count": 7
 }
