@@ -21,6 +21,11 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 - **Applied**: Update to use CMS-HCC v28 as example ([FHIR-48619](https://jira.hl7.org/browse/FHIR-48619))
 - **Applied**: Changes to RA Coding Gap MeasureReport based on implementer feedback ([FHIR-48698](https://jira.hl7.org/browse/FHIR-48698))
 - **Applied**: Moved Report Generation section on Evaluated-Approach to the dCC page.  Updated related text.  Added description of where Group profile is used to Group Profile page ([FHIR-47810](https://jira.hl7.org/browse/FHIR-47810))
+- **Applied**: Removed meta.profile requirement  ([FHIR-40935](https://jira.hl7.org/browse/FHIR-40935))
+- **Applied**: Will include MeasureReport id with PATCH Parameters file.  Will add profile for PATCH Parameter.  ([FHIR-444997](https://jira.hl7.org/browse/FHIR-44997))
+- **Applied**: Added measurereport-categroy extension to report.  Changed query to use this instead of meta.profile  ([FHIR-45202](https://jira.hl7.org/browse/FHIR-45202))
+- **Applied**: Updated Annotation to CC-Remark and updated elements to align with names like author, authorDateTime, etc.  Also added requirement for Author, Organization or Software.  Additionally added new code values as requested by implementers.  Added relatedData Identifier, reasonCode and qualifyingDxCode to Remark  ([FHIR-48732](https://jira.hl7.org/browse/FHIR-48732))
+- **Applied**: Added new code for "not ingested" to Remark.code ([FHIR-48770](https://jira.hl7.org/browse/FHIR-48770))
 
 </div>
 
