@@ -15,10 +15,19 @@ This element does not match any known slice defined in the profile http://hl7.or
 A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' version '24' could not be found, so the code cannot be validated. Valid versions: []
 A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' version '5' could not be found, so the code cannot be validated. Valid versions: []
 A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' version '21' could not be found, so the code cannot be validated. Valid versions: []
-Resolved system http://terminology.hl7.org/CodeSystem/cmshcc (v1.0.1), but the definition doesn't include any codes, so the code has not been validated
-The code '88' is not valid in the system http://terminology.hl7.org/CodeSystem/cmshcc
-The code '112' is not valid in the system http://terminology.hl7.org/CodeSystem/cmshcc
+Unable to evaluate based on code system with status = not-present
+The code '88' is not valid in the system http://terminology.hl7.org/CodeSystem/cmshcc (A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' could not be found, so the code cannot be validated)
+The code '112' is not valid in the system http://terminology.hl7.org/CodeSystem/cmshcc (A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' could not be found, so the code cannot be validated)
+The code '22' is not valid in the system http://terminology.hl7.org/CodeSystem/cmshcc (Unable to evaluate based on code system with status = not-present)
 Error from http://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/cmshcc
 
 # Organization Type
+
+# fhir.uv.tools error to be fixed in publisher
+This IG is version 4.0.1, while the IG 'hl7.fhir.uv.tools' is from version 5.0.0
+
+# TSMG approval to leave these Code Systems in IG for this release
+Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+
 
