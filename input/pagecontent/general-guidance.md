@@ -48,7 +48,7 @@ Note: The [Condition Category Remark] extension is not intended to change the st
 
 #### Submit Data to Payer
 
- To return clinical data, the Provider will use the [Risk Adjustment Data Exchange MeasureReport] and the [$submit-data] operation to submit data to Payer. The Payer will then be able to use the provided patient data to update the data in their system for the next coding gap report generation.
+ To return clinical data, the Provider will use the [Risk Adjustment Data Exchange MeasureReport] and the [$submit-data] operation to submit data to Payer. The Payer will then be able to use the provided patient data to update the data in their system that will be included on their next coding gap report generation.
 
 See the [Submit Data to Payer] page for more details and guidance. 
 
