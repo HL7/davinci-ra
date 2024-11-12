@@ -280,7 +280,7 @@
       <path value="Extension.extension"/>
       <sliceName value="qualifyingDxCode"/>
       <short value="Diagnosis codes classified under a Condition Category as defined by the risk adjustment model"/>
-      <definition value="Diagnosis codes (e.g., ICD-10) for conditions that are classified under a Condition Category as defined by the risk adjustment model. This usually comes into play in the scenario where proprietary risk models are used and the mappings of ICD-10 codes to Condition Categories are not readily available. A string data type is supported in addition to CodeableConcept because there may be situations a range of codes are provided instead of a single code."/>
+      <definition value="Diagnosis codes (e.g., ICD-10) for conditions that are classified under a Condition Category as defined by the risk adjustment model. This usually comes into play in the scenario where proprietary risk models are used and the mappings of ICD-10 codes to Condition Categories are not readily available. A string data type is supported"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -306,11 +306,38 @@
       <binding>
         <strength value="preferred"/>
         <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code"/>   
-      </binding>  
+      </binding>            
+    </element>  
+
+    <element id="Extension.extension:qualifyingDxList">
+      <path value="Extension.extension"/>
+      <sliceName value="qualifyingDxList"/>
+      <short value="A list of diagnosis codes classified under a Condition Category as defined by the risk adjustment model"/>
+      <definition value="A text list of diagnosis codes (e.g., ICD-10) for conditions that are classified under a Condition Category as defined by the risk adjustment model. This usually comes into play in the scenario where proprietary risk models are used and the mappings of ICD-10 codes to Condition Categories are not readily available."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:qualifyingDxList.url">
+      <path value="Extension.extension.url"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="qualifyingDxList"/>
+    </element>   
+    <element id="Extension.extension:code.valueCodableConcept">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
         <code value="string"/>
-      </type>            
-    </element>       
+      </type>         
+    </element> 
+
     <element id="Extension.url">
       <path value="Extension.url"/>
       <type>
