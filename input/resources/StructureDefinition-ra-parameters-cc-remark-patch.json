@@ -1,0 +1,275 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ra-parameters-cc-remark-patch",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cqi"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-parameters-cc-remark-patch",
+  "name": "CCRemarkPatchParameters",
+  "title": "RA Parameters ccRemark Patch Profile",
+  "status": "active",
+  "experimental": false,
+  "publisher": "HL7 International / Clinical Quality Information",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "A parameters profile that defines structures of multi-part parameters for sending ccRemarks to a risk adjustment coding gap report using the Patch operation.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Parameters",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Parameters",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Parameters",
+        "path": "Parameters",
+        "mustSupport": false
+      },
+      {
+        "id": "Parameters.parameter",
+        "path": "Parameters.parameter",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "name"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Parameters.parameter:operation",
+        "path": "Parameters.parameter",
+        "sliceName": "operation",
+        "short": "Patch operation",
+        "definition": "This parameter for patch operation",
+        "comment": "comment.",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Parameters.parameter:operation.name",
+        "path": "Parameters.parameter.name",
+        "fixedString": "operation"
+      },
+
+      {
+        "id": "Parameters.parameter:operation.part",
+        "path": "Parameters.parameter.part",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "name"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+
+      {
+        "id": "Parameters.parameter:operation.part:type",
+        "path": "Parameters.parameter.part",
+        "sliceName": "type",
+        "short": "parameter part: type is add",
+        "definition": "this Patch operation is to add a ccRemark",
+        "min": 1,
+        "max": "1"
+      },
+
+      {
+        "id": "Parameters.parameter:operation.part:type.name",
+        "path": "Parameters.parameter.part.name",
+        "fixedString": "type"
+      },
+      {
+        "id": "Parameters.parameter:operation.part:type.value",
+        "path": "Parameters.parameter.part.valueCode",
+        "min": 1,
+        "max": "1",
+        "type" : [
+          {
+            "code" : "code"
+          }
+        ],
+        "fixedCode": "add"
+      },
+
+      {
+        "id": "Parameters.parameter:operation.part:path",
+        "path": "Parameters.parameter.part",
+        "sliceName": "path",
+        "short": "parameter part: FHIR path",
+        "definition": "The FHIR path for adding ccRemark to Risk Adjustment Coding Gap Report. ccRemark is added to the MeasureReport.group, the path should be a value starting with 'MeasureReport.group.where(id=', with the group id that the ccRemark is added to.",
+        "min": 1,
+        "max": "1"
+      },
+
+      {
+        "id": "Parameters.parameter:operation.part:path.name",
+        "path": "Parameters.parameter.part.name",
+        "fixedString": "path"
+      },
+      {
+        "id": "Parameters.parameter:operation.part:path.value",
+        "path": "Parameters.parameter.part.valueString",
+        "min": 1,
+        "max": "1",
+        "type" : [
+          {
+            "code" : "string"
+          }
+        ],
+
+        "constraint" : [
+          {
+            "key" : "ra-3",
+            "severity" : "error",
+            "human" : "Path must start with 'MeasureReport.group.where(id='.",
+            "expression" : "value.startsWith('MeasureReport.group.where(id=')"
+          }
+        ]
+      },
+
+      {
+        "id": "Parameters.parameter:operation.part:name",
+        "path": "Parameters.parameter.part",
+        "sliceName": "name",
+        "short": "parameter part: name",
+        "definition": "extension",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Parameters.parameter:operation.part:name.name",
+        "path": "Parameters.parameter.part.name",
+        "fixedString": "name"
+      },
+      {
+        "id": "Parameters.parameter:operation.part:name.value",
+        "path": "Parameters.parameter.part.valueString",
+        "min": 1,
+        "max": "1",
+        "type" : [
+          {
+            "code" : "string"
+          }
+        ],
+        "fixedString": "extension"
+      },
+
+      {
+        "id": "Parameters.parameter:operation.part:value",
+        "path": "Parameters.parameter.part",
+        "sliceName": "value",
+        "short": "parameter part: value",
+        "definition": "The ccRemark data that needs to be patched",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Parameters.parameter:operation.part:value.name",
+        "path": "Parameters.parameter.part.name",
+        "fixedString": "value"
+      },
+      {
+        "id": "Parameters.parameter:operation.part:value.part",
+        "path": "Parameters.parameter.part.part",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "name"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1,
+        "max": "*"        
+      },
+      {
+        "id": "Parameters.parameter:operation.part:value.part:url",
+        "path": "Parameters.parameter.part.part",
+        "sliceName": "url",
+        "short": "url of the ccRemark extension",
+        "definition": "Url for the Risk Adjustment ccRemark extension",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Parameters.parameter:operation.part:value.part:url.name",
+        "path": "Parameters.parameter.part.part.name",
+        "fixedString": "url"
+      },
+      {
+        "id": "Parameters.parameter:operation.part:value.part:url.valueUri",
+        "path": "Parameters.parameter.part.part.value[x]",
+        "min": 1,
+        "max": "1",
+        "type" : [
+          {
+            "code" : "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark"
+      },
+      
+      {
+        "id": "Parameters.parameter:operation.part:value.part:extension",
+        "path": "Parameters.parameter.part.part",
+        "sliceName": "extension",
+        "short": "ccRemark content to be added",
+        "definition": "Content of Risk Adjustment ccRemark complex extension to be added by the Patch operation.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Parameters.parameter:operation.part:value.part:extension.name",
+        "path": "Parameters.parameter.part.part.name",
+        "fixedString": "extension"
+      },
+      {
+        "id": "Parameters.parameter:operation.part:value.part:extension.part",
+        "path": "Parameters.parameter.part.part.part",
+        "min": 1,
+        "max": "*"
+      }
+
+    ]
+  }
+}
+

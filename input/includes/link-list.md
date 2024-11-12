@@ -142,3 +142,4 @@
 [Parameters: Submit Data example for sending a C-CDA document]: Parameters-ra-submit-data.html
 
 [MeasureReport-Category Search Parameter]: SearchParameter-measurereport-category.html
+[RA Parameters ccRemark Patch Profile]: StructureDefinition-ra-parameters-cc-remark-patch.html

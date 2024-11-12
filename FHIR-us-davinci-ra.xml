@@ -96,6 +96,7 @@
 <artifact id="Practitioner/ra-prac01pat01" key="Practitioner-ra-prac01pat01" name="Practitioner: Harold Hippocrates"/>
 <artifact id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner: Otto Osler"/>
 <artifact id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner: Patrick Pump"/>
+<artifact id="StructureDefinition/ra-parameters-cc-remark-patch" key="StructureDefinition-ra-parameters-cc-remark-patch" name="RA Parameters ccRemark Patch Profile"/>
 <artifact id="ValueSet/remark-reason" key="ValueSet-remark-reason" name="Remark Reason"/>
 <artifact id="CodeSystem/remark-reason" key="CodeSystem-remark-reason" name="Remark Reason CodeSystem"/>
 <artifact deprecated="true" id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>

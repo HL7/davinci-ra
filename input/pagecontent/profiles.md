@@ -9,10 +9,8 @@ List of profiles that define constrains on FHIR resources for systems conforming
 |MeasureReport|[Risk Adjustment Data Exchange MeasureReport]
 |Measure|[Risk Adjustment Model Measure]|
 |Group|[Patient Group]|
-|Bundle|[Risk Adjustment Coding Gap Report Bundle]*|
+|Parameter|[RA Parameters ccRemark Patch Profile]|
 {: .grid}
-
-*The Risk Adjustment Coding Gap Report Bundle is a collection Bundle returned by [$ra.evaluate-measure] and included in this version of the IG as DRAFT.
 
 ### Search Parameter
 
@@ -20,6 +18,14 @@ List of profiles that define constrains on FHIR resources for systems conforming
 |---|---|
 |Search Parameter|[MeasureReport-Category Search Parameter]
 {: .grid}
+
+### Profile (DRAFT)
+
+|Resource Type|Profile|Note|
+|---|---|
+|Bundle|[Risk Adjustment Coding Gap Report Bundle]|The Risk Adjustment Coding Gap Report Bundle is a collection Bundle returned by [$ra.evaluate-measure] and included in this version of the IG as DRAFT.|
+{: .grid}
+
 
 <br />
 

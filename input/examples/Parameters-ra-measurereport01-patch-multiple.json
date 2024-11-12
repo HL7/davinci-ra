@@ -1,6 +1,11 @@
 {
     "resourceType": "Parameters",
     "id": "ra-measurereport01-patch-mult",
+    "meta" : {
+        "profile" : [
+          "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-parameters-cc-remark-patch"
+        ]
+    },
     "parameter": [
         {
             "name": "operation",
