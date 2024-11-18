@@ -112,7 +112,7 @@ This approach requires an implementation that adheres to the requirements of thi
 `GET [base]/MeasureReport/?subject=Patient/ra-patient02&period=ge2021-01-01&period=le2021-12-31&measurereport-category="ra"&_include=MeasureReport:evaluated-resource`
 
 
-{% include examplebutton.html example="get-risk-adjustment-coding-gap-report-usage-example" b_title ="Click Here To See Example GET Risk Adjustment Coding Gap Report" %}
+{% include examplebutton.html example="get-risk-adjustment-coding-gap-report-usage-example" b_title ="Click Here to See Example GET Risk Adjustment Coding Gap Report" %}
 
 #### Bulk Data Request for Risk Adjustment Coding Gap MeasureReports  
 
@@ -121,7 +121,7 @@ If requesting [Risk Adjustment Coding Gap Report] for many patients, the Reporti
 
 `GET [base]/MeasureReport/?subject=Group/ra-group123&period=ge2021-01-01&period=le2021-12-31&measurereport-category="ra"&_include=MeasureReport:evaluated-resource`
 
-{% include examplebutton.html example="get-risk-adjustment-coding-gaps-report-usage-bulk-example" b_title = "Click Here To See Example GET Risk Adjustment Coding Gap Report Using Bulk Data" %}
+{% include examplebutton.html example="get-risk-adjustment-coding-gaps-report-usage-bulk-example" b_title = "Click Here to See Example GET Risk Adjustment Coding Gap Report Using Bulk Data" %}
 
 Headers:
 * `Prefer respond-async`
@@ -138,7 +138,7 @@ Currently, only *application/fhir+ndjson* is supported.
 
 `POST [base]/bundle`
 
-{% include examplebutton.html example="post-risk-adjustment-coding-gap-report-usage-example" b_title = "Click Here To See Example POST Risk Adjustment Coding Gap Report" %}
+{% include examplebutton.html example="post-risk-adjustment-coding-gap-report-usage-example" b_title = "Click Here to See Example POST Risk Adjustment Coding Gap Report" %}
 
 
 {% include link-list.md %}
