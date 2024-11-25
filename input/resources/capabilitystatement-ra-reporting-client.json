@@ -256,6 +256,17 @@
                             "name": "subject",
                             "definition": "http://hl7.org/fhir/SearchParameter/MeasureReport-subject",
                             "type": "reference"
+                        },
+                        {
+                            "extension" : [
+                                {
+                                  "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                  "valueCode" : "SHALL"
+                                }
+                              ],
+                            "name": "measurereport-category",
+                            "definition": "http://hl7.org/fhir/SearchParameter/MeasureReport-measurereport-category",
+                            "type": "string"
                         }
                     ]
                 },
