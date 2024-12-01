@@ -128,7 +128,7 @@
 [Assisted]: report-generation.html#the-assisted-approach
 [Evaluated]:report-generation.html#the-evaluated-approach
 [Report Generation Approaches]: report-generation.html#approaches-for-generating-risk-adjustment-coding-gap-report
-[Report Generation Introduction]: report-generation.html#introduction-and-background
+[Report Generation Introduction and Background]: report-generation.html#introduction-and-background
 [Digital Condition Category (dCC)]: dcc.html
 
 [Condition Category Remark]: StructureDefinition-ra-ccRemark.html
