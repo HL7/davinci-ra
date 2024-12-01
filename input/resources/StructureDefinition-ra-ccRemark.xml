@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ra-ccRemark"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/>
+  </extension>  
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cqi"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>    
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark"/>
   <name value="ConditionCategoryRemark"/>
   <title value="Condition Category Remark"/>
@@ -21,22 +30,19 @@
     <element id="Extension">
       <path value="Extension"/>
       <condition value="ra-2"/>
-
       <constraint>
           <key value="ra-2"/>
           <severity value="error"/>
           <human value="A remark shall include an author, an authorOrganization, or an authorSoftware"/>
           <expression value="extension.where(url = 'author').exists() or extension.where(url = 'authorOrganization').exists() or extension.where(url = 'authorSoftware').exists()"/>
       </constraint>
-
       <short value="Condition Category remark"/>
       <definition value="Remark about a Condition Category"/>
       <min value="0"/>
       <max value="*"/>
     </element>
     <element id="Extension.extension:author">
-      <path value="Extension.extension"/>
-      
+      <path value="Extension.extension"/>      
       <sliceName value="author"/>
       <short value="Identifier of the person who added the remark such as NPI"/>
       <min value="0"/>
@@ -67,7 +73,6 @@
     </element>       
     <element id="Extension.extension:authorOrganization">
       <path value="Extension.extension"/>
-
       <sliceName value="authorOrganization"/>
       <short value="Identifier of the organization that added the remark such as TIN, NPI"/>
       <min value="0"/>
@@ -126,8 +131,7 @@
       <type>
         <code value="string"/>
       </type>      
-    </element>           
-
+    </element>    
     <element id="Extension.extension:authorDatetime">
       <path value="Extension.extension"/>
       <sliceName value="authorDatetime"/>
@@ -155,7 +159,6 @@
         <code value="dateTime"/>
       </type>
     </element>  
-
     <element id="Extension.extension:text">
       <path value="Extension.extension"/>
       <sliceName value="text"/>
@@ -183,7 +186,6 @@
         <code value="string"/>
       </type>
     </element>  
-
     <element id="Extension.extension:code">
       <path value="Extension.extension"/>
       <sliceName value="code"/>
@@ -215,7 +217,6 @@
         <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-remark"/>
       </binding>      
     </element>  
-
     <element id="Extension.extension:reasonCode">
       <path value="Extension.extension"/>
       <sliceName value="reasonCode"/>
@@ -247,7 +248,6 @@
         <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/remark-reason"/>
       </binding>      
     </element>  
-
     <element id="Extension.extension:relatedDataIdentifier">
       <path value="Extension.extension"/>
       <sliceName value="relatedDataIdentifier"/>
@@ -275,7 +275,6 @@
         <code value="Identifier"/>
       </type>      
     </element>  
-
     <element id="Extension.extension:qualifyingDxCode">
       <path value="Extension.extension"/>
       <sliceName value="qualifyingDxCode"/>
@@ -308,7 +307,6 @@
         <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code"/>   
       </binding>            
     </element>  
-
     <element id="Extension.extension:qualifyingDxList">
       <path value="Extension.extension"/>
       <sliceName value="qualifyingDxList"/>
@@ -337,7 +335,6 @@
         <code value="string"/>
       </type>         
     </element> 
-
     <element id="Extension.url">
       <path value="Extension.url"/>
       <type>
@@ -350,6 +347,5 @@
       <min value="0"/>
       <max value="0"/>
     </element> 
-
   </differential>
 </StructureDefinition>
