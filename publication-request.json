@@ -1,9 +1,10 @@
 {
   "package-id" : "hl7.fhir.us.davinci-ra",
-  "version" : "2.0.0-ballot",
-  "path" : "http://hl7.org/fhir/us/davinci-ra/2023May",
-  "status" : "ballot",
-  "sequence" : "STU2 (v2.0.0)",
-  "desc" : "STU2 (v2.0.0)",
-  "descmd" : "The May 2023 Ballot Version: this version updates the Da Vinci Risk Adjustment Implementation Guide (IG) to STU2 (v2.0.0)."
+  "version" : "2.0.0",
+  "path" : "http://hl7.org/fhir/us/davinci-ra/STU2",
+  "status" : "trial-use",
+  "mode" : "milestone",
+  "sequence" : "STU 2",
+  "desc" : "STU 2.0.0 Release",
+  "descmd" : "STU 2.0.0 release of the Da Vinci Risk Adjustment Implementation Guide."
 }
