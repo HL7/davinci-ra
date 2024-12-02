@@ -139,7 +139,6 @@ Contributors
 - *Cody Danielshak, Epic*
 - *Josh Lamb, Optum*
 - *Lloyd McKenzie, Dogwood Health Consulting* 
-- *Michael Stearns, Wolters Kluwer*
 - *Nidhi Pengoria, AthenaHealth*
 - *Swati Mukherjee, Optum*
 - *Viet Nguyen, Stratametrics*
