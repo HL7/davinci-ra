@@ -1,8 +1,6 @@
 
 The Risk Adjustment Implementation Guide was developed under the  [Davinci Project](#)
 
-<div markdown="1" class="bg-info">
-
 ### Version 2.0.0
 
 - **Applied**: Added references to report generation overview and methods ([FHIR-40988](https://jira.hl7.org/browse/FHIR-40988))
@@ -27,10 +25,6 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 - **Applied**: Updated Annotation to CC-Remark and updated elements to align with names like author, authorDateTime, etc.  Also added requirement for Author, Organization or Software.  Additionally added new code values as requested by implementers.  Added relatedData Identifier, reasonCode and qualifyingDxCode to Remark  ([FHIR-48732](https://jira.hl7.org/browse/FHIR-48732))
 - **Applied**: Added new code for "not ingested" to Remark.code ([FHIR-48770](https://jira.hl7.org/browse/FHIR-48770))
 - **Applied**: Added RA Parameters ccRemark Patch Profile ([FHIR-44997](https://jira.hl7.org/browse/FHIR-FHIR-44997))
-
-
-
-</div>
 
 ### Version 2.0.0-ballot
 

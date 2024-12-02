@@ -29,7 +29,7 @@
       ]
     }
   ],
-  "description": "A parameters profile that defines structures of multi-part parameters for sending ccRemarks to a risk adjustment coding gap report using the Patch operation.",
+  "description": "A Parameters profile that defines structures of multi-part Parameters to be used for sending [Condition Category Remarks](StructureDefinition-ra-ccRemark.html) to a [Risk Adjustment Coding Gap Report](StructureDefinition-ra-measurereport.html) using the [PATCH](https://www.hl7.org/fhir/http.html#patch) operation.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

@@ -35,7 +35,6 @@
       <short value="This is a risk adjustment coding gap report."/>
       <definition value="This is a risk adjustment coding gap report of a patient/member using a specific version of a particular Risk Adjustment model."/>
     </element>
-
     <element id="MeasureReport.extension:measurereport-category">
       <path value="MeasureReport.extension"/>
       <sliceName value="measurereport-category"/>
@@ -58,7 +57,6 @@
       <max value="1"/>
       <fixedCode value="ra"/>
     </element>
-
     <element id="MeasureReport.extension:clinicalDataCollectionDeadline">
       <path value="MeasureReport.extension"/>
       <sliceName value="clinicalDataCollectionDeadline"/>
@@ -70,7 +68,6 @@
       </type>
       <mustSupport value="true"/>
     </element>
-
     <element id="MeasureReport.status">
       <path value="MeasureReport.status"/>
       <mustSupport value="true"/>
@@ -250,6 +247,7 @@
       <path value="MeasureReport.group.code"/>
       <short value="Condition Category (CC) code for a Risk Adjustment Model"/>
       <definition value="Condition Category (CC) code for a Risk Adjustment Model."/>
+      <comment value="The system in the `group.code.coding.system` element identifies which Risk Adjustment model is used for generating the risk adjustment coding gap report, it should be the same system as in the `Measure.identifier.system` element of the [Risk Adjustment Model Measure](StructureDefinition-ra-model-measure.html) that is referenced in the report."/>
       <min value="0"/>
       <max value="1"/>
       <type>

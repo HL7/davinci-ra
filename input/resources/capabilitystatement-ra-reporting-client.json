@@ -265,8 +265,8 @@
                                 }
                               ],
                             "name": "measurereport-category",
-                            "definition": "http://hl7.org/fhir/SearchParameter/MeasureReport-measurereport-category",
-                            "type": "string"
+                            "definition": "http://hl7.org/fhir/us/davinci-ra/SearchParameter/measurereport-category",
+                            "type": "token"
                         }
                     ]
                 },

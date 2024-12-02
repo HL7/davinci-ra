@@ -26,7 +26,7 @@ If a Payer or someone acting on behalf of the Payer like a Risk Adjustment Coder
 
 {% include img-portrait.html img="report-cc-remark-overview-payer.png" caption="Figure 2.5-1 Payer Adds Remark to Condition Category Overview"%}
 
-If a Provider, the Provider's EMR or a Risk Adjustment Coder working on their behalf adds a remark to the Risk Adjustment Coding Gap Report, the [Condition Category Remark] can be added to the Report with the [PATCH](https://www.hl7.org/fhir/http.html#patch) process or the entire MeasureReport with the added [Condition Category Remark] extension(s) can be POSTed to the Provider's system.
+If a Provider, the Provider's EMR, or a Risk Adjustment Coder working on their behalf adds a remark to the Risk Adjustment Coding Gap Report, the [Condition Category Remark] can be added to the Report with the [PATCH](https://www.hl7.org/fhir/http.html#patch) process or the entire MeasureReport with the added [Condition Category Remark] extension(s) can be POSTed to the Provider's system.
 
 {% include img-portrait.html img="report-cc-remark-overview-provider.png" caption="Figure 2.5-2 Provider Add Remark to Condition Category Overview"%}
 

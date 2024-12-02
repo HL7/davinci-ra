@@ -14,7 +14,7 @@
     <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle"/>
     <name value="RAMeasureReportBundle"/>
     <title value="Risk Adjustment Coding Gap Report Bundle"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <description value="The Risk Adjustment Coding Gap Report Bundle Profile describes a collection bundle returned by the [$ra.evaluate-measure](OperationDefinition-ra.evaluate-measure.html) operation. This bundle is a collection of Risk Adjustment Coding Gap Reports."/>
     <jurisdiction>
