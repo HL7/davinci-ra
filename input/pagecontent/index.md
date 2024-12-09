@@ -6,7 +6,7 @@ The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Im
 
 This version of the implementation guide focuses primarily on the communication from providers back to payers. It focuses on two forms of communication:
 
-- Allowing the provider, a risk adjustment coder or the provider's EMR to add a Condition Category Remark to the Risk Adjustment Coding Gap Remark.  Providers and risk adjustment coders may indicate that a gap was closed, invalidated, not appropriate at this time, etc.  It also allows for the EMR to notify the payer when the content could not be processed. Note that where appropriate, the payer or an entity acting on behalf of the payer can also add a remark to the Risk Adjustment Coding Gap Report.
+- Allowing the provider, a risk adjustment coder or the provider's EMR to add a Condition Category Remark to the Risk Adjustment Coding Gap Report.  Providers and risk adjustment coders may indicate that a gap was closed, invalidated, not appropriate at this time, etc.  It also allows for the EMR to notify the payer when the content could not be processed. Note that where appropriate, the payer or an entity acting on behalf of the payer can also add a remark to the Risk Adjustment Coding Gap Report.
 
 - A Risk Adjustment Data Exchange MeasureReport was added to allow the provider to return data to the payer to potentially close the Condition Category code gaps.  We anticipate this could be used to submit Consolidated Clinical Document Architecture documents such as the Continuity of Care Document (CCD), Progress Notes, etc. It can also be used to submit specific FHIR data if appropriate.
 
