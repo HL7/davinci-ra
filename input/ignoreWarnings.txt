@@ -23,10 +23,6 @@ Error from http://tx.fhir.org/r4: Unable to provide support for code system http
 
 # Organization Type
 
-# fhir.uv.tools error to be fixed in publisher
-This IG is version 4.0.1, while the IG 'hl7.fhir.uv.tools' is from version 5.0.0
-
-
 # TSMG approval to leave these Code Systems in IG for this release
 Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
