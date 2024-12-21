@@ -23,7 +23,7 @@ Error from http://tx.fhir.org/r4: Unable to provide support for code system http
 
 # Organization Type
 
-# TSMG approval to leave these Code Systems in IG for this release
+# TSMG approved having the Code Systems in the IG: https://confluence.hl7.org/display/VOC/May+2023+-+HL7+WGM+-+Wednesday+Q3+Minutes
 Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
 
