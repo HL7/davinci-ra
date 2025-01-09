@@ -14,29 +14,36 @@ This version also introduces the draft content for digital Condition Category (d
 
 This implementation guide is supported by the Da Vinci initiative which is a private effort to accelerate the adoption of Health Level Seven International Fast Healthcare Interoperability Resources (HL7® FHIR®) as the standard to support and integrate value-based care (VBC) data exchange across communities. Like all Da Vinci Implementation Guides, it follows the [HL7 Da Vinci Guiding Principles] for the exchange of patient health information. As an HL7 FHIR Implementation Guide, changes to this specification are managed by the sponsoring [Clinical Quality Information (CQI) Work Group] and are incorporated as part of the standard balloting process.
 
-### How to read this implementation guide
+### Content and Organization
 
-This implementation guide is divided into several pages which are listed at the top of each page in the menu bar:
+The main menu shown at the top of each page is categorized into several primary topics with several sub-topics:
 
-- [Home]\: The home page provides the summary, background information, scope, and actors for this implementation guide.
+- **[Home]**\: The home page provides a high-level summary of this IG and background information about risk adjustment for revenue normalization.
 
-- [Methodology]\: These pages provide guidance on the resource profiles and operation defined in this implementation guide.
-    - [General Guidance]\: This page provides guidance that applies to all functionalities in this implementation guide.
-    - [Report Generation]\: This page describes how generating a Risk Adjustment Coding Gap Report is accomplished.
-    - [Report Query]\: This page provides guidance on using query to return a Risk Adjustment Coding Gap Report(s) and their evaluated resources.
-    - [Submit Data to Payer]\: This page provides guidance on submitting clinical evaluation evidence to Payer for the purpose of evaluating risk adjustment coding gaps using [$submit-data](https://www.hl7.org/fhir/measure-operation-submit-data.html) and [Risk Adjustment Data Exchange MeasureReport].
-    - [Add Remark to Condition Category]\: This page describes how providers can add remarks to Condition Categories on the Risk Adjustment Coding Gap Report to note that they took actions while seeing the patient.
-    - [Digital Condition Category (dCC)]\: This page describes how a Condition Category can be structured as a proportion measure and be specified using CQL as a digital Condition Category in a similar fashion to electronic quality measures through an example. 
+- **Background**: 
 
-- FHIR Artifacts: These pages list FHIR artifacts specified in this implementation guide. 
-    - [Profiles]\: This page lists the set of Profiles that are defined in this implementation guide to exchange risk adjustment coding gaps.
-    - [Extensions]\: This page lists the set of Extensions that are defined in this implementation guide to exchange risk adjustment coding gaps.
-    - [Operations]\: This page lists operations defined in this implementation guide.
-    - [Terminology]\: This page lists code systems and value sets defined in this implementation guide.
-    - [Capability statements]\: This page describes the expected FHIR capabilities of the risk adjustment actors of this implementation guide.
-- [Examples]\: This page lists all the examples used in this implementation guide.
-- [Glossary]\: This page lists glossary and acronyms for this implementation guide.
-- [Downloads]\: This page provides links to downloadable artifacts.
+- **Specification**: These pages provide guidance on the resource profiles and operation defined in this IG.
+    - [General Guidance] provides guidance that applies to all functionalities in this IG.
+    - [Report Generation] describes how generating a Risk Adjustment Coding Gap Report is accomplished.
+    - [Report Query] provides guidance on using query to return a Risk Adjustment Coding Gap Report(s) and their evaluated resources.
+    - [Submit Data to Payer] provides guidance on submitting clinical evaluation evidence to Payer for the purpose of evaluating risk adjustment coding gaps using [$submit-data](https://www.hl7.org/fhir/measure-operation-submit-data.html) and [Risk Adjustment Data Exchange MeasureReport].
+    - [Add Remark to Condition Category] describes how providers can add remarks to Condition Categories on the Risk Adjustment Coding Gap Report to note that they took actions while seeing the patient.
+    - [Digital Condition Category (dCC)] includes draft content describing how a Condition Category can be structured as a proportion measure and be specified using CQL as a digital Condition Category in a similar fashion to electronic quality measures through an example. 
+    - [Security, Privacy, and Safety](security.html) provides general expectations to ensure security and privacy of exchanges
+    - [Glossary] lists glossary and acronyms by this IG.
+
+- **FHIR Artifacts**: These pages list FHIR artifacts specified in this IG.
+    - [Artifacts Summary](artifacts.html) shows a complete list of FHIR artifacts defined in this IG. 
+    - [Profiles] lists the set of Profiles that are defined in this IG to exchange risk adjustment coding gaps.
+    - [Extensions] lists the set of Extensions that are defined in this IG to exchange risk adjustment coding gaps.
+    - [Operations] lists operations defined in this IG.
+    - [Terminology] lists code systems and value sets defined in this IG.
+    - [Capability statements] describes the expected FHIR capabilities of the risk adjustment actors of this IG.
+    - [Examples] lists all the examples used in this IG.
+
+- **Base Specs** includes links to the FHIR core specification as well as the US Core specs that underlie this IG.
+- **Support** includes various links for support and guidance, as well as [Downloads] links for this IG and guidance on tools and support for Da Vinci implementers.
+
 
 ### Background
 {: #background}
@@ -88,61 +95,7 @@ What’s going on with these three different model versions? There are three ans
 2.	Risk scores for members diagnosed with certain medical conditions such as End Stage Renal Disease (ESRD) or who are enrolled in a special Medicare Advantage Plan for All-encompassing Care for the Elderly (PACE<sup>[1](glossary.html#acronyms)</sup>) are always scored using the model which is one version previous to the current one. While the V22 and V24 models were being blended both were considered current, meaning that the next previous version was V21. When a member is diagnosed with renal disease and CMS designates them as ESRD, the member shifts from being scored under the V22/V24 models to being scored under the V21 model. By 2022 the blending period was over, the V24 model became the most current model, the V22 model came into use for ESRD and PACE, and the V21 model was phased out.
 3.	Throughout this period the CMS-RxHCC V05 model was also in continuous use. The purpose of the CMS-RxHCC model is to normalize the expected cost of medications across populations, just as the CMS-HCC model normalizes the expected cost of medical treatments. Despite the name, the RxHCC model is derived from medical claims – not pharmacy claims. The RxHCC model overlaps with CMS-HCC to a considerable degree; many times the same diagnosis will close both an HCC and an RxHCC, although there are some diagnoses that only roll up to RxHCCs and not HCCs. Many risk adjustment models feature this separation between the medical and prescription drug portions of the model (Medicare CMS-HCC and CMS-RxHCC; Medicaid CPDS and MRX; ACA HHS-HCC and RXC.)
 
-### Scope
-
-After careful review with the risk adjustment subject matter experts, it was determined that the most challenging aspect of the current risk adjustment process was the inconsistent manner in which reports on risk adjustment coding gaps were communicated between a provider (or system operating on their behalf) and a payer (or system operating on the payer’s behalf). Figure 1-2 shows a high-level example of the risk adjustment workflow in a CMS Medicare Advantage program. This implementation guide focuses on specifying a standard exchange format, the Risk Adjustment Coding Gap Report, between payers and providers. This diagram does not depict preceding steps such as the payer receiving clinical or claims data from providers or other sources, nor does it attempt to define contractual relationships.
-
-{% include img-portrait.html img="workflow-medicare-advantage.png" caption = "Figure 1-2 Workflow for Medicare Advantage Population" %}
-
-This implementation guide does not define how payers determine a coding gap and how coding gaps are produced or managed on the payer side including hierarchies. This implementation guide also does not define suspecting processes and algorithms/predictive models that are used for suspecting analytics.   
-
-### Actors and Roles
-
-Different entities can play different Roles in different scenarios. The Actors in this implementation guide are Payer and Provider. Their roles as Client and Server are described below. 
-
-
-**Client**: 
-- Reporting Client
-    - Payer plays this role when they request a [Risk Adjustment Coding Gap Report] to POST to Provider's FHIR Server 
-    - Provider plays this role 1) when they request a Risk Adjustment Coding Gap Report, or 2) when they add a Condition Category Remark to a Risk Adjustment Coding Gap Report
-- Data Submission Client
-    - Provider plays this role when they create a [Risk Adjustment Data Exchange MeasureReport] and submit to Payer
-
-**Server**:
-- Reporting Server
-    - The Payer plays this role when they 1) generate and store a Risk Adjustment Coding Gap Report, or 2) when they add Condition Category remark to the Risk Adjustment Coding Gap Report, if the Payer chooses to share any or all Condition Category remarks submitted by the Provider
-    - The Payer plays this role when they receive and process the Risk Adjustment Data Exchange MeasureReport       
-- Data Submission Server
-    - The Provider plays this role when they POST Risk Adjustment Coding Gap Report with Condition Category Remark(s)
-
-The Methodology section of this implementation guide describes these Actors in more detail in the context of report generation, report query, and data submission steps of risk adjustment lifecycle and adding of Condition Category remarks to the Risk Adjustment Coding Gap report. 
-   
-
 ---
 
-### Credits
-
-This implementation guide was made possible by the thoughtful contributions of the following people and organizations:
-
-- *The [Da Vinci Project](http://www.hl7.org/about/davinci/index.cfm?ref=common) member organizations.*
-
-Primary Authors
-- *Brent Zenobia, Novillus*
-- *Linda Michaelsen, Optum*
-- *Rob Reynolds, Smile Digital Health*
-- *Yan Heras, Optimum eHealth*
-
-Contributors
-- *Amy Neftzger, United Healthcare*
-- *Brian J Murtha, Centene*
-- *Bryn Rhodes, Smile Digital Health*
-- *Cody Danielshak, Epic*
-- *Josh Lamb, Optum*
-- *Lloyd McKenzie, Dogwood Health Consulting* 
-- *Nidhi Pengoria, AthenaHealth*
-- *Swati Mukherjee, Optum*
-- *Viet Nguyen, Stratametrics*
-
----
 
 {% include link-list.md %}

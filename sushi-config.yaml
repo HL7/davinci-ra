@@ -1,0 +1,191 @@
+# ╭─────────────────────────────────ImplementationGuide-fish.json──────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: davinci-ra
+canonical: http://hl7.org/fhir/us/davinci-ra
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: "trial-use"
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+    valueInteger: "2"
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+    valueCode: cqi
+version: 2.1.0
+fhirVersion: 4.0.1
+name: RiskAdjustment
+title: Da Vinci Risk Adjustment Implementation Guide
+status: active
+publisher:
+  name: HL7 International / Clinical Quality Information
+contact:
+    telecom:
+      - system: url
+        value: http://www.hl7.org/Special/committees/cqi
+description: The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide (this IG) describes exchange of risk-based coding gaps among stakeholders such as payers, providers, and government care programs in support of driving towards accurate and complete documentation of health conditions that would lead to more accurate risk-adjustment payment calculations.
+packageId: hl7.fhir.us.davinci-ra
+license: CC0-1.0
+jurisdiction: urn:iso:std:iso:3166#US "United States of America"
+copyright: >-
+  Used by permission of HL7 International, all rights reserved Creative Commons License
+copyrightYear: 2021+
+releaseLabel: STU 2.1
+
+parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  path-resource:
+    - input/resources
+    - fsh-generated/resources
+    - input/resources/library
+    - input/vocabulary/valueset
+    - input/resources/measure
+    - input/resources/device    
+  path-pages:
+    - input/pagecontent
+    - input/intro-notes
+    - fsh-generated/includes    
+  path-expansion-params: '../../input/_resources/exp-params.json' # for using US ed of SNOMED
+  # path-expansion-params: "path-expansion-params"
+  path-history: http://hl7.org/fhir/us/davinci-ra/history.html
+  apply-publisher: true
+  apply-contact: true
+  show-inherited-invariants: false
+  usage-stats-opt-out: true
+  auto-oid-root: 2.16.840.1.113883.4.642.40.29
+  version-comparison: 
+    - 1.0.0
+    - 2.0.0-ballot
+  # shownav: true
+  excludettl: 'true'
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Home: index.html
+  Background:
+    Reading this IG - FHIR Introduction: fhir.html
+    Background: background.html
+    Projects and Participants: credits.html
+  Specification:
+    General Guidance: general-guidance.html
+    Report Generation: report-generation.html
+    Report Query: report-query.html
+    Submit Data to Payer: submit-data-to-payer.html
+    Add Remark to Condition Category: cc-remark.html    
+    Digital Condition Category (dCC): dcc.html
+    Security, Privacy, and Safety: security.html
+    Glossary: glossary.html
+  FHIR Artifacts: 
+    Artifacts Summary: artifacts.html
+    Profiles: profiles.html
+    Extensions: extensions.html
+    Operation: operations.html
+    Terminology: terminology.html 
+    Search Parameters: artifacts.html#behavior-search-parameters
+    Capability Statements: capabilities.html  
+    Examples: examples.html
+  Base Specs:
+    FHIR R4 Spec: new-tab http://hl7.org/fhir/R4/
+    HRex 1.1.0: new-tab https://hl7.org/fhir/us/davinci-hrex/STU1.1/
+    US Core 3.1.1: new-tab https://hl7.org/fhir/us/core/STU3.1.1/  
+    US Core 6.1.0: new-tab https://hl7.org/fhir/us/core/STU6.1/
+    US Core 7.0.0: new-tab https://hl7.org/fhir/us/core/STU7/
+  Support:
+    Project Page: new-tab https://confluence.hl7.org/pages/viewpage.action?pageId=104582473
+    Specification Dashboard: new-tab https://jira.hl7.org/secure/Dashboard.jspa?selectPageId=17322
+    Discussion Forum: https://chat.fhir.org/#narrow/channel/311469-Da-Vinci-Risk-Adjustment
+    Implementer Support: new-tab https://confluence.hl7.org/display/DVP/Risk+Adjustment+Implementer+Support
+    Propose a Change: new-tab https://jira.hl7.org/secure/CreateIssueDetails!init.jspa?pid=10405&issuetype=10600&customfield_11302=FHIR-us-davinci-ra
+    Downloads: downloads.html
+  Change Log: change-log.html  
+
+# ╭────────────────────────────────────────────────────────────────────────────────────────────────╮
+# │  List of IG dependencies                                                                       │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+dependencies:
+  hl7.fhir.us.core.v700:
+    version: 7.0.0
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore7
+    reason: |
+      Needed for systems supporting USCDI v4
+  hl7.fhir.us.core:
+    version: 6.1.0
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore6
+    reason: |
+      Needed for systems supporting USCDI v3
+  hl7.fhir.us.core.v311:
+    version: 3.1.1
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore3
+    reason: |
+      Needed for systems supporting USCDI v1
+  hl7.fhir.uv.crmi:
+    version: 1.0.0
+    uri: http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi
+    id: crmi
+    reason: |
+      Needed for the RA Data Exchange MeasureReport Profile having an extension using CRMI Software System Device profile      
+  hl7.fhir.extensions.r4: 
+    version: 4.0.1
+    reason: |
+      Needed for the measurereport-category extension.  
+#  us.nlm.vsac:
+#    id: vsac
+#    uri: 'http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac'
+#    version: 0.19.0
+#    reason: |
+#      Defines some of the US Core value set bound to in this IG
+# ╭────────────────────────────────────────────────────────────────────────────────────────────────╮
+# │  List of IG pages                                                                              │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+pages:
+  index.md:
+    title: Home
+  fhir.md:
+    title: Reading this IG - FHIR Introduction
+  background.md:
+    title: Background
+  credits.md:
+    title: Projects and Participants      
+  general-guidance.md:
+    title: General Guidance  
+  report-generation.md:
+    title: Report Generation
+  report-query.md:
+    title: Report Query
+  submit-data-to-payer.md:
+    title: Submit Data To Payer    
+  cc-remark.md:
+    title: Add Remark to Condition Category       
+  dcc.md:
+    extension:
+    - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+      valueCode: "draft"    
+    title: Digital Condition Category (dCC)
+  security.md:    
+    title: Security, Privacy, and Safety  
+  glossary.md:
+    title: Glossary    
+  profiles.md:
+    title: Profiles         
+  extensions.md:
+    title: Extensions
+  terminology.md:
+    title: Terminology
+  operations.md:
+    title: Operation    
+  capabilities.md:
+    title: Capability Statements     
+  examples.md:
+    title: Examples            
+  downloads.md:
+    extension:
+    - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+      valueCode: "informative"
+    title: Downloads
+  change-log.md:
+    title: Change Log    
+ 
