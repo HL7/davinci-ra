@@ -18,7 +18,7 @@
 - [Coding Gap Remark](CodeSystem-coding-gap-remark.html)
 - [Remark Reason](CodeSystem-remark-reason.html)
 - [Risk Adjustment Condition Category Type](CodeSystem-cc-type.html)
-- [Risk Adjustment Evidence Status](ValueSet-evidence-status.html)
+- [Risk Adjustment Evidence Status](CodeSystem-evidence-status.html)
 - [Risk Adjustment Hierarchical Status](CodeSystem-hierarchical-status.html)
 
 ### ValueSet 

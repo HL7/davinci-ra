@@ -21,3 +21,35 @@ Description: "Code sytstem that indicates coded remark for a coding gap."
 * #not-assessed "Not assessed" "Gap was shown to the provider but no action was taken to assess the gap."
 * #not-presented "Not presented" "System did not present the gap to the end user."
 * #not-ingested "Not ingested" "System cannot process the gap that was received."
+
+CodeSystem: RiskAdjustmentEvidenceStatus
+Title: "Risk Adjustment Evidence Status"
+Id: evidence-status
+Description: "Code System that indicates whether a coding gap is an open-gap, invalid-gap, closed-gap or pending"
+* ^experimental = false
+* ^caseSensitive = true
+* #closed-gap "Closed Condition Category Gap" "Evidence to support a Condition Category (CC) was confirmed"
+* #invalid-gap "Invalid Condition Category Gap" "Evidence to support a Condition Category (CC) was invalidated."
+* #open-gap "Open Condition Category Gap" "Action is needed to confirm whether the Condition Category (CC) is valid."
+* #pending "Pending Condition Category Gap" "Evidence was received by the payer and is in the process of being evaluated."
+
+CodeSystem: RiskAdjustmenthierarchicalStatus
+Title: "Risk Adjustment Hierarchical Status CodeSystem"
+Id: hierarchical-status
+Description: "Code system that indicates how hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded."
+* ^experimental = false
+* ^caseSensitive = true
+* #applied-superseded "Hierarchies applied and Condition Category is superseded" "Hierarchies were applied to a Condition Category (CC) and the Condition Category (CC) is superseded."
+* #applied-not-superseded "Hierarchies applied and Condition Category is not superseded" "Hierarchies were applied to a Condition Category (CC) and the Condition Category (CC) is not superseded."
+* #not-applied "Hierarchies not applied" "Hierarchies were not applied to a Condition Category (CC)."
+* #not-applicable "Not applicable" "Applying hierarchies to a Condition Category (CC) is not applicable."
+
+CodeSystem: RemarkReason
+Title: "Remark Reason CodeSystem"
+Id: remark-reason
+Description: "Reason codes for remark"
+* ^experimental = false
+* ^caseSensitive = true
+* #never-had-condition "Patient never had the condition" "Reason for the assessed-not-present remark is because the patient has never had this condition."
+* #inactive-condition "Condition no longer active" "Reason for the assessed-not-present remark is because the patient's condition is no longer active."
+* #inapplicable-gap "Inapplicable gap" "Reason for the assessed-not-present remark is because the patient has an active condition but the gap does not accurately describe it."
