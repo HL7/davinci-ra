@@ -33,7 +33,6 @@ The main menu shown at the top of each page is categorized into several primary 
     - [Add Remark to Condition Category] describes how providers can add remarks to Condition Categories on the Risk Adjustment Coding Gap Report to note that they took actions while seeing the patient.
     - [Digital Condition Category (dCC)] includes draft content describing how a Condition Category can be structured as a proportion measure and be specified using CQL as a digital Condition Category in a similar fashion to electronic quality measures through an example. 
     - [Security, Privacy, and Safety](security.html) provides general expectations to ensure security and privacy of exchanges
-    - [Glossary] lists glossary and acronyms by this IG.
 
 - **FHIR Artifacts**: These pages list FHIR artifacts specified in this IG.
     - [Artifacts Summary](artifacts.html) shows a complete list of FHIR artifacts defined in this IG. 
