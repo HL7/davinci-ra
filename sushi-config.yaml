@@ -65,8 +65,9 @@ menu:
   Home: index.html
   Background:
     Reading this IG - FHIR Introduction: fhir.html
-    Background: background.html
+    Background - Risk Adjustment: background.html
     Projects and Participants: credits.html
+    Glossary: glossary.html    
   Specification:
     General Guidance: general-guidance.html
     Report Generation: report-generation.html
@@ -75,14 +76,13 @@ menu:
     Add Remark to Condition Category: cc-remark.html    
     Digital Condition Category (dCC): dcc.html
     Security, Privacy, and Safety: security.html
-    Glossary: glossary.html
   FHIR Artifacts: 
     Artifacts Summary: artifacts.html
     Profiles: profiles.html
     Extensions: extensions.html
-    Operation: operations.html
+    Search Parameters: search-parameters.html
     Terminology: terminology.html 
-    Search Parameters: artifacts.html#behavior-search-parameters
+    Operation: operations.html
     Capability Statements: capabilities.html  
     Examples: examples.html
   Base Specs:
@@ -173,6 +173,8 @@ pages:
     title: Profiles         
   extensions.md:
     title: Extensions
+  search-parameters.md:
+    title: Search Parameters        
   terminology.md:
     title: Terminology
   operations.md:
