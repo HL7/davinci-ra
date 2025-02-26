@@ -2,6 +2,16 @@
   "resourceType": "Condition",
   "id": "ra-condition03pat01",
   "meta": {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Condition03Pat01 Example"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a Condition example with code J44.1: Chronic obstructive pulmonary disease with (acute) exacerbation."
+      }
+    ],       
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
     ]

@@ -2,6 +2,16 @@
   "resourceType": "Condition",
   "id": "ra-conditionR01pat01",
   "meta": {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "ConditionR01Pat01 Example"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a Condition example with code E84.19: Cystic fibrosis with other intestinal manifestations."
+      }
+    ],     
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
     ]

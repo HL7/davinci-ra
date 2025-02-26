@@ -2,7 +2,18 @@
   "resourceType": "Condition",
   "id": "ra-condition08pat01",
   "meta": {
-    "profile": [
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Condition08Pat01 Example"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a Condition example with code F31.61: Bipolar disorder, current episode mixed, mild."
+      }
+    ],     
+    "profile":
+     [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
     ]
   },
@@ -46,7 +57,7 @@
         "display": "Bipolar disorder, current episode mixed, mild"
       }
     ],
-    "text": "Bipolar disorder, current episode mixed, mild"
+    "text": "F31.61: Bipolar disorder, current episode mixed, mild"
   },
   "subject": {
     "reference": "Patient/ra-patient01"

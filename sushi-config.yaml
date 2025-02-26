@@ -36,10 +36,10 @@ parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
   path-resource:
     - input/resources
     - fsh-generated/resources
-    - input/resources/library
-    - input/vocabulary/valueset
-    - input/resources/measure
-    - input/resources/device    
+#    - input/resources/library
+#    - input/vocabulary/valueset
+#    - input/resources/measure
+#    - input/resources/device    
   path-pages:
     - input/pagecontent
     - input/intro-notes

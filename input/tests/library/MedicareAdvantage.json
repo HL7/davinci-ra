@@ -10,6 +10,7 @@
   "url": "http://hl7.org/fhir/us/davinci-ra/Library/MedicareAdvantage",
   "version": "0.0.001",
   "name": "MedicareAdvantage",
+  "description": "This is a draft example library.",  
   "relatedArtifact": [ {
     "type": "depends-on",
     "display": "FHIR model information",

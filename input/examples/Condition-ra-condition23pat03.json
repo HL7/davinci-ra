@@ -2,6 +2,16 @@
   "resourceType": "Condition",
   "id": "ra-condition23pat03",
   "meta": {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Condition23Pat03 Example"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a Condition example with code N18.5: Chronic kidney disease, stage 5."
+      }
+    ],     
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
     ]
@@ -46,7 +56,7 @@
         "display": "Chronic kidney disease, stage 5"
       }
     ],
-    "text": "Chronic kidney disease, stage 5"
+    "text": "N18.5: Chronic kidney disease, stage 5"
   },
   "subject": {
     "reference": "Patient/ra-patient03"

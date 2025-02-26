@@ -2,6 +2,16 @@
   "resourceType": "Condition",
   "id": "ra-condition31pat02",
   "meta": {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Condition31Pat02 Example"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a Condition example with code I48.3: Typical atrial flutter."
+      }
+    ],       
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
     ]
@@ -46,7 +56,7 @@
         "display": "Typical atrial flutter"
       }
     ],
-    "text": "Typical atrial flutter"
+    "text": "I48.3: Typical atrial flutter"
   },
   "subject": {
     "reference": "Patient/ra-patient02"

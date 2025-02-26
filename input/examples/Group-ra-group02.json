@@ -2,6 +2,16 @@
     "resourceType": "Group",
     "id": "ra-group02",
     "meta": {
+        "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+              "valueString" : "Patient Group Example (ra-group02)"
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+              "valueMarkdown" : "This is an example for the Patient Group profile. This example patient group has two members."
+            }
+          ],           
         "profile": [
             "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-patient-group"
         ]
