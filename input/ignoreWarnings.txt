@@ -26,5 +26,90 @@ Error from http://tx.fhir.org/r4: Unable to provide support for code system http
 # TSMG approved having the Code Systems in the IG: https://confluence.hl7.org/display/VOC/May+2023+-+HL7+WGM+-+Wednesday+Q3+Minutes
 Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
+== input\examples\Bundle-ra-bundle01.json ==
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[14]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[15]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[16]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[17]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[18]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[19]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[20]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[1].resource/*Condition/ra-condition33pat01*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[3].resource/*Condition/ra-condition10pat01*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[5].resource/*Condition/ra-condition09pat01*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[6].resource/*Condition/ra-condition02pat01*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[8].resource/*Observation/ra-obs21pat01*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[9].resource/*Condition/ra-condition18pat01*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[11].resource/*Condition/ra-condition44pat01*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[14].resource/*Condition/ra-condition08pat01*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[15].resource/*Condition/ra-condition43pat01*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[16].resource/*Condition/ra-condition03pat01*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[17].resource/*Condition/ra-condition11pat01*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[20].resource/*Condition/ra-condition17pat01*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
 
-
+== input\examples\Condition-ra-condition01pat03.json ==
+INFORMATION: Condition/ra-condition01pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition02pat01.json ==
+INFORMATION: Condition/ra-condition02pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition03pat01.json ==
+INFORMATION: Condition/ra-condition03pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition04pat03.json ==
+INFORMATION: Condition/ra-condition04pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition05pat03.json ==
+INFORMATION: Condition/ra-condition05pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition06pat03.json ==
+INFORMATION: Condition/ra-condition06pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition07pat03.json ==
+INFORMATION: Condition/ra-condition07pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition08pat01.json ==
+INFORMATION: Condition/ra-condition08pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition09pat01.json ==
+INFORMATION: Condition/ra-condition09pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition10pat01.json ==
+INFORMATION: Condition/ra-condition10pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition11pat01.json ==
+INFORMATION: Condition/ra-condition11pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition12pat01.json ==
+INFORMATION: Condition/ra-condition12pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition15pat03.json ==
+INFORMATION: Condition/ra-condition15pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition16pat03.json ==
+INFORMATION: Condition/ra-condition16pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition17pat01.json ==
+INFORMATION: Condition/ra-condition17pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition18pat01.json ==
+INFORMATION: Condition/ra-condition18pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition21pat03.json ==
+INFORMATION: Condition/ra-condition21pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition22pat03.json ==
+INFORMATION: Condition/ra-condition22pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition23pat03.json ==
+INFORMATION: Condition/ra-condition23pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition31pat02.json ==
+INFORMATION: Condition/ra-condition31pat02: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition32pat03.json ==
+INFORMATION: Condition/ra-condition32pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition33pat01.json ==
+INFORMATION: Condition/ra-condition33pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition35pat03.json ==
+INFORMATION: Condition/ra-condition35pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition42pat03.json ==
+INFORMATION: Condition/ra-condition42pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition43pat01.json ==
+INFORMATION: Condition/ra-condition43pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-condition44pat01.json ==
+INFORMATION: Condition/ra-condition44pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+== input\examples\Condition-ra-conditionR01pat01.json ==
+INFORMATION: Condition/ra-conditionR01pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0

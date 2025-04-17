@@ -99,7 +99,11 @@
       </type>
       <type>
         <code value="string"/>
-      </type>      
+      </type>  
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+      </type>                
     </element>   
     <element id="Extension.extension:authorSoftware">
       <path value="Extension.extension"/>
@@ -248,32 +252,35 @@
         <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/remark-reason"/>
       </binding>      
     </element>  
-    <element id="Extension.extension:relatedDataIdentifier">
+    <element id="Extension.extension:relatedData">
       <path value="Extension.extension"/>
-      <sliceName value="relatedDataIdentifier"/>
-      <short value="Related data identifier"/>
+      <sliceName value="relatedData"/>
+      <short value="Related data"/>
       <min value="0"/>
       <max value="*"/>
       <type>
         <code value="Extension"/>
       </type>
     </element>
-    <element id="Extension.extension:relatedDataIdentifier.url">
+    <element id="Extension.extension:relatedData.url">
       <path value="Extension.extension.url"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="relatedDataIdentifier"/>
+      <fixedUri value="relatedData"/>
     </element>   
-    <element id="Extension.extension:relatedDataIdentifier.value[x]">
+    <element id="Extension.extension:relatedData.value[x]">
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="Identifier"/>
-      </type>      
+      </type>   
+      <type>
+        <code value="Reference"/>
+      </type>     
     </element>  
     <element id="Extension.extension:qualifyingDxCode">
       <path value="Extension.extension"/>

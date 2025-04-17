@@ -141,34 +141,63 @@ dependencies:
 # ╭────────────────────────────────────────────────────────────────────────────────────────────────╮
 # │  List of IG pages                                                                              │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
 pages:
   index.md:
     title: Home
   fhir.md:
     title: Reading this IG - FHIR Introduction
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"    
   background.md:
     title: Background
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"    
   credits.md:
     title: Projects and Participants      
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"    
   general-guidance.md:
     title: General Guidance  
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"
   report-generation.md:
     title: Report Generation
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"    
   report-query.md:
     title: Report Query
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"    
   submit-data-to-payer.md:
     title: Submit Data To Payer    
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"    
   cc-remark.md:
     title: Add Remark to Condition Category       
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"    
   dcc.md:
+    title: Digital Condition Category (dCC)  
     extension:
     - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
       valueCode: "draft"    
-    title: Digital Condition Category (dCC)
   security.md:    
     title: Security, Privacy, and Safety  
   glossary.md:
     title: Glossary    
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"      
   profiles.md:
     title: Profiles         
   extensions.md:
@@ -184,10 +213,12 @@ pages:
   examples.md:
     title: Examples            
   downloads.md:
+    title: Downloads            
     extension:
     - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
       valueCode: "informative"
-    title: Downloads
   change-log.md:
     title: Change Log    
- 
+    extension:
+    - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+      valueCode: "informative"
