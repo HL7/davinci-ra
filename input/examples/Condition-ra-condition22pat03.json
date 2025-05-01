@@ -2,6 +2,16 @@
   "resourceType": "Condition",
   "id": "ra-condition22pat03",
   "meta": {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Condition22Pat03 Example"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a Condition example with code N17.8: Other acute kidney failure."
+      }
+    ],     
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
     ]
@@ -46,7 +56,7 @@
         "display": "Other acute kidney failure"
       }
     ],
-    "text": "Other acute kidney failure"
+    "text": "N17.8: Other acute kidney failure"
   },
   "subject": {
     "reference": "Patient/ra-patient03"

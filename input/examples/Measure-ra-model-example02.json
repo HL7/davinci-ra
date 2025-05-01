@@ -2,6 +2,16 @@
   "resourceType": "Measure",
   "id": "RAModelExample02",
   "meta": {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "RA Model Example (RAModelExample02)"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is an example for the Risk Adjustment Model Measure profile. The example uses the CMS-HCC version 21 as the example Risk Adjustment Model."
+      }
+    ],     
       "profile": [
           "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-model-measure"
       ]

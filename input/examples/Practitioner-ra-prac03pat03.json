@@ -1,6 +1,21 @@
 {
   "resourceType": "Practitioner",
   "id": "ra-prac03pat03",
+  "meta": {
+    "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+          "valueString" : "Practitioner Example (ra-prac01pat03)"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+          "valueMarkdown" : "This is an example practitioner that uses the US Core Practitioner profile. The example practitioner is an organization: Community HealthCenter."
+        }
+      ],      
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+    ]
+  }, 
   "identifier": [
     {
       "system": "http://hl7.org.fhir/sid/us-npi",

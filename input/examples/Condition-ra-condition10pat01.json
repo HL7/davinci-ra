@@ -2,6 +2,16 @@
   "resourceType": "Condition",
   "id": "ra-condition10pat01",
   "meta": {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Condition10Pat01 Example"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a Condition example with code Z79.4: Long term (current) use of insulin."
+      }
+    ],     
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
     ]

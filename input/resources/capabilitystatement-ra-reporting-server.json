@@ -37,7 +37,7 @@
         "application/json-patch+json"
     ],
     "implementationGuide": [
-        "http://hl7.org/fhir/us/davinci-ra/ImplementationGuide/fhir.us.davinci-ra"
+        "http://hl7.org/fhir/us/davinci-ra/ImplementationGuide/hl7.fhir.us.davinci-ra"
     ],
     "rest": [
         {

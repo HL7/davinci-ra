@@ -2,6 +2,16 @@
     "resourceType": "Parameters",
     "id": "ra-measurereport01-patch",
     "meta" : {
+        "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+              "valueString" : "Patch Example (ra-measurereport01-patch)"
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+              "valueMarkdown" : "This is an example using the patch operation to send a Condition Category Remark for one Condition Category (group-001) with one attribute: authorDatetime."
+            }
+          ],          
         "profile" : [
           "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-parameters-cc-remark-patch"
         ]

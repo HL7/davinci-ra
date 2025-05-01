@@ -2,6 +2,16 @@
   "resourceType": "Measure",
   "id": "RAModelExample03",
   "meta": {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "RA Model Example (RAModelExample03)"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is an example for the Risk Adjustment Model Measure profile. The example uses the CMS-RxHCC version 5 as the example Risk Adjustment Model."
+      }
+    ],     
       "profile": [
           "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-model-measure"
       ]
@@ -16,7 +26,7 @@
   ],
   "version": "5",
   "name": "RAModelExample03",
-  "title": "Risk Adjustment Model Version 5 - CMS Prescribing Drug Hierarchical Category Condition (CMS-HCC)",
+  "title": "Risk Adjustment Model Version 5 - CMS Prescribing Drug Hierarchical Category Condition (CMS-RxHCC)",
   "status": "active",
   "experimental": true,
   "date": "2021-09-13",

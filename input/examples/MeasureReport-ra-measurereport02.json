@@ -2,6 +2,16 @@
     "resourceType": "MeasureReport",
     "id": "ra-measurereport02",
     "meta": {
+        "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+              "valueString" : "RA MeasureReport Example (ra-measurereport02)"
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+              "valueMarkdown" : "This is an example for the Risk Adjustment MeasureReport profile. This example report uses the CMS-RxHCC version 5 as the Risk Adjustment Model and the example patient used is Eve Everywoman."
+            }
+          ],         
         "profile": [
             "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
         ]

@@ -1,6 +1,4 @@
 
-### Profiles
-
 List of profiles that define constrains on FHIR resources for systems conforming to this implementation guide.
 
 |Resource Type|Profile|
@@ -12,14 +10,8 @@ List of profiles that define constrains on FHIR resources for systems conforming
 |Parameter|[RA Parameters ccRemark Patch Profile]|
 {: .grid}
 
-### Search Parameter
+---
 
-|Resource Type|Profile|
-|---|---|
-|Search Parameter|[MeasureReport-Category Search Parameter]
-{: .grid}
-
-### Profile (DRAFT)
 
 |Resource Type|Profile|Note|
 |---|---|

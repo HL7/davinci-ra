@@ -2,6 +2,16 @@
   "resourceType": "Condition",
   "id": "ra-condition18pat01",
   "meta": {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Condition18Pat01 Example"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a Condition example with code I48.11: Longstanding persistent atrial fibrillation."
+      }
+    ],      
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
     ]

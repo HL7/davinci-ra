@@ -1,6 +1,18 @@
 {
     "resourceType": "Parameters",
     "id": "ra-submit-data",
+    "meta": {
+      "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+          "valueString" : "Submit Data for RA Data Exchange MeasureReport Example (ra-submit-data)"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+          "valueMarkdown" : "This is an example for using $submit-data oepration to send a C-CDA document as supporting evidence using the RA Data Exchange MeasureReport."
+        }
+      ]
+    },    
     "parameter": [
         {
             "name": "MeasureReport",
@@ -196,7 +208,7 @@
                                 }
                             ]
                         },
-                        "system": "http://hospital.davinci.org",
+                        "system": "http://example.org/hospital",
                         "value": "12345"
                     }
                 ],

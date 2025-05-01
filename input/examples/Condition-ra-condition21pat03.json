@@ -2,6 +2,16 @@
   "resourceType": "Condition",
   "id": "ra-condition21pat03",
   "meta": {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Condition21Pat03 Example"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a Condition example with code E11.9: Type 2 diabetes mellitus without complications."
+      }
+    ],      
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
     ]
@@ -46,7 +56,7 @@
         "display": "Type 2 diabetes mellitus without complications"
       }
     ],
-    "text": "Type 2 diabetes mellitus without complications"
+    "text": "E11.9: Type 2 diabetes mellitus without complications"
   },
   "subject": {
     "reference": "Patient/ra-patient03"

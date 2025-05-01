@@ -2,6 +2,16 @@
   "resourceType": "Condition",
   "id": "ra-condition07pat03",
   "meta": {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Condition07Pat03 Example"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a Condition example with code I48.19: Other persistent atrial fibrillation."
+      }
+    ],       
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
     ]
@@ -46,7 +56,7 @@
         "display": "Other persistent atrial fibrillation"
       }
     ],
-    "text": "Other persistent atrial fibrillation"
+    "text": "I48.19: Other persistent atrial fibrillation"
   },
   "subject": {
     "reference": "Patient/ra-patient03"

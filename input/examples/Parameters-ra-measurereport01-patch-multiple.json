@@ -2,6 +2,16 @@
     "resourceType": "Parameters",
     "id": "ra-measurereport01-patch-mult",
     "meta" : {
+        "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+              "valueString" : "Patch Example (ra-measurereport01-patch-mult)"
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+              "valueMarkdown" : "This is an example using the patch operation to send a Condition Category Remark with data for two Condition Categories (group-001, group-002) and one with multiple attributes: authorDatetime, text."
+            }
+          ],          
         "profile" : [
           "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-parameters-cc-remark-patch"
         ]
