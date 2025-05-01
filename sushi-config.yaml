@@ -36,10 +36,6 @@ parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
   path-resource:
     - input/resources
     - fsh-generated/resources
-#    - input/resources/library
-#    - input/vocabulary/valueset
-#    - input/resources/measure
-#    - input/resources/device    
   path-pages:
     - input/pagecontent
     - input/intro-notes
@@ -57,6 +53,7 @@ parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
     - 2.0.0-ballot
   # shownav: true
   excludettl: 'true'
+  pin-canonicals: pin-multiples
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │

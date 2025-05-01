@@ -208,7 +208,7 @@
                                 }
                             ]
                         },
-                        "system": "http://hospital.davinci.org",
+                        "system": "http://example.org/hospital",
                         "value": "12345"
                     }
                 ],

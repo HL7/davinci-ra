@@ -270,7 +270,7 @@
                             }
                         },
                         {
-                            "url": "relatedDataIdentifier",
+                            "url": "relatedData",
                             "valueIdentifier":  {
                                 "system": "http://example.org/fhir/myclaimno",
                                 "value": "CLM23333"}
@@ -679,7 +679,7 @@
                                 ]
                             }
                         },
-                        {"url": "relatedDataIdentifier",
+                        {"url": "relatedData",
                             "valueIdentifier":  {
                                 "system": "http://example.org/fhir/mychart",
                                 "value": "432203939"}

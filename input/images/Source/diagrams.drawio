@@ -1,4 +1,116 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.9 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.9" pages="23">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16" pages="23">
+  <diagram name="3/10/2025" id="ot6crSOb46ObmPm1X8Lr">
+    <mxGraphModel dx="1314" dy="1834" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-0" />
+        <mxCell id="qshEdEhkUNs31u8qMhpj-1" parent="qshEdEhkUNs31u8qMhpj-0" />
+        <mxCell id="qshEdEhkUNs31u8qMhpj-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#D4E1F5,var(--ge-dark-color, #121212));" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="570" width="270" height="990" as="geometry" />
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#D5E8D4,var(--ge-dark-color, #121212));" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="10" width="560" height="990" as="geometry" />
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-4" value="4) request MeasureReport&amp;nbsp;&lt;div&gt;(e.g. 14 days ahead of appointment) in the context of an appointment&amp;nbsp; (e.g. appt id: 100)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="170" y="140" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-5" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1) appointment scheduled for Pt&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="170" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-6" value="2) appointment id generated&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="320" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="qshEdEhkUNs31u8qMhpj-1" source="qshEdEhkUNs31u8qMhpj-5" target="qshEdEhkUNs31u8qMhpj-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="260" as="sourcePoint" />
+            <mxPoint x="430" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-8" value="&lt;b&gt;EMR side&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="20" width="540" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-9" value="5) MeasureReport delivered for an appointment (appt id: 100)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="600" y="145" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-10" value="&lt;b&gt;Payer side&amp;nbsp;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="580" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="qshEdEhkUNs31u8qMhpj-1" source="qshEdEhkUNs31u8qMhpj-9" target="qshEdEhkUNs31u8qMhpj-12" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="350" as="sourcePoint" />
+            <mxPoint x="280" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="670" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-12" value="6) Receives report and stores it" style="rounded=0;whiteSpace=wrap;html=1;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="170" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-13" value="Appointment morphs into an encounter&lt;div&gt;(e.g., the day of visit)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="170" y="310" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-14" value="Visit occurs. Physician sees the gaps, document in pt chart (when document, sometimes, it includes appt. id, sometimes, encounter id)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;If actions taken during encounter, then send encounter id&lt;/div&gt;&lt;div&gt;Athena sends two ids, encounter id and appt id (also known as gap request id). gap request id can also take you back to appt id and encounter id.&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="140" y="440" width="420" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-15" value="7) Post annotation back to Payer" style="rounded=0;whiteSpace=wrap;html=1;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="180" y="600" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-16" value="Payer receives annotation&amp;nbsp;&lt;div&gt;(also receives appt id and optionally encounter id)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="620" y="600" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="qshEdEhkUNs31u8qMhpj-1" source="qshEdEhkUNs31u8qMhpj-15" target="qshEdEhkUNs31u8qMhpj-16" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="400" as="sourcePoint" />
+            <mxPoint x="800" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-18" value="Physician signs and closes documentation. Typically, this will generate a chart that electronically sent to Payer. Encounter itself includes encounter id. Meta data will have the gap request id.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Included ids: encounter id, appt id (gap request id), Claim id&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="150" y="685" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-19" value="Payer receives C-CDA. payer uses information from C-CDA to close the gap.&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="620" y="720" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="qshEdEhkUNs31u8qMhpj-1" source="qshEdEhkUNs31u8qMhpj-18" target="qshEdEhkUNs31u8qMhpj-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="550" as="sourcePoint" />
+            <mxPoint x="800" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-21" value="C-CDA sent to Payer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qshEdEhkUNs31u8qMhpj-20" vertex="1" connectable="0">
+          <mxGeometry x="-0.3001" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-23" value="Do you have gaps&lt;div&gt;&amp;nbsp;for member X&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="15" y="30" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-24" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;TIN of practice&lt;/span&gt;&lt;/div&gt;&lt;div&gt;NPI (not required) (some EMR allows scheduleing appointment w/o actual physician assigned, hence NPI optional)&lt;/div&gt;&lt;div&gt;Member Id&lt;/div&gt;&lt;div&gt;patient demographics&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Do a Member match, take appointment id, TIN, and optionally NPI)&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="20" y="130" width="130" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="qshEdEhkUNs31u8qMhpj-25" value="There is a need to send reference to encounter resource (not just the id).&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Annotation currently has relatedDataIdentifier that allows only identifier&amp;nbsp;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="30" y="830" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kon4ivacRzl9Ylpw16Px-0" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="qshEdEhkUNs31u8qMhpj-1" source="qshEdEhkUNs31u8qMhpj-4" target="qshEdEhkUNs31u8qMhpj-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="290" as="sourcePoint" />
+            <mxPoint x="390" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kon4ivacRzl9Ylpw16Px-1" value="When appt. changes to encounter, it will reference the encounter id. CCD has encounter id in encompassing encounter" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="420" y="330" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kon4ivacRzl9Ylpw16Px-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Add encounter id to the request that Provider sends to Payer.&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Encounter id as an input parameter in an operation&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Consider adding an operation to the IG (we currently do not have an operation)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Consider use $ra.evalaute&amp;nbsp; (need to confirm if we can still prefix the operation with ra)&amp;nbsp; &amp;nbsp;maybe instead of $ra.evaluate, we name it $risk-gaps&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Should we consider to make it mroe generic rather than just encounter? to apply to other purpose of use/reason&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;who&#39;s coming from and an idenfier for it (the context where it occurs)&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=none;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="880" width="570" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Kon4ivacRzl9Ylpw16Px-3" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;author organization name&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;date of service&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: medium; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;claim number&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;encounter resource&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;appointment resource&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;organization resource&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;(need organization details such as medical group details)&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;contained only exists in Resouce itself&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;When Payer sends MRs to Provider, a bundle will include all resources that including resources referenced by evaluatedResource&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;For provider going to Payer&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;authorOrganization --&amp;gt; add&amp;nbsp; valueReference to existing valueIdentifier / valueString&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;author --&amp;gt; add valueRefrence&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;relatedDataIdentifier --&amp;gt; add a valueReference (so allow either valueIdentifier and valueReference), rename this data element to relatedData&amp;nbsp; (remove Identifier from the name)&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;Patch would be heavy&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;can always POST with bundle that include remark and resources&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;3&quot;&gt;So no need to add date of service as an element to remark, can get it from encounter.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="888" y="247" width="750" height="441" as="geometry" />
+        </mxCell>
+        <mxCell id="De4PNXmRoQGnfcmZTPjO-0" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Decision from 3/13/2025&lt;/b&gt;:&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;1) change authorOrganization to also allow value Reference.&amp;nbsp; valueIdentifier | valueReference(USCore Organization), so organization details could be provided&lt;/font&gt;&lt;span style=&quot;font-size: medium; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;2) change relatedDataIdentifier to also allow valueReference, so the whole resource such as encounter resource could be referenced&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;3) rename relatedDataIdentifier to relatedData&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;4) will not add date of service element to remark.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;Josh: Patch is little too heavy now&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;Operation:&amp;nbsp; need to define an operation to query report (discussion from scheduling)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;(does it also need an operation for posting the bundle MeasureReport with remarks)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;use transaction bundle to post MeasureReport with remarks and any references ... instead of Patch&amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;Rob also suggested to add remark to DataExchange Measure and use evaluatedResource there to include resources and send that way. The payerReportIdentifier can link to the original payer MeasureReport&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;Nidhi: The whole payload (measurereport, remarks) sent as parameters. data collection / submit data&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;any changes we decided on remark needs to go to care gap remark as well&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="qshEdEhkUNs31u8qMhpj-1" vertex="1">
+          <mxGeometry x="888" y="932" width="780" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
   <diagram name="1-3-24 Condition Category Remark" id="rf0vu0UiNoDBD0bsIDaV">
     <mxGraphModel dx="1562" dy="909" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -5421,100 +5533,6 @@
         </mxCell>
         <mxCell id="Wfxbmq34EBshH5y8NETP-33" value="Need to send reference to encounter resource (not just the id). Athena currently uses evaluatedResource" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
           <mxGeometry x="20" y="880" width="220" height="100" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram name="Copy of Page-22" id="ot6crSOb46ObmPm1X8Lr">
-    <mxGraphModel dx="1674" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-0" />
-        <mxCell id="qshEdEhkUNs31u8qMhpj-1" parent="qshEdEhkUNs31u8qMhpj-0" />
-        <mxCell id="qshEdEhkUNs31u8qMhpj-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#D4E1F5,var(--ge-dark-color, #121212));" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="570" width="270" height="990" as="geometry" />
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#D5E8D4,var(--ge-dark-color, #121212));" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="10" width="560" height="990" as="geometry" />
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-4" value="request MeasureReport&amp;nbsp;&lt;div&gt;(e.g. 14 days ahead of appointment) in the context of an appointment&amp;nbsp; (e.g. appt id: 100)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="170" y="140" width="120" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-5" value="appointment scheduled for Pt&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="170" y="60" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-6" value="appointment id generated&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="320" y="60" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="qshEdEhkUNs31u8qMhpj-1" source="qshEdEhkUNs31u8qMhpj-5" target="qshEdEhkUNs31u8qMhpj-6">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="380" y="260" as="sourcePoint" />
-            <mxPoint x="430" y="210" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-8" value="&lt;b&gt;EMR side&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="20" width="540" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-9" value="MeasureReport delivered for an appointment (appt id: 100)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="600" y="190" width="140" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-10" value="&lt;b&gt;Payer side&amp;nbsp;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="580" width="250" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="qshEdEhkUNs31u8qMhpj-1" source="qshEdEhkUNs31u8qMhpj-9" target="qshEdEhkUNs31u8qMhpj-12">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="380" y="350" as="sourcePoint" />
-            <mxPoint x="280" y="360" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="670" y="330" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-12" value="Receives report and stores it" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="170" y="300" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-13" value="Appointment morphs into an encounter&lt;div&gt;(e.g., the day of visit)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="170" y="400" width="190" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-14" value="Visit occurs. Physician sees the gaps, document in pt chart (when document, sometimes, it includes appt. id, sometimes, encounter id)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;If actions taken during encounter, then send encounter id&lt;/div&gt;&lt;div&gt;Athena sends two ids, encounter id and appt id (also known as gap request id). gap request id can also take you back to appt id and encounter id.&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="140" y="500" width="420" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-15" value="Post annotation back to Payer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="170" y="650" width="130" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-16" value="Payer receives annotation&amp;nbsp;&lt;div&gt;(also receives appt id and optionally encounter id)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="610" y="650" width="220" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="qshEdEhkUNs31u8qMhpj-1" source="qshEdEhkUNs31u8qMhpj-15" target="qshEdEhkUNs31u8qMhpj-16">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="740" y="450" as="sourcePoint" />
-            <mxPoint x="790" y="400" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-18" value="Physician signs and closes documentation. Typically, this will generate a chart that electronically sent to Payer. Encounter itself includes encounter id. Meta data will have the gap request id.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Included ids: encounter id, appt id (gap request id), Claim id&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="140" y="735" width="280" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-19" value="Payer receives C-CDA. payer uses information from C-CDA to close the gap.&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="610" y="770" width="170" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="qshEdEhkUNs31u8qMhpj-1" source="qshEdEhkUNs31u8qMhpj-18" target="qshEdEhkUNs31u8qMhpj-19">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="740" y="600" as="sourcePoint" />
-            <mxPoint x="790" y="550" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-21" value="C-CDA sent to Payer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qshEdEhkUNs31u8qMhpj-20">
-          <mxGeometry x="-0.3001" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-23" value="Do you have gaps&lt;div&gt;&amp;nbsp;for member X&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="15" y="30" width="140" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-24" value="TIN of practice&lt;div&gt;NPI (not required) (some EMR allows scheduleing appointment w/o actual physician assigned, hence NPI optional)&lt;/div&gt;&lt;div&gt;Member Id&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;(do a Member match, take appointment id, TIN, and optionally NPI)&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="20" y="240" width="130" height="230" as="geometry" />
-        </mxCell>
-        <mxCell id="qshEdEhkUNs31u8qMhpj-25" value="There is a need to send reference to encounter resource (not just the id).&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Annotation currently has relatedDataIdentifier that allows only identifier&amp;nbsp;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="qshEdEhkUNs31u8qMhpj-1">
-          <mxGeometry x="20" y="880" width="300" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

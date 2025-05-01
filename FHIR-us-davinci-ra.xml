@@ -103,9 +103,9 @@
 <artifact id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner Example (ra-prac01pat03)"/>
 <artifact id="MeasureReport/ra-measurereport01" key="MeasureReport-ra-measurereport01" name="RA MeasureReport Example (ra-measurereport01)"/>
 <artifact id="MeasureReport/ra-measurereport02" key="MeasureReport-ra-measurereport02" name="RA MeasureReport Example (ra-measurereport02)"/>
-<artifact id="MeasureReport/ra-measurereport05" key="MeasureReport-ra-measurereport05" name="RA MeasureReport Example (ra-measurereport02)"/>
 <artifact id="MeasureReport/ra-measurereport03" key="MeasureReport-ra-measurereport03" name="RA MeasureReport Example (ra-measurereport03)"/>
 <artifact id="MeasureReport/ra-measurereport04" key="MeasureReport-ra-measurereport04" name="RA MeasureReport Example (ra-measurereport04)"/>
+<artifact id="MeasureReport/ra-measurereport05" key="MeasureReport-ra-measurereport05" name="RA MeasureReport Example (ra-measurereport05)"/>
 <artifact id="MeasureReport/ra-measurereport06" key="MeasureReport-ra-measurereport06" name="RA MeasureReport Example (ra-measurereport06)"/>
 <artifact id="MeasureReport/ra-measurereport01-with-remark" key="MeasureReport-ra-measurereport01-with-remark" name="RA MeasureReport with Remark Example (ra-measurereport01-with-remark)"/>
 <artifact id="Measure/RAModelExample01" key="Measure-RAModelExample01" name="RA Model Example (RAModelExample01)"/>
