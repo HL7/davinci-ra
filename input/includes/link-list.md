@@ -116,8 +116,8 @@
 
 [Risk Adjustment Data Exchange MeasureReport]: StructureDefinition-ra-datax-measurereport.html
 
-[SMART App Launch]: http://hl7.org/fhir/smart-app-launch/history.html
-[SMART Backend Services]: https://hl7.org/fhir/uv/bulkdata/authorization/index.html
+[SMART App Launch]: https://hl7.org/fhir/smart-app-launch/
+[SMART Backend Services]: https://hl7.org/fhir/uv/bulkdata/authorization.html
 [Specifying dCC]: dcc.html
 
 [Terminology]: terminology.html

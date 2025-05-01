@@ -2,6 +2,16 @@
   "resourceType": "Condition",
   "id": "ra-condition06pat03",
   "meta": {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Condition06Pat03 Example"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a Condition example with code K50.119: Crohn's disease of large intestine with unspecified complications."
+      }
+    ],      
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
     ]
@@ -46,7 +56,7 @@
         "display": "Crohn's disease of large intestine with unspecified complications"
       }
     ],
-    "text": "Crohn's disease of large intestine with unspecified complications"
+    "text": "K50.119: Crohn's disease of large intestine with unspecified complications"
   },
   "subject": {
     "reference": "Patient/ra-patient03"

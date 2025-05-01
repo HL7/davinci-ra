@@ -2,6 +2,16 @@
   "resourceType": "Condition",
   "id": "ra-condition16pat03",
   "meta": {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Condition16Pat03 Example"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a Condition example with code Z99.2: Dependence on renal dialysis."
+      }
+    ],     
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
     ]
@@ -46,7 +56,7 @@
         "display": "Dependence on renal dialysis"
       }
     ],
-    "text": "Dependence on renal dialysis"
+    "text": "Z99.2: Dependence on renal dialysis"
   },
   "subject": {
     "reference": "Patient/ra-patient03"

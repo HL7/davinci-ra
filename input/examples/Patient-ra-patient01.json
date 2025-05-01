@@ -2,6 +2,16 @@
   "resourceType": "Patient",
   "id": "ra-patient01",
   "meta": {
+    "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+          "valueString" : "Patient Example (ra-patient01)"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+          "valueMarkdown" : "This is an example patient that uses the USCore profile. The example patient name is Eve Everywoman."
+        }
+      ],      
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
     ]

@@ -2,6 +2,16 @@
   "resourceType": "Patient",
   "id": "ra-patient02",
   "meta": {
+    "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+          "valueString" : "Patient Example (ra-patient02)"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+          "valueMarkdown" : "This is an example patient that uses the US Core Patient profile. The example patient name is Adam Everyman."
+        }
+      ],     
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
     ]

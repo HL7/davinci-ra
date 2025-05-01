@@ -2,6 +2,16 @@
     "resourceType": "MeasureReport",
     "id": "ra-datax-measurereport01",
     "meta": {
+        "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+              "valueString" : "DataExchange MeasureReport01 Example (ra-datax-measurereport01)"
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+              "valueMarkdown" : "This is an example for the Risk Adjustment Data Exchange MeasureReport profile. It evaluatedResource references an example C-CDA document that is being submitted."
+            }
+          ],           
         "profile": [
             "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-datax-measurereport"
         ]

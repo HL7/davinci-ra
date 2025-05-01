@@ -2,6 +2,16 @@
   "resourceType": "Condition",
   "id": "ra-condition15pat03",
   "meta": {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Condition15Pat03 Example"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a Condition example with code E08.22: Diabetes mellitus due to underlying condition with diabetic chronic kidney disease."
+      }
+    ],      
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
     ]
@@ -46,7 +56,7 @@
         "display": "Diabetes mellitus due to underlying condition with diabetic chronic kidney disease"
       }
     ],
-    "text": "Diabetes mellitus due to underlying condition with diabetic chronic kidney disease"
+    "text": "E08.22: Diabetes mellitus due to underlying condition with diabetic chronic kidney disease"
   },
   "subject": {
     "reference": "Patient/ra-patient03"
