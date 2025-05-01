@@ -1,6 +1,14 @@
 
 The Risk Adjustment Implementation Guide was developed under the  [Davinci Project](#)
 
+### Version 2.1.0 
+High-level updates include:
+- Updated to support multiple USCore versions (USCore 3.1.1, USCore 6.1.0 and USCore 7.0.0)
+- Updated the menu layout and updated/added pages accordingly
+- Enhanced Condition Category Remark and updated guidance for sending remarks
+
+- [FHIR-50186](https://jira.hl7.org/browse/FHIR-50186) - Renamed relatedDataIdentifier to relatedData and added to allow reference to Organization Resource for authorOrganization in ccRemark
+
 ### Version 2.0.0
 
 - **Applied**: Added references to report generation overview and methods ([FHIR-40988](https://jira.hl7.org/browse/FHIR-40988))
