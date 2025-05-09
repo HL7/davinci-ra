@@ -37,7 +37,7 @@
       <definition value="Group reference"/>
       <comment value="This is an extension to reference a Condition Category (CC)."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>

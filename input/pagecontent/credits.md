@@ -22,21 +22,26 @@ This implementation guide was made possible by the thoughtful contributions of t
 - *The [Da Vinci Project](http://www.hl7.org/about/davinci/index.cfm?ref=common) member organizations.*
 
 Primary Authors
-- *Brent Zenobia, Novillus*
-- *Linda Michaelsen, Optum*
-- *Rob Reynolds, Smile Digital Health*
-- *Yan Heras, Optimum eHealth*
+- Brent Zenobia (Novillus)
+- Linda Michaelsen (Optum)
+- Rob Reynolds (Smile Digital Health)
+- Yan Heras (Optimum eHealth)
 
 Contributors
-- *Amy Neftzger, United Healthcare*
-- *Brian J Murtha, Centene*
-- *Bryn Rhodes, Smile Digital Health*
-- *Cody Danielshak, Epic*
-- *Josh Lamb, Optum*
-- *Lloyd McKenzie, Dogwood Health Consulting* 
-- *Nidhi Pengoria, AthenaHealth*
-- *Swati Mukherjee, Optum*
-- *Viet Nguyen, Stratametrics*
+- Amy Neftzger (United Healthcare)
+- Brian J Murtha (Centene)
+- Bryn Rhodes (Smile Digital Health)
+- Cody Danielshak (Epic)
+- Josh Lamb (Optum)
+- Lloyd McKenzie (Dogwood Health Consulting)
+- Nidhi Pengoria (Athenahealth)
+- Swati Mukherjee (Optum)
+- Tara Rose (Optum)
+- Viet Nguyen (Stratametrics)
+
+Project management and coordination
+- Teresa Younkin (Point of Care Partners)
+- Yan Heras (Optimum eHealth)
 
 ---
 

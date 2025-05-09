@@ -34,7 +34,11 @@ If a Provider, the Provider's EMR, or a Risk Adjustment Coder working on their b
 
 ### Provider Handling of the Condition Category Remark
 
-The Provider may choose to send the Condition Category remark only to the Payer using a light weight approach rather than sending the entire MeasureReport resource. They can do this using the [PATCH](https://www.hl7.org/fhir/http.html#patch) operation.
+#### POST 
+The Provider can POST Risk Adjustment Coding Gap Report that includes Condition Category remark(s) with any referenced Resources together as a transaction Bundle. 
+
+#### PATCH
+In scenarios where PATCH is feasible, for example, no referenced Resources also need to be sent together with the Condition Category remark, the Provider may choose to send the Condition Category remark only to the Payer using a light weight approach rather than sending the entire MeasureReport resource. They can do this using the [PATCH](https://www.hl7.org/fhir/http.html#patch) operation.
 
 A [RA Parameters ccRemark Patch Profile] is defined to specify the structures of using the Parameter resource to send the remark using the PATCH operation. 
 
@@ -49,6 +53,11 @@ After a Payer generates a subsequent [Risk Adjustment Coding Gap Report], in the
 `PUT [base]/MeasureReport/[id]`
 
 {% include examplebutton.html example="put-risk-adjustment-coding-gap-report-with-remark-example" b_title = "Click Here to See Example PUT Risk Adjustment Coding Gap Report with Remarks Added" %}
+
+#### Sending the full MeasureReport with added Remarks as a transaction Bundle to Payer
+`POST [base]/Bundle/`
+
+{% include examplebutton.html example="post-risk-adjustment-coding-gap-report-with-remark-bundle-example" b_title = "Click Here to See Example PUT Transactoin Bundle for Risk Adjustment Coding Gap Report with Remarks Added" %}
 
 #### Using Patch to update the Payer's MeasureReport with Remarks
 `PATCH [base]/MeasureReport/[id]`

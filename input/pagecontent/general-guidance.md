@@ -63,10 +63,4 @@ This implementation guide uses US Core profiles where appropriate, therefore, th
 
 For more information, see the definition of [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) in the base FHIR specification.
 
-### Dependencies
-
-This implementation guide relies on the following specifications:
-- [FHIR R4](http://hl7.org/fhir/R4/)
-- [US Core STU3.1.1](http://hl7.org/fhir/us/core/STU3.1.1)
-
 {% include link-list.md %}

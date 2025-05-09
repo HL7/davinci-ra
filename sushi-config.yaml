@@ -95,6 +95,7 @@ menu:
     Implementer Support: new-tab https://confluence.hl7.org/display/DVP/Risk+Adjustment+Implementer+Support
     Propose a Change: new-tab https://jira.hl7.org/secure/CreateIssueDetails!init.jspa?pid=10405&issuetype=10600&customfield_11302=FHIR-us-davinci-ra
     Downloads: downloads.html
+    Tooling and Support: tools.html
   Change Log: change-log.html  
 
 # ╭────────────────────────────────────────────────────────────────────────────────────────────────╮
@@ -103,19 +104,22 @@ menu:
 dependencies:
   hl7.fhir.us.core.v700:
     version: 7.0.0
-    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+#   uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    uri: http://hl7.org/fhir/us/core/v610/ImplementationGuide/hl7.fhir.us.core
     id: uscore7
     reason: |
       Needed for systems supporting USCDI v4
   hl7.fhir.us.core:
     version: 6.1.0
-    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+#    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    uri: http://hl7.org/fhir/us/core/v610/ImplementationGuide/hl7.fhir.us.core.v610
     id: uscore6
     reason: |
       Needed for systems supporting USCDI v3
   hl7.fhir.us.core.v311:
     version: 3.1.1
-    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+#    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    uri: http://hl7.org/fhir/us/core/v311/ImplementationGuide/hl7.fhir.us.core.v311
     id: uscore3
     reason: |
       Needed for systems supporting USCDI v1
@@ -125,8 +129,8 @@ dependencies:
     id: crmi
     reason: |
       Needed for the RA Data Exchange MeasureReport Profile having an extension using CRMI Software System Device profile      
-  hl7.fhir.extensions.r4: 
-    version: 4.0.1
+  hl7.fhir.uv.extensions.r4: 
+    version: 5.2.0
     reason: |
       Needed for the measurereport-category extension.  
 #  us.nlm.vsac:
@@ -190,30 +194,59 @@ pages:
       valueCode: "draft"    
   security.md:    
     title: Security, Privacy, and Safety  
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"       
   glossary.md:
     title: Glossary    
     extension:
       - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
         valueCode: "informative"      
   profiles.md:
-    title: Profiles         
+    title: Profiles   
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"        
   extensions.md:
     title: Extensions
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"        
   search-parameters.md:
-    title: Search Parameters        
+    title: Search Parameters      
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"        
   terminology.md:
     title: Terminology
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"        
   operations.md:
-    title: Operation    
+    title: Operation  
+    extension:
+    - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+      valueCode: "draft"         
   capabilities.md:
-    title: Capability Statements     
+    title: Capability Statements  
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"        
   examples.md:
     title: Examples            
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"        
   downloads.md:
     title: Downloads            
     extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"    
+  tools.md:
+    title: Tooling and Support   
+    extension:
     - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
-      valueCode: "informative"
+      valueCode: "informative"        
   change-log.md:
     title: Change Log    
     extension:

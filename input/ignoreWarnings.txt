@@ -15,10 +15,7 @@ This element does not match any known slice defined in the profile http://hl7.or
 A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' version '24' could not be found, so the code cannot be validated. Valid versions: []
 A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' version '5' could not be found, so the code cannot be validated. Valid versions: []
 A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' version '21' could not be found, so the code cannot be validated. Valid versions: []
-Unable to evaluate based on code system with status = not-present
-The code '88' is not valid in the system http://terminology.hl7.org/CodeSystem/cmshcc (A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' could not be found, so the code cannot be validated)
-The code '112' is not valid in the system http://terminology.hl7.org/CodeSystem/cmshcc (A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' could not be found, so the code cannot be validated)
-The code '22' is not valid in the system http://terminology.hl7.org/CodeSystem/cmshcc (Unable to evaluate based on code system with status = not-present)
+
 Error from http://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/cmshcc
 
 # Organization Type
@@ -59,57 +56,3 @@ INFORMATION: Bundle/ra-bundle01: Bundle.entry[16].resource/*Condition/ra-conditi
 INFORMATION: Bundle/ra-bundle01: Bundle.entry[17].resource/*Condition/ra-condition11pat01*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
 INFORMATION: Bundle/ra-bundle01: Bundle.entry[20].resource/*Condition/ra-condition17pat01*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
 
-== input\examples\Condition-ra-condition01pat03.json ==
-INFORMATION: Condition/ra-condition01pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition02pat01.json ==
-INFORMATION: Condition/ra-condition02pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition03pat01.json ==
-INFORMATION: Condition/ra-condition03pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition04pat03.json ==
-INFORMATION: Condition/ra-condition04pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition05pat03.json ==
-INFORMATION: Condition/ra-condition05pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition06pat03.json ==
-INFORMATION: Condition/ra-condition06pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition07pat03.json ==
-INFORMATION: Condition/ra-condition07pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition08pat01.json ==
-INFORMATION: Condition/ra-condition08pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition09pat01.json ==
-INFORMATION: Condition/ra-condition09pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition10pat01.json ==
-INFORMATION: Condition/ra-condition10pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition11pat01.json ==
-INFORMATION: Condition/ra-condition11pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition12pat01.json ==
-INFORMATION: Condition/ra-condition12pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition15pat03.json ==
-INFORMATION: Condition/ra-condition15pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition16pat03.json ==
-INFORMATION: Condition/ra-condition16pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition17pat01.json ==
-INFORMATION: Condition/ra-condition17pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition18pat01.json ==
-INFORMATION: Condition/ra-condition18pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition21pat03.json ==
-INFORMATION: Condition/ra-condition21pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition22pat03.json ==
-INFORMATION: Condition/ra-condition22pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition23pat03.json ==
-INFORMATION: Condition/ra-condition23pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition31pat02.json ==
-INFORMATION: Condition/ra-condition31pat02: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition32pat03.json ==
-INFORMATION: Condition/ra-condition32pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition33pat01.json ==
-INFORMATION: Condition/ra-condition33pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition35pat03.json ==
-INFORMATION: Condition/ra-condition35pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition42pat03.json ==
-INFORMATION: Condition/ra-condition42pat03: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition43pat01.json ==
-INFORMATION: Condition/ra-condition43pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-condition44pat01.json ==
-INFORMATION: Condition/ra-condition44pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-== input\examples\Condition-ra-conditionR01pat01.json ==
-INFORMATION: Condition/ra-conditionR01pat01: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0

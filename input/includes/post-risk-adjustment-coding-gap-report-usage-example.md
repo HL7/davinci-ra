@@ -10,7 +10,7 @@ A payer posts a risk adjustment coding gap report for patient, *ra-patient01*, t
 
 
 ```
-POST [base]/bundle/ra-bundle01
+POST [base]/Bundle/ra-bundle01
 ```
 
 **Request body**

@@ -136,7 +136,7 @@ Currently, only *application/fhir+ndjson* is supported.
 
 #### Post Risk Adjustment Coding Gap Report
 
-`POST [base]/bundle`
+`POST [base]/Bundle`
 
 {% include examplebutton.html example="post-risk-adjustment-coding-gap-report-usage-example" b_title = "Click Here to See Example POST Risk Adjustment Coding Gap Report" %}
 
