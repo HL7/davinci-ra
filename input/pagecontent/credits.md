@@ -36,7 +36,7 @@ Contributors
 - Lloyd McKenzie (Dogwood Health Consulting)
 - Nidhi Pengoria (Athenahealth)
 - Swati Mukherjee (Optum)
-- Tara Rose (Optum)
+- Rose Tucker (United Healthcare)
 - Viet Nguyen (Stratametrics)
 
 Project management and coordination
