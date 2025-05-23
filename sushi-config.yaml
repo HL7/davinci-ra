@@ -35,6 +35,7 @@ releaseLabel: STU 2.1
 parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
     - input/resources
+    - input/vocabulary
     - fsh-generated/resources
   path-pages:
     - input/pagecontent
@@ -102,23 +103,20 @@ menu:
 # │  List of IG dependencies                                                                       │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 dependencies:
-  hl7.fhir.us.core.v700:
+  hl7.fhir.us.core:
     version: 7.0.0
-#   uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
-    uri: http://hl7.org/fhir/us/core/v610/ImplementationGuide/hl7.fhir.us.core
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
     id: uscore7
     reason: |
       Needed for systems supporting USCDI v4
-  hl7.fhir.us.core:
+  hl7.fhir.us.core.v610:
     version: 6.1.0
-#    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
     uri: http://hl7.org/fhir/us/core/v610/ImplementationGuide/hl7.fhir.us.core.v610
     id: uscore6
     reason: |
       Needed for systems supporting USCDI v3
   hl7.fhir.us.core.v311:
     version: 3.1.1
-#    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
     uri: http://hl7.org/fhir/us/core/v311/ImplementationGuide/hl7.fhir.us.core.v311
     id: uscore3
     reason: |
