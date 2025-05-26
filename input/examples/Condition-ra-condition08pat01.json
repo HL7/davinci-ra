@@ -14,7 +14,7 @@
     ],     
     "profile":
      [
-      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"
     ]
   },
   "clinicalStatus": {

@@ -82,7 +82,7 @@
                         }
                       ],
                       "profile" : [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|7.0.0"
                       ]
                     },
                     "text": {
@@ -149,7 +149,7 @@
                 "id": "ra-patient01",
                 "meta": {
                   "profile": [
-                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0"
                   ]
                 },
                 "text": {
@@ -208,7 +208,7 @@
                                 }
                             ]
                         },
-                        "system": "http://example.org/hospital",
+                        "system": "http://example.org/hospital-davinci",
                         "value": "12345"
                     }
                 ],

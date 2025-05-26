@@ -814,7 +814,7 @@
                         }
                       ],                       
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"
                     ]
                 },
                 "clinicalStatus": {
@@ -882,7 +882,7 @@
                         }
                       ],      
                     "profile": [
-                      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+                      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0"
                     ]
                   }, 
                 "text": {
@@ -941,7 +941,7 @@
                                 }
                             ]
                         },
-                        "system": "http://hospital.davinci.org",
+                        "system": "http://example.org/hospital-davinci",
                         "value": "12345"
                     }
                 ],
@@ -1012,7 +1012,7 @@
                         }
                       ],                      
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"
                     ]
                 },
                 "clinicalStatus": {
@@ -1080,7 +1080,7 @@
                         }
                     ],
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"
                     ]
                 },
                 "status": "finished",
@@ -1158,7 +1158,7 @@
                         }
                       ],                      
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"
                     ]
                 },
                 "clinicalStatus": {
@@ -1226,7 +1226,7 @@
                         }
                       ],                       
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"
                     ]
                 },
                 "clinicalStatus": {
@@ -1294,7 +1294,7 @@
                         }
                     ],
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"
                     ]
                 },
                 "status": "finished",
@@ -1357,7 +1357,7 @@
                         }
                     ],
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab|7.0.0"
                     ]
                 },
                 "status": "final",
@@ -1444,7 +1444,7 @@
                         }
                       ],                    
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"
                     ]
                 },
                 "clinicalStatus": {
@@ -1512,7 +1512,7 @@
                         }
                     ],
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"
                     ]
                 },
                 "status": "finished",
@@ -1575,7 +1575,7 @@
                         }
                       ],                    
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"
                     ]
                 },
                 "clinicalStatus": {
@@ -1643,7 +1643,7 @@
                         }
                     ],
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"
                     ]
                 },
                 "status": "finished",
@@ -1711,7 +1711,7 @@
                         }
                     ],
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"
                     ]
                 },
                 "status": "finished",
@@ -1774,7 +1774,7 @@
                         }
                       ],                    
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"
                     ]
                 },
                 "clinicalStatus": {
@@ -1842,7 +1842,7 @@
                         }
                       ],                      
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"
                     ]
                 },
                 "clinicalStatus": {
@@ -1910,7 +1910,7 @@
                         }
                       ],                     
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"
                     ]
                 },
                 "clinicalStatus": {
@@ -1978,7 +1978,7 @@
                         }
                       ],                     
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"
                     ]
                 },
                 "clinicalStatus": {
@@ -2046,7 +2046,7 @@
                         }
                     ],
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"
                     ]
                 },
                 "status": "finished",
@@ -2109,7 +2109,7 @@
                         }
                     ],
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"
                     ]
                 },
                 "status": "finished",
@@ -2172,7 +2172,7 @@
                         }
                       ],                     
                     "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"
                     ]
                 },
                 "clinicalStatus": {

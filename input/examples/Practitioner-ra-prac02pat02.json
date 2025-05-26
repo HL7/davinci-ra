@@ -13,17 +13,13 @@
         }
       ],      
     "profile": [
-      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|7.0.0"
     ]
   },   
   "identifier": [
     {
-      "system": "http://hl7.org.fhir/sid/us-npi",
-      "value": "6678901232"
-    },
-    {
-      "system": "http://www.acme.org/practitioners",
-      "value": "25456"
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1295723567"
     }
   ],
   "name": [

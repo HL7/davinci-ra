@@ -13,7 +13,7 @@
         }
       ],     
     "profile": [
-      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0"
     ]
   },
   "extension": [
@@ -68,7 +68,7 @@
                   }
               ]
           },
-          "system": "http://hospital.davinci.org",
+          "system": "http://example.org/hospital-davinci",
           "value": "34567"
       }
   ],
