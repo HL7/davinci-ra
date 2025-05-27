@@ -8,7 +8,7 @@
   },
   "url": "http://hl7.org/fhir/us/davinci-ra/ValueSet/confidence-scale",
   "name": "ConfidenceScale",
-  "title": "Confidence Scale Value Set",
+  "title": "RA Confidence Scale",
   "status": "active",
   "experimental": false,
   "description": "Codes that describe the confidence scale of a risk adjustment Condition Category (CC).",

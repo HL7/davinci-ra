@@ -13,7 +13,7 @@
   </extension>    
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-reportingVendor"/>
   <name value="ReportingVendor"/>
-  <title value="Reporting Vendor Extension"/>
+  <title value="Reporting Vendor"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="A reference to the vendor who generated the report. The 'reporting vendor' is intended to represent the submitting entity when it is not the same as the reporting entity. This extension is used when the Receiver is interested in getting vendor information in the report."/>

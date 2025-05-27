@@ -12,7 +12,7 @@
   </extension>      
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline"/>
   <name value="RAClinicalDataCollectionDeadline"/>
-  <title value="Risk Adjustment Clinical Data Collection Deadline"/>
+  <title value="Clinical Data Collection Deadline"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="Indicates the deadline for collecting data to close Condition Category (CC) coding gaps for a risk adjustment model of a measurement period."/>
