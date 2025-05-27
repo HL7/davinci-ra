@@ -32,7 +32,7 @@
                     "extension" : [
                         {
                           "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-                          "valueString" : "RA MeasureReport Example (ra-measurereport01)"
+                          "valueString" : "RA MeasureReport Example01"
                         },
                         {
                           "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
@@ -874,7 +874,7 @@
                     "extension" : [
                         {
                           "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-                          "valueString" : "Patient Example (ra-patient01)"
+                          "valueString" : "Patient Example01"
                         },
                         {
                           "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

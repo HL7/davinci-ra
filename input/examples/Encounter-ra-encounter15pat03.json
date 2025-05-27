@@ -4,11 +4,11 @@
 	"meta": {
 		"extension": [{
 				"url": "http://hl7.org/fhir/StructureDefinition/instance-name",
-				"valueString": "Encounter with Dr Howell on 20210714 for Patient 03"
+				"valueString": "Encounter with Dr Osler on 2021-08-08 for Patient 03"
 			},
 			{
 				"url": "http://hl7.org/fhir/StructureDefinition/instance-description",
-				"valueMarkdown": "This is Encounter with Dr Howell on 20210714 for Patient 03."
+				"valueMarkdown": "This is Encounter with Dr Osler on 2021-08-08 for Patient 03."
 			}
 		],
 		"lastUpdated": "2021-07-14T11:56:57.250-04:00",

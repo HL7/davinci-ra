@@ -5,7 +5,7 @@
         "extension" : [
             {
               "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-              "valueString" : "Patch Example (ra-measurereport01-patch)"
+              "valueString" : "Patch Example02-ra-measurereport01"
             },
             {
               "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

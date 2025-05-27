@@ -5,7 +5,7 @@
     "extension" : [
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-          "valueString" : "Patient Example (ra-patient01)"
+          "valueString" : "Patient Example01"
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

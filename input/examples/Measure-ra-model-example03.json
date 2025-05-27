@@ -5,7 +5,7 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "RA Model Example (RAModelExample03)"
+        "valueString" : "RA Model Example03"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
