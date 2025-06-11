@@ -15,11 +15,11 @@
 ### CodeSystem 
 {: #codesystem}
 
-- [Coding Gap Remark](CodeSystem-coding-gap-remark.html)
-- [Condition Category Type](CodeSystem-cc-type.html)
-- [Evidence Status](CodeSystem-evidence-status.html)
-- [Hierarchical Status](CodeSystem-hierarchical-status.html)
-- [Remark Reason](CodeSystem-remark-reason.html)
+- [Coding Gap Remark Codes](CodeSystem-coding-gap-remark.html)
+- [Condition Category Type Codes](CodeSystem-cc-type.html)
+- [Evidence Status Codes](CodeSystem-evidence-status.html)
+- [Hierarchical Status Codes](CodeSystem-hierarchical-status.html)
+- [Remark Reason Codes](CodeSystem-remark-reason.html)
 
 ### ValueSet 
 {: #valueset}
