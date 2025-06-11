@@ -4,10 +4,10 @@ List of profiles that define constrains on FHIR resources for systems conforming
 
 |Resource Type|Profile|
 |---|---|
-|MeasureReport|[Risk Adjustment Coding Gap Report]|
-|MeasureReport|[Risk Adjustment Data Exchange MeasureReport]
-|Measure|[Risk Adjustment Model Measure]|
-|Group|[Patient Group]|
+|MeasureReport|[Risk Adjustment Coding Gap Report Profile]|
+|MeasureReport|[Risk Adjustment Data Exchange MeasureReport Profile]|
+|Measure|[Risk Adjustment Model Measure Profile]|
+|Group|[Patient Group Profile]|
 |Parameter|[RA Parameters ccRemark Patch Profile]|
 {: .grid}
 

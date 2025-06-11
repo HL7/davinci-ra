@@ -5,7 +5,7 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Condition21Pat03 Example"
+        "valueString" : "Condition21Pat03: Type 2 diabetes mellitus without complications"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

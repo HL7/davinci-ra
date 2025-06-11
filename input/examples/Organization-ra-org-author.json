@@ -5,11 +5,11 @@
       "extension" : [
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-          "valueString" : "Risk Adjustment Author"
+          "valueString" : "Organization: Risk Adjustment Author"
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-          "valueMarkdown" : "Organization that is the Author of the RA report"
+          "valueMarkdown" : "This is an example Organization that is the author of the RA report"
         }
       ],
       "profile" : [

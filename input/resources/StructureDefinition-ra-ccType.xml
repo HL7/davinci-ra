@@ -12,7 +12,7 @@
   </extension>    
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType"/>
   <name value="CCType"/>
-  <title value="Condition Category Type"/>
+  <title value="Condition Category Type Extension"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="Indicates whether the Condition Category (CC) gap is historic or suspected. This extension is also used to indicate if a Condition Category (CC) is net-new."/>

@@ -5,11 +5,11 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Trypsin [Mass/volume] in Serum or Plasma for Pat01"
+        "valueString" : "Trypsin [Mass/volume] in Serum or Plasma for Patient 01"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-        "valueMarkdown" : "Trypsin [Mass/volume] in Serum or Plasma for Pat01*."
+        "valueMarkdown" : "Trypsin [Mass/volume] in Serum or Plasma for Patient 01."
       }
     ],
     "profile" : [

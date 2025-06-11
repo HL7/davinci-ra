@@ -5,7 +5,7 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Condition15Pat03 Example"
+        "valueString" : "Condition15Pat03: Diabetes mellitus due to underlying condition with diabetic chronic kidney disease"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

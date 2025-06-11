@@ -5,11 +5,11 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Payer"
+        "valueString" : "Organization: ABC Payer"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-        "valueMarkdown" : "Payer that generated Risk Adjustment Coding Gap Report."
+        "valueMarkdown" : "ABC Payer is an Organization example that generated Risk Adjustment Coding Gap Report."
       }
     ],
     "profile" : [

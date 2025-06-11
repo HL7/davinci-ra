@@ -12,7 +12,7 @@
   </extension>      
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus"/>
   <name value="EvidenceStatus"/>
-  <title value="Evidence Status"/>
+  <title value="Evidence Status Extension"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="Indicates whether a Condition Category (CC) coding gap is closed-gap, open-gap, invalid-gap, or pending based on the clinical evidence available for risk adjustment."/>

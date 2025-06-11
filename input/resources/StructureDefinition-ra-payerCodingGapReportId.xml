@@ -12,7 +12,7 @@
   </extension>    
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-payerCodingGapReportId"/>
   <name value="PayerCodingGapReportId"/>
-  <title value="Payer Coding Gap Report Id"/>
+  <title value="Payer Coding Gap Report Id Extension"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="Unique id of the original payer generated coding gap report. This is the MeasureReport.id from the Risk Adjustment Coding Gap Report profile."/>

@@ -5,7 +5,7 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Condition33Pat01 Example"
+        "valueString" : "Condition33Pat01: Respiratory arrest"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

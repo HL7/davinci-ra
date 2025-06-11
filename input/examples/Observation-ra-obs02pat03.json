@@ -5,11 +5,11 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "PHQ9 for Pat03"
+        "valueString" : "PHQ9 Total Score for Patient 03"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-        "valueMarkdown" : "This is a PHQ9 Total Score for Pat03*."
+        "valueMarkdown" : "This is a PHQ9 Total Score for Patient 03."
       }
     ]
   },

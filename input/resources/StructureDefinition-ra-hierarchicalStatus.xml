@@ -12,7 +12,7 @@
   </extension>    
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus"/>
   <name value="HierarchicalStatus"/>
-  <title value="Hierarchical Status"/>
+  <title value="Hierarchical Status Extension"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="Indicates how hiearchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded."/>

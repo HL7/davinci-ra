@@ -5,11 +5,11 @@
         "extension" : [
             {
               "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-              "valueString" : "RA MeasureReport Example06"
+              "valueString" : "RA Coding Gap MeasureReport Example06 with RA Model CMS-RxHCC V5 for Patient02 Adam Everyman"
             },
             {
               "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-              "valueMarkdown" : "This is an example for the Risk Adjustment MeasureReport profile. This example report uses the CMS-RxHCC version 5 as the Risk Adjustment Model and the example patient used is Eve Everywoman."
+              "valueMarkdown" : "This is an example for the Risk Adjustment Coding Gap MeasureReport profile. This example report uses the CMS-RxHCC version 5 as the Risk Adjustment Model and the example patient used is Eve Everywoman."
             }
           ],         
         "profile": [

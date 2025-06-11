@@ -5,7 +5,7 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Condition31Pat02 Example"
+        "valueString" : "Condition31Pat02: Typical atrial flutter"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

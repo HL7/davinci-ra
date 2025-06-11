@@ -5,7 +5,7 @@
     "extension" : [
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-          "valueString" : "Practitioner Example (ra-prac01pat01)"
+          "valueString" : "Practitioner01: Harold Hippocrates"
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

@@ -5,11 +5,11 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Episode Summary Example"
+        "valueString" : "Outpatient Note for Patient01 Eve Everywoman"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-        "valueMarkdown" : "This is a episode summary example for the *US Core DocumentReference Profile*."
+        "valueMarkdown" : "This is an outpatient note example for the *US Core DocumentReference Profile*."
       }
     ],
     "profile" : [

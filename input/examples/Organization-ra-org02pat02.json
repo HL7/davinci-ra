@@ -5,11 +5,11 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Organization"
+        "valueString" : "Organization: GHH Outpatient Clinic"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-        "valueMarkdown" : "Provider Organization"
+        "valueMarkdown" : "GHH Outpatient Clinic is an Organization example, which is used for example Patient 02 data"
       }
     ],
     "profile" : [

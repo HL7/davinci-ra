@@ -5,7 +5,7 @@
       "extension" : [
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-          "valueString" : "Submit Data for RA Data Exchange MeasureReport Example (ra-submit-data)"
+          "valueString" : "Submit Data example for sending a C-CDA document"
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

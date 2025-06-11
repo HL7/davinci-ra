@@ -5,7 +5,7 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Condition35Pat03 Example"
+        "valueString" : "Condition35Pat03: Type 2 diabetes mellitus with diabetic peripheral angiopathy without gangrene"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

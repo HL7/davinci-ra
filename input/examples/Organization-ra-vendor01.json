@@ -5,11 +5,11 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Vendor"
+        "valueString" : "Organization: Best RA Vendor"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-        "valueMarkdown" : "Vendor that generated Risk Adjustment Data Exchange MeasureReport."
+        "valueMarkdown" : "Best RA Vendor is an Organization example that generated Risk Adjustment Data Exchange MeasureReport."
       }
     ],
     "profile" : [

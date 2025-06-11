@@ -51,7 +51,7 @@ parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
   auto-oid-root: 2.16.840.1.113883.4.642.40.29
   version-comparison: 
     - 1.0.0
-    - 2.0.0-ballot
+    - 2.0.0
   # shownav: true
   excludettl: 'true'
   pin-canonicals: pin-multiples

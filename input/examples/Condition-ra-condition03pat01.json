@@ -5,7 +5,7 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Condition03Pat01 Example"
+        "valueString" : "Condition03Pat01: Chronic obstructive pulmonary disease with (acute) exacerbation"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

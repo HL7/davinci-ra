@@ -5,7 +5,7 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Condition23Pat03 Example"
+        "valueString" : "Condition23Pat03: Chronic kidney disease, stage 5"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

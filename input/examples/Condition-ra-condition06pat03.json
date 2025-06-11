@@ -5,7 +5,7 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Condition06Pat03 Example"
+        "valueString" : "Condition06Pat03: Crohn’s disease of large intestine with unspecified complications"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

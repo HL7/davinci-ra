@@ -12,7 +12,7 @@
   </extension>      
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-confidenceScale"/>
   <name value="ConfidenceScale"/>
-  <title value="Confidence Scale"/>
+  <title value="Confidence Scale Extension"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="A coded confidence scale, the degree of certainty, for a Condition Category (CC) coding gap presented in a Payer generated risk adjustment coding gap report."/>

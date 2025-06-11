@@ -5,7 +5,7 @@
     "extension" : [
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-          "valueString" : "Patient Example02"
+          "valueString" : "Patient02: Adam Everyman"
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

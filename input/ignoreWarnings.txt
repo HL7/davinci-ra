@@ -4,7 +4,7 @@
 ERROR: ValueSet/sample-cmshcc: ValueSet.compose.include[0].concept[0]: The code '22' is not valid in the system http://terminology.hl7.org/CodeSystem/cmshcc (Unable to evaluate based on code system with status = not-present)
 ERROR: ValueSet/sample-cmshcc: ValueSet.compose.include[0].concept[1]: The code '88' is not valid in the system http://terminology.hl7.org/CodeSystem/cmshcc (A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' could not be found, so the code cannot be validated)
 ERROR: ValueSet/sample-cmshcc: ValueSet.compose.include[0].concept[2]: The code '112' is not valid in the system http://terminology.hl7.org/CodeSystem/cmshcc (A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' could not be found, so the code cannot be validated)
-Error from http://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/cmshcc
+WARNING: ValueSet.where(id = 'sample-cmshcc'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/cmshcc
 INFORMATION: ValueSet/sample-cmshcc: ValueSet.compose.include[0].concept[0]: Unable to evaluate based on code system with status = not-present
 
 # MEASURE_M_NO_GROUPS: This is intended. The Measure resource does not require a group.   
@@ -21,21 +21,16 @@ A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' versi
 # TSMG approved having the Code Systems in the IG: https://confluence.hl7.org/display/VOC/May+2023+-+HL7+WGM+-+Wednesday+Q3+Minutes
 Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
-WARNING: Parameters/ra-measurereport01-patch-mult: Parameters.parameter[0].part[3].part[1].part[0].value.ofType(uri): URL value 'authorDatetime' does not resolve
-WARNING: Parameters/ra-measurereport01-patch-mult: Parameters.parameter[1].part[3].part[1].part[0].value.ofType(uri): URL value 'text' does not resolve
-WARNING: Parameters/ra-measurereport01-patch-mult: Parameters.parameter[2].part[3].part[1].part[0].value.ofType(uri): URL value 'authorDatetime' does not resolve
-WARNING: Parameters/ra-measurereport01-patch: Parameters.parameter[0].part[3].part[1].part[0].value.ofType(uri): URL value 'authorDatetime' does not resolve
+# The scope of this IG is to support USCore 3.1.1, 6.1.0 and 7.0.0
+WARNING: ImplementationGuide/hl7.fhir.us.davinci-ra: ImplementationGuide.dependsOn[1]: The ImplementationGuide uses package hl7.fhir.us.core#7.0.0 released on 2024-05-08, but the most recent appropriate version is 8.0.0. This reference is getting old and the more recent version should be considered
+
+# 'authorDatetime' and 'text' are uri given to extension slices as defined in the Condition Category Remark Extension  
+WARNING: Parameters/ra-measurereport01-patch: Parameters.parameter[0].part[3].part[1].part[0].value.ofType(uri): No definition could be found for URL value 'authorDatetime'
+WARNING: Parameters/ra-measurereport01-patch-mult: Parameters.parameter[0].part[3].part[1].part[0].value.ofType(uri): No definition could be found for URL value 'authorDatetime'
+WARNING: Parameters/ra-measurereport01-patch-mult: Parameters.parameter[1].part[3].part[1].part[0].value.ofType(uri): No definition could be found for URL value 'text'
+WARNING: Parameters/ra-measurereport01-patch-mult: Parameters.parameter[2].part[3].part[1].part[0].value.ofType(uri): No definition could be found for URL value 'authorDatetime'
 
 # Pinned instances of us-core profiles to 7.0.0
-INFORMATION: ImplementationGuide.definition.resource[34].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-INFORMATION: ImplementationGuide.definition.resource[56].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-INFORMATION: ImplementationGuide.definition.resource[62].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-INFORMATION: ImplementationGuide.definition.resource[64].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-INFORMATION: ImplementationGuide.definition.resource[69].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-INFORMATION: ImplementationGuide.definition.resource[75].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-INFORMATION: ImplementationGuide.definition.resource[78].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-
-INFORMATION: ImplementationGuide.definition.resource[35].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: ImplementationGuide.definition.resource[36].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: ImplementationGuide.definition.resource[37].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: ImplementationGuide.definition.resource[38].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
@@ -57,13 +52,10 @@ INFORMATION: ImplementationGuide.definition.resource[53].profile[0]: Pinned the 
 INFORMATION: ImplementationGuide.definition.resource[54].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: ImplementationGuide.definition.resource[55].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 
-INFORMATION: ImplementationGuide.definition.resource[4].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis to 7.0.0 from choices of 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-INFORMATION: ImplementationGuide.definition.resource[5].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis to 7.0.0 from choices of 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: ImplementationGuide.definition.resource[6].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis to 7.0.0 from choices of 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: ImplementationGuide.definition.resource[7].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis to 7.0.0 from choices of 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: ImplementationGuide.definition.resource[8].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis to 7.0.0 from choices of 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: ImplementationGuide.definition.resource[9].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis to 7.0.0 from choices of 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-INFORMATION: ImplementationGuide.definition.resource[10].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis to 7.0.0 from choices of 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: ImplementationGuide.definition.resource[11].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis to 7.0.0 from choices of 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: ImplementationGuide.definition.resource[12].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis to 7.0.0 from choices of 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: ImplementationGuide.definition.resource[13].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis to 7.0.0 from choices of 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
@@ -84,22 +76,10 @@ INFORMATION: ImplementationGuide.definition.resource[27].profile[0]: Pinned the 
 INFORMATION: ImplementationGuide.definition.resource[28].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis to 7.0.0 from choices of 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: ImplementationGuide.definition.resource[29].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis to 7.0.0 from choices of 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 
-INFORMATION: ImplementationGuide.definition.resource[70].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-
-INFORMATION: ImplementationGuide.definition.resource[79].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-
-INFORMATION: ImplementationGuide.definition.resource[114].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-INFORMATION: ImplementationGuide.definition.resource[116].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: ImplementationGuide.definition.resource[117].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-INFORMATION: ImplementationGuide.definition.resource[118].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-
-INFORMATION: ImplementationGuide.definition.resource[65].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 
 INFORMATION: ImplementationGuide.definition.resource[30].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis to 7.0.0 from choices of 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: ImplementationGuide.definition.resource[66].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-INFORMATION: ImplementationGuide.definition.resource[71].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-INFORMATION: ImplementationGuide.definition.resource[80].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-INFORMATION: ImplementationGuide.definition.resource[100].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 
 INFORMATION: StructureDefinition.snapshot.element[12].type[2].targetProfile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 INFORMATION: StructureDefinition.snapshot.element[47].binding.valueSet: Pinned the version of http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)

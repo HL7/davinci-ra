@@ -5,7 +5,7 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Condition12Pat01 Example"
+        "valueString" : "Condition12Pat01: Manic episode, unspecified"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

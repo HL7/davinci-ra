@@ -9,7 +9,7 @@
             },
             {
               "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-              "valueMarkdown" : "This is an example for the Risk Adjustment MeasureReport profile that shows using the Condition Category Remark extension."
+              "valueMarkdown" : "This is an example for the Risk Adjustment Coding Gap MeasureReport profile that shows using the Condition Category Remark extension. The remark is added to MeasureReport."
             }
           ],        
         "profile": [

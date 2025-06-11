@@ -12,7 +12,7 @@
   </extension>    
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate"/>
   <name value="RAClinicalEvidenceStatusDate"/>
-  <title value="Evidence Status Date"/>
+  <title value="Evidence Status Date Extension"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="Risk adjustment evidence status date"/>

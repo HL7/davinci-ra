@@ -12,7 +12,7 @@
   </extension>    
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-dxCode"/>
   <name value="DxCode"/>
-  <title value="Diagnosis Code"/>
+  <title value="Diagnosis Code Extension"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="Diganosis code(s) of the condition, such as ICD-10 codes."/>

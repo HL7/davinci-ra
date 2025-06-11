@@ -5,11 +5,11 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Organization for Patient 1"
+        "valueString" : "Organization: Community Urgent Care"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-        "valueMarkdown" : "Provider Organization for Patient 1 data"
+        "valueMarkdown" : "Community Urgent Care is an Organization example, which is used for example Patient 01 data."
       }
     ],
     "profile" : [

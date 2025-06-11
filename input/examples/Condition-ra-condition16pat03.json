@@ -5,7 +5,7 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Condition16Pat03 Example"
+        "valueString" : "Condition16Pat03: Dependence on renal dialysis"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

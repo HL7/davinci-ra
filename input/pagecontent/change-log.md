@@ -6,12 +6,12 @@ High-level updates include:
 - Updated to support multiple USCore versions (USCore 3.1.1, USCore 6.1.0 and USCore 7.0.0)
 - Updated the menu layout and updated/added pages accordingly
 - Enhanced Condition Category Remark and updated guidance for sending remarks
+- Updated titles of the examples to be more descriptive
 
 - [FHIR-50186](https://jira.hl7.org/browse/FHIR-50186) - Renamed relatedDataIdentifier to relatedData and added to allow reference to Organization Resource for authorOrganization in ccRemark
 - [FHIR-50187](https://jira.hl7.org/browse/FHIR-50187) - Added to the Provider Handling of the Condition Category Remark section describing sending Risk Adjustment Coding Gap Report with remarks and related data via POST as a transaction Bundle and an example to the Usage section
 - [FHIR-46261](https://jira.hl7.org/browse/FHIR-46261) - Added a Support tab to the menu bar as part of the menu layout updates
 - [FHIR-50802](https://jira.hl7.org/browse/FHIR-50802) - Corrected the cardinality of the Group Reference extension from 0..1 to 0..*
-
 
 ### Version 2.0.0
 

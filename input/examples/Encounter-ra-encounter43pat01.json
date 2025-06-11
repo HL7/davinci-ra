@@ -8,7 +8,7 @@
 			},
 			{
 				"url": "http://hl7.org/fhir/StructureDefinition/instance-description",
-				"valueMarkdown": "This is Encounter with Dr Hippocrates on 2019-02-10 for Patient 01."
+				"valueMarkdown": "This is an Encounter example for encounter with Dr Hippocrates on 2019-02-10 for Patient 01."
 			}
 		],
 		"lastUpdated": "2019-03-13T11:56:57.250-04:00",

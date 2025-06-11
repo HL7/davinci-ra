@@ -17,7 +17,7 @@
 [Condition09Pat01: Allergic bronchopulmonary aspergillosis]: Condition-ra-condition09pat01.html
 [Condition10Pat01: Long term (current) use of insulin]: Condition-ra-condition10pat01.html
 [Condition11Pat01: Acute pulmonary edema]: Condition-ra-condition11pat01.html
-[Condition12Pat01: Manic episode, unspecified (clinical evaluation evidence for Task01)]: Condition-ra-condition12pat01.html
+[Condition12Pat01: Manic episode, unspecified]: Condition-ra-condition12pat01.html
 
 [Condition15Pat03: Diabetes mellitus due to underlying condition with diabetic chronic kidney disease]: Condition-ra-condition15pat03.html
 [Condition16Pat03: Dependence on renal dialysis]: Condition-ra-condition16pat03.html
@@ -83,7 +83,7 @@
 [Observation02Pat03: Pat03 PHQ9 on 20190823]: Observation-ra-obs02pat03.html
 [Observation21Pat01: Pat01 Trypsin (Mass/volume) in Serum or Plasma from 20170617]: Observation-ra-obs21pat01.html
 [Operations]: operations.html
-[Organization01Lab01: Laboratory Organization XYZ Laboratory]: Organization-ra-laboratory01.html
+[Organization Example: XYZ Laboratory]: Organization-ra-laboratory01.html
 [Organization01: Payer Organization ABC Payer]: Organization-ra-payer01.html
 [Organization01Pat01: Community Urgent Care]: Organization-ra-org01pat01.html
 [Organization02Pat02: GHH Outpatient Clinic]: Organization-ra-org02pat02.html
@@ -96,7 +96,7 @@
 [Practitioner01: Harold Hippocrates]: Practitioner-ra-prac01pat01.html
 [Practitioner02: Patrick Pump]: Practitioner-ra-prac02pat02.html
 [Practitioner03: Otto Osler]: Practitioner-ra-prac03pat03.html
-[DocumentReference: Outpatient Note (Patient01: Eve Everywoman)]: DocumentReference-ra-documentreference01pat01.html
+[DocumentReference Example: Outpatient Note for Patient01 Eve Everywoman]: DocumentReference-ra-documentreference01pat01.html
 [Parameters: PATCH example for sending Condition Category Remark]: Parameters-ra-measurereport01-patch.json.html
 [Parameters: PATCH example for sending Condition Category Remark with multiple value]: Parameters-ra-measurereport01-patch-mult.html
 
@@ -115,6 +115,7 @@
 [Risk Adjustment Model Measure Profile]: StructureDefinition-ra-model-measure.html
 
 [Risk Adjustment Data Exchange MeasureReport]: StructureDefinition-ra-datax-measurereport.html
+[Risk Adjustment Data Exchange MeasureReport Profile]: StructureDefinition-ra-datax-measurereport.html
 
 [SMART App Launch]: https://hl7.org/fhir/smart-app-launch/
 [SMART Backend Services]: https://hl7.org/fhir/uv/bulkdata/authorization.html

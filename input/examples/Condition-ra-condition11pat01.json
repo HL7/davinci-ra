@@ -5,7 +5,7 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Condition11Pat01 Example"
+        "valueString" : "Condition11Pat01: Acute pulmonary edema"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

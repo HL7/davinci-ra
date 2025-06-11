@@ -5,7 +5,7 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Condition05Pat03 Example"
+        "valueString" : "Condition05Pat03: Unspecified protein-calorie malnutrition"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

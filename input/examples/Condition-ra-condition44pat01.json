@@ -5,7 +5,7 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Condition44Pat01 Example"
+        "valueString" : "Condition44Pat01: Allergic bronchopulmonary aspergillosis"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

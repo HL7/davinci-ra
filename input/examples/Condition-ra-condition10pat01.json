@@ -5,7 +5,7 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Condition10Pat01 Example"
+        "valueString" : "Condition10Pat01: Long term (current) use of insulin"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

@@ -5,7 +5,7 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "RA Model Example02"
+        "valueString" : "RA Model Example02 CMS-HCC version 21"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

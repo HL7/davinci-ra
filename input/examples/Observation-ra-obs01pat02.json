@@ -5,11 +5,11 @@
     "extension": [
       {
         "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString": "Trypsin [Mass/volume] in Serum or Plasma for Pat02"
+        "valueString": "Trypsin [Mass/volume] in Serum or Plasma for Patient 02"
       },
       {
         "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
-        "valueMarkdown": "Trypsin [Mass/volume] in Serum or Plasma for Pat02*."
+        "valueMarkdown": "This is an example for Observation profile. Trypsin [Mass/volume] in Serum or Plasma for Patient 02 Adam Everyman performed at XYZ Laboratory."
       }
     ],
     "profile": [

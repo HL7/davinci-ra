@@ -5,11 +5,11 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Serum Creatinine for Pat03"
+        "valueString" : "Serum Creatinine for Patient 03"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-        "valueMarkdown" : "This is a serum creatinine for Pat03*."
+        "valueMarkdown" : "This is an example for Observation. Serum Creatinine for Patient 03 Nelda Nuclear performed at XYZ Laboratory."
       }
     ],
     "profile" : [

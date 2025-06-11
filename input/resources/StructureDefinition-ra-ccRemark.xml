@@ -12,7 +12,7 @@
   </extension>    
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark"/>
   <name value="ConditionCategoryRemark"/>
-  <title value="Condition Category Remark"/>
+  <title value="Condition Category Remark Extension"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="The Condition Category Remark extension allows a coded and/or narrative remark be added to a Condition Category (CC) coding gap that is on a Payer generated risk adjustment coding gap report by a provider, an organization, or a software."/>

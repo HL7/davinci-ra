@@ -12,7 +12,7 @@
   </extension>      
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference"/>
   <name value="GroupReference"/>
-  <title value="Group Reference"/>
+  <title value="Group Reference Extension"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="This extension identifies which Condition Category (CC) the supporting evidence (represented by `MeasureReport.evaluatedResource`) is for."/>

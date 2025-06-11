@@ -5,7 +5,7 @@
     "extension" : [
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Condition01Pat03 Example"
+        "valueString" : "Condition01Pat03: Other artificial openings of gastrointestinal tract status"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",

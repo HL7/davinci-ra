@@ -8,7 +8,7 @@
 			},
 			{
 				"url": "http://hl7.org/fhir/StructureDefinition/instance-description",
-				"valueMarkdown": "This is Encounter with Dr Pump on 2021-08-06 for Patient 02."
+				"valueMarkdown": "This is an Encounter example for encounter with Dr Pump on 2021-08-06 for Patient 02."
 			}
 		],
 		"lastUpdated": "2021-07-14T11:56:57.250-04:00",
