@@ -5,7 +5,7 @@
   "path" : "http://hl7.org/fhir/us/davinci-ra/STU2.1",
   "status" : "trial-use",
   "mode" : "milestone",
-  "sequence" : "STU 2.1",
+  "sequence" : "STU 2",
   "desc" : "STU 2.1.0 Release",
   "descmd" : "STU 2.1.0 release supports multiple versions of USCore (3.1.1, 6.1.0, and 7.0.0)."
 }
