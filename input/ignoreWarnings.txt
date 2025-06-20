@@ -22,7 +22,7 @@ Most code systems defined in HL7 IGs will need to move to THO later during the p
 # The scope of this IG is to support USCore 3.1.1, 6.1.0 and 7.0.0.
 WARNING: ImplementationGuide/hl7.fhir.us.davinci-ra: ImplementationGuide.dependsOn[1]: The ImplementationGuide uses package hl7.fhir.us.core#7.0.0 released on 2024-05-08, but the most recent appropriate version is 8.0.0. This reference is getting old and the more recent version should be considered
 
-# 'authorDatetime' and 'text' are uri given to extension slices as defined in the Condition Category Remark Extension  
+# 'authorDatetime' and 'text' are uri given to extension slices as defined in the Condition Category Remark Extension.  
 WARNING: Parameters/ra-measurereport01-patch: Parameters.parameter[0].part[3].part[1].part[0].value.ofType(uri): No definition could be found for URL value 'authorDatetime'
 WARNING: Parameters/ra-measurereport01-patch-mult: Parameters.parameter[0].part[3].part[1].part[0].value.ofType(uri): No definition could be found for URL value 'authorDatetime'
 WARNING: Parameters/ra-measurereport01-patch-mult: Parameters.parameter[1].part[3].part[1].part[0].value.ofType(uri): No definition could be found for URL value 'text'
