@@ -3,7 +3,9 @@
 # CMS-HCC is external code system and not supported for codes validation.
 ERROR: ValueSet/sample-cmshcc: ValueSet.compose.include[0].concept[1]: The code '88' is not valid in the system http://terminology.hl7.org/CodeSystem/cmshcc (A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' could not be found, so the code cannot be validated)
 ERROR: ValueSet/sample-cmshcc: ValueSet.compose.include[0].concept[2]: The code '112' is not valid in the system http://terminology.hl7.org/CodeSystem/cmshcc (A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' could not be found, so the code cannot be validated)
+WARNING: ValueSet.where(id = 'sample-cmshcc'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/cmshcc
 INFORMATION: ValueSet/sample-cmshcc: ValueSet.compose.include[0].concept[0]: Unable to evaluate based on code system with status = not-present
+INFORMATION: ValueSet/sample-cmshcc: ValueSet.compose.include[0].concept[0]: Resolved system http://terminology.hl7.org/CodeSystem/cmshcc (v1.1.0), but the definition doesn't include any codes, so the code has not been validated
 
 # MEASURE_M_NO_GROUPS: This is intended. The Measure resource does not require a group.   
 A measure should contain at least one group
