@@ -16,10 +16,9 @@
     <title value="Risk Gap"/>
     <status value="draft"/>
     <kind value="operation"/>
-    <description value="This operation using querying Risk Adjustment Coding Gap MeasureReport using different parameters."/>
+    <description value="The risk-gap operation is used to determine condition Category (CC) gaps for a patient/member."/>
     <code value="risk-gap"/>
     <comment value=""/>
-    <!--<base value="http://hl7.org/fhir/OperationDefinition/Measure-evaluate-measure"/> -->
     <resource value="MeasureReport"/>
     <system value="false"/>
     <type value="true"/>
@@ -54,7 +53,7 @@
         <use value="in"/>
         <min value="1"/>
         <max value="1"/>
-        <documentation value="This input parameter is a reference to Coverage resource, which will provide the subscriberId"/>
+        <documentation value="This is a reference to the Coverage resource, which provides information such as the subscriberId"/>
         <type value="Coverage"/>
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage"/>  
     </parameter>  
@@ -63,7 +62,7 @@
         <use value="in"/>
         <min value="0"/>
         <max value="1"/>
-        <documentation value="Provider Organization TIN"/>
+        <documentation value="This is the provider rganization's TIN"/>
         <type value="string"/>
         <searchType value="token"/>
     </parameter>    
@@ -72,7 +71,7 @@
         <use value="in"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="Querying based on Condition Category type, suspected, historic, or a net-new."/>         
+        <documentation value="This Condition Category (CC) gaps will be filterd based on the CC type code, whether it is suspected, historic, and/or net-new."/>         
         <type value="code"/>
         <binding>
             <strength value="extensible"/>
@@ -84,7 +83,7 @@
         <use value="in"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="Querying based on evidence status, whether coding gap is an open-gap, invalid-gap, closed-gap, or pending."/>         
+        <documentation value="This Condition Category (CC) gaps will be filterd based on the evidence status, whether the gap is an open-gap, invalid-gap, closed-gap, and/or pending."/>         
         <type value="code"/>
         <binding>
             <strength value="extensible"/>
@@ -96,7 +95,7 @@
         <use value="in"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="Querying based on provider taxonomy."/>         
+        <documentation value="This Condition Category (CC) gaps will be filterd based on provider taxonomy."/>         
         <type value="code"/>
         <binding>
             <strength value="extensible"/>
@@ -108,7 +107,7 @@
         <use value="in"/>
         <min value="0"/>
         <max value="1"/>
-        <documentation value="This input parameter is a reference to Encounter resource, which will provide the encounter id and other data such as date of service."/>
+        <documentation value="This is a reference to the Encounter resource, which provides information such as the encounter id and date of service."/>
         <type value="Encounter"/>
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>  
     </parameter> 
@@ -117,7 +116,7 @@
         <use value="in"/>
         <min value="0"/>
         <max value="1"/>
-        <documentation value="The contextId parameter could be used for 'non-standard' identifiers such as gap-request-id"/>
+        <documentation value="The contextId is intended to be used for 'non-standard' identifiers, for example, some systems may have an internally defined gap-request-id"/>
         <type value="string"/>
         <searchType value="token"/>
     </parameter>
@@ -126,7 +125,7 @@
         <use value="in"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="Any resources that are referenced by other input parameters. For example, Coverage.payor that is an Organization resource referenced by Coverage can be included here using this parameter 'referenced'"/>
+        <documentation value="Any resources that are referenced by other input parameters defined in this operation. For example, Coverage.payor that is an Organization resource referenced by Coverage , which can then be included here using this parameter 'referenced'"/>
         <type value="Resource"/>
         <searchType value="reference"/>
     </parameter>    
