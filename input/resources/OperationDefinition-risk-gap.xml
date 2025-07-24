@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OperationDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="risk-gap"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>  
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cqi"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>        
+    <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/risk-gap"/>
+    <name value="Risk Gap"/>
+    <title value="Risk Gap"/>
+    <status value="draft"/>
+    <kind value="operation"/>
+    <description value="This operation using querying Risk Adjustment Coding Gap MeasureReport using different parameters."/>
+    <code value="risk-gap"/>
+    <comment value=""/>
+    <!--<base value="http://hl7.org/fhir/OperationDefinition/Measure-evaluate-measure"/> -->
+    <resource value="MeasureReport"/>
+    <system value="false"/>
+    <type value="true"/>
+    <instance value="true"/>
+    <parameter>
+        <name value="periodStart"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="The start of a clinical evaluation period."/>
+        <type value="date"/>
+    </parameter>
+    <parameter>
+        <name value="periodEnd"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="The end of a clinical evaluation period."/>
+        <type value="date"/>
+    </parameter>
+    <parameter>
+        <name value="subject"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="Patient resource as input parameter, which provides data such as patient's first name, last name, date of birth"/>
+        <type value="Patient"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+    </parameter>
+    <parameter>
+        <name value="coverage"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="This input parameter is a reference to Coverage resource, which will provide the subscriberId"/>
+        <type value="Coverage"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage"/>  
+    </parameter>  
+    <parameter>
+        <name value="TIN"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <documentation value="Provider Organization TIN"/>
+        <type value="string"/>
+        <searchType value="token"/>
+    </parameter>    
+    <parameter>
+        <name value="ccType"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="*"/>
+        <documentation value="Querying based on Condition Category type, suspected, historic, or a net-new."/>         
+        <type value="code"/>
+        <binding>
+            <strength value="extensible"/>
+            <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/cc-type"/>
+        </binding>    
+    </parameter>
+    <parameter>
+        <name value="evidenceStatus"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="*"/>
+        <documentation value="Querying based on evidence status, whether coding gap is an open-gap, invalid-gap, closed-gap, or pending."/>         
+        <type value="code"/>
+        <binding>
+            <strength value="extensible"/>
+            <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/evidence-status"/>
+        </binding>    
+    </parameter>    
+    <parameter>
+        <name value="providerTaxonomy"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="*"/>
+        <documentation value="Querying based on provider taxonomy."/>         
+        <type value="code"/>
+        <binding>
+            <strength value="extensible"/>
+            <valueSet value="http://hl7.org/fhir/ValueSet/provider-taxonomy"/>
+        </binding>    
+    </parameter>      
+    <parameter>
+        <name value="encounter"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <documentation value="This input parameter is a reference to Encounter resource, which will provide the encounter id and other data such as date of service."/>
+        <type value="Encounter"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>  
+    </parameter> 
+    <parameter>
+        <name value="contextId"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <documentation value="The contextId parameter could be used for 'non-standard' identifiers such as gap-request-id"/>
+        <type value="string"/>
+        <searchType value="token"/>
+    </parameter>
+    <parameter>
+        <name value="referenced"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="*"/>
+        <documentation value="Any resources that are referenced by other input parameters. For example, Coverage.payor that is an Organization resource referenced by Coverage can be included here using this parameter 'referenced'"/>
+        <type value="Resource"/>
+        <searchType value="reference"/>
+    </parameter>    
+    <parameter>
+        <name value="return"/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="1"/>
+        <documentation value="This operation returns a Bundle of MeasureReports and associated resources"/>
+        <type value="Bundle"/>
+    </parameter>
+</OperationDefinition>

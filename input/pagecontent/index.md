@@ -1,4 +1,7 @@
 
+<div class="new-content" markdown="1">
+- New [operations](operations.html) under development since the STU 2.1 publication
+</div>
 
 ###  Summary
 

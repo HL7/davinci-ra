@@ -9,7 +9,7 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-        "valueMarkdown" : "GHH Outpatient Clinic is an Organization example, which is used for example Patient 02 data"
+        "valueMarkdown" : "GHH Outpatient Clinic is an Organization example, which is used for example Patient 02 data."
       }
     ],
     "profile" : [

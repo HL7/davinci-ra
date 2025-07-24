@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OperationDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="submit-remark-data"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>  
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cqi"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>        
+    <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/submit-remark-data"/>
+    <name value="Submit Remark Data"/>
+    <title value="Submit Remark Data"/>
+    <status value="draft"/>
+    <kind value="operation"/>
+    <description value="This operation is used to submit Coding Gap Remark and associated data"/>
+    <code value="submit-ra-data"/>
+    <comment value=""/>
+    <!--<base value="http://hl7.org/fhir/OperationDefinition/Measure-evaluate-measure"/> -->
+    <resource value="Measure"/>
+    <system value="false"/>
+    <type value="true"/>
+    <instance value="true"/>
+    <parameter>
+        <name value="bundle"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="*"/>
+        <documentation value="A Bundle that contains Coding Gap Remark and associated resources"/>
+        <type value="Bundle"/>
+    </parameter>
+</OperationDefinition>

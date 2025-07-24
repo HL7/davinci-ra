@@ -147,9 +147,11 @@
 <artifact deprecated="true" id="StructureDefinition/ra-suspectType" key="StructureDefinition-ra-suspectType" name="Risk Adjustment Suspect Type"/>
 <artifact deprecated="true" id="CodeSystem/suspect-type" key="CodeSystem-suspect-type" name="Risk Adjustment Suspect Type CodeSystem"/>
 <artifact deprecated="true" id="ValueSet/suspect-type" key="ValueSet-suspect-type" name="Risk Adjustment Suspect Type ValueSet"/>
+<artifact id="OperationDefinition/risk-gap" key="OperationDefinition-risk-gap" name="Risk Gap"/>
 <artifact id="ValueSet/sample-cmshcc" key="ValueSet-sample-cmshcc" name="Sample CMS Hierarchical Condition Category"/>
 <artifact id="Observation/ra-obs01pat03" key="Observation-ra-obs01pat03" name="Serum Creatinine for Patient 03"/>
 <artifact id="Parameters/ra-submit-data" key="Parameters-ra-submit-data" name="Submit Data example for sending a C-CDA document"/>
+<artifact id="OperationDefinition/submit-remark-data" key="OperationDefinition-submit-remark-data" name="Submit Remark Data"/>
 <artifact deprecated="true" id="CodeSystem/task-label" key="CodeSystem-task-label" name="Task Label CodeSystem"/>
 <artifact deprecated="true" id="Task/ra-task01measurereport01group003" key="Task-ra-task01measurereport01group003" name="Task: Clinical Evaluation Task"/>
 <artifact id="Observation/ra-obs21pat01" key="Observation-ra-obs21pat01" name="Trypsin [Mass/volume] in Serum or Plasma for Patient 01"/>
