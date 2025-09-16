@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  <id value="ra-measurereport-with-remark"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/>
+  </extension>  
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cqi"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>    
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-with-remark"/>
+  <name value="RiskAdjustmentCodingGapMeasureReport"/>
+  <title value="Risk Adjustment Coding Gap MeasureReport with Remark"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <description value="This profile represents a risk adjustment coding gap report with condition categories and at least one of the condition category has one or more condition category remark(s)."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="MeasureReport"/>
+  <baseDefinition value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="MeasureReport">
+      <path value="MeasureReport"/>
+      <short value="A risk adjustment coding gap report with ccRemark present."/>
+      <definition value="This is a risk adjustment coding gap report of a patient/member using a specific version of a particular Risk Adjustment model, at least one of the Condition Categories has one or more Condition Category Remark(s)."/>
+    </element>
+    <element id="MeasureReport.group">
+      <path value="MeasureReport.group"/>
+      <short value="A group contains information for a Condition Category. If a patient/member has multiple Condition Categories, there will be multiple group(s) and each group represents a Condition Category."/>
+      <definition value="Condition Categories and detailed information for the coding gap."/>
+      <min value="1"/>
+      <max value="*"/>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -12,7 +12,7 @@
     <valueCode value="draft"/>
   </extension>        
     <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/risk-gap"/>
-    <name value="Risk Gap"/>
+    <name value="RiskGap"/>
     <title value="Risk Gap"/>
     <status value="draft"/>
     <kind value="operation"/>
@@ -127,7 +127,7 @@
         <max value="*"/>
         <documentation value="Any resources that are referenced by other input parameters defined in this operation. For example, Coverage.payor that is an Organization resource referenced by Coverage , which can then be included here using this parameter 'referenced'"/>
         <type value="Resource"/>
-        <searchType value="reference"/>
+  <!--      <searchType value="reference"/> -->
     </parameter>    
     <parameter>
         <name value="return"/>

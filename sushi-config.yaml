@@ -94,7 +94,7 @@ menu:
     Specification Dashboard: new-tab https://jira.hl7.org/secure/Dashboard.jspa?selectPageId=17322
     Discussion Forum: https://chat.fhir.org/#narrow/channel/311469-Da-Vinci-Risk-Adjustment
     Implementer Support: new-tab https://confluence.hl7.org/display/DVP/Risk+Adjustment+Implementer+Support
-    Propose a Change: new-tab https://jira.hl7.org/secure/CreateIssueDetails!init.jspa?pid=10405&issuetype=10600&customfield_11302=FHIR-us-davinci-ra
+    Propose a Change: new-tab https://jira.hl7.org/secure/CreateIssueDetails!init.jspa?pid=10405&amp;issuetype=10600&amp;customfield_11302=FHIR-us-davinci-ra
     Downloads: downloads.html
     Tooling and Support: tools.html
   Change Log: change-log.html  

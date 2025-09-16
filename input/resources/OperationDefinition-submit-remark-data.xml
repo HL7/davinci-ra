@@ -12,14 +12,13 @@
     <valueCode value="draft"/>
   </extension>        
     <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/submit-remark-data"/>
-    <name value="Submit Remark Data"/>
+    <name value="SubmitRemarkData"/>
     <title value="Submit Remark Data"/>
-    <status value="draft"/>
+    <status value="active"/>
     <kind value="operation"/>
-    <description value="This operation is used to submit Coding Gap Remark and associated data"/>
-    <code value="submit-ra-data"/>
+    <description value="A [Condition Category Remark](StructureDefinition-ra-ccRemark.html) may reference resources such as Pracitioner and Condition, using Patch to submit the remark may not be feasible. This operation is used to submit a Risk Adjustment Coding Gap Report with one or more ccRemarks on at least one of the Condition Categories, along with the relevant resources referenced by the ccRemark(s)."/>
+    <code value="submit-remark-data"/>
     <comment value=""/>
-    <!--<base value="http://hl7.org/fhir/OperationDefinition/Measure-evaluate-measure"/> -->
     <resource value="Measure"/>
     <system value="false"/>
     <type value="true"/>
@@ -29,7 +28,8 @@
         <use value="in"/>
         <min value="1"/>
         <max value="*"/>
-        <documentation value="A Bundle that contains Coding Gap Remark and associated resources"/>
+        <documentation value="A Bundle that contains a Risk Adjustment Coding Gap Report with ccRemark(s) on at least one of the Condition Categories and the ccRemark referenced resources"/>
         <type value="Bundle"/>
+        <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-remark-bundle"/>
     </parameter>
 </OperationDefinition>

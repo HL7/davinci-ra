@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="ra-measurereport-remark-bundle"/>
+    <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-remark-bundle"/>
+    <name value="RiskAdjustmentMeasureReportRemarkBundle"/>
+    <title value="Risk Adjustment MeasureReport With Remark Bundle"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Da Vinci Project"/>
+    <description value="This bundle contains a Risk Adjustment Coding Gap MeasureReport that has Condition Category Remark (ccRemark) present on at least one of the Condition Categories. It also contains the relevant resources referenced by the ccRemark."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Bundle"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Bundle">
+            <path value="Bundle"/>
+        </element>      
+        <element id="Bundle.identifier">
+            <path value="Bundle.identifier"/>
+            <min value="1"/>
+            <max value="1"/>            
+            <mustSupport value="true"/>
+        </element>        
+        <element id="Bundle.type">
+            <path value="Bundle.type"/>
+            <fixedCode value="collection"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry">
+            <path value="Bundle.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="type"/>
+                    <path value="resource"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:ra_report_with_remark_entry">
+          <path value="Bundle.entry"/>
+          <sliceName value="ra_report_with_remark_entry"/>
+          <short value=""/>
+          <min value="1"/>
+          <max value="1"/>
+          <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:ra_report_with_remark_entry.resource">
+          <path value="Bundle.entry.resource"/>
+          <short value="This entry is Risk Adjustment Coding Gap Report with condition caretory remark"/>
+          <min value="1"/>
+          <type>
+            <code value="MeasureReport"/>
+            <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-with-remark"/>
+          </type>
+          <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:remark-resouce">
+          <path value="Bundle.entry"/>
+          <sliceName value="remark-resource"/>
+          <min value="0"/>
+          <max value="*"/>
+          <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:ra_coding_gap_report_entry.resource">
+          <path value="Bundle.entry.resource"/>
+          <short value="This entry is any resource referenced in the Risk Adjustment Condition Category Remark"/>
+          <min value="1"/>    
+          <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>
