@@ -1,6 +1,11 @@
 
 The Risk Adjustment Implementation Guide was developed under the  [Davinci Project](#)
 
+### version 3.0.0-pre-ballot 
+
+Changes applied to prepare for version 3.0.0-ballot
+- [FHIR-52371](https://jira.hl7.org/browse/FHIR-52371) - Added valueReference as a choice for ccRemark author to reference USCore Pracititioner
+
 ### Version 2.1.0 
 High-level updates include:
 - Updated to support multiple USCore versions (USCore 3.1.1, USCore 6.1.0 and USCore 7.0.0)

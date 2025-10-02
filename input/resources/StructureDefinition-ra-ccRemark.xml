@@ -69,7 +69,11 @@
       </type>
       <type>
         <code value="string"/>
-      </type>      
+      </type>    
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+      </type>          
     </element>       
     <element id="Extension.extension:authorOrganization">
       <path value="Extension.extension"/>
