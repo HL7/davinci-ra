@@ -5,7 +5,6 @@ The tables below list the operations specified in this implementation guide.
 Draft operations under development:
 
 - [Risk Gap Operation ($risk-gap)](OperationDefinition-risk-gap.html)
-- [Submit Data Operation ($submit-data)](OperationDefinition-submit-data.html)
 - [Submit Remark Data Operation ($submit-remark-data)](OperationDefinition-submit-remark-data.html)
 </div>
 

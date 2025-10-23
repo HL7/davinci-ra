@@ -224,7 +224,7 @@ pages:
     title: Operation  
     extension:
     - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
-      valueCode: "draft"         
+      valueCode: "informative"         
   capabilities.md:
     title: Capability Statements  
     extension:

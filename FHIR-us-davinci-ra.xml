@@ -152,7 +152,6 @@
 <artifact id="OperationDefinition/risk-gap" key="OperationDefinition-risk-gap" name="Risk Gap"/>
 <artifact id="ValueSet/sample-cmshcc" key="ValueSet-sample-cmshcc" name="Sample CMS Hierarchical Condition Category"/>
 <artifact id="Observation/ra-obs01pat03" key="Observation-ra-obs01pat03" name="Serum Creatinine for Patient 03"/>
-<artifact id="OperationDefinition/submit-data" key="OperationDefinition-submit-data" name="Submit Data"/>
 <artifact id="Parameters/ra-submit-data" key="Parameters-ra-submit-data" name="Submit Data example for sending a C-CDA document"/>
 <artifact id="OperationDefinition/submit-remark-data" key="OperationDefinition-submit-remark-data" name="Submit Remark Data"/>
 <artifact deprecated="true" id="CodeSystem/task-label" key="CodeSystem-task-label" name="Task Label CodeSystem"/>
