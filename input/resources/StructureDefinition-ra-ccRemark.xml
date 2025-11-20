@@ -286,7 +286,7 @@
         <code value="Reference"/>
       </type>     
     </element>  
-    <element id="Extension.extension:qualifyingDxCode">
+    <!-- <element id="Extension.extension:qualifyingDxCode">
       <path value="Extension.extension"/>
       <sliceName value="qualifyingDxCode"/>
       <short value="Diagnosis codes classified under a Condition Category as defined by the risk adjustment model"/>
@@ -337,7 +337,7 @@
         <code value="uri"/>
       </type>
       <fixedUri value="qualifyingDxList"/>
-    </element>   
+    </element>   -->
     <element id="Extension.extension:code.valueCodableConcept">
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>

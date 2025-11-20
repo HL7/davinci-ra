@@ -111,6 +111,7 @@
         <type value="Encounter"/>
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>  
     </parameter> 
+<!--    
     <parameter>
         <name value="contextId"/>
         <use value="in"/>
@@ -120,14 +121,15 @@
         <type value="string"/>
         <searchType value="token"/>
     </parameter>
+-->    
     <parameter>
         <name value="referenced"/>
         <use value="in"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="Any resources that are referenced by other input parameters defined in this operation. For example, Coverage.payor that is an Organization resource referenced by Coverage , which can then be included here using this parameter 'referenced'"/>
+        <documentation value="Resources that are referenced by other input parameters, specifically Coverage and Encounter, defined in this operation."/>
         <type value="Resource"/>
-  <!--      <searchType value="reference"/> -->
+    <!--   <searchType value="reference"/> -->
     </parameter>    
     <parameter>
         <name value="return"/>

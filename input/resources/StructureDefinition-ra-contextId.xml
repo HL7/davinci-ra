@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ra-contextId"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>  
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cqi"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>    
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-contextId"/>
+  <name value="ContextId"/>
+  <title value="Context Id Extension"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <description value="The contextId is intended to be used for 'non-standard' identifiers provided as part of the $risk-gap operation API call, for example, some systems may have an internally defined gap-request-id."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="MeasureReport"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="context id"/>
+      <definition value="Context id provided in a $risk-gap operation API call."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-contextId"/>
+    </element>
+    <element id="Extension.valueId">
+      <path value="Extension.valueId"/>
+      <type>
+        <code value="id"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

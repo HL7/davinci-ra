@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ra-qualifyingDxCode"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/>
+  </extension>  
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cqi"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>      
+  <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-qualifyingDxCode"/>
+  <name value="QualifyingCode"/>
+  <title value="QualifyingCode Extension"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <description value="Diagnosis code(s) classified under a Condition Category, as defined by the risk adjustment model. This usually comes into play in the scenario where proprietary risk models are used and the mappings of ICD-10 codes to Condition Categories are not readily available. Note that whether qualifying codes may be included in a report depending may depend on individual Risk Adjustment model licensing agreement."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="MeasureReport.group"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Qualifying diagnosis code(s)"/>
+      <definition value="Diagnosis codes classified under a Condition Category as defined by the risk adjustment model. This usually comes into play in the scenario where proprietary risk models are used and the mappings of ICD-10 codes to Condition Categories are not readily available. Note that whether qualifying codes may be included in a report depending may depend on individual Risk Adjustment model licensing agreement."/>
+      <comment value="This extension represents evidence status of a Condition Category (CC) coding gap, whether there is evidence that supports a Condition Category (CC) coding gap is closed-gap, open-gap, invalid-gap, or pending."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-qualifyingDxCode"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <short value="Diagnosis codes classified under a Condition Category as defined by the risk adjustment model"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/> 
+      </type>
+    </element>
+    <!-- active<element id="Extension.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code"/>
+      </binding>
+    </element>  -->  
+  </differential>
+</StructureDefinition>

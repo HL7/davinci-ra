@@ -68,6 +68,19 @@
       </type>
       <mustSupport value="true"/>
     </element>
+
+    <element id="MeasureReport.extension:contextId">
+      <path value="MeasureReport.extension"/>
+      <sliceName value="contextId"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-contextId"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+
     <element id="MeasureReport.status">
       <path value="MeasureReport.status"/>
       <mustSupport value="true"/>
@@ -243,6 +256,18 @@
       </type>
       <mustSupport value="true"/>
     </element>  
+    <element id="MeasureReport.group.extension:qualifyingDxCode">
+      <path value="MeasureReport.group.extension"/>
+      <sliceName value="qualifyingDxCode"/>
+      <short value="Qualifying dx code(s)"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-qualifyingDxCode"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>      
     <element id="MeasureReport.group.code">
       <path value="MeasureReport.group.code"/>
       <short value="Condition Category (CC) code for a Risk Adjustment Model"/>
