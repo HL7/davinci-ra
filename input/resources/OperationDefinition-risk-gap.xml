@@ -39,7 +39,7 @@
         <documentation value="The end of a clinical evaluation period."/>
         <type value="date"/>
     </parameter>
-    <parameter>
+    <!--<parameter>
         <name value="subject"/>
         <use value="in"/>
         <min value="1"/>
@@ -55,6 +55,24 @@
         <max value="1"/>
         <documentation value="This is a reference to the Coverage resource, which provides information such as the subscriberId"/>
         <type value="Coverage"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage"/>  
+    </parameter>  -->
+        <parameter>
+        <name value="subject"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="A reference to Patient resource as input parameter, which provides data such as patient's first name, last name, date of birth"/>
+        <type value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+    </parameter>
+    <parameter>
+        <name value="coverage"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="A reference to Coverage resource, which provides information such as the subscriberId"/>
+        <type value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage"/>  
     </parameter>  
     <parameter>
@@ -102,7 +120,7 @@
             <valueSet value="http://hl7.org/fhir/ValueSet/provider-taxonomy"/>
         </binding>    
     </parameter>      
-    <parameter>
+    <!-- <parameter>
         <name value="encounter"/>
         <use value="in"/>
         <min value="0"/>
@@ -110,25 +128,31 @@
         <documentation value="This is a reference to the Encounter resource, which provides information such as the encounter id and date of service."/>
         <type value="Encounter"/>
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>  
-    </parameter> 
-<!--    
+    </parameter>  -->
     <parameter>
-        <name value="contextId"/>
+        <name value="encounter"/>
         <use value="in"/>
         <min value="0"/>
         <max value="1"/>
-        <documentation value="The contextId is intended to be used for 'non-standard' identifiers, for example, some systems may have an internally defined gap-request-id"/>
-        <type value="string"/>
-        <searchType value="token"/>
-    </parameter>
--->    
+        <documentation value="A reference to Encounter resource, which provides information such as the encounter id and date of service."/>
+        <type value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>  
+    </parameter>   
     <parameter>
+        <name value="data"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="Referenced resources by parameters of this operation provided as a Bundle."/>
+        <type value="Bundle"/>
+    <!--<parameter>
         <name value="referenced"/>
         <use value="in"/>
         <min value="0"/>
         <max value="*"/>
         <documentation value="Resources that are referenced by other input parameters, specifically Coverage and Encounter, defined in this operation."/>
         <type value="Resource"/>
+    -->
     <!--   <searchType value="reference"/> -->
     </parameter>    
     <parameter>
@@ -136,7 +160,7 @@
         <use value="out"/>
         <min value="0"/>
         <max value="1"/>
-        <documentation value="This operation returns a Bundle of MeasureReports and associated resources"/>
+        <documentation value="This operation returns a Bundle of MeasureReports and associated resources."/>
         <type value="Bundle"/>
     </parameter>
 </OperationDefinition>

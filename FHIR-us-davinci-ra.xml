@@ -51,6 +51,7 @@
 <artifact id="Condition/ra-condition44pat01" key="Condition-ra-condition44pat01" name="Condition44Pat01: Allergic bronchopulmonary aspergillosis"/>
 <artifact id="Condition/ra-conditionR01pat01" key="Condition-ra-conditionR01pat01" name="ConditionR01Pat01: Cystic fibrosis with other intestinal manifestations"/>
 <artifact id="StructureDefinition/ra-confidenceScale" key="StructureDefinition-ra-confidenceScale" name="Confidence Scale Extension"/>
+<artifact id="StructureDefinition/ra-contextId" key="StructureDefinition-ra-contextId" name="Context Id Extension"/>
 <artifact id="MeasureReport/ra-datax-measurereport01" key="MeasureReport-ra-datax-measurereport01" name="Data Exchange MeasureReport Example01"/>
 <artifact id="StructureDefinition/ra-dxCode" key="StructureDefinition-ra-dxCode" name="Diagnosis Code Extension"/>
 <artifact id="Encounter/ra-encounter44pat01" key="Encounter-ra-encounter44pat01" name="Encounter with Dr Hippocrates on 2017-01-18 for Patient 01"/>
@@ -109,6 +110,7 @@
 <artifact id="Practitioner/ra-prac01pat01" key="Practitioner-ra-prac01pat01" name="Practitioner01: Harold Hippocrates"/>
 <artifact id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner02: Patrick Pump"/>
 <artifact id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner03: Otto Osler"/>
+<artifact id="StructureDefinition/ra-qualifyingDxCode" key="StructureDefinition-ra-qualifyingDxCode" name="QualifyingCode Extension"/>
 <artifact id="MeasureReport/ra-measurereport01" key="MeasureReport-ra-measurereport01" name="RA Coding Gap MeasureReport Example01 with RA Model CMS-HCC V24 for Patient01 Eve Everywoman"/>
 <artifact id="MeasureReport/ra-measurereport02" key="MeasureReport-ra-measurereport02" name="RA Coding Gap MeasureReport Example02 with RA Model CMS-RxHCC V5 for Patient01 Eve Everywoman"/>
 <artifact id="MeasureReport/ra-measurereport03" key="MeasureReport-ra-measurereport03" name="RA Coding Gap MeasureReport Example03 with RA Model CMS-HCC V24 for Patient02 Adam Everyman"/>
