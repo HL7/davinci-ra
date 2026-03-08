@@ -11,8 +11,8 @@
     <valueCode value="trial-use"/>
   </extension>      
   <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-qualifyingDxCode"/>
-  <name value="QualifyingCode"/>
-  <title value="QualifyingCode Extension"/>
+  <name value="QualifyingDxCode"/>
+  <title value="QualifyingDxCode Extension"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="Diagnosis code(s) classified under a Condition Category, as defined by the risk adjustment model. This usually comes into play in the scenario where proprietary risk models are used and the mappings of ICD-10 codes to Condition Categories are not readily available. Note that whether qualifying codes may be included in a report depending may depend on individual Risk Adjustment model licensing agreement."/>
@@ -35,6 +35,7 @@
       <min value="0"/>
       <max value="*"/>
     </element>
+
     <element id="Extension.url">
       <path value="Extension.url"/>
       <type>
@@ -42,22 +43,30 @@
       </type>
       <fixedUri value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-qualifyingDxCode"/>
     </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]"/>
+
+    <element id="Extension.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
       <short value="Diagnosis codes classified under a Condition Category as defined by the risk adjustment model"/>
       <type>
-        <code value="string"/>
+        <code value="CodeableConcept"/>
       </type>
-      <type>
-        <code value="CodeableConcept"/> 
-      </type>
-    </element>
-    <!-- active<element id="Extension.valueCodeableConcept">
-      <path value="Extension.valueCodeableConcept"/>
       <binding>
-        <strength value="preferred"/>
+        <strength value="extensible"/>
         <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code"/>
       </binding>
-    </element>  -->  
+    </element>   
+
+    <element id="Extension.valueCodeableConcept.extension:codeOptions">
+      <path value="Extension.valueCodeableConcept.extension"/>
+      <sliceName value="codeOptions"/>
+      <short value="Qualifying diagnosis codes provided as a value set"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/codeOptions"/>
+      </type>
+    </element>  
+        
   </differential>
 </StructureDefinition>

@@ -11,6 +11,7 @@
 --- 
 ### Bundle
 - [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]  
+- <span class="bg-success" markdown="1">[Bundle: Example Bundle for the data parameter of the $risk-gap operation]</span><!-- new-content -->
 
 ### Condition
 - [Condition01Pat03: Other artificial openings of gastrointestinal tract status]  

@@ -41,6 +41,37 @@
       <min value="0"/>
       <max value="*"/>
     </element>
+    <element id="Extension.extension:remarkType">
+      <path value="Extension.extension"/>
+      <sliceName value="remarkType"/>
+      <short value="Remark Type"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element> 
+    <element id="Extension.extension:remarkType.url">
+      <path value="Extension.extension.url"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="remarkType"/>
+    </element>   
+    <element id="Extension.extension:remarkType.valueCodableConcept">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/remark-type"/>
+      </binding>      
+    </element>         
     <element id="Extension.extension:author">
       <path value="Extension.extension"/>      
       <sliceName value="author"/>
@@ -257,7 +288,7 @@
       </binding>      
     </element>  
     <element id="Extension.extension:relatedData">
-      <path value="Extension.extension"/>
+      <path value="Extension.extension"/>      
       <sliceName value="relatedData"/>
       <short value="Related data"/>
       <min value="0"/>
@@ -284,68 +315,17 @@
       </type>   
       <type>
         <code value="Reference"/>
-      </type>     
-    </element>  
-    <!-- <element id="Extension.extension:qualifyingDxCode">
-      <path value="Extension.extension"/>
-      <sliceName value="qualifyingDxCode"/>
-      <short value="Diagnosis codes classified under a Condition Category as defined by the risk adjustment model"/>
-      <definition value="Diagnosis codes (e.g., ICD-10) for conditions that are classified under a Condition Category as defined by the risk adjustment model. This usually comes into play in the scenario where proprietary risk models are used and the mappings of ICD-10 codes to Condition Categories are not readily available. A string data type is supported"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="Extension"/>
-      </type>
-    </element>
-    <element id="Extension.extension:qualifyingDxCode.url">
-      <path value="Extension.extension.url"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="uri"/>
-      </type>
-      <fixedUri value="qualifyingDxCode"/>
-    </element>   
-    <element id="Extension.extension:code.valueCodableConcept">
-      <path value="Extension.extension.value[x]"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="CodeableConcept"/>
-      </type>
-      <binding>
-        <strength value="preferred"/>
-        <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code"/>   
-      </binding>            
-    </element>  
-    <element id="Extension.extension:qualifyingDxList">
-      <path value="Extension.extension"/>
-      <sliceName value="qualifyingDxList"/>
-      <short value="A list of diagnosis codes classified under a Condition Category as defined by the risk adjustment model"/>
-      <definition value="A text list of diagnosis codes (e.g., ICD-10) for conditions that are classified under a Condition Category as defined by the risk adjustment model. This usually comes into play in the scenario where proprietary risk models are used and the mappings of ICD-10 codes to Condition Categories are not readily available."/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="Extension"/>
-      </type>
-    </element>
-    <element id="Extension.extension:qualifyingDxList.url">
-      <path value="Extension.extension.url"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="uri"/>
-      </type>
-      <fixedUri value="qualifyingDxList"/>
-    </element>   -->
-    <element id="Extension.extension:code.valueCodableConcept">
+      </type>          
+    </element>    
+<!--    <element id="Extension.extension:code.valueCodableConcept">
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="string"/>
       </type>         
-    </element> 
+    </element> -->
+
     <element id="Extension.url">
       <path value="Extension.url"/>
       <type>
@@ -357,6 +337,6 @@
       <path value="Extension.value[x]"/>
       <min value="0"/>
       <max value="0"/>
-    </element> 
+    </element>  
   </differential>
 </StructureDefinition>

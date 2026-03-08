@@ -1,20 +1,13 @@
 
-The tables below list the operations specified in this implementation guide. 
+List of the operations specified in this implementation guide. 
 
 <div class="new-content" markdown="1">
-DRAFT operations under development:
-
 - [Risk Gap Operation ($risk-gap)](OperationDefinition-risk-gap.html)
 - [Submit Remark Data Operation ($submit-remark-data)](OperationDefinition-submit-remark-data.html)
 </div>
 
-
-|Operation Name|Link to Operation|Description|
-|---|---|---|
-|Risk Adjustment Evaluate Measure|[$ra.evaluate-measure]|Evaluates digital Condition Category against patient data to generate Risk Adjustment Coding Gap Report Bundle. This operation is included as a draft.|
-{: .grid}
-
-*The $report operation specified in STU1 is deprecated with the change to use the direct RESTful query approach*
+The operation below is included in this implementation guide as a draft. It evaluates digital Condition Category against patient data to generate Risk Adjustment Coding Gap Report Bundle.
+- [Risk Adjustment Evaluate Measure ($ra.evaluate-measure)](OperationDefinition-ra.evaluate-measure.html)
 
 <br />
 

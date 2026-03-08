@@ -3,6 +3,9 @@
 [Asynchronous Request Patterns]: https://www.hl7.org/fhir/async.html
 [Bulk]: report-generation.html#bulk-data-request-for-risk-adjustment-coding-gap-measurereports
 [Bundle01: Risk Adjustment Bundle, (MeasureReport01: Patient01)]: Bundle-ra-bundle01.html
+
+[Bundle: Example Bundle for the data parameter of the $risk-gap operation]: Bundle-ra-riskgap-data1.html
+
 [Capability Statements]: capabilities.html
 [Clinical Evaluation Period]:glossary.html#glossary
 [Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm

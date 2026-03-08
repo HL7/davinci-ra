@@ -9,14 +9,14 @@
     <valueCode value="cqi"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="draft"/>
+    <valueCode value="trial-use"/>
   </extension>        
     <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/risk-gap"/>
     <name value="RiskGap"/>
     <title value="Risk Gap"/>
-    <status value="draft"/>
+    <status value="active"/>
     <kind value="operation"/>
-    <description value="The risk-gap operation is used to determine condition Category (CC) gaps for a patient/member."/>
+    <description value="The risk-gap operation is used to request condition Category (CC) gaps for a patient/member and coverage within a specified time period, and for a specific context. The context-id is provided as an HTTP header and not as a parameter of the operation. The Client (i.e., Provider) who calls this operation may also POST references to Organization, PracitionerRole, and/or Encounter resources using the parameters. The data parameter is a Bundle, which could be used to provide the referenced resources. Additionally, this operation also includes parameters to povide ccType and evidenceStatus. The Server (i.e. Payer) uses the resources and/or codes provided using the parameters as filter to get the right risk adjustment coding gap reports to return to the Client."/>
     <code value="risk-gap"/>
     <comment value=""/>
     <resource value="MeasureReport"/>
@@ -39,30 +39,12 @@
         <documentation value="The end of a clinical evaluation period."/>
         <type value="date"/>
     </parameter>
-    <!--<parameter>
-        <name value="subject"/>
-        <use value="in"/>
-        <min value="1"/>
-        <max value="1"/>
-        <documentation value="Patient resource as input parameter, which provides data such as patient's first name, last name, date of birth"/>
-        <type value="Patient"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-    </parameter>
     <parameter>
-        <name value="coverage"/>
-        <use value="in"/>
-        <min value="1"/>
-        <max value="1"/>
-        <documentation value="This is a reference to the Coverage resource, which provides information such as the subscriberId"/>
-        <type value="Coverage"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage"/>  
-    </parameter>  -->
-        <parameter>
         <name value="subject"/>
         <use value="in"/>
         <min value="1"/>
         <max value="1"/>
-        <documentation value="A reference to Patient resource as input parameter, which provides data such as patient's first name, last name, date of birth"/>
+        <documentation value="A reference to Patient resource as input parameter, which provides data such as patient's first name, last name, date of birth."/>
         <type value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </parameter>
@@ -71,19 +53,37 @@
         <use value="in"/>
         <min value="1"/>
         <max value="1"/>
-        <documentation value="A reference to Coverage resource, which provides information such as the subscriberId"/>
+        <documentation value="A reference to Coverage resource, which provides information such as the subscriberId."/>
         <type value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage"/>  
     </parameter>  
     <parameter>
-        <name value="TIN"/>
+        <name value="organization"/>
         <use value="in"/>
         <min value="0"/>
         <max value="1"/>
-        <documentation value="This is the provider rganization's TIN"/>
-        <type value="string"/>
-        <searchType value="token"/>
-    </parameter>    
+        <documentation value="A reference to Organization resource, which provides information for provider organization"/>
+        <type value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>  
+    </parameter>       
+    <parameter>
+        <name value="practitionerRole"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <documentation value="A reference to Pracitioner Role resource, which provides information about the provider, such as provider taxonomy, provider NPI"/>
+        <type value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>  
+    </parameter>  
+    <parameter>
+        <name value="encounter"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <documentation value="A reference to Encounter resource, which provides information such as the encounter id and date of service."/>
+        <type value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>  
+    </parameter>      
     <parameter>
         <name value="ccType"/>
         <use value="in"/>
@@ -107,37 +107,7 @@
             <strength value="extensible"/>
             <valueSet value="http://hl7.org/fhir/us/davinci-ra/ValueSet/evidence-status"/>
         </binding>    
-    </parameter>    
-    <parameter>
-        <name value="providerTaxonomy"/>
-        <use value="in"/>
-        <min value="0"/>
-        <max value="*"/>
-        <documentation value="This Condition Category (CC) gaps will be filterd based on provider taxonomy."/>         
-        <type value="code"/>
-        <binding>
-            <strength value="extensible"/>
-            <valueSet value="http://hl7.org/fhir/ValueSet/provider-taxonomy"/>
-        </binding>    
-    </parameter>      
-    <!-- <parameter>
-        <name value="encounter"/>
-        <use value="in"/>
-        <min value="0"/>
-        <max value="1"/>
-        <documentation value="This is a reference to the Encounter resource, which provides information such as the encounter id and date of service."/>
-        <type value="Encounter"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>  
-    </parameter>  -->
-    <parameter>
-        <name value="encounter"/>
-        <use value="in"/>
-        <min value="0"/>
-        <max value="1"/>
-        <documentation value="A reference to Encounter resource, which provides information such as the encounter id and date of service."/>
-        <type value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>  
-    </parameter>   
+    </parameter>  
     <parameter>
         <name value="data"/>
         <use value="in"/>
@@ -145,15 +115,6 @@
         <max value="1"/>
         <documentation value="Referenced resources by parameters of this operation provided as a Bundle."/>
         <type value="Bundle"/>
-    <!--<parameter>
-        <name value="referenced"/>
-        <use value="in"/>
-        <min value="0"/>
-        <max value="*"/>
-        <documentation value="Resources that are referenced by other input parameters, specifically Coverage and Encounter, defined in this operation."/>
-        <type value="Resource"/>
-    -->
-    <!--   <searchType value="reference"/> -->
     </parameter>    
     <parameter>
         <name value="return"/>

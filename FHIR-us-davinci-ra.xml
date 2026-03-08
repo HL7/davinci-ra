@@ -10,6 +10,7 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact deprecated="true" id="StructureDefinition/ra-annotation" key="StructureDefinition-ra-annotation" name="Annotation"/>
+<artifact id="Bundle/ra-riskgap-data1" key="Bundle-ra-riskgap-data1" name="Bundle example for the data parameter of the risk-gap operation"/>
 <artifact id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Clinical Data Collection Deadline Extension"/>
 <artifact deprecated="true" id="ValueSet/coding-gap-annotation" key="ValueSet-coding-gap-annotation" name="Coding Gap Annotation"/>
 <artifact deprecated="true" id="CodeSystem/coding-gap-annotation" key="CodeSystem-coding-gap-annotation" name="Coding Gap Annotation CodeSystem"/>
@@ -110,7 +111,7 @@
 <artifact id="Practitioner/ra-prac01pat01" key="Practitioner-ra-prac01pat01" name="Practitioner01: Harold Hippocrates"/>
 <artifact id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner02: Patrick Pump"/>
 <artifact id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner03: Otto Osler"/>
-<artifact id="StructureDefinition/ra-qualifyingDxCode" key="StructureDefinition-ra-qualifyingDxCode" name="QualifyingCode Extension"/>
+<artifact id="StructureDefinition/ra-qualifyingDxCode" key="StructureDefinition-ra-qualifyingDxCode" name="QualifyingDxCode Extension"/>
 <artifact id="MeasureReport/ra-measurereport01" key="MeasureReport-ra-measurereport01" name="RA Coding Gap MeasureReport Example01 with RA Model CMS-HCC V24 for Patient01 Eve Everywoman"/>
 <artifact id="MeasureReport/ra-measurereport02" key="MeasureReport-ra-measurereport02" name="RA Coding Gap MeasureReport Example02 with RA Model CMS-RxHCC V5 for Patient01 Eve Everywoman"/>
 <artifact id="MeasureReport/ra-measurereport03" key="MeasureReport-ra-measurereport03" name="RA Coding Gap MeasureReport Example03 with RA Model CMS-HCC V24 for Patient02 Adam Everyman"/>
@@ -123,8 +124,10 @@
 <artifact id="Measure/RAModelExample02" key="Measure-RAModelExample02" name="RA Model Example02 CMS-HCC version 21"/>
 <artifact id="Measure/RAModelExample03" key="Measure-RAModelExample03" name="RA Model Example03 CMS-RxHCC version 5"/>
 <artifact id="StructureDefinition/ra-parameters-cc-remark-patch" key="StructureDefinition-ra-parameters-cc-remark-patch" name="RA Parameters ccRemark Patch Profile"/>
+<artifact id="CodeSystem/ra-temp" key="CodeSystem-ra-temp" name="RA Temporary Code System"/>
 <artifact id="ValueSet/remark-reason" key="ValueSet-remark-reason" name="Remark Reason"/>
 <artifact id="CodeSystem/remark-reason" key="CodeSystem-remark-reason" name="Remark Reason Codes"/>
+<artifact id="ValueSet/remark-type" key="ValueSet-remark-type" name="Remark Type"/>
 <artifact deprecated="true" id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
 <artifact id="StructureDefinition/ra-reportingVendor" key="StructureDefinition-ra-reportingVendor" name="Reporting Vendor Extension"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>

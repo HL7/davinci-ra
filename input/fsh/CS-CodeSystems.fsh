@@ -53,3 +53,11 @@ Description: "Reason codes for remark"
 * #never-had-condition "Patient never had the condition" "Reason for the assessed-not-present remark is because the patient has never had this condition."
 * #inactive-condition "Condition no longer active" "Reason for the assessed-not-present remark is because the patient's condition is no longer active."
 * #inapplicable-gap "Inapplicable gap" "Reason for the assessed-not-present remark is because the patient has an active condition but the gap does not accurately describe it."
+
+CodeSystem: RATemporaryCodes
+Title: "RA Temporary Code System"
+Id: ra-temp
+Description: "Temporary code system defined in this implementation guide"
+* ^experimental = false
+* ^caseSensitive = true
+* #evidence-note "Evidence Note" "The type of remark that provides evidence notes for Condition Category."

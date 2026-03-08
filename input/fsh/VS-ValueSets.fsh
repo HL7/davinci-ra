@@ -1,32 +1,32 @@
-ValueSet: RiskAdjustmentConditionCategoryType
+ValueSet: RiskAdjustmentConditionCategoryTypeVS
 Title: "Condition Category Type"
 Id: cc-type
 Description: "Type of value-based performance reporting performance metric."
 * ^experimental = false
 * codes from system RiskAdjustmentConditionCategoryType
 
-ValueSet: CodingGapRemark
+ValueSet: CodingGapRemarkVS
 Title: "Coding Gap Remark"
 Id: coding-gap-remark
 Description: "Coded remark for a coding gap."
 * ^experimental = false
 * codes from system CodingGapRemark
 
-ValueSet: RiskAdjustmentEvidenceStatus
+ValueSet: RiskAdjustmentEvidenceStatusVS
 Title: "Evidence Status"
 Id: evidence-status
 Description: "Codes that indicate whether a coding gap is an open-gap, invalid-gap, closed-gap, or pending."
 * ^experimental = false
 * codes from system RiskAdjustmentEvidenceStatus
 
-ValueSet: RiskAdjustmenthierarchicalStatus
+ValueSet: RiskAdjustmenthierarchicalStatusVS
 Title: "Hierarchical Status"
 Id: hierarchical-status
 Description: "Codes that indicate how hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded."
 * ^experimental = false
 * codes from system RiskAdjustmenthierarchicalStatus
 
-ValueSet: RemarkReason
+ValueSet: RemarkReasonVS
 Title: "Remark Reason"
 Id: remark-reason
 Description: "Reason for the remark"
@@ -42,5 +42,10 @@ Description: "This is a sample of the concepts that can be found in the CMS Hier
 * $CMSHCC#88 "Angina Pectoris"
 * $CMSHCC#112 "Fibrosis of Lung and Other Chronic Lung Disorders"
 
-
+ValueSet: RemarkTypeVS
+Title: "Remark Type"
+Id: remark-type
+Description: "Type of Condition Category Remark"
+* ^experimental = false
+* #evidence-note from system RATemporaryCodes
 

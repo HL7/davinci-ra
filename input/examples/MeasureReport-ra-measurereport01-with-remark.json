@@ -108,18 +108,6 @@
                               "system" : "http://hl7.org/fhir/sid/us-npi",
                               "value" : "1234567890"
                             }
-                        },
-                        {
-                            "url": "qualifyingDxCode",
-                            "valueCodeableConcept" : {
-                                "coding": [
-                                    {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "422099009",
-                                    "display": "Disorder of eye due to type 2 diabetes mellitus (disorder)"
-                                    }
-                                ]
-                            }
                         }
                     ]
                 }
@@ -529,9 +517,6 @@
                         },
                         {"url": "authorDatetime",
                         "valueDateTime": "2021-11-01"
-                        },
-                        {"url": "qualifyingDxList",
-                        "valueString": "E66.01, E66.2, E66.813"
                         }
                     ]
                 }

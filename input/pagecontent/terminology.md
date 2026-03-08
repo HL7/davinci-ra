@@ -20,6 +20,7 @@
 - [Evidence Status Codes](CodeSystem-evidence-status.html)
 - [Hierarchical Status Codes](CodeSystem-hierarchical-status.html)
 - [Remark Reason Codes](CodeSystem-remark-reason.html)
+- <span class="bg-success" markdown="1">[RA Temporary Codes](CodeSystem-ra-temp.html)</span><!-- new-content -->
 
 ### ValueSet 
 {: #valueset}
@@ -30,6 +31,7 @@
 - [Evidence Status](ValueSet-evidence-status.html)
 - [Hierarchical Status](ValueSet-hierarchical-status.html)
 - [Remark Reason](ValueSet-remark-reason.html)
+- <span class="bg-success" markdown="1">[Remark Type](ValueSet-remark-type.html) </span><!-- new-content -->
 - [Sample CMS Hierarchical Condition Category](ValueSet-sample-cmshcc.html)
 
 ---

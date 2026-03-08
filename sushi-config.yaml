@@ -12,7 +12,7 @@ extension:
     valueInteger: "2"
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
     valueCode: cqi
-version: 2.1.0
+version: 3.0.0-ballot
 fhirVersion: 4.0.1
 name: RiskAdjustment
 title: Da Vinci Risk Adjustment Implementation Guide
@@ -30,7 +30,7 @@ jurisdiction: urn:iso:std:iso:3166#US "United States of America"
 copyright: >-
   Used by permission of HL7 International, all rights reserved Creative Commons License
 copyrightYear: 2021+
-releaseLabel: STU 2.1
+releaseLabel: STU 3.0.0-ballot
 
 parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
@@ -41,8 +41,7 @@ parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
     - input/pagecontent
     - input/intro-notes
     - fsh-generated/includes    
-  path-expansion-params: '../../input/_resources/exp-params.json' # for using US ed of SNOMED
-  # path-expansion-params: "path-expansion-params"
+  path-expansion-params: '../../input/exp-params.json'  # for using US ed of SNOMED
   path-history: http://hl7.org/fhir/us/davinci-ra/history.html
   apply-publisher: true
   apply-contact: true
@@ -52,6 +51,7 @@ parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
   version-comparison: 
     - 1.0.0
     - 2.0.0
+    - 2.1.0
   # shownav: true
   excludettl: 'true'
   pin-canonicals: pin-multiples
