@@ -47,7 +47,7 @@
           <sliceName value="ra_report_with_remark_entry"/>
           <short value=""/>
           <min value="1"/>
-          <max value="1"/>
+          <max value="*"/>
           <mustSupport value="true"/>
         </element>
         <element id="Bundle.entry:ra_report_with_remark_entry.resource">

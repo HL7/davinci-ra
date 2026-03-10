@@ -28,7 +28,7 @@
         <use value="in"/>
         <min value="1"/>
         <max value="*"/>
-        <documentation value="A Bundle that contains a Risk Adjustment Coding Gap Report with ccRemark(s) on at least one of the Condition Categories and the ccRemark referenced resources"/>
+        <documentation value="A Bundle that contains one or more Risk Adjustment Coding Gap Report(s) with ccRemark(s) on at least one of the Condition Categories and the ccRemark referenced resources"/>
         <type value="Bundle"/>
         <targetProfile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-remark-bundle"/>
     </parameter>

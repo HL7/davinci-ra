@@ -60,4 +60,4 @@ Id: ra-temp
 Description: "Temporary code system defined in this implementation guide"
 * ^experimental = false
 * ^caseSensitive = true
-* #evidence-note "Evidence Note" "The type of remark that provides evidence notes for Condition Category."
+* #evidence-note "Evidence Note" "Type of Condition Category remark that is evidence note."
