@@ -162,3 +162,15 @@ INFORMATION: Organization/ra-org02pat02: Organization.type[0]: Reference to draf
 INFORMATION: Organization/ra-org03pat03: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|2.0.0
 INFORMATION: Organization/ra-payer01: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|2.0.0
 INFORMATION: Organization/ra-vendor01: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|2.0.0
+
+# Not applicable Da Vinci Warnings - The 1.0.0-ballot is the initial ballot, Jira tracker items were not applicable.
+WARNING: DA VINCI: The Change Log page (change-log.html) does not include any Jira tracker items links for the section with title Version 0.1.0
+
+# Not applicable Da Vinci Warnings - Textual dependency on Hrex has been declared. 
+WARNING: DA VINCI: This IG does not depend on HRex.  Either add a formal dependency or confirm that a textual dependency has been declared.
+
+# Not applicable Da Vinci Warnings - prefer to keep the existing page title "Background - Risk Adjustment" as it suits better with the existing content.
+WARNING: DA VINCI: The first menu item under Background should have the label Reading this IG.
+
+# Not applicable Da Vinci Warnings - Will update from 1.1.0 to 1.2.0 once HRex 1.2.0 is published 
+WARNING: DA VINCI: The Base Specs menu item must have a child called HRex 1.2.0.

@@ -21,14 +21,15 @@ The Actors involved in the Submit Data to Payer phase are Provider and Payer.
 
 ### Submit Data
 
-If the Provider identifies the need of closing or invalidating a coding gap or simply needs to provide more up to date patient data to the Payer, they will create a [Risk Adjustment Data Exchange MeasureReport] and use the [$submit-data] operation to send that data to the Payer. The `evaluatedResource` element on a Risk Adjustment Data Exchange Measure Report can be used to reference any clinical evaluation evidence that will need to be submitted to the Payer. For example, if the Provider sends a patient’s Consolidated Clinical Document Architecture (C-CDA) document as valid encounter data, the `evaluatedResource` will be a reference to a DocumentReference resource for the C-CDA document. For the [$submit-data] operation, the measureReport parameter will be the Risk Adjustment Data Exchange MeasureReport and the resource parameter will be the DocumentReference resource for the C-CDA and other data-of-interest being submitted. In the risk adjustment use case scenario, the effect of invoking the $submit-data operation is that the submitted data is posted to the receiving system and can be used for subsequent risk adjustment coding gap evaluation and report generation.  
+If the Provider identifies the need of closing or invalidating a coding gap or simply needs to provide more up to date patient data to the Payer, they will create a [Risk Adjustment Data Exchange MeasureReport] and <span class="bg-success" markdown="1">use the [core FHIR API](https://hl7.org/fhir/R4/http.html) to submit. For example, POST MeasureReport(s) and referenced resources as a Bundle.</span><!-- new-content --> The `evaluatedResource` element on a Risk Adjustment Data Exchange Measure Report can be used to reference any clinical evaluation evidence that will need to be submitted to the Payer. For example, if the Provider sends a patient’s Consolidated Clinical Document Architecture (C-CDA) document as valid encounter data, the `evaluatedResource` will be a reference to a DocumentReference resource for the C-CDA document. The submitted data is posted to the receiving system and can be used for subsequent risk adjustment coding gap evaluation and report generation.  
 
 The Risk Adjustment Data Exchange MeasureReport provides a way to link the submitted data to the original Payer generated coding gap report. Provider can provide the unique id of the original Payer generated coding gap report using the `payerCodingGapReportId`. The unique id is the `MeasureReport.id` from the Risk Adjustment Coding Gap Report. The Provider could also include the Condition Categories that they intend to close and/or invalidate from the original Risk Adjustment Coding Gap Report in the Data Exchange MeasureReport by populating the `MeasureReport.group`.    
 
 After the Payer receives and processes the clinical evaluation evidence data submitted by the Provider, the data will then be used for the next coding gap evaluation and coding gap reports generation. If Provider identifies issues with the gaps shown on the new coding gap reports, they will use the data submission process again to submit proper data and documentation to address the issues.
 
-{% include img-portrait.html img="submit-data.png" caption="Figure 2.4-2: Submit Data"%}
-
+<div class="new-content" markdown="1">
+{% include img-portrait.html img="submit-data.png" caption="Figure 2.4-2: Submit Data Using POST"%}
+</div>
 {% include link-list.md %}
 
 

@@ -173,6 +173,7 @@
 <page key="capabilities" name="Capability Statements"/>
 <page deprecated="true" key="changes" name="Change History"/>
 <page key="change-log" name="Change Log"/>
+<page key="conformance" name="Conformance Expectations"/>
 <page key="dcc" name="Digital Condition Category (dCC)"/>
 <page key="downloads" name="Downloads"/>
 <page key="examples" name="Examples"/>
@@ -183,15 +184,15 @@
 <page key="index" name="Home"/>
 <page deprecated="true" key="methodology" name="Methodology"/>
 <page key="operations" name="Operation"/>
+<page key="security" name="Privacy, Safety, and Security"/>
 <page key="profiles" name="Profiles"/>
-<page key="credits" name="Projects and Participants"/>
+<page key="credits" name="Project and Participants"/>
 <page key="fhir" name="Reading this IG - FHIR Introduction"/>
 <page deprecated="true" key="remediation" name="Remediation"/>
 <page deprecated="true" key="report-annotation" name="Report Annotation"/>
 <page key="report-generation" name="Report Generation"/>
 <page key="report-query" name="Report Query"/>
 <page key="search-parameters" name="Search Parameters"/>
-<page key="security" name="Security, Privacy, and Safety"/>
 <page key="submit-data-to-payer" name="Submit Data To Payer"/>
 <page key="toc" name="Table of Contents"/>
 <page key="terminology" name="Terminology"/>

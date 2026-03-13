@@ -2,11 +2,10 @@ This implementation guide is web-based and is intended to be browsed online.  Ho
 implementation guides for local use.
 
 Content from this IG:
-* This [full IG](full-ig.zip)
-* The resource definitions as [JSON](definitions.json.zip) and [XML](definitions.xml.zip) from this IG for programmatic use
-* All examples as [JSON](examples.json.zip) and [XML](examples.xml.zip) from this IG for programmatic use
-* The [validator package](package.tgz) for use with the [FHIR validator](tools.html)
-* [Schematrons](schematrons.zip)
+* This [full IG](../full-ig.zip)
+* The resource definitions as [JSON](../definitions.json.zip) and [XML](../definitions.xml.zip) from this IG for programmatic use
+* All examples as [JSON](../examples.json.zip) and [XML](../examples.xml.zip) from this IG for programmatic use
+* The [validator package](../package.tgz) for use with the [FHIR validator](tools.html)
 
 Key content from the FHIR core specification:
 * The full [FHIR R4 core]({{site.data.fhir.path}}fhir-spec.zip) specifications
@@ -20,4 +19,4 @@ Content from US Core:
 * The [6.1.0 validator package]({{site.data.fhir.ver.uscore6}}/package.tgz) for use with the [FHIR validator](tools.html)
 * The [7.0.0 validator package]({{site.data.fhir.ver.uscore7}}/package.tgz) for use with the [FHIR validator](tools.html)
 
-{% include cross-version-analysis-inline.xhtml %}
+{% include cross-version-analysis-inline-en.xhtml %}

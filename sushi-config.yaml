@@ -60,20 +60,21 @@ parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  Home: index.html
+  IG Home: index.html
   Background:
-    Reading this IG - FHIR Introduction: fhir.html
+    Reading this IG: fhir.html
     Background - Risk Adjustment: background.html
-    Projects and Participants: credits.html
+    Project and Participants: credits.html
     Glossary: glossary.html    
   Specification:
+    Conformance Expectations: conformance.html
     General Guidance: general-guidance.html
     Report Generation: report-generation.html
     Report Query: report-query.html
     Submit Data to Payer: submit-data-to-payer.html
     Add Remark to Condition Category: cc-remark.html    
     Digital Condition Category (dCC): dcc.html
-    Security, Privacy, and Safety: security.html
+    Privacy, Safety, and Security: security.html
   FHIR Artifacts: 
     Artifacts Summary: artifacts.html
     Profiles: profiles.html
@@ -85,7 +86,7 @@ menu:
     Examples: examples.html
   Base Specs:
     FHIR R4 Spec: new-tab http://hl7.org/fhir/R4/
-    HRex 1.1.0: new-tab https://hl7.org/fhir/us/davinci-hrex/STU1.1/
+    HRex 1.2.0: new-tab https://hl7.org/fhir/us/davinci-hrex/STU1.2/
     US Core 3.1.1: new-tab https://hl7.org/fhir/us/core/STU3.1.1/  
     US Core 6.1.0: new-tab https://hl7.org/fhir/us/core/STU6.1/
     US Core 7.0.0: new-tab https://hl7.org/fhir/us/core/STU7/
@@ -156,10 +157,15 @@ pages:
       - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
         valueCode: "informative"    
   credits.md:
-    title: Projects and Participants      
+    title: Project and Participants      
     extension:
       - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
         valueCode: "informative"    
+  conformance.md:
+    title: Conformance Expectations
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"  
   general-guidance.md:
     title: General Guidance  
     extension:
@@ -191,7 +197,7 @@ pages:
     - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
       valueCode: "draft"    
   security.md:    
-    title: Security, Privacy, and Safety  
+    title: Privacy, Safety, and Security 
     extension:
       - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
         valueCode: "trial-use"       
