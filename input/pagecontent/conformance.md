@@ -21,7 +21,7 @@ For more information, see the definition of [Must Support](http://hl7.org/fhir/R
 §In order to conform to this implementation guide, in addition to adhering to any relevant 'SHALL' statements, a system **SHALL** conform to at least one of the CapabilityStatements based on their role(s) listed here:§
 
 * [Risk Adjustment Reporting Server Capability Statement](CapabilityStatement-ra-reporting-server.html)
-* [Risk Adjustment Reporting Client Capability Statement](CapabilityStatement-ra-reporting-client)
+* [Risk Adjustment Reporting Client Capability Statement](CapabilityStatement-ra-reporting-client.html)
 * [Risk Adjustment Data Submission Client Capability Statement](CapabilityStatement-ra-data-submission-client.html)
 * [Risk Adjustment Data Submission Server Capability Statement](CapabilityStatement-ra-data-submission-server.html)
 <div>
