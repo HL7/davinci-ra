@@ -178,7 +178,7 @@
 <page key="downloads" name="Downloads"/>
 <page key="examples" name="Examples"/>
 <page key="extensions" name="Extensions"/>
-<page key="general-guidance" name="General Guidance"/>
+<page deprecated="true" key="general-guidance" name="General Guidance"/>
 <page key="glossary" name="Glossary"/>
 <page deprecated="true" key="guidance" name="Guidance"/>
 <page key="index" name="Home"/>
@@ -197,4 +197,5 @@
 <page key="toc" name="Table of Contents"/>
 <page key="terminology" name="Terminology"/>
 <page key="tools" name="Tooling and Support"/>
+<page key="usecases" name="Use Cases"/>
 </specification>

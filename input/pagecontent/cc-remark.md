@@ -18,7 +18,7 @@ This [Condition Category Remark] extension is added to the [Risk Adjustment Codi
 - `relatedDataIentifier` an identifier field that can be used to link to a claim or document such as a Continuity of Care Document (CCD) that the Provider is sending via another method or transaction.
 - <span class="bg-success" markdown="1">`remarkType` to indicate the type of remark.</span><!-- new-content -->
 
-The Provider's system being used SHALL NOT change any other part of the original Risk Adjustment Coding Gap Report and can only add the [Condition Category Remark] to the appropriate `MeasureReport.group`(s).  If a provider wants to share data with the Payer in order to change a coding gap status, they should use the [Submit Data to Payer] process.  
+§The Provider's system being used SHALL NOT change any other part of the original Risk Adjustment Coding Gap Report and can only add the [Condition Category Remark] to the appropriate `MeasureReport.group`(s).§  If a provider wants to share data with the Payer in order to change a coding gap status, they should use the [Submit Data to Payer] process.  
 
 If a Payer or someone acting on behalf of the Payer like a Risk Adjustment Coder is adding a remark to the report, they would update the report on their server.
 

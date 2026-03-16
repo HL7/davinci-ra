@@ -68,28 +68,6 @@ After careful review with the risk adjustment subject matter experts, it was det
 
 {% include img-portrait.html img="workflow-medicare-advantage.png" caption = "Figure 1-2 Workflow for Medicare Advantage Population" %}
 
-This implementation guide does not define how payers determine a coding gap and how coding gaps are produced or managed on the payer side including hierarchies. This implementation guide also does not define suspecting processes and algorithms/predictive models that are used for suspecting analytics.   
-
-### Actors and Roles
-
-Different entities can play different Roles in different scenarios. The Actors in this implementation guide are Payer and Provider. Their roles as Client and Server are described below. 
-
-
-**Client**: 
-- Reporting Client
-    - Payer plays this role when they request a [Risk Adjustment Coding Gap Report] to POST to Provider's FHIR Server 
-    - Provider plays this role 1) when they request a Risk Adjustment Coding Gap Report, or 2) when they add a Condition Category Remark to a Risk Adjustment Coding Gap Report
-- Data Submission Client
-    - Provider plays this role when they create a [Risk Adjustment Data Exchange MeasureReport] and submit to Payer
-
-**Server**:
-- Reporting Server
-    - The Payer plays this role when they 1) generate and store a Risk Adjustment Coding Gap Report, or 2) when they add Condition Category remark to the Risk Adjustment Coding Gap Report, if the Payer chooses to share any or all Condition Category remarks submitted by the Provider
-    - The Payer plays this role when they receive and process the Risk Adjustment Data Exchange MeasureReport       
-- Data Submission Server
-    - The Provider plays this role when they POST Risk Adjustment Coding Gap Report with Condition Category Remark(s)
-
-The Methodology section of this implementation guide describes these Actors in more detail in the context of report generation, report query, and data submission steps of risk adjustment lifecycle and adding of Condition Category remarks to the Risk Adjustment Coding Gap report. 
-   
+This implementation guide does not define how payers determine a coding gap and how coding gaps are produced or managed on the payer side including hierarchies. This implementation guide also does not define suspecting processes and algorithms/predictive models that are used for suspecting analytics.      
 
 {% include link-list.md %}

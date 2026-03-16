@@ -3,7 +3,7 @@
 ### Mandatory Data Elements and Terminology
 
 
-The following data-elements must always be present (Mandatory) or must be supported [(Must Support)](general-guidance.html#must-support). The [Formal Views](StructureDefinition-ra-model-measure.html#profile) below provides the formal summary, definitions, and terminology requirements.
+The following data-elements must always be present (Mandatory) or must be supported [(Must Support)](conformance.html#mustsupport). The [Formal Views](StructureDefinition-ra-model-measure.html#profile) below provides the formal summary, definitions, and terminology requirements.
 
 **Each {{site.data.structuredefinitions.[id].type}} must have:**
 

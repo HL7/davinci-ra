@@ -6,7 +6,7 @@ This profile builds on [Bundle](https://www.hl7.org/fhir/bundle.html).
 ### Mandatory Data Elements and Terminology
 
 
-The following data-elements must always be present (Mandatory) or must be supported [(Must Support)](general-guidance.html#must-support). The [Formal Views](StructureDefinition-ra-measurereport-bundle.html#profile) below provides the formal summary, definitions, and terminology requirements.
+The following data-elements must always be present (Mandatory) or must be supported [(Must Support)](conformance.html#mustsupport). The [Formal Views](StructureDefinition-ra-measurereport-bundle.html#profile) below provides the formal summary, definitions, and terminology requirements.
 
 
 **Each Bundle {{site.data.structuredefinitions.[id].type}} must have:**
@@ -19,7 +19,7 @@ The following data-elements must always be present (Mandatory) or must be suppor
 1. Zero to many `Bundle.entry` that contains a MeasureReport using the [Risk Adjustment Coding Gap Report Profile] for a particular Risk Adjustment Model
 
 **Additional Profile specific implementation guidance:**
-1. All risk adjustment coding gap reports contained in a [Risk Adjustment Coding Gap Report Bundle] SHALL be for the same patient.
+1. §All risk adjustment coding gap reports contained in a [Risk Adjustment Coding Gap Report Bundle] SHALL be for the same patient.§
 
 <!--
 ### Mandatory Data Elements and Terminology

@@ -1,10 +1,25 @@
 
 The Risk Adjustment Implementation Guide was developed under the  [Davinci Project](#)
 
-### version 3.0.0-pre-ballot 
+### version 3.0.0-ballot 
 
-Changes applied to prepare for version 3.0.0-ballot
-- [FHIR-52371](https://jira.hl7.org/browse/FHIR-52371) - Added valueReference as a choice for ccRemark author to reference USCore Pracititioner
+**Breaking changes**:
+* [FHIR-53444](https://jira.hl7.org/browse/FHIR-53444) - Removed qualifyingDxCode and qualifyingDxList from the Condition Category Remark (ccRemark) extension [link](StructureDefinition-ra-ccRemark.html)
+
+**Substantive changes**:
+* [FHIR-53444](https://jira.hl7.org/browse/FHIR-53444) - Moved qualifyingDxCode from ccRemark to Risk Adjustment Coding Gap Report profile under MeasureReport.group [link](StructureDefinition-ra-measurereport.html)
+* Added new operation [$risk-gap](OperationDefinition-risk-gap.html) 
+* Added new operation [$submit-remark-data](OperationDefinition-submit-remark-data.html) and a RA MeasureReport with Remark Bundle profile (StructureDefinition-ra-measurereport-remark-bundle.html)
+
+**Non-substantive changes**:
+* Updated the menu to conform to the Da Vinci template for Da Vinci implementation guides. 
+    * Minor edits to a few page names per Da Vinci template, e.g., renamed Home page to IG Home. 
+    * Added a new Conformance Expectation page. 
+    * Updated the General Guidance page name to Use Cases and relocated it under the Background tab.
+    * Removed the Must Support section from the previous General Guidance page, Must Support is covered under the new Conformance Expectation page.
+    * Moved the Actors and Roles section from the Background page to Use Cases.   
+* Since $submit-data is deperecated in R6, updated the Submit Data section where indicating to use $submit-data
+* Technical corrections to address IG Publisher QA checking.
 
 ### Version 2.1.0 
 High-level updates include:

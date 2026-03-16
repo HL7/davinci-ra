@@ -56,11 +56,24 @@ See the [Submit Data to Payer] page for more details and guidance.
 
 Member attribution establishes associations between providers and payers. The process of establishing and exchanging patient lists for risk adjustment coding gap reports is not in the scope of this implementation guide. One possible way of exchanging Member Attribution Lists between providers and payers is described in the [Da Vinci - Member Attribution (ATR) List] implementation guide.
 
-### Must Support
-Certain elements in the profiles defined in this implementation guide are marked as Must Support. This flag is used to indicate that the element plays a critical role in defining and sharing risk adjustment coding gaps, and implementations SHALL understand and process the element.
+### Actors and Roles
 
-This implementation guide uses US Core profiles where appropriate, therefore, the implications of the Must Support flag for US Core profiles must also be considered.
+Different entities can play different Roles in different scenarios. The Actors in this implementation guide are Payer and Provider. Their roles as Client and Server are described below. 
 
-For more information, see the definition of [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) in the base FHIR specification.
+**Client**: 
+- Reporting Client
+    - Payer plays this role when they request a [Risk Adjustment Coding Gap Report] to POST to Provider's FHIR Server 
+    - Provider plays this role 1) when they request a Risk Adjustment Coding Gap Report, or 2) when they add a Condition Category Remark to a Risk Adjustment Coding Gap Report
+- Data Submission Client
+    - Provider plays this role when they create a [Risk Adjustment Data Exchange MeasureReport] and submit to Payer
+
+**Server**:
+- Reporting Server
+    - The Payer plays this role when they 1) generate and store a Risk Adjustment Coding Gap Report, or 2) when they add Condition Category remark to the Risk Adjustment Coding Gap Report, if the Payer chooses to share any or all Condition Category remarks submitted by the Provider
+    - The Payer plays this role when they receive and process the Risk Adjustment Data Exchange MeasureReport       
+- Data Submission Server
+    - The Provider plays this role when they POST Risk Adjustment Coding Gap Report with Condition Category Remark(s)
+
+The Methodology section of this implementation guide describes these Actors in more detail in the context of report generation, report query, and data submission steps of risk adjustment lifecycle and adding of Condition Category remarks to the Risk Adjustment Coding Gap report. 
 
 {% include link-list.md %}

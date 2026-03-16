@@ -51,7 +51,7 @@ The MeasureReport resource has zero to many `group` elements. Each `group` eleme
  - <span class="bg-success" markdown="1">confidence scale of the coding gap</span><!-- new-content -->
  - <span class="bg-success" markdown="1">remarks about a Condition Category (CC)</span><!-- new-content -->
 
-In addition, the [Risk Adjustment Coding Gap Report] provides the capability of sharing supporting evidence for a Condition Category (CC) through the use of the `MeasureReport.evaluatedResource` element. This supporting evidence may include resources for data such as encounters, lab results, medications, and procedures, and the `evaluatedResource` shall reference the appropriate US Core profile. The extension [ra-groupReference](StructureDefinition-ra-groupReference.html) added to the `evaluatedResource` element enables tying a specific supporting evidence to a Condition Category (CC). This is accomplished by setting the extension’s `valueString` to be the same value of the `MeasureGroup.group.id` of the Condition Category (CC) to establish the association between the supporting evidence and one or more Condition Categories.  
+In addition, the [Risk Adjustment Coding Gap Report] provides the capability of sharing supporting evidence for a Condition Category (CC) through the use of the `MeasureReport.evaluatedResource` element. §This supporting evidence may include resources for data such as encounters, lab results, medications, and procedures, and the `evaluatedResource` SHALL reference the appropriate US Core profile.§ The extension [ra-groupReference](StructureDefinition-ra-groupReference.html) added to the `evaluatedResource` element enables tying a specific supporting evidence to a Condition Category (CC). This is accomplished by setting the extension’s `valueString` to be the same value of the `MeasureGroup.group.id` of the Condition Category (CC) to establish the association between the supporting evidence and one or more Condition Categories.  
 
 ### Example Coding Gap Report
 
@@ -130,7 +130,7 @@ Headers:
 * `Prefer respond-async`
 * `Accept application/fhir+json`
 
-Note that both Prefer and Accept are required. **Prefer** specifies the response is immediate or asynchronous, which SHALL be set to *respond-async*. **Accept** specifies the format of the optional OperationOutcome response to the kick-off request. Any of the Serialization Format Representations are supported. See the base FHIR specification [Asynchronous Request Patterns] for details.
+Note that both Prefer and Accept are required. §**Prefer** specifies the response is immediate or asynchronous, which SHALL be set to *respond-async*.§ **Accept** specifies the format of the optional OperationOutcome response to the kick-off request. Any of the Serialization Format Representations are supported. See the base FHIR specification [Asynchronous Request Patterns] for details.
 
 Query Parameters:
 * `_outputFormat (string, optional, defaults to application/fhir+ndjson)`

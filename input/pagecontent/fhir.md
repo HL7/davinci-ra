@@ -22,24 +22,78 @@ The table below lists the resources profiled or otherwise used in this specifica
     </tr>
   </thead>
   <tbody>
-    <tr><td><a href="{{site.data.fhir.path}}bundle.html">Bundle</a></td><td>Used to define Bundle</td></tr>
-    <tr><td><a href="{{site.data.fhir.path}}capabilitystatement.html">CapabilityStatement</a></td><td>Used to define conformance expectations for this guide</td></tr>
-    <tr><td><a href="{{site.data.fhir.path}}codesystem.html">CodeSystem</a></td><td>Used to define custom codes specific to this guide</td></tr>
-    <tr><td><a href="{{site.data.fhir.path}}condition.html">Condition</a></td><td>Used in examples. MeasureReport.evaluatedResource could reference a Condition</td></a></td></tr>   
-    <tr><td><a href="{{site.data.fhir.path}}documentreference.html">DocumentReference</a></td><td>Used in examples. MeasureReport.evaluatedResource could reference a DocumentReference</td></a></td></tr>    
-    <tr><td><a href="{{site.data.fhir.path}}encounter.html">Encounter</a></td><td>Used in examples. MeasureReport.evaluatedResource could reference an Encounter</td></a></td></tr>      
-    <tr><td><a href="{{site.data.fhir.path}}group.html">Group</a></td><td>Used to represent Group of patients</td></a></td></tr>    
-    <tr><td><a href="{{site.data.fhir.path}}measure.html">Measure</a></td><td>Used to represent Risk Adjustment Model.</td></a></td></tr>      
-    <tr><td><a href="{{site.data.fhir.path}}measurereport.html">MeasureReport</a></td><td>Used for Risk Adjustment Coding Gap Report and Risk Adjustment Data Exchange MeasureReport.</td></tr> 
-    <tr><td><a href="{{site.data.fhir.path}}observation.html">Observation</a></td><td>Used in examples. MeasureReport.evaluatedResource could reference an Observation</td></a></td></tr>      
-    <tr><td><a href="{{site.data.fhir.path}}operationdefinition.html">OperationdeDinition</a></td><td>Used to represent operations used by this IG</td></a></td></tr>           
-    <tr><td><a href="{{site.data.fhir.path}}organization.html">Organization</a></td><td>Used to represent the reporter of the report</td></a></td></tr>    
-    <tr><td><a href="{{site.data.fhir.path}}parameters.html">Parameters</a></td><td>Used to represent RA Parameters ccRemark Patch Profile</td></a></td></tr>     
-    <tr><td><a href="{{site.data.fhir.path}}patient.html">Patient</a></td><td>Used to represent MeasureReport subject</td></a></td></tr>   
-    <tr><td><a href="{{site.data.fhir.path}}practitioner.html">Practitioner</a></td><td>Used by Condition Category Remark extension and in examples.</td></a></td></tr>           
-    <tr><td><a href="{{site.data.fhir.path}}searchparameter.html">SearchParameter</a></td><td>Used in defining additional search parameters used by this IG</td></tr>
-    <tr><td><a href="{{site.data.fhir.path}}structuredefinition.html">StructureDefinition</a></td><td>Used when defining profiles and extensions in this guide</td></tr>
-    <tr><td><a href="{{site.data.fhir.path}}valueset.html">ValueSet</a></td><td>Used to define a list of codes used by Risk Adjustment profiles and extensions</td></tr>    
+    <tr>
+        <td><a href="{{site.data.fhir.path}}bundle.html">Bundle</a></td>
+        <td>Used to define Bundle</td>
+    </tr>
+    <tr>
+        <td><a href="{{site.data.fhir.path}}capabilitystatement.html">CapabilityStatement</a></td>
+        <td>Used to define conformance expectations for this guide</td>
+    </tr>
+    <tr>
+        <td><a href="{{site.data.fhir.path}}codesystem.html">CodeSystem</a></td>
+        <td>Used to define custom codes specific to this guide</td>
+    </tr>
+    <tr>
+        <td><a href="{{site.data.fhir.path}}condition.html">Condition</a></td>
+        <td>Used in examples. MeasureReport.evaluatedResource could reference a Condition</td>
+    </tr>   
+    <tr>
+        <td><a href="{{site.data.fhir.path}}documentreference.html">DocumentReference</a></td>
+        <td>Used in examples. MeasureReport.evaluatedResource could reference a DocumentReference</td>
+    </tr>    
+    <tr>
+        <td><a href="{{site.data.fhir.path}}encounter.html">Encounter</a></td>
+        <td>Used in examples. MeasureReport.evaluatedResource could reference an Encounter</td>
+    </tr>      
+    <tr>
+        <td><a href="{{site.data.fhir.path}}group.html">Group</a></td>
+        <td>Used to represent Group of patients</td>
+    </tr>    
+    <tr>
+        <td><a href="{{site.data.fhir.path}}measure.html">Measure</a></td>
+        <td>Used to represent Risk Adjustment Model.</td>
+    </tr>      
+    <tr>
+        <td><a href="{{site.data.fhir.path}}measurereport.html">MeasureReport</a></td>
+        <td>Used for Risk Adjustment Coding Gap Report and Risk Adjustment Data Exchange MeasureReport.</td>
+    </tr> 
+    <tr>
+        <td><a href="{{site.data.fhir.path}}observation.html">Observation</a></td>
+        <td>Used in examples. MeasureReport.evaluatedResource could reference an Observation</td>
+    </tr>      
+    <tr>
+        <td><a href="{{site.data.fhir.path}}operationdefinition.html">OperationdeDinition</a></td>
+        <td>Used to represent operations used by this IG</td>
+    </tr>           
+    <tr>
+        <td><a href="{{site.data.fhir.path}}organization.html">Organization</a></td>
+        <td>Used to represent the reporter of the report</td>
+    </tr>    
+    <tr>
+        <td><a href="{{site.data.fhir.path}}parameters.html">Parameters</a></td>
+        <td>Used to represent RA Parameters ccRemark Patch Profile</td>
+    </tr>     
+    <tr>
+        <td><a href="{{site.data.fhir.path}}patient.html">Patient</a></td>
+        <td>Used to represent MeasureReport subject</td>
+    </tr>   
+    <tr>
+        <td><a href="{{site.data.fhir.path}}practitioner.html">Practitioner</a></td>
+        <td>Used by Condition Category Remark extension and in examples.</td>
+    </tr>           
+    <tr>
+        <td><a href="{{site.data.fhir.path}}searchparameter.html">SearchParameter</a></td>
+        <td>Used in defining additional search parameters used by this IG</td>
+    </tr>
+    <tr>
+        <td><a href="{{site.data.fhir.path}}structuredefinition.html">StructureDefinition</a></td>
+        <td>Used when defining profiles and extensions in this guide</td>
+    </tr>
+    <tr>
+        <td><a href="{{site.data.fhir.path}}valueset.html">ValueSet</a></td>
+        <td>Used to define a list of codes used by Risk Adjustment profiles and extensions</td>
+    </tr>    
   </tbody>
 </table>
 

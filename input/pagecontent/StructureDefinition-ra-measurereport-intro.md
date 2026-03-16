@@ -2,7 +2,7 @@
 
 ### Mandatory Data Elements and Terminology
 
-The following data-elements must always be present (Mandatory) or must be supported [(Must Support)](general-guidance.html#must-support). The [Formal Views](StructureDefinition-ra-measurereport.html#profile) below provides the formal summary, definitions, and terminology requirements.
+The following data-elements must always be present (Mandatory) or must be supported [(Must Support)](conformance.html#mustsupport). The [Formal Views](StructureDefinition-ra-measurereport.html#profile) below provides the formal summary, definitions, and terminology requirements.
 
 **Each {{site.data.structuredefinitions.[id].type}} must have:**
 
@@ -31,7 +31,7 @@ The following data-elements must always be present (Mandatory) or must be suppor
 1. <span class="bg-success" markdown="1">Each `MeasureReport.group` *may* have zero to many `MeasureReport.group.qualifyingDxCode` element</span><!-- new-content -->
 
 **Additional Profile specific implementation guidance:**
-1. `evaluatedResource` **SHALL** reference resources using USCore profiles where applicable
+1. §`evaluatedResource` **SHALL** reference resources using USCore profiles where applicable§
 
 The Clinical Data Collection Deadline element, `clinicalDataCollectionDeadline`, was added as an extension to MeasureReport. We are seeking comment from implementers if they intend to use this element when communicating risk adjustment coding gap reports from payers to providers.
 {:.stu-note}

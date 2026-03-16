@@ -63,7 +63,7 @@
 [Encounter46Pat01: Pat01 Encounter on 2021-10-15 (clinical evaluation evidence for Task01)]: Encounter-ra-encounter46pat01.html
 
 [Extensions]: extensions.html
-[General Guidance]: general-guidance.html
+[Use Cases]: usecases.html
 [Glossary]: glossary.html
 [Group01: Risk Adjustment Patient Group, (Patient01: Eve Everywoman)]: Group-ra-group01.html
 [Group02: Risk Adjustment Patient Group, (Patient02: Adam Everyman, Patient03: Nelda Nuclear)]: Group-ra-group02.html

@@ -5,7 +5,7 @@
     <url value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-remark-bundle"/>
     <name value="RiskAdjustmentMeasureReportRemarkBundle"/>
     <title value="Risk Adjustment MeasureReport With Remark Bundle"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Da Vinci Project"/>
     <description value="This bundle contains a Risk Adjustment Coding Gap MeasureReport that has Condition Category Remark (ccRemark) present on at least one of the Condition Categories. It also contains the relevant resources referenced by the ccRemark."/>
