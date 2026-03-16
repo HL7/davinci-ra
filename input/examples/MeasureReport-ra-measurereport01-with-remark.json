@@ -13,7 +13,7 @@
             }
           ],        
         "profile": [
-            "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"
+            "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-with-remark"
         ]
     },
     "extension": [
