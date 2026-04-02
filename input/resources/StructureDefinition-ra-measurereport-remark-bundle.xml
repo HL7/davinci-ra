@@ -60,6 +60,7 @@
           </type>
           <mustSupport value="true"/>
         </element>
+<!--        
         <element id="Bundle.entry:remark-resouce">
           <path value="Bundle.entry"/>
           <sliceName value="remark-resource"/>
@@ -72,6 +73,6 @@
           <short value="This entry is any resource referenced in the Risk Adjustment Condition Category Remark"/>
           <min value="1"/>    
           <mustSupport value="true"/>
-        </element>
+        </element> -->
     </differential>
 </StructureDefinition>

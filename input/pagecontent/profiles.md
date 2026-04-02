@@ -9,6 +9,7 @@ List of profiles that define constrains on FHIR resources for systems conforming
 |Measure|[Risk Adjustment Model Measure Profile]|
 |Group|[Patient Group Profile]|
 |Parameter|[RA Parameters ccRemark Patch Profile]|
+|Bundle|[RA MeasureReport with Remark Bundle](StructureDefinition-ra-measurereport-remark-bundle.html)|
 {: .grid}
 
 ---

@@ -86,7 +86,7 @@ menu:
     Examples: examples.html
   Base Specs:
     FHIR R4 Spec: new-tab http://hl7.org/fhir/R4/
-    HRex 1.1.0: new-tab https://hl7.org/fhir/us/davinci-hrex/STU1.1/
+    HRex 1.2.0: new-tab https://hl7.org/fhir/us/davinci-hrex/en/
     US Core 3.1.1: new-tab https://hl7.org/fhir/us/core/STU3.1.1/  
     US Core 6.1.0: new-tab https://hl7.org/fhir/us/core/STU6.1/
     US Core 7.0.0: new-tab https://hl7.org/fhir/us/core/STU7/

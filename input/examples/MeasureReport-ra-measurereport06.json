@@ -31,7 +31,11 @@
         {
             "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline",
             "valueDate": "2022-03-31"
-        }
+        },
+        {
+            "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-contextId",
+            "valueId": "gap-request-id-1"
+        }        
     ],
     "status": "complete",
     "type": "individual",

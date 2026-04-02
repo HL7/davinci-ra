@@ -14,7 +14,7 @@ This IG also provides mechanisms enabling the feedback loop from Provider to Pay
 - The Server and the Client have agreed upon a process to identify specific patient(s) and exchange the Patient resource's logical id or the Patient Group resource's logical id.
 - Although the exact mechanisms for securing these exchanges are not specified as part of this IG:
     - Exchanges are limited to mutually agreed upon (i.e., between the Server and the Client) patient lists or population.
-    - Security and privacy should follow [Security and Privacy](https://hl7.org/fhir/us/davinci-hrex/security.html#security-and-privacy) guidance specified in the Da Vinci Health Record Exchange (HRex) IG.   
+    - Security and privacy should follow [Security and Privacy](https://hl7.org/fhir/us/davinci-hrex/en/security.html#security-and-privacy) guidance specified in the Da Vinci Health Record Exchange (HRex) IG.   
     - Systems should use standard authentication and authorization approaches. The [SMART App Launch] and [SMART backend services] authentication/authorization approach are recommended models.
 
 ### Risk Adjustment Lifecycle and Workflow Overview

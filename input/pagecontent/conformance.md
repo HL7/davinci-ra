@@ -5,7 +5,7 @@
 
 §The meaning of these words **SHALL** be interpreted as per the [FHIR core spec]({{site.data.fhir.path}}conformance-rules.html#conflang).§
 
-This implementation guide also adheres to the general Da Vinci-wide conformance guidance defined in the [Da Vinci Health Record Exchange (HRex)](https://hl7.org/fhir/us/davinci-hrex/STU1.1/conformance.html) implementation guide. 
+This implementation guide also adheres to the general Da Vinci-wide conformance guidance defined in the [Da Vinci Health Record Exchange (HRex)](https://hl7.org/fhir/us/davinci-hrex/en/conformance.html) implementation guide. 
 </div>
 
 ### MustSupport
@@ -14,7 +14,7 @@ Certain elements in the profiles defined in this implementation guide are marked
 
 This IG uses US Core profiles where appropriate, therefore, the implications of the Must Support flag for US Core profiles must also be followed. <span class="bg-success" markdown="1">See the mustSupport rules for the [US Core]({{site.data.fhir.ver.uscore7}}/must-support.html), which apply to content adhering to data elements profiled in those guides.</span><!-- new-content --> 
 
-<span class="bg-success" markdown="1">The rules around mustSupport elements defined in [HRex](https://hl7.org/fhir/us/davinci-hrex/STU1.1/conformance.html#mustsupport) are also expected to apply to all Da Vinci implementation guides.</span><!-- new-content --> 
+<span class="bg-success" markdown="1">The rules around mustSupport elements defined in [HRex](https://hl7.org/fhir/us/davinci-hrex/en/conformance.html#mustsupport) are also expected to apply to all Da Vinci implementation guides.</span><!-- new-content --> 
 
 For more information, see the definition of [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) in the base FHIR specification.
 

@@ -11,6 +11,7 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact deprecated="true" id="StructureDefinition/ra-annotation" key="StructureDefinition-ra-annotation" name="Annotation"/>
+<artifact id="Bundle/ra-measurereport-with-remark" key="Bundle-ra-measurereport-with-remark" name="Bundle example Risk Adjustment MeasureReport with Remark Bundle"/>
 <artifact id="Bundle/ra-riskgap-data1" key="Bundle-ra-riskgap-data1" name="Bundle example for the data parameter of the risk-gap operation"/>
 <artifact id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Clinical Data Collection Deadline Extension"/>
 <artifact deprecated="true" id="ValueSet/coding-gap-annotation" key="ValueSet-coding-gap-annotation" name="Coding Gap Annotation"/>
