@@ -41,7 +41,8 @@ parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
     - input/pagecontent
     - input/intro-notes
     - fsh-generated/includes    
-  path-expansion-params: '../../input/exp-params.json'  # for using US ed of SNOMED
+  # path-expansion-params: '../../input/exp-params.json'  # for using US ed of SNOMED
+  path-expansion-params: '../../input/parameters-manifest.json' 
   path-history: http://hl7.org/fhir/us/davinci-ra/history.html
   apply-publisher: true
   apply-contact: true

@@ -137,3 +137,6 @@ WARNING: DA VINCI: This IG does not depend on HRex.  Either add a formal depende
 
 # Approved by Da Vinci on 3/16/2026 to place Use Cases as the third menu item under Background.
 WARNING: DA VINCI: The second menu item under Background should have the label Use Cases.
+
+# Used to set the SNOMED US edition for terminology expansion. It is not a navigable IG page.
+%The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide% 
