@@ -1,6 +1,6 @@
 
 {% assign id = {{page.id}} %}
-
+See the Use Cases page [Pre-Visit and Encounter-Time Risk Adjustment](usecases.html#pre-visit-and-encounter-time-risk-adjustment) section for an example use case for this operation. 
 
 ### Custom Header: contextId
 

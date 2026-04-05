@@ -1,12 +1,10 @@
-<div class="new-content" markdown="1">
 ### Conformance Language
 
-§This implementation guide makes use of conformance language such as **SHALL**, **SHOULD** and **MAY** to describe the behavior of systems.§
+<span class="bg-success" markdown="1">§This implementation guide makes use of conformance language such as **SHALL**, **SHOULD** and **MAY** to describe the behavior of systems.§<!-- new-content -->
 
-§The meaning of these words **SHALL** be interpreted as per the [FHIR core spec]({{site.data.fhir.path}}conformance-rules.html#conflang).§
+<span class="bg-success" markdown="1">§The meaning of these words **SHALL** be interpreted as per the [FHIR core spec]({{site.data.fhir.path}}conformance-rules.html#conflang).§<!-- new-content -->
 
-This implementation guide also adheres to the general Da Vinci-wide conformance guidance defined in the [Da Vinci Health Record Exchange (HRex)](https://hl7.org/fhir/us/davinci-hrex/en/conformance.html) implementation guide. 
-</div>
+<span class="bg-success" markdown="1">This implementation guide also adheres to the general Da Vinci-wide conformance guidance defined in the [Da Vinci Health Record Exchange (HRex)](https://hl7.org/fhir/us/davinci-hrex/en/conformance.html) implementation guide. <!-- new-content -->
 
 ### MustSupport
 
@@ -18,12 +16,11 @@ This IG uses US Core profiles where appropriate, therefore, the implications of 
 
 For more information, see the definition of [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) in the base FHIR specification.
 
-<div class="new-content" markdown="1">
 ### CapabilityStatement Requirements 
-§In order to conform to this implementation guide, in addition to adhering to any relevant 'SHALL' statements, a system **SHALL** conform to at least one of the CapabilityStatements based on their role(s) listed here:§
+
+<span class="bg-success" markdown="1">§In order to conform to this implementation guide, in addition to adhering to any relevant 'SHALL' statements, a system **SHALL** conform to at least one of the CapabilityStatements based on their role(s) listed here:§<!-- new-content -->
 
 * [Risk Adjustment Reporting Server Capability Statement](CapabilityStatement-ra-reporting-server.html)
 * [Risk Adjustment Reporting Client Capability Statement](CapabilityStatement-ra-reporting-client.html)
 * [Risk Adjustment Data Submission Client Capability Statement](CapabilityStatement-ra-data-submission-client.html)
 * [Risk Adjustment Data Submission Server Capability Statement](CapabilityStatement-ra-data-submission-server.html)
-</div>

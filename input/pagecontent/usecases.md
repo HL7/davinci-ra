@@ -48,9 +48,35 @@ Note: The [Condition Category Remark] extension is not intended to change the st
 
 #### Submit Data to Payer
 
- To return clinical data, the Provider will use the [Risk Adjustment Data Exchange MeasureReport] and the [$submit-data] operation to submit data to Payer. The Payer will then be able to use the provided patient data to update the data in their system that will be included on their next coding gap report generation.
+To return clinical data, the Provider will use the [Risk Adjustment Data Exchange MeasureReport] and <span class="bg-success" markdown="1">FHIR Resful API</span><!-- new-content --> to submit data to Payer. The Payer will then be able to use the provided patient data to update the data in their system that will be included on their next coding gap report generation.
 
 See the [Submit Data to Payer] page for more details and guidance. 
+
+
+### Pre-Visit and Encounter-Time Risk Adjustment
+
+<span class="bg-success" markdown="1">This section describes how a provider and payer can use the [$risk-gap](OperationDefinition-risk-gap.html) operation to support proactive clinical gap closure during a patient’s upcoming visit.<!-- new-content -->
+
+<span class="bg-success" markdown="1">In this example use case, patient A is establishing care with a new primary care physician (PCP). Patient A has a scheduled appointment approximately one month from today. The clinic and payer exchange information related to potential risk conditions before and during the visit, enabling accurate and timely assessment.<!-- new-content -->
+
+* <span class="bg-success" markdown="1">Pre-Visit Initialization:<!-- new-content --> 
+<span class="bg-success" markdown="1">en days prior to the appointment, the Electronic Medical Record (EMR) system initiates a Risk Adjustment request API to the payer, which is the $risk-gap. The request includes a unique event identifier, the `contextId` that’s provided in the HTTP header of the operation, as part of the pre-visit workflow for the upcoming encounter.<!-- new-content -->
+The payer responds with current risk gaps and suspected conditions, returning the same unique event identifier for linkage by using the [Context Id](StructureDefinition-ra-contextId.html) extension of the [Risk Adjustment Coding Gap Report](StructureDefinition-ra-measurereport.html) profile. <!-- new-content -->
+* <span class="bg-success" markdown="1">Pre-Visit Chart Review:<!-- new-content --> 
+<span class="bg-success" markdown="1">The clinic has a partnership with a third-party vendor to conduct pre-visit chart reviews on their behalf. A clinical nurse reviews past medical records and documents additional information related to Patient A’s Sarcoidosis condition, noting historical pulmonology visits and previous fills of associated medications. This pre-visit activity enhances the completeness of clinical data for accurate risk capture.<!-- new-content -->
+* <span class="bg-success" markdown="1">Appointment Preparation:<!-- new-content --> 
+<span class="bg-success" markdown="1">One to two days before the visit, the PCP nurse prepares the upcoming visit in the system. The system transitions the appointment into a forthcoming Encounter resource.<!-- new-content -->
+<span class="bg-success" markdown="1">A subsequent Risk Adjustment request, using the $risk-gap operation, may be sent to the payer. The API call maintains the same unique event identifier (via `contextId`) sent in the first $risk-gap API call since it is related to the same event/visit. Current/updated risk gaps, conditions, and corresponding information are returned in the API response, allowing the care team to address pending items during the encounter. Insurance eligibility is also verified as part of the preparation. <!-- new-content -->
+* <span class="bg-success" markdown="1">Day of Visit:<!-- new-content --> 
+<span class="bg-success" markdown="1">During the appointment, the PCP reviews Patient A’s conditions, assess the patient, and documents clinical findings in the patient’s record. Risk gaps are actively addressed as part of routine care.<!-- new-content -->
+* <span class="bg-success" markdown="1">Feedback on Conditions:<!-- new-content --> 
+<span class="bg-success" markdown="1">Following the assessment, the EMR system will send a feedback API communicating actions taken on the condition to the payer, by adding condition category remark (see [Add Remark to Condition Category](cc-remark.html)) to a Risk Adjustment Coding Gap Report. The gap report contains the same unique identifier (`contextId`) for the event. <!-- new-content -->
+
+<span class="bg-success" markdown="1">Payer can utilize the unique identifier for the event to track/tie together when a request was received, date of the event, when PCP took an action on the condition. <!-- new-content --> 
+
+<span class="bg-success" markdown="1">By maintaining a consistent unique event identifier across pre-visit, encounter-time, and feedback transactions, this information can be used to monitor providers adoption rate, timing of assessing the condition, and determining incentive payments.<!-- new-content -->
+
+<span class="bg-success" markdown="1">The overarching goal is to encourage providers to assess the condition when they are seeing the patient, versus waiting until the last couple months of the year. This real-time exchange supports higher accuracy in risk adjustment, more complete clinical documentation, and improved care coordination.<!-- new-content -->
 
 ### Attribution
 

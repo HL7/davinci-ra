@@ -1,7 +1,5 @@
 
-<div class="new-content" markdown="1">
-- New content highlighted in green where possible.
-</div>
+- <span class="bg-success" markdown="1">New content highlighted in green where possible.<!-- new-content -->
 
 ###  Summary
 

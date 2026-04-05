@@ -27,9 +27,8 @@ The Risk Adjustment Data Exchange MeasureReport provides a way to link the submi
 
 After the Payer receives and processes the clinical evaluation evidence data submitted by the Provider, the data will then be used for the next coding gap evaluation and coding gap reports generation. If Provider identifies issues with the gaps shown on the new coding gap reports, they will use the data submission process again to submit proper data and documentation to address the issues.
 
-<div class="new-content" markdown="1">
 {% include img-portrait.html img="submit-data.png" caption="Figure 2.4-2: Submit Data Using POST"%}
-</div>
+
 {% include link-list.md %}
 
 

@@ -5,6 +5,7 @@ List of extensions defined in this implementation guide:
 - [Condition Category Remark Extension](StructureDefinition-ra-ccRemark.html)
 - [Condition Category Type Extension](StructureDefinition-ra-ccType.html)
 - [Confidence Scale Extension](StructureDefinition-ra-confidenceScale.html)
+- <span class="bg-success" markdown="1">[Context Id Extension](StructureDefinition-ra-contextId.html)</span><!-- new-content -->
 - [Diagnosis Code Extension](StructureDefinition-ra-dxCode.html)
 - [Evidence Status Extension](StructureDefinition-ra-evidenceStatus.html)
 - [Evidence Status Date Extension](StructureDefinition-ra-evidenceStatusDate.html)
