@@ -1,6 +1,12 @@
 
 The Risk Adjustment Implementation Guide was developed under the  [Davinci Project](#)
 
+### version 3.0.0
+
+**Non-substantive changes**:
+- [FHIR-57183](https://jira.hl7.org/browse/FHIR-57183) - Clarified that mutually agreed patient populations, including all related RA content, are subject to inherited HRex and core FHIR security, privacy, and provenance requirements.
+- [FHIR-57182](https://jira.hl7.org/browse/FHIR-57182) - Clarified dCC’s technical scope and added a reminder on applicable coding rules and policies.
+
 ### version 3.0.0-ballot 
 
 **Breaking changes**:
