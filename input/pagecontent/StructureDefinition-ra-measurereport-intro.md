@@ -25,10 +25,10 @@ The following data-elements must always be present (Mandatory) or must be suppor
 1. Each `MeasureReport.group` *should* have zero to many `MeasureReport.evalautedResource` element
 
 **Each {{site.data.structuredefinitions.[id].type}} *may* have ([Must Support]):**
-1. <span class="bg-success" markdown="1">A MeasureReport *may* have zero to many `contextId` element</span><!-- new-content -->
+1. A MeasureReport *may* have zero to one `contextId` element
 1. Each `MeasureReport.group` *may* have zero to one `MeasureReport.group.confidenceScale` element
 1. Each `MeasureReport.group` *may* have zero to many `MeasureReport.group.ccRemark` element
-1. <span class="bg-success" markdown="1">Each `MeasureReport.group` *may* have zero to many `MeasureReport.group.qualifyingDxCode` element</span><!-- new-content -->
+1. Each `MeasureReport.group` *may* have zero to many `MeasureReport.group.qualifyingDxCode` element
 
 **Additional Profile specific implementation guidance:**
 1. §`evaluatedResource` **SHALL** reference resources using USCore profiles where applicable§

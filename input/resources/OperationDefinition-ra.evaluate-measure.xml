@@ -79,11 +79,8 @@
         <name value="return"/>
         <use value="out"/>
         <min value="0"/>
-        <max value="1"/>
-        <documentation value="The $ra.evaluate-measure operation will always return one [Parameters](https://www.hl7.org/fhir/parameters.html) whether the subject is a single patient or a group of patients.
-[Risk Adjustment Coding Gap Report Bundle](StructureDefinition-ra-measurereport-bundle.html) for a patient is in a `Parameters.parameter` element.
-A Risk Adjustment Coding Gap Report Bundle contains the Risk Adjustment Coding Gap Reports for the same patient.
-For example, if a Group has 10 valid patients, then a [Parameters](https://www.hl7.org/fhir/parameters.html) will contain 10 `Parameters.parameter`elements, with each `Parameters.parameter` for a unique patient."/>
+        <max value="*"/>
+        <documentation value="The results of the digital Condition Category measure evaluation, returned as a Bundle for each subject (i.e., separate Bundle for each individual patient in a group)."/>
         <type value="Bundle"/>
     </parameter>
 </OperationDefinition>

@@ -48,10 +48,10 @@ The MeasureReport resource has zero to many `group` elements. Each `group` eleme
  - the evidence status of a Condition Category (CC) coding gap that is either closed-gap, open-gap, invalid-gap or pending;
  - the evidence status date indicating when the evidence status was changed to either closed-gap, open-gap, invalid-gap or pending; and
  - the hierarchical status indicating whether hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded. The status can be either applied-superseded, applied-not-superseded, not-applied, or not-applicable.
- - <span class="bg-success" markdown="1">diagnosis code(s) for the diagnosis/condition of the patient that attributed to the Condition Category (CC)</span><!-- new-content -->
- - <span class="bg-success" markdown="1">diagnosis codes classified under a Condition Category as defined by the risk adjustment model.</span><!-- new-content --> 
- - <span class="bg-success" markdown="1">confidence scale of the coding gap</span><!-- new-content -->
- - <span class="bg-success" markdown="1">remarks about a Condition Category (CC)</span><!-- new-content -->
+ - diagnosis code(s) for the diagnosis/condition of the patient that attributed to the Condition Category (CC)
+ - diagnosis codes classified under a Condition Category as defined by the risk adjustment model.
+ - confidence scale of the coding gap
+ - remarks about a Condition Category (CC)
 
 In addition, the [Risk Adjustment Coding Gap Report] provides the capability of sharing supporting evidence for a Condition Category (CC) through the use of the `MeasureReport.evaluatedResource` element. §This supporting evidence may include resources for data such as encounters, lab results, medications, and procedures, and the `evaluatedResource` SHALL reference the appropriate US Core profile.§ The extension [ra-groupReference](StructureDefinition-ra-groupReference.html) added to the `evaluatedResource` element enables tying a specific supporting evidence to a Condition Category (CC). This is accomplished by setting the extension’s `valueString` to be the same value of the `MeasureGroup.group.id` of the Condition Category (CC) to establish the association between the supporting evidence and one or more Condition Categories.  
 
@@ -98,9 +98,9 @@ The table below defines a standardized CSV header that could be used for the Ass
 |evidenceStatus|Coding gap evidence status|`MeasureReport.group.evidenceStatus`|open-gap|
 |evidenceStatusDate|Coding gap evidence status date|`MeasureReport.group.evidenceStatusDate`|4/1/2021|
 |hierarchicalStatus|Coding gap hierarchical status|`MeasureReport.group.hierarchicalStatus`|applied-not-superseded|
-|<span class="bg-success" markdown="1">dxCode</span><!-- new-content -->|Digagnosis code|`MeasureReport.group.dxCode`|E11.22|
-|<span class="bg-success" markdown="1">confidenceScale</span><!-- new-content -->|Confidence scale|`MeasureReport.group.confidenceScale`|75540009|
-|<span class="bg-success" markdown="1">qualifyingDxCode</span><!-- new-content -->|Qualifying digagnosis code|`MeasureReport.group.qualifyingDxCode`|E08.21,E08.22,E09.21,E09.22,E10.21,E10.22,E11.21,E11.22,E10.40,E10.41,E10.42,E10.43|
+|dxCode|Digagnosis code|`MeasureReport.group.dxCode`|E11.22|
+|confidenceScale|Confidence scale|`MeasureReport.group.confidenceScale`|75540009|
+|qualifyingDxCode|Qualifying digagnosis code|`MeasureReport.group.qualifyingDxCode`|E08.21,E08.22,E09.21,E09.22,E10.21,E10.22,E11.21,E11.22,E10.40,E10.41,E10.42,E10.43|
 {:.grid}
 
 {% include examplebutton.html example="get-risk-adjustment-assisted-csv-example" b_title ="Click Here To See Example Assisted CSV" %}

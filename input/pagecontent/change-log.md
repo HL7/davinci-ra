@@ -3,7 +3,9 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 
 ### version 3.0.0
 **Substantive changes**:
+- [FHIR-57106](https://jira.hl7.org/browse/FHIR-57106) - Changed cardinality of the contextId extesion on Risk Adjustment Coding Gap Report to 0..1.
 - [FHIR-57178](https://jira.hl7.org/browse/FHIR-57178) - Added additional remark reason codes.
+- [FHIR-57151](https://jira.hl7.org/browse/FHIR-57151), [FHIR-57148](https://jira.hl7.org/browse/FHIR-57148) - Changed the return cardinality to 0..* and clarified a separate Bundle per patient.
 
 **Non-substantive changes**:
 - [FHIR-57183](https://jira.hl7.org/browse/FHIR-57183) - Clarified that mutually agreed patient populations, including all related RA content, are subject to inherited HRex and core FHIR security, privacy, and provenance requirements.

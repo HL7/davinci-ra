@@ -73,7 +73,7 @@
       <path value="MeasureReport.extension"/>
       <sliceName value="contextId"/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
       <type>
         <code value="Extension"/>
         <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-contextId"/>

@@ -16,7 +16,7 @@ This [Condition Category Remark] extension is added to the [Risk Adjustment Codi
 - `code` a coded remark indicating what happened at the time of the remark. For example, when a provider sees the patient and decides a condition is present, therefore adds a remark using the code `assessed-present`. The value set binding for the `code` is extensible, which includes `assessed-present`, `assessed-not-present`, `in-progress`, `not-assessed`, `not-presented`, `deferred`, and `not-ingested`.
 - `reasonCode` coded reason for why remark is added. The value set which is extensible includes `never-had-condition`, `inactive-condition`, and `inapplicable-gap`.
 - `relatedDataIentifier` an identifier field that can be used to link to a claim or document such as a Continuity of Care Document (CCD) that the Provider is sending via another method or transaction.
-- <span class="bg-success" markdown="1">`remarkType` to indicate the type of remark.</span><!-- new-content -->
+- `remarkType` to indicate the type of remark.
 
 §The Provider's system being used SHALL NOT change any other part of the original Risk Adjustment Coding Gap Report and can only add the [Condition Category Remark] to the appropriate `MeasureReport.group`(s).§  If a provider wants to share data with the Payer in order to change a coding gap status, they should use the [Submit Data to Payer] process.  
 
@@ -26,7 +26,7 @@ If a Payer or someone acting on behalf of the Payer like a Risk Adjustment Coder
 
 If a Provider, the Provider's EMR, or a Risk Adjustment Coder working on their behalf adds a remark to the Risk Adjustment Coding Gap Report, the [Condition Category Remark] can be added to the Report with the [PATCH](https://www.hl7.org/fhir/http.html#patch) process or the entire MeasureReport with the added [Condition Category Remark] extension(s) can be POSTed to the Provider's system.
 
-<span class="bg-success" markdown="1">The third option is to use the [$submit-remark-data](OperationDefinition-submit-remark-data.html) operation to submit Risk Adjustment Coding Gap Report(s) with Condition Category Remark(s), and any referenced resources if applicable, as a Bundle. </span><!-- new-content -->
+The third option is to use the [$submit-remark-data](OperationDefinition-submit-remark-data.html) operation to submit Risk Adjustment Coding Gap Report(s) with Condition Category Remark(s), and any referenced resources if applicable, as a Bundle. 
 
 {% include img-portrait.html img="report-cc-remark-overview-provider.png" caption="Figure 2.5-2 Provider Add Remark to Condition Category Overview"%}
 
@@ -37,7 +37,7 @@ If a Provider, the Provider's EMR, or a Risk Adjustment Coder working on their b
 #### POST 
 The Provider can POST Risk Adjustment Coding Gap Report that includes Condition Category remark(s) with any referenced Resources together as a transaction Bundle. 
 
-<span class="bg-success" markdown="1">The [$submit-remark-data](OperationDefinition-submit-remark-data.html)) operation could also be used to submit one or more Risk Adjustment Coding Gap Report(s) with Condition Category Remark(s) and any referenced resources as a Bundle. </span><!-- new-content -->
+The [$submit-remark-data](OperationDefinition-submit-remark-data.html)) operation could also be used to submit one or more Risk Adjustment Coding Gap Report(s) with Condition Category Remark(s) and any referenced resources as a Bundle. 
 
 #### PATCH
 In scenarios where PATCH is feasible, for example, no referenced Resources also need to be sent together with the Condition Category remark, the Provider may choose to send the Condition Category remark only to the Payer using a light weight approach rather than sending the entire MeasureReport resource. They can do this using the [PATCH](https://www.hl7.org/fhir/http.html#patch) operation.
