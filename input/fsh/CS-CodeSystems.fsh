@@ -50,9 +50,17 @@ Id: remark-reason
 Description: "Reason codes for remark"
 * ^experimental = false
 * ^caseSensitive = true
-* #never-had-condition "Patient never had the condition" "Reason for the assessed-not-present remark is because the patient has never had this condition."
+* #additional-evidence-needed "Additional Evidence Needed" "Reason primarily for the in-progress remark and sometimes for the deferred remark. Available information reviewed by the remarking actor is insufficient to confirm the Condition Category as present or to invalidate it as not present. Additional clinical documentation, outside records, patient evaluation, diagnostic results, or reconciliation is needed before the gap can be resolved."
+* #already-submitted "Data Already Submitted" "Reason for the assessed-present or assessed-not-present remark. Clinical evidence addressing this coding gap was previously submitted to the payer."
+* #attribution-routing-mismatch "Attribution or Routing Mismatch" "Reason primarily for the not-assessed remark and sometimes for the not-presented or the not-ingested remark. The remarking actor indicates that the Condition Category gap appears to have been attributed, assigned, or routed to the wrong clinician, organization, care team, or other responsible party. The gap may require reassignment, rerouting, attribution correction, or review of supporting evidence context before assessment by the appropriate party."
 * #inactive-condition "Condition no longer active" "Reason for the assessed-not-present remark is because the patient's condition is no longer active."
 * #inapplicable-gap "Inapplicable gap" "Reason for the assessed-not-present remark is because the patient has an active condition but the gap does not accurately describe it."
+* #never-had-condition "Patient never had the condition" "Reason for the assessed-not-present remark is because the patient has never had this condition."
+* #outside-specialty-scope "Outside Clinician Specialty or Scope" "Reason for the not-assessed remark. Assessment or confirmation of this condition is outside the rendering clinician’s specialty or scope of practice."
+* #patient-declined-evaluation "Patient Declined Evaluation" "Reason for the not-assessed remark. The patient was offered an evaluation to address this gap but declined assessment."
+* #patient-not-evaluated "Patient Not Evaluated During Period" "Reason for the not-assessed remark. The patient was not seen or evaluated by the provider during the relevant reporting period."
+* #payer-attribution-mismatch "Payer Attribution Mismatch" "Reason for the not-presented remark. The patient is not attributed to this provider or organization based on the payer’s records."
+* #requires-follow-up "Requires Patient Follow-up" "Reason for the deferred remark. Further assessment or action is needed to address the coding gap at a future patient encounter."
 
 CodeSystem: RATemporaryCodes
 Title: "RA Temporary Code System"
