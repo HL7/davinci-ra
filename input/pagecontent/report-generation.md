@@ -12,6 +12,8 @@ Many risk adjustment models are constructed in such a way as to differentiate be
 
 There are many potential uses for CC gap information. For example, a provider may seek to take action on open gaps, or they may want confirmation of their previous gap closure or gap invalidation actions from the payer, or they may want to calculate their gap closure performance under the terms of a value-based payment arrangement. In general, the Payer will not know in advance which of these purposes the data will be used for, so the approach that has been taken in this implementation guide (IG) is for the Payer to provide as much CC gap data as possible, with flags on the data so that the Provider may filter the CC gaps on the receiving end. This makes it possible for the IG to support as broad a range of applications as possible. Data filtering is the responsibility of the recipient.
 
+An open risk adjustment coding gap is not itself a diagnosis or a coding directive; treating clinicians remain responsible for applying their clinical judgment and applicable documentation requirements when deciding whether to record or confirm any diagnosis.
+
 To summarize: the ccType of a CC gap may be historic, suspected, or net-new; its evidenceStatus may be open-gap, closed-gap, pending, or invalid; and its hierarchicalStatus may be applied-superseded, applied-not-superseded, not-applied, or not-applicable (e.g., if the model is non-hierarchical.) These three flags can be used to facilitate data filtering by the requester.
 
 Once the CC gaps have been identified and their filtering flags are set, the next task is to put them into a FHIR MeasureReport. This IG provides two approaches to do this.

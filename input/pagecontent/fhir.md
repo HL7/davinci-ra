@@ -11,7 +11,7 @@ This implementation guide uses terminology, notations and design principles that
 
 This implementation guide supports the [R4]({{site.data.fhir.path}}index.html) version of the FHIR standard and builds on the [US Core 3.1 (FHIR R4)]({{site.data.fhir.ver.uscore3}}), [US Core 6.1 (FHIR R4)]({{site.data.fhir.ver.uscore6}}), and [US Core 7.0 (FHIR R4)]({{site.data.fhir.ver.uscore7}}) implementation guides. Implementers therefore need to familiarize themselves with those profiles as well. The general implementation notes and guidance on the resource pages of these guides will apply to Da Vinci implementations as they would in any other. A complete list of the FHIR resources in the core specification can be found [here]({{site.data.fhir.path}}resourcelist.html)
 
-<span class="bg-success" markdown="1">The table below lists the resources profiled or otherwise used in this specification. Implementers should review the general descriptions and usage notes for these resources for additional implementation guidance.<!-- new-content -->
+The table below lists the resources profiled or otherwise used in this specification. Implementers should review the general descriptions and usage notes for these resources for additional implementation guidance.
 
 <table class="grid">
   <thead>
@@ -62,7 +62,7 @@ This implementation guide supports the [R4]({{site.data.fhir.path}}index.html) v
         <td>Used in examples. MeasureReport.evaluatedResource could reference an Observation</td>
     </tr>      
     <tr>
-        <td><a href="{{site.data.fhir.path}}operationdefinition.html">OperationdeDinition</a></td>
+        <td><a href="{{site.data.fhir.path}}operationdefinition.html">OperationDefinition</a></td>
         <td>Used to represent operations used by this IG</td>
     </tr>           
     <tr>

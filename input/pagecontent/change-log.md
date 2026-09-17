@@ -6,6 +6,10 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 **Non-substantive changes**:
 - [FHIR-57183](https://jira.hl7.org/browse/FHIR-57183) - Clarified that mutually agreed patient populations, including all related RA content, are subject to inherited HRex and core FHIR security, privacy, and provenance requirements.
 - [FHIR-57182](https://jira.hl7.org/browse/FHIR-57182) - Clarified dCC’s technical scope and added a reminder on applicable coding rules and policies.
+- [FHIR-57177](https://jira.hl7.org/browse/FHIR-57177) - Clarified that RA coding gaps are not diagnoses or coding directives.
+- [FHIR-57102](https://jira.hl7.org/browse/FHIR-57102) - Removed the eligibility-verification statement because it is outside the Risk Adjustment workflow.
+- [FHIR-57100](https://jira.hl7.org/browse/FHIR-57100), [FHIR-57097](https://jira.hl7.org/browse/FHIR-57097)- Fixed typos.
+- [FHIR-57170](https://jira.hl7.org/browse/FHIR-57170) - Clarified that suspected conditions are risk-adjustable medical conditions identified through the payer’s risk-adjustment processes
 
 ### version 3.0.0-ballot 
 
