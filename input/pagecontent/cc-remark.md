@@ -26,8 +26,6 @@ If a Payer or someone acting on behalf of the Payer like a Risk Adjustment Coder
 
 If a Provider, the Provider's EMR, or a Risk Adjustment Coder working on their behalf adds a remark to the Risk Adjustment Coding Gap Report, the [Condition Category Remark] can be added to the Report with the [PATCH](https://www.hl7.org/fhir/http.html#patch) process or the entire MeasureReport with the added [Condition Category Remark] extension(s) can be POSTed to the Provider's system.
 
-The third option is to use the [$submit-remark-data](OperationDefinition-submit-remark-data.html) operation to submit Risk Adjustment Coding Gap Report(s) with Condition Category Remark(s), and any referenced resources if applicable, as a Bundle. 
-
 {% include img-portrait.html img="report-cc-remark-overview-provider.png" caption="Figure 2.5-2 Provider Add Remark to Condition Category Overview"%}
 
 {% include img-portrait.html img="report-cc-remark-workflow.png" caption="Figure 2.5-3 Report Condition Category Remark Workflow when the Provider adds the Remark"%}
@@ -35,12 +33,10 @@ The third option is to use the [$submit-remark-data](OperationDefinition-submit-
 ### Provider Handling of the Condition Category Remark
 
 #### POST 
-The Provider can POST Risk Adjustment Coding Gap Report that includes Condition Category remark(s) with any referenced Resources together as a transaction Bundle. 
-
-The [$submit-remark-data](OperationDefinition-submit-remark-data.html)) operation could also be used to submit one or more Risk Adjustment Coding Gap Report(s) with Condition Category Remark(s) and any referenced resources as a Bundle. 
+The Provider can POST Risk Adjustment Coding Gap Report that includes Condition Category remark(s) with any referenced Resources by the remark as a transaction Bundle; or POST Risk Adjustment Coding Gap Report MeasureReport resource itself without any referenced resources. When submitting a Bundle, the [Risk Adjustment MeasureReport With Remark Bundle](StructureDefinition-ra-measurereport-remark-bundle.html) profile defines the expected Bundle structure.
 
 #### PATCH
-In scenarios where PATCH is feasible, for example, no referenced Resources also need to be sent together with the Condition Category remark, the Provider may choose to send the Condition Category remark only to the Payer using a light weight approach rather than sending the entire MeasureReport resource. They can do this using the [PATCH](https://www.hl7.org/fhir/http.html#patch) operation.
+A Condition Category Remark may reference resources such as Pracitioner and Condition, using PATCH to submit the remark may not be feasible. So, if Payer's server supports this PATCH functionality and no referenced Resources need to be sent with the Condition Category remark, the Provider may choose to send the Condition Category remark only to the Payer using a light weight approach rather than sending the entire MeasureReport resource. They can do this using the [PATCH](https://www.hl7.org/fhir/http.html#patch) operation.
 
 A [RA Parameters ccRemark Patch Profile] is defined to specify the structures of using the Parameter resource to send the remark using the PATCH operation. 
 

@@ -6,6 +6,8 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 - [FHIR-57106](https://jira.hl7.org/browse/FHIR-57106) - Changed cardinality of the contextId extesion on Risk Adjustment Coding Gap Report to 0..1.
 - [FHIR-57178](https://jira.hl7.org/browse/FHIR-57178) - Added additional remark reason codes.
 - [FHIR-57151](https://jira.hl7.org/browse/FHIR-57151), [FHIR-57148](https://jira.hl7.org/browse/FHIR-57148) - Changed the return cardinality to 0..* and clarified a separate Bundle per patient.
+- [FHIR-57105](https://jira.hl7.org/browse/FHIR-57105) - Clarified when a Condition Category Remark may be submitted alone using PATCH versus with referenced resources in a transaction Bundle. Removed the $submit-remark-data operation in favor of POSTing bundles. Retained the Risk Adjustment MeasureReport With Remark Bundle profile to define the expected bundle structure.
+
 
 **Non-substantive changes**:
 - [FHIR-57183](https://jira.hl7.org/browse/FHIR-57183) - Clarified that mutually agreed patient populations, including all related RA content, are subject to inherited HRex and core FHIR security, privacy, and provenance requirements.
