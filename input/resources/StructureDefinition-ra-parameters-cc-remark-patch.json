@@ -84,10 +84,11 @@
         "path": "Parameters.parameter.name",
         "fixedString": "operation"
       },
-
       {
         "id": "Parameters.parameter:operation.part",
         "path": "Parameters.parameter.part",
+        "min": 4,
+        "max": "*",        
         "slicing": {
           "discriminator": [
             {
@@ -99,7 +100,6 @@
           "rules": "open"
         }
       },
-
       {
         "id": "Parameters.parameter:operation.part:type",
         "path": "Parameters.parameter.part",
@@ -218,7 +218,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "min": 1,
+        "min": 2,
         "max": "*"        
       },
       {
