@@ -49,3 +49,13 @@ Description: "Type of Condition Category Remark"
 * ^experimental = false
 * #evidence-note from system RATemporaryCodes
 
+ValueSet: ConfidenceScale
+Title: "RA Confidence Scale"
+Id: confidence-scale
+Description: "Codes that describe the confidence scale of a risk adjustment Condition Category (CC)."
+* ^experimental = false
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."
+* http://snomed.info/sct#62482003
+* http://snomed.info/sct#255508009
+* http://snomed.info/sct#75540009
+* http://snomed.info/sct#260360000
