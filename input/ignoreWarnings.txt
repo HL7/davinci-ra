@@ -1,12 +1,6 @@
 == Suppressed Messages ==
 
 # CMS-HCC is external code system and not supported for codes validation.
-ERROR: ValueSet/sample-cmshcc: ValueSet.compose.include[0].concept[1]: The code '88' is not valid in the system http://terminology.hl7.org/CodeSystem/cmshcc (A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' could not be found, so the code cannot be validated)
-ERROR: ValueSet/sample-cmshcc: ValueSet.compose.include[0].concept[2]: The code '112' is not valid in the system http://terminology.hl7.org/CodeSystem/cmshcc (A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' could not be found, so the code cannot be validated)
-ERROR: ValueSet/sample-cmshcc: ValueSet.compose.include[0].concept[1].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' could not be found, so the code cannot be validated
-ERROR: ValueSet/sample-cmshcc: ValueSet.compose.include[0].concept[2].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' could not be found, so the code cannot be validated
-
-# CMS-HCC is external code system and not supported for codes validation.
 WARNING: ValueSet.where(id = 'sample-cmshcc'): Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' could not be found, so the value set cannot be expanded
 WARNING: Bundle/ra-bundle01: Bundle.entry[0].resource/*MeasureReport/ra-measurereport01*/.group[0].code.coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' version '24' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: Bundle/ra-bundle01: Bundle.entry[0].resource/*MeasureReport/ra-measurereport01*/.group[1].code.coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' version '24' could not be found, so the code cannot be validated. No versions of this code system are known
@@ -76,26 +70,23 @@ WARNING: MeasureReport/ra-measurereport05: MeasureReport.group[3].code.coding[0]
 WARNING: MeasureReport/ra-measurereport05: MeasureReport.group[4].code.coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' version '5' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: MeasureReport/ra-measurereport05: MeasureReport.group[5].code.coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' version '5' could not be found, so the code cannot be validated. No versions of this code system are known
 WARNING: MeasureReport/ra-measurereport06: MeasureReport.group[0].code.coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmsrxhcc' version '5' could not be found, so the code cannot be validated. No versions of this code system are known
-
-INFORMATION: ValueSet/sample-cmshcc: ValueSet.compose.include[0].concept[0]: Resolved system http://terminology.hl7.org/CodeSystem/cmshcc (v1.1.0), but the definition doesn't include any codes, so the code has not been validated
+INFORMATION: ValueSet/sample-cmshcc: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system 'http://terminology.hl7.org/CodeSystem/cmshcc' is not known, and no terminology service supports it
 
 # The is from the referenced US Core profile
 INFORMATION: Bundle/ra-bundle01: Bundle.entry[8].resource/*Observation/ra-obs21pat01*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
-INFORMATION: Observation/ra-obs21pat01: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
-INFORMATION: Observation/ra-obs01pat02: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
-INFORMATION: Observation/ra-obs01pat03: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+INFORMATION: Observation/ra-obs21pat01: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0 from active ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category|7.0.0
+INFORMATION: Observation/ra-obs01pat02: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0 from active ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category|7.0.0
+INFORMATION: Observation/ra-obs01pat03: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0 from active ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category|7.0.0
+INFORMATION: Bundle/ra-bundle01: Bundle.entry[8].resource/*Observation/ra-obs21pat01*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0 from active ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category|7.0.0
 
 # MEASURE_M_NO_GROUPS: This is intended. The Measure resource does not require a group.   
 A measure should contain at least one group
-
-# MEASURE_MR_M_SCORING_UNK: This is intended.  The measureScore attribute is not required.
-The scoring system in this measure is unknown, so the measureScore values cannot be checked
 
 # TSMG approved having the Code Systems in the IG: https://confluence.hl7.org/display/VOC/May+2023+-+HL7+WGM+-+Wednesday+Q3+Minutes.
 Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
 # The scope of this IG is to support USCore 3.1.1, 6.1.0 and 7.0.0.
-WARNING: ImplementationGuide/hl7.fhir.us.davinci-ra: ImplementationGuide.dependsOn[1]: The ImplementationGuide uses package hl7.fhir.us.core#7.0.0 released on 2024-05-08, but the most recent appropriate version is 8.0.1. This reference is getting old and the more recent version should be considered
+WARNING: ImplementationGuide/hl7.fhir.us.davinci-ra: ImplementationGuide.dependsOn[1]: The ImplementationGuide uses package hl7.fhir.us.core#7.0.0 released on 2024-05-08, but the most recent appropriate version is 9.0.0. This reference is getting old and the more recent version should be considered
 
 # 'authorDatetime' and 'text' are uri given to extension slices as defined in the Condition Category Remark Extension.  
 %No definition could be found for URL value 'authorDatetime'%
@@ -113,15 +104,19 @@ WARNING: ImplementationGuide/hl7.fhir.us.davinci-ra: ImplementationGuide.depends
 %Pinned the version of http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code to 7.0.0% 
 %Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole to 7.0.0%
 
+# Pinned extension to version 5.4.0
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/measurereport-category to 5.4.0%
+%Pinned the version of http://hl7.org/fhir/ValueSet/measurereport-category to 5.4.0% 
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/codeOptions to 5.4.0% 
+
+# Pinned the sharablevalueset to version 4.0.2
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2%
+
 # input\examples\Bundle-ra-bundle01.json: These are intended. The slicing includes definitions for Patient and MeasureReport but allows for others who's types are not known at build time.
 %This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle|3.0.0-ballot% 
 
-# Pinned extension to version 5.2.0
-%Pinned the version of http://hl7.org/fhir/StructureDefinition/measurereport-category to 5.2.0%
-%Pinned the version of http://hl7.org/fhir/ValueSet/measurereport-category to 5.2.0% 
-
-# Inherited from the Canonical Resource Management Infrastructure (CRMI) IG 1.0.0. The profile uses the CRMI Software System Device extension.
-INFORMATION: StructureDefinition/ra-datax-measurereport: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+# Inherited from the Canonical Resource Management Infrastructure (CRMI) IG 2.0.0. The profile uses the CRMI Software System Device extension.
+INFORMATION: StructureDefinition/ra-datax-measurereport: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
 
 # Not applicable Da Vinci Warnings - The 1.0.0-ballot is the initial ballot, Jira tracker items were not applicable.
 WARNING: DA VINCI: The Change Log page (change-log.html) does not include any Jira tracker items links for the section with title Version 0.1.0
@@ -131,6 +126,3 @@ WARNING: DA VINCI: This IG does not depend on HRex.  Either add a formal depende
 
 # Approved by Da Vinci on 3/16/2026 to place Use Cases as the third menu item under Background.
 WARNING: DA VINCI: The second menu item under Background should have the label Use Cases.
-
-# Used to set the SNOMED US edition for terminology expansion. It is not a navigable IG page.
-%The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide% 

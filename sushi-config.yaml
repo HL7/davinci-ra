@@ -53,7 +53,7 @@ parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
     - 1.0.0
     - 2.0.0
     - 2.1.0
-  shownav: true
+  shownav: 'true'
   excludettl: 'true'
   pin-canonicals: pin-multiples
 
@@ -124,13 +124,13 @@ dependencies:
     reason: |
       Needed for systems supporting USCDI v1
   hl7.fhir.uv.crmi:
-    version: 1.0.0
+    version: 2.0.0
     uri: http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi
     id: crmi
     reason: |
       Needed for the RA Data Exchange MeasureReport Profile having an extension using CRMI Software System Device profile      
   hl7.fhir.uv.extensions.r4: 
-    version: 5.2.0
+    version: 5.4.0
     reason: |
       Needed for the measurereport-category extension.  
 #  us.nlm.vsac:
