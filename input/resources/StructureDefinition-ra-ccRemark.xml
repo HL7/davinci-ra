@@ -29,7 +29,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <condition value="ra-2"/>
+     <!--<condition value="ra-2"/> -->
       <constraint>
           <key value="ra-2"/>
           <severity value="error"/>

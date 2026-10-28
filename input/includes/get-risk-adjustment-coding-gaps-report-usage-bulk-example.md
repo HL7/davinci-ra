@@ -1,5 +1,5 @@
 
-#### Examples
+#### Examples - GET Reports Using Bulk
 {:.no_toc}
 
 **Scenario:**

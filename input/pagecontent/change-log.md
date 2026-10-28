@@ -27,7 +27,7 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 **Substantive changes**:
 * [FHIR-53444](https://jira.hl7.org/browse/FHIR-53444) - Moved qualifyingDxCode from ccRemark to Risk Adjustment Coding Gap Report profile under MeasureReport.group [link](StructureDefinition-ra-measurereport.html)
 * Added new operation [$risk-gap](OperationDefinition-risk-gap.html) 
-* Added new operation [$submit-remark-data](OperationDefinition-submit-remark-data.html) and a RA MeasureReport with Remark Bundle profile (StructureDefinition-ra-measurereport-remark-bundle.html)
+* Added new operation $submit-remark-data and a RA MeasureReport with Remark Bundle profile (StructureDefinition-ra-measurereport-remark-bundle.html)
 
 **Non-substantive changes**:
 * Updated the menu to conform to the Da Vinci template for Da Vinci implementation guides. 

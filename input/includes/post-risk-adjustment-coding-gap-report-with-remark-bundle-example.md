@@ -1,4 +1,4 @@
-#### Examples
+#### Examples - POST
 {:.no_toc}
 
 **Scenario:**

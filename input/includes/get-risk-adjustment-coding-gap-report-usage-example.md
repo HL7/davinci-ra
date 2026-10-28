@@ -1,5 +1,5 @@
 
-#### Examples
+#### Examples - GET Reports
 {:.no_toc}
 
 **Scenario:**
