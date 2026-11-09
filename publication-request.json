@@ -1,11 +1,12 @@
 {
   "package-id" : "hl7.fhir.us.davinci-ra",
-  "version" : "3.0.0-ballot",
+  "version" : "3.0.0",
   "milestone" : true,
-  "path" : "http://hl7.org/fhir/us/davinci-ra/2026May",
-  "status" : "ballot",
-  "mode" : "working",
+  "path" : "http://hl7.org/fhir/us/davinci-ra/3.0.0", 
+  "status" : "trial-use",
+  "mode" : "milestone",
   "sequence" : "STU 3",
-  "desc" : "STU 3 Ballot of the Da Vinci Risk Adjustment IG",
-  "descmd" : "STU 3 Ballot of the Da Vinci Risk Adjustment IG."
+  "desc" : "Da Vinci Risk Adjustment 3.0.0 release refines coding-gap reporting and remark submission.",
+  "descmd" : "Da Vinci Risk Adjustment 3.0.0 release refines coding-gap reporting and remark submission.",
+  "changes": "change-log.html"
 }
