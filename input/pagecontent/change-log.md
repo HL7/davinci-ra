@@ -18,6 +18,7 @@ The Risk Adjustment Implementation Guide was developed under the  [Davinci Proje
 - [FHIR-57170](https://jira.hl7.org/browse/FHIR-57170) - Clarified that suspected conditions are risk-adjustable medical conditions identified through the payer’s risk-adjustment processes.
 - [FHIR-58630](https://jira.hl7.org/browse/FHIR-57630) - Added guidance that coding-gap remark codes may be updated for the same Condition Category and encounter; for example, assessed-present may later be superseded by not-assessed when an associated claim is voided.
 - [FHIR-57103](https://jira.hl7.org/browse/FHIR-57103) - Added a description of the MeasureReport-level contextId extension to the Report Generation page and linked to the Pre-visit and Encounter Time Risk Adjustment use case.
+- [FHIR-57103](https://jira.hl7.org/browse/FHIR-59825) - Corrected the narrative to reflect the relatedDataIdentifier was updated to relatedData. 
 
 ### version 3.0.0-ballot 
 
