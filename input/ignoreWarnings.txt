@@ -1,4 +1,9 @@
 == Suppressed Messages ==
+# The value authorDatetime is the relative URL of a nested extension within the ra-ccRemark extension. In the two PATCH Parameters examples, it is encoded as a valueUri in a part named url to specify the nested extension’s URL in the content being patched. It is not a standalone extension canonical URL and is not expected to resolve independently. This URI-resolution warning is therefore expected and is suppressed for these specific occurrences.
+WARNING: Parameters/ra-measurereport01-patch: Parameters.parameter[0].part[3].part[1].part[0].value.ofType(uri): No definition could be found for URL value 'authorDatetime'
+WARNING: Parameters/ra-measurereport01-patch-mult: Parameters.parameter[0].part[3].part[1].part[0].value.ofType(uri): No definition could be found for URL value 'authorDatetime'
+WARNING: Parameters/ra-measurereport01-patch-mult: Parameters.parameter[1].part[3].part[1].part[0].value.ofType(uri): No definition could be found for URL value 'text'
+WARNING: Parameters/ra-measurereport01-patch-mult: Parameters.parameter[2].part[3].part[1].part[0].value.ofType(uri): No definition could be found for URL value 'authorDatetime'
 
 # CMS-HCC is external code system and not supported for codes validation.
 WARNING: ValueSet.where(id = 'sample-cmshcc'): Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/cmshcc' could not be found, so the value set cannot be expanded
@@ -86,10 +91,6 @@ Most code systems defined in HL7 IGs will need to move to THO later during the p
 
 # The scope of this IG is to support USCore 3.1.1, 6.1.0 and 7.0.0.
 WARNING: ImplementationGuide/hl7.fhir.us.davinci-ra: ImplementationGuide.dependsOn[1]: The ImplementationGuide uses package hl7.fhir.us.core#7.0.0 released on 2024-05-08, but the most recent appropriate version is 9.0.0. This reference is getting old and the more recent version should be considered
-
-# 'authorDatetime' and 'text' are uri given to extension slices as defined in the Condition Category Remark Extension.  
-%No definition could be found for URL value 'authorDatetime'%
-%No definition could be found for URL value 'text'%
 
 # Pinned instances of us-core profiles to 7.0.0
 %Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis to 7.0.0% 
